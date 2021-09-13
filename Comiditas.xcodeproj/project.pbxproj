@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		779F5E8E26EF7456005668BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5E8D26EF7456005668BE /* AppDelegate.swift */; };
+		779F5E9026EF7456005668BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5E8F26EF7456005668BE /* SceneDelegate.swift */; };
+		779F5E9826EF7456005668BE /* Comiditas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 779F5E9626EF7456005668BE /* Comiditas.xcdatamodeld */; };
+		779F5E9A26EF7457005668BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 779F5E9926EF7457005668BE /* Assets.xcassets */; };
+		779F5E9D26EF7457005668BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779F5E9B26EF7457005668BE /* LaunchScreen.storyboard */; };
+		779F5EA826EF7458005668BE /* ComiditasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5EA726EF7458005668BE /* ComiditasTests.swift */; };
+		779F5EB326EF7458005668BE /* ComiditasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5EB226EF7458005668BE /* ComiditasUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		779F5EA426EF7458005668BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 779F5E8226EF7456005668BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 779F5E8926EF7456005668BE;
+			remoteInfo = Comiditas;
+		};
+		779F5EAF26EF7458005668BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 779F5E8226EF7456005668BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 779F5E8926EF7456005668BE;
+			remoteInfo = Comiditas;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		779F5E8A26EF7456005668BE /* Comiditas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Comiditas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		779F5E8D26EF7456005668BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		779F5E8F26EF7456005668BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		779F5E9726EF7456005668BE /* Comiditas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Comiditas.xcdatamodel; sourceTree = "<group>"; };
+		779F5E9926EF7457005668BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		779F5E9C26EF7457005668BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		779F5E9E26EF7457005668BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		779F5EA326EF7458005668BE /* ComiditasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComiditasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		779F5EA726EF7458005668BE /* ComiditasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComiditasTests.swift; sourceTree = "<group>"; };
+		779F5EA926EF7458005668BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		779F5EAE26EF7458005668BE /* ComiditasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComiditasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		779F5EB226EF7458005668BE /* ComiditasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComiditasUITests.swift; sourceTree = "<group>"; };
+		779F5EB426EF7458005668BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		779F5E8726EF7456005668BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779F5EA026EF7458005668BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779F5EAB26EF7458005668BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		779F5E8126EF7456005668BE = {
+			isa = PBXGroup;
+			children = (
+				779F5E8C26EF7456005668BE /* Comiditas */,
+				779F5EA626EF7458005668BE /* ComiditasTests */,
+				779F5EB126EF7458005668BE /* ComiditasUITests */,
+				779F5E8B26EF7456005668BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		779F5E8B26EF7456005668BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				779F5E8A26EF7456005668BE /* Comiditas.app */,
+				779F5EA326EF7458005668BE /* ComiditasTests.xctest */,
+				779F5EAE26EF7458005668BE /* ComiditasUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		779F5E8C26EF7456005668BE /* Comiditas */ = {
+			isa = PBXGroup;
+			children = (
+				779F5EC126EF7490005668BE /* Application */,
+				779F5EC226EF749D005668BE /* Components */,
+				779F5EC326EF74AC005668BE /* Helpers */,
+				779F5EC526EF74CC005668BE /* Features */,
+				779F5EC426EF74C1005668BE /* Manager */,
+				779F5ECA26EF7539005668BE /* Resources */,
+				779F5ECD26EF758A005668BE /* Models */,
+				779F5E9E26EF7457005668BE /* Info.plist */,
+			);
+			path = Comiditas;
+			sourceTree = "<group>";
+		};
+		779F5EA626EF7458005668BE /* ComiditasTests */ = {
+			isa = PBXGroup;
+			children = (
+				779F5EA726EF7458005668BE /* ComiditasTests.swift */,
+				779F5EA926EF7458005668BE /* Info.plist */,
+			);
+			path = ComiditasTests;
+			sourceTree = "<group>";
+		};
+		779F5EB126EF7458005668BE /* ComiditasUITests */ = {
+			isa = PBXGroup;
+			children = (
+				779F5EB226EF7458005668BE /* ComiditasUITests.swift */,
+				779F5EB426EF7458005668BE /* Info.plist */,
+			);
+			path = ComiditasUITests;
+			sourceTree = "<group>";
+		};
+		779F5EC126EF7490005668BE /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				779F5E8D26EF7456005668BE /* AppDelegate.swift */,
+				779F5E8F26EF7456005668BE /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		779F5EC226EF749D005668BE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		779F5EC326EF74AC005668BE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		779F5EC426EF74C1005668BE /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				779F5EC626EF74E7005668BE /* Repository */,
+				779F5EC726EF74F0005668BE /* Theme */,
+				779F5EC826EF74F9005668BE /* FeatureFlags */,
+				779F5EC926EF7513005668BE /* DynamicText */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		779F5EC526EF74CC005668BE /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		779F5EC626EF74E7005668BE /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		779F5EC726EF74F0005668BE /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		779F5EC826EF74F9005668BE /* FeatureFlags */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FeatureFlags;
+			sourceTree = "<group>";
+		};
+		779F5EC926EF7513005668BE /* DynamicText */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DynamicText;
+			sourceTree = "<group>";
+		};
+		779F5ECA26EF7539005668BE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				779F5ECB26EF7548005668BE /* Localizables */,
+				779F5E9926EF7457005668BE /* Assets.xcassets */,
+				779F5E9B26EF7457005668BE /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		779F5ECB26EF7548005668BE /* Localizables */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Localizables;
+			sourceTree = "<group>";
+		};
+		779F5ECC26EF7559005668BE /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				779F5E9626EF7456005668BE /* Comiditas.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		779F5ECD26EF758A005668BE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				779F5ECC26EF7559005668BE /* CoreData */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		779F5E8926EF7456005668BE /* Comiditas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 779F5EB726EF7458005668BE /* Build configuration list for PBXNativeTarget "Comiditas" */;
+			buildPhases = (
+				779F5E8626EF7456005668BE /* Sources */,
+				779F5E8726EF7456005668BE /* Frameworks */,
+				779F5E8826EF7456005668BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Comiditas;
+			productName = Comiditas;
+			productReference = 779F5E8A26EF7456005668BE /* Comiditas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		779F5EA226EF7458005668BE /* ComiditasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 779F5EBA26EF7458005668BE /* Build configuration list for PBXNativeTarget "ComiditasTests" */;
+			buildPhases = (
+				779F5E9F26EF7458005668BE /* Sources */,
+				779F5EA026EF7458005668BE /* Frameworks */,
+				779F5EA126EF7458005668BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				779F5EA526EF7458005668BE /* PBXTargetDependency */,
+			);
+			name = ComiditasTests;
+			productName = ComiditasTests;
+			productReference = 779F5EA326EF7458005668BE /* ComiditasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		779F5EAD26EF7458005668BE /* ComiditasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 779F5EBD26EF7458005668BE /* Build configuration list for PBXNativeTarget "ComiditasUITests" */;
+			buildPhases = (
+				779F5EAA26EF7458005668BE /* Sources */,
+				779F5EAB26EF7458005668BE /* Frameworks */,
+				779F5EAC26EF7458005668BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				779F5EB026EF7458005668BE /* PBXTargetDependency */,
+			);
+			name = ComiditasUITests;
+			productName = ComiditasUITests;
+			productReference = 779F5EAE26EF7458005668BE /* ComiditasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		779F5E8226EF7456005668BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					779F5E8926EF7456005668BE = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					779F5EA226EF7458005668BE = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 779F5E8926EF7456005668BE;
+					};
+					779F5EAD26EF7458005668BE = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 779F5E8926EF7456005668BE;
+					};
+				};
+			};
+			buildConfigurationList = 779F5E8526EF7456005668BE /* Build configuration list for PBXProject "Comiditas" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 779F5E8126EF7456005668BE;
+			productRefGroup = 779F5E8B26EF7456005668BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				779F5E8926EF7456005668BE /* Comiditas */,
+				779F5EA226EF7458005668BE /* ComiditasTests */,
+				779F5EAD26EF7458005668BE /* ComiditasUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		779F5E8826EF7456005668BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				779F5E9D26EF7457005668BE /* LaunchScreen.storyboard in Resources */,
+				779F5E9A26EF7457005668BE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779F5EA126EF7458005668BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779F5EAC26EF7458005668BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		779F5E8626EF7456005668BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				779F5E8E26EF7456005668BE /* AppDelegate.swift in Sources */,
+				779F5E9026EF7456005668BE /* SceneDelegate.swift in Sources */,
+				779F5E9826EF7456005668BE /* Comiditas.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779F5E9F26EF7458005668BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				779F5EA826EF7458005668BE /* ComiditasTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779F5EAA26EF7458005668BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				779F5EB326EF7458005668BE /* ComiditasUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		779F5EA526EF7458005668BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 779F5E8926EF7456005668BE /* Comiditas */;
+			targetProxy = 779F5EA426EF7458005668BE /* PBXContainerItemProxy */;
+		};
+		779F5EB026EF7458005668BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 779F5E8926EF7456005668BE /* Comiditas */;
+			targetProxy = 779F5EAF26EF7458005668BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		779F5E9B26EF7457005668BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				779F5E9C26EF7457005668BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		779F5EB526EF7458005668BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		779F5EB626EF7458005668BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		779F5EB826EF7458005668BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VH525588L5;
+				INFOPLIST_FILE = Comiditas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.Comiditas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		779F5EB926EF7458005668BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VH525588L5;
+				INFOPLIST_FILE = Comiditas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.Comiditas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		779F5EBB26EF7458005668BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VH525588L5;
+				INFOPLIST_FILE = ComiditasTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.ComiditasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Comiditas.app/Comiditas";
+			};
+			name = Debug;
+		};
+		779F5EBC26EF7458005668BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VH525588L5;
+				INFOPLIST_FILE = ComiditasTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.ComiditasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Comiditas.app/Comiditas";
+			};
+			name = Release;
+		};
+		779F5EBE26EF7458005668BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VH525588L5;
+				INFOPLIST_FILE = ComiditasUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.ComiditasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Comiditas;
+			};
+			name = Debug;
+		};
+		779F5EBF26EF7458005668BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VH525588L5;
+				INFOPLIST_FILE = ComiditasUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.ComiditasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Comiditas;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		779F5E8526EF7456005668BE /* Build configuration list for PBXProject "Comiditas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				779F5EB526EF7458005668BE /* Debug */,
+				779F5EB626EF7458005668BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		779F5EB726EF7458005668BE /* Build configuration list for PBXNativeTarget "Comiditas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				779F5EB826EF7458005668BE /* Debug */,
+				779F5EB926EF7458005668BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		779F5EBA26EF7458005668BE /* Build configuration list for PBXNativeTarget "ComiditasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				779F5EBB26EF7458005668BE /* Debug */,
+				779F5EBC26EF7458005668BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		779F5EBD26EF7458005668BE /* Build configuration list for PBXNativeTarget "ComiditasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				779F5EBE26EF7458005668BE /* Debug */,
+				779F5EBF26EF7458005668BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		779F5E9626EF7456005668BE /* Comiditas.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				779F5E9726EF7456005668BE /* Comiditas.xcdatamodel */,
+			);
+			currentVersion = 779F5E9726EF7456005668BE /* Comiditas.xcdatamodel */;
+			path = Comiditas.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 779F5E8226EF7456005668BE /* Project object */;
+}
