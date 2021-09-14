@@ -14,6 +14,8 @@
 		779F5E9D26EF7457005668BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779F5E9B26EF7457005668BE /* LaunchScreen.storyboard */; };
 		779F5EA826EF7458005668BE /* ComiditasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5EA726EF7458005668BE /* ComiditasTests.swift */; };
 		779F5EB326EF7458005668BE /* ComiditasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5EB226EF7458005668BE /* ComiditasUITests.swift */; };
+		FE0C24AE26F0DA2E00C17524 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0C24AD26F0DA2E00C17524 /* CoreDataStack.swift */; };
+		FE0C24B126F0DAA700C17524 /* RepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0C24B026F0DAA700C17524 /* RepositoryProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		779F5EAE26EF7458005668BE /* ComiditasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComiditasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		779F5EB226EF7458005668BE /* ComiditasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComiditasUITests.swift; sourceTree = "<group>"; };
 		779F5EB426EF7458005668BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE0C24AD26F0DA2E00C17524 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		FE0C24B026F0DAA700C17524 /* RepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,7 @@
 		779F5EC326EF74AC005668BE /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				FE0C24AF26F0DA8D00C17524 /* Protocols */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 		779F5EC426EF74C1005668BE /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				FE0C24AC26F0DA1B00C17524 /* CoreData */,
 				779F5EC626EF74E7005668BE /* Repository */,
 				779F5EC726EF74F0005668BE /* Theme */,
 				779F5EC826EF74F9005668BE /* FeatureFlags */,
@@ -227,6 +233,22 @@
 				779F5ECC26EF7559005668BE /* CoreData */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FE0C24AC26F0DA1B00C17524 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				FE0C24AD26F0DA2E00C17524 /* CoreDataStack.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		FE0C24AF26F0DA8D00C17524 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FE0C24B026F0DAA700C17524 /* RepositoryProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,9 +401,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE0C24B126F0DAA700C17524 /* RepositoryProtocol.swift in Sources */,
 				779F5E8E26EF7456005668BE /* AppDelegate.swift in Sources */,
 				779F5E9026EF7456005668BE /* SceneDelegate.swift in Sources */,
 				779F5E9826EF7456005668BE /* Comiditas.xcdatamodeld in Sources */,
+				FE0C24AE26F0DA2E00C17524 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
