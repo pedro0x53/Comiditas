@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77635CD926F2115800B36EC7 /* RecipesJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CD826F2115800B36EC7 /* RecipesJson.swift */; };
+		77635CDB26F2124D00B36EC7 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CDA26F2124D00B36EC7 /* Ingredients.swift */; };
+		77635CDD26F214DA00B36EC7 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CDC26F214DA00B36EC7 /* Step.swift */; };
+		77635CDF26F2185B00B36EC7 /* JsonStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CDE26F2185B00B36EC7 /* JsonStack.swift */; };
+		77635CE126F2188B00B36EC7 /* RecipeJsonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CE026F2188B00B36EC7 /* RecipeJsonRepository.swift */; };
 		779F5E8E26EF7456005668BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5E8D26EF7456005668BE /* AppDelegate.swift */; };
 		779F5E9026EF7456005668BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5E8F26EF7456005668BE /* SceneDelegate.swift */; };
 		779F5E9826EF7456005668BE /* Comiditas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 779F5E9626EF7456005668BE /* Comiditas.xcdatamodeld */; };
@@ -14,6 +19,8 @@
 		779F5E9D26EF7457005668BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779F5E9B26EF7457005668BE /* LaunchScreen.storyboard */; };
 		779F5EA826EF7458005668BE /* ComiditasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5EA726EF7458005668BE /* ComiditasTests.swift */; };
 		779F5EB326EF7458005668BE /* ComiditasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5EB226EF7458005668BE /* ComiditasUITests.swift */; };
+		77D70D1726F21FFA00A8B244 /* Recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 77D70D1626F21FFA00A8B244 /* Recipes.json */; };
+		77D70D1B26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D70D1A26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		77635CD826F2115800B36EC7 /* RecipesJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesJson.swift; sourceTree = "<group>"; };
+		77635CDA26F2124D00B36EC7 /* Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
+		77635CDC26F214DA00B36EC7 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		77635CDE26F2185B00B36EC7 /* JsonStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonStack.swift; sourceTree = "<group>"; };
+		77635CE026F2188B00B36EC7 /* RecipeJsonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeJsonRepository.swift; sourceTree = "<group>"; };
 		779F5E8A26EF7456005668BE /* Comiditas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Comiditas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		779F5E8D26EF7456005668BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		779F5E8F26EF7456005668BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +59,8 @@
 		779F5EAE26EF7458005668BE /* ComiditasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComiditasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		779F5EB226EF7458005668BE /* ComiditasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComiditasUITests.swift; sourceTree = "<group>"; };
 		779F5EB426EF7458005668BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77D70D1626F21FFA00A8B244 /* Recipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Recipes.json; sourceTree = "<group>"; };
+		77D70D1A26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeJsonRepositoryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +88,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		770BE81626F0DDC60032F0ED /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				77635CDE26F2185B00B36EC7 /* JsonStack.swift */,
+				77635CE026F2188B00B36EC7 /* RecipeJsonRepository.swift */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		770BE81726F0DEB10032F0ED /* EntitiesJson */ = {
+			isa = PBXGroup;
+			children = (
+				77635CD826F2115800B36EC7 /* RecipesJson.swift */,
+				77635CDA26F2124D00B36EC7 /* Ingredients.swift */,
+				77635CDC26F214DA00B36EC7 /* Step.swift */,
+			);
+			path = EntitiesJson;
+			sourceTree = "<group>";
+		};
 		779F5E8126EF7456005668BE = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				779F5EA726EF7458005668BE /* ComiditasTests.swift */,
+				77D70D1A26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift */,
 				779F5EA926EF7458005668BE /* Info.plist */,
 			);
 			path = ComiditasTests;
@@ -153,6 +187,7 @@
 		779F5EC426EF74C1005668BE /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				770BE81626F0DDC60032F0ED /* Json */,
 				779F5EC626EF74E7005668BE /* Repository */,
 				779F5EC726EF74F0005668BE /* Theme */,
 				779F5EC826EF74F9005668BE /* FeatureFlags */,
@@ -202,6 +237,7 @@
 				779F5ECB26EF7548005668BE /* Localizables */,
 				779F5E9926EF7457005668BE /* Assets.xcassets */,
 				779F5E9B26EF7457005668BE /* LaunchScreen.storyboard */,
+				77D70D1626F21FFA00A8B244 /* Recipes.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -224,6 +260,7 @@
 		779F5ECD26EF758A005668BE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				770BE81726F0DEB10032F0ED /* EntitiesJson */,
 				779F5ECC26EF7559005668BE /* CoreData */,
 			);
 			path = Models;
@@ -333,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				779F5E9D26EF7457005668BE /* LaunchScreen.storyboard in Resources */,
+				77D70D1726F21FFA00A8B244 /* Recipes.json in Resources */,
 				779F5E9A26EF7457005668BE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,8 +397,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				779F5E8E26EF7456005668BE /* AppDelegate.swift in Sources */,
+				77635CE126F2188B00B36EC7 /* RecipeJsonRepository.swift in Sources */,
+				77635CDF26F2185B00B36EC7 /* JsonStack.swift in Sources */,
 				779F5E9026EF7456005668BE /* SceneDelegate.swift in Sources */,
 				779F5E9826EF7456005668BE /* Comiditas.xcdatamodeld in Sources */,
+				77635CDB26F2124D00B36EC7 /* Ingredients.swift in Sources */,
+				77635CD926F2115800B36EC7 /* RecipesJson.swift in Sources */,
+				77635CDD26F214DA00B36EC7 /* Step.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				779F5EA826EF7458005668BE /* ComiditasTests.swift in Sources */,
+				77D70D1B26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
