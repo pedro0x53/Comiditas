@@ -1,0 +1,50 @@
+[
+    {
+        "identifier": 2,
+        "name": "Bolo",
+        "imageURL": "",
+        "difficultyLevel": 2,
+        "servings": 8,
+        "prepTime": 120,
+        "ingredients" : [
+            {
+                "name": "Ovo",
+                "measure": "2 unidades"
+            },
+            {
+                "name": "Farinha de trigo (sem fermento)",
+                "measure": "4 xicaras"
+            },
+            {
+                "name": "Fermento quimico",
+                "measure": "1 colher de sopa"
+            },
+            {
+                "name": "Cacau em pó",
+                "measure": "2 xicaras"
+            },
+            {
+                "name": "Leite liquido",
+                "measure": "3 xicaras"
+            }
+        ],
+        "categories" : [
+            "Sobremesa", "Chocolate"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+               "step": 1,
+               "stepDescription": "Separe as medidas udgyds hjdsggd jdvgv",
+               "hasTimer": true,
+               "timer": 20
+            },
+            {
+               "step": 2,
+               "stepDescription": "Blabla bsy hgyeiwm dhfwb vhdkmb hddhydd.",
+               "hasTimer": true,
+               "timer": 30
+            }
+        ]
+    }
+]

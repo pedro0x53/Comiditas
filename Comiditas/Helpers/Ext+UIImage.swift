@@ -10,7 +10,7 @@ import UIKit
 extension UIImage {
     enum AssetIdentifier: String {
         case exemple = "exemple"
-        case ic_exemple = "ic_exemple"
+        case icExemple = "ic_exemple"
     }
 
     convenience init?(assetIdentifier: AssetIdentifier) {
