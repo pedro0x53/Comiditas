@@ -7,8 +7,7 @@
 
 import UIKit
 
-extension UIColor {
-  struct Colors {
+struct Colors {
     static var primary: UIColor  {
         return UIColor(red: 0.56, green: 0.23, blue: 0.00, alpha: 1.00)
     }
@@ -32,5 +31,4 @@ extension UIColor {
     static var background: UIColor {
         return UIColor(red: 1.00, green: 1.00, blue: 1.00, alpha: 1.00)
     }
-  }
 }
