@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Ingredient: Decodable {
+struct IngredientsJson: Decodable {
     let name: String
     let measure: String
 }

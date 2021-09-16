@@ -14,8 +14,8 @@ struct RecipesJson: Decodable {
     let difficultyLevel: Int
     let servings: Int
     let prepTime: Int
-    let ingredients: [Ingredient]
+    let ingredients: [IngredientsJson]
     let categories: [String]
     let rate: Int
-    let steps: [Step]
+    let steps: [StepJson]
 }

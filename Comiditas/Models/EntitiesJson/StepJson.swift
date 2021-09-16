@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Step: Decodable {
+struct StepJson: Decodable {
     let step: Int
     let stepDescription: String
     let hasTimer: Bool
