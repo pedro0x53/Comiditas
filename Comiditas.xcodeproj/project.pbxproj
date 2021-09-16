@@ -16,6 +16,7 @@
 		779F5EB326EF7458005668BE /* ComiditasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5EB226EF7458005668BE /* ComiditasUITests.swift */; };
 		FE0C24AE26F0DA2E00C17524 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0C24AD26F0DA2E00C17524 /* CoreDataStack.swift */; };
 		FE0C24B126F0DAA700C17524 /* RepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0C24B026F0DAA700C17524 /* RepositoryProtocol.swift */; };
+		FE88899226F3836C00681B04 /* CoreDataStackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE88899126F3836C00681B04 /* CoreDataStackTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		779F5EB426EF7458005668BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE0C24AD26F0DA2E00C17524 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		FE0C24B026F0DAA700C17524 /* RepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryProtocol.swift; sourceTree = "<group>"; };
+		FE88899126F3836C00681B04 /* CoreDataStackTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		779F5EA626EF7458005668BE /* ComiditasTests */ = {
 			isa = PBXGroup;
 			children = (
+				FE88899026F3835200681B04 /* Manager */,
 				779F5EA726EF7458005668BE /* ComiditasTests.swift */,
 				779F5EA926EF7458005668BE /* Info.plist */,
 			);
@@ -249,6 +252,14 @@
 				FE0C24B026F0DAA700C17524 /* RepositoryProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FE88899026F3835200681B04 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FE88899126F3836C00681B04 /* CoreDataStackTest.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				779F5EA826EF7458005668BE /* ComiditasTests.swift in Sources */,
+				FE88899226F3836C00681B04 /* CoreDataStackTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

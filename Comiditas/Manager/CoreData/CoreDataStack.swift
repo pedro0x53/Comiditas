@@ -26,20 +26,19 @@ class CoreDataStack {
 
     init(_ storageType: StorageType = .persistent) {
         self.persistentContainer = NSPersistentContainer(name: CoreDataStack.modelName)
-        
+
         if storageType == .inMemory {
             let description = NSPersistentStoreDescription()
             description.type = NSInMemoryStoreType
             self.persistentContainer.persistentStoreDescriptions = [description]
         }
 
-        self.persistentContainer.loadPersistentStores { (storeDescription, error) in
+        self.persistentContainer.loadPersistentStores { (_, error) in
             if let error = error as NSError? {
                 print("CoreDataStack Error - Unresolved error \(error), \(error.userInfo)")
             }
         }
     }
-
 
     @discardableResult
     func saveContext() -> Bool {
