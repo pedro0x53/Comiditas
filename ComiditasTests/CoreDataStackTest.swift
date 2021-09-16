@@ -10,14 +10,20 @@ import XCTest
 
 class CoreDataStackTest: XCTestCase {
 
-    func test_coreDataStack_saveContext_true() {
-        // Given
+    func test_coreDataStack_saveContext_withoutChanges_true() {
         let sut = CoreDataStack(.inMemory)
 
-        // When
         let result = sut.saveContext()
 
-        // Then
+        XCTAssertTrue(result)
+    }
+
+    func test_coreDataStack_saveContext_withCahges_true() {
+        let sut = CoreDataStack(.inMemory)
+
+        let _ = User(context: sut.managedContext)
+        let result = sut.saveContext()
+
         XCTAssertTrue(result)
     }
 }

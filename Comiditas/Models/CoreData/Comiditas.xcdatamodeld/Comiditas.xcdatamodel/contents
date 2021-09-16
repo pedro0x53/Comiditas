@@ -37,6 +37,14 @@
         <attribute name="measurementType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="recipeID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
     </entity>
+    <entity name="Step" representedClassName="Step" syncable="YES" codeGenerationType="class">
+        <attribute name="hasTimer" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="recipeID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="step" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="stepDescription" optional="YES" attributeType="String"/>
+        <attribute name="timer" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
     <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
         <attribute name="identifier" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="image" optional="YES" attributeType="Binary"/>
@@ -46,9 +54,10 @@
         <element name="Category" positionX="81" positionY="54" width="128" height="59"/>
         <element name="Favorites" positionX="108" positionY="81" width="128" height="74"/>
         <element name="Ingredient" positionX="99" positionY="63" width="128" height="59"/>
+        <element name="Rating" positionX="63" positionY="45" width="128" height="89"/>
         <element name="Recipe" positionX="175.3502197265625" positionY="-56.40924072265625" width="128" height="164"/>
         <element name="RecipeIngredient" positionX="108" positionY="72" width="128" height="104"/>
         <element name="User" positionX="-54" positionY="45" width="128" height="74"/>
-        <element name="Rating" positionX="63" positionY="45" width="128" height="89"/>
+        <element name="Step" positionX="63" positionY="45" width="128" height="119"/>
     </elements>
 </model>

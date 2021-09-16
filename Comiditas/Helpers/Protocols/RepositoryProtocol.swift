@@ -8,18 +8,18 @@
 import Foundation
 
 protocol RepositoryProtocol {
-    associatedtype D
-    associatedtype E
+    associatedtype Data
+    associatedtype Entity
 
     var coreDataStack: CoreDataStack { get set }
     var storageType: StorageType { get set }
 
     init(type: StorageType)
 
-    func create(with data: D) -> E?
-    func readAll() -> [E]
-    func read(identifier: UUID) -> E?
-    func update(_ entity: E, with data: D) -> Bool
+    func create(with data: Data) -> Entity?
+    func readAll() -> [Entity]
+    func read(identifier: UUID) -> Entity?
+    func update(_ entity: Entity, with data: Data) -> Bool
     func delete(identifier: UUID) -> Bool
     func save() -> Bool
 }
