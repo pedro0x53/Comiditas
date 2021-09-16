@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		770BE81526F0C7480032F0ED /* Ext+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BE81426F0C7480032F0ED /* Ext+UIImage.swift */; };
+		774D5A7A26F3711A004176A1 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7926F3711A004176A1 /* BaseView.swift */; };
 		774D5A7326F36A84004176A1 /* Ext+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7226F36A84004176A1 /* Ext+UIColor.swift */; };
 		77635CD926F2115800B36EC7 /* RecipesJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CD826F2115800B36EC7 /* RecipesJson.swift */; };
 		77635CDB26F2124D00B36EC7 /* IngredientsJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CDA26F2124D00B36EC7 /* IngredientsJson.swift */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		770BE81426F0C7480032F0ED /* Ext+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ext+UIImage.swift"; sourceTree = "<group>"; };
+		774D5A7926F3711A004176A1 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		774D5A7226F36A84004176A1 /* Ext+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIColor.swift"; sourceTree = "<group>"; };
 		77635CD826F2115800B36EC7 /* RecipesJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesJson.swift; sourceTree = "<group>"; };
 		77635CDA26F2124D00B36EC7 /* IngredientsJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsJson.swift; sourceTree = "<group>"; };
@@ -109,6 +111,14 @@
 				77635CDC26F214DA00B36EC7 /* StepJson.swift */,
 			);
 			path = EntitiesJson;
+			sourceTree = "<group>";
+		};
+		774D5A7826F3710A004176A1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				774D5A7926F3711A004176A1 /* BaseView.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		779F5E8126EF7456005668BE = {
@@ -184,6 +194,7 @@
 		779F5EC326EF74AC005668BE /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				774D5A7826F3710A004176A1 /* Protocols */,
 				770BE81426F0C7480032F0ED /* Ext+UIImage.swift */,
 				774D5A7226F36A84004176A1 /* Ext+UIColor.swift */,
 			);
@@ -431,6 +442,7 @@
 				774D5A7326F36A84004176A1 /* Ext+UIColor.swift in Sources */,
 				779F5E9826EF7456005668BE /* Comiditas.xcdatamodeld in Sources */,
 				77635CDB26F2124D00B36EC7 /* IngredientsJson.swift in Sources */,
+				774D5A7A26F3711A004176A1 /* BaseView.swift in Sources */,
 				77635CD926F2115800B36EC7 /* RecipesJson.swift in Sources */,
 				77635CDD26F214DA00B36EC7 /* StepJson.swift in Sources */,
 			);

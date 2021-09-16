@@ -8,7 +8,7 @@
 import UIKit
 
 struct Colors {
-    static var primary: UIColor  {
+    static var primary: UIColor {
         return UIColor(red: 0.56, green: 0.23, blue: 0.00, alpha: 1.00)
     }
 
