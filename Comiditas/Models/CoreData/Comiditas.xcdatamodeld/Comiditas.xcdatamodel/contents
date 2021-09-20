@@ -57,7 +57,7 @@
         <element name="Rating" positionX="63" positionY="45" width="128" height="89"/>
         <element name="Recipe" positionX="175.3502197265625" positionY="-56.40924072265625" width="128" height="164"/>
         <element name="RecipeIngredient" positionX="108" positionY="72" width="128" height="104"/>
-        <element name="User" positionX="-54" positionY="45" width="128" height="74"/>
         <element name="Step" positionX="63" positionY="45" width="128" height="119"/>
+        <element name="User" positionX="-54" positionY="45" width="128" height="74"/>
     </elements>
 </model>

@@ -30,6 +30,8 @@
 		779F5EB326EF7458005668BE /* ComiditasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5EB226EF7458005668BE /* ComiditasUITests.swift */; };
 		77D70D1726F21FFA00A8B244 /* Recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 77D70D1626F21FFA00A8B244 /* Recipes.json */; };
 		77D70D1B26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D70D1A26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift */; };
+		FE95430026F8B2BD0039F547 /* Ext+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9542FF26F8B2BD0039F547 /* Ext+UIImageView.swift */; };
+		FE95430326F8B41D0039F547 /* UIImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE95430226F8B41D0039F547 /* UIImageViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		779F5EB426EF7458005668BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77D70D1626F21FFA00A8B244 /* Recipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Recipes.json; sourceTree = "<group>"; };
 		77D70D1A26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeJsonRepositoryTests.swift; sourceTree = "<group>"; };
+		FE9542FF26F8B2BD0039F547 /* Ext+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIImageView.swift"; sourceTree = "<group>"; };
+		FE95430226F8B41D0039F547 /* UIImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +194,7 @@
 		779F5EA626EF7458005668BE /* ComiditasTests */ = {
 			isa = PBXGroup;
 			children = (
+				FE95430126F8B2EB0039F547 /* Helpers */,
 				779F5EA726EF7458005668BE /* ComiditasTests.swift */,
 				77D70D1A26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift */,
 				779F5EA926EF7458005668BE /* Info.plist */,
@@ -229,6 +234,7 @@
 				770BE81426F0C7480032F0ED /* Ext+UIImage.swift */,
 				774D5A7B26F37256004176A1 /* Ext+UIFonts.swift */,
 				774D5A7226F36A84004176A1 /* Ext+UIColor.swift */,
+				FE9542FF26F8B2BD0039F547 /* Ext+UIImageView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -315,6 +321,14 @@
 				779F5ECC26EF7559005668BE /* CoreData */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FE95430126F8B2EB0039F547 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FE95430226F8B41D0039F547 /* UIImageViewTests.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,6 +487,7 @@
 				77635CDF26F2185B00B36EC7 /* JsonStack.swift in Sources */,
 				770BE81526F0C7480032F0ED /* Ext+UIImage.swift in Sources */,
 				779F5E9026EF7456005668BE /* SceneDelegate.swift in Sources */,
+				FE95430026F8B2BD0039F547 /* Ext+UIImageView.swift in Sources */,
 				774D5A7326F36A84004176A1 /* Ext+UIColor.swift in Sources */,
 				7792905326F8B08700AAA0A4 /* FeedViewController.swift in Sources */,
 				7792904E26F8AE0800AAA0A4 /* AppCoordinator.swift in Sources */,
@@ -492,6 +507,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE95430326F8B41D0039F547 /* UIImageViewTests.swift in Sources */,
 				779F5EA826EF7458005668BE /* ComiditasTests.swift in Sources */,
 				77D70D1B26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift in Sources */,
 			);
