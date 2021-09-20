@@ -396,7 +396,7 @@
             {
                "step": 8,
                "stepDescription": "Retire do forno, espere dez minutos e desenforme.",
-               "hasTimer": false,
+               "hasTimer": true,
                "timer": 0
             },
         ]
