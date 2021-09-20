@@ -8,14 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		770BE81526F0C7480032F0ED /* Ext+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BE81426F0C7480032F0ED /* Ext+UIImage.swift */; };
-		774D5A7C26F37256004176A1 /* Ext+UIFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7B26F37256004176A1 /* Ext+UIFonts.swift */; };
-		774D5A7A26F3711A004176A1 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7926F3711A004176A1 /* BaseView.swift */; };
 		774D5A7326F36A84004176A1 /* Ext+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7226F36A84004176A1 /* Ext+UIColor.swift */; };
+		774D5A7A26F3711A004176A1 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7926F3711A004176A1 /* BaseView.swift */; };
+		774D5A7C26F37256004176A1 /* Ext+UIFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7B26F37256004176A1 /* Ext+UIFonts.swift */; };
 		77635CD926F2115800B36EC7 /* RecipesJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CD826F2115800B36EC7 /* RecipesJson.swift */; };
 		77635CDB26F2124D00B36EC7 /* IngredientsJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CDA26F2124D00B36EC7 /* IngredientsJson.swift */; };
 		77635CDD26F214DA00B36EC7 /* StepJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CDC26F214DA00B36EC7 /* StepJson.swift */; };
 		77635CDF26F2185B00B36EC7 /* JsonStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CDE26F2185B00B36EC7 /* JsonStack.swift */; };
 		77635CE126F2188B00B36EC7 /* RecipeJsonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CE026F2188B00B36EC7 /* RecipeJsonRepository.swift */; };
+		7792904B26F8ADC500AAA0A4 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7792904A26F8ADC500AAA0A4 /* CoordinatorProtocol.swift */; };
+		7792904E26F8AE0800AAA0A4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7792904D26F8AE0800AAA0A4 /* AppCoordinator.swift */; };
+		7792905326F8B08700AAA0A4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7792905226F8B08700AAA0A4 /* FeedViewController.swift */; };
+		7792905526F8B09800AAA0A4 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7792905426F8B09800AAA0A4 /* FeedView.swift */; };
+		7792905726F8B18800AAA0A4 /* FeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7792905626F8B18800AAA0A4 /* FeedCoordinator.swift */; };
 		779F5E8E26EF7456005668BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5E8D26EF7456005668BE /* AppDelegate.swift */; };
 		779F5E9026EF7456005668BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5E8F26EF7456005668BE /* SceneDelegate.swift */; };
 		779F5E9826EF7456005668BE /* Comiditas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 779F5E9626EF7456005668BE /* Comiditas.xcdatamodeld */; };
@@ -46,14 +51,19 @@
 
 /* Begin PBXFileReference section */
 		770BE81426F0C7480032F0ED /* Ext+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ext+UIImage.swift"; sourceTree = "<group>"; };
-		774D5A7B26F37256004176A1 /* Ext+UIFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIFonts.swift"; sourceTree = "<group>"; };
-		774D5A7926F3711A004176A1 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		774D5A7226F36A84004176A1 /* Ext+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIColor.swift"; sourceTree = "<group>"; };
+		774D5A7926F3711A004176A1 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		774D5A7B26F37256004176A1 /* Ext+UIFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIFonts.swift"; sourceTree = "<group>"; };
 		77635CD826F2115800B36EC7 /* RecipesJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesJson.swift; sourceTree = "<group>"; };
 		77635CDA26F2124D00B36EC7 /* IngredientsJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsJson.swift; sourceTree = "<group>"; };
 		77635CDC26F214DA00B36EC7 /* StepJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepJson.swift; sourceTree = "<group>"; };
 		77635CDE26F2185B00B36EC7 /* JsonStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonStack.swift; sourceTree = "<group>"; };
 		77635CE026F2188B00B36EC7 /* RecipeJsonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeJsonRepository.swift; sourceTree = "<group>"; };
+		7792904A26F8ADC500AAA0A4 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		7792904D26F8AE0800AAA0A4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		7792905226F8B08700AAA0A4 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		7792905426F8B09800AAA0A4 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		7792905626F8B18800AAA0A4 /* FeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCoordinator.swift; sourceTree = "<group>"; };
 		779F5E8A26EF7456005668BE /* Comiditas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Comiditas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		779F5E8D26EF7456005668BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		779F5E8F26EF7456005668BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,8 +129,27 @@
 			isa = PBXGroup;
 			children = (
 				774D5A7926F3711A004176A1 /* BaseView.swift */,
+				7792904A26F8ADC500AAA0A4 /* CoordinatorProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7792904C26F8ADEF00AAA0A4 /* AppCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				7792904D26F8AE0800AAA0A4 /* AppCoordinator.swift */,
+			);
+			path = AppCoordinator;
+			sourceTree = "<group>";
+		};
+		7792905126F8B04C00AAA0A4 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				7792905226F8B08700AAA0A4 /* FeedViewController.swift */,
+				7792905426F8B09800AAA0A4 /* FeedView.swift */,
+				7792905626F8B18800AAA0A4 /* FeedCoordinator.swift */,
+			);
+			path = Feed;
 			sourceTree = "<group>";
 		};
 		779F5E8126EF7456005668BE = {
@@ -219,6 +248,8 @@
 		779F5EC526EF74CC005668BE /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				7792905126F8B04C00AAA0A4 /* Feed */,
+				7792904C26F8ADEF00AAA0A4 /* AppCoordinator */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -443,11 +474,16 @@
 				770BE81526F0C7480032F0ED /* Ext+UIImage.swift in Sources */,
 				779F5E9026EF7456005668BE /* SceneDelegate.swift in Sources */,
 				774D5A7326F36A84004176A1 /* Ext+UIColor.swift in Sources */,
+				7792905326F8B08700AAA0A4 /* FeedViewController.swift in Sources */,
+				7792904E26F8AE0800AAA0A4 /* AppCoordinator.swift in Sources */,
 				779F5E9826EF7456005668BE /* Comiditas.xcdatamodeld in Sources */,
+				7792904B26F8ADC500AAA0A4 /* CoordinatorProtocol.swift in Sources */,
+				7792905526F8B09800AAA0A4 /* FeedView.swift in Sources */,
 				77635CDB26F2124D00B36EC7 /* IngredientsJson.swift in Sources */,
 				774D5A7A26F3711A004176A1 /* BaseView.swift in Sources */,
 				77635CD926F2115800B36EC7 /* RecipesJson.swift in Sources */,
 				774D5A7C26F37256004176A1 /* Ext+UIFonts.swift in Sources */,
+				7792905726F8B18800AAA0A4 /* FeedCoordinator.swift in Sources */,
 				77635CDD26F214DA00B36EC7 /* StepJson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
