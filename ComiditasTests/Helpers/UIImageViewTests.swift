@@ -19,7 +19,7 @@ class UIImageViewTests: XCTestCase {
             return
         }
 
-        sut.load(url: url) {
+        sut.load(url: url, errorImage: nil) {
             XCTAssertNotNil(sut.image)
         }
     }

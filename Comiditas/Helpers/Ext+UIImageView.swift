@@ -9,12 +9,17 @@ import UIKit
 
 // Remote image loader
 extension UIImageView {
-    func load(url: URL, completion: @escaping () -> Void) {
+    func load(url: URL, errorImage: UIImage? = nil, completion: @escaping () -> Void) {
         DispatchQueue.global().async { [weak self] in
             if let data = try? Data(contentsOf: url),
                let image = UIImage(data: data) {
                 DispatchQueue.main.async {
                     self?.image = image
+                    completion()
+                }
+            } else {
+                DispatchQueue.main.async {
+                    self?.image = errorImage
                     completion()
                 }
             }
