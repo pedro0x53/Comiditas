@@ -361,7 +361,7 @@
                "step": 2,
                "stepDescription": "Deixe descansar de vinte a trinta minutos, até notar uma água no fundo da tigela, o suco da maçã.",
                "hasTimer": true,
-               "timer": 0
+               "timer": 1500
             },
             {
                "step": 3,
