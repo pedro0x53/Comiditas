@@ -25,6 +25,7 @@ class FeedView: UIView {
 
 extension FeedView: BaseViewProtocol {
     func setupView() {
+        self.backgroundColor = Colors.background
         setupConstraints()
     }
 

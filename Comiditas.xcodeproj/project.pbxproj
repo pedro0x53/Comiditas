@@ -125,6 +125,15 @@
 			path = EntitiesJson;
 			sourceTree = "<group>";
 		};
+		771CBACF26F8C356002569FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7792905226F8B08700AAA0A4 /* FeedViewController.swift */,
+				7792905426F8B09800AAA0A4 /* FeedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		774D5A7826F3710A004176A1 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,8 +154,7 @@
 		7792905126F8B04C00AAA0A4 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				7792905226F8B08700AAA0A4 /* FeedViewController.swift */,
-				7792905426F8B09800AAA0A4 /* FeedView.swift */,
+				771CBACF26F8C356002569FE /* View */,
 				7792905626F8B18800AAA0A4 /* FeedCoordinator.swift */,
 			);
 			path = Feed;
