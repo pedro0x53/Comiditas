@@ -391,7 +391,7 @@
                "step": 7,
                "stepDescription": "Despeje em uma forma de buraco no centro de vinte centímetros de diâmetro untada e enfarinhada e leve ao forno pré-aquecido a cento e oitenta graus por aproximadamente cinquenta minutos, ou até que esteja assado.",
                "hasTimer": true,
-               "timer": 0
+               "timer": 3000
             },
             {
                "step": 8,
