@@ -31,7 +31,7 @@
                "step": 2,
                "stepDescription": "Preaqueça o forno a 190 graus.",
                "hasTimer": true,
-               "timer": 300
+               "timer": 600
             },
             {
                "step": 3,
