@@ -8,7 +8,7 @@
 import UIKit
 
 protocol FeedCoordinatorProtocol: AnyObject {
-    func navigateToOverview(recipe: RecipesJson)
+    func navigateToOverview(recipe: RecipeJson)
 }
 
 class FeedCoordinator: Coordinator {
@@ -26,7 +26,7 @@ class FeedCoordinator: Coordinator {
 }
 
 extension FeedCoordinator: FeedCoordinatorProtocol {
-    func navigateToOverview(recipe: RecipesJson) {
+    func navigateToOverview(recipe: RecipeJson) {
         let overviewViewController = OverviewViewController(recipe: recipe)
         navigationController.pushViewController(overviewViewController, animated: true)
     }

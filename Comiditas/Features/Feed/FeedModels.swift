@@ -9,11 +9,11 @@ import Foundation
 
 enum Feed {
     struct Response {
-        let recipes: [RecipesJson]
+        let recipes: [RecipeJson]
     }
 
     struct ViewModel {
-        let recipes: [RecipesJson]
+        let recipes: [RecipeJson]
     }
 
 }

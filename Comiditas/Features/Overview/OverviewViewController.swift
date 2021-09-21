@@ -12,9 +12,9 @@ class OverviewViewController: UIViewController {
     weak var coordinator: OverviewCoordinator?
     let associatedView: OverviewView = OverviewView()
 
-    var recipe: RecipesJson
+    var recipe: RecipeJson
 
-    init(recipe: RecipesJson) {
+    init(recipe: RecipeJson) {
         self.recipe = recipe
         super.init(nibName: nil, bundle: nil)
     }

@@ -8,12 +8,12 @@
 import UIKit
 
 protocol OverviewCoordinatorProtocol {
-    func coordinateToSteps(recipe: RecipesJson, currentStep: Int)
+    func coordinateToSteps(recipe: RecipeJson, currentStep: Int)
 }
 
 class OverviewCoordinator: Coordinator {
     let navigationController: UINavigationController
-    var recipe: RecipesJson?
+    var recipe: RecipeJson?
 
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -29,7 +29,7 @@ class OverviewCoordinator: Coordinator {
 }
 
 extension OverviewCoordinator: OverviewCoordinatorProtocol {
-    func coordinateToSteps(recipe: RecipesJson, currentStep: Int = 0) {
+    func coordinateToSteps(recipe: RecipeJson, currentStep: Int = 0) {
         // Todo: Push para a tela da Alley
     }
 }

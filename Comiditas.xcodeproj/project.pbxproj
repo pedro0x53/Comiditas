@@ -14,7 +14,7 @@
 		774D5A7326F36A84004176A1 /* Ext+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7226F36A84004176A1 /* Ext+UIColor.swift */; };
 		774D5A7A26F3711A004176A1 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7926F3711A004176A1 /* BaseView.swift */; };
 		774D5A7C26F37256004176A1 /* Ext+UIFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7B26F37256004176A1 /* Ext+UIFonts.swift */; };
-		77635CD926F2115800B36EC7 /* RecipesJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CD826F2115800B36EC7 /* RecipesJson.swift */; };
+		77635CD926F2115800B36EC7 /* RecipeJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CD826F2115800B36EC7 /* RecipeJson.swift */; };
 		77635CDB26F2124D00B36EC7 /* IngredientsJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CDA26F2124D00B36EC7 /* IngredientsJson.swift */; };
 		77635CDD26F214DA00B36EC7 /* StepJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CDC26F214DA00B36EC7 /* StepJson.swift */; };
 		77635CDF26F2185B00B36EC7 /* JsonStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CDE26F2185B00B36EC7 /* JsonStack.swift */; };
@@ -76,7 +76,7 @@
 		774D5A7226F36A84004176A1 /* Ext+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIColor.swift"; sourceTree = "<group>"; };
 		774D5A7926F3711A004176A1 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		774D5A7B26F37256004176A1 /* Ext+UIFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIFonts.swift"; sourceTree = "<group>"; };
-		77635CD826F2115800B36EC7 /* RecipesJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesJson.swift; sourceTree = "<group>"; };
+		77635CD826F2115800B36EC7 /* RecipeJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeJson.swift; sourceTree = "<group>"; };
 		77635CDA26F2124D00B36EC7 /* IngredientsJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsJson.swift; sourceTree = "<group>"; };
 		77635CDC26F214DA00B36EC7 /* StepJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepJson.swift; sourceTree = "<group>"; };
 		77635CDE26F2185B00B36EC7 /* JsonStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonStack.swift; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 		770BE81726F0DEB10032F0ED /* EntitiesJson */ = {
 			isa = PBXGroup;
 			children = (
-				77635CD826F2115800B36EC7 /* RecipesJson.swift */,
+				77635CD826F2115800B36EC7 /* RecipeJson.swift */,
 				77635CDA26F2124D00B36EC7 /* IngredientsJson.swift */,
 				77635CDC26F214DA00B36EC7 /* StepJson.swift */,
 			);
@@ -599,7 +599,7 @@
 				77E1C38C26F93BF100F8B0DF /* TagCollectionViewCell.swift in Sources */,
 				77E1C39126F944E500F8B0DF /* FeatureFlags.swift in Sources */,
 				774D5A7A26F3711A004176A1 /* BaseView.swift in Sources */,
-				77635CD926F2115800B36EC7 /* RecipesJson.swift in Sources */,
+				77635CD926F2115800B36EC7 /* RecipeJson.swift in Sources */,
 				FE95430B26F8CBFA0039F547 /* OverviewView.swift in Sources */,
 				FEC8B85426F9FD6400455143 /* DetailView.swift in Sources */,
 				774D5A7C26F37256004176A1 /* Ext+UIFonts.swift in Sources */,

@@ -8,14 +8,17 @@
 import UIKit
 
 protocol FeedTableViewCellProtocol: AnyObject {
-    func didSelectItemAt(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
-    func cellForItemAtCollectionView(_ collectionView: UICollectionView,
-                                     cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
-    func numberOfItemsInSection(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    func didSelectItemAt(recipe: RecipeJson)
 }
 
 class FeedTableViewCell: UITableViewCell {
     weak var delegate: FeedTableViewCellProtocol?
+
+    var data: [RecipeJson] = [] {
+        didSet {
+            self.collectionView.reloadData()
+        }
+    }
 
     // MARK: - Initialization
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -72,10 +75,7 @@ extension FeedTableViewCell {
 
 extension FeedTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if let rows = delegate?.numberOfItemsInSection(collectionView, numberOfItemsInSection: section) {
-            return rows
-        }
-        return .zero
+        return data.count
     }
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -84,14 +84,23 @@ extension FeedTableViewCell: UICollectionViewDelegate, UICollectionViewDataSourc
 
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = delegate?.cellForItemAtCollectionView(collectionView, cellForItemAt: indexPath)
-        else {
-            return UICollectionViewCell()
+        guard let cell = collectionView.dequeueReusableCell(
+                withReuseIdentifier: "FeedCollectionViewCell", for: indexPath) as? FeedCollectionViewCell
+        else { return UICollectionViewCell() }
+
+        if data.count > 0 {
+            let recipe = data[indexPath.row]
+            cell.titleLabel.text = recipe.name
+            let time = Time.secondsToHoursMinutesSeconds(seconds: recipe.prepTime)
+            cell.subtitleLabel.text = "\(time.minutes) minutos • \(recipe.servings) porções"
+            if let url = URL(string: recipe.imageURL) {
+                cell.imageView.load(url: url)
+            }
         }
         return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        delegate?.didSelectItemAt(collectionView, didSelectItemAt: indexPath)
+        delegate?.didSelectItemAt(recipe: data[indexPath.row])
     }
 }

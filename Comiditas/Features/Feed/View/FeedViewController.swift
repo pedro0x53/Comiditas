@@ -12,21 +12,18 @@ protocol FeedViewControllerProtocol: AnyObject {
     func displayRecommendations(viewModel: Feed.ViewModel)
 }
 
-protocol teste {
-    func reload()
-}
 class FeedViewController: UIViewController {
     var coordinator: FeedCoordinatorProtocol?
     let contentView = FeedView(frame: UIScreen.main.bounds)
     let tag: [String] = ["Doces", "Salgados"]
     var interactor: FeedInteractorProtocol?
-    var recipes: [RecipesJson] = [] {
+    var recipes: [RecipeJson] = [] {
         didSet {
             self.contentView.tableView.reloadData()
         }
     }
 
-    var recommendations: [RecipesJson] = [] {
+    var recommendations: [RecipeJson] = [] {
         didSet {
             self.contentView.tableView.reloadData()
         }
@@ -142,34 +139,13 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
             else { return UITableViewCell() }
         cell.delegate = self
         cell.reloadData()
+        cell.data = (indexPath.section == .zero) ? recommendations : recipes
         return cell
     }
 }
 
 extension FeedViewController: FeedTableViewCellProtocol {
-    func numberOfItemsInSection(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return recipes.count
-    }
-
-    func cellForItemAtCollectionView(_ collectionView: UICollectionView,
-                                     cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(
-                withReuseIdentifier: "FeedCollectionViewCell", for: indexPath) as? FeedCollectionViewCell
-        else { return UICollectionViewCell() }
-
-        if recipes.count > 0 {
-            let recipe = recipes[indexPath.row]
-            cell.titleLabel.text = recipe.name
-            let time = Time.secondsToHoursMinutesSeconds(seconds: recipe.prepTime)
-            cell.subtitleLabel.text = "\(time.hour) horas e \(time.minutes) minutos • \(recipe.servings) porções"
-            if let url = URL(string: recipe.imageURL) {
-                cell.imageView.load(url: url)
-            }
-        }
-        return cell
-    }
-
-    func didSelectItemAt(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        coordinator?.navigateToOverview(recipe: recipes[indexPath.row])
+    func didSelectItemAt(recipe: RecipeJson) {
+        coordinator?.navigateToOverview(recipe: recipe)
     }
 }

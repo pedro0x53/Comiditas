@@ -51,6 +51,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="lauchScreen" width="1024" height="1024"/>
+        <image name="lauchScreen" width="767" height="766"/>
     </resources>
 </document>

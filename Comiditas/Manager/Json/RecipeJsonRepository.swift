@@ -22,10 +22,10 @@ class RecipeJsonRepository {
         }
     }
 
-    public func readAll() -> [RecipesJson] {
+    public func readAll() -> [RecipeJson] {
         guard let data = data else { return [] }
         do {
-            let recipes = try jsonStack.decoder.decode([RecipesJson].self, from: data)
+            let recipes = try jsonStack.decoder.decode([RecipeJson].self, from: data)
             return recipes
         } catch {
             return []
