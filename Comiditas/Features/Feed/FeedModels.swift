@@ -8,12 +8,12 @@
 import Foundation
 
 enum Feed {
-    enum Feed {
-        struct Response {
-            let recipes: [RecipesJson]
-        }
-        struct ViewModel {
-            let recipes: [RecipesJson]
-        }
+    struct Response {
+        let recipes: [RecipesJson]
     }
+
+    struct ViewModel {
+        let recipes: [RecipesJson]
+    }
+
 }

@@ -28,7 +28,7 @@ class FeedView: UIView {
 
     lazy var tableView: UITableView = {
         let height = FeatureFlags.user.isEnable ? 250 : 220
-        let tableView = UITableView()
+        let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.register(FeedTableViewCell.self, forCellReuseIdentifier: "FeedTableViewCell")
         tableView.tableFooterView = UIView()
         tableView.backgroundColor = Colors.background
@@ -66,17 +66,26 @@ extension FeedView: BaseViewProtocol {
     }
 
     func setupConstraints() {
-        NSLayoutConstraint.activate([
-            tagCollectionView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor,
-                                                   constant: Metrics.tagCollectionView.top),
-            tagCollectionView.heightAnchor.constraint(equalToConstant: Metrics.tagCollectionView.height),
-            tagCollectionView.widthAnchor.constraint(equalTo: self.widthAnchor),
+        if FeatureFlags.tagsFeed.isEnable {
+            NSLayoutConstraint.activate([
+                tagCollectionView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor,
+                                                       constant: Metrics.tagCollectionView.top),
+                tagCollectionView.heightAnchor.constraint(equalToConstant: Metrics.tagCollectionView.height),
+                tagCollectionView.widthAnchor.constraint(equalTo: self.widthAnchor),
 
-            tableView.topAnchor.constraint(equalTo: self.tagCollectionView.bottomAnchor,
-                                           constant: Metrics.tableViewTop),
-            tableView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            tableView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            tableView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor)
-        ])
+                tableView.topAnchor.constraint(equalTo: self.tagCollectionView.bottomAnchor,
+                                               constant: Metrics.tableViewTop),
+                tableView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+                tableView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+                tableView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor)
+            ])
+        } else {
+            NSLayoutConstraint.activate([
+                tableView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
+                tableView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+                tableView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+                tableView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor)
+            ])
+        }
     }
 }

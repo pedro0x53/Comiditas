@@ -8,14 +8,14 @@
 import Foundation
 
 protocol FeedPresenterProtocol {
-    func presentRecipes(response: Feed.Feed.Response)
+    func presentRecipes(response: Feed.Response)
 }
 
 class FeedPresenter: FeedPresenterProtocol {
     weak var viewController: FeedViewControllerProtocol?
 
-    func presentRecipes(response: Feed.Feed.Response) {
-        let viewModel = Feed.Feed.ViewModel(recipes: response.recipes)
+    func presentRecipes(response: Feed.Response) {
+        let viewModel = Feed.ViewModel(recipes: response.recipes)
         viewController?.displayRecipes(viewModel: viewModel)
     }
 }

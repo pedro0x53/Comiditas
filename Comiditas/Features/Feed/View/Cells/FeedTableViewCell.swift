@@ -37,7 +37,7 @@ class FeedTableViewCell: UITableViewCell {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.isHidden = !FeatureFlags.tagsFeed.isEnable
+        collectionView.showsHorizontalScrollIndicator = false
         return collectionView
     }()
 

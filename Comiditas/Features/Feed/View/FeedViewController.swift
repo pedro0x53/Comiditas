@@ -8,7 +8,7 @@
 import UIKit
 
 protocol FeedViewControllerProtocol: AnyObject {
-    func displayRecipes(viewModel: Feed.Feed.ViewModel)
+    func displayRecipes(viewModel: Feed.ViewModel)
 }
 
 protocol teste {
@@ -56,9 +56,8 @@ class FeedViewController: UIViewController {
 }
 
 extension FeedViewController: FeedViewControllerProtocol {
-    func displayRecipes(viewModel: Feed.Feed.ViewModel) {
+    func displayRecipes(viewModel: Feed.ViewModel) {
         self.recipes = viewModel.recipes
-        print(recipes)
         self.contentView.tableView.reloadData()
     }
 }
@@ -93,7 +92,7 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        if section != .zero {
+        if section != .zero && FeatureFlags.tagsFeed.isEnable {
             let rect = CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 44)
             let headerView = UIView(frame: rect)
             headerView.backgroundColor = Colors.background
@@ -103,12 +102,26 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
             label.font = Fonts.h3
             headerView.addSubview(label)
             return headerView
+        } else {
+            let sectionsName = ["Recomendados pra você", "Outras receitas"]
+            let rect = CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 44)
+            let headerView = UIView(frame: rect)
+            headerView.backgroundColor = Colors.background
+            let label = UILabel(frame: CGRect(x: 15, y: 0, width: tableView.frame.size.width, height: 44))
+            label.text = sectionsName[section]
+            label.textColor = Colors.primary
+            label.font = Fonts.h3
+            headerView.addSubview(label)
+            return headerView
         }
-        return nil
     }
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return section != .zero ? 44 : .zero
+        if FeatureFlags.tagsFeed.isEnable {
+            return .zero
+        } else {
+            return 44
+        }
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -132,8 +145,13 @@ extension FeedViewController: FeedTableViewCellProtocol {
         else { return UICollectionViewCell() }
 
         if recipes.count > 0 {
-            var recipe = recipes[indexPath.row]
+            let recipe = recipes[indexPath.row]
             cell.titleLabel.text = recipe.name
+            let time = Time.secondsToHoursMinutesSeconds(seconds: recipe.prepTime)
+            cell.subtitleLabel.text = "\(time.hour) horas e \(time.minutes) minutos • \(recipe.servings) porções"
+            if let url = URL(string: recipe.imageURL) {
+                cell.imageView.load(url: url)
+            }
         }
         return cell
     }

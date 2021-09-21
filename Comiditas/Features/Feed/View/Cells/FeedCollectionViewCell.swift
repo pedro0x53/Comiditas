@@ -40,8 +40,6 @@ class FeedCollectionViewCell: UICollectionViewCell {
 
     lazy var imageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.backgroundColor = .purple
-        imageView.image = UIImage(assetIdentifier: .imgPizza)
         imageView.contentMode = .scaleAspectFill
         imageView.layer.cornerRadius = 15
         imageView.layer.masksToBounds = true
@@ -53,7 +51,6 @@ class FeedCollectionViewCell: UICollectionViewCell {
         let label = UILabel()
         label.font = Fonts.h6
         label.textColor = Colors.textDark
-        label.text = "15 minutos • 2 porções"
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()

@@ -17,7 +17,7 @@ class FeedInteractor: FeedInteractorProtocol {
     func getRecipes() {
         let json = RecipeJsonRepository()
         let data = json.readAll()
-        let response = Feed.Feed.Response(recipes: data)
+        let response = Feed.Response(recipes: data)
         presenter?.presentRecipes(response: response)
     }
 }

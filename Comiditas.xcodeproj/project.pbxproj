@@ -37,6 +37,9 @@
 		77E1C38F26F93FE400F8B0DF /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E1C38E26F93FE400F8B0DF /* FeedTableViewCell.swift */; };
 		77E1C39126F944E500F8B0DF /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E1C39026F944E500F8B0DF /* FeatureFlags.swift */; };
 		77E1C39326F94FA200F8B0DF /* FeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E1C39226F94FA200F8B0DF /* FeedCollectionViewCell.swift */; };
+		77FF2E4E26FA1CEE00FC63B5 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FF2E4D26FA1CEE00FC63B5 /* Time.swift */; };
+		FE95430026F8B2BD0039F547 /* Ext+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9542FF26F8B2BD0039F547 /* Ext+UIImageView.swift */; };
+		FE95430326F8B41D0039F547 /* UIImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE95430226F8B41D0039F547 /* UIImageViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +97,9 @@
 		77E1C39026F944E500F8B0DF /* FeatureFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeatureFlags.swift; path = Comiditas/Features/Feed/View/Cells/FeatureFlags.swift; sourceTree = SOURCE_ROOT; };
 		77E1C39226F94FA200F8B0DF /* FeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewCell.swift; sourceTree = "<group>"; };
 		77E1C39626F961F700F8B0DF /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		77FF2E4D26FA1CEE00FC63B5 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		FE9542FF26F8B2BD0039F547 /* Ext+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIImageView.swift"; sourceTree = "<group>"; };
+		FE95430226F8B41D0039F547 /* UIImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +223,7 @@
 		779F5EA626EF7458005668BE /* ComiditasTests */ = {
 			isa = PBXGroup;
 			children = (
+				FE95430126F8B2EB0039F547 /* Helpers */,
 				779F5EA726EF7458005668BE /* ComiditasTests.swift */,
 				77D70D1A26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift */,
 				779F5EA926EF7458005668BE /* Info.plist */,
@@ -256,6 +263,8 @@
 				770BE81426F0C7480032F0ED /* Ext+UIImage.swift */,
 				774D5A7B26F37256004176A1 /* Ext+UIFonts.swift */,
 				774D5A7226F36A84004176A1 /* Ext+UIColor.swift */,
+				FE9542FF26F8B2BD0039F547 /* Ext+UIImageView.swift */,
+				77FF2E4D26FA1CEE00FC63B5 /* Time.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -353,6 +362,14 @@
 				77E1C39226F94FA200F8B0DF /* FeedCollectionViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		FE95430126F8B2EB0039F547 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FE95430226F8B41D0039F547 /* UIImageViewTests.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -513,10 +530,12 @@
 				7713581026FA022100164BBC /* FeedModels.swift in Sources */,
 				7713580E26F9FC4400164BBC /* FeedPresenter.swift in Sources */,
 				77E1C38F26F93FE400F8B0DF /* FeedTableViewCell.swift in Sources */,
+				77FF2E4E26FA1CEE00FC63B5 /* Time.swift in Sources */,
 				77635CDF26F2185B00B36EC7 /* JsonStack.swift in Sources */,
 				770BE81526F0C7480032F0ED /* Ext+UIImage.swift in Sources */,
 				77E1C39326F94FA200F8B0DF /* FeedCollectionViewCell.swift in Sources */,
 				779F5E9026EF7456005668BE /* SceneDelegate.swift in Sources */,
+				FE95430026F8B2BD0039F547 /* Ext+UIImageView.swift in Sources */,
 				774D5A7326F36A84004176A1 /* Ext+UIColor.swift in Sources */,
 				7792905326F8B08700AAA0A4 /* FeedViewController.swift in Sources */,
 				7792904E26F8AE0800AAA0A4 /* AppCoordinator.swift in Sources */,
@@ -538,6 +557,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE95430326F8B41D0039F547 /* UIImageViewTests.swift in Sources */,
 				779F5EA826EF7458005668BE /* ComiditasTests.swift in Sources */,
 				77D70D1B26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift in Sources */,
 			);
