@@ -30,6 +30,10 @@
 		779F5EB326EF7458005668BE /* ComiditasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5EB226EF7458005668BE /* ComiditasUITests.swift */; };
 		77D70D1726F21FFA00A8B244 /* Recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 77D70D1626F21FFA00A8B244 /* Recipes.json */; };
 		77D70D1B26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D70D1A26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift */; };
+		77E1C38C26F93BF100F8B0DF /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E1C38B26F93BF100F8B0DF /* TagCollectionViewCell.swift */; };
+		77E1C38F26F93FE400F8B0DF /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E1C38E26F93FE400F8B0DF /* FeedTableViewCell.swift */; };
+		77E1C39126F944E500F8B0DF /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E1C39026F944E500F8B0DF /* FeatureFlags.swift */; };
+		77E1C39326F94FA200F8B0DF /* FeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E1C39226F94FA200F8B0DF /* FeedCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +83,10 @@
 		779F5EB426EF7458005668BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77D70D1626F21FFA00A8B244 /* Recipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Recipes.json; sourceTree = "<group>"; };
 		77D70D1A26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeJsonRepositoryTests.swift; sourceTree = "<group>"; };
+		77E1C38B26F93BF100F8B0DF /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
+		77E1C38E26F93FE400F8B0DF /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		77E1C39026F944E500F8B0DF /* FeatureFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeatureFlags.swift; path = Comiditas/Features/Feed/View/Cells/FeatureFlags.swift; sourceTree = SOURCE_ROOT; };
+		77E1C39226F94FA200F8B0DF /* FeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,7 @@
 		771CBACF26F8C356002569FE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				77E1C38D26F93CBF00F8B0DF /* Cells */,
 				7792905226F8B08700AAA0A4 /* FeedViewController.swift */,
 				7792905426F8B09800AAA0A4 /* FeedView.swift */,
 			);
@@ -279,6 +288,7 @@
 		779F5EC826EF74F9005668BE /* FeatureFlags */ = {
 			isa = PBXGroup;
 			children = (
+				77E1C39026F944E500F8B0DF /* FeatureFlags.swift */,
 			);
 			path = FeatureFlags;
 			sourceTree = "<group>";
@@ -323,6 +333,16 @@
 				779F5ECC26EF7559005668BE /* CoreData */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		77E1C38D26F93CBF00F8B0DF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				77E1C38B26F93BF100F8B0DF /* TagCollectionViewCell.swift */,
+				77E1C38E26F93FE400F8B0DF /* FeedTableViewCell.swift */,
+				77E1C39226F94FA200F8B0DF /* FeedCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -478,8 +498,10 @@
 			files = (
 				779F5E8E26EF7456005668BE /* AppDelegate.swift in Sources */,
 				77635CE126F2188B00B36EC7 /* RecipeJsonRepository.swift in Sources */,
+				77E1C38F26F93FE400F8B0DF /* FeedTableViewCell.swift in Sources */,
 				77635CDF26F2185B00B36EC7 /* JsonStack.swift in Sources */,
 				770BE81526F0C7480032F0ED /* Ext+UIImage.swift in Sources */,
+				77E1C39326F94FA200F8B0DF /* FeedCollectionViewCell.swift in Sources */,
 				779F5E9026EF7456005668BE /* SceneDelegate.swift in Sources */,
 				774D5A7326F36A84004176A1 /* Ext+UIColor.swift in Sources */,
 				7792905326F8B08700AAA0A4 /* FeedViewController.swift in Sources */,
@@ -488,6 +510,8 @@
 				7792904B26F8ADC500AAA0A4 /* CoordinatorProtocol.swift in Sources */,
 				7792905526F8B09800AAA0A4 /* FeedView.swift in Sources */,
 				77635CDB26F2124D00B36EC7 /* IngredientsJson.swift in Sources */,
+				77E1C38C26F93BF100F8B0DF /* TagCollectionViewCell.swift in Sources */,
+				77E1C39126F944E500F8B0DF /* FeatureFlags.swift in Sources */,
 				774D5A7A26F3711A004176A1 /* BaseView.swift in Sources */,
 				77635CD926F2115800B36EC7 /* RecipesJson.swift in Sources */,
 				774D5A7C26F37256004176A1 /* Ext+UIFonts.swift in Sources */,

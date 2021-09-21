@@ -11,6 +11,7 @@ extension UIImage {
     enum AssetIdentifier: String {
         case exemple = "exemple"
         case icExemple = "ic_exemple"
+        case imgPizza = "pizza"
     }
 
     convenience init?(assetIdentifier: AssetIdentifier) {
