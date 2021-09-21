@@ -9,5 +9,4 @@ import Foundation
 
 struct IngredientsJson: Decodable {
     let name: String
-    let measure: String
 }
