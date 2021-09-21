@@ -14,7 +14,7 @@ class RecipeHeaderCell: UITableViewCell, BaseViewProtocol {
 
     private let mainImage: UIImageView = {
         let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleToFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()

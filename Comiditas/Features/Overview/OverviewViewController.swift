@@ -16,7 +16,6 @@ class OverviewViewController: UIViewController {
 
     init(recipe: RecipesJson) {
         self.recipe = recipe
-
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -32,6 +31,7 @@ class OverviewViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.largeTitleDisplayMode = .never
     }
 }
 

@@ -1,50 +1,404 @@
 [
     {
-        "identifier": 2,
-        "name": "Bolo",
-        "imageURL": "",
+        "identifier": 1,
+        "name": "Bolo de tangerina",
+        "imageURL": "https://s2.glbimg.com/3TKizZ6TEdKtQ9BdNqN6Qemmk78=/0x0:1280x960/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/L/R/fXiR5pSuC4nEaHdG8dSg/receita-bolo-de-tangerina.jpg",
         "difficultyLevel": 2,
         "servings": 8,
         "prepTime": 120,
         "ingredients" : [
-            {
-                "name": "Ovo",
-                "measure": "2 unidades"
-            },
-            {
-                "name": "Farinha de trigo (sem fermento)",
-                "measure": "4 xicaras"
-            },
-            {
-                "name": "Fermento quimico",
-                "measure": "1 colher de sopa"
-            },
-            {
-                "name": "Cacau em pó",
-                "measure": "2 xicaras"
-            },
-            {
-                "name": "Leite liquido",
-                "measure": "3 xicaras"
-            }
+            "200 gramas de açúcar refinado",
+            "Raspas de três tangerinas",
+            "150 gramas de suco de tangerina",
+            "150 gramas de ovos",
+            "170 gramas de óleo",
+            "200 gramas de farinha de trigo",
+            "8 gramas de fermento em pó",
+            "2 gramas de sal",
         ],
         "categories" : [
-            "Sobremesa", "Chocolate"
+            "Doces"
         ],
         "rate": 5,
         "steps": [
             {
                "step": 1,
-               "stepDescription": "Separe as medidas udgyds hjdsggd jdvgv",
-               "hasTimer": true,
-               "timer": 20
+               "stepDescription": "Unte com manteiga e farinha de trigo uma forma de 20 centímetros de diâmetro.",
+               "hasTimer": false,
+               "timer": 0
             },
             {
                "step": 2,
-               "stepDescription": "Blabla bsy hgyeiwm dhfwb vhdkmb hddhydd.",
+               "stepDescription": "Preaqueça o forno a 190 graus.",
                "hasTimer": true,
-               "timer": 30
+               "timer": 600
+            },
+            {
+               "step": 3,
+               "stepDescription": "Misture bem o açúcar com as raspas da tangerina.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 4,
+               "stepDescription": "Acrescente a farinha, o fermento e o sal. Reserve.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 5,
+               "stepDescription": "Em uma tigela, misture o suco, o óleo e os ovos até incorporarem bem.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 6,
+               "stepDescription": "Vire os líquidos sobre os secos e mexa para homogeneizar.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 7,
+               "stepDescription": "Coloque a massa na forma preparada e leve ao forno preaquecido por cerca de 30 a 40 minutos.",
+               "hasTimer": true,
+               "timer": 2400
+            },
+        ]
+    },
+    {
+        "identifier": 2,
+        "name": "Brownie de banana",
+        "imageURL": "https://s2.glbimg.com/RFd_WIkagzQ2w_ZaRH8Fr1xsdmY=/0x0:1080x607/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/d/o/zCUj7wQ6A01kwN8wGqcg/essa-2-.png",
+        "difficultyLevel": 2,
+        "servings": 8,
+        "prepTime": 120,
+        "ingredients" : [
+            "2 a 5 bananas da terra maduras",
+            "1 xícara de chá de cacau em pó 100%",
+            "Meia xícara de chá de aveia em flocos",
+            "1 colher de sopa fermento em pó",
+            "1 xícara de chá de nozes picadas levemente torradas",
+            "1 colher de sobremesa de canela (opcional)",
+            "Meia xícara de chá de gotas de chocolate meio amargo forneáveis (opcional)",
+        ],
+        "categories" : [
+            "Doces"
+        ],
+        "rate": 3,
+        "steps": [
+            {
+               "step": 1,
+               "stepDescription": "Com a ajuda de um garfo, amasse bem as bananas até virar uma pasta.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 2,
+               "stepDescription": "Peneire o cacau e a canela, adicione a aveia e mexa bem.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 3,
+               "stepDescription": "Incorpore o fermento, as nozes e as gotas de chocolate.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 4,
+               "stepDescription": "Despeje em uma forma de 20 por 30 centímetros, untada com manteiga e forrada com papel manteiga e espalhe uniformemente.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 5,
+               "stepDescription": "Asse em forno preaquecido a 180 graus por 20 minutos.",
+               "hasTimer": true,
+               "timer": 1200
             }
         ]
-    }
+    },
+    {
+        "identifier": 3,
+        "name": "Muffin de chocolate",
+        "imageURL": "https://s2.glbimg.com/34NAyUJF12wdHWm_ia9BI5P9zFg=/0x0:3451x2301/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/T/j/0oLNRGS1iirRkxSq6eCQ/muffin-de-chocolate-receita.jpg",
+        "difficultyLevel": 3,
+        "servings": 12,
+        "prepTime": 50,
+        "ingredients" : [
+            "Meia xícara de farinha de trigo",
+            "Um quarto de xícara de açúcar mascavo",
+            "Um quarto de xícara de açúcar refinado",
+            "3 colheres de chá de cacau em pó",
+            "Um quarto de colher de chá de fermento em pó",
+            "Um quarto de colher de chá de sal",
+            "1 ovo",
+            "3 colheres de sopa de óleo vegetal",
+            "Um quarto de xícara (60 ml) de leite",
+            "1 colher de chá de essência de baunilha",
+            "Meia xícara de chá de chocolate em gotas ou picado",
+        ],
+        "categories" : [
+            "Doces"
+        ],
+        "rate": 3,
+        "steps": [
+            {
+               "step": 1,
+               "stepDescription": "Preaqueça o forno a 190 graus. Unte 6 forminhas muffins com manteiga ou spray desmoldante. Se preferir, você pode assar em forminhas de papel forneável.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 2,
+               "stepDescription": "Em uma tigela, misture todos os ingredientes secos. Reserve.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 3,
+               "stepDescription": "Em seguida, misture todos os ingredientes líquidos em outra tigela.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 4,
+               "stepDescription": "Vire a mistura dos ingredientes líquidos sobre os secos. Misture para homogeneizar.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 5,
+               "stepDescription": "Por último, acrescente a parte do chocolate.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 6,
+               "stepDescription": "Vire a massa nas forminhas e finalize com o restante do chocolate.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 7,
+               "stepDescription": "Leve ao forno preaquecido por cerca de 20 minutos.",
+               "hasTimer": true,
+               "timer": 1200
+            },
+            {
+               "step": 8,
+               "stepDescription": "Se você quiser, pode decorar os muffins de chocolate com merengue.",
+               "hasTimer": false,
+               "timer": 0
+            },
+        ]
+    },
+    {
+        "identifier": 4,
+        "name": "Bolo de limão com iogurte",
+        "imageURL": "https://s2.glbimg.com/vGRqwG9174Y8aEq6L7wZ6lbdkPc=/0x0:4986x3051/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/h/N/zxSuJvREqYqsNxjxlgbA/bolo-de-limao-com-iogurte-receita.jpg",
+        "difficultyLevel": 2,
+        "servings": 6,
+        "prepTime": 80,
+        "ingredients" : [
+            "1 xícara de chá mais um quarto de açúcar refinado",
+            "2 colheres de sopa de raspas de limão-taiti",
+            "3 ovos médios",
+            "Um quarto de xícara de óleo vegetal",
+            "1 pote de 170 gramas de iogurte natural ou grego",
+            "1 xícara e meia de farinha de trigo",
+            "2 colheres de chá de fermento em pó",
+            "Um quarto de colher de chá de sal"
+        ],
+        "categories" : [
+            "Doces"
+        ],
+        "rate": 3,
+        "steps": [
+            {
+               "step": 1,
+               "stepDescription": "Preaqueça o forno a 180 graus e forre uma forma bolo inglês, de 23 centímetros de comprimento, com papel manteiga.",
+               "hasTimer": true,
+               "timer": 600
+            },
+            {
+               "step": 2,
+               "stepDescription": "Em uma tigela, esfregue as raspas de limão com o açúcar. Isso é importante para liberar os óleos da casca da fruta.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 3,
+               "stepDescription": "Coloque o iogurte, os ovos e misture bem.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 4,
+               "stepDescription": "Acrescente o óleo e misture.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 5,
+               "stepDescription": "Adicione a farinha de trigo misturada ao fermento e o sal.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 6,
+               "stepDescription": "Vire a massa na forma preparada e leve ao forno até dourar por cerca de 45 minutos.",
+               "hasTimer": true,
+               "timer": 2700
+            },
+            {
+               "step": 7,
+               "stepDescription": "Sirva em seguida.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 8,
+               "stepDescription": "Se você quiser, pode decorar os muffins de chocolate com merengue.",
+               "hasTimer": false,
+               "timer": 0
+            },
+        ]
+    },
+    {
+        "identifier": 5,
+        "name": "Cake pop com sobras de bolo",
+        "imageURL": "https://s2.glbimg.com/w5j_jwsuDsE35J1v4Cz3rsXILtY=/0x0:2048x1365/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/L/7/FMJqACRPmdKhmV3QZZAA/cake-pop-com-sobras-de-bolo.jpg",
+        "difficultyLevel": 2,
+        "servings": 6,
+        "prepTime": 80,
+        "ingredients" : [
+            "Sobras de bolo",
+            "Creme de avelã a gosto",
+            "Chocolate derretido a gosto",
+            "Confeitos coloridos e castanha-de-caju para decorar",
+        ],
+        "categories" : [
+            "Doces"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+               "step": 1,
+               "stepDescription": "Em uma tigela, esfarele com as mãos as sobras de bolo.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 2,
+               "stepDescription": "Misture as sobras de bolo com algum tipo de recheio cremoso, como creme de avelã. Se quiser, pode usar doce de leite ou brigadeiro.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 3,
+               "stepDescription": "Acrescente o recheio até conseguir bolear a massa, sem que fique esfarelando.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 4,
+               "stepDescription": "Derreta chocolate da maneira de sua preferência.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 5,
+               "stepDescription": "Com palitos de pirulito, espete as bolinhas e cubra com chocolate derretido.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 6,
+               "stepDescription": "Decore as bolinhas com confeitos coloridos e castanha-de-caju picada.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 7,
+               "stepDescription": "Sirva em seguida.",
+               "hasTimer": false,
+               "timer": 0
+            },
+        ]
+    },
+    {
+        "identifier": 6,
+        "name": "Bolo de maçã com canela",
+        "imageURL": "https://s2.glbimg.com/43DfUj2mhHJGmSZceZaxW5tDU9w=/0x0:1280x960/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/h/Y/8EKaxrRR6PWYWrCBBKNg/bolo-de-maca-com-canela-2-.jpeg",
+        "difficultyLevel": 2,
+        "servings": 12,
+        "prepTime": 120,
+        "ingredients" : [
+            "1 e meia xícaras de maçã em cubinhos pequenos",
+            "1 xícara de açúcar",
+            "2 ovos",
+            "3/4 xícara de óleo",
+            "1 mais um terço xícaras de farinha de trigo",
+            "1 pitada de sal",
+            "1 pitada de noz moscada ralada",
+            "1 colher de chá de bicarbonato de sódio",
+            "1 colher de chá de canela em pó",
+            "meia xícara de uva passa preta sem semente",
+        ],
+        "categories" : [
+            "Doces"
+        ],
+        "rate": 3,
+        "steps": [
+            {
+               "step": 1,
+               "stepDescription": "Coloque os cubinhos de maçã em uma tigela e cubra com o açúcar.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 2,
+               "stepDescription": "Deixe descansar de vinte a trinta minutos, até notar uma água no fundo da tigela, o suco da maçã.",
+               "hasTimer": true,
+               "timer": 1500
+            },
+            {
+               "step": 3,
+               "stepDescription": "Junte os ovos e o óleo e mexa bem. Não precisa bater.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 4,
+               "stepDescription": "Peneire a farinha com sal, bicarbonato, canela e noz moscada e junte à tigela com as maçãs , ovos e óleo.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 5,
+               "stepDescription": "Misture bem. Não precisa bater, basta misturar até ficar homogêneo.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 6,
+               "stepDescription": "Acrescente as passas e nozes.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 7,
+               "stepDescription": "Despeje em uma forma de buraco no centro de vinte centímetros de diâmetro untada e enfarinhada e leve ao forno pré-aquecido a cento e oitenta graus por aproximadamente cinquenta minutos, ou até que esteja assado.",
+               "hasTimer": true,
+               "timer": 3000
+            },
+            {
+               "step": 8,
+               "stepDescription": "Retire do forno, espere dez minutos e desenforme.",
+               "hasTimer": true,
+               "timer": 600
+            },
+        ]
+    },
 ]
