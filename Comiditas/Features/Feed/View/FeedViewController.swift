@@ -9,6 +9,7 @@ import UIKit
 
 protocol FeedViewControllerProtocol: AnyObject {
     func displayRecipes(viewModel: Feed.ViewModel)
+    func displayRecommendations(viewModel: Feed.ViewModel)
 }
 
 protocol teste {
@@ -18,17 +19,24 @@ class FeedViewController: UIViewController {
     var coordinator: FeedCoordinatorProtocol?
     let contentView = FeedView(frame: UIScreen.main.bounds)
     let tag: [String] = ["Doces", "Salgados"]
+    var interactor: FeedInteractorProtocol?
     var recipes: [RecipesJson] = [] {
         didSet {
             self.contentView.tableView.reloadData()
         }
     }
-    var interactor: FeedInteractorProtocol?
+
+    var recommendations: [RecipesJson] = [] {
+        didSet {
+            self.contentView.tableView.reloadData()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupVIP()
         interactor?.getRecipes()
+        interactor?.getRecommendations()
         setupViewController()
     }
 
@@ -56,6 +64,11 @@ class FeedViewController: UIViewController {
 }
 
 extension FeedViewController: FeedViewControllerProtocol {
+    func displayRecommendations(viewModel: Feed.ViewModel) {
+        self.recommendations = viewModel.recipes
+        self.contentView.tableView.reloadData()
+    }
+
     func displayRecipes(viewModel: Feed.ViewModel) {
         self.recipes = viewModel.recipes
         self.contentView.tableView.reloadData()
@@ -134,7 +147,7 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension FeedViewController: FeedTableViewCellProtocol {
-    func numberOfItemsInSection() -> Int {
+    func numberOfItemsInSection(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return recipes.count
     }
 

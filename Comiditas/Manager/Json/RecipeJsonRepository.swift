@@ -8,10 +8,11 @@
 import Foundation
 
 class RecipeJsonRepository {
-    let jsonStack = JsonStack(forResource: "Recipes")
+    let jsonStack: JsonStack
     var data: Data?
 
-    init() {
+    init(named: String) {
+        self.jsonStack = JsonStack(forResource: named)
         loadData()
     }
 

@@ -9,15 +9,23 @@ import Foundation
 
 protocol FeedInteractorProtocol {
     func getRecipes()
+    func getRecommendations()
 }
 
 class FeedInteractor: FeedInteractorProtocol {
     var presenter: FeedPresenterProtocol?
 
     func getRecipes() {
-        let json = RecipeJsonRepository()
+        let json = RecipeJsonRepository(named: "Recipes")
         let data = json.readAll()
         let response = Feed.Response(recipes: data)
         presenter?.presentRecipes(response: response)
+    }
+
+    func getRecommendations() {
+        let json = RecipeJsonRepository(named: "Recommendations")
+        let data = json.readAll()
+        let response = Feed.Response(recipes: data)
+        presenter?.presentRecommendations(response: response)
     }
 }

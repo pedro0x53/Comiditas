@@ -11,7 +11,7 @@ protocol FeedTableViewCellProtocol: AnyObject {
     func didSelectItemAt(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
     func cellForItemAtCollectionView(_ collectionView: UICollectionView,
                                      cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
-    func numberOfItemsInSection() -> Int
+    func numberOfItemsInSection(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
 }
 
 class FeedTableViewCell: UITableViewCell {
@@ -72,7 +72,7 @@ extension FeedTableViewCell {
 
 extension FeedTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if let rows = delegate?.numberOfItemsInSection() {
+        if let rows = delegate?.numberOfItemsInSection(collectionView, numberOfItemsInSection: section) {
             return rows
         }
         return .zero
