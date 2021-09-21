@@ -7,13 +7,28 @@
 
 import UIKit
 
+protocol FeedViewControllerProtocol: AnyObject {
+    func displayRecipes(viewModel: Feed.Feed.ViewModel)
+}
+
+protocol teste {
+    func reload()
+}
 class FeedViewController: UIViewController {
     var coordinator: FeedCoordinatorProtocol?
     let contentView = FeedView(frame: UIScreen.main.bounds)
     let tag: [String] = ["Doces", "Salgados"]
+    var recipes: [RecipesJson] = [] {
+        didSet {
+            self.contentView.tableView.reloadData()
+        }
+    }
+    var interactor: FeedInteractorProtocol?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupVIP()
+        interactor?.getRecipes()
         setupViewController()
     }
 
@@ -27,6 +42,24 @@ class FeedViewController: UIViewController {
         contentView.tableView.delegate = self
         contentView.tableView.dataSource = self
         title = "Comiditas"
+    }
+
+    func setupVIP() {
+        let viewController = self
+        let interactor = FeedInteractor()
+        let presenter = FeedPresenter()
+
+        viewController.interactor = interactor
+        interactor.presenter = presenter
+        presenter.viewController = viewController
+    }
+}
+
+extension FeedViewController: FeedViewControllerProtocol {
+    func displayRecipes(viewModel: Feed.Feed.ViewModel) {
+        self.recipes = viewModel.recipes
+        print(recipes)
+        self.contentView.tableView.reloadData()
     }
 }
 
@@ -81,6 +114,31 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "FeedTableViewCell") as? FeedTableViewCell
             else { return UITableViewCell() }
+        cell.delegate = self
+        cell.reloadData()
         return cell
+    }
+}
+
+extension FeedViewController: FeedTableViewCellProtocol {
+    func numberOfItemsInSection() -> Int {
+        return recipes.count
+    }
+
+    func cellForItemAtCollectionView(_ collectionView: UICollectionView,
+                                     cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(
+                withReuseIdentifier: "FeedCollectionViewCell", for: indexPath) as? FeedCollectionViewCell
+        else { return UICollectionViewCell() }
+
+        if recipes.count > 0 {
+            var recipe = recipes[indexPath.row]
+            cell.titleLabel.text = recipe.name
+        }
+        return cell
+    }
+
+    func didSelectItemAt(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        coordinator?.navigateToOverview(recipes: recipes[indexPath.row])
     }
 }

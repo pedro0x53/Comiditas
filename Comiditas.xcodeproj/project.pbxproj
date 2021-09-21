@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		770BE81526F0C7480032F0ED /* Ext+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BE81426F0C7480032F0ED /* Ext+UIImage.swift */; };
+		7713580C26F9FC3700164BBC /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713580B26F9FC3700164BBC /* FeedInteractor.swift */; };
+		7713580E26F9FC4400164BBC /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713580D26F9FC4400164BBC /* FeedPresenter.swift */; };
+		7713581026FA022100164BBC /* FeedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713580F26FA022100164BBC /* FeedModels.swift */; };
 		774D5A7326F36A84004176A1 /* Ext+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7226F36A84004176A1 /* Ext+UIColor.swift */; };
 		774D5A7A26F3711A004176A1 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7926F3711A004176A1 /* BaseView.swift */; };
 		774D5A7C26F37256004176A1 /* Ext+UIFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7B26F37256004176A1 /* Ext+UIFonts.swift */; };
@@ -55,6 +58,9 @@
 
 /* Begin PBXFileReference section */
 		770BE81426F0C7480032F0ED /* Ext+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ext+UIImage.swift"; sourceTree = "<group>"; };
+		7713580B26F9FC3700164BBC /* FeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
+		7713580D26F9FC4400164BBC /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
+		7713580F26FA022100164BBC /* FeedModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModels.swift; sourceTree = "<group>"; };
 		774D5A7226F36A84004176A1 /* Ext+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIColor.swift"; sourceTree = "<group>"; };
 		774D5A7926F3711A004176A1 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		774D5A7B26F37256004176A1 /* Ext+UIFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIFonts.swift"; sourceTree = "<group>"; };
@@ -87,6 +93,7 @@
 		77E1C38E26F93FE400F8B0DF /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		77E1C39026F944E500F8B0DF /* FeatureFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeatureFlags.swift; path = Comiditas/Features/Feed/View/Cells/FeatureFlags.swift; sourceTree = SOURCE_ROOT; };
 		77E1C39226F94FA200F8B0DF /* FeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewCell.swift; sourceTree = "<group>"; };
+		77E1C39626F961F700F8B0DF /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +172,9 @@
 			children = (
 				771CBACF26F8C356002569FE /* View */,
 				7792905626F8B18800AAA0A4 /* FeedCoordinator.swift */,
+				7713580B26F9FC3700164BBC /* FeedInteractor.swift */,
+				7713580D26F9FC4400164BBC /* FeedPresenter.swift */,
+				7713580F26FA022100164BBC /* FeedModels.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -431,6 +441,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 779F5E8126EF7456005668BE;
 			productRefGroup = 779F5E8B26EF7456005668BE /* Products */;
@@ -498,6 +509,9 @@
 			files = (
 				779F5E8E26EF7456005668BE /* AppDelegate.swift in Sources */,
 				77635CE126F2188B00B36EC7 /* RecipeJsonRepository.swift in Sources */,
+				7713580C26F9FC3700164BBC /* FeedInteractor.swift in Sources */,
+				7713581026FA022100164BBC /* FeedModels.swift in Sources */,
+				7713580E26F9FC4400164BBC /* FeedPresenter.swift in Sources */,
 				77E1C38F26F93FE400F8B0DF /* FeedTableViewCell.swift in Sources */,
 				77635CDF26F2185B00B36EC7 /* JsonStack.swift in Sources */,
 				770BE81526F0C7480032F0ED /* Ext+UIImage.swift in Sources */,
@@ -557,6 +571,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				779F5E9C26EF7457005668BE /* Base */,
+				77E1C39626F961F700F8B0DF /* pt-BR */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -568,6 +583,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -629,6 +645,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

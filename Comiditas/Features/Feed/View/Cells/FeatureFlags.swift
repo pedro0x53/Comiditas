@@ -10,13 +10,16 @@ import Foundation
 enum FeatureFlags: Int {
     case tagsFeed
     case user
+    case teste
 
     var isEnable: Bool {
         switch self {
         case .tagsFeed:
             return true
         case .user:
-            return true
+            return false
+        case .teste:
+            return false
         }
     }
 }

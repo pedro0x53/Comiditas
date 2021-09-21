@@ -8,7 +8,7 @@
 import UIKit
 
 protocol FeedCoordinatorProtocol: AnyObject {
-    func coordinateToTabBar()
+    func navigateToOverview(recipes: RecipesJson)
 }
 
 class FeedCoordinator: Coordinator {
@@ -26,7 +26,7 @@ class FeedCoordinator: Coordinator {
 }
 
 extension FeedCoordinator: FeedCoordinatorProtocol {
-    func coordinateToTabBar() {
-        // Todo: Push para a tela do pedro
+    func navigateToOverview(recipes: RecipesJson) {
+        print("ir para pedro")
     }
 }

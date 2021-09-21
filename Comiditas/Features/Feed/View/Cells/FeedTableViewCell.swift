@@ -7,7 +7,15 @@
 
 import UIKit
 
+protocol FeedTableViewCellProtocol: AnyObject {
+    func didSelectItemAt(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
+    func cellForItemAtCollectionView(_ collectionView: UICollectionView,
+                                     cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    func numberOfItemsInSection() -> Int
+}
+
 class FeedTableViewCell: UITableViewCell {
+    weak var delegate: FeedTableViewCellProtocol?
 
     // MARK: - Initialization
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -45,6 +53,10 @@ class FeedTableViewCell: UITableViewCell {
 
         return layout
     }
+
+    func reloadData() {
+        collectionView.reloadData()
+    }
 }
 
 // MARK: - UI Setup
@@ -60,7 +72,10 @@ extension FeedTableViewCell {
 
 extension FeedTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        if let rows = delegate?.numberOfItemsInSection() {
+            return rows
+        }
+        return .zero
     }
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -69,11 +84,14 @@ extension FeedTableViewCell: UICollectionViewDelegate, UICollectionViewDataSourc
 
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(
-                withReuseIdentifier: "FeedCollectionViewCell", for: indexPath) as? FeedCollectionViewCell
-        else { return UICollectionViewCell() }
-
-        cell.titleLabel.text = "Texto"
+        guard let cell = delegate?.cellForItemAtCollectionView(collectionView, cellForItemAt: indexPath)
+        else {
+            return UICollectionViewCell()
+        }
         return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.didSelectItemAt(collectionView, didSelectItemAt: indexPath)
     }
 }
