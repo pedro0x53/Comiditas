@@ -15,8 +15,6 @@ class FinishViewController: UIViewController {
         navigationController?.isNavigationBarHidden = true
         view.backgroundColor = .white
 
-//        let finishView = FinishModalView()
-//        view.addSubview(finishView)
     }
 
 }
