@@ -685,5 +685,109 @@
              "timer": 0
           }
          ]
-      }
+      },
+      {
+         "identifier": 10,
+         "name": "Patê de peito de peru",
+         "imageURL": "https://img.itdg.com.br/tdg/images/recipes/000/049/442/135927/135927_original.jpg?mode=crop&width=710&height=400",
+         "difficultyLevel": 2,
+         "servings": 1,
+         "prepTime": 300,
+         "ingredients" : [
+            "200 gramas de peito de peru",
+            "80 gramas de cenoura ralada",
+            "1 copo de requeijão (200g)",
+            "1 colher de sopa cheia de maionese",
+            "1/2 (meia) cebola",
+            "Salsinha a gosto", 
+            "Sal a gosto"
+         ],
+         "categories" : [
+             "Salgados",
+             "Patê"
+         ],
+         "rate": 5,
+         "steps": [
+             {
+                "step": 1,
+                "stepDescription": "Tritura o peito de peru no mini-processador ou pique com uma faca e separe.",
+                "hasTimer": false,
+                "timer": 0
+             },
+             {
+                "step": 2,
+                "stepDescription": "Triture a cebola e a cenoura no link-processador",
+                "hasTimer": false,
+                "timer": 0
+             },
+             {
+                "step": 3,
+                "stepDescription": "Em uma tigela mistura o peito de peru, a cebola com cenoura, o requeijão e a maionese ",
+                "hasTimer": false,
+                "timer": 0
+             },
+             {
+                "step": 4,
+                "stepDescription": "Acrescente salsinha e sal a gosto",
+                "hasTimer": false,
+                "timer": 0
+             },
+             {
+                "step": 5,
+                "stepDescription": "Sirva em seguida ou reserve na geladeira",
+                "hasTimer": false,
+                "timer": 0
+             }
+         ]
+     },
+     {
+      "identifier": 11,
+      "name": "Penne ao molho branco de camarão",
+      "imageURL": "https://img.itdg.com.br/tdg/images/recipes/000/049/442/135927/135927_original.jpg?mode=crop&width=710&height=400",
+      "difficultyLevel": 2,
+      "servings": 2,
+      "prepTime": 2400,
+      "ingredients" : [
+         "300 gramas de macarrão penne",
+         "300 gramas de camarão descascado",
+         "2 dentes de alho",
+         "1/2 (meia) cebola",
+         "500ml de leite",
+         "2 colheres de sopa de farinha de trigo",
+         "Noz moscada a gosto",
+         "Pimenta do reino a gosto",
+         "Sal a gosto"
+      ],
+      "categories" : [
+          "Massas",
+          "Salgados"
+      ],
+      "rate": 5,
+      "steps": [
+          {
+             "step": 1,
+             "stepDescription": "Frite os camarões com um fio de azeite e o alho até dourar, por cerca de 3 minutos. Reserve.",
+             "hasTimer": true,
+             "timer": 180
+          },
+          {
+             "step": 2,
+             "stepDescription": "Cozinhe o macarrão conforme indicação de marca e reserve.",
+             "hasTimer": false,
+             "timer": 0
+          },
+          {
+             "step": 3,
+             "stepDescription": "Em outra panela, refolgue a cebola com um fio de azeite e adicione a farinha de trigo. Mexa bem até formar uma massa. Acrescente o leite e misture até que o molho fique homogêneo. Acrescente o sal, noz moscada e pimenta do reino a gosto. E por fim, o camarão. Misture",
+             "hasTimer": false,
+             "timer": 0
+          },
+          {
+             "step": 4,
+             "stepDescription": "Em seguida, sirva com o macarrão.",
+             "hasTimer": false,
+             "timer": 0
+          }
+      ]
+  }
 ]
