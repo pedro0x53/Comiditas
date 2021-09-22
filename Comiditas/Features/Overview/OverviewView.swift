@@ -39,7 +39,7 @@ class OverviewView: UIView {
         button.titleLabel?.font = Fonts.h5
         button.translatesAutoresizingMaskIntoConstraints = false
         button.isAccessibilityElement = true
-        button.accessibilityLabel = "Iniciar passoa a passo"
+        button.accessibilityLabel = "Iniciar passo a passo"
         return button
     }()
 
