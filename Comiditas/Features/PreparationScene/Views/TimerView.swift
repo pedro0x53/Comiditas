@@ -93,8 +93,8 @@ class TimerView: UIView {
         ])
     }
 
-    override func draw(_ rect: CGRect) {
-        super.draw(rect)
+    override func layoutSubviews() {
+        super.layoutSubviews()
 
         timerLabel.layer.borderWidth = 5
         timerLabel.layer.borderColor = Colors.primary.cgColor

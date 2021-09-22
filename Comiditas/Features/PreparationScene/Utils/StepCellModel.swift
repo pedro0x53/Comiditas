@@ -10,4 +10,11 @@ import Foundation
 enum StepCellModel {
     case simpleStep(text: String)
     case stepWithTimer(text: String, time: TimeInterval)
+
+    var time: TimeInterval? {
+        switch self {
+        case .simpleStep(_): return nil
+        case .stepWithTimer(_, let time): return time
+        }
+    }
 }

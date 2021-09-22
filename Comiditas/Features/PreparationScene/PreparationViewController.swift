@@ -130,12 +130,54 @@ extension PreparationViewController: PreparationDisplayLogic {
 
 extension PreparationViewController: PreparationViewDelegate {
 
+    func callAlert(okAction: @escaping () -> Void) {
+        let alertMessage = "O temporizador será reiniciado se você sair desse passo. Você tem certeza que quer continuar?"
+        let alert = UIAlertController(
+            title: "Atenção",
+            message: alertMessage,
+            preferredStyle: .alert
+        )
+        let okAction = UIAlertAction(
+            title: "Continuar",
+            style: .default
+        ) { _ in
+            okAction()
+        }
+        let cancelAction = UIAlertAction(title: "Cancelar", style: .destructive, handler: nil)
+        alert.addAction(cancelAction)
+        alert.addAction(okAction)
+
+        self.present(alert, animated: true, completion: nil)
+    }
+
     func didPressNextButton(indexPath: IndexPath) {
-        goToNextInstruction(indexPath: indexPath)
+        if let cell = preparationView.collectionView.cellForItem(
+            at: preparationView.indexPathOnScreen
+        ) as? StepWithTimerCell,
+            cell.timerView.timerIsRunning {
+
+            callAlert(okAction: { [weak self] in
+                self?.goToNextInstruction(indexPath: indexPath)
+            })
+
+        } else {
+            self.goToNextInstruction(indexPath: indexPath)
+        }
     }
 
     func didPressPreviousButton(indexPath: IndexPath) {
-        goToPreviousInstruction(indexPath: indexPath)
+        if let cell = preparationView.collectionView.cellForItem(
+            at: preparationView.indexPathOnScreen
+        ) as? StepWithTimerCell,
+            cell.timerView.timerIsRunning {
+
+            callAlert(okAction: { [weak self] in
+                self?.goToPreviousInstruction(indexPath: indexPath)
+            })
+
+        } else {
+            goToPreviousInstruction(indexPath: indexPath)
+        }
     }
 
     func didFinish() {

@@ -17,7 +17,6 @@
 		1894725B26F9F9FF00E6CD8B /* PreparationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894725A26F9F9FF00E6CD8B /* PreparationPresenter.swift */; };
 		1894725D26F9FE4600E6CD8B /* PreparationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894725C26F9FE4600E6CD8B /* PreparationViewController.swift */; };
 		18F8E17B26FA898E00B5766B /* StepCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8E17A26FA898E00B5766B /* StepCellModel.swift */; };
-		18F8E17D26FA9AC900B5766B /* TimerPreparationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8E17C26FA9AC900B5766B /* TimerPreparationCollectionViewCell.swift */; };
 		18F8E17F26FAA22500B5766B /* SimpleStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8E17E26FAA22500B5766B /* SimpleStepCell.swift */; };
 		18F8E18126FAA35600B5766B /* StepWithTimerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8E18026FAA35600B5766B /* StepWithTimerCell.swift */; };
 		770BE81526F0C7480032F0ED /* Ext+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BE81426F0C7480032F0ED /* Ext+UIImage.swift */; };
@@ -92,7 +91,6 @@
 		1894725A26F9F9FF00E6CD8B /* PreparationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationPresenter.swift; sourceTree = "<group>"; };
 		1894725C26F9FE4600E6CD8B /* PreparationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationViewController.swift; sourceTree = "<group>"; };
 		18F8E17A26FA898E00B5766B /* StepCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCellModel.swift; sourceTree = "<group>"; };
-		18F8E17C26FA9AC900B5766B /* TimerPreparationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPreparationCollectionViewCell.swift; sourceTree = "<group>"; };
 		18F8E17E26FAA22500B5766B /* SimpleStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStepCell.swift; sourceTree = "<group>"; };
 		18F8E18026FAA35600B5766B /* StepWithTimerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepWithTimerCell.swift; sourceTree = "<group>"; };
 		770BE81426F0C7480032F0ED /* Ext+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ext+UIImage.swift"; sourceTree = "<group>"; };
@@ -185,7 +183,8 @@
 			isa = PBXGroup;
 			children = (
 				1894725626F9F9E500E6CD8B /* PreparationView.swift */,
-				18F8E17C26FA9AC900B5766B /* TimerPreparationCollectionViewCell.swift */,
+				18F8E18026FAA35600B5766B /* StepWithTimerCell.swift */,
+				18F8E17E26FAA22500B5766B /* SimpleStepCell.swift */,
 				18398CE926FA3F490054E054 /* TimerView.swift */,
 			);
 			path = Views;
@@ -267,8 +266,6 @@
 		779F5E8126EF7456005668BE = {
 			isa = PBXGroup;
 			children = (
-				18F8E18026FAA35600B5766B /* StepWithTimerCell.swift */,
-				18F8E17E26FAA22500B5766B /* SimpleStepCell.swift */,
 				779F5E8C26EF7456005668BE /* Comiditas */,
 				779F5EA626EF7458005668BE /* ComiditasTests */,
 				779F5EB126EF7458005668BE /* ComiditasUITests */,
@@ -642,7 +639,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				779F5E8E26EF7456005668BE /* AppDelegate.swift in Sources */,
-				18F8E17D26FA9AC900B5766B /* TimerPreparationCollectionViewCell.swift in Sources */,
 				77635CE126F2188B00B36EC7 /* RecipeJsonRepository.swift in Sources */,
 				FE4E4DE826F9F69C007E78F4 /* OverviewViewController.swift in Sources */,
 				7713580C26F9FC3700164BBC /* FeedInteractor.swift in Sources */,

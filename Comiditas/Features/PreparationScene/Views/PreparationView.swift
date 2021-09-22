@@ -245,6 +245,22 @@ extension PreparationView: UICollectionViewDelegate, UICollectionViewDataSource,
     ) {
         indexPathOnScreen = indexPath
         currentPageLabel.text = "Passo \(indexPath.row + 1)"
+
+        // Reset timer
+        if let currentCell = cell as? StepWithTimerCell,
+           let time = steps[indexPath.row].time {
+            currentCell.setupTimer(duration: time)
+        }
+    }
+
+    func collectionView(
+        _ collectionView: UICollectionView,
+        didEndDisplaying cell: UICollectionViewCell,
+        forItemAt indexPath: IndexPath) {
+        // Invalidate timer
+        if let currentCell = cell as? StepWithTimerCell {
+            currentCell.timerView.timerIsRunning = false
+        }
     }
 
 }

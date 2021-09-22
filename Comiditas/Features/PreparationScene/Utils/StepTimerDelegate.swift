@@ -45,6 +45,7 @@ class StepTimer {
 
     func invalidate() {
         timer?.invalidate()
+        timer = nil
     }
 
     @objc func tick(_ timer: Timer) {
