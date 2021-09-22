@@ -8,7 +8,6 @@
 import UIKit
 
 class FinishViewController: UIViewController {
-    var coordinator: FeedCoordinatorProtocol?
 
     override func viewDidLoad() {
         super.viewDidLoad()

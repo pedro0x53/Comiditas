@@ -93,14 +93,14 @@ class FinishModalView: UIView {
         ])
 
         NSLayoutConstraint.activate([
-            cakeImage.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 16),
-            cakeImage.widthAnchor.constraint(equalToConstant: 208),
-            cakeImage.heightAnchor.constraint(equalToConstant: 150),
-            cakeImage.centerXAnchor.constraint(equalTo: self.centerXAnchor)
+            cakeImage.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.size.width*0.65),
+            cakeImage.heightAnchor.constraint(equalTo: cakeImage.widthAnchor, multiplier: 0.7212),
+            cakeImage.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            cakeImage.centerYAnchor.constraint(equalTo: self.centerYAnchor)
         ])
 
         NSLayoutConstraint.activate([
-            okButton.topAnchor.constraint(equalTo: cakeImage.bottomAnchor, constant: 40),
+            okButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -16),
             okButton.widthAnchor.constraint(equalToConstant: 160),
             okButton.heightAnchor.constraint(equalToConstant: 40),
             okButton.centerXAnchor.constraint(equalTo: self.centerXAnchor)
