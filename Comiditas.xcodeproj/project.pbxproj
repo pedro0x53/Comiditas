@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18398CEA26FA3F490054E054 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18398CE926FA3F490054E054 /* TimerView.swift */; };
+		18398CEC26FA3F720054E054 /* StepTimerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18398CEB26FA3F720054E054 /* StepTimerDelegate.swift */; };
+		18398CF026FA60640054E054 /* PreparationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18398CEF26FA60640054E054 /* PreparationModels.swift */; };
+		18398CF226FA66890054E054 /* PreparationWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18398CF126FA66890054E054 /* PreparationWorker.swift */; };
+		1894725726F9F9E500E6CD8B /* PreparationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894725626F9F9E500E6CD8B /* PreparationView.swift */; };
+		1894725926F9F9F700E6CD8B /* PreparationInterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894725826F9F9F700E6CD8B /* PreparationInterator.swift */; };
+		1894725B26F9F9FF00E6CD8B /* PreparationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894725A26F9F9FF00E6CD8B /* PreparationPresenter.swift */; };
+		1894725D26F9FE4600E6CD8B /* PreparationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894725C26F9FE4600E6CD8B /* PreparationViewController.swift */; };
+		18F8E17B26FA898E00B5766B /* StepCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8E17A26FA898E00B5766B /* StepCellModel.swift */; };
+		18F8E17D26FA9AC900B5766B /* TimerPreparationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8E17C26FA9AC900B5766B /* TimerPreparationCollectionViewCell.swift */; };
+		18F8E17F26FAA22500B5766B /* SimpleStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8E17E26FAA22500B5766B /* SimpleStepCell.swift */; };
+		18F8E18126FAA35600B5766B /* StepWithTimerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8E18026FAA35600B5766B /* StepWithTimerCell.swift */; };
 		770BE81526F0C7480032F0ED /* Ext+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BE81426F0C7480032F0ED /* Ext+UIImage.swift */; };
 		774D5A7326F36A84004176A1 /* Ext+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7226F36A84004176A1 /* Ext+UIColor.swift */; };
 		774D5A7A26F3711A004176A1 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7926F3711A004176A1 /* BaseView.swift */; };
@@ -52,6 +64,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18398CE926FA3F490054E054 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		18398CEB26FA3F720054E054 /* StepTimerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepTimerDelegate.swift; sourceTree = "<group>"; };
+		18398CEF26FA60640054E054 /* PreparationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationModels.swift; sourceTree = "<group>"; };
+		18398CF126FA66890054E054 /* PreparationWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationWorker.swift; sourceTree = "<group>"; };
+		1894725626F9F9E500E6CD8B /* PreparationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationView.swift; sourceTree = "<group>"; };
+		1894725826F9F9F700E6CD8B /* PreparationInterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationInterator.swift; sourceTree = "<group>"; };
+		1894725A26F9F9FF00E6CD8B /* PreparationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationPresenter.swift; sourceTree = "<group>"; };
+		1894725C26F9FE4600E6CD8B /* PreparationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationViewController.swift; sourceTree = "<group>"; };
+		18F8E17A26FA898E00B5766B /* StepCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCellModel.swift; sourceTree = "<group>"; };
+		18F8E17C26FA9AC900B5766B /* TimerPreparationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPreparationCollectionViewCell.swift; sourceTree = "<group>"; };
+		18F8E17E26FAA22500B5766B /* SimpleStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStepCell.swift; sourceTree = "<group>"; };
+		18F8E18026FAA35600B5766B /* StepWithTimerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepWithTimerCell.swift; sourceTree = "<group>"; };
 		770BE81426F0C7480032F0ED /* Ext+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ext+UIImage.swift"; sourceTree = "<group>"; };
 		774D5A7226F36A84004176A1 /* Ext+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIColor.swift"; sourceTree = "<group>"; };
 		774D5A7926F3711A004176A1 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
@@ -110,6 +134,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18398CF326FA669B0054E054 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				18F8E17A26FA898E00B5766B /* StepCellModel.swift */,
+				18398CEB26FA3F720054E054 /* StepTimerDelegate.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		18398CF426FA66AF0054E054 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1894725626F9F9E500E6CD8B /* PreparationView.swift */,
+				18F8E17C26FA9AC900B5766B /* TimerPreparationCollectionViewCell.swift */,
+				18398CE926FA3F490054E054 /* TimerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1894725526F9F99000E6CD8B /* PreparationScene */ = {
+			isa = PBXGroup;
+			children = (
+				18398CF326FA669B0054E054 /* Utils */,
+				18398CF426FA66AF0054E054 /* Views */,
+				18398CEF26FA60640054E054 /* PreparationModels.swift */,
+				1894725C26F9FE4600E6CD8B /* PreparationViewController.swift */,
+				1894725826F9F9F700E6CD8B /* PreparationInterator.swift */,
+				1894725A26F9F9FF00E6CD8B /* PreparationPresenter.swift */,
+				18398CF126FA66890054E054 /* PreparationWorker.swift */,
+			);
+			path = PreparationScene;
+			sourceTree = "<group>";
+		};
 		770BE81626F0DDC60032F0ED /* Json */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +216,8 @@
 		779F5E8126EF7456005668BE = {
 			isa = PBXGroup;
 			children = (
+				18F8E18026FAA35600B5766B /* StepWithTimerCell.swift */,
+				18F8E17E26FAA22500B5766B /* SimpleStepCell.swift */,
 				779F5E8C26EF7456005668BE /* Comiditas */,
 				779F5EA626EF7458005668BE /* ComiditasTests */,
 				779F5EB126EF7458005668BE /* ComiditasUITests */,
@@ -256,6 +315,7 @@
 			children = (
 				7792905126F8B04C00AAA0A4 /* Feed */,
 				7792904C26F8ADEF00AAA0A4 /* AppCoordinator */,
+				1894725526F9F99000E6CD8B /* PreparationScene */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -483,23 +543,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				779F5E8E26EF7456005668BE /* AppDelegate.swift in Sources */,
+				18F8E17D26FA9AC900B5766B /* TimerPreparationCollectionViewCell.swift in Sources */,
 				77635CE126F2188B00B36EC7 /* RecipeJsonRepository.swift in Sources */,
 				77635CDF26F2185B00B36EC7 /* JsonStack.swift in Sources */,
 				770BE81526F0C7480032F0ED /* Ext+UIImage.swift in Sources */,
 				779F5E9026EF7456005668BE /* SceneDelegate.swift in Sources */,
+				1894725926F9F9F700E6CD8B /* PreparationInterator.swift in Sources */,
+				18398CEA26FA3F490054E054 /* TimerView.swift in Sources */,
+				18F8E17B26FA898E00B5766B /* StepCellModel.swift in Sources */,
 				FE95430026F8B2BD0039F547 /* Ext+UIImageView.swift in Sources */,
+				18398CF026FA60640054E054 /* PreparationModels.swift in Sources */,
+				18F8E18126FAA35600B5766B /* StepWithTimerCell.swift in Sources */,
+				18398CF226FA66890054E054 /* PreparationWorker.swift in Sources */,
 				774D5A7326F36A84004176A1 /* Ext+UIColor.swift in Sources */,
 				7792905326F8B08700AAA0A4 /* FeedViewController.swift in Sources */,
 				7792904E26F8AE0800AAA0A4 /* AppCoordinator.swift in Sources */,
+				1894725D26F9FE4600E6CD8B /* PreparationViewController.swift in Sources */,
 				779F5E9826EF7456005668BE /* Comiditas.xcdatamodeld in Sources */,
 				7792904B26F8ADC500AAA0A4 /* CoordinatorProtocol.swift in Sources */,
+				1894725B26F9F9FF00E6CD8B /* PreparationPresenter.swift in Sources */,
 				7792905526F8B09800AAA0A4 /* FeedView.swift in Sources */,
+				1894725726F9F9E500E6CD8B /* PreparationView.swift in Sources */,
 				77635CDB26F2124D00B36EC7 /* IngredientsJson.swift in Sources */,
 				774D5A7A26F3711A004176A1 /* BaseView.swift in Sources */,
 				77635CD926F2115800B36EC7 /* RecipesJson.swift in Sources */,
+				18398CEC26FA3F720054E054 /* StepTimerDelegate.swift in Sources */,
 				774D5A7C26F37256004176A1 /* Ext+UIFonts.swift in Sources */,
 				7792905726F8B18800AAA0A4 /* FeedCoordinator.swift in Sources */,
 				77635CDD26F214DA00B36EC7 /* StepJson.swift in Sources */,
+				18F8E17F26FAA22500B5766B /* SimpleStepCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
