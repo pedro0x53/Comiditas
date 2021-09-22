@@ -118,7 +118,6 @@ class PreparationView: UIView {
     @objc func nextButtonAction(_ sender: UIButton) {
         if indexPathOnScreen.row == steps.count - 1 {
             delegate?.didFinish()
-            print("Está na última instrução")
         } else {
             delegate?.didPressNextButton(indexPath: indexPathOnScreen)
         }

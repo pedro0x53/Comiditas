@@ -10,6 +10,7 @@ import UIKit
 
 protocol PreparationCoordinatorProtocol {
     func coordinateBack(recipe: RecipeJson, currentStep: Int)
+    func presentDidFinishModal()
 }
 
 class PreparationCoordinator: Coordinator {
@@ -33,5 +34,10 @@ class PreparationCoordinator: Coordinator {
 extension PreparationCoordinator: PreparationCoordinatorProtocol {
     func coordinateBack(recipe: RecipeJson, currentStep: Int) {
         navigationController.popViewController(animated: true)
+    }
+
+    func presentDidFinishModal() {
+        let finishCoordinator = FinishModalCoordinator(navigationController: navigationController)
+        coordinate(to: finishCoordinator)
     }
 }

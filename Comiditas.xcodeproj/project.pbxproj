@@ -51,6 +51,8 @@
 		77E1C39126F944E500F8B0DF /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E1C39026F944E500F8B0DF /* FeatureFlags.swift */; };
 		77E1C39326F94FA200F8B0DF /* FeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E1C39226F94FA200F8B0DF /* FeedCollectionViewCell.swift */; };
 		77FF2E4E26FA1CEE00FC63B5 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FF2E4D26FA1CEE00FC63B5 /* Time.swift */; };
+		E6381BF126FB52EA004F4298 /* FinishModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6381BEF26FB52EA004F4298 /* FinishModalView.swift */; };
+		E6381BF226FB52EA004F4298 /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6381BF026FB52EA004F4298 /* FinishViewController.swift */; };
 		FE39529326FA511700AEF77D /* Ext+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE39529226FA511700AEF77D /* Ext+UIView.swift */; };
 		FE4E4DE826F9F69C007E78F4 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4E4DE726F9F69C007E78F4 /* OverviewViewController.swift */; };
 		FE5DA02026F9FAA800AF5F71 /* OverviewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5DA01F26F9FAA800AF5F71 /* OverviewCoordinator.swift */; };
@@ -61,6 +63,9 @@
 		FEC8B85426F9FD6400455143 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC8B85326F9FD6400455143 /* DetailView.swift */; };
 		FEC8B85626FA1CB900455143 /* RecipeStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC8B85526FA1CB900455143 /* RecipeStepCell.swift */; };
 		FEC8B85826FA269800455143 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC8B85726FA269800455143 /* SectionHeaderView.swift */; };
+		FED6973126FB82890078908E /* FinishModalCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED6973026FB82890078908E /* FinishModalCoordinator.swift */; };
+		FEEDA9B626FB537C009A5E10 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEDA9B526FB537C009A5E10 /* Difficulty.swift */; };
+		FEEDA9B826FB6B8C009A5E10 /* IngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEDA9B726FB6B8C009A5E10 /* IngredientCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +138,8 @@
 		77E1C39226F94FA200F8B0DF /* FeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewCell.swift; sourceTree = "<group>"; };
 		77E1C39626F961F700F8B0DF /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		77FF2E4D26FA1CEE00FC63B5 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		E6381BEF26FB52EA004F4298 /* FinishModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishModalView.swift; sourceTree = "<group>"; };
+		E6381BF026FB52EA004F4298 /* FinishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
 		FE39529226FA511700AEF77D /* Ext+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIView.swift"; sourceTree = "<group>"; };
 		FE4E4DE726F9F69C007E78F4 /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
 		FE5DA01F26F9FAA800AF5F71 /* OverviewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewCoordinator.swift; sourceTree = "<group>"; };
@@ -143,6 +150,9 @@
 		FEC8B85326F9FD6400455143 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		FEC8B85526FA1CB900455143 /* RecipeStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepCell.swift; sourceTree = "<group>"; };
 		FEC8B85726FA269800455143 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		FED6973026FB82890078908E /* FinishModalCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishModalCoordinator.swift; sourceTree = "<group>"; };
+		FEEDA9B526FB537C009A5E10 /* Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
+		FEEDA9B726FB6B8C009A5E10 /* IngredientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -364,6 +374,7 @@
 		779F5EC526EF74CC005668BE /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				E6381BF326FB52FC004F4298 /* FinishModal */,
 				FE95430926F8CBC40039F547 /* Overview */,
 				7792905126F8B04C00AAA0A4 /* Feed */,
 				7792904C26F8ADEF00AAA0A4 /* AppCoordinator */,
@@ -433,6 +444,7 @@
 			children = (
 				770BE81726F0DEB10032F0ED /* EntitiesJson */,
 				779F5ECC26EF7559005668BE /* CoreData */,
+				FEEDA9B526FB537C009A5E10 /* Difficulty.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -445,6 +457,16 @@
 				77E1C39226F94FA200F8B0DF /* FeedCollectionViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		E6381BF326FB52FC004F4298 /* FinishModal */ = {
+			isa = PBXGroup;
+			children = (
+				E6381BEF26FB52EA004F4298 /* FinishModalView.swift */,
+				E6381BF026FB52EA004F4298 /* FinishViewController.swift */,
+				FED6973026FB82890078908E /* FinishModalCoordinator.swift */,
+			);
+			path = FinishModal;
 			sourceTree = "<group>";
 		};
 		FE95430126F8B2EB0039F547 /* Helpers */ = {
@@ -481,6 +503,7 @@
 				FE95430D26F8D0DC0039F547 /* RecipeHeaderCell.swift */,
 				FEC8B85526FA1CB900455143 /* RecipeStepCell.swift */,
 				FEC8B85726FA269800455143 /* SectionHeaderView.swift */,
+				FEEDA9B726FB6B8C009A5E10 /* IngredientCell.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -640,6 +663,8 @@
 			files = (
 				779F5E8E26EF7456005668BE /* AppDelegate.swift in Sources */,
 				77635CE126F2188B00B36EC7 /* RecipeJsonRepository.swift in Sources */,
+				FED6973126FB82890078908E /* FinishModalCoordinator.swift in Sources */,
+				FEEDA9B626FB537C009A5E10 /* Difficulty.swift in Sources */,
 				FE4E4DE826F9F69C007E78F4 /* OverviewViewController.swift in Sources */,
 				7713580C26F9FC3700164BBC /* FeedInteractor.swift in Sources */,
 				7713581026FA022100164BBC /* FeedModels.swift in Sources */,
@@ -654,6 +679,7 @@
 				188F523426FB55C600A59039 /* PreparationCoordinator.swift in Sources */,
 				18398CEA26FA3F490054E054 /* TimerView.swift in Sources */,
 				18F8E17B26FA898E00B5766B /* StepCellModel.swift in Sources */,
+				E6381BF226FB52EA004F4298 /* FinishViewController.swift in Sources */,
 				FE95430026F8B2BD0039F547 /* Ext+UIImageView.swift in Sources */,
 				18398CF026FA60640054E054 /* PreparationModels.swift in Sources */,
 				18F8E18126FAA35600B5766B /* StepWithTimerCell.swift in Sources */,
@@ -663,6 +689,7 @@
 				7792904E26F8AE0800AAA0A4 /* AppCoordinator.swift in Sources */,
 				1894725D26F9FE4600E6CD8B /* PreparationViewController.swift in Sources */,
 				779F5E9826EF7456005668BE /* Comiditas.xcdatamodeld in Sources */,
+				E6381BF126FB52EA004F4298 /* FinishModalView.swift in Sources */,
 				7792904B26F8ADC500AAA0A4 /* CoordinatorProtocol.swift in Sources */,
 				1894725B26F9F9FF00E6CD8B /* PreparationPresenter.swift in Sources */,
 				7792905526F8B09800AAA0A4 /* FeedView.swift in Sources */,
@@ -677,6 +704,7 @@
 				FEC8B85426F9FD6400455143 /* DetailView.swift in Sources */,
 				774D5A7C26F37256004176A1 /* Ext+UIFonts.swift in Sources */,
 				FEC8B85626FA1CB900455143 /* RecipeStepCell.swift in Sources */,
+				FEEDA9B826FB6B8C009A5E10 /* IngredientCell.swift in Sources */,
 				7792905726F8B18800AAA0A4 /* FeedCoordinator.swift in Sources */,
 				FE5DA02026F9FAA800AF5F71 /* OverviewCoordinator.swift in Sources */,
 				FE39529326FA511700AEF77D /* Ext+UIView.swift in Sources */,

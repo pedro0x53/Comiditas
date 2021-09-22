@@ -13,7 +13,7 @@ enum StepCellModel {
 
     var time: TimeInterval? {
         switch self {
-        case .simpleStep(_): return nil
+        case .simpleStep: return nil
         case .stepWithTimer(_, let time): return time
         }
     }

@@ -5,7 +5,7 @@
         "imageURL": "https://s2.glbimg.com/3TKizZ6TEdKtQ9BdNqN6Qemmk78=/0x0:1280x960/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/L/R/fXiR5pSuC4nEaHdG8dSg/receita-bolo-de-tangerina.jpg",
         "difficultyLevel": 2,
         "servings": 8,
-        "prepTime": 120,
+        "prepTime": 7200,
         "ingredients" : [
             "200 gramas de açúcar refinado",
             "Raspas de três tangerinas",
@@ -14,10 +14,11 @@
             "170 gramas de óleo",
             "200 gramas de farinha de trigo",
             "8 gramas de fermento em pó",
-            "2 gramas de sal",
+            "2 gramas de sal"
         ],
         "categories" : [
-            "Doces"
+            "Doces",
+            "Bolos"
         ],
         "rate": 5,
         "steps": [
@@ -62,7 +63,7 @@
                "stepDescription": "Coloque a massa na forma preparada e leve ao forno preaquecido por cerca de 30 a 40 minutos.",
                "hasTimer": true,
                "timer": 2400
-            },
+            }
         ]
     },
     {
@@ -71,7 +72,7 @@
         "imageURL": "https://s2.glbimg.com/RFd_WIkagzQ2w_ZaRH8Fr1xsdmY=/0x0:1080x607/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/d/o/zCUj7wQ6A01kwN8wGqcg/essa-2-.png",
         "difficultyLevel": 2,
         "servings": 8,
-        "prepTime": 120,
+        "prepTime": 2400,
         "ingredients" : [
             "2 a 5 bananas da terra maduras",
             "1 xícara de chá de cacau em pó 100%",
@@ -79,7 +80,7 @@
             "1 colher de sopa fermento em pó",
             "1 xícara de chá de nozes picadas levemente torradas",
             "1 colher de sobremesa de canela (opcional)",
-            "Meia xícara de chá de gotas de chocolate meio amargo forneáveis (opcional)",
+            "Meia xícara de chá de gotas de chocolate meio amargo forneáveis (opcional)"
         ],
         "categories" : [
             "Doces"
@@ -124,7 +125,7 @@
         "imageURL": "https://s2.glbimg.com/34NAyUJF12wdHWm_ia9BI5P9zFg=/0x0:3451x2301/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/T/j/0oLNRGS1iirRkxSq6eCQ/muffin-de-chocolate-receita.jpg",
         "difficultyLevel": 3,
         "servings": 12,
-        "prepTime": 50,
+        "prepTime": 3000,
         "ingredients" : [
             "Meia xícara de farinha de trigo",
             "Um quarto de xícara de açúcar mascavo",
@@ -136,7 +137,7 @@
             "3 colheres de sopa de óleo vegetal",
             "Um quarto de xícara (60 ml) de leite",
             "1 colher de chá de essência de baunilha",
-            "Meia xícara de chá de chocolate em gotas ou picado",
+            "Meia xícara de chá de chocolate em gotas ou picado"
         ],
         "categories" : [
             "Doces"
@@ -190,7 +191,7 @@
                "stepDescription": "Se você quiser, pode decorar os muffins de chocolate com merengue.",
                "hasTimer": false,
                "timer": 0
-            },
+            }
         ]
     },
     {
@@ -199,7 +200,7 @@
         "imageURL": "https://s2.glbimg.com/vGRqwG9174Y8aEq6L7wZ6lbdkPc=/0x0:4986x3051/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/h/N/zxSuJvREqYqsNxjxlgbA/bolo-de-limao-com-iogurte-receita.jpg",
         "difficultyLevel": 2,
         "servings": 6,
-        "prepTime": 80,
+        "prepTime": 3600,
         "ingredients" : [
             "1 xícara de chá mais um quarto de açúcar refinado",
             "2 colheres de sopa de raspas de limão-taiti",
@@ -211,7 +212,8 @@
             "Um quarto de colher de chá de sal"
         ],
         "categories" : [
-            "Doces"
+            "Doces",
+            "Bolos"
         ],
         "rate": 3,
         "steps": [
@@ -247,7 +249,7 @@
             },
             {
                "step": 6,
-               "stepDescription": "Vire a massa na forma preparada e leve ao forno até dourar por cerca de 45 minutos.",
+               "stepDescription": "Vire a massa na forma preparada e leve ao forno até dourar por cerca de 45 minutos. Para saber o ponto fure com um palito, e se sair seco, pode retirar do fogo.",
                "hasTimer": true,
                "timer": 2700
             },
@@ -256,13 +258,7 @@
                "stepDescription": "Sirva em seguida.",
                "hasTimer": false,
                "timer": 0
-            },
-            {
-               "step": 8,
-               "stepDescription": "Se você quiser, pode decorar os muffins de chocolate com merengue.",
-               "hasTimer": false,
-               "timer": 0
-            },
+            }
         ]
     },
     {
@@ -271,12 +267,12 @@
         "imageURL": "https://s2.glbimg.com/w5j_jwsuDsE35J1v4Cz3rsXILtY=/0x0:2048x1365/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/L/7/FMJqACRPmdKhmV3QZZAA/cake-pop-com-sobras-de-bolo.jpg",
         "difficultyLevel": 2,
         "servings": 6,
-        "prepTime": 80,
+        "prepTime": 4800,
         "ingredients" : [
             "Sobras de bolo",
             "Creme de avelã a gosto",
             "Chocolate derretido a gosto",
-            "Confeitos coloridos e castanha-de-caju para decorar",
+            "Confeitos coloridos e castanha-de-caju para decorar"
         ],
         "categories" : [
             "Doces"
@@ -324,7 +320,7 @@
                "stepDescription": "Sirva em seguida.",
                "hasTimer": false,
                "timer": 0
-            },
+            }
         ]
     },
     {
@@ -333,7 +329,7 @@
         "imageURL": "https://s2.glbimg.com/43DfUj2mhHJGmSZceZaxW5tDU9w=/0x0:1280x960/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/h/Y/8EKaxrRR6PWYWrCBBKNg/bolo-de-maca-com-canela-2-.jpeg",
         "difficultyLevel": 2,
         "servings": 12,
-        "prepTime": 120,
+        "prepTime": 7200,
         "ingredients" : [
             "1 e meia xícaras de maçã em cubinhos pequenos",
             "1 xícara de açúcar",
@@ -344,10 +340,11 @@
             "1 pitada de noz moscada ralada",
             "1 colher de chá de bicarbonato de sódio",
             "1 colher de chá de canela em pó",
-            "meia xícara de uva passa preta sem semente",
+            "meia xícara de uva passa preta sem semente"
         ],
         "categories" : [
-            "Doces"
+            "Doces",
+            "Bolos"
         ],
         "rate": 3,
         "steps": [
@@ -398,7 +395,399 @@
                "stepDescription": "Retire do forno, espere dez minutos e desenforme.",
                "hasTimer": true,
                "timer": 600
-            },
+            }
         ]
     },
+    {
+      "identifier": 7,
+      "name": "Camarão Internacional",
+      "imageURL": "https://naminhapanela.com/wp-content/uploads/2014/06/arroz-de-camarao-350x350.jpg",
+      "difficultyLevel": 2,
+      "servings": 12,
+      "prepTime": 3600,
+      "ingredients" : [
+          "300 gramas de camarão tamanho médio descascado e limpo ",
+          "1 e 1/2 (uma e meia) colher de sopa de suco de limão",
+          "1 colher de chá de sal (4 gramas)",
+          "1/4 (um quarto) colher de chá de pimenta do reino",
+          "2 colheres de sopa rasa de manteiga sem sal",
+          "2 colheres de sopa de azeite (25 gramas)",
+          "1 colher de chá de alho ralado ou picadinho",
+          "1/4 (um quarto) de xícara de chá de cebola ralada (sem a água) ou picadinha",
+          "1 colher de sopa de pimentão verde bem picadinho",
+          "3 colheres de sopa de leite de coco",
+          "2 colheres de sopa rasas de manteiga",
+          "2 colheres de sopa rasa de farinha de trigo",
+          "1 xícara de chá de leite",
+          "1/2 (meia) xícara de chá de creme de leite em caixinha 100 gramas",
+          "1/2 (meia) xícara de chá de requeijão catupiry ou requeijão cremoso",
+          "1/2 (meia) colher de chá de sal 2 gramas",
+          "Uma boa pitada de pimeta do reino de 0,5 grama",
+          "1 pitada de noz moscada",
+          "30 gramas de presunto fatiado picadinho",
+          "100 gramas de muçarela fatiada picadinha",
+          "1/2 (meia) xícara de chá de ervilha cozida no vapor",
+          "2 xícaras de chá de arroz cozido ou 300 gramas",
+          "1 e 1/2 (uma e meia) colher de sopa de salsinha picadinha",
+          "1/2 (meia) colher de sopa de cebolinha bem picadinha",
+          "40 gramas de queijo parmesão ralado",
+          "120 gramas de queijo muçarela ralado",
+          "Papel alumínio",
+          "Manteiga para untar o papel alumínio",
+          "Batata palha para enfeitar e servir com o prato"
+      ],
+      "categories" : [
+          "Massas"
+      ],
+      "rate": 5,
+      "steps": [
+          {
+             "step": 1,
+             "stepDescription": "Para começar a preparar, tenha em mãos camarões limpos e descascados retirando toda a sujeira de dentro deles.",
+             "hasTimer": false,
+             "timer": 0
+          },
+          {
+             "step": 2,
+             "stepDescription": "Em um pequeno recipiente, que caiba as 300 gramas de camarões limpos e descascados, jogue o suco de limão, sal e pimenta do reino. Misture de leve esses ingredientes e deixe de lado marinando (Reserve).",
+             "hasTimer": false,
+             "timer": 0
+          },
+          {
+             "step": 3,
+             "stepDescription": "Em uma panela, de preferência uma frigideira grande e funda, coloque a manteiga, o azeite e alho ralado e refogue tudo misturando com a ajuda de uma espátula de plástico.",
+             "hasTimer": false,
+             "timer": 0
+          },
+          {
+             "step": 4,
+             "stepDescription": "Lembra do camarão que pusemos para marinar a pouco? Junte o camarão com o refogado da panela, ligue o fogo na temperatura máxima, mexa por 1 minuto até que ele fique rosado.",
+             "hasTimer": true,
+             "timer": 60
+          },
+          {
+             "step": 5,
+             "stepDescription": "Depois de mexer bem, você perceberá que seu camarão está rosado e com um aspecto aberto. Nessa hora, jogue o leite de coco, desligue o fogo e continue a mexer. Reserve.",
+             "hasTimer": false,
+             "timer": 0
+          },
+          {
+             "step": 6,
+             "stepDescription": "Em uma outra panela, de preferência uma grande frigideira funda, coloque manteiga, ligue o fogo e com a ajuda de uma espátula mexa até derreter.",
+             "hasTimer": false,
+             "timer": 0
+          },
+          {
+             "step": 7,
+             "stepDescription": "Jogue farinha de trigo e mexa bem cozinhando tudo em fogo médio tomando cuidado para que não fique com aquele gosto de farinha de trigo crua. Ficará com aspecto de massinha",
+             "hasTimer": true,
+             "timer": 60
+          },
+          {
+            "step": 8,
+            "stepDescription": "Coloque uma xícara de leite e note que ele vai começar a engrossar: isso é normal.",
+            "hasTimer": false,
+            "timer": 0
+         },
+         {
+            "step": 9,
+            "stepDescription": "Coloque uma xícara de leite, mexa e note que ele vai começar a engrossar: isso é normal.",
+            "hasTimer": false,
+            "timer": 0
+         },
+         {
+            "step": 10,
+            "stepDescription": "Jogue mais, aos poucos, para que ele não engrosse tanto e continue mexendo.",
+            "hasTimer": false,
+            "timer": 0
+         },
+         {
+            "step": 11,
+            "stepDescription": "Conforme você vai fazendo essa etapa, o molho vai crescendo e aparecendo.",
+            "hasTimer": false,
+            "timer": 0
+         },
+         {
+            "step": 12,
+            "stepDescription": "Quando ele estiver bem crescido, jogue o creme de leite e o requeijão cremoso ou de catupiry, sal, pimenta do reino, presunto picado, muçarela picada, meia xícara de ervilha e noz moscada ralada.",
+            "hasTimer": false,
+            "timer": 0
+         },
+         {
+            "step": 13,
+            "stepDescription": "Mexa bem até ficar homogêneo.",
+            "hasTimer": true,
+            "timer": 120
+         },
+         {
+            "step": 14,
+            "stepDescription": "No molho branco suculento que estamos fazendo agora, junte o camarão que fizemos a pouco e mais o arroz já cozido.",
+            "hasTimer": false,
+            "timer": 0
+         },
+         {
+            "step": 15,
+            "stepDescription": "Também, acrescente cebolinha e salsinha picadinha. E continue mexendo.",
+            "hasTimer": false,
+            "timer": 0
+         },
+         {
+            "step": 16,
+            "stepDescription": "Misture tudo e coloque em uma vasilha de vidro (de preferência) com a ajuda de uma espátula de plástico para aproveitar tudo o que estava na panela.",
+            "hasTimer": false,
+            "timer": 0
+         },
+         {
+            "step": 17,
+            "stepDescription": "Feito isso, jogue parmesão ralado em cima de seu camarão e acrescente muçarela ralada ou fatiada por cima de tudo. E reserve.",
+            "hasTimer": false,
+            "timer": 0
+         },
+         {
+            "step": 18,
+            "stepDescription": "Unte um pedaço de papel alumínio (que dê para cobrir toda a vasilha de vidro) com margarina ou manteiga e cubra a vasilha.",
+            "hasTimer": false,
+            "timer": 0
+         },
+         {
+            "step": 19,
+            "stepDescription": "Ponha no forno pré-aquecido a 200 graus com uma assadeira embaixo para ficar mais fácil o transporte ao forno até derreter o queijo e dar uma assada em sua mistura de camarão, o que vai dar uns 25 minutos. E para gratinar o queijo.",
+            "hasTimer": true,
+            "timer": 1500
+         },
+         {
+            "step": 20,
+            "stepDescription": "Fica maravilhoso! Jogue batata palha e sirva fazendo a decoração que quiser.",
+            "hasTimer": false,
+            "timer": 0
+         }
+      ]
+   },
+   {
+   "identifier": 8,
+   "name": "Crepioca de queijo",
+   "imageURL": "https://static.clubedaanamariabraga.com.br/wp-content/uploads/2020/02/crepioca-igor-rocha.jpeg",
+   "difficultyLevel": 1,
+   "servings": 1,
+   "prepTime": 600,
+   "ingredients" : [
+       "2 ovos",
+       "1 pitada de sal",
+       "1/3 (um terço) de xícara de leite",
+       "2 colheres de sopa de tapioca",
+       "Queijo mussarela ralado à gosto"
+   ],
+   "categories" : [
+       "Salgados"
+   ],
+   "rate": 4,
+   "steps": [
+       {
+          "step": 1,
+          "stepDescription": "Em um recipiente fundo, adicione 2 ovos e bata levemente",
+          "hasTimer": false,
+          "timer": 0
+       },
+       {
+          "step": 2,
+          "stepDescription": "Adicione aos ovos, uma pitada de sal e o leite. Misture bem",
+          "hasTimer": false,
+          "timer": 0
+       },
+       {
+          "step": 3,
+          "stepDescription": "Adicione a tapioca à mistura e bata novamente até ficar homogêneo, é bem rápido",
+          "hasTimer": true,
+          "timer": 60
+       },
+       {
+          "step": 4,
+          "stepDescription": "Unte uma frigideira antiaderente com manteiga e coloque a mistura, espere cozinhar e quando estiver mais firme e soltando da frigideira, já pode virar.",
+          "hasTimer": true,
+          "timer": 90
+       },
+       {
+          "step": 5,
+          "stepDescription": "Vire a crepioca e coloque o queijo, aguarde alguns segundos até queijo derreter e o outro lado cozinhar também",
+          "hasTimer": true,
+          "timer": 60
+       },
+       {
+          "step": 6,
+          "stepDescription": "Enrole a crepioca, como se fosse uma panqueca",
+          "hasTimer": false,
+          "timer": 0
+       },
+       {
+          "step": 7,
+          "stepDescription": "Sirva em seguida. Bom apetite!",
+          "hasTimer": false,
+          "timer": 0
+       }
+      ]
+   },
+   {
+      "identifier": 9,
+      "name": "Bolo Mole",
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw4UCeyOsg82hJLdzPS6CnFd2bO-2oMCdqbQ&usqp=CAU",
+      "difficultyLevel": 1,
+      "servings": 10,
+      "prepTime": 3300,
+      "ingredients" : [
+         "Uma caixa de leite condensado",
+         "Mesma medida da caixa do leite condensado de leite",
+         "200ml de leite de coco (um frasco)",
+         "Mesma medida do leite condensado de farinha de trigo sem fermento",
+         "Metade da medida do leite condensado de açúcar",
+         "Três colheres de sopa de manteiga",
+         "3 ovos"
+      ],
+      "categories" : [
+          "Doces",
+          "Bolos"
+      ],
+      "rate": 4,
+      "steps": [
+          {
+             "step": 1,
+             "stepDescription": "Em um liquidificador, coloque o leite condensado, o leite, a farinha de trigo, o açúcar, a manteiga e os ovos",
+             "hasTimer": false,
+             "timer": 0
+          },
+          {
+             "step": 2,
+             "stepDescription": "Bata bem, por 5 minutos",
+             "hasTimer": true,
+             "timer": 300
+          },
+          {
+             "step": 3,
+             "stepDescription": "Unte uma forma com furo no meio, com manteiga e farinha de trigo",
+             "hasTimer": false,
+             "timer": 0
+          },
+          {
+             "step": 4,
+             "stepDescription": "Coloque a mistura do bolo na forma, leve ao forno pré aquecido à 200 graus por 40 minutos ou até ficar dourado em cima e a massa estiver firme.",
+             "hasTimer": true,
+             "timer": 2400
+          },
+          {
+             "step": 5,
+             "stepDescription": "Retire o bolo do forno, espere esfriar por 10 minutos e desenforme.",
+             "hasTimer": true,
+             "timer": 600
+          },
+          {
+             "step": 6,
+             "stepDescription": "A seguir, pode servir ou colocar na geladeira caso prefira frio. Bom apetite!",
+             "hasTimer": false,
+             "timer": 0
+          }
+         ]
+      },
+      {
+         "identifier": 10,
+         "name": "Patê de peito de peru",
+         "imageURL": "https://img.itdg.com.br/tdg/images/recipes/000/049/442/135927/135927_original.jpg?mode=crop&width=710&height=400",
+         "difficultyLevel": 2,
+         "servings": 1,
+         "prepTime": 300,
+         "ingredients" : [
+            "200 gramas de peito de peru",
+            "80 gramas de cenoura ralada",
+            "1 copo de requeijão (200g)",
+            "1 colher de sopa cheia de maionese",
+            "1/2 (meia) cebola",
+            "Salsinha a gosto", 
+            "Sal a gosto"
+         ],
+         "categories" : [
+             "Salgados",
+             "Patê"
+         ],
+         "rate": 5,
+         "steps": [
+             {
+                "step": 1,
+                "stepDescription": "Tritura o peito de peru no mini-processador ou pique com uma faca e separe.",
+                "hasTimer": false,
+                "timer": 0
+             },
+             {
+                "step": 2,
+                "stepDescription": "Triture a cebola e a cenoura no link-processador",
+                "hasTimer": false,
+                "timer": 0
+             },
+             {
+                "step": 3,
+                "stepDescription": "Em uma tigela mistura o peito de peru, a cebola com cenoura, o requeijão e a maionese ",
+                "hasTimer": false,
+                "timer": 0
+             },
+             {
+                "step": 4,
+                "stepDescription": "Acrescente salsinha e sal a gosto",
+                "hasTimer": false,
+                "timer": 0
+             },
+             {
+                "step": 5,
+                "stepDescription": "Sirva em seguida ou reserve na geladeira",
+                "hasTimer": false,
+                "timer": 0
+             }
+         ]
+     },
+     {
+      "identifier": 11,
+      "name": "Penne ao molho branco de camarão",
+      "imageURL": "https://www.anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-2459-a3d849ce575c69a18e61a51e04bfa3d9.jpg",
+      "difficultyLevel": 2,
+      "servings": 2,
+      "prepTime": 2400,
+      "ingredients" : [
+         "300 gramas de macarrão penne",
+         "300 gramas de camarão descascado",
+         "2 dentes de alho",
+         "1/2 (meia) cebola",
+         "500ml de leite",
+         "2 colheres de sopa de farinha de trigo",
+         "Noz moscada a gosto",
+         "Pimenta do reino a gosto",
+         "Sal a gosto"
+      ],
+      "categories" : [
+          "Massas",
+          "Salgados"
+      ],
+      "rate": 5,
+      "steps": [
+          {
+             "step": 1,
+             "stepDescription": "Frite os camarões com um fio de azeite e o alho até dourar, por cerca de 3 minutos. Reserve.",
+             "hasTimer": true,
+             "timer": 180
+          },
+          {
+             "step": 2,
+             "stepDescription": "Cozinhe o macarrão conforme indicação de marca e reserve.",
+             "hasTimer": false,
+             "timer": 0
+          },
+          {
+             "step": 3,
+             "stepDescription": "Em outra panela, refolgue a cebola com um fio de azeite e adicione a farinha de trigo. Mexa bem até formar uma massa. Acrescente o leite e misture até que o molho fique homogêneo. Acrescente o sal, noz moscada e pimenta do reino a gosto. E por fim, o camarão. Misture",
+             "hasTimer": false,
+             "timer": 0
+          },
+          {
+             "step": 4,
+             "stepDescription": "Em seguida, sirva com o macarrão.",
+             "hasTimer": false,
+             "timer": 0
+          }
+      ]
+  }
 ]

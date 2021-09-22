@@ -27,7 +27,8 @@ class FeedCoordinator: Coordinator {
 
 extension FeedCoordinator: FeedCoordinatorProtocol {
     func navigateToOverview(recipe: RecipeJson) {
-        let overviewViewController = OverviewViewController(recipe: recipe)
-        navigationController.pushViewController(overviewViewController, animated: true)
+        let overviewCoordinator = OverviewCoordinator(navigationController: navigationController)
+        overviewCoordinator.recipe = recipe
+        coordinate(to: overviewCoordinator)
     }
 }

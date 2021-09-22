@@ -16,7 +16,7 @@ protocol PreparationDisplayLogic: AnyObject {
 
 class PreparationViewController: UIViewController {
 
-    weak var coordinator: PreparationCoordinator?
+    var coordinator: PreparationCoordinator?
     var interactor: PreparationBusinessLogic?
 
     var recipe: RecipeJson!
@@ -91,7 +91,6 @@ class PreparationViewController: UIViewController {
 }
 
 extension PreparationViewController: PreparationDisplayLogic {
-
     // MARK: - Display Use Cases
 
     func displaySteps(viewModel: PreparationModels.GetSteps.ViewModel) {
@@ -114,24 +113,14 @@ extension PreparationViewController: PreparationDisplayLogic {
         )
     }
 
-    func displayFinished(viewModel: PreparationModels.Finished.ViewModel) {
-
-        // MARK: TODO Modal do Fim da Receita
-
-        let alert = UIAlertController(title: "Parabéns", message: "Você terminou a receita", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Sair", style: .default) { _ in
-            print("Volta pra tela de receitas aqui")
-        }
-        alert.addAction(okAction)
-        self.present(alert, animated: true, completion: nil)
-    }
-
+    func displayFinished(viewModel: PreparationModels.Finished.ViewModel) {}
 }
 
 extension PreparationViewController: PreparationViewDelegate {
 
     func callAlert(okAction: @escaping () -> Void) {
-        let alertMessage = "O temporizador será reiniciado se você sair desse passo. Você tem certeza que quer continuar?"
+        let alertMessage = "O temporizador será reiniciado se você sair desse passo. "
+        + "Você tem certeza que quer continuar?"
         let alert = UIAlertController(
             title: "Atenção",
             message: alertMessage,
@@ -151,10 +140,9 @@ extension PreparationViewController: PreparationViewDelegate {
     }
 
     func didPressNextButton(indexPath: IndexPath) {
-        if let cell = preparationView.collectionView.cellForItem(
-            at: preparationView.indexPathOnScreen
-        ) as? StepWithTimerCell,
-            cell.timerView.timerIsRunning {
+        if let cell = preparationView.collectionView
+                        .cellForItem(at: preparationView.indexPathOnScreen) as? StepWithTimerCell,
+           cell.timerView.timerIsRunning {
 
             callAlert(okAction: { [weak self] in
                 self?.goToNextInstruction(indexPath: indexPath)
@@ -181,6 +169,6 @@ extension PreparationViewController: PreparationViewDelegate {
     }
 
     func didFinish() {
-        requestFinished()
+        coordinator?.presentDidFinishModal()
     }
 }
