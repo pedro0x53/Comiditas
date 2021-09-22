@@ -21,6 +21,11 @@ class FeedCollectionViewCell: UICollectionViewCell {
         setupUI()
     }
 
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        imageView.image = nil
+    }
+
     lazy var roundedBackgroundView: UIView = {
         let view = UIView()
         view.layer.cornerRadius = 15
