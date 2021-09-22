@@ -16,6 +16,18 @@ class AppCoordinator: Coordinator {
 
     func start() {
         let navigationController = UINavigationController()
+        navigationController.navigationBar.prefersLargeTitles = true
+
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = Colors.secondary
+        appearance.titleTextAttributes = [.foregroundColor: Colors.primary]
+        appearance.largeTitleTextAttributes = [.foregroundColor: Colors.primary]
+
+        navigationController.navigationBar.tintColor = Colors.primary
+        navigationController.navigationBar.standardAppearance = appearance
+        navigationController.navigationBar.compactAppearance = appearance
+        navigationController.navigationBar.scrollEdgeAppearance = appearance
+
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
 
