@@ -73,9 +73,15 @@ extension OverviewViewController: OverviewViewDelegate {
 
         case .ingredients:
             let ingredient = "\(recipe.ingredients[indexPath.row])"
-            let cell = UITableViewCell(style: .default, reuseIdentifier: "")
-            cell.textLabel?.text = "• " + ingredient
-            cell.accessibilityLabel = ingredient
+
+            guard let cell = tableView.dequeueReusableCell(
+                    withIdentifier: IngredientCell.identifier) as? IngredientCell
+            else {
+                return UITableViewCell()
+            }
+
+            cell.configure(text: ingredient)
+
             return cell
 
         case .steps:

@@ -50,6 +50,7 @@
 		FEC8B85626FA1CB900455143 /* RecipeStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC8B85526FA1CB900455143 /* RecipeStepCell.swift */; };
 		FEC8B85826FA269800455143 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC8B85726FA269800455143 /* SectionHeaderView.swift */; };
 		FEEDA9B626FB537C009A5E10 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEDA9B526FB537C009A5E10 /* Difficulty.swift */; };
+		FEEDA9B826FB6B8C009A5E10 /* IngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEDA9B726FB6B8C009A5E10 /* IngredientCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,7 @@
 		FEC8B85526FA1CB900455143 /* RecipeStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepCell.swift; sourceTree = "<group>"; };
 		FEC8B85726FA269800455143 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		FEEDA9B526FB537C009A5E10 /* Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
+		FEEDA9B726FB6B8C009A5E10 /* IngredientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -424,6 +426,7 @@
 				FE95430D26F8D0DC0039F547 /* RecipeHeaderCell.swift */,
 				FEC8B85526FA1CB900455143 /* RecipeStepCell.swift */,
 				FEC8B85726FA269800455143 /* SectionHeaderView.swift */,
+				FEEDA9B726FB6B8C009A5E10 /* IngredientCell.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -610,6 +613,7 @@
 				FEC8B85426F9FD6400455143 /* DetailView.swift in Sources */,
 				774D5A7C26F37256004176A1 /* Ext+UIFonts.swift in Sources */,
 				FEC8B85626FA1CB900455143 /* RecipeStepCell.swift in Sources */,
+				FEEDA9B826FB6B8C009A5E10 /* IngredientCell.swift in Sources */,
 				7792905726F8B18800AAA0A4 /* FeedCoordinator.swift in Sources */,
 				FE5DA02026F9FAA800AF5F71 /* OverviewCoordinator.swift in Sources */,
 				FE39529326FA511700AEF77D /* Ext+UIView.swift in Sources */,

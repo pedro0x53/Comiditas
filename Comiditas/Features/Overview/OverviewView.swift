@@ -58,8 +58,10 @@ class OverviewView: UIView {
 
     private func setupTableView() {
         tableView.register(SectionHeaderView.self, forHeaderFooterViewReuseIdentifier: SectionHeaderView.identifier)
+
         tableView.register(RecipeHeaderCell.self, forCellReuseIdentifier: RecipeHeaderCell.identifier)
         tableView.register(RecipeStepCell.self, forCellReuseIdentifier: RecipeStepCell.identifier)
+        tableView.register(IngredientCell.self, forCellReuseIdentifier: IngredientCell.identifier)
     }
 
     @objc func startRecipe() {
