@@ -63,9 +63,9 @@ extension OverviewViewController: OverviewViewDelegate {
             else {
                 return UITableViewCell()
             }
-
+            let time = Time.secondsToHoursMinutesSeconds(seconds: recipe.prepTime)
             cell.configure(imageURL: recipe.imageURL, title: recipe.name,
-                           servings: "\(recipe.servings) porções", prepTime: "\(recipe.prepTime)",
+                           servings: "\(recipe.servings) porções", prepTime: "\(time.minutes) minutos",
                            difficulty: "fácil", rating: recipe.rate)
 
             return cell

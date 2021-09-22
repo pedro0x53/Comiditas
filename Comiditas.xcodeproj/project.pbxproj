@@ -99,6 +99,7 @@
 		779F5EAE26EF7458005668BE /* ComiditasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComiditasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		779F5EB226EF7458005668BE /* ComiditasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComiditasUITests.swift; sourceTree = "<group>"; };
 		779F5EB426EF7458005668BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77C8B1F026FB424000D21291 /* Comiditas.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Comiditas.entitlements; sourceTree = "<group>"; };
 		77D70D1626F21FFA00A8B244 /* Recipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Recipes.json; sourceTree = "<group>"; };
 		77D70D1A26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeJsonRepositoryTests.swift; sourceTree = "<group>"; };
 		77DDC14F26FA9311003027D3 /* Recommendations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Recommendations.json; sourceTree = "<group>"; };
@@ -226,6 +227,7 @@
 		779F5E8C26EF7456005668BE /* Comiditas */ = {
 			isa = PBXGroup;
 			children = (
+				77C8B1F026FB424000D21291 /* Comiditas.entitlements */,
 				779F5EC126EF7490005668BE /* Application */,
 				779F5EC226EF749D005668BE /* Components */,
 				779F5EC326EF74AC005668BE /* Helpers */,
@@ -782,13 +784,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Comiditas/Comiditas.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VH525588L5;
 				INFOPLIST_FILE = Comiditas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.Comiditas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -801,13 +806,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Comiditas/Comiditas.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VH525588L5;
 				INFOPLIST_FILE = Comiditas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.Comiditas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
