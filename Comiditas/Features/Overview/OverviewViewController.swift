@@ -66,7 +66,8 @@ extension OverviewViewController: OverviewViewDelegate {
             let time = Time.secondsToHoursMinutesSeconds(seconds: recipe.prepTime)
             cell.configure(imageURL: recipe.imageURL, title: recipe.name,
                            servings: "\(recipe.servings) porções", prepTime: "\(time.minutes) minutos",
-                           difficulty: "fácil", rating: recipe.rate)
+                           difficulty: Difficulty(rawValue: recipe.difficultyLevel)?.description ?? "Fácil",
+                           rating: recipe.rate)
 
             return cell
 
@@ -99,7 +100,7 @@ extension OverviewViewController: OverviewViewDelegate {
         case .header:
             return nil
         case .ingredients, .steps:
-            let title: String = (section == .ingredients) ? "Ingedientes" : "Modo de Preparo"
+            let title: String = (section == .ingredients) ? "Ingredientes" : "Modo de Preparo"
             guard let header = tableView.dequeueReusableHeaderFooterView(
                     withIdentifier: SectionHeaderView.identifier) as? SectionHeaderView
             else {

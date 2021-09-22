@@ -58,19 +58,22 @@ class RecipeStepCell: UITableViewCell, BaseViewProtocol {
         let endPoint = CGPoint(x: completedMark.frame.midX,
                                y: descriptionLabel.frame.maxY + 4)
 
-        if self.finished {
-            if let image = UIImage(systemName: "checkmark.circle.fill") {
-                let templateImage = image.withRenderingMode(.alwaysTemplate)
-                self.completedMark.image = templateImage
-            }
+        self.drawDashedLine(from: startPoint, to: endPoint, color: Colors.textMedium,
+                            strokeLength: 3, gapLength: 1, width: 1.5)
 
-            self.completedMark.layer.borderColor = Colors.primary.cgColor
-            self.drawDashedLine(from: startPoint, to: endPoint, color: Colors.primary,
-                                strokeLength: 3, gapLength: 1, width: 1.5)
-        } else {
-            self.drawDashedLine(from: startPoint, to: endPoint, color: Colors.textMedium,
-                                strokeLength: 3, gapLength: 1, width: 1.5)
-        }
+//        if self.finished {
+//            if let image = UIImage(systemName: "checkmark.circle.fill") {
+//                let templateImage = image.withRenderingMode(.alwaysTemplate)
+//                self.completedMark.image = templateImage
+//            }
+//
+//            self.completedMark.layer.borderColor = Colors.primary.cgColor
+//            self.drawDashedLine(from: startPoint, to: endPoint, color: Colors.primary,
+//                                strokeLength: 3, gapLength: 1, width: 1.5)
+//        } else {
+//            self.drawDashedLine(from: startPoint, to: endPoint, color: Colors.textMedium,
+//                                strokeLength: 3, gapLength: 1, width: 1.5)
+//        }
     }
 
     func setupView() {

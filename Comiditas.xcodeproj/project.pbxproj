@@ -49,6 +49,7 @@
 		FEC8B85426F9FD6400455143 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC8B85326F9FD6400455143 /* DetailView.swift */; };
 		FEC8B85626FA1CB900455143 /* RecipeStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC8B85526FA1CB900455143 /* RecipeStepCell.swift */; };
 		FEC8B85826FA269800455143 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC8B85726FA269800455143 /* SectionHeaderView.swift */; };
+		FEEDA9B626FB537C009A5E10 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEDA9B526FB537C009A5E10 /* Difficulty.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,7 @@
 		FEC8B85326F9FD6400455143 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		FEC8B85526FA1CB900455143 /* RecipeStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepCell.swift; sourceTree = "<group>"; };
 		FEC8B85726FA269800455143 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		FEEDA9B526FB537C009A5E10 /* Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -373,6 +375,7 @@
 			children = (
 				770BE81726F0DEB10032F0ED /* EntitiesJson */,
 				779F5ECC26EF7559005668BE /* CoreData */,
+				FEEDA9B526FB537C009A5E10 /* Difficulty.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -580,6 +583,7 @@
 			files = (
 				779F5E8E26EF7456005668BE /* AppDelegate.swift in Sources */,
 				77635CE126F2188B00B36EC7 /* RecipeJsonRepository.swift in Sources */,
+				FEEDA9B626FB537C009A5E10 /* Difficulty.swift in Sources */,
 				FE4E4DE826F9F69C007E78F4 /* OverviewViewController.swift in Sources */,
 				7713580C26F9FC3700164BBC /* FeedInteractor.swift in Sources */,
 				7713581026FA022100164BBC /* FeedModels.swift in Sources */,
