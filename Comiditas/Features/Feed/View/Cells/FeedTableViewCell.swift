@@ -92,7 +92,12 @@ extension FeedTableViewCell: UICollectionViewDelegate, UICollectionViewDataSourc
             let recipe = data[indexPath.row]
             cell.titleLabel.text = recipe.name
             let time = Time.secondsToHoursMinutesSeconds(seconds: recipe.prepTime)
-            cell.subtitleLabel.text = "\(time.minutes) minutos • \(recipe.servings) porções"
+            if time.minutes == 0 {
+                let timeCell = time.hour == 1 ? "hora" : "horas"
+                cell.subtitleLabel.text = "\(time.hour) \(timeCell) • \(recipe.servings) porções"
+            } else {
+                cell.subtitleLabel.text = "\(time.minutes) minutos • \(recipe.servings) porções"
+            }
             if let url = URL(string: recipe.imageURL) {
                 cell.imageView.load(url: url)
             }
