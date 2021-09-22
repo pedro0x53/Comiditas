@@ -41,7 +41,7 @@ class RecipeHeaderCell: UITableViewCell, BaseViewProtocol {
         let stack = UIStackView()
         stack.alignment = .center
         stack.axis = .horizontal
-        stack.distribution = .equalSpacing
+        stack.distribution = .equalCentering
         stack.translatesAutoresizingMaskIntoConstraints = false
         return stack
     }()
@@ -98,7 +98,7 @@ class RecipeHeaderCell: UITableViewCell, BaseViewProtocol {
         if let url = URL(string: imageURL) {
             self.mainImage.load(url: url)
         }
-        self.mainImage.accessibilityLabel = "Foto do prato finalizado."
+        self.mainImage.accessibilityLabel = "Foto do prato finalizado"
 
         self.titleLabel.text = title
         self.titleLabel.accessibilityLabel = title
@@ -107,13 +107,13 @@ class RecipeHeaderCell: UITableViewCell, BaseViewProtocol {
         self.servingsLabel.accessibilityLabel = "Rendimento de " + servings
 
         self.prepTimeItem.itemDescription = prepTime
-        self.prepTimeItem.accessibilityLabel = "Tempo de preparo: " + prepTime + "minutos."
+        self.prepTimeItem.accessibilityLabel = "Tempo de preparo: " + prepTime
 
         self.difficultyItem.itemDescription = difficulty
-        self.difficultyItem.accessibilityLabel = "Dificuldade: fácil."
+        self.difficultyItem.accessibilityLabel = "Dificuldade: " + difficulty
 
         self.rateItem.itemDescription = "\(rating)"
-        let stars = ((rating > 1) ? "estrelas" : "estrela") + "."
+        let stars = ((rating > 1) ? "estrelas" : "estrela")
         self.rateItem.accessibilityLabel = "Avaliação de \(rating)" + stars
 
         self.accessibilityElements = [

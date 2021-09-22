@@ -39,7 +39,7 @@ class OverviewView: UIView {
         button.titleLabel?.font = Fonts.h5
         button.translatesAutoresizingMaskIntoConstraints = false
         button.isAccessibilityElement = true
-        button.accessibilityLabel = "Iniciar passoa a passo"
+        button.accessibilityLabel = "Iniciar passo a passo"
         return button
     }()
 
@@ -58,8 +58,10 @@ class OverviewView: UIView {
 
     private func setupTableView() {
         tableView.register(SectionHeaderView.self, forHeaderFooterViewReuseIdentifier: SectionHeaderView.identifier)
+
         tableView.register(RecipeHeaderCell.self, forCellReuseIdentifier: RecipeHeaderCell.identifier)
         tableView.register(RecipeStepCell.self, forCellReuseIdentifier: RecipeStepCell.identifier)
+        tableView.register(IngredientCell.self, forCellReuseIdentifier: IngredientCell.identifier)
     }
 
     @objc func startRecipe() {

@@ -66,15 +66,22 @@ extension OverviewViewController: OverviewViewDelegate {
             let time = Time.secondsToHoursMinutesSeconds(seconds: recipe.prepTime)
             cell.configure(imageURL: recipe.imageURL, title: recipe.name,
                            servings: "\(recipe.servings) porções", prepTime: "\(time.minutes) minutos",
-                           difficulty: "fácil", rating: recipe.rate)
+                           difficulty: Difficulty(rawValue: recipe.difficultyLevel)?.description ?? "Fácil",
+                           rating: recipe.rate)
 
             return cell
 
         case .ingredients:
             let ingredient = "\(recipe.ingredients[indexPath.row])"
-            let cell = UITableViewCell(style: .default, reuseIdentifier: "")
-            cell.textLabel?.text = "• " + ingredient
-            cell.accessibilityLabel = ingredient
+
+            guard let cell = tableView.dequeueReusableCell(
+                    withIdentifier: IngredientCell.identifier) as? IngredientCell
+            else {
+                return UITableViewCell()
+            }
+
+            cell.configure(text: ingredient)
+
             return cell
 
         case .steps:
@@ -85,8 +92,7 @@ extension OverviewViewController: OverviewViewDelegate {
             }
 
             cell.configure(title: "Passo \(indexPath.row + 1)",
-                           description: recipe.steps[indexPath.row].stepDescription,
-                           finished: (indexPath.row == 0) ? true : false)
+                           description: recipe.steps[indexPath.row].stepDescription)
 
             return cell
         }
@@ -99,7 +105,7 @@ extension OverviewViewController: OverviewViewDelegate {
         case .header:
             return nil
         case .ingredients, .steps:
-            let title: String = (section == .ingredients) ? "Ingedientes" : "Modo de Preparo"
+            let title: String = (section == .ingredients) ? "Ingredientes" : "Modo de Preparo"
             guard let header = tableView.dequeueReusableHeaderFooterView(
                     withIdentifier: SectionHeaderView.identifier) as? SectionHeaderView
             else {
