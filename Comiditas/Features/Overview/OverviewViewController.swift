@@ -86,8 +86,7 @@ extension OverviewViewController: OverviewViewDelegate {
             }
 
             cell.configure(title: "Passo \(indexPath.row + 1)",
-                           description: recipe.steps[indexPath.row].stepDescription,
-                           finished: (indexPath.row == 0) ? true : false)
+                           description: recipe.steps[indexPath.row].stepDescription)
 
             return cell
         }
