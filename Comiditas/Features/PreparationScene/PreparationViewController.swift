@@ -15,11 +15,13 @@ protocol PreparationDisplayLogic: AnyObject {
 }
 
 class PreparationViewController: UIViewController {
-    var coordinator: PreparationCoordinatorProtocol?
+
+    weak var coordinator: PreparationCoordinator?
     var interactor: PreparationBusinessLogic?
 
+    var recipe: RecipeJson!
+
     var steps: [StepCellModel] = []
-    var recipeIdentifier: Int!
 
     // MARK: - View
 
@@ -68,7 +70,7 @@ class PreparationViewController: UIViewController {
     // MARK: - Request Use Cases
 
     func fetchSteps() {
-        let request = PreparationModels.GetSteps.Request(recipeIdentifier: recipeIdentifier)
+        let request = PreparationModels.GetSteps.Request(recipe: recipe)
         interactor?.requestSteps(request: request)
     }
 

@@ -14,7 +14,7 @@ enum PreparationModels {
 
     enum GetSteps {
         struct Request {
-            let recipeIdentifier: Int
+            let recipe: RecipeJson
         }
         struct Response {
             let steps: [StepJson]

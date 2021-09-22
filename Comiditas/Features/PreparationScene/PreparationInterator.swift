@@ -22,8 +22,8 @@ class PreparationInteractor: PreparationBusinessLogic {
     func requestSteps(request: PreparationModels.GetSteps.Request) {
 
         // chama o worker pra pegar os steps do Json
-        let steps: [StepJson] = worker.readSteps(from: request.recipeIdentifier)
-        //steps.sort { elementA, elementB in elementA.step < elementB.step }
+        var steps: [StepJson] = worker.readSteps(from: request.recipe)
+        steps.sort { elementA, elementB in elementA.step < elementB.step }
 
         // cria um response
         let response = PreparationModels.GetSteps.Response(steps: steps)

@@ -9,15 +9,8 @@ import Foundation
 
 class PreparationWorker {
 
-    private let repository: RecipeJsonRepository = RecipeJsonRepository()
-
-    func readSteps(from recipeIdentifier: Int) -> [StepJson] {
-        let recipes = repository.readAll()
-        let selectedRecipe = recipes.first(where: { recipe in
-            recipe.identifier == recipeIdentifier
-        })
-
-        return selectedRecipe?.steps ?? []
+    func readSteps(from recipe: RecipeJson) -> [StepJson] {
+        return recipe.steps
     }
 
 }
