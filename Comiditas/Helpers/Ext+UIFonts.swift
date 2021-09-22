@@ -20,6 +20,10 @@ struct Fonts {
         return .rounded(ofSize: 22, weight: .bold)
     }
 
+    static var h3Light: UIFont {
+        return .rounded(ofSize: 22, weight: .light)
+    }
+
     static var h4: UIFont {
         return .rounded(ofSize: 20, weight: .bold)
     }

@@ -30,6 +30,8 @@ class OverviewCoordinator: Coordinator {
 
 extension OverviewCoordinator: OverviewCoordinatorProtocol {
     func coordinateToSteps(recipe: RecipeJson, currentStep: Int = 0) {
-        // Todo: Push para a tela da Alley
+        let preparationCoordinator = PreparationCoordinator(navigationController: navigationController)
+        preparationCoordinator.recipe = recipe
+        coordinate(to: preparationCoordinator)
     }
 }

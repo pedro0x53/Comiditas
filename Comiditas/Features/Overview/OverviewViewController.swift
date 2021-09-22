@@ -9,7 +9,7 @@ import UIKit
 
 class OverviewViewController: UIViewController {
 
-    weak var coordinator: OverviewCoordinator?
+    var coordinator: OverviewCoordinator?
     let associatedView: OverviewView = OverviewView()
 
     var recipe: RecipeJson
