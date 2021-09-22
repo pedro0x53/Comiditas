@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct RecipesJson: Decodable {
+struct RecipeJson: Decodable {
     let identifier: Int
     let name: String
     let imageURL: String
