@@ -15,7 +15,7 @@ protocol FeedViewControllerProtocol: AnyObject {
 class FeedViewController: UIViewController {
     var coordinator: FeedCoordinatorProtocol?
     let contentView = FeedView(frame: UIScreen.main.bounds)
-    let tag: [String] = ["Doces", "Salgados"]
+    let tag: [String] = [FeedLocalizable.candy.text, FeedLocalizable.salted.text]
     var interactor: FeedInteractorProtocol?
     var recipes: [RecipeJson] = [] {
         didSet {
@@ -107,13 +107,13 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
             let headerView = UIView(frame: rect)
             headerView.backgroundColor = Colors.background
             let label = UILabel(frame: CGRect(x: 15, y: 0, width: tableView.frame.size.width, height: 44))
-            label.text = "Recomendados pra você"
+            label.text = FeedLocalizable.recommendedForYou.text
             label.textColor = Colors.primary
             label.font = Fonts.h3
             headerView.addSubview(label)
             return headerView
         } else {
-            let sectionsName = ["Recomendados pra você", "Outras receitas"]
+            let sectionsName = [FeedLocalizable.recommendedForYou.text, FeedLocalizable.otherRecipes.text]
             let rect = CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 44)
             let headerView = UIView(frame: rect)
             headerView.backgroundColor = Colors.background
