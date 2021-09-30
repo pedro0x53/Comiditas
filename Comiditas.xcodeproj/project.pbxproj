@@ -16,6 +16,10 @@
 		1894725926F9F9F700E6CD8B /* PreparationInterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894725826F9F9F700E6CD8B /* PreparationInterator.swift */; };
 		1894725B26F9F9FF00E6CD8B /* PreparationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894725A26F9F9FF00E6CD8B /* PreparationPresenter.swift */; };
 		1894725D26F9FE4600E6CD8B /* PreparationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894725C26F9FE4600E6CD8B /* PreparationViewController.swift */; };
+		18CC0F3F2704956900235E5C /* PreparationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC0F3E2704956900235E5C /* PreparationViewControllerTests.swift */; };
+		18CC0F42270495B500235E5C /* PreparationInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC0F41270495B500235E5C /* PreparationInteractorTests.swift */; };
+		18CC0F44270495E700235E5C /* PreparationPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC0F43270495E700235E5C /* PreparationPresenterTests.swift */; };
+		18CC0F4827063F8600235E5C /* PreparationViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC0F4727063F8600235E5C /* PreparationViewTests.swift */; };
 		18F8E17B26FA898E00B5766B /* StepCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8E17A26FA898E00B5766B /* StepCellModel.swift */; };
 		18F8E17F26FAA22500B5766B /* SimpleStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8E17E26FAA22500B5766B /* SimpleStepCell.swift */; };
 		18F8E18126FAA35600B5766B /* StepWithTimerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8E18026FAA35600B5766B /* StepWithTimerCell.swift */; };
@@ -95,6 +99,10 @@
 		1894725826F9F9F700E6CD8B /* PreparationInterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationInterator.swift; sourceTree = "<group>"; };
 		1894725A26F9F9FF00E6CD8B /* PreparationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationPresenter.swift; sourceTree = "<group>"; };
 		1894725C26F9FE4600E6CD8B /* PreparationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationViewController.swift; sourceTree = "<group>"; };
+		18CC0F3E2704956900235E5C /* PreparationViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationViewControllerTests.swift; sourceTree = "<group>"; };
+		18CC0F41270495B500235E5C /* PreparationInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationInteractorTests.swift; sourceTree = "<group>"; };
+		18CC0F43270495E700235E5C /* PreparationPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationPresenterTests.swift; sourceTree = "<group>"; };
+		18CC0F4727063F8600235E5C /* PreparationViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationViewTests.swift; sourceTree = "<group>"; };
 		18F8E17A26FA898E00B5766B /* StepCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCellModel.swift; sourceTree = "<group>"; };
 		18F8E17E26FAA22500B5766B /* SimpleStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStepCell.swift; sourceTree = "<group>"; };
 		18F8E18026FAA35600B5766B /* StepWithTimerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepWithTimerCell.swift; sourceTree = "<group>"; };
@@ -215,6 +223,17 @@
 			path = PreparationScene;
 			sourceTree = "<group>";
 		};
+		18CC0F402704957300235E5C /* PreparationScene */ = {
+			isa = PBXGroup;
+			children = (
+				18CC0F3E2704956900235E5C /* PreparationViewControllerTests.swift */,
+				18CC0F4727063F8600235E5C /* PreparationViewTests.swift */,
+				18CC0F41270495B500235E5C /* PreparationInteractorTests.swift */,
+				18CC0F43270495E700235E5C /* PreparationPresenterTests.swift */,
+			);
+			path = PreparationScene;
+			sourceTree = "<group>";
+		};
 		770BE81626F0DDC60032F0ED /* Json */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +331,7 @@
 		779F5EA626EF7458005668BE /* ComiditasTests */ = {
 			isa = PBXGroup;
 			children = (
+				18CC0F402704957300235E5C /* PreparationScene */,
 				FE95430126F8B2EB0039F547 /* Helpers */,
 				779F5EA726EF7458005668BE /* ComiditasTests.swift */,
 				77D70D1A26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift */,
@@ -719,8 +739,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18CC0F4827063F8600235E5C /* PreparationViewTests.swift in Sources */,
 				FE95430326F8B41D0039F547 /* UIImageViewTests.swift in Sources */,
+				18CC0F42270495B500235E5C /* PreparationInteractorTests.swift in Sources */,
 				779F5EA826EF7458005668BE /* ComiditasTests.swift in Sources */,
+				18CC0F3F2704956900235E5C /* PreparationViewControllerTests.swift in Sources */,
+				18CC0F44270495E700235E5C /* PreparationPresenterTests.swift in Sources */,
 				77D70D1B26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
