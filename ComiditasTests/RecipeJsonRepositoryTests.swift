@@ -12,7 +12,7 @@ class RecipeJsonRepositoryTests: XCTestCase {
     var sut: RecipeJsonRepository!
 
     override func setUp() {
-        sut = RecipeJsonRepository()
+        sut = RecipeJsonRepository(named: "Recipes")
     }
 
     override func tearDown() {
