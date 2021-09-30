@@ -36,6 +36,7 @@
 		7792905326F8B08700AAA0A4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7792905226F8B08700AAA0A4 /* FeedViewController.swift */; };
 		7792905526F8B09800AAA0A4 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7792905426F8B09800AAA0A4 /* FeedView.swift */; };
 		7792905726F8B18800AAA0A4 /* FeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7792905626F8B18800AAA0A4 /* FeedCoordinator.swift */; };
+		77946A4D27066AD800D3F1B3 /* Ext+UIImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77946A4C27066AD800D3F1B3 /* Ext+UIImageTests.swift */; };
 		779F5E8E26EF7456005668BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5E8D26EF7456005668BE /* AppDelegate.swift */; };
 		779F5E9026EF7456005668BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5E8F26EF7456005668BE /* SceneDelegate.swift */; };
 		779F5E9826EF7456005668BE /* Comiditas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 779F5E9626EF7456005668BE /* Comiditas.xcdatamodeld */; };
@@ -115,6 +116,7 @@
 		7792905226F8B08700AAA0A4 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		7792905426F8B09800AAA0A4 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		7792905626F8B18800AAA0A4 /* FeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCoordinator.swift; sourceTree = "<group>"; };
+		77946A4C27066AD800D3F1B3 /* Ext+UIImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIImageTests.swift"; sourceTree = "<group>"; };
 		779F5E8A26EF7456005668BE /* Comiditas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Comiditas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		779F5E8D26EF7456005668BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		779F5E8F26EF7456005668BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -473,6 +475,7 @@
 			isa = PBXGroup;
 			children = (
 				FE95430226F8B41D0039F547 /* UIImageViewTests.swift */,
+				77946A4C27066AD800D3F1B3 /* Ext+UIImageTests.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -720,6 +723,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE95430326F8B41D0039F547 /* UIImageViewTests.swift in Sources */,
+				77946A4D27066AD800D3F1B3 /* Ext+UIImageTests.swift in Sources */,
 				779F5EA826EF7458005668BE /* ComiditasTests.swift in Sources */,
 				77D70D1B26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift in Sources */,
 			);
