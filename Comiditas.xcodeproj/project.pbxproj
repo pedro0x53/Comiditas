@@ -41,6 +41,7 @@
 		77946A51270670E500D3F1B3 /* Ext+UIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77946A50270670E500D3F1B3 /* Ext+UIColorTests.swift */; };
 		77946A53270671E400D3F1B3 /* TimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77946A52270671E400D3F1B3 /* TimeTests.swift */; };
 		77946A57270674C800D3F1B3 /* AppCoordinatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77946A56270674C800D3F1B3 /* AppCoordinatorTest.swift */; };
+		77946A5B2706768A00D3F1B3 /* FeedCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77946A5A2706768A00D3F1B3 /* FeedCoordinatorTests.swift */; };
 		779F5E8E26EF7456005668BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5E8D26EF7456005668BE /* AppDelegate.swift */; };
 		779F5E9026EF7456005668BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5E8F26EF7456005668BE /* SceneDelegate.swift */; };
 		779F5E9826EF7456005668BE /* Comiditas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 779F5E9626EF7456005668BE /* Comiditas.xcdatamodeld */; };
@@ -125,6 +126,7 @@
 		77946A50270670E500D3F1B3 /* Ext+UIColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIColorTests.swift"; sourceTree = "<group>"; };
 		77946A52270671E400D3F1B3 /* TimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTests.swift; sourceTree = "<group>"; };
 		77946A56270674C800D3F1B3 /* AppCoordinatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTest.swift; sourceTree = "<group>"; };
+		77946A5A2706768A00D3F1B3 /* FeedCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCoordinatorTests.swift; sourceTree = "<group>"; };
 		779F5E8A26EF7456005668BE /* Comiditas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Comiditas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		779F5E8D26EF7456005668BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		779F5E8F26EF7456005668BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -291,6 +293,22 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		77946A582706767200D3F1B3 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				77946A592706767700D3F1B3 /* Feed */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		77946A592706767700D3F1B3 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				77946A5A2706768A00D3F1B3 /* FeedCoordinatorTests.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
 		779F5E8126EF7456005668BE = {
 			isa = PBXGroup;
 			children = (
@@ -330,6 +348,7 @@
 		779F5EA626EF7458005668BE /* ComiditasTests */ = {
 			isa = PBXGroup;
 			children = (
+				77946A582706767200D3F1B3 /* Features */,
 				77946A55270674AA00D3F1B3 /* Manager */,
 				FE95430126F8B2EB0039F547 /* Helpers */,
 				779F5EA726EF7458005668BE /* ComiditasTests.swift */,
@@ -743,6 +762,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77946A57270674C800D3F1B3 /* AppCoordinatorTest.swift in Sources */,
+				77946A5B2706768A00D3F1B3 /* FeedCoordinatorTests.swift in Sources */,
 				FE95430326F8B41D0039F547 /* UIImageViewTests.swift in Sources */,
 				77946A4D27066AD800D3F1B3 /* Ext+UIImageTests.swift in Sources */,
 				779F5EA826EF7458005668BE /* ComiditasTests.swift in Sources */,
