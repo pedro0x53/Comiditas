@@ -66,6 +66,7 @@
 		FE95430326F8B41D0039F547 /* UIImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE95430226F8B41D0039F547 /* UIImageViewTests.swift */; };
 		FE95430B26F8CBFA0039F547 /* OverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE95430A26F8CBFA0039F547 /* OverviewView.swift */; };
 		FE95430E26F8D0DC0039F547 /* RecipeHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE95430D26F8D0DC0039F547 /* RecipeHeaderCell.swift */; };
+		FEAD732A2704AF40000BBE68 /* OverviewCoordinatorUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD73292704AF40000BBE68 /* OverviewCoordinatorUnitTests.swift */; };
 		FEC8B85426F9FD6400455143 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC8B85326F9FD6400455143 /* DetailView.swift */; };
 		FEC8B85626FA1CB900455143 /* RecipeStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC8B85526FA1CB900455143 /* RecipeStepCell.swift */; };
 		FEC8B85826FA269800455143 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC8B85726FA269800455143 /* SectionHeaderView.swift */; };
@@ -159,6 +160,7 @@
 		FE95430226F8B41D0039F547 /* UIImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewTests.swift; sourceTree = "<group>"; };
 		FE95430A26F8CBFA0039F547 /* OverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewView.swift; sourceTree = "<group>"; };
 		FE95430D26F8D0DC0039F547 /* RecipeHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeHeaderCell.swift; sourceTree = "<group>"; };
+		FEAD73292704AF40000BBE68 /* OverviewCoordinatorUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewCoordinatorUnitTests.swift; sourceTree = "<group>"; };
 		FEC8B85326F9FD6400455143 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		FEC8B85526FA1CB900455143 /* RecipeStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepCell.swift; sourceTree = "<group>"; };
 		FEC8B85726FA269800455143 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 			children = (
 				77946A582706767200D3F1B3 /* Features */,
 				77946A55270674AA00D3F1B3 /* Manager */,
+				FEAD73282704AF12000BBE68 /* Overview */,
 				FE95430126F8B2EB0039F547 /* Helpers */,
 				779F5EA726EF7458005668BE /* ComiditasTests.swift */,
 				77D70D1A26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift */,
@@ -548,6 +551,14 @@
 				FEEDA9B726FB6B8C009A5E10 /* IngredientCell.swift */,
 			);
 			path = TableView;
+			sourceTree = "<group>";
+		};
+		FEAD73282704AF12000BBE68 /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				FEAD73292704AF40000BBE68 /* OverviewCoordinatorUnitTests.swift */,
+			);
+			path = Overview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -770,6 +781,7 @@
 				77D70D1B26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift in Sources */,
 				77946A53270671E400D3F1B3 /* TimeTests.swift in Sources */,
 				77946A51270670E500D3F1B3 /* Ext+UIColorTests.swift in Sources */,
+				FEAD732A2704AF40000BBE68 /* OverviewCoordinatorUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -941,7 +953,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 2;
 				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.Comiditas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -963,7 +975,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 2;
 				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.Comiditas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
