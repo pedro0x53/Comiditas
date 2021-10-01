@@ -63,10 +63,16 @@ extension OverviewViewController: OverviewViewDelegate {
             else {
                 return UITableViewCell()
             }
+
             let time = Time.secondsToHoursMinutesSeconds(seconds: recipe.prepTime)
-            cell.configure(imageURL: recipe.imageURL, title: recipe.name,
-                           servings: "\(recipe.servings) porções", prepTime: "\(time.minutes) minutos",
-                           difficulty: Difficulty(rawValue: recipe.difficultyLevel)?.description ?? "Fácil",
+
+            let difficulty = Difficulty(rawValue: recipe.difficultyLevel) ?? .medium
+
+            cell.configure(imageURL: recipe.imageURL,
+                           title: recipe.name,
+                           servings: "\(recipe.servings)",
+                           prepTime: time,
+                           difficulty: difficulty,
                            rating: recipe.rate)
 
             return cell
@@ -91,7 +97,7 @@ extension OverviewViewController: OverviewViewDelegate {
                 return UITableViewCell()
             }
 
-            cell.configure(title: "Passo \(indexPath.row + 1)",
+            cell.configure(title: OverviewLocalizable.step.text + "\(indexPath.row + 1)",
                            description: recipe.steps[indexPath.row].stepDescription)
 
             return cell
@@ -105,7 +111,9 @@ extension OverviewViewController: OverviewViewDelegate {
         case .header:
             return nil
         case .ingredients, .steps:
-            let title: String = (section == .ingredients) ? "Ingredientes" : "Modo de Preparo"
+            let title: String = (section == .ingredients) ?
+                                OverviewLocalizable.ingredients.text : OverviewLocalizable.directions.text
+
             guard let header = tableView.dequeueReusableHeaderFooterView(
                     withIdentifier: SectionHeaderView.identifier) as? SectionHeaderView
             else {

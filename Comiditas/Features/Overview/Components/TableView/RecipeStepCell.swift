@@ -112,6 +112,6 @@ class RecipeStepCell: UITableViewCell, BaseViewProtocol {
         self.finished = finished
 
         shouldGroupAccessibilityChildren = true
-        accessibilityLabel = title + ((finished) ? ", completo, " : "") + description
+        accessibilityLabel = title + description
     }
 }
