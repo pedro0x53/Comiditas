@@ -1,0 +1,31 @@
+/* 
+  Overview.strings
+  Comiditas
+
+  Created by Pedro Sousa on 01/10/21.
+  
+*/
+
+accessibleMainImage = "Foto do prato finalizado.";
+
+servings = "Rendimento";
+accessibleServings = "Rendimento de ";
+
+accessiblePrep = "Tempo de preparo: ";
+minutes = "minutos.";
+hours = "horas.";
+
+accessibleDifficulty = "Nível de dificuldade: ";
+hard = "Difícil";
+medium = "Médio";
+easy = "Fácil";
+
+rating = " estrelas";
+accessibleRating = "Avaliação de";
+
+ingredients = "Ingredientes";
+
+directions = "Modo de Preparo";
+step = "Passo ";
+
+startDirections = "Iniciar Passo a Passo";

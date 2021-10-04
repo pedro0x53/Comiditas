@@ -94,27 +94,33 @@ class RecipeHeaderCell: UITableViewCell, BaseViewProtocol {
     }
 
     func configure(imageURL: String, title: String, servings: String,
-                   prepTime: String, difficulty: String, rating: Int) {
+                   prepTime: TimeResponse, difficulty: Difficulty, rating: Int) {
         if let url = URL(string: imageURL) {
             self.mainImage.load(url: url)
         }
-        self.mainImage.accessibilityLabel = "Foto do prato finalizado"
+        self.mainImage.accessibilityLabel = OverviewLocalizable.accessibleMainImage.text
 
         self.titleLabel.text = title
         self.titleLabel.accessibilityLabel = title
 
-        self.servingsLabel.text = "Rendimento: " + servings
-        self.servingsLabel.accessibilityLabel = "Rendimento de " + servings
+        self.servingsLabel.text = OverviewLocalizable.servings.text + servings
+        self.servingsLabel.accessibilityLabel = OverviewLocalizable.accessibleServings.text + servings
 
-        self.prepTimeItem.itemDescription = prepTime
-        self.prepTimeItem.accessibilityLabel = "Tempo de preparo: " + prepTime
+        let prepTimeLabel = getPrepTimeLabel(for: prepTime)
+        self.prepTimeItem.itemDescription = prepTimeLabel.display
+        self.prepTimeItem.accessibilityLabel = OverviewLocalizable.accessiblePrep.text + prepTimeLabel.accessible
 
-        self.difficultyItem.itemDescription = difficulty
-        self.difficultyItem.accessibilityLabel = "Dificuldade: " + difficulty
+        let difficultyLabel = getDifficultyLabel(for: difficulty)
+        self.difficultyItem.itemDescription = difficultyLabel
+        self.difficultyItem.accessibilityLabel = OverviewLocalizable.accessibleDifficulty.text + difficultyLabel
 
-        self.rateItem.itemDescription = "\(rating)"
-        let stars = ((rating > 1) ? "estrelas" : "estrela")
-        self.rateItem.accessibilityLabel = "Avaliação de \(rating)" + stars
+        self.rateItem.itemDescription = "\(rating)" + OverviewLocalizable.rating.text
+        if Locale.current.languageCode == "pt_BR" {
+            self.rateItem.accessibilityLabel = OverviewLocalizable.accessibleRating.text +
+                                               "\(rating)" + OverviewLocalizable.rating.text
+        } else {
+            self.rateItem.accessibilityLabel = "\(rating)" + OverviewLocalizable.accessibleRating.text
+        }
 
         self.accessibilityElements = [
             mainImage,
@@ -124,5 +130,33 @@ class RecipeHeaderCell: UITableViewCell, BaseViewProtocol {
             difficultyItem,
             rateItem
         ]
+    }
+
+    private func getDifficultyLabel(for difficulty: Difficulty) -> String {
+        switch difficulty {
+        case .easy:
+            return OverviewLocalizable.easy.text
+        case .medium:
+            return OverviewLocalizable.medium.text
+        case .hard:
+            return OverviewLocalizable.hard.text
+        }
+    }
+
+    private func getPrepTimeLabel(for time: TimeResponse) -> (display: String, accessible: String) {
+        var displayPrepTime = ""
+        var accessiblePrepTime = ""
+
+        if time.hour > 0 {
+            displayPrepTime += "\(time.hour)h "
+            accessiblePrepTime += "\(time.hour)" + OverviewLocalizable.hours.text + " "
+        }
+
+        if time.minutes > 0 {
+            displayPrepTime += "\(time.minutes)min"
+            accessiblePrepTime += "\(time.minutes)" + OverviewLocalizable.minutes.text
+        }
+
+        return (displayPrepTime, accessiblePrepTime)
     }
 }

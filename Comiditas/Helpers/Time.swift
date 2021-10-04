@@ -7,9 +7,10 @@
 
 import Foundation
 
-// swiftlint:disable large_tuple
+typealias TimeResponse = (hour: Int, minutes: Int, seconds: Int)
+
 struct Time {
-    static func secondsToHoursMinutesSeconds (seconds: Int) -> (hour: Int, minutes: Int, seconds: Int) {
+    static func secondsToHoursMinutesSeconds (seconds: Int) -> TimeResponse {
       return (seconds / 3600, (seconds % 3600) / 60, (seconds % 3600) % 60)
     }
 }
