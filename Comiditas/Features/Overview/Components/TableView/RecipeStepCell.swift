@@ -40,6 +40,14 @@ class RecipeStepCell: UITableViewCell, BaseViewProtocol {
         return imageView
     }()
 
+    private let line: UIView = {
+        let view = UIView()
+        view.backgroundColor = Colors.textMedium
+        view.clipsToBounds = true
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupView()
@@ -53,11 +61,6 @@ class RecipeStepCell: UITableViewCell, BaseViewProtocol {
     override func draw(_ rect: CGRect) {
         super.draw(rect)
 
-        let startPoint = CGPoint(x: completedMark.frame.midX,
-                                 y: completedMark.frame.maxY + 4)
-        let endPoint = CGPoint(x: completedMark.frame.midX,
-                               y: descriptionLabel.frame.maxY + 4)
-
         if FeatureFlags.currentStep.isEnable {
             if self.finished {
                 if let image = UIImage(systemName: "checkmark.circle.fill") {
@@ -66,15 +69,11 @@ class RecipeStepCell: UITableViewCell, BaseViewProtocol {
                 }
 
                 self.completedMark.layer.borderColor = Colors.primary.cgColor
-                self.drawDashedLine(from: startPoint, to: endPoint, color: Colors.primary,
-                                    strokeLength: 3, gapLength: 1, width: 1.5)
-            } else {
-                self.drawDashedLine(from: startPoint, to: endPoint, color: Colors.textMedium,
-                                    strokeLength: 3, gapLength: 1, width: 1.5)
+                line.backgroundColor = Colors.primary
+
             }
         } else {
-            self.drawDashedLine(from: startPoint, to: endPoint, color: Colors.textMedium,
-                                strokeLength: 3, gapLength: 1, width: 1.5)
+            line.backgroundColor = Colors.textMedium
         }
     }
 
@@ -83,6 +82,7 @@ class RecipeStepCell: UITableViewCell, BaseViewProtocol {
         completedMark.layer.cornerRadius = 10
         completedMark.layer.borderColor = Colors.textMedium.cgColor
         completedMark.layer.borderWidth = 1.5
+        contentView.addSubview(line)
 
         contentView.addSubview(titleLabel)
         contentView.addSubview(descriptionLabel)
@@ -94,6 +94,11 @@ class RecipeStepCell: UITableViewCell, BaseViewProtocol {
             completedMark.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
             completedMark.heightAnchor.constraint(equalToConstant: 20),
             completedMark.widthAnchor.constraint(equalToConstant: 20),
+
+            line.widthAnchor.constraint(equalToConstant: 1.5),
+            line.centerXAnchor.constraint(equalTo: completedMark.centerXAnchor),
+            line.topAnchor.constraint(equalTo: completedMark.bottomAnchor, constant: 4),
+            line.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
 
             titleLabel.centerYAnchor.constraint(equalTo: completedMark.centerYAnchor),
             titleLabel.leadingAnchor.constraint(equalTo: completedMark.trailingAnchor, constant: 16),
