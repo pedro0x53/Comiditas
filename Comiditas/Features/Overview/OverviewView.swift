@@ -34,12 +34,12 @@ class OverviewView: UIView {
 
     private let startButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Iniciar passo a passo", for: .normal)
+        button.setTitle(OverviewLocalizable.startDirections.text, for: .normal)
         button.setTitleColor(Colors.textLight, for: .normal)
         button.titleLabel?.font = Fonts.h5
         button.translatesAutoresizingMaskIntoConstraints = false
         button.isAccessibilityElement = true
-        button.accessibilityLabel = "Iniciar passo a passo"
+        button.accessibilityLabel = OverviewLocalizable.startDirections.text
         return button
     }()
 
