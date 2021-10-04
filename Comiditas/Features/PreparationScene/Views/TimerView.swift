@@ -110,6 +110,7 @@ extension TimerView: StepTimerDelegate {
 
     func finished() {
         print("Cabou o alarme. Notificacao.")
+        self.timerIsRunning = false
     }
 
 }
