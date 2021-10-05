@@ -17,6 +17,7 @@ class SimpleStepCell: UICollectionViewCell {
         label.textAlignment = .justified
         label.numberOfLines = 0
         label.textColor = Colors.textDark
+        label.isAccessibilityElement = true
         return label
     }()
 
