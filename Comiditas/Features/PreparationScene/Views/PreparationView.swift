@@ -41,8 +41,7 @@ class PreparationView: UIView {
         collection.isScrollEnabled = false
         collection.delegate = self
         collection.dataSource = self
-        collection.isAccessibilityElement = false
-        collection.shouldGroupAccessibilityChildren = true
+        collection.isAccessibilityElement = true
         collection.register(
             StepWithTimerCell.self,
             forCellWithReuseIdentifier: StepWithTimerCell.identifier
@@ -63,7 +62,7 @@ class PreparationView: UIView {
         button.setImage(image, for: .normal)
         button.tintColor = Colors.primary
         button.isAccessibilityElement = true
-        button.accessibilityLabel = "Voltar passo"
+        button.accessibilityLabel = "Passo anterior"
         button.addTarget(self, action: #selector(previousButtonAction(_:)), for: .touchUpInside)
         return button
     }()
