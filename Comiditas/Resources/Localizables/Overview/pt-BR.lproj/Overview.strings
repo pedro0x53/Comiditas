@@ -11,7 +11,7 @@ back = "Voltar";
 
 accessibleMainImage = "Foto do prato finalizado.";
 
-servings = "Rendimento";
+servings = "Rendimento: ";
 accessibleServings = "Rendimento de ";
 
 accessiblePrep = "Tempo de preparo: ";

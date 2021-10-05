@@ -106,8 +106,15 @@ class RecipeHeaderCell: UITableViewCell, BaseViewProtocol {
         self.titleLabel.text = title
         self.titleLabel.accessibilityLabel = title
 
-        self.servingsLabel.text = OverviewLocalizable.servings.text + servings
-        self.servingsLabel.accessibilityLabel = OverviewLocalizable.accessibleServings.text + servings
+        var servingsText = OverviewLocalizable.servings.text + servings
+        var servingsAccessibleText = OverviewLocalizable.servings.text + servings
+        if Locale.current.languageCode == "pt" {
+            servingsText += " porções"
+            servingsAccessibleText += " porções"
+        }
+
+        self.servingsLabel.text = servingsText
+        self.servingsLabel.accessibilityLabel = servingsAccessibleText
 
         let prepTimeLabel = getPrepTimeLabel(for: prepTime)
         self.prepTimeItem.itemDescription = prepTimeLabel.display
@@ -117,24 +124,25 @@ class RecipeHeaderCell: UITableViewCell, BaseViewProtocol {
         self.difficultyItem.itemDescription = difficultyLabel
         self.difficultyItem.accessibilityLabel = OverviewLocalizable.accessibleDifficulty.text + difficultyLabel
 
-        if FeatureFlags.rating.isEnable {
-            self.rateItem.itemDescription = "\(rating)" + OverviewLocalizable.rating.text
-            if Locale.current.languageCode == "pt_BR" {
-                self.rateItem.accessibilityLabel = OverviewLocalizable.accessibleRating.text +
-                                                   "\(rating)" + OverviewLocalizable.rating.text
-            } else {
-                self.rateItem.accessibilityLabel = "\(rating)" + OverviewLocalizable.accessibleRating.text
-            }
-        }
-
         self.accessibilityElements = [
             mainImage,
             titleLabel,
             servingsLabel,
             prepTimeItem,
-            difficultyItem,
-            rateItem
+            difficultyItem
         ]
+
+        if FeatureFlags.rating.isEnable {
+            self.rateItem.itemDescription = "\(rating)" + OverviewLocalizable.rating.text
+            if Locale.current.languageCode == "pt" {
+                self.rateItem.accessibilityLabel = OverviewLocalizable.accessibleRating.text +
+                                                   "\(rating)" + OverviewLocalizable.rating.text
+            } else {
+                self.rateItem.accessibilityLabel = "\(rating)" + OverviewLocalizable.accessibleRating.text
+            }
+
+            self.accessibilityElements?.append(rateItem)
+        }
     }
 
     private func getDifficultyLabel(for difficulty: Difficulty) -> String {
