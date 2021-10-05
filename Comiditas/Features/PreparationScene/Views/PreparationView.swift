@@ -41,7 +41,6 @@ class PreparationView: UIView {
         collection.isScrollEnabled = false
         collection.delegate = self
         collection.dataSource = self
-        collection.isAccessibilityElement = true
         collection.register(
             StepWithTimerCell.self,
             forCellWithReuseIdentifier: StepWithTimerCell.identifier
