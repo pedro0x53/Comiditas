@@ -6,6 +6,9 @@
   
 */
 
+title = "Visão Geral";
+back = "Voltar";
+
 accessibleMainImage = "Foto do prato finalizado.";
 
 servings = "Rendimento";
@@ -28,4 +31,4 @@ ingredients = "Ingredientes";
 directions = "Modo de Preparo";
 step = "Passo ";
 
-startDirections = "Iniciar Passo a Passo";
+startDirections = "Iniciar Passo a Passo Interativo";

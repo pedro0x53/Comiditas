@@ -8,6 +8,9 @@
 import Foundation
 
 enum OverviewLocalizable: String {
+    case title
+    case back
+
     case accessibleMainImage
 
     case servings

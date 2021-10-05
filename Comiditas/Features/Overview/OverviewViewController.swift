@@ -32,6 +32,7 @@ class OverviewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.largeTitleDisplayMode = .never
+        title = OverviewLocalizable.title.text
     }
 }
 

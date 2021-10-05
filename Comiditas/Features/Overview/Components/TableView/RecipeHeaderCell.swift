@@ -41,7 +41,7 @@ class RecipeHeaderCell: UITableViewCell, BaseViewProtocol {
         let stack = UIStackView()
         stack.alignment = .center
         stack.axis = .horizontal
-        stack.distribution = .equalCentering
+        stack.distribution = .fillProportionally
         stack.translatesAutoresizingMaskIntoConstraints = false
         return stack
     }()
@@ -68,7 +68,10 @@ class RecipeHeaderCell: UITableViewCell, BaseViewProtocol {
 
         detailsStack.addArrangedSubview(prepTimeItem)
         detailsStack.addArrangedSubview(difficultyItem)
-        detailsStack.addArrangedSubview(rateItem)
+
+        if FeatureFlags.rating.isEnable {
+            detailsStack.addArrangedSubview(rateItem)
+        }
     }
 
     func setupConstraints() {
@@ -114,12 +117,14 @@ class RecipeHeaderCell: UITableViewCell, BaseViewProtocol {
         self.difficultyItem.itemDescription = difficultyLabel
         self.difficultyItem.accessibilityLabel = OverviewLocalizable.accessibleDifficulty.text + difficultyLabel
 
-        self.rateItem.itemDescription = "\(rating)" + OverviewLocalizable.rating.text
-        if Locale.current.languageCode == "pt_BR" {
-            self.rateItem.accessibilityLabel = OverviewLocalizable.accessibleRating.text +
-                                               "\(rating)" + OverviewLocalizable.rating.text
-        } else {
-            self.rateItem.accessibilityLabel = "\(rating)" + OverviewLocalizable.accessibleRating.text
+        if FeatureFlags.rating.isEnable {
+            self.rateItem.itemDescription = "\(rating)" + OverviewLocalizable.rating.text
+            if Locale.current.languageCode == "pt_BR" {
+                self.rateItem.accessibilityLabel = OverviewLocalizable.accessibleRating.text +
+                                                   "\(rating)" + OverviewLocalizable.rating.text
+            } else {
+                self.rateItem.accessibilityLabel = "\(rating)" + OverviewLocalizable.accessibleRating.text
+            }
         }
 
         self.accessibilityElements = [

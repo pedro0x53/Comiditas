@@ -11,6 +11,7 @@ enum FeatureFlags: Int {
     case tagsFeed
     case user
     case currentStep
+    case rating
 
     var isEnable: Bool {
         switch self {
@@ -19,6 +20,8 @@ enum FeatureFlags: Int {
         case .user:
             return false
         case .currentStep:
+            return false
+        case .rating:
             return false
         }
     }
