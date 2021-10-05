@@ -62,6 +62,8 @@ class PreparationView: UIView {
         )
         button.setImage(image, for: .normal)
         button.tintColor = Colors.primary
+        button.isAccessibilityElement = true
+        button.accessibilityLabel = "Voltar passo"
         button.addTarget(self, action: #selector(previousButtonAction(_:)), for: .touchUpInside)
         return button
     }()
@@ -74,6 +76,8 @@ class PreparationView: UIView {
         )
         button.setImage(image, for: .normal)
         button.tintColor = Colors.primary
+        button.isAccessibilityElement = true
+        button.accessibilityLabel = "Próximo passo"
         button.addTarget(self, action: #selector(nextButtonAction(_:)), for: .touchUpInside)
         return button
     }()
