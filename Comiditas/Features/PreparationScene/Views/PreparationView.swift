@@ -41,6 +41,7 @@ class PreparationView: UIView {
         collection.isScrollEnabled = false
         collection.delegate = self
         collection.dataSource = self
+        collection.isAccessibilityElement = false
         collection.register(
             StepWithTimerCell.self,
             forCellWithReuseIdentifier: StepWithTimerCell.identifier
@@ -93,7 +94,6 @@ class PreparationView: UIView {
         label.font = Fonts.h3Light
         label.textColor = Colors.primary
         label.textAlignment = .left
-//        label.isAccessibilityElement = true
         return label
     }()
 
@@ -215,7 +215,6 @@ extension PreparationView: UICollectionViewDelegate, UICollectionViewDataSource,
                 for: indexPath
             ) as? SimpleStepCell {
                 cell.recipeStepLabel.text = text
-                cell.isAccessibilityElement = true
                 cell.setupLine(for: indexPath)
                 return cell
             }
@@ -250,7 +249,6 @@ extension PreparationView: UICollectionViewDelegate, UICollectionViewDataSource,
     ) {
         indexPathOnScreen = indexPath
         currentPageLabel.text = "Passo \(indexPath.row + 1)"
-        currentPageLabel.isAccessibilityElement = true
 
         // Reset timer
         if let currentCell = cell as? StepWithTimerCell,
