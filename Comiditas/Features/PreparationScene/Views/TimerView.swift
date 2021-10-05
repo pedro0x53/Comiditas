@@ -20,7 +20,6 @@ class TimerView: UIView {
         label.textAlignment = .center
         label.backgroundColor = .white
         label.clipsToBounds = true
-        label.isAccessibilityElement = true
         return label
     }()
 
