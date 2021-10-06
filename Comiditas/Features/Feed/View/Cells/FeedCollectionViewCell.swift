@@ -10,6 +10,7 @@ import UIKit
 class FeedCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.isAccessibilityElement = true
     }
 
     required init?(coder: NSCoder) {
@@ -23,6 +24,16 @@ class FeedCollectionViewCell: UICollectionViewCell {
 
     override func layoutSubviews() {
         setupUI()
+    }
+
+    override func accessibilityElementDidBecomeFocused() {
+        guard let collectionView = superview as? UICollectionView,
+            let indexPath = collectionView.indexPath(for: self) else {
+            return
+        }
+
+        collectionView.scrollToItem(at: indexPath, at: .right, animated: true)
+        UIAccessibility.post(notification: .layoutChanged, argument: self)
     }
 
     lazy var roundedBackgroundView: UIView = {
@@ -77,6 +88,11 @@ class FeedCollectionViewCell: UICollectionViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+
+//    func configureAccessibilityGroup() {
+//        self.shouldGroupAccessibilityChildren = true
+////        self.accessibilityLabel = [titleLabel, subtitleLabel].compactMap(\.text).joined(separator: ",")
+//    }
 }
 
 extension FeedCollectionViewCell {
