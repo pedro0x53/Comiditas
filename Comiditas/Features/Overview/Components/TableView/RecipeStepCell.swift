@@ -35,8 +35,14 @@ class RecipeStepCell: UITableViewCell, BaseViewProtocol {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
-        imageView.tintColor = Colors.primary
+        imageView.tintColor = Colors.textMedium
         imageView.translatesAutoresizingMaskIntoConstraints = false
+
+        if let image = UIImage(systemName: "checkmark.circle.fill") {
+            let templateImage = image.withRenderingMode(.alwaysTemplate)
+            imageView.image = templateImage
+        }
+
         return imageView
     }()
 
@@ -60,20 +66,11 @@ class RecipeStepCell: UITableViewCell, BaseViewProtocol {
 
     override func draw(_ rect: CGRect) {
         super.draw(rect)
-
         if FeatureFlags.currentStep.isEnable {
             if self.finished {
-                if let image = UIImage(systemName: "checkmark.circle.fill") {
-                    let templateImage = image.withRenderingMode(.alwaysTemplate)
-                    self.completedMark.image = templateImage
-                }
-
                 self.completedMark.layer.borderColor = Colors.primary.cgColor
                 line.backgroundColor = Colors.primary
-
             }
-        } else {
-            line.backgroundColor = Colors.textMedium
         }
     }
 

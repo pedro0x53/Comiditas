@@ -67,6 +67,12 @@ class OverviewView: UIView {
     @objc func startRecipe() {
         delegate?.startRecipe()
     }
+
+    override func accessibilityPerformMagicTap() -> Bool {
+        super.accessibilityPerformMagicTap()
+        delegate?.startRecipe()
+        return true
+    }
 }
 
 extension OverviewView: BaseViewProtocol {
