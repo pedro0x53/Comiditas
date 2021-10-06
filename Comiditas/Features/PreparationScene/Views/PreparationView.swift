@@ -140,6 +140,7 @@ class PreparationView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupLayout()
+        self.isUserInteractionEnabled = true
     }
 
     required init?(coder: NSCoder) {
