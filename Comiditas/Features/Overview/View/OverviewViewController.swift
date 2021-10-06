@@ -8,7 +8,6 @@
 import UIKit
 
 class OverviewViewController: UIViewController {
-
     var coordinator: OverviewCoordinator?
     let associatedView: OverviewView = OverviewView()
 
@@ -37,13 +36,18 @@ class OverviewViewController: UIViewController {
 }
 
 extension OverviewViewController: OverviewViewDelegate {
+    enum OverviewSection: Int {
+        case header = 0
+        case ingredients = 1
+        case steps = 2
+    }
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let section = OverviewSection(rawValue: section) else { return 0 }
-
         switch section {
         case .header:
             return 1
@@ -56,25 +60,22 @@ extension OverviewViewController: OverviewViewDelegate {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let section = OverviewSection(rawValue: indexPath.section) else { return UITableViewCell() }
-
         switch section {
         case .header:
+            let time = Time.secondsToHoursMinutesSeconds(seconds: recipe.prepTime)
+            let difficulty = Difficulty(rawValue: recipe.difficultyLevel) ?? .medium
+
             guard let cell = tableView.dequeueReusableCell(
                     withIdentifier: RecipeHeaderCell.identifier) as? RecipeHeaderCell
             else {
-                return UITableViewCell()
+                let cell = RecipeHeaderCell()
+                cell.configure(imageURL: recipe.imageURL, title: recipe.name, servings: "\(recipe.servings)",
+                               prepTime: time, difficulty: difficulty, rating: recipe.rate)
+                return cell
             }
 
-            let time = Time.secondsToHoursMinutesSeconds(seconds: recipe.prepTime)
-
-            let difficulty = Difficulty(rawValue: recipe.difficultyLevel) ?? .medium
-
-            cell.configure(imageURL: recipe.imageURL,
-                           title: recipe.name,
-                           servings: "\(recipe.servings)",
-                           prepTime: time,
-                           difficulty: difficulty,
-                           rating: recipe.rate)
+            cell.configure(imageURL: recipe.imageURL, title: recipe.name, servings: "\(recipe.servings)",
+                           prepTime: time, difficulty: difficulty, rating: recipe.rate)
 
             return cell
 
@@ -84,7 +85,9 @@ extension OverviewViewController: OverviewViewDelegate {
             guard let cell = tableView.dequeueReusableCell(
                     withIdentifier: IngredientCell.identifier) as? IngredientCell
             else {
-                return UITableViewCell()
+                let cell = IngredientCell()
+                cell.configure(text: ingredient)
+                return cell
             }
 
             cell.configure(text: ingredient)
@@ -95,7 +98,10 @@ extension OverviewViewController: OverviewViewDelegate {
             guard let cell = tableView.dequeueReusableCell(
                     withIdentifier: RecipeStepCell.identifier) as? RecipeStepCell
             else {
-                return UITableViewCell()
+                let cell = RecipeStepCell()
+                cell.configure(title: OverviewLocalizable.step.text + "\(indexPath.row + 1)",
+                               description: recipe.steps[indexPath.row].stepDescription)
+                return cell
             }
 
             cell.configure(title: OverviewLocalizable.step.text + "\(indexPath.row + 1)",
@@ -107,7 +113,6 @@ extension OverviewViewController: OverviewViewDelegate {
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         guard let section = OverviewSection(rawValue: section) else { return nil }
-
         switch section {
         case .header:
             return nil
@@ -136,14 +141,6 @@ extension OverviewViewController: OverviewViewDelegate {
         case .ingredients, .steps:
             return 44
         }
-    }
-}
-
-extension OverviewViewController {
-    enum OverviewSection: Int {
-        case header = 0
-        case ingredients = 1
-        case steps = 2
     }
 }
 

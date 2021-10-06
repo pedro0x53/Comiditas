@@ -13,4 +13,29 @@ struct Time {
     static func secondsToHoursMinutesSeconds (seconds: Int) -> TimeResponse {
       return (seconds / 3600, (seconds % 3600) / 60, (seconds % 3600) % 60)
     }
+
+    static func getString(for time: TimeResponse) -> (display: String, accessible: String) {
+        let hasHour = time.hour > 0
+        let hasMinutes = time.minutes > 0
+
+        var displayPrepTime = ""
+        var accessiblePrepTime = ""
+
+        if hasHour {
+            displayPrepTime += "\(time.hour)h"
+            accessiblePrepTime += "\(time.hour)" + OverviewLocalizable.hours.text
+        }
+
+        if hasHour && hasMinutes {
+            displayPrepTime += " "
+            accessiblePrepTime += " "
+        }
+
+        if hasMinutes {
+            displayPrepTime += "\(time.minutes)min"
+            accessiblePrepTime += "\(time.minutes)" + OverviewLocalizable.minutes.text
+        }
+
+        return (displayPrepTime, accessiblePrepTime)
+    }
 }

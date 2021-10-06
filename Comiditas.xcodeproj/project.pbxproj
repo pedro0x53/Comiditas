@@ -57,6 +57,9 @@
 		77FF2E4E26FA1CEE00FC63B5 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FF2E4D26FA1CEE00FC63B5 /* Time.swift */; };
 		E6381BF126FB52EA004F4298 /* FinishModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6381BEF26FB52EA004F4298 /* FinishModalView.swift */; };
 		E6381BF226FB52EA004F4298 /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6381BF026FB52EA004F4298 /* FinishViewController.swift */; };
+		FE127E93270DD14000D6EEE8 /* OverviewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE127E92270DD14000D6EEE8 /* OverviewInteractor.swift */; };
+		FE127E95270DD15B00D6EEE8 /* OverviewPresentar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE127E94270DD15B00D6EEE8 /* OverviewPresentar.swift */; };
+		FE127E97270DD1E500D6EEE8 /* OverviewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE127E96270DD1E500D6EEE8 /* OverviewModels.swift */; };
 		FE39529326FA511700AEF77D /* Ext+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE39529226FA511700AEF77D /* Ext+UIView.swift */; };
 		FE4E4DE826F9F69C007E78F4 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4E4DE726F9F69C007E78F4 /* OverviewViewController.swift */; };
 		FE5DA02026F9FAA800AF5F71 /* OverviewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5DA01F26F9FAA800AF5F71 /* OverviewCoordinator.swift */; };
@@ -152,6 +155,9 @@
 		77FF2E4D26FA1CEE00FC63B5 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		E6381BEF26FB52EA004F4298 /* FinishModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishModalView.swift; sourceTree = "<group>"; };
 		E6381BF026FB52EA004F4298 /* FinishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
+		FE127E92270DD14000D6EEE8 /* OverviewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewInteractor.swift; sourceTree = "<group>"; };
+		FE127E94270DD15B00D6EEE8 /* OverviewPresentar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewPresentar.swift; sourceTree = "<group>"; };
+		FE127E96270DD1E500D6EEE8 /* OverviewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewModels.swift; sourceTree = "<group>"; };
 		FE39529226FA511700AEF77D /* Ext+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIView.swift"; sourceTree = "<group>"; };
 		FE4E4DE726F9F69C007E78F4 /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
 		FE5DA01F26F9FAA800AF5F71 /* OverviewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewCoordinator.swift; sourceTree = "<group>"; };
@@ -523,6 +529,16 @@
 			path = FinishModal;
 			sourceTree = "<group>";
 		};
+		FE127E91270DD12200D6EEE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE95430C26F8CF1B0039F547 /* Components */,
+				FE95430A26F8CBFA0039F547 /* OverviewView.swift */,
+				FE4E4DE726F9F69C007E78F4 /* OverviewViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FE656188270749D1007EA5E5 /* Overview */ = {
 			isa = PBXGroup;
 			children = (
@@ -543,10 +559,11 @@
 		FE95430926F8CBC40039F547 /* Overview */ = {
 			isa = PBXGroup;
 			children = (
-				FE95430C26F8CF1B0039F547 /* Components */,
-				FE95430A26F8CBFA0039F547 /* OverviewView.swift */,
-				FE4E4DE726F9F69C007E78F4 /* OverviewViewController.swift */,
+				FE127E91270DD12200D6EEE8 /* View */,
 				FE5DA01F26F9FAA800AF5F71 /* OverviewCoordinator.swift */,
+				FE127E92270DD14000D6EEE8 /* OverviewInteractor.swift */,
+				FE127E94270DD15B00D6EEE8 /* OverviewPresentar.swift */,
+				FE127E96270DD1E500D6EEE8 /* OverviewModels.swift */,
 			);
 			path = Overview;
 			sourceTree = "<group>";
@@ -745,6 +762,7 @@
 				77946A6527067D7000D3F1B3 /* FeedLocalizables.swift in Sources */,
 				7713580E26F9FC4400164BBC /* FeedPresenter.swift in Sources */,
 				77E1C38F26F93FE400F8B0DF /* FeedTableViewCell.swift in Sources */,
+				FE127E97270DD1E500D6EEE8 /* OverviewModels.swift in Sources */,
 				77FF2E4E26FA1CEE00FC63B5 /* Time.swift in Sources */,
 				77635CDF26F2185B00B36EC7 /* JsonStack.swift in Sources */,
 				770BE81526F0C7480032F0ED /* Ext+UIImage.swift in Sources */,
@@ -771,6 +789,7 @@
 				7792905526F8B09800AAA0A4 /* FeedView.swift in Sources */,
 				1894725726F9F9E500E6CD8B /* PreparationView.swift in Sources */,
 				77635CDB26F2124D00B36EC7 /* IngredientsJson.swift in Sources */,
+				FE127E95270DD15B00D6EEE8 /* OverviewPresentar.swift in Sources */,
 				77E1C38C26F93BF100F8B0DF /* TagCollectionViewCell.swift in Sources */,
 				77E1C39126F944E500F8B0DF /* FeatureFlags.swift in Sources */,
 				774D5A7A26F3711A004176A1 /* BaseView.swift in Sources */,
@@ -778,6 +797,7 @@
 				77635CD926F2115800B36EC7 /* RecipeJson.swift in Sources */,
 				FE95430B26F8CBFA0039F547 /* OverviewView.swift in Sources */,
 				FEC8B85426F9FD6400455143 /* DetailView.swift in Sources */,
+				FE127E93270DD14000D6EEE8 /* OverviewInteractor.swift in Sources */,
 				774D5A7C26F37256004176A1 /* Ext+UIFonts.swift in Sources */,
 				FEC8B85626FA1CB900455143 /* RecipeStepCell.swift in Sources */,
 				FEEDA9B826FB6B8C009A5E10 /* IngredientCell.swift in Sources */,
