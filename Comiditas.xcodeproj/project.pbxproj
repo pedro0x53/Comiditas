@@ -30,16 +30,23 @@
 		774D5A7326F36A84004176A1 /* Ext+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7226F36A84004176A1 /* Ext+UIColor.swift */; };
 		774D5A7A26F3711A004176A1 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7926F3711A004176A1 /* BaseView.swift */; };
 		774D5A7C26F37256004176A1 /* Ext+UIFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7B26F37256004176A1 /* Ext+UIFonts.swift */; };
+		7754776A270B23220031AF7E /* FeedCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77547769270B23220031AF7E /* FeedCoordinatorTests.swift */; };
 		77635CD926F2115800B36EC7 /* RecipeJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CD826F2115800B36EC7 /* RecipeJson.swift */; };
 		77635CDB26F2124D00B36EC7 /* IngredientsJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CDA26F2124D00B36EC7 /* IngredientsJson.swift */; };
 		77635CDD26F214DA00B36EC7 /* StepJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CDC26F214DA00B36EC7 /* StepJson.swift */; };
 		77635CDF26F2185B00B36EC7 /* JsonStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CDE26F2185B00B36EC7 /* JsonStack.swift */; };
 		77635CE126F2188B00B36EC7 /* RecipeJsonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CE026F2188B00B36EC7 /* RecipeJsonRepository.swift */; };
+		776FD164270F241800CC312D /* FeedLocalizableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776FD163270F241800CC312D /* FeedLocalizableTest.swift */; };
 		7792904B26F8ADC500AAA0A4 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7792904A26F8ADC500AAA0A4 /* CoordinatorProtocol.swift */; };
 		7792904E26F8AE0800AAA0A4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7792904D26F8AE0800AAA0A4 /* AppCoordinator.swift */; };
 		7792905326F8B08700AAA0A4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7792905226F8B08700AAA0A4 /* FeedViewController.swift */; };
 		7792905526F8B09800AAA0A4 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7792905426F8B09800AAA0A4 /* FeedView.swift */; };
 		7792905726F8B18800AAA0A4 /* FeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7792905626F8B18800AAA0A4 /* FeedCoordinator.swift */; };
+		77946A4D27066AD800D3F1B3 /* Ext+UIImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77946A4C27066AD800D3F1B3 /* Ext+UIImageTests.swift */; };
+		77946A4F27066C4A00D3F1B3 /* Ext+UIFontsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77946A4E27066C4A00D3F1B3 /* Ext+UIFontsTests.swift */; };
+		77946A51270670E500D3F1B3 /* Ext+UIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77946A50270670E500D3F1B3 /* Ext+UIColorTests.swift */; };
+		77946A53270671E400D3F1B3 /* TimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77946A52270671E400D3F1B3 /* TimeTests.swift */; };
+		77946A57270674C800D3F1B3 /* AppCoordinatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77946A56270674C800D3F1B3 /* AppCoordinatorTest.swift */; };
 		77946A6227067B1300D3F1B3 /* LocalizablesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77946A6127067B1300D3F1B3 /* LocalizablesProtocol.swift */; };
 		77946A6527067D7000D3F1B3 /* FeedLocalizables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77946A6427067D7000D3F1B3 /* FeedLocalizables.swift */; };
 		77946A6827067DF100D3F1B3 /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77946A6A27067DF100D3F1B3 /* Feed.strings */; };
@@ -50,12 +57,12 @@
 		779F5E9D26EF7457005668BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779F5E9B26EF7457005668BE /* LaunchScreen.storyboard */; };
 		779F5EA826EF7458005668BE /* ComiditasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5EA726EF7458005668BE /* ComiditasTests.swift */; };
 		779F5EB326EF7458005668BE /* ComiditasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5EB226EF7458005668BE /* ComiditasUITests.swift */; };
+		77D1BD77270F15D700553403 /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D1BD76270F15D700553403 /* FeatureFlags.swift */; };
 		77D70D1726F21FFA00A8B244 /* Recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 77D70D1626F21FFA00A8B244 /* Recipes.json */; };
 		77D70D1B26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D70D1A26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift */; };
 		77DDC15026FA9311003027D3 /* Recommendations.json in Resources */ = {isa = PBXBuildFile; fileRef = 77DDC14F26FA9311003027D3 /* Recommendations.json */; };
 		77E1C38C26F93BF100F8B0DF /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E1C38B26F93BF100F8B0DF /* TagCollectionViewCell.swift */; };
 		77E1C38F26F93FE400F8B0DF /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E1C38E26F93FE400F8B0DF /* FeedTableViewCell.swift */; };
-		77E1C39126F944E500F8B0DF /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E1C39026F944E500F8B0DF /* FeatureFlags.swift */; };
 		77E1C39326F94FA200F8B0DF /* FeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E1C39226F94FA200F8B0DF /* FeedCollectionViewCell.swift */; };
 		77FF2E4E26FA1CEE00FC63B5 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FF2E4D26FA1CEE00FC63B5 /* Time.swift */; };
 		E6381BF126FB52EA004F4298 /* FinishModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6381BEF26FB52EA004F4298 /* FinishModalView.swift */; };
@@ -119,16 +126,23 @@
 		774D5A7226F36A84004176A1 /* Ext+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIColor.swift"; sourceTree = "<group>"; };
 		774D5A7926F3711A004176A1 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		774D5A7B26F37256004176A1 /* Ext+UIFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIFonts.swift"; sourceTree = "<group>"; };
+		77547769270B23220031AF7E /* FeedCoordinatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCoordinatorTests.swift; sourceTree = "<group>"; };
 		77635CD826F2115800B36EC7 /* RecipeJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeJson.swift; sourceTree = "<group>"; };
 		77635CDA26F2124D00B36EC7 /* IngredientsJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsJson.swift; sourceTree = "<group>"; };
 		77635CDC26F214DA00B36EC7 /* StepJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepJson.swift; sourceTree = "<group>"; };
 		77635CDE26F2185B00B36EC7 /* JsonStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonStack.swift; sourceTree = "<group>"; };
 		77635CE026F2188B00B36EC7 /* RecipeJsonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeJsonRepository.swift; sourceTree = "<group>"; };
+		776FD163270F241800CC312D /* FeedLocalizableTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedLocalizableTest.swift; sourceTree = "<group>"; };
 		7792904A26F8ADC500AAA0A4 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		7792904D26F8AE0800AAA0A4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		7792905226F8B08700AAA0A4 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		7792905426F8B09800AAA0A4 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		7792905626F8B18800AAA0A4 /* FeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCoordinator.swift; sourceTree = "<group>"; };
+		77946A4C27066AD800D3F1B3 /* Ext+UIImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIImageTests.swift"; sourceTree = "<group>"; };
+		77946A4E27066C4A00D3F1B3 /* Ext+UIFontsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIFontsTests.swift"; sourceTree = "<group>"; };
+		77946A50270670E500D3F1B3 /* Ext+UIColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIColorTests.swift"; sourceTree = "<group>"; };
+		77946A52270671E400D3F1B3 /* TimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTests.swift; sourceTree = "<group>"; };
+		77946A56270674C800D3F1B3 /* AppCoordinatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTest.swift; sourceTree = "<group>"; };
 		77946A6127067B1300D3F1B3 /* LocalizablesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizablesProtocol.swift; sourceTree = "<group>"; };
 		77946A6427067D7000D3F1B3 /* FeedLocalizables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLocalizables.swift; sourceTree = "<group>"; };
 		77946A6927067DF100D3F1B3 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Feed.strings"; sourceTree = "<group>"; };
@@ -147,12 +161,12 @@
 		779F5EB226EF7458005668BE /* ComiditasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComiditasUITests.swift; sourceTree = "<group>"; };
 		779F5EB426EF7458005668BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77C8B1F026FB424000D21291 /* Comiditas.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Comiditas.entitlements; sourceTree = "<group>"; };
+		77D1BD76270F15D700553403 /* FeatureFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlags.swift; sourceTree = "<group>"; };
 		77D70D1626F21FFA00A8B244 /* Recipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Recipes.json; sourceTree = "<group>"; };
 		77D70D1A26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeJsonRepositoryTests.swift; sourceTree = "<group>"; };
 		77DDC14F26FA9311003027D3 /* Recommendations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Recommendations.json; sourceTree = "<group>"; };
 		77E1C38B26F93BF100F8B0DF /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
 		77E1C38E26F93FE400F8B0DF /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
-		77E1C39026F944E500F8B0DF /* FeatureFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeatureFlags.swift; path = Comiditas/Features/Feed/View/Cells/FeatureFlags.swift; sourceTree = SOURCE_ROOT; };
 		77E1C39226F94FA200F8B0DF /* FeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewCell.swift; sourceTree = "<group>"; };
 		77E1C39626F961F700F8B0DF /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		77FF2E4D26FA1CEE00FC63B5 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
@@ -294,6 +308,47 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		77547768270B23220031AF7E /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				77547769270B23220031AF7E /* FeedCoordinatorTests.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		7754776B270B24630031AF7E /* FeatureFlags */ = {
+			isa = PBXGroup;
+			children = (
+				77D1BD76270F15D700553403 /* FeatureFlags.swift */,
+			);
+			path = FeatureFlags;
+			sourceTree = "<group>";
+		};
+		776FD160270F241800CC312D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				776FD161270F241800CC312D /* Localizables */,
+			);
+			name = Resources;
+			path = ComiditasTests/Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		776FD161270F241800CC312D /* Localizables */ = {
+			isa = PBXGroup;
+			children = (
+				776FD162270F241800CC312D /* Feed */,
+			);
+			path = Localizables;
+			sourceTree = "<group>";
+		};
+		776FD162270F241800CC312D /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				776FD163270F241800CC312D /* FeedLocalizableTest.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
 		7792904C26F8ADEF00AAA0A4 /* AppCoordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +367,22 @@
 				7713580F26FA022100164BBC /* FeedModels.swift */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		77946A55270674AA00D3F1B3 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				77946A56270674C800D3F1B3 /* AppCoordinatorTest.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		77946A582706767200D3F1B3 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				77547768270B23220031AF7E /* Feed */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 		77946A6027067B0200D3F1B3 /* Localizables */ = {
@@ -371,7 +442,12 @@
 		779F5EA626EF7458005668BE /* ComiditasTests */ = {
 			isa = PBXGroup;
 			children = (
+				77946A582706767200D3F1B3 /* Features */,
+				77946A55270674AA00D3F1B3 /* Manager */,
+				77946A6C2706818B00D3F1B3 /* Resources */,
+				FEAD73282704AF12000BBE68 /* Overview */,
 				18CC0F402704957300235E5C /* PreparationScene */,
+				776FD160270F241800CC312D /* Resources */,
 				FE95430126F8B2EB0039F547 /* Helpers */,
 				779F5EA726EF7458005668BE /* ComiditasTests.swift */,
 				77D70D1A26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift */,
@@ -422,11 +498,11 @@
 		779F5EC426EF74C1005668BE /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				7754776B270B24630031AF7E /* FeatureFlags */,
 				77946A6027067B0200D3F1B3 /* Localizables */,
 				770BE81626F0DDC60032F0ED /* Json */,
 				779F5EC626EF74E7005668BE /* Repository */,
 				779F5EC726EF74F0005668BE /* Theme */,
-				779F5EC826EF74F9005668BE /* FeatureFlags */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -455,14 +531,6 @@
 			children = (
 			);
 			path = Theme;
-			sourceTree = "<group>";
-		};
-		779F5EC826EF74F9005668BE /* FeatureFlags */ = {
-			isa = PBXGroup;
-			children = (
-				77E1C39026F944E500F8B0DF /* FeatureFlags.swift */,
-			);
-			path = FeatureFlags;
 			sourceTree = "<group>";
 		};
 		779F5ECA26EF7539005668BE /* Resources */ = {
@@ -537,6 +605,10 @@
 			isa = PBXGroup;
 			children = (
 				FE95430226F8B41D0039F547 /* UIImageViewTests.swift */,
+				77946A4C27066AD800D3F1B3 /* Ext+UIImageTests.swift */,
+				77946A4E27066C4A00D3F1B3 /* Ext+UIFontsTests.swift */,
+				77946A50270670E500D3F1B3 /* Ext+UIColorTests.swift */,
+				77946A52270671E400D3F1B3 /* TimeTests.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -636,7 +708,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					779F5E8926EF7456005668BE = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -757,6 +829,7 @@
 				7792905326F8B08700AAA0A4 /* FeedViewController.swift in Sources */,
 				7792904E26F8AE0800AAA0A4 /* AppCoordinator.swift in Sources */,
 				1894725D26F9FE4600E6CD8B /* PreparationViewController.swift in Sources */,
+				77D1BD77270F15D700553403 /* FeatureFlags.swift in Sources */,
 				779F5E9826EF7456005668BE /* Comiditas.xcdatamodeld in Sources */,
 				E6381BF126FB52EA004F4298 /* FinishModalView.swift in Sources */,
 				7792904B26F8ADC500AAA0A4 /* CoordinatorProtocol.swift in Sources */,
@@ -765,7 +838,6 @@
 				1894725726F9F9E500E6CD8B /* PreparationView.swift in Sources */,
 				77635CDB26F2124D00B36EC7 /* IngredientsJson.swift in Sources */,
 				77E1C38C26F93BF100F8B0DF /* TagCollectionViewCell.swift in Sources */,
-				77E1C39126F944E500F8B0DF /* FeatureFlags.swift in Sources */,
 				774D5A7A26F3711A004176A1 /* BaseView.swift in Sources */,
 				18398CEC26FA3F720054E054 /* StepTimerDelegate.swift in Sources */,
 				77635CD926F2115800B36EC7 /* RecipeJson.swift in Sources */,
@@ -789,12 +861,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77946A57270674C800D3F1B3 /* AppCoordinatorTest.swift in Sources */,
 				FE95430326F8B41D0039F547 /* UIImageViewTests.swift in Sources */,
-				18CC0F42270495B500235E5C /* PreparationInteractorTests.swift in Sources */,
+				77946A4D27066AD800D3F1B3 /* Ext+UIImageTests.swift in Sources */,
+				7754776A270B23220031AF7E /* FeedCoordinatorTests.swift in Sources */,
 				779F5EA826EF7458005668BE /* ComiditasTests.swift in Sources */,
+				77946A4F27066C4A00D3F1B3 /* Ext+UIFontsTests.swift in Sources */,
+				77946A72270681CD00D3F1B3 /* FeedLocalizableTest.swift in Sources */,
+				18CC0F42270495B500235E5C /* PreparationInteractorTests.swift in Sources */,
 				18CC0F3F2704956900235E5C /* PreparationViewControllerTests.swift in Sources */,
+				776FD164270F241800CC312D /* FeedLocalizableTest.swift in Sources */,
 				18CC0F44270495E700235E5C /* PreparationPresenterTests.swift in Sources */,
 				77D70D1B26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift in Sources */,
+				77946A53270671E400D3F1B3 /* TimeTests.swift in Sources */,
+				77946A51270670E500D3F1B3 /* Ext+UIColorTests.swift in Sources */,
 				FEAD732A2704AF40000BBE68 /* OverviewCoordinatorUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -979,13 +1059,13 @@
 				CODE_SIGN_ENTITLEMENTS = Comiditas/Comiditas.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4X8K6Z86C3;
+				DEVELOPMENT_TEAM = VH525588L5;
 				INFOPLIST_FILE = Comiditas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.Comiditas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1001,13 +1081,13 @@
 				CODE_SIGN_ENTITLEMENTS = Comiditas/Comiditas.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4X8K6Z86C3;
+				DEVELOPMENT_TEAM = VH525588L5;
 				INFOPLIST_FILE = Comiditas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.Comiditas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

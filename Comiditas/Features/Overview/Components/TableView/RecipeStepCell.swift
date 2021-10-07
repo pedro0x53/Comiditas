@@ -35,8 +35,14 @@ class RecipeStepCell: UITableViewCell, BaseViewProtocol {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
-        imageView.tintColor = Colors.primary
+        imageView.tintColor = Colors.textMedium
         imageView.translatesAutoresizingMaskIntoConstraints = false
+
+        if let image = UIImage(systemName: "checkmark.circle.fill") {
+            let templateImage = image.withRenderingMode(.alwaysTemplate)
+            imageView.image = templateImage
+        }
+
         return imageView
     }()
 
@@ -60,35 +66,49 @@ class RecipeStepCell: UITableViewCell, BaseViewProtocol {
 
     override func draw(_ rect: CGRect) {
         super.draw(rect)
-
         if FeatureFlags.currentStep.isEnable {
             if self.finished {
-                if let image = UIImage(systemName: "checkmark.circle.fill") {
-                    let templateImage = image.withRenderingMode(.alwaysTemplate)
-                    self.completedMark.image = templateImage
-                }
-
                 self.completedMark.layer.borderColor = Colors.primary.cgColor
                 line.backgroundColor = Colors.primary
-
             }
-        } else {
-            line.backgroundColor = Colors.textMedium
         }
     }
 
     func setupView() {
-        contentView.addSubview(completedMark)
-        completedMark.layer.cornerRadius = 10
-        completedMark.layer.borderColor = Colors.textMedium.cgColor
-        completedMark.layer.borderWidth = 1.5
-        contentView.addSubview(line)
+        if FeatureFlags.currentStep.isEnable {
+            contentView.addSubview(completedMark)
+            completedMark.layer.cornerRadius = 10
+            completedMark.layer.borderColor = Colors.textMedium.cgColor
+            completedMark.layer.borderWidth = 1.5
+            contentView.addSubview(line)
+        }
 
         contentView.addSubview(titleLabel)
         contentView.addSubview(descriptionLabel)
     }
 
     func setupConstraints() {
+        if FeatureFlags.currentStep.isEnable {
+            setupConstraintsWithCheckMark()
+        } else {
+            setupConstraintsWithoutCheckMark()
+        }
+    }
+
+    private func setupConstraintsWithoutCheckMark() {
+        NSLayoutConstraint.activate([
+            titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16),
+            titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
+            titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
+
+            descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8),
+            descriptionLabel.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor),
+            descriptionLabel.trailingAnchor.constraint(equalTo: titleLabel.trailingAnchor),
+            descriptionLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
+        ])
+    }
+
+    private func setupConstraintsWithCheckMark() {
         NSLayoutConstraint.activate([
             completedMark.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16),
             completedMark.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),

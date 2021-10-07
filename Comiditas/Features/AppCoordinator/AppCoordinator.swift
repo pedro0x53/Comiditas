@@ -9,13 +9,13 @@ import UIKit
 
 class AppCoordinator: Coordinator {
     let window: UIWindow
+    let navigationController = UINavigationController()
 
     init(window: UIWindow) {
         self.window = window
     }
 
     func start() {
-        let navigationController = UINavigationController()
         navigationController.navigationBar.prefersLargeTitles = true
 
         let appearance = UINavigationBarAppearance()
