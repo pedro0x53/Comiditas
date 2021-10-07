@@ -27,7 +27,6 @@
 		774D5A7A26F3711A004176A1 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7926F3711A004176A1 /* BaseView.swift */; };
 		774D5A7C26F37256004176A1 /* Ext+UIFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7B26F37256004176A1 /* Ext+UIFonts.swift */; };
 		7754776A270B23220031AF7E /* FeedCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77547769270B23220031AF7E /* FeedCoordinatorTests.swift */; };
-		7754776D270B24750031AF7E /* FeatureFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7754776C270B24750031AF7E /* FeatureFlag.swift */; };
 		77635CD926F2115800B36EC7 /* RecipeJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CD826F2115800B36EC7 /* RecipeJson.swift */; };
 		77635CDB26F2124D00B36EC7 /* IngredientsJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CDA26F2124D00B36EC7 /* IngredientsJson.swift */; };
 		77635CDD26F214DA00B36EC7 /* StepJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CDC26F214DA00B36EC7 /* StepJson.swift */; };
@@ -55,6 +54,7 @@
 		779F5E9D26EF7457005668BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779F5E9B26EF7457005668BE /* LaunchScreen.storyboard */; };
 		779F5EA826EF7458005668BE /* ComiditasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5EA726EF7458005668BE /* ComiditasTests.swift */; };
 		779F5EB326EF7458005668BE /* ComiditasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5EB226EF7458005668BE /* ComiditasUITests.swift */; };
+		77D1BD77270F15D700553403 /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D1BD76270F15D700553403 /* FeatureFlags.swift */; };
 		77D70D1726F21FFA00A8B244 /* Recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 77D70D1626F21FFA00A8B244 /* Recipes.json */; };
 		77D70D1B26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D70D1A26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift */; };
 		77DDC15026FA9311003027D3 /* Recommendations.json in Resources */ = {isa = PBXBuildFile; fileRef = 77DDC14F26FA9311003027D3 /* Recommendations.json */; };
@@ -120,7 +120,6 @@
 		774D5A7926F3711A004176A1 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		774D5A7B26F37256004176A1 /* Ext+UIFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIFonts.swift"; sourceTree = "<group>"; };
 		77547769270B23220031AF7E /* FeedCoordinatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCoordinatorTests.swift; sourceTree = "<group>"; };
-		7754776C270B24750031AF7E /* FeatureFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeatureFlag.swift; path = ../../../../../../../Desktop/FeatureFlag.swift; sourceTree = "<group>"; };
 		77635CD826F2115800B36EC7 /* RecipeJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeJson.swift; sourceTree = "<group>"; };
 		77635CDA26F2124D00B36EC7 /* IngredientsJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsJson.swift; sourceTree = "<group>"; };
 		77635CDC26F214DA00B36EC7 /* StepJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepJson.swift; sourceTree = "<group>"; };
@@ -156,6 +155,7 @@
 		779F5EB226EF7458005668BE /* ComiditasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComiditasUITests.swift; sourceTree = "<group>"; };
 		779F5EB426EF7458005668BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77C8B1F026FB424000D21291 /* Comiditas.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Comiditas.entitlements; sourceTree = "<group>"; };
+		77D1BD76270F15D700553403 /* FeatureFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlags.swift; sourceTree = "<group>"; };
 		77D70D1626F21FFA00A8B244 /* Recipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Recipes.json; sourceTree = "<group>"; };
 		77D70D1A26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeJsonRepositoryTests.swift; sourceTree = "<group>"; };
 		77DDC14F26FA9311003027D3 /* Recommendations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Recommendations.json; sourceTree = "<group>"; };
@@ -294,7 +294,7 @@
 		7754776B270B24630031AF7E /* FeatureFlags */ = {
 			isa = PBXGroup;
 			children = (
-				7754776C270B24750031AF7E /* FeatureFlag.swift */,
+				77D1BD76270F15D700553403 /* FeatureFlags.swift */,
 			);
 			path = FeatureFlags;
 			sourceTree = "<group>";
@@ -809,6 +809,7 @@
 				7792905326F8B08700AAA0A4 /* FeedViewController.swift in Sources */,
 				7792904E26F8AE0800AAA0A4 /* AppCoordinator.swift in Sources */,
 				1894725D26F9FE4600E6CD8B /* PreparationViewController.swift in Sources */,
+				77D1BD77270F15D700553403 /* FeatureFlags.swift in Sources */,
 				779F5E9826EF7456005668BE /* Comiditas.xcdatamodeld in Sources */,
 				E6381BF126FB52EA004F4298 /* FinishModalView.swift in Sources */,
 				7792904B26F8ADC500AAA0A4 /* CoordinatorProtocol.swift in Sources */,
@@ -819,7 +820,6 @@
 				77E1C38C26F93BF100F8B0DF /* TagCollectionViewCell.swift in Sources */,
 				774D5A7A26F3711A004176A1 /* BaseView.swift in Sources */,
 				18398CEC26FA3F720054E054 /* StepTimerDelegate.swift in Sources */,
-				7754776D270B24750031AF7E /* FeatureFlag.swift in Sources */,
 				77635CD926F2115800B36EC7 /* RecipeJson.swift in Sources */,
 				FE95430B26F8CBFA0039F547 /* OverviewView.swift in Sources */,
 				FEC8B85426F9FD6400455143 /* DetailView.swift in Sources */,
