@@ -35,6 +35,7 @@
 		77635CDD26F214DA00B36EC7 /* StepJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CDC26F214DA00B36EC7 /* StepJson.swift */; };
 		77635CDF26F2185B00B36EC7 /* JsonStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CDE26F2185B00B36EC7 /* JsonStack.swift */; };
 		77635CE126F2188B00B36EC7 /* RecipeJsonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CE026F2188B00B36EC7 /* RecipeJsonRepository.swift */; };
+		776FD164270F241800CC312D /* FeedLocalizableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776FD163270F241800CC312D /* FeedLocalizableTest.swift */; };
 		7792904B26F8ADC500AAA0A4 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7792904A26F8ADC500AAA0A4 /* CoordinatorProtocol.swift */; };
 		7792904E26F8AE0800AAA0A4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7792904D26F8AE0800AAA0A4 /* AppCoordinator.swift */; };
 		7792905326F8B08700AAA0A4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7792905226F8B08700AAA0A4 /* FeedViewController.swift */; };
@@ -45,7 +46,6 @@
 		77946A51270670E500D3F1B3 /* Ext+UIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77946A50270670E500D3F1B3 /* Ext+UIColorTests.swift */; };
 		77946A53270671E400D3F1B3 /* TimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77946A52270671E400D3F1B3 /* TimeTests.swift */; };
 		77946A57270674C800D3F1B3 /* AppCoordinatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77946A56270674C800D3F1B3 /* AppCoordinatorTest.swift */; };
-		77946A5B2706768A00D3F1B3 /* FeedCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77946A5A2706768A00D3F1B3 /* FeedCoordinatorTests.swift */; };
 		77946A6227067B1300D3F1B3 /* LocalizablesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77946A6127067B1300D3F1B3 /* LocalizablesProtocol.swift */; };
 		77946A6527067D7000D3F1B3 /* FeedLocalizables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77946A6427067D7000D3F1B3 /* FeedLocalizables.swift */; };
 		77946A6827067DF100D3F1B3 /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77946A6A27067DF100D3F1B3 /* Feed.strings */; };
@@ -131,6 +131,7 @@
 		77635CDC26F214DA00B36EC7 /* StepJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepJson.swift; sourceTree = "<group>"; };
 		77635CDE26F2185B00B36EC7 /* JsonStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonStack.swift; sourceTree = "<group>"; };
 		77635CE026F2188B00B36EC7 /* RecipeJsonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeJsonRepository.swift; sourceTree = "<group>"; };
+		776FD163270F241800CC312D /* FeedLocalizableTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedLocalizableTest.swift; sourceTree = "<group>"; };
 		7792904A26F8ADC500AAA0A4 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		7792904D26F8AE0800AAA0A4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		7792905226F8B08700AAA0A4 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -141,7 +142,6 @@
 		77946A50270670E500D3F1B3 /* Ext+UIColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIColorTests.swift"; sourceTree = "<group>"; };
 		77946A52270671E400D3F1B3 /* TimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTests.swift; sourceTree = "<group>"; };
 		77946A56270674C800D3F1B3 /* AppCoordinatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTest.swift; sourceTree = "<group>"; };
-		77946A5A2706768A00D3F1B3 /* FeedCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCoordinatorTests.swift; sourceTree = "<group>"; };
 		77946A6127067B1300D3F1B3 /* LocalizablesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizablesProtocol.swift; sourceTree = "<group>"; };
 		77946A6427067D7000D3F1B3 /* FeedLocalizables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLocalizables.swift; sourceTree = "<group>"; };
 		77946A6927067DF100D3F1B3 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Feed.strings"; sourceTree = "<group>"; };
@@ -315,6 +315,31 @@
 			path = FeatureFlags;
 			sourceTree = "<group>";
 		};
+		776FD160270F241800CC312D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				776FD161270F241800CC312D /* Localizables */,
+			);
+			name = Resources;
+			path = ComiditasTests/Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		776FD161270F241800CC312D /* Localizables */ = {
+			isa = PBXGroup;
+			children = (
+				776FD162270F241800CC312D /* Feed */,
+			);
+			path = Localizables;
+			sourceTree = "<group>";
+		};
+		776FD162270F241800CC312D /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				776FD163270F241800CC312D /* FeedLocalizableTest.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
 		7792904C26F8ADEF00AAA0A4 /* AppCoordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -388,7 +413,6 @@
 			isa = PBXGroup;
 			children = (
 				77946A71270681CD00D3F1B3 /* FeedLocalizableTest.swift */,
-				77946A5A2706768A00D3F1B3 /* FeedCoordinatorTests.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -437,6 +461,7 @@
 				77946A6C2706818B00D3F1B3 /* Resources */,
 				FEAD73282704AF12000BBE68 /* Overview */,
 				18CC0F402704957300235E5C /* PreparationScene */,
+				776FD160270F241800CC312D /* Resources */,
 				FE95430126F8B2EB0039F547 /* Helpers */,
 				779F5EA726EF7458005668BE /* ComiditasTests.swift */,
 				77D70D1A26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift */,
@@ -705,7 +730,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					779F5E8926EF7456005668BE = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -858,7 +883,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				77946A57270674C800D3F1B3 /* AppCoordinatorTest.swift in Sources */,
-				77946A5B2706768A00D3F1B3 /* FeedCoordinatorTests.swift in Sources */,
 				FE95430326F8B41D0039F547 /* UIImageViewTests.swift in Sources */,
 				77946A4D27066AD800D3F1B3 /* Ext+UIImageTests.swift in Sources */,
 				7754776A270B23220031AF7E /* FeedCoordinatorTests.swift in Sources */,
@@ -866,8 +890,8 @@
 				77946A4F27066C4A00D3F1B3 /* Ext+UIFontsTests.swift in Sources */,
 				77946A72270681CD00D3F1B3 /* FeedLocalizableTest.swift in Sources */,
 				18CC0F42270495B500235E5C /* PreparationInteractorTests.swift in Sources */,
-				779F5EA826EF7458005668BE /* ComiditasTests.swift in Sources */,
 				18CC0F3F2704956900235E5C /* PreparationViewControllerTests.swift in Sources */,
+				776FD164270F241800CC312D /* FeedLocalizableTest.swift in Sources */,
 				18CC0F44270495E700235E5C /* PreparationPresenterTests.swift in Sources */,
 				77D70D1B26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift in Sources */,
 				77946A53270671E400D3F1B3 /* TimeTests.swift in Sources */,
