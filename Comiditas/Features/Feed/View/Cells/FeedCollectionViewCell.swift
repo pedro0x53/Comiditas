@@ -88,11 +88,6 @@ class FeedCollectionViewCell: UICollectionViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-
-//    func configureAccessibilityGroup() {
-//        self.shouldGroupAccessibilityChildren = true
-////        self.accessibilityLabel = [titleLabel, subtitleLabel].compactMap(\.text).joined(separator: ",")
-//    }
 }
 
 extension FeedCollectionViewCell {
