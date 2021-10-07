@@ -12,10 +12,10 @@ class FeedLocalizableTest: XCTestCase {
     func testFeedLocalizableText() {
         let sut = FeedLocalizable.candy.text
         let expectUSD = "Candy"
-        let expectPT = "Candy"
+        let expectPT = "Doces"
 
-        if let locale = Locale.current.currencyCode {
-            if locale == "USD" {
+        if let locale = Locale.current.languageCode {
+            if locale == "en" {
                 XCTAssertEqual(sut, expectUSD, "An unexpected error has occurred.")
             } else {
                 XCTAssertEqual(sut, expectPT, "An unexpected error has occurred.")

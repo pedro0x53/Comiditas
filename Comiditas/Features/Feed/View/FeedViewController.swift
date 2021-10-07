@@ -109,6 +109,10 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
             let label = UILabel(frame: CGRect(x: 15, y: 0, width: tableView.frame.size.width, height: 44))
             label.text = FeedLocalizable.recommendedForYou.text
             label.textColor = Colors.primary
+            label.isAccessibilityElement = true
+            label.accessibilityLabel = FeedLocalizable.recommendedForYou.text
+            label.accessibilityTraits = .header
+            label.accessibilityValue = FeedLocalizable.recommendedForYou.text
             label.font = Fonts.h3
             headerView.addSubview(label)
             return headerView
@@ -119,6 +123,9 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
             headerView.backgroundColor = Colors.background
             let label = UILabel(frame: CGRect(x: 15, y: 0, width: tableView.frame.size.width, height: 44))
             label.text = sectionsName[section]
+            label.isAccessibilityElement = true
+            label.accessibilityLabel = sectionsName[section]
+            label.accessibilityTraits = .header
             label.textColor = Colors.primary
             label.font = Fonts.h3
             headerView.addSubview(label)
