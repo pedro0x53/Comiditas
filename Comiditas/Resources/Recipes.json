@@ -789,43 +789,5 @@
              "timer": 0
           }
       ]
-  },
-     {
-      "identifier": 12,
-      "name": "Teste haptics aqui",
-      "imageURL": "https://www.anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-2459-a3d849ce575c69a18e61a51e04bfa3d9.jpg",
-      "difficultyLevel": 2,
-      "servings": 2,
-      "prepTime": 5,
-      "ingredients" : [
-         "100 gramas de macarrão penne",
-         "100 gramas de camarão descascado",
-         "2 dentes de alho",
-         "1/2 (meia) cebola",
-         "500ml de leite",
-         "2 colheres de sopa de farinha de trigo",
-         "Noz moscada a gosto",
-         "Pimenta do reino a gosto",
-         "Sal a gosto"
-      ],
-      "categories" : [
-          "Massas",
-          "Salgados"
-      ],
-      "rate": 5,
-      "steps": [
-          {
-             "step": 1,
-             "stepDescription": "Frite os camarões com um fio de azeite e o alho até dourar, por cerca de 3 minutos. Reserve.",
-             "hasTimer": true,
-             "timer": 5
-          },
-          {
-             "step": 2,
-             "stepDescription": "Cozinhe o macarrão conforme indicação de marca e reserve.",
-             "hasTimer": false,
-             "timer": 0
-          }
-      ]
   }
 ]
