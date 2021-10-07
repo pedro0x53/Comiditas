@@ -114,7 +114,7 @@ extension TimerView: StepTimerDelegate {
 
     func finished() {
         print("Cabou o alarme. Notificacao.")
-        HapticsManager.shared.vibrate(for: .success)
+        HapticsManager.shared.vibrate(for: .warning)
         self.timerIsRunning = false
     }
 
