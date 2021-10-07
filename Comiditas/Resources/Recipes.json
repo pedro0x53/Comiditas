@@ -796,7 +796,7 @@
       "imageURL": "https://www.anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-2459-a3d849ce575c69a18e61a51e04bfa3d9.jpg",
       "difficultyLevel": 2,
       "servings": 2,
-      "prepTime": 35,
+      "prepTime": 5,
       "ingredients" : [
          "100 gramas de macarrão penne",
          "100 gramas de camarão descascado",
@@ -818,7 +818,7 @@
              "step": 1,
              "stepDescription": "Frite os camarões com um fio de azeite e o alho até dourar, por cerca de 3 minutos. Reserve.",
              "hasTimer": true,
-             "timer": 35
+             "timer": 5
           },
           {
              "step": 2,
