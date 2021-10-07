@@ -74,9 +74,9 @@ class PreparationViewController: UIViewController {
     }
 
     // MARK: - Helper Methods
-    // swiftlint:disable colon
-    private func createSwipeGestureRecognizer(for direction:
-                                              UISwipeGestureRecognizer.Direction) -> UISwipeGestureRecognizer {
+
+    private func createSwipeGestureRecognizer(
+        for direction: UISwipeGestureRecognizer.Direction) -> UISwipeGestureRecognizer {
 
         let swipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(didSwipe(_:)))
 
