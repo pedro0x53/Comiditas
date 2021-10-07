@@ -64,7 +64,44 @@ class PreparationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = Colors.background
+
+       swipeAction()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         fetchSteps()
+    }
+
+    // MARK: - Helper Methods
+
+    private func createSwipeGestureRecognizer(
+        for direction: UISwipeGestureRecognizer.Direction) -> UISwipeGestureRecognizer {
+
+        let swipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(didSwipe(_:)))
+
+        swipeGestureRecognizer.direction = direction
+
+        return swipeGestureRecognizer
+    }
+
+    private func swipeAction() {
+        preparationView.addGestureRecognizer(createSwipeGestureRecognizer(for: .left))
+        preparationView.addGestureRecognizer(createSwipeGestureRecognizer(for: .right))
+    }
+
+    // MARK: - Actions
+
+    @objc private func didSwipe(_ sender: UISwipeGestureRecognizer) {
+
+        switch sender.direction {
+        case .left:
+            preparationView.nextButtonAction(UIButton())
+        case .right:
+            preparationView.previousButtonAction(UIButton())
+        default:
+            break
+        }
     }
 
     // MARK: - Request Use Cases

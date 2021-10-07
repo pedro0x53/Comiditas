@@ -41,6 +41,7 @@ class PreparationView: UIView {
         collection.isScrollEnabled = false
         collection.delegate = self
         collection.dataSource = self
+        collection.isAccessibilityElement = false
         collection.register(
             StepWithTimerCell.self,
             forCellWithReuseIdentifier: StepWithTimerCell.identifier
@@ -60,6 +61,8 @@ class PreparationView: UIView {
         )
         button.setImage(image, for: .normal)
         button.tintColor = Colors.primary
+        button.isAccessibilityElement = true
+        button.accessibilityLabel = "Passo anterior"
         button.addTarget(self, action: #selector(previousButtonAction(_:)), for: .touchUpInside)
         return button
     }()
@@ -72,6 +75,8 @@ class PreparationView: UIView {
         )
         button.setImage(image, for: .normal)
         button.tintColor = Colors.primary
+        button.isAccessibilityElement = true
+        button.accessibilityLabel = "Próximo passo"
         button.addTarget(self, action: #selector(nextButtonAction(_:)), for: .touchUpInside)
         return button
     }()
@@ -135,6 +140,7 @@ class PreparationView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupLayout()
+        self.isUserInteractionEnabled = true
     }
 
     required init?(coder: NSCoder) {

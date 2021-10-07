@@ -41,6 +41,8 @@ class TimerView: UIView {
         let button = UIButton(type: .system)
         button.setImage(playImage, for: .normal)
         button.tintColor = Colors.primary
+        button.isAccessibilityElement = true
+        button.accessibilityLabel = "Iniciar temporizador"
         button.addTarget(self, action: #selector(playPauseAction(_:)), for: .touchUpInside)
         return button
     }()
@@ -49,9 +51,11 @@ class TimerView: UIView {
         didSet {
             if timerIsRunning {
                 timer.fire()
+                timerPlayPauseButton.accessibilityLabel = "Pausar temporizador"
                 timerPlayPauseButton.setImage(pauseImage, for: .normal)
             } else {
                 timer.invalidate()
+                timerPlayPauseButton.accessibilityLabel = "Iniciar temporizador"
                 timerPlayPauseButton.setImage(playImage, for: .normal)
             }
         }
@@ -110,6 +114,7 @@ extension TimerView: StepTimerDelegate {
 
     func finished() {
         print("Cabou o alarme. Notificacao.")
+        self.timerIsRunning = false
     }
 
 }
