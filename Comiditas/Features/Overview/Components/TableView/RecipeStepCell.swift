@@ -75,17 +75,40 @@ class RecipeStepCell: UITableViewCell, BaseViewProtocol {
     }
 
     func setupView() {
-        contentView.addSubview(completedMark)
-        completedMark.layer.cornerRadius = 10
-        completedMark.layer.borderColor = Colors.textMedium.cgColor
-        completedMark.layer.borderWidth = 1.5
-        contentView.addSubview(line)
+        if FeatureFlags.currentStep.isEnable {
+            contentView.addSubview(completedMark)
+            completedMark.layer.cornerRadius = 10
+            completedMark.layer.borderColor = Colors.textMedium.cgColor
+            completedMark.layer.borderWidth = 1.5
+            contentView.addSubview(line)
+        }
 
         contentView.addSubview(titleLabel)
         contentView.addSubview(descriptionLabel)
     }
 
     func setupConstraints() {
+        if FeatureFlags.currentStep.isEnable {
+            setupConstraintsWithCheckMark()
+        } else {
+            setupConstraintsWithoutCheckMark()
+        }
+    }
+
+    private func setupConstraintsWithoutCheckMark() {
+        NSLayoutConstraint.activate([
+            titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16),
+            titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
+            titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
+
+            descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8),
+            descriptionLabel.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor),
+            descriptionLabel.trailingAnchor.constraint(equalTo: titleLabel.trailingAnchor),
+            descriptionLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
+        ])
+    }
+
+    private func setupConstraintsWithCheckMark() {
         NSLayoutConstraint.activate([
             completedMark.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16),
             completedMark.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
