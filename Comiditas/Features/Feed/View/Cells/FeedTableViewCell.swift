@@ -91,12 +91,23 @@ extension FeedTableViewCell: UICollectionViewDelegate, UICollectionViewDataSourc
         if data.count > 0 {
             let recipe = data[indexPath.row]
             cell.titleLabel.text = recipe.name
+            cell.titleLabel.isAccessibilityElement = true
+            cell.titleLabel.accessibilityLabel = "Nome da receita: \(recipe.name)"
+            cell.titleLabel.accessibilityTraits = .staticText
+
             let time = Time.secondsToHoursMinutesSeconds(seconds: recipe.prepTime)
             if time.minutes == 0 {
                 let timeCell = time.hour == 1 ? "hora" : "horas"
                 cell.subtitleLabel.text = "\(time.hour) \(timeCell) • \(recipe.servings) porções"
+                cell.subtitleLabel.isAccessibilityElement = true
+                cell.subtitleLabel.accessibilityLabel = "Essa receita tem um tempo de preparo de \(time.hour) \(timeCell) e rendimento de \(recipe.servings) porções"
+                cell.subtitleLabel.accessibilityTraits = .staticText
+
             } else {
                 cell.subtitleLabel.text = "\(time.minutes) minutos • \(recipe.servings) porções"
+                cell.subtitleLabel.isAccessibilityElement = true
+                cell.subtitleLabel.accessibilityLabel = "Essa receita tem um tempo de preparo de \(time.minutes) minutos e rendimento de \(recipe.servings) porções"
+                cell.subtitleLabel.accessibilityTraits = .staticText
             }
             if let url = URL(string: recipe.imageURL) {
                 cell.imageView.load(url: url)

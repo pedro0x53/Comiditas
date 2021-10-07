@@ -8,7 +8,6 @@
 import UIKit
 
 class FeedCollectionViewCell: UICollectionViewCell {
-
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -75,7 +74,6 @@ class FeedCollectionViewCell: UICollectionViewCell {
         let label = UILabel()
         label.font = Fonts.h6
         label.textColor = Colors.textDark
-        label.text = "user123"
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
