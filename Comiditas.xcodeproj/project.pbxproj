@@ -19,6 +19,7 @@
 		18CC0F3F2704956900235E5C /* PreparationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC0F3E2704956900235E5C /* PreparationViewControllerTests.swift */; };
 		18CC0F42270495B500235E5C /* PreparationInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC0F41270495B500235E5C /* PreparationInteractorTests.swift */; };
 		18CC0F44270495E700235E5C /* PreparationPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC0F43270495E700235E5C /* PreparationPresenterTests.swift */; };
+		18EA190F270F1FCB00B36E1C /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA190E270F1FCB00B36E1C /* HapticsManager.swift */; };
 		18F8E17B26FA898E00B5766B /* StepCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8E17A26FA898E00B5766B /* StepCellModel.swift */; };
 		18F8E17F26FAA22500B5766B /* SimpleStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8E17E26FAA22500B5766B /* SimpleStepCell.swift */; };
 		18F8E18126FAA35600B5766B /* StepWithTimerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8E18026FAA35600B5766B /* StepWithTimerCell.swift */; };
@@ -49,7 +50,6 @@
 		77946A6227067B1300D3F1B3 /* LocalizablesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77946A6127067B1300D3F1B3 /* LocalizablesProtocol.swift */; };
 		77946A6527067D7000D3F1B3 /* FeedLocalizables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77946A6427067D7000D3F1B3 /* FeedLocalizables.swift */; };
 		77946A6827067DF100D3F1B3 /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77946A6A27067DF100D3F1B3 /* Feed.strings */; };
-		77946A72270681CD00D3F1B3 /* FeedLocalizableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77946A71270681CD00D3F1B3 /* FeedLocalizableTest.swift */; };
 		779F5E8E26EF7456005668BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5E8D26EF7456005668BE /* AppDelegate.swift */; };
 		779F5E9026EF7456005668BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5E8F26EF7456005668BE /* SceneDelegate.swift */; };
 		779F5E9826EF7456005668BE /* Comiditas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 779F5E9626EF7456005668BE /* Comiditas.xcdatamodeld */; };
@@ -115,6 +115,7 @@
 		18CC0F3E2704956900235E5C /* PreparationViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationViewControllerTests.swift; sourceTree = "<group>"; };
 		18CC0F41270495B500235E5C /* PreparationInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationInteractorTests.swift; sourceTree = "<group>"; };
 		18CC0F43270495E700235E5C /* PreparationPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationPresenterTests.swift; sourceTree = "<group>"; };
+		18EA190E270F1FCB00B36E1C /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		18F8E17A26FA898E00B5766B /* StepCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCellModel.swift; sourceTree = "<group>"; };
 		18F8E17E26FAA22500B5766B /* SimpleStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStepCell.swift; sourceTree = "<group>"; };
 		18F8E18026FAA35600B5766B /* StepWithTimerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepWithTimerCell.swift; sourceTree = "<group>"; };
@@ -146,7 +147,6 @@
 		77946A6427067D7000D3F1B3 /* FeedLocalizables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLocalizables.swift; sourceTree = "<group>"; };
 		77946A6927067DF100D3F1B3 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Feed.strings"; sourceTree = "<group>"; };
 		77946A6B27067E9700D3F1B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Feed.strings; sourceTree = "<group>"; };
-		77946A71270681CD00D3F1B3 /* FeedLocalizableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLocalizableTest.swift; sourceTree = "<group>"; };
 		779F5E8A26EF7456005668BE /* Comiditas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Comiditas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		779F5E8D26EF7456005668BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		779F5E8F26EF7456005668BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -221,6 +221,7 @@
 			children = (
 				18F8E17A26FA898E00B5766B /* StepCellModel.swift */,
 				18398CEB26FA3F720054E054 /* StepTimerDelegate.swift */,
+				18EA190E270F1FCB00B36E1C /* HapticsManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -259,6 +260,14 @@
 				18CC0F43270495E700235E5C /* PreparationPresenterTests.swift */,
 			);
 			path = PreparationScene;
+			sourceTree = "<group>";
+		};
+		18EA190D270F154800B36E1C /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				FEAD73292704AF40000BBE68 /* OverviewCoordinatorUnitTests.swift */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		770BE81626F0DDC60032F0ED /* Json */ = {
@@ -393,30 +402,6 @@
 			path = Feed;
 			sourceTree = "<group>";
 		};
-		77946A6C2706818B00D3F1B3 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				77946A6D2706819F00D3F1B3 /* Localizables */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		77946A6D2706819F00D3F1B3 /* Localizables */ = {
-			isa = PBXGroup;
-			children = (
-				77946A6E270681AA00D3F1B3 /* Feed */,
-			);
-			path = Localizables;
-			sourceTree = "<group>";
-		};
-		77946A6E270681AA00D3F1B3 /* Feed */ = {
-			isa = PBXGroup;
-			children = (
-				77946A71270681CD00D3F1B3 /* FeedLocalizableTest.swift */,
-			);
-			path = Feed;
-			sourceTree = "<group>";
-		};
 		779F5E8126EF7456005668BE = {
 			isa = PBXGroup;
 			children = (
@@ -424,6 +409,7 @@
 				779F5EA626EF7458005668BE /* ComiditasTests */,
 				779F5EB126EF7458005668BE /* ComiditasUITests */,
 				779F5E8B26EF7456005668BE /* Products */,
+				18EA190D270F154800B36E1C /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -658,14 +644,6 @@
 			path = TableView;
 			sourceTree = "<group>";
 		};
-		FEAD73282704AF12000BBE68 /* Overview */ = {
-			isa = PBXGroup;
-			children = (
-				FEAD73292704AF40000BBE68 /* OverviewCoordinatorUnitTests.swift */,
-			);
-			path = Overview;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -869,6 +847,7 @@
 				FEC8B85626FA1CB900455143 /* RecipeStepCell.swift in Sources */,
 				FEEDA9B826FB6B8C009A5E10 /* IngredientCell.swift in Sources */,
 				7792905726F8B18800AAA0A4 /* FeedCoordinator.swift in Sources */,
+				18EA190F270F1FCB00B36E1C /* HapticsManager.swift in Sources */,
 				FE5DA02026F9FAA800AF5F71 /* OverviewCoordinator.swift in Sources */,
 				FE39529326FA511700AEF77D /* Ext+UIView.swift in Sources */,
 				FEC8B85826FA269800455143 /* SectionHeaderView.swift in Sources */,
