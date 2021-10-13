@@ -9,6 +9,8 @@
 title = "Visão Geral";
 back = "Voltar";
 
+sharingTitle = "Receita do Comiditas";
+
 accessibleMainImage = "Foto do prato finalizado.";
 
 servings = "Rendimento: ";

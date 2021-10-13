@@ -11,6 +11,8 @@ enum OverviewLocalizable: String {
     case title
     case back
 
+    case sharingTitle
+
     case accessibleMainImage
 
     case servings

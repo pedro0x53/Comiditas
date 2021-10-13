@@ -9,6 +9,8 @@
 title = "Recipe Overview";
 back = "Back";
 
+sharingTitle = "Comiditas Recipe";
+
 accessibleMainImage = "Photo of the finished dish.";
 
 servings = "Servings: ";

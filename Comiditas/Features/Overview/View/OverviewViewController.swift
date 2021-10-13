@@ -8,8 +8,10 @@
 import UIKit
 
 class OverviewViewController: UIViewController {
-    var coordinator: OverviewCoordinator?
     let associatedView: OverviewView = OverviewView()
+
+    var coordinator: OverviewCoordinator?
+    var interactor: OverviewInteractorProtocol?
 
     var recipe: RecipeJson
 
@@ -30,8 +32,32 @@ class OverviewViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupVIP()
+        setupNavBar()
+    }
+
+    private func setupVIP() {
+        let interactor = OverviewInteractor()
+        let presenter = OverviewPresenter()
+        interactor.presenter = presenter
+        presenter.view = self
+        self.interactor = interactor
+    }
+
+    private func setupNavBar() {
         navigationItem.largeTitleDisplayMode = .never
         title = OverviewLocalizable.title.text
+
+        if let shareImage = UIImage(systemName: "square.and.arrow.up") {
+            navigationItem.rightBarButtonItem = UIBarButtonItem(image: shareImage,
+                                                                style: .plain,
+                                                                target: self,
+                                                                action: #selector(shareAction))
+        }
+    }
+
+    @objc func shareAction() {
+        interactor?.request(recipe: Overview.Request(recipe: self.recipe))
     }
 }
 
@@ -147,5 +173,12 @@ extension OverviewViewController: OverviewViewDelegate {
 extension OverviewViewController {
     func startRecipe() {
         coordinator?.coordinateToSteps(recipe: self.recipe)
+    }
+}
+
+// VIP Connection: Presenter->View
+extension OverviewViewController: OverviewPresenterDelegate {
+    func display(sharedRecipe: Overview.ViewModel.Sharing) {
+        print(sharedRecipe.content)
     }
 }
