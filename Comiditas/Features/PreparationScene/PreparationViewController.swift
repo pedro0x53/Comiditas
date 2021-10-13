@@ -156,20 +156,19 @@ extension PreparationViewController: PreparationDisplayLogic {
 extension PreparationViewController: PreparationViewDelegate {
 
     func callAlert(okAction: @escaping () -> Void) {
-        let alertMessage = "O temporizador será reiniciado se você sair desse passo. "
-        + "Você tem certeza que quer continuar?"
+        let alertMessage = StepsLocalizable.alertStop.text
         let alert = UIAlertController(
-            title: "Atenção",
+            title: StepsLocalizable.alertAtention.text,
             message: alertMessage,
             preferredStyle: .alert
         )
         let okAction = UIAlertAction(
-            title: "Continuar",
+            title: StepsLocalizable.alertContinue.text,
             style: .default
         ) { _ in
             okAction()
         }
-        let cancelAction = UIAlertAction(title: "Cancelar", style: .destructive, handler: nil)
+        let cancelAction = UIAlertAction(title: StepsLocalizable.alertCancel.text, style: .destructive, handler: nil)
         alert.addAction(cancelAction)
         alert.addAction(okAction)
 

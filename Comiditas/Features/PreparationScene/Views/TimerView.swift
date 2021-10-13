@@ -42,7 +42,7 @@ class TimerView: UIView {
         button.setImage(playImage, for: .normal)
         button.tintColor = Colors.primary
         button.isAccessibilityElement = true
-        button.accessibilityLabel = "Iniciar temporizador"
+        button.accessibilityLabel = StepsLocalizable.iniciateClockAcessibility.text
         button.addTarget(self, action: #selector(playPauseAction(_:)), for: .touchUpInside)
         return button
     }()
@@ -51,11 +51,11 @@ class TimerView: UIView {
         didSet {
             if timerIsRunning {
                 timer.fire()
-                timerPlayPauseButton.accessibilityLabel = "Pausar temporizador"
+                timerPlayPauseButton.accessibilityLabel = StepsLocalizable.pauseClockAcessibility.text
                 timerPlayPauseButton.setImage(pauseImage, for: .normal)
             } else {
                 timer.invalidate()
-                timerPlayPauseButton.accessibilityLabel = "Iniciar temporizador"
+                timerPlayPauseButton.accessibilityLabel = StepsLocalizable.iniciateClockAcessibility.text
                 timerPlayPauseButton.setImage(playImage, for: .normal)
             }
         }
