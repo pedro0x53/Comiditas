@@ -7,9 +7,9 @@
 
 import UIKit
 
-class FinishModalView: UIView {
+class ModalView: UIView {
 
-    weak var delegate: FinishViewDelegate?
+    weak var delegate: ModalViewDelegate?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -37,16 +37,14 @@ class FinishModalView: UIView {
         let label = UILabel()
         label.font = Fonts.h3
         label.textColor = Colors.primary
-        label.text = ModalLocalizable.finished.text
         label.isAccessibilityElement = true
-        label.accessibilityLabel = ModalLocalizable.finished.text
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.numberOfLines = 0
         return label
     }()
 
-    lazy var cakeImage: UIImageView = {
+    lazy var imageView: UIImageView = {
         let image = UIImageView()
-        image.image = UIImage(named: "cakeImage")
         image.isAccessibilityElement = true
         image.accessibilityLabel = ModalLocalizable.imageDescriptionAcessibility.text
         image.translatesAutoresizingMaskIntoConstraints = false
@@ -57,6 +55,7 @@ class FinishModalView: UIView {
         let button = UIButton()
         button.setImage(UIImage(named: "closeButton"), for: .normal)
         button.isAccessibilityElement = true
+        button.accessibilityLabel =  ModalLocalizable.close.text
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(cancelAction), for: .touchUpInside)
         return button
@@ -75,25 +74,30 @@ class FinishModalView: UIView {
         button.layer.cornerRadius = 18
         button.isAccessibilityElement = true
         button.accessibilityLabel = "Okey"
-        button.accessibilityHint = ModalLocalizable.buttonDescriptionAccessibility.text
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(didFinishAction), for: .touchUpInside)
         return button
     }()
 
     @objc func didFinishAction() {
-        self.delegate?.didFinishRecipe()
+        self.delegate?.didPressOK()
+    }
+
+    func loadData(image: UIImage, title: String) {
+        self.imageView.image = image
+        self.titleLabel.text = title
+        self.titleLabel.accessibilityLabel = title
     }
 }
 
-extension FinishModalView: BaseViewProtocol {
+extension ModalView: BaseViewProtocol {
     func setupView() {
         self.backgroundColor = .black.withAlphaComponent(0.3)
 
         self.addSubview(modalView)
         self.addSubview(titleLabel)
         self.addSubview(closeButton)
-        self.addSubview(cakeImage)
+        self.addSubview(imageView)
         self.addSubview(okButton)
     }
 
@@ -108,7 +112,8 @@ extension FinishModalView: BaseViewProtocol {
 
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: modalView.topAnchor, constant: 24),
-            titleLabel.centerXAnchor.constraint(equalTo: modalView.centerXAnchor)
+            titleLabel.leadingAnchor.constraint(equalTo: modalView.leadingAnchor, constant: 24),
+            titleLabel.trailingAnchor.constraint(equalTo: closeButton.leadingAnchor, constant: -5)
         ])
 
         NSLayoutConstraint.activate([
@@ -119,10 +124,10 @@ extension FinishModalView: BaseViewProtocol {
         ])
 
         NSLayoutConstraint.activate([
-            cakeImage.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.size.width*0.65),
-            cakeImage.heightAnchor.constraint(equalTo: cakeImage.widthAnchor, multiplier: 0.7212),
-            cakeImage.centerXAnchor.constraint(equalTo: modalView.centerXAnchor),
-            cakeImage.centerYAnchor.constraint(equalTo: modalView.centerYAnchor)
+            imageView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.size.width*0.65),
+            imageView.heightAnchor.constraint(equalTo: imageView.widthAnchor, multiplier: 0.7212),
+            imageView.centerXAnchor.constraint(equalTo: modalView.centerXAnchor),
+            imageView.centerYAnchor.constraint(equalTo: modalView.centerYAnchor)
         ])
 
         NSLayoutConstraint.activate([
@@ -134,7 +139,7 @@ extension FinishModalView: BaseViewProtocol {
     }
 }
 
-protocol FinishViewDelegate: AnyObject {
-    func didFinishRecipe()
+protocol ModalViewDelegate: AnyObject {
+    func didPressOK()
     func didCancel()
 }

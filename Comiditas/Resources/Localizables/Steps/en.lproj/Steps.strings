@@ -8,8 +8,7 @@
 
 recipe = "";
 
-alertStop = "The timer will reset if you leave this step. \n
-  Are you sure you want to continue?";
+alertStop = "The timer will reset if you leave this step. Are you sure you want to continue?";
 alertAtention = "Attention!";
 alertContinue = "Continue";
 alertCancel = "Cancel";

@@ -6,7 +6,6 @@
   
 */
 
-finished = "Receita Finalizada!";
+finished = "Recipe finished!";
 
-imageDescriptionAcessibility = "Ícone de bolo com um rolo e uma cesta de frutas abaixo.";
-buttonDescriptionAccessibility = "Volta à tela inicial";
+close = "Close";
