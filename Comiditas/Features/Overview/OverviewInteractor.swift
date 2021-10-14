@@ -9,6 +9,7 @@ import Foundation
 
 protocol OverviewInteractorProtocol: AnyObject {
     func request(recipe sharedRecipe: Overview.Request)
+    func request(recipe recipeToCopy: Overview.Request, type: OverviewCopyType)
 }
 
 class OverviewInteractor: OverviewInteractorProtocol {
@@ -31,5 +32,25 @@ class OverviewInteractor: OverviewInteractorProtocol {
                                                      ingredients: ingredients, steps: steps)
 
         presenter?.present(response: sharedResponse)
+    }
+
+    func request(recipe recipeToCopy: Overview.Request, type: OverviewCopyType) {
+        var response = Overview.Response.Copy(type: type)
+        switch type {
+        case .ingredients:
+            response.content = recipeToCopy.recipe.ingredients
+        case .direcions:
+            let steps: [String] = recipeToCopy.recipe.steps.map { step in
+                var description = step.stepDescription
+                if step.hasTimer {
+                    let time = Time.secondsToHoursMinutesSeconds(seconds: step.timer)
+                    description += " (" + Time.getString(for: time).accessible + ")"
+                }
+                return description
+            }
+            response.content = steps
+        }
+
+        presenter?.present(response: response)
     }
 }

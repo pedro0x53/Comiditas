@@ -33,23 +33,12 @@ extension Overview.Response {
 
     struct Copy {
         let type: OverviewCopyType
-        let content: [String]
+        var content: [String] = []
     }
 }
 
 extension Overview.ViewModel {
-    struct Recipe {
-        let identifier: Int
-        let name: String
-        let imageURL: String
-        let difficultyLevel: Int
-        let servings: Int
-        let prepTime: Int
-        let ingredients: [String]
-        let categories: [String]
-        let rate: Int
-        let steps: [StepJson]
-    }
+    struct Recipe {}
 
     struct Sharing {
         let content: String

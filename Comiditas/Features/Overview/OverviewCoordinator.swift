@@ -9,6 +9,7 @@ import UIKit
 
 protocol OverviewCoordinatorProtocol {
     func coordinateToSteps(recipe: RecipeJson, currentStep: Int)
+    func shareText(content: String)
 }
 
 class OverviewCoordinator: Coordinator {
@@ -33,5 +34,12 @@ extension OverviewCoordinator: OverviewCoordinatorProtocol {
         let preparationCoordinator = PreparationCoordinator(navigationController: navigationController)
         preparationCoordinator.recipe = recipe
         coordinate(to: preparationCoordinator)
+    }
+
+    func shareText(content: String) {
+        let textToShare = [content]
+        let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
+        activityViewController.excludedActivityTypes = [.airDrop, .openInIBooks]
+        navigationController.present(activityViewController, animated: true, completion: nil)
     }
 }

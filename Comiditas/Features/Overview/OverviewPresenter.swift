@@ -6,13 +6,16 @@
 //
 
 import Foundation
+import UIKit
 
 protocol OverviewPresenterProtocol {
     func present(response: Overview.Response.Share)
+    func present(response: Overview.Response.Copy)
 }
 
 protocol OverviewPresenterDelegate: AnyObject {
     func display(sharedRecipe: Overview.ViewModel.Sharing)
+    func displayCopiedSuccessfully()
 }
 
 class OverviewPresenter: OverviewPresenterProtocol {
@@ -36,5 +39,22 @@ class OverviewPresenter: OverviewPresenterProtocol {
 
         let viewModel = Overview.ViewModel.Sharing(content: content)
         view?.display(sharedRecipe: viewModel)
+    }
+
+    func present(response: Overview.Response.Copy) {
+        var content: String = ""
+        switch response.type {
+        case .ingredients:
+            content += OverviewLocalizable.ingredients.text + "\n\n"
+            content += response.content.joined(separator: "\n")
+        case .direcions:
+            content = OverviewLocalizable.directions.text + "\n\n"
+            for (index, step) in response.content.enumerated() {
+                content += "\(index + 1). \(step) \n"
+            }
+        }
+
+        UIPasteboard.general.string = content
+        view?.displayCopiedSuccessfully()
     }
 }

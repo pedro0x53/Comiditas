@@ -145,16 +145,18 @@ extension OverviewViewController: OverviewViewDelegate {
         case .ingredients, .steps:
             let title: String = (section == .ingredients) ?
                                 OverviewLocalizable.ingredients.text : OverviewLocalizable.directions.text
+            let type: OverviewCopyType = (section == .ingredients) ? .ingredients : .direcions
 
             guard let header = tableView.dequeueReusableHeaderFooterView(
                     withIdentifier: SectionHeaderView.identifier) as? SectionHeaderView
             else {
                 let header = SectionHeaderView()
-                header.configure(title: title)
+                header.configure(title: title, type: type)
                 return header
             }
 
-            header.configure(title: title)
+            header.configure(title: title, type: type)
+            header.delegate = self
             return header
         }
     }
@@ -179,6 +181,17 @@ extension OverviewViewController {
 // VIP Connection: Presenter->View
 extension OverviewViewController: OverviewPresenterDelegate {
     func display(sharedRecipe: Overview.ViewModel.Sharing) {
-        print(sharedRecipe.content)
+        self.coordinator?.shareText(content: sharedRecipe.content)
+    }
+
+    func displayCopiedSuccessfully() {
+        print(UIPasteboard.general.string ?? "Não copiou")
+    }
+}
+
+extension OverviewViewController: SectionHeaderViewDelegate {
+    func copySectionContent(type: OverviewCopyType) {
+        let request = Overview.Request(recipe: self.recipe)
+        interactor?.request(recipe: request, type: type)
     }
 }
