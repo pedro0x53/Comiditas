@@ -41,6 +41,7 @@ class PreparationView: UIView {
         collection.isScrollEnabled = false
         collection.delegate = self
         collection.dataSource = self
+        collection.isAccessibilityElement = false
         collection.register(
             StepWithTimerCell.self,
             forCellWithReuseIdentifier: StepWithTimerCell.identifier
@@ -60,6 +61,8 @@ class PreparationView: UIView {
         )
         button.setImage(image, for: .normal)
         button.tintColor = Colors.primary
+        button.isAccessibilityElement = true
+        button.accessibilityLabel = "Passo anterior"
         button.addTarget(self, action: #selector(previousButtonAction(_:)), for: .touchUpInside)
         return button
     }()
@@ -72,6 +75,8 @@ class PreparationView: UIView {
         )
         button.setImage(image, for: .normal)
         button.tintColor = Colors.primary
+        button.isAccessibilityElement = true
+        button.accessibilityLabel = "Próximo passo"
         button.addTarget(self, action: #selector(nextButtonAction(_:)), for: .touchUpInside)
         return button
     }()
@@ -118,14 +123,17 @@ class PreparationView: UIView {
     @objc func nextButtonAction(_ sender: UIButton) {
         if indexPathOnScreen.row == steps.count - 1 {
             delegate?.didFinish()
+            HapticsManager.shared.vibrate(for: .success)
         } else {
             delegate?.didPressNextButton(indexPath: indexPathOnScreen)
+            HapticsManager.shared.vibrate(for: .success)
         }
     }
 
     @objc func previousButtonAction(_ sender: UIButton) {
         if indexPathOnScreen.row > 0 {
             delegate?.didPressPreviousButton(indexPath: indexPathOnScreen)
+            HapticsManager.shared.vibrate(for: .success)
         } else {
             print("Já está na primeira instrução")
         }
@@ -135,6 +143,7 @@ class PreparationView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupLayout()
+        self.isUserInteractionEnabled = true
     }
 
     required init?(coder: NSCoder) {
