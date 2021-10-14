@@ -37,9 +37,9 @@ class FinishModalView: UIView {
         let label = UILabel()
         label.font = Fonts.h3
         label.textColor = Colors.primary
-        label.text = "Receita Finalizada!"
+        label.text = ModalLocalizable.finished.text
         label.isAccessibilityElement = true
-        label.accessibilityLabel = "Receita Finalizada!"
+        label.accessibilityLabel = ModalLocalizable.finished.text
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -48,7 +48,7 @@ class FinishModalView: UIView {
         let image = UIImageView()
         image.image = UIImage(named: "cakeImage")
         image.isAccessibilityElement = true
-        image.accessibilityLabel = "Ícone de bolo com um rolo e uma cesta de frutas abaixo."
+        image.accessibilityLabel = ModalLocalizable.imageDescriptionAcessibility.text
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()
@@ -75,7 +75,7 @@ class FinishModalView: UIView {
         button.layer.cornerRadius = 18
         button.isAccessibilityElement = true
         button.accessibilityLabel = "Okey"
-        button.accessibilityHint = "Volta à tela inicial"
+        button.accessibilityHint = ModalLocalizable.buttonDescriptionAccessibility.text
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(didFinishAction), for: .touchUpInside)
         return button

@@ -1,0 +1,12 @@
+/* 
+  Modal.strings
+  Comiditas
+
+  Created by Alley Pereira on 14/10/21.
+  
+*/
+
+finished = "Receita Finalizada!";
+
+imageDescriptionAcessibility = "Ícone de bolo com um rolo e uma cesta de frutas abaixo.";
+buttonDescriptionAccessibility = "Volta à tela inicial";
