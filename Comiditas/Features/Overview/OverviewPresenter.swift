@@ -14,8 +14,8 @@ protocol OverviewPresenterProtocol {
 }
 
 protocol OverviewPresenterDelegate: AnyObject {
-    func display(sharedRecipe: Overview.ViewModel.Sharing)
-    func displayCopiedSuccessfully()
+    func display(sharedRecipe: Overview.ViewModel.Sharing, animated: Bool, completion: (() -> Void)?)
+    func display(copiedRecipe: Overview.ViewModel.Sharing)
 }
 
 class OverviewPresenter: OverviewPresenterProtocol {
@@ -28,9 +28,9 @@ class OverviewPresenter: OverviewPresenterProtocol {
         content += OverviewLocalizable.servings.text + response.servings + "\n\n"
 
         content += OverviewLocalizable.ingredients.text + "\n\n"
-        content += response.ingredients.reduce("", { partialResult, ingredient in
-            return partialResult + ingredient + "\n"
-        })
+        for ingredient in response.ingredients {
+            content += ingredient + "\n"
+        }
 
         content += "\n" + OverviewLocalizable.directions.text + "\n\n"
         for (index, step) in response.steps.enumerated() {
@@ -38,7 +38,7 @@ class OverviewPresenter: OverviewPresenterProtocol {
         }
 
         let viewModel = Overview.ViewModel.Sharing(content: content)
-        view?.display(sharedRecipe: viewModel)
+        view?.display(sharedRecipe: viewModel, animated: true, completion: nil)
     }
 
     func present(response: Overview.Response.Copy) {
@@ -54,7 +54,6 @@ class OverviewPresenter: OverviewPresenterProtocol {
             }
         }
 
-        UIPasteboard.general.string = content
-        view?.displayCopiedSuccessfully()
+        view?.display(copiedRecipe: Overview.ViewModel.Sharing(content: content))
     }
 }

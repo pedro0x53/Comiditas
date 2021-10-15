@@ -102,7 +102,6 @@ extension OverviewViewController: OverviewViewDelegate {
 
             cell.configure(imageURL: recipe.imageURL, title: recipe.name, servings: "\(recipe.servings)",
                            prepTime: time, difficulty: difficulty, rating: recipe.rate)
-
             return cell
 
         case .ingredients:
@@ -117,7 +116,6 @@ extension OverviewViewController: OverviewViewDelegate {
             }
 
             cell.configure(text: ingredient)
-
             return cell
 
         case .steps:
@@ -132,7 +130,6 @@ extension OverviewViewController: OverviewViewDelegate {
 
             cell.configure(title: OverviewLocalizable.step.text + "\(indexPath.row + 1)",
                            description: recipe.steps[indexPath.row].stepDescription)
-
             return cell
         }
     }
@@ -152,6 +149,7 @@ extension OverviewViewController: OverviewViewDelegate {
             else {
                 let header = SectionHeaderView()
                 header.configure(title: title, type: type)
+                header.delegate = self
                 return header
             }
 
@@ -172,6 +170,7 @@ extension OverviewViewController: OverviewViewDelegate {
     }
 }
 
+// Delegate Connection: ViewController->View
 extension OverviewViewController {
     func startRecipe() {
         coordinator?.coordinateToSteps(recipe: self.recipe)
@@ -180,15 +179,18 @@ extension OverviewViewController {
 
 // VIP Connection: Presenter->View
 extension OverviewViewController: OverviewPresenterDelegate {
-    func display(sharedRecipe: Overview.ViewModel.Sharing) {
-        self.coordinator?.shareText(content: sharedRecipe.content)
+    func display(sharedRecipe: Overview.ViewModel.Sharing,
+                 animated: Bool = true,
+                 completion: (() -> Void)? = nil) {
+        self.coordinator?.shareText(content: sharedRecipe.content, animated: animated, completion: completion)
     }
 
-    func displayCopiedSuccessfully() {
-        print(UIPasteboard.general.string ?? "Não copiou")
+    func display(copiedRecipe: Overview.ViewModel.Sharing) {
+        UIPasteboard.general.string = copiedRecipe.content
     }
 }
 
+// Delegate Connection: ViewController->TableView Header
 extension OverviewViewController: SectionHeaderViewDelegate {
     func copySectionContent(type: OverviewCopyType) {
         let request = Overview.Request(recipe: self.recipe)

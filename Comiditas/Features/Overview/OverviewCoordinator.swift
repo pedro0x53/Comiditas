@@ -9,7 +9,7 @@ import UIKit
 
 protocol OverviewCoordinatorProtocol {
     func coordinateToSteps(recipe: RecipeJson, currentStep: Int)
-    func shareText(content: String)
+    func shareText(content: String, animated: Bool, completion: (() -> Void)?)
 }
 
 class OverviewCoordinator: Coordinator {
@@ -36,10 +36,10 @@ extension OverviewCoordinator: OverviewCoordinatorProtocol {
         coordinate(to: preparationCoordinator)
     }
 
-    func shareText(content: String) {
+    func shareText(content: String, animated: Bool = true, completion: (() -> Void)? = nil) {
         let textToShare = [content]
         let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
         activityViewController.excludedActivityTypes = [.airDrop, .openInIBooks]
-        navigationController.present(activityViewController, animated: true, completion: nil)
+        navigationController.present(activityViewController, animated: animated, completion: completion)
     }
 }

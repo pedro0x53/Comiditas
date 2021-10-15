@@ -21,7 +21,7 @@ class OverviewInteractor: OverviewInteractorProtocol {
             var description = step.stepDescription
             if step.hasTimer {
                 let time = Time.secondsToHoursMinutesSeconds(seconds: step.timer)
-                description += "(" + Time.getString(for: time).accessible + ")"
+                description += " (" + Time.getString(for: time).accessible + ")"
             }
             return description
         }
