@@ -9,7 +9,7 @@
 recipe = "";
 
 alertStop = "O temporizador será reiniciado se você sair desse passo. Você tem certeza que quer continuar?";
-alertAtention = "Atenção";
+alertAtention = "Atenção!";
 alertContinue = "Continuar";
 alertCancel = "Cancelar";
 
