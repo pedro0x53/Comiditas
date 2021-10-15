@@ -80,7 +80,6 @@
 		FE95430326F8B41D0039F547 /* UIImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE95430226F8B41D0039F547 /* UIImageViewTests.swift */; };
 		FE95430B26F8CBFA0039F547 /* OverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE95430A26F8CBFA0039F547 /* OverviewView.swift */; };
 		FE95430E26F8D0DC0039F547 /* RecipeHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE95430D26F8D0DC0039F547 /* RecipeHeaderCell.swift */; };
-		FEAD732A2704AF40000BBE68 /* OverviewCoordinatorUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD73292704AF40000BBE68 /* OverviewCoordinatorUnitTests.swift */; };
 		FEC8B85426F9FD6400455143 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC8B85326F9FD6400455143 /* DetailView.swift */; };
 		FEC8B85626FA1CB900455143 /* RecipeStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC8B85526FA1CB900455143 /* RecipeStepCell.swift */; };
 		FEC8B85826FA269800455143 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC8B85726FA269800455143 /* SectionHeaderView.swift */; };
@@ -906,7 +905,6 @@
 				77D70D1B26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift in Sources */,
 				77946A53270671E400D3F1B3 /* TimeTests.swift in Sources */,
 				77946A51270670E500D3F1B3 /* Ext+UIColorTests.swift in Sources */,
-				FEAD732A2704AF40000BBE68 /* OverviewCoordinatorUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -68,7 +68,7 @@ class ModalView: UIView {
     lazy var okButton: UIButton = {
         let button = UIButton()
         button.setTitle("Ok", for: .normal)
-        button.titleLabel?.font = Fonts.h4
+        button.titleLabel?.font = Fonts.h4Bold
         button.titleLabel?.textColor = Colors.background
         button.backgroundColor = Colors.primary
         button.layer.cornerRadius = 18
