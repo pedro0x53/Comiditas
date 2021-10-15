@@ -46,7 +46,6 @@ class ModalView: UIView {
     lazy var imageView: UIImageView = {
         let image = UIImageView()
         image.isAccessibilityElement = true
-        image.accessibilityLabel = ModalLocalizable.imageDescriptionAcessibility.text
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()

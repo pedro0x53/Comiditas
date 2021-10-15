@@ -15,6 +15,7 @@
 		1840611527171857008BAB4A /* Steps.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1840611727171857008BAB4A /* Steps.strings */; };
 		184061222718647F008BAB4A /* ModalLocalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184061212718647F008BAB4A /* ModalLocalizable.swift */; };
 		18406125271864BA008BAB4A /* Modal.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18406127271864BA008BAB4A /* Modal.strings */; };
+		18632F372719AC420010C323 /* ModalLocalizableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18632F362719AC420010C323 /* ModalLocalizableTest.swift */; };
 		188F523426FB55C600A59039 /* PreparationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F523326FB55C600A59039 /* PreparationCoordinator.swift */; };
 		1894725726F9F9E500E6CD8B /* PreparationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894725626F9F9E500E6CD8B /* PreparationView.swift */; };
 		1894725926F9F9F700E6CD8B /* PreparationInterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894725826F9F9F700E6CD8B /* PreparationInterator.swift */; };
@@ -116,6 +117,7 @@
 		184061212718647F008BAB4A /* ModalLocalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalLocalizable.swift; sourceTree = "<group>"; };
 		18406126271864BA008BAB4A /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Modal.strings"; sourceTree = "<group>"; };
 		18406128271864BE008BAB4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Modal.strings; sourceTree = "<group>"; };
+		18632F362719AC420010C323 /* ModalLocalizableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalLocalizableTest.swift; sourceTree = "<group>"; };
 		188F523326FB55C600A59039 /* PreparationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationCoordinator.swift; sourceTree = "<group>"; };
 		1894725626F9F9E500E6CD8B /* PreparationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationView.swift; sourceTree = "<group>"; };
 		1894725826F9F9F700E6CD8B /* PreparationInterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationInterator.swift; sourceTree = "<group>"; };
@@ -264,6 +266,21 @@
 			path = Modal;
 			sourceTree = "<group>";
 		};
+		18632F352719AC160010C323 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				18632F362719AC420010C323 /* ModalLocalizableTest.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		18632F382719B5300010C323 /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
 		1894725526F9F99000E6CD8B /* PreparationScene */ = {
 			isa = PBXGroup;
 			children = (
@@ -363,6 +380,8 @@
 		776FD161270F241800CC312D /* Localizables */ = {
 			isa = PBXGroup;
 			children = (
+				18632F382719B5300010C323 /* Steps */,
+				18632F352719AC160010C323 /* Modal */,
 				776FD162270F241800CC312D /* Feed */,
 			);
 			path = Localizables;
@@ -892,6 +911,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18632F372719AC420010C323 /* ModalLocalizableTest.swift in Sources */,
 				77946A57270674C800D3F1B3 /* AppCoordinatorTest.swift in Sources */,
 				FE95430326F8B41D0039F547 /* UIImageViewTests.swift in Sources */,
 				77946A4D27066AD800D3F1B3 /* Ext+UIImageTests.swift in Sources */,

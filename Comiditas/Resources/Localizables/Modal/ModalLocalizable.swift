@@ -9,7 +9,6 @@ import Foundation
 
 enum ModalLocalizable: String {
     case finished
-    case imageDescriptionAcessibility
     case close
 }
 
