@@ -8,9 +8,10 @@
 import UIKit
 
 class OverviewViewController: UIViewController {
+    let associatedView: OverviewView = OverviewView()
 
     var coordinator: OverviewCoordinator?
-    let associatedView: OverviewView = OverviewView()
+    var interactor: OverviewInteractorProtocol?
 
     var recipe: RecipeJson
 
@@ -31,19 +32,48 @@ class OverviewViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupVIP()
+        setupNavBar()
+    }
+
+    private func setupVIP() {
+        let interactor = OverviewInteractor()
+        let presenter = OverviewPresenter()
+        interactor.presenter = presenter
+        presenter.view = self
+        self.interactor = interactor
+    }
+
+    private func setupNavBar() {
         navigationItem.largeTitleDisplayMode = .never
         title = OverviewLocalizable.title.text
+
+        if let shareImage = UIImage(systemName: "square.and.arrow.up") {
+            navigationItem.rightBarButtonItem = UIBarButtonItem(image: shareImage,
+                                                                style: .plain,
+                                                                target: self,
+                                                                action: #selector(shareAction))
+        }
+    }
+
+    @objc func shareAction() {
+        interactor?.request(recipe: Overview.Request(recipe: self.recipe))
     }
 }
 
 extension OverviewViewController: OverviewViewDelegate {
+    enum OverviewSection: Int {
+        case header = 0
+        case ingredients = 1
+        case steps = 2
+    }
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let section = OverviewSection(rawValue: section) else { return 0 }
-
         switch section {
         case .header:
             return 1
@@ -56,26 +86,22 @@ extension OverviewViewController: OverviewViewDelegate {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let section = OverviewSection(rawValue: indexPath.section) else { return UITableViewCell() }
-
         switch section {
         case .header:
+            let time = Time.secondsToHoursMinutesSeconds(seconds: recipe.prepTime)
+            let difficulty = Difficulty(rawValue: recipe.difficultyLevel) ?? .medium
+
             guard let cell = tableView.dequeueReusableCell(
                     withIdentifier: RecipeHeaderCell.identifier) as? RecipeHeaderCell
             else {
-                return UITableViewCell()
+                let cell = RecipeHeaderCell()
+                cell.configure(imageURL: recipe.imageURL, title: recipe.name, servings: "\(recipe.servings)",
+                               prepTime: time, difficulty: difficulty, rating: recipe.rate)
+                return cell
             }
 
-            let time = Time.secondsToHoursMinutesSeconds(seconds: recipe.prepTime)
-
-            let difficulty = Difficulty(rawValue: recipe.difficultyLevel) ?? .medium
-
-            cell.configure(imageURL: recipe.imageURL,
-                           title: recipe.name,
-                           servings: "\(recipe.servings)",
-                           prepTime: time,
-                           difficulty: difficulty,
-                           rating: recipe.rate)
-
+            cell.configure(imageURL: recipe.imageURL, title: recipe.name, servings: "\(recipe.servings)",
+                           prepTime: time, difficulty: difficulty, rating: recipe.rate)
             return cell
 
         case .ingredients:
@@ -84,46 +110,51 @@ extension OverviewViewController: OverviewViewDelegate {
             guard let cell = tableView.dequeueReusableCell(
                     withIdentifier: IngredientCell.identifier) as? IngredientCell
             else {
-                return UITableViewCell()
+                let cell = IngredientCell()
+                cell.configure(text: ingredient)
+                return cell
             }
 
             cell.configure(text: ingredient)
-
             return cell
 
         case .steps:
             guard let cell = tableView.dequeueReusableCell(
                     withIdentifier: RecipeStepCell.identifier) as? RecipeStepCell
             else {
-                return UITableViewCell()
+                let cell = RecipeStepCell()
+                cell.configure(title: OverviewLocalizable.step.text + "\(indexPath.row + 1)",
+                               description: recipe.steps[indexPath.row].stepDescription)
+                return cell
             }
 
             cell.configure(title: OverviewLocalizable.step.text + "\(indexPath.row + 1)",
                            description: recipe.steps[indexPath.row].stepDescription)
-
             return cell
         }
     }
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         guard let section = OverviewSection(rawValue: section) else { return nil }
-
         switch section {
         case .header:
             return nil
         case .ingredients, .steps:
             let title: String = (section == .ingredients) ?
                                 OverviewLocalizable.ingredients.text : OverviewLocalizable.directions.text
+            let type: OverviewCopyType = (section == .ingredients) ? .ingredients : .direcions
 
             guard let header = tableView.dequeueReusableHeaderFooterView(
                     withIdentifier: SectionHeaderView.identifier) as? SectionHeaderView
             else {
                 let header = SectionHeaderView()
-                header.configure(title: title)
+                header.configure(title: title, type: type)
+                header.delegate = self
                 return header
             }
 
-            header.configure(title: title)
+            header.configure(title: title, type: type)
+            header.delegate = self
             return header
         }
     }
@@ -139,16 +170,30 @@ extension OverviewViewController: OverviewViewDelegate {
     }
 }
 
-extension OverviewViewController {
-    enum OverviewSection: Int {
-        case header = 0
-        case ingredients = 1
-        case steps = 2
-    }
-}
-
+// Delegate Connection: ViewController->View
 extension OverviewViewController {
     func startRecipe() {
         coordinator?.coordinateToSteps(recipe: self.recipe)
+    }
+}
+
+// VIP Connection: Presenter->View
+extension OverviewViewController: OverviewPresenterDelegate {
+    func display(sharedRecipe: Overview.ViewModel.Sharing,
+                 animated: Bool = true,
+                 completion: (() -> Void)? = nil) {
+        self.coordinator?.shareText(content: sharedRecipe.content, animated: animated, completion: completion)
+    }
+
+    func display(copiedRecipe: Overview.ViewModel.Sharing) {
+        UIPasteboard.general.string = copiedRecipe.content
+    }
+}
+
+// Delegate Connection: ViewController->TableView Header
+extension OverviewViewController: SectionHeaderViewDelegate {
+    func copySectionContent(type: OverviewCopyType) {
+        let request = Overview.Request(recipe: self.recipe)
+        interactor?.request(recipe: request, type: type)
     }
 }
