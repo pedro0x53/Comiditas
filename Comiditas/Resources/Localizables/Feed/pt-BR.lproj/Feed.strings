@@ -6,7 +6,9 @@
   
 */
 
-recommendedForYou = "Recomendados para você";
-otherRecipes = "Outras receitas";
+recommendedForYou = "Pratos do dia";
+otherRecipes = "Mais receitas";
 candy = "Doces";
 salted = "Salgado";
+subTitle = "O que você gostaria de cozinhar hoje?";
+title = "Receitas";

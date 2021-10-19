@@ -23,12 +23,13 @@ class AppCoordinator: Coordinator {
         appearance.titleTextAttributes = [.foregroundColor: Colors.primary, .font: Fonts.title]
         appearance.largeTitleTextAttributes = [.foregroundColor: Colors.primary, .font: Fonts.title]
 
+        navigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController.navigationBar.shadowImage = UIImage()
+        navigationController.navigationBar.layoutIfNeeded()
         navigationController.navigationBar.tintColor = .white
         navigationController.navigationBar.standardAppearance = appearance
         navigationController.navigationBar.compactAppearance = appearance
         navigationController.navigationBar.scrollEdgeAppearance = appearance
-        navigationController.navigationBar.setBackgroundImage(UIImage(named: ""), for: UIBarMetrics.default)
-        navigationController.navigationBar.shadowImage = UIImage(named: "")
 
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
