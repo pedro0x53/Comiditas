@@ -116,13 +116,12 @@ class RecipeHeaderCell: UITableViewCell, BaseViewProtocol {
         self.servingsLabel.text = servingsText
         self.servingsLabel.accessibilityLabel = servingsAccessibleText
 
-        let prepTimeLabel = getPrepTimeLabel(for: prepTime)
+        let prepTimeLabel = Time.getString(for: prepTime)
         self.prepTimeItem.itemDescription = prepTimeLabel.display
         self.prepTimeItem.accessibilityLabel = OverviewLocalizable.accessiblePrep.text + prepTimeLabel.accessible
 
-        let difficultyLabel = getDifficultyLabel(for: difficulty)
-        self.difficultyItem.itemDescription = difficultyLabel
-        self.difficultyItem.accessibilityLabel = OverviewLocalizable.accessibleDifficulty.text + difficultyLabel
+        self.difficultyItem.itemDescription = difficulty.description
+        self.difficultyItem.accessibilityLabel = OverviewLocalizable.accessibleDifficulty.text + difficulty.description
 
         self.accessibilityElements = [
             mainImage,
@@ -143,33 +142,5 @@ class RecipeHeaderCell: UITableViewCell, BaseViewProtocol {
 
             self.accessibilityElements?.append(rateItem)
         }
-    }
-
-    private func getDifficultyLabel(for difficulty: Difficulty) -> String {
-        switch difficulty {
-        case .easy:
-            return OverviewLocalizable.easy.text
-        case .medium:
-            return OverviewLocalizable.medium.text
-        case .hard:
-            return OverviewLocalizable.hard.text
-        }
-    }
-
-    private func getPrepTimeLabel(for time: TimeResponse) -> (display: String, accessible: String) {
-        var displayPrepTime = ""
-        var accessiblePrepTime = ""
-
-        if time.hour > 0 {
-            displayPrepTime += "\(time.hour)h "
-            accessiblePrepTime += "\(time.hour)" + OverviewLocalizable.hours.text + " "
-        }
-
-        if time.minutes > 0 {
-            displayPrepTime += "\(time.minutes)min"
-            accessiblePrepTime += "\(time.minutes)" + OverviewLocalizable.minutes.text
-        }
-
-        return (displayPrepTime, accessiblePrepTime)
     }
 }

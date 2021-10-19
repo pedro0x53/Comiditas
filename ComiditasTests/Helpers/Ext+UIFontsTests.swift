@@ -67,4 +67,9 @@ class ExtensionUIFontsTests: XCTestCase {
         let sut = Fonts.h7
         XCTAssertNotNil(sut, "Something unexpected occurred unable to implement UIFont h5.")
     }
+
+    func testTitleNotIsNil() {
+        let sut = Fonts.title
+        XCTAssertNotNil(sut, "Something unexpected occurred unable to implement UIFont title.")
+    }
 }
