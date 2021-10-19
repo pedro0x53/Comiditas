@@ -23,6 +23,11 @@ enum StepsLocalizable: String {
 
     case backStep
     case nextStep
+
+    case timerNotificationTitle
+    case timerNotificationBody
+    case timerNotificationMarkAsSnooze
+    case timerNotificationDelete
 }
 
 extension StepsLocalizable: LocalizablesProtocol {
