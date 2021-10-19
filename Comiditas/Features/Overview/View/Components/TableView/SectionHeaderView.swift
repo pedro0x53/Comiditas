@@ -20,7 +20,7 @@ class SectionHeaderView: UITableViewHeaderFooterView, BaseViewProtocol {
 
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.font = Fonts.h4
+        label.font = Fonts.h4Bold
         label.textColor = Colors.primary
         label.numberOfLines = 1
         label.translatesAutoresizingMaskIntoConstraints = false

@@ -8,9 +8,8 @@
 
 recipe = "";
 
-alertStop = "O temporizador será reiniciado se você sair desse passo. \n
- Você tem certeza que quer continuar?";
-alertAtention = "Atenção";
+alertStop = "O temporizador será reiniciado se você sair desse passo. Você tem certeza que quer continuar?";
+alertAtention = "Atenção!";
 alertContinue = "Continuar";
 alertCancel = "Cancelar";
 

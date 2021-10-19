@@ -24,8 +24,12 @@ struct Fonts {
         return .rounded(ofSize: 22, weight: .light)
     }
 
-    static var h4: UIFont {
+    static var h4Bold: UIFont {
         return .rounded(ofSize: 20, weight: .bold)
+    }
+
+    static var h4: UIFont {
+        return .rounded(ofSize: 19, weight: .regular)
     }
 
     static var h5: UIFont {
