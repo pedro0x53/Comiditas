@@ -156,7 +156,7 @@ extension PreparationViewController: PreparationDisplayLogic {
 extension PreparationViewController: PreparationViewDelegate {
 
     func callAlert(okAction: @escaping () -> Void) {
-        if let image = UIImage(named: "cakeImage") {
+        if let image = UIImage(named: "Attention") {
             coordinator?.presentDidModal(
                 with: image,
                 title: StepsLocalizable.alertStop.text,
