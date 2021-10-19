@@ -41,7 +41,9 @@ struct Fonts {
     }
 
     static var title: UIFont {
-        guard let font = UIFont(name: "Pacifico", size: 34) else { return UIFont() }
+        guard let font = UIFont(name: "Pacifico", size: 34) else {
+            return .rounded(ofSize: 22, weight: .bold)
+        }
         return font
     }
 

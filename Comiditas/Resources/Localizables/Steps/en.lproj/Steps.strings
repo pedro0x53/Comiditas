@@ -1,0 +1,24 @@
+/* 
+  Steps.strings
+  Comiditas
+
+  Created by Alley Pereira on 13/10/21.
+  
+*/
+
+recipe = "";
+
+alertStop = "The timer will reset if you leave this step. \n
+  Are you sure you want to continue?";
+alertAtention = "Attention!";
+alertContinue = "Continue";
+alertCancel = "Cancel";
+
+step = "Step";
+of = "of";
+
+iniciateClockAcessibility = "Start timer";
+pauseClockAcessibility = "Pause timer";
+
+backStep = "Previous step";
+nextStep = "Next step";

@@ -1,0 +1,24 @@
+/* 
+  Steps.strings
+  Comiditas
+
+  Created by Alley Pereira on 13/10/21.
+  
+*/
+
+recipe = "";
+
+alertStop = "O temporizador será reiniciado se você sair desse passo. \n
+ Você tem certeza que quer continuar?";
+alertAtention = "Atenção";
+alertContinue = "Continuar";
+alertCancel = "Cancelar";
+
+step = "Passo";
+of = "de";
+
+iniciateClockAcessibility = "Iniciar temporizador";
+pauseClockAcessibility = "Pausar temporizador";
+
+backStep = "Passo anterior";
+nextStep = "Próximo passo";

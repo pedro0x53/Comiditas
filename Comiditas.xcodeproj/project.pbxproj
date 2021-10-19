@@ -11,6 +11,8 @@
 		18398CEC26FA3F720054E054 /* StepTimerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18398CEB26FA3F720054E054 /* StepTimerDelegate.swift */; };
 		18398CF026FA60640054E054 /* PreparationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18398CEF26FA60640054E054 /* PreparationModels.swift */; };
 		18398CF226FA66890054E054 /* PreparationWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18398CF126FA66890054E054 /* PreparationWorker.swift */; };
+		1840611227171762008BAB4A /* StepsLocalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840611127171762008BAB4A /* StepsLocalizable.swift */; };
+		1840611527171857008BAB4A /* Steps.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1840611727171857008BAB4A /* Steps.strings */; };
 		188F523426FB55C600A59039 /* PreparationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F523326FB55C600A59039 /* PreparationCoordinator.swift */; };
 		1894725726F9F9E500E6CD8B /* PreparationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894725626F9F9E500E6CD8B /* PreparationView.swift */; };
 		1894725926F9F9F700E6CD8B /* PreparationInterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894725826F9F9F700E6CD8B /* PreparationInterator.swift */; };
@@ -108,6 +110,9 @@
 		18398CEB26FA3F720054E054 /* StepTimerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepTimerDelegate.swift; sourceTree = "<group>"; };
 		18398CEF26FA60640054E054 /* PreparationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationModels.swift; sourceTree = "<group>"; };
 		18398CF126FA66890054E054 /* PreparationWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationWorker.swift; sourceTree = "<group>"; };
+		1840611127171762008BAB4A /* StepsLocalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsLocalizable.swift; sourceTree = "<group>"; };
+		1840611627171857008BAB4A /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Steps.strings"; sourceTree = "<group>"; };
+		184061182717185B008BAB4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Steps.strings; sourceTree = "<group>"; };
 		188F523326FB55C600A59039 /* PreparationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationCoordinator.swift; sourceTree = "<group>"; };
 		1894725626F9F9E500E6CD8B /* PreparationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationView.swift; sourceTree = "<group>"; };
 		1894725826F9F9F700E6CD8B /* PreparationInterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationInterator.swift; sourceTree = "<group>"; };
@@ -236,6 +241,15 @@
 				18398CE926FA3F490054E054 /* TimerView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		1840610E27171743008BAB4A /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				1840611127171762008BAB4A /* StepsLocalizable.swift */,
+				1840611727171857008BAB4A /* Steps.strings */,
+			);
+			path = Steps;
 			sourceTree = "<group>";
 		};
 		1894725526F9F99000E6CD8B /* PreparationScene */ = {
@@ -546,6 +560,7 @@
 		779F5ECB26EF7548005668BE /* Localizables */ = {
 			isa = PBXGroup;
 			children = (
+				1840610E27171743008BAB4A /* Steps */,
 				FE656188270749D1007EA5E5 /* Overview */,
 				77946A6327067D6300D3F1B3 /* Feed */,
 			);
@@ -779,6 +794,7 @@
 				77D70D1726F21FFA00A8B244 /* Recipes.json in Resources */,
 				779F5E9A26EF7457005668BE /* Assets.xcassets in Resources */,
 				FE65618D27074A97007EA5E5 /* Overview.strings in Resources */,
+				1840611527171857008BAB4A /* Steps.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -868,6 +884,7 @@
 				7792905726F8B18800AAA0A4 /* FeedCoordinator.swift in Sources */,
 				18EA190F270F1FCB00B36E1C /* HapticsManager.swift in Sources */,
 				FE5DA02026F9FAA800AF5F71 /* OverviewCoordinator.swift in Sources */,
+				1840611227171762008BAB4A /* StepsLocalizable.swift in Sources */,
 				FE39529326FA511700AEF77D /* Ext+UIView.swift in Sources */,
 				FEC8B85826FA269800455143 /* SectionHeaderView.swift in Sources */,
 				FE95430E26F8D0DC0039F547 /* RecipeHeaderCell.swift in Sources */,
@@ -914,6 +931,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		1840611727171857008BAB4A /* Steps.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1840611627171857008BAB4A /* pt-BR */,
+				184061182717185B008BAB4A /* en */,
+			);
+			name = Steps.strings;
+			sourceTree = "<group>";
+		};
 		77946A6A27067DF100D3F1B3 /* Feed.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
