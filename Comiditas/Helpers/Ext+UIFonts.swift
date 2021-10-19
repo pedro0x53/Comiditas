@@ -39,6 +39,11 @@ struct Fonts {
     static var h7: UIFont {
         return .rounded(ofSize: 15, weight: .medium)
     }
+
+    static var title: UIFont {
+        guard let font = UIFont(name: "Pacifico", size: 34) else { return UIFont() }
+        return font
+    }
 }
 
 extension UIFont {

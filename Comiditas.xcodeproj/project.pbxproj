@@ -37,6 +37,7 @@
 		77635CDF26F2185B00B36EC7 /* JsonStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CDE26F2185B00B36EC7 /* JsonStack.swift */; };
 		77635CE126F2188B00B36EC7 /* RecipeJsonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CE026F2188B00B36EC7 /* RecipeJsonRepository.swift */; };
 		776FD164270F241800CC312D /* FeedLocalizableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776FD163270F241800CC312D /* FeedLocalizableTest.swift */; };
+		7788D896271EAF8E00B75A45 /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7788D895271EAF8E00B75A45 /* Pacifico.ttf */; };
 		7792904B26F8ADC500AAA0A4 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7792904A26F8ADC500AAA0A4 /* CoordinatorProtocol.swift */; };
 		7792904E26F8AE0800AAA0A4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7792904D26F8AE0800AAA0A4 /* AppCoordinator.swift */; };
 		7792905326F8B08700AAA0A4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7792905226F8B08700AAA0A4 /* FeedViewController.swift */; };
@@ -134,6 +135,7 @@
 		77635CDE26F2185B00B36EC7 /* JsonStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonStack.swift; sourceTree = "<group>"; };
 		77635CE026F2188B00B36EC7 /* RecipeJsonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeJsonRepository.swift; sourceTree = "<group>"; };
 		776FD163270F241800CC312D /* FeedLocalizableTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedLocalizableTest.swift; sourceTree = "<group>"; };
+		7788D895271EAF8E00B75A45 /* Pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pacifico.ttf; sourceTree = "<group>"; };
 		7792904A26F8ADC500AAA0A4 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		7792904D26F8AE0800AAA0A4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		7792905226F8B08700AAA0A4 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -350,6 +352,14 @@
 			path = Feed;
 			sourceTree = "<group>";
 		};
+		7788D894271EAF8000B75A45 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7788D895271EAF8E00B75A45 /* Pacifico.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		7792904C26F8ADEF00AAA0A4 /* AppCoordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -525,6 +535,7 @@
 		779F5ECA26EF7539005668BE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7788D894271EAF8000B75A45 /* Fonts */,
 				779F5ECB26EF7548005668BE /* Localizables */,
 				779F5E9926EF7457005668BE /* Assets.xcassets */,
 				779F5E9B26EF7457005668BE /* LaunchScreen.storyboard */,
@@ -768,6 +779,7 @@
 				77DDC15026FA9311003027D3 /* Recommendations.json in Resources */,
 				779F5E9D26EF7457005668BE /* LaunchScreen.storyboard in Resources */,
 				77D70D1726F21FFA00A8B244 /* Recipes.json in Resources */,
+				7788D896271EAF8E00B75A45 /* Pacifico.ttf in Resources */,
 				779F5E9A26EF7457005668BE /* Assets.xcassets in Resources */,
 				FE65618D27074A97007EA5E5 /* Overview.strings in Resources */,
 			);
