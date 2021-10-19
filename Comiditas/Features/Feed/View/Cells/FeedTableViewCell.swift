@@ -46,7 +46,7 @@ class FeedTableViewCell: UITableViewCell {
 
     private func collectionViewLayout() -> UICollectionViewLayout {
         let layout = UICollectionViewFlowLayout()
-        let heightCV: CGFloat = FeatureFlags.user.isEnable ? 250 : 214
+        let heightCV: CGFloat = 250
 
         layout.sectionInset = UIEdgeInsets(top: .zero, left: 10, bottom: .zero, right: 10)
         layout.scrollDirection = .horizontal
@@ -65,11 +65,12 @@ class FeedTableViewCell: UITableViewCell {
 // MARK: - UI Setup
 extension FeedTableViewCell {
     private func setupUI() {
-        addSubview(collectionView)
-        NSLayoutConstraint.activate([
-            collectionView.widthAnchor.constraint(equalTo: self.widthAnchor),
-            collectionView.heightAnchor.constraint(equalTo: self.heightAnchor)
-        ])
+        self.backgroundColor = .orange
+//        addSubview(collectionView)
+//        NSLayoutConstraint.activate([
+//            collectionView.widthAnchor.constraint(equalTo: self.widthAnchor),
+//            collectionView.heightAnchor.constraint(equalTo: self.heightAnchor)
+//        ])
     }
 }
 

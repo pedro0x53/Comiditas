@@ -12,3 +12,4 @@ candy = "Candy";
 salted = "Salted";
 subTitle = "What would you like to cook today?";
 title = "Recipes";
+search = " Search...";

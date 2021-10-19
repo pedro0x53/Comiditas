@@ -17,7 +17,7 @@ struct Fonts {
     }
 
     static var h3: UIFont {
-        return .rounded(ofSize: 22, weight: .bold)
+        return .rounded(ofSize: 24, weight: .bold)
     }
 
     static var h3Light: UIFont {
@@ -43,6 +43,10 @@ struct Fonts {
     static var title: UIFont {
         guard let font = UIFont(name: "Pacifico", size: 34) else { return UIFont() }
         return font
+    }
+
+    static var subTitle: UIFont {
+        return .rounded(ofSize: 15, weight: .regular)
     }
 }
 
