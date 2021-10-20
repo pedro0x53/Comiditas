@@ -14,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        configureUserNotifications()
         return true
     }
 
@@ -55,4 +56,54 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+}
+
+// MARK: - UNUserNotificationCenterDelegate
+
+extension AppDelegate: UNUserNotificationCenterDelegate {
+
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                willPresent notification: UNNotification,
+                                withCompletionHandler completionHandler: @escaping (
+                                    UNNotificationPresentationOptions
+                                ) -> Void) {
+
+        completionHandler([.alert, .sound])
+    }
+
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                didReceive response: UNNotificationResponse,
+                                withCompletionHandler completionHandler: @escaping () -> Void) {
+
+        if response.notification.request.identifier == "reminder" {
+            print("Handling notifications with the local notification identifier")
+        }
+
+        completionHandler()
+    }
+
+    private func configureUserNotifications() {
+      UNUserNotificationCenter.current().delegate = self
+
+    let categoryIdentifier = "Notification"
+
+      let markAsSnooze = UNNotificationAction(
+        identifier: "snooze",
+        title: StepsLocalizable.timerNotificationMarkAsSnooze.text,
+        options: []
+      )
+        let deleteAction = UNNotificationAction(
+          identifier: "delete",
+          title: StepsLocalizable.timerNotificationDelete.text,
+          options: [.destructive]
+        )
+        let category = UNNotificationCategory(
+          identifier: categoryIdentifier,
+          actions: [markAsSnooze, deleteAction],
+          intentIdentifiers: [],
+          options: []
+        )
+
+        UNUserNotificationCenter.current().setNotificationCategories([category])
+    }
 }

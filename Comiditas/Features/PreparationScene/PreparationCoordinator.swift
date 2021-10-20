@@ -9,8 +9,8 @@ import Foundation
 import UIKit
 
 protocol PreparationCoordinatorProtocol {
-    func coordinateBack(recipe: RecipeJson, currentStep: Int)
-    func presentDidFinishModal()
+    func coordinateBack()
+    func presentDidModal(with image: UIImage, title: String, okAction: @escaping () -> Void)
 }
 
 class PreparationCoordinator: Coordinator {
@@ -32,12 +32,15 @@ class PreparationCoordinator: Coordinator {
 }
 
 extension PreparationCoordinator: PreparationCoordinatorProtocol {
-    func coordinateBack(recipe: RecipeJson, currentStep: Int) {
+    func coordinateBack() {
         navigationController.popViewController(animated: true)
     }
 
-    func presentDidFinishModal() {
-        let finishCoordinator = FinishModalCoordinator(navigationController: navigationController)
+    func presentDidModal(with image: UIImage, title: String, okAction: @escaping () -> Void) {
+        let finishCoordinator = ModalCoordinator(navigationController: navigationController)
+        finishCoordinator.image = image
+        finishCoordinator.title = title
+        finishCoordinator.okAction = okAction
         coordinate(to: finishCoordinator)
     }
 }

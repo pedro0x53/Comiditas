@@ -19,14 +19,16 @@ class AppCoordinator: Coordinator {
         navigationController.navigationBar.prefersLargeTitles = true
 
         let appearance = UINavigationBarAppearance()
-        appearance.backgroundColor = Colors.secondary
+        appearance.backgroundColor = Colors.background
         appearance.titleTextAttributes = [.foregroundColor: Colors.primary]
-        appearance.largeTitleTextAttributes = [.foregroundColor: Colors.primary]
+        appearance.largeTitleTextAttributes = [.foregroundColor: Colors.primary, .font: Fonts.title]
 
         navigationController.navigationBar.tintColor = Colors.primary
         navigationController.navigationBar.standardAppearance = appearance
         navigationController.navigationBar.compactAppearance = appearance
         navigationController.navigationBar.scrollEdgeAppearance = appearance
+        navigationController.navigationBar.setBackgroundImage(UIImage(named: ""), for: UIBarMetrics.default)
+        navigationController.navigationBar.shadowImage = UIImage(named: "")
 
         window.rootViewController = navigationController
         window.makeKeyAndVisible()

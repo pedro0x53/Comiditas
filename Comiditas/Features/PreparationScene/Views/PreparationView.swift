@@ -20,7 +20,7 @@ class PreparationView: UIView {
     var steps: [StepCellModel] = [] {
         didSet {
             collectionView.reloadData()
-            totalPagesLabel.text = " de \(steps.count)"
+            totalPagesLabel.text = " \(StepsLocalizable.of.text) \(steps.count)"
         }
     }
 
@@ -62,7 +62,7 @@ class PreparationView: UIView {
         button.setImage(image, for: .normal)
         button.tintColor = Colors.primary
         button.isAccessibilityElement = true
-        button.accessibilityLabel = "Passo anterior"
+        button.accessibilityLabel = StepsLocalizable.backStep.text
         button.addTarget(self, action: #selector(previousButtonAction(_:)), for: .touchUpInside)
         return button
     }()
@@ -76,7 +76,7 @@ class PreparationView: UIView {
         button.setImage(image, for: .normal)
         button.tintColor = Colors.primary
         button.isAccessibilityElement = true
-        button.accessibilityLabel = "Próximo passo"
+        button.accessibilityLabel =  StepsLocalizable.nextStep.text
         button.addTarget(self, action: #selector(nextButtonAction(_:)), for: .touchUpInside)
         return button
     }()
@@ -123,14 +123,17 @@ class PreparationView: UIView {
     @objc func nextButtonAction(_ sender: UIButton) {
         if indexPathOnScreen.row == steps.count - 1 {
             delegate?.didFinish()
+            HapticsManager.shared.vibrate(for: .success)
         } else {
             delegate?.didPressNextButton(indexPath: indexPathOnScreen)
+            HapticsManager.shared.vibrate(for: .success)
         }
     }
 
     @objc func previousButtonAction(_ sender: UIButton) {
         if indexPathOnScreen.row > 0 {
             delegate?.didPressPreviousButton(indexPath: indexPathOnScreen)
+            HapticsManager.shared.vibrate(for: .success)
         } else {
             print("Já está na primeira instrução")
         }
@@ -249,7 +252,7 @@ extension PreparationView: UICollectionViewDelegate, UICollectionViewDataSource,
         forItemAt indexPath: IndexPath
     ) {
         indexPathOnScreen = indexPath
-        currentPageLabel.text = "Passo \(indexPath.row + 1)"
+        currentPageLabel.text = "\(StepsLocalizable.step.text) \(indexPath.row + 1)"
 
         // Reset timer
         if let currentCell = cell as? StepWithTimerCell,

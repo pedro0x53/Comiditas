@@ -14,7 +14,7 @@ class StepWithTimerCell: UICollectionViewCell {
 
     let recipeStepLabel: UILabel = {
         let label = UILabel(frame: .zero)
-        label.font = Fonts.h5
+        label.font = Fonts.h4
         label.textAlignment = .justified
         label.numberOfLines = 0
         label.textColor = Colors.textDark

@@ -46,7 +46,7 @@ class FeedCollectionViewCell: UICollectionViewCell {
 
     lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.font = Fonts.h4
+        label.font = Fonts.h4Bold
         label.textColor = Colors.primary
         label.text = "Lorem ipsum dolor sit amet"
         label.translatesAutoresizingMaskIntoConstraints = false

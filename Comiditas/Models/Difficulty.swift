@@ -15,11 +15,11 @@ enum Difficulty: Int {
     var description: String {
         switch self {
         case .easy:
-            return "Fácil"
+            return OverviewLocalizable.easy.text
         case .medium:
-            return "Médio"
+            return OverviewLocalizable.medium.text
         case .hard:
-            return "Difícil"
+            return OverviewLocalizable.hard.text
         }
     }
 }
