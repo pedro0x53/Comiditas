@@ -156,24 +156,13 @@ extension PreparationViewController: PreparationDisplayLogic {
 extension PreparationViewController: PreparationViewDelegate {
 
     func callAlert(okAction: @escaping () -> Void) {
-        let alertMessage = "O temporizador será reiniciado se você sair desse passo. "
-        + "Você tem certeza que quer continuar?"
-        let alert = UIAlertController(
-            title: "Atenção",
-            message: alertMessage,
-            preferredStyle: .alert
-        )
-        let okAction = UIAlertAction(
-            title: "Continuar",
-            style: .default
-        ) { _ in
-            okAction()
+        if let image = UIImage(named: "Attention") {
+            coordinator?.presentDidModal(
+                with: image,
+                title: StepsLocalizable.alertStop.text,
+                okAction: okAction
+            )
         }
-        let cancelAction = UIAlertAction(title: "Cancelar", style: .destructive, handler: nil)
-        alert.addAction(cancelAction)
-        alert.addAction(okAction)
-
-        self.present(alert, animated: true, completion: nil)
     }
 
     func didPressNextButton(indexPath: IndexPath) {
@@ -206,6 +195,14 @@ extension PreparationViewController: PreparationViewDelegate {
     }
 
     func didFinish() {
-        coordinator?.presentDidFinishModal()
+        if let image = UIImage(named: "cakeImage") {
+            coordinator?.presentDidModal(
+                with: image,
+                title: ModalLocalizable.finished.text,
+                okAction: { [weak self] in
+                    self?.coordinator?.coordinateBack()
+                }
+            )
+        }
     }
 }

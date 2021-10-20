@@ -43,7 +43,12 @@ class ExtensionUIFontsTests: XCTestCase {
         XCTAssertNotNil(sut, "Something unexpected occurred unable to implement UIFont h3 light.")
     }
 
-    func testH4LightNotIsNil() {
+    func testH4BoldNotIsNil() {
+        let sut = Fonts.h4Bold
+        XCTAssertNotNil(sut, "Something unexpected occurred unable to implement UIFont h4 Bold.")
+    }
+
+    func testH4NotIsNil() {
         let sut = Fonts.h4
         XCTAssertNotNil(sut, "Something unexpected occurred unable to implement UIFont h4.")
     }
@@ -61,5 +66,10 @@ class ExtensionUIFontsTests: XCTestCase {
     func testH7LightNotIsNil() {
         let sut = Fonts.h7
         XCTAssertNotNil(sut, "Something unexpected occurred unable to implement UIFont h5.")
+    }
+
+    func testTitleNotIsNil() {
+        let sut = Fonts.title
+        XCTAssertNotNil(sut, "Something unexpected occurred unable to implement UIFont title.")
     }
 }
