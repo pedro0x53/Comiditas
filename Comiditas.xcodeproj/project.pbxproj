@@ -26,6 +26,7 @@
 		18CC0F3F2704956900235E5C /* PreparationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC0F3E2704956900235E5C /* PreparationViewControllerTests.swift */; };
 		18CC0F42270495B500235E5C /* PreparationInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC0F41270495B500235E5C /* PreparationInteractorTests.swift */; };
 		18CC0F44270495E700235E5C /* PreparationPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC0F43270495E700235E5C /* PreparationPresenterTests.swift */; };
+		18DC6524271EFF6700AA0B38 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DC6523271EFF6700AA0B38 /* NotificationManager.swift */; };
 		18EA190F270F1FCB00B36E1C /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA190E270F1FCB00B36E1C /* HapticsManager.swift */; };
 		18F8E17B26FA898E00B5766B /* StepCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8E17A26FA898E00B5766B /* StepCellModel.swift */; };
 		18F8E17F26FAA22500B5766B /* SimpleStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8E17E26FAA22500B5766B /* SimpleStepCell.swift */; };
@@ -133,6 +134,7 @@
 		18CC0F3E2704956900235E5C /* PreparationViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationViewControllerTests.swift; sourceTree = "<group>"; };
 		18CC0F41270495B500235E5C /* PreparationInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationInteractorTests.swift; sourceTree = "<group>"; };
 		18CC0F43270495E700235E5C /* PreparationPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationPresenterTests.swift; sourceTree = "<group>"; };
+		18DC6523271EFF6700AA0B38 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		18EA190E270F1FCB00B36E1C /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		18F8E17A26FA898E00B5766B /* StepCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCellModel.swift; sourceTree = "<group>"; };
 		18F8E17E26FAA22500B5766B /* SimpleStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStepCell.swift; sourceTree = "<group>"; };
@@ -602,6 +604,7 @@
 				779F5E9B26EF7457005668BE /* LaunchScreen.storyboard */,
 				77D70D1626F21FFA00A8B244 /* Recipes.json */,
 				77DDC14F26FA9311003027D3 /* Recommendations.json */,
+				18DC6523271EFF6700AA0B38 /* NotificationManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -932,6 +935,7 @@
 				FE95430B26F8CBFA0039F547 /* OverviewView.swift in Sources */,
 				FEC8B85426F9FD6400455143 /* DetailView.swift in Sources */,
 				FE127E93270DD14000D6EEE8 /* OverviewInteractor.swift in Sources */,
+				18DC6524271EFF6700AA0B38 /* NotificationManager.swift in Sources */,
 				774D5A7C26F37256004176A1 /* Ext+UIFonts.swift in Sources */,
 				FEC8B85626FA1CB900455143 /* RecipeStepCell.swift in Sources */,
 				FEEDA9B826FB6B8C009A5E10 /* IngredientCell.swift in Sources */,

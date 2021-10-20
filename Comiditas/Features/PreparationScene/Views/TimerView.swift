@@ -53,10 +53,24 @@ class TimerView: UIView {
                 timer.fire()
                 timerPlayPauseButton.accessibilityLabel = StepsLocalizable.pauseClockAcessibility.text
                 timerPlayPauseButton.setImage(pauseImage, for: .normal)
+
+                NotificationManager.shared.requestAuthorization { [self] granted in
+                    if granted {
+                        NotificationManager.shared.scheduleNotification(
+                            title: StepsLocalizable.timerNotificationTitle.text,
+                            body: StepsLocalizable.timerNotificationBody.text,
+                            timeInterval: self.timer.interval)
+                    }
+                }
+
             } else {
                 timer.invalidate()
                 timerPlayPauseButton.accessibilityLabel = StepsLocalizable.iniciateClockAcessibility.text
                 timerPlayPauseButton.setImage(playImage, for: .normal)
+
+                if timer.interval != 0 {
+                    NotificationManager.shared.removeAllNotifications()
+                }
             }
         }
     }
@@ -113,7 +127,6 @@ extension TimerView: StepTimerDelegate {
     }
 
     func finished() {
-        print("Cabou o alarme. Notificacao.")
         HapticsManager.shared.vibrate(for: .warning)
         self.timerIsRunning = false
     }

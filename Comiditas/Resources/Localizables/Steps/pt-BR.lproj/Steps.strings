@@ -21,3 +21,10 @@ pauseClockAcessibility = "Pausar temporizador";
 
 backStep = "Passo anterior";
 nextStep = "Próximo passo";
+
+// MARK: - Notifications
+
+timerNotificationTitle = "Timer finalizado ⏲";
+timerNotificationBody = "Você já pode prosseguir para o próximo passo!";
+timerNotificationMarkAsSnooze = "Feito";
+timerNotificationDelete = "Deletar";

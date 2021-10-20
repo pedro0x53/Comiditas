@@ -21,3 +21,10 @@ pauseClockAcessibility = "Pause timer";
 
 backStep = "Previous step";
 nextStep = "Next step";
+
+// MARK: - Notifications
+
+timerNotificationTitle = "Timer ended ⏲";
+timerNotificationBody = "You can now proceed to the next step!";
+timerNotificationMarkAsSnooze = "Snooze";
+timerNotificationDelete = "Delete";
