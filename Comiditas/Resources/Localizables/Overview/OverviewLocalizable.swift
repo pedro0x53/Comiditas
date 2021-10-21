@@ -43,4 +43,5 @@ extension OverviewLocalizable: LocalizablesProtocol {
     var bundle: Bundle? { Bundle.main }
     var arguments: [String]? { nil }
     var tableName: String? { "Overview" }
+    var defaultValue: String { "" }
 }

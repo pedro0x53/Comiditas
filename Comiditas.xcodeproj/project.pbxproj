@@ -14,7 +14,6 @@
 		1840611227171762008BAB4A /* StepsLocalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840611127171762008BAB4A /* StepsLocalizable.swift */; };
 		1840611527171857008BAB4A /* Steps.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1840611727171857008BAB4A /* Steps.strings */; };
 		184061222718647F008BAB4A /* ModalLocalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184061212718647F008BAB4A /* ModalLocalizable.swift */; };
-		18406125271864BA008BAB4A /* Modal.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18406127271864BA008BAB4A /* Modal.strings */; };
 		18632F372719AC420010C323 /* ModalLocalizableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18632F362719AC420010C323 /* ModalLocalizableTest.swift */; };
 		18632F3C2719B5880010C323 /* StepsLocalizableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18632F3B2719B5880010C323 /* StepsLocalizableTest.swift */; };
 		18632F3F2719C29A0010C323 /* ModalCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18632F3E2719C29A0010C323 /* ModalCoordinatorTests.swift */; };
@@ -35,6 +34,7 @@
 		7713580C26F9FC3700164BBC /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713580B26F9FC3700164BBC /* FeedInteractor.swift */; };
 		7713580E26F9FC4400164BBC /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713580D26F9FC4400164BBC /* FeedPresenter.swift */; };
 		7713581026FA022100164BBC /* FeedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713580F26FA022100164BBC /* FeedModels.swift */; };
+		771F1A9A2721926A00AD5C5B /* Modal.strings in Resources */ = {isa = PBXBuildFile; fileRef = 771F1A9C2721926A00AD5C5B /* Modal.strings */; };
 		774D5A7326F36A84004176A1 /* Ext+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7226F36A84004176A1 /* Ext+UIColor.swift */; };
 		774D5A7A26F3711A004176A1 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7926F3711A004176A1 /* BaseView.swift */; };
 		774D5A7C26F37256004176A1 /* Ext+UIFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7B26F37256004176A1 /* Ext+UIFonts.swift */; };
@@ -119,10 +119,7 @@
 		18398CF126FA66890054E054 /* PreparationWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationWorker.swift; sourceTree = "<group>"; };
 		1840611127171762008BAB4A /* StepsLocalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsLocalizable.swift; sourceTree = "<group>"; };
 		1840611627171857008BAB4A /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Steps.strings"; sourceTree = "<group>"; };
-		184061182717185B008BAB4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Steps.strings; sourceTree = "<group>"; };
 		184061212718647F008BAB4A /* ModalLocalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalLocalizable.swift; sourceTree = "<group>"; };
-		18406126271864BA008BAB4A /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Modal.strings"; sourceTree = "<group>"; };
-		18406128271864BE008BAB4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Modal.strings; sourceTree = "<group>"; };
 		18632F362719AC420010C323 /* ModalLocalizableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalLocalizableTest.swift; sourceTree = "<group>"; };
 		18632F3B2719B5880010C323 /* StepsLocalizableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsLocalizableTest.swift; sourceTree = "<group>"; };
 		18632F3E2719C29A0010C323 /* ModalCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalCoordinatorTests.swift; sourceTree = "<group>"; };
@@ -143,6 +140,7 @@
 		7713580B26F9FC3700164BBC /* FeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
 		7713580D26F9FC4400164BBC /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		7713580F26FA022100164BBC /* FeedModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModels.swift; sourceTree = "<group>"; };
+		771F1A9B2721926A00AD5C5B /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Modal.strings"; sourceTree = "<group>"; };
 		774D5A7226F36A84004176A1 /* Ext+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIColor.swift"; sourceTree = "<group>"; };
 		774D5A7926F3711A004176A1 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		774D5A7B26F37256004176A1 /* Ext+UIFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIFonts.swift"; sourceTree = "<group>"; };
@@ -167,7 +165,6 @@
 		77946A6127067B1300D3F1B3 /* LocalizablesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizablesProtocol.swift; sourceTree = "<group>"; };
 		77946A6427067D7000D3F1B3 /* FeedLocalizables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLocalizables.swift; sourceTree = "<group>"; };
 		77946A6927067DF100D3F1B3 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Feed.strings"; sourceTree = "<group>"; };
-		77946A6B27067E9700D3F1B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Feed.strings; sourceTree = "<group>"; };
 		779F5E8A26EF7456005668BE /* Comiditas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Comiditas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		779F5E8D26EF7456005668BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		779F5E8F26EF7456005668BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -204,7 +201,6 @@
 		FE4E4DE726F9F69C007E78F4 /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
 		FE5DA01F26F9FAA800AF5F71 /* OverviewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewCoordinator.swift; sourceTree = "<group>"; };
 		FE656189270749E6007EA5E5 /* OverviewLocalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewLocalizable.swift; sourceTree = "<group>"; };
-		FE65618E27074A97007EA5E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Overview.strings; sourceTree = "<group>"; };
 		FE65619027074A9A007EA5E5 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Overview.strings"; sourceTree = "<group>"; };
 		FE9542FF26F8B2BD0039F547 /* Ext+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIImageView.swift"; sourceTree = "<group>"; };
 		FE95430226F8B41D0039F547 /* UIImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewTests.swift; sourceTree = "<group>"; };
@@ -271,7 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				184061212718647F008BAB4A /* ModalLocalizable.swift */,
-				18406127271864BA008BAB4A /* Modal.strings */,
+				771F1A9C2721926A00AD5C5B /* Modal.strings */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -843,11 +839,11 @@
 			files = (
 				77946A6827067DF100D3F1B3 /* Feed.strings in Resources */,
 				77DDC15026FA9311003027D3 /* Recommendations.json in Resources */,
-				18406125271864BA008BAB4A /* Modal.strings in Resources */,
 				779F5E9D26EF7457005668BE /* LaunchScreen.storyboard in Resources */,
 				77D70D1726F21FFA00A8B244 /* Recipes.json in Resources */,
 				7788D896271EAF8E00B75A45 /* Pacifico.ttf in Resources */,
 				779F5E9A26EF7457005668BE /* Assets.xcassets in Resources */,
+				771F1A9A2721926A00AD5C5B /* Modal.strings in Resources */,
 				FE65618D27074A97007EA5E5 /* Overview.strings in Resources */,
 				1840611527171857008BAB4A /* Steps.strings in Resources */,
 			);
@@ -996,16 +992,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				1840611627171857008BAB4A /* pt-BR */,
-				184061182717185B008BAB4A /* en */,
 			);
 			name = Steps.strings;
 			sourceTree = "<group>";
 		};
-		18406127271864BA008BAB4A /* Modal.strings */ = {
+		771F1A9C2721926A00AD5C5B /* Modal.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				18406126271864BA008BAB4A /* pt-BR */,
-				18406128271864BE008BAB4A /* en */,
+				771F1A9B2721926A00AD5C5B /* pt-BR */,
 			);
 			name = Modal.strings;
 			sourceTree = "<group>";
@@ -1014,7 +1008,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				77946A6927067DF100D3F1B3 /* pt-BR */,
-				77946A6B27067E9700D3F1B3 /* en */,
 			);
 			name = Feed.strings;
 			sourceTree = "<group>";
@@ -1031,7 +1024,6 @@
 		FE65618F27074A97007EA5E5 /* Overview.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FE65618E27074A97007EA5E5 /* en */,
 				FE65619027074A9A007EA5E5 /* pt-BR */,
 			);
 			name = Overview.strings;
