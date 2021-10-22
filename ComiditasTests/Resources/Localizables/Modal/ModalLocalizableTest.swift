@@ -12,12 +12,11 @@ class ModalLocalizableTest: XCTestCase {
 
     func testModalLocalizable_FinishedText() {
         let sut = ModalLocalizable.finished.text
-        let expectUSD = "Recipe finished!"
         let expectPT = "Receita Finalizada!"
 
         if let locale = Locale.current.languageCode {
             if locale == "en" {
-                XCTAssertEqual(sut, expectUSD, "An unexpected error has occurred.")
+                XCTAssertEqual(sut, expectPT, "An unexpected error has occurred.")
             } else {
                 XCTAssertEqual(sut, expectPT, "An unexpected error has occurred.")
             }
@@ -26,12 +25,11 @@ class ModalLocalizableTest: XCTestCase {
 
     func testModalLocalizable_CloseText() {
         let sut = ModalLocalizable.close.text
-        let expectUSD = "Close"
         let expectPT = "Fechar"
 
         if let locale = Locale.current.languageCode {
             if locale == "en" {
-                XCTAssertEqual(sut, expectUSD, "An unexpected error has occurred.")
+                XCTAssertEqual(sut, expectPT, "An unexpected error has occurred.")
             } else {
                 XCTAssertEqual(sut, expectPT, "An unexpected error has occurred.")
             }
