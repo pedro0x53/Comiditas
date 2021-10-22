@@ -6,7 +6,7 @@
   
 */
 
-recommendedForYou = "Recommended for you";
-otherRecipes = "Other recipes";
-candy = "Candy";
-salted = "Salted";
+recommendedForYou = "Recomendados para você";
+otherRecipes = "Outras receitas";
+candy = "Doces";
+salted = "Salgado";

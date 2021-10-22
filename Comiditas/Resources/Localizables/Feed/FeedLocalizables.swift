@@ -19,4 +19,5 @@ extension FeedLocalizable: LocalizablesProtocol {
     var bundle: Bundle? { Bundle.main }
     var arguments: [String]? { nil }
     var tableName: String? { "Feed" }
+    var defaultValue: String { "" }
 }

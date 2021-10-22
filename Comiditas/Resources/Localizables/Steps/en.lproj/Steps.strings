@@ -8,23 +8,23 @@
 
 recipe = "";
 
-alertStop = "The timer will reset if you leave this step. Are you sure you want to continue?";
-alertAtention = "Attention!";
-alertContinue = "Continue";
-alertCancel = "Cancel";
+alertStop = "O temporizador será reiniciado se você sair desse passo. Você tem certeza que quer continuar?";
+alertAtention = "Atenção!";
+alertContinue = "Continuar";
+alertCancel = "Cancelar";
 
-step = "Step";
-of = "of";
+step = "Passo";
+of = "de";
 
-iniciateClockAcessibility = "Start timer";
-pauseClockAcessibility = "Pause timer";
+iniciateClockAcessibility = "Iniciar temporizador";
+pauseClockAcessibility = "Pausar temporizador";
 
-backStep = "Previous step";
-nextStep = "Next step";
+backStep = "Passo anterior";
+nextStep = "Próximo passo";
 
 // MARK: - Notifications
 
-timerNotificationTitle = "Timer ended ⏲";
-timerNotificationBody = "You can now proceed to the next step!";
-timerNotificationMarkAsSnooze = "Snooze";
-timerNotificationDelete = "Delete";
+timerNotificationTitle = "Timer finalizado ⏲";
+timerNotificationBody = "Você já pode prosseguir para o próximo passo!";
+timerNotificationMarkAsSnooze = "Feito";
+timerNotificationDelete = "Deletar";
