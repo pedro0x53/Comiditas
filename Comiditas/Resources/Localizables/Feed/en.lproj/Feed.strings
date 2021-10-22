@@ -1,0 +1,12 @@
+/* 
+  Feed.strings
+  Comiditas
+
+  Created by Beatriz Carlos on 30/09/21.
+  
+*/
+
+recommendedForYou = "Recomendados para você";
+otherRecipes = "Outras receitas";
+candy = "Doces";
+salted = "Salgado";
