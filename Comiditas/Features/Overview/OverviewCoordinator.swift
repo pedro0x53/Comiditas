@@ -8,7 +8,7 @@
 import UIKit
 
 protocol OverviewCoordinatorProtocol {
-    func coordinateToSteps(recipe: RecipeJson, currentStep: Int)
+    func coordinateToSteps(recipe: RecipeJson, image: UIImage?, currentStep: Int)
     func shareText(content: String, animated: Bool, completion: (() -> Void)?)
 }
 
@@ -30,9 +30,10 @@ class OverviewCoordinator: Coordinator {
 }
 
 extension OverviewCoordinator: OverviewCoordinatorProtocol {
-    func coordinateToSteps(recipe: RecipeJson, currentStep: Int = 0) {
+    func coordinateToSteps(recipe: RecipeJson, image: UIImage?, currentStep: Int = 0) {
         let preparationCoordinator = PreparationCoordinator(navigationController: navigationController)
         preparationCoordinator.recipe = recipe
+        preparationCoordinator.image = image
         coordinate(to: preparationCoordinator)
     }
 

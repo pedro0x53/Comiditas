@@ -173,7 +173,9 @@ extension OverviewViewController: OverviewViewDelegate {
 // Delegate Connection: ViewController->View
 extension OverviewViewController {
     func startRecipe() {
-        coordinator?.coordinateToSteps(recipe: self.recipe)
+        let headerIndexPath = IndexPath(row: 0, section: OverviewSection.header.rawValue)
+        let headerCell = associatedView.tableView.cellForRow(at: headerIndexPath) as? RecipeHeaderCell
+        coordinator?.coordinateToSteps(recipe: self.recipe, image: headerCell?.headerImage)
     }
 }
 

@@ -7,6 +7,7 @@
 // swiftlint:disable nesting
 
 import Foundation
+import UIKit
 
 enum PreparationModels {
 

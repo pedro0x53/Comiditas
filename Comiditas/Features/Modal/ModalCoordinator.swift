@@ -17,7 +17,9 @@ class ModalCoordinator: Coordinator {
 
     var image: UIImage?
     var title: String?
+    var description: String?
     var okAction: (() -> Void)?
+    var closeButtonIsHidden: Bool = true
 
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -25,9 +27,18 @@ class ModalCoordinator: Coordinator {
 
     func start() {
 
-        guard let image = image, let title = title, let okAction = okAction else { return }
+        guard let image = image,
+                let title = title,
+                let description = description,
+                let okAction = okAction else { return }
 
-        let viewController = ModalViewController(image: image, title: title, okAction: okAction)
+        let viewController = ModalViewController(
+            image: image,
+            title: title,
+            description: description,
+            closeButtonIsHidden: closeButtonIsHidden,
+            okAction: okAction
+        )
         viewController.modalPresentationStyle = .overCurrentContext
         viewController.modalTransitionStyle = .crossDissolve
         viewController.coordinator = self

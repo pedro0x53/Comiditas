@@ -12,6 +12,10 @@ class RecipeHeaderCell: UITableViewCell, BaseViewProtocol {
 
     public static let identifier: String = "RecipeHeaderCellIdentifier"
 
+    var headerImage: UIImage? {
+        mainImage.image
+    }
+
     private let mainImage: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill

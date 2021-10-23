@@ -20,6 +20,7 @@ class PreparationViewController: UIViewController {
     var interactor: PreparationBusinessLogic?
 
     var recipe: RecipeJson!
+    var image: UIImage?
 
     var steps: [StepCellModel] = []
 
@@ -159,7 +160,9 @@ extension PreparationViewController: PreparationViewDelegate {
         if let image = UIImage(named: "Attention") {
             coordinator?.presentDidModal(
                 with: image,
-                title: StepsLocalizable.alertStop.text,
+                title: StepsLocalizable.alert.text,
+                description: StepsLocalizable.alertStop.text,
+                closeButtonIsHidden: false,
                 okAction: okAction
             )
         }
@@ -195,14 +198,14 @@ extension PreparationViewController: PreparationViewDelegate {
     }
 
     func didFinish() {
-        if let image = UIImage(named: "cakeImage") {
-            coordinator?.presentDidModal(
-                with: image,
-                title: ModalLocalizable.finished.text,
-                okAction: { [weak self] in
-                    self?.coordinator?.coordinateBack()
-                }
-            )
-        }
+        coordinator?.presentDidModal(
+            with: image,
+            title: ModalLocalizable.finished.text,
+            description: ModalLocalizable.finished.text,
+            closeButtonIsHidden: true,
+            okAction: { [weak self] in
+                self?.coordinator?.coordinateBack()
+            }
+        )
     }
 }
