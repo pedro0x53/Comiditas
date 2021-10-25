@@ -17,6 +17,13 @@
 		18632F372719AC420010C323 /* ModalLocalizableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18632F362719AC420010C323 /* ModalLocalizableTest.swift */; };
 		18632F3C2719B5880010C323 /* StepsLocalizableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18632F3B2719B5880010C323 /* StepsLocalizableTest.swift */; };
 		18632F3F2719C29A0010C323 /* ModalCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18632F3E2719C29A0010C323 /* ModalCoordinatorTests.swift */; };
+		18819C752726DE16008B1B7B /* StepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18819C742726DE16008B1B7B /* StepsView.swift */; };
+		18819C772726DE45008B1B7B /* StepModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18819C762726DE45008B1B7B /* StepModels.swift */; };
+		18819C792726DE62008B1B7B /* StepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18819C782726DE62008B1B7B /* StepsViewController.swift */; };
+		18819C7B2726DE72008B1B7B /* StepsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18819C7A2726DE72008B1B7B /* StepsWorker.swift */; };
+		18819C7D2726DE81008B1B7B /* StepsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18819C7C2726DE81008B1B7B /* StepsPresenter.swift */; };
+		18819C7F2726DE99008B1B7B /* StepsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18819C7E2726DE99008B1B7B /* StepsInteractor.swift */; };
+		18819C812726E1CE008B1B7B /* StepsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18819C802726E1CE008B1B7B /* StepsCoordinator.swift */; };
 		188F523426FB55C600A59039 /* PreparationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F523326FB55C600A59039 /* PreparationCoordinator.swift */; };
 		1894725726F9F9E500E6CD8B /* PreparationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894725626F9F9E500E6CD8B /* PreparationView.swift */; };
 		1894725926F9F9F700E6CD8B /* PreparationInterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894725826F9F9F700E6CD8B /* PreparationInterator.swift */; };
@@ -123,6 +130,13 @@
 		18632F362719AC420010C323 /* ModalLocalizableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalLocalizableTest.swift; sourceTree = "<group>"; };
 		18632F3B2719B5880010C323 /* StepsLocalizableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsLocalizableTest.swift; sourceTree = "<group>"; };
 		18632F3E2719C29A0010C323 /* ModalCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalCoordinatorTests.swift; sourceTree = "<group>"; };
+		18819C742726DE16008B1B7B /* StepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsView.swift; sourceTree = "<group>"; };
+		18819C762726DE45008B1B7B /* StepModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepModels.swift; sourceTree = "<group>"; };
+		18819C782726DE62008B1B7B /* StepsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsViewController.swift; sourceTree = "<group>"; };
+		18819C7A2726DE72008B1B7B /* StepsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsWorker.swift; sourceTree = "<group>"; };
+		18819C7C2726DE81008B1B7B /* StepsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsPresenter.swift; sourceTree = "<group>"; };
+		18819C7E2726DE99008B1B7B /* StepsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsInteractor.swift; sourceTree = "<group>"; };
+		18819C802726E1CE008B1B7B /* StepsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsCoordinator.swift; sourceTree = "<group>"; };
 		188F523326FB55C600A59039 /* PreparationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationCoordinator.swift; sourceTree = "<group>"; };
 		1894725626F9F9E500E6CD8B /* PreparationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationView.swift; sourceTree = "<group>"; };
 		1894725826F9F9F700E6CD8B /* PreparationInterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationInterator.swift; sourceTree = "<group>"; };
@@ -298,6 +312,28 @@
 				18632F3E2719C29A0010C323 /* ModalCoordinatorTests.swift */,
 			);
 			path = ModalScene;
+			sourceTree = "<group>";
+		};
+		18819C732726DDEA008B1B7B /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				18819C822726E1E1008B1B7B /* Views */,
+				18819C802726E1CE008B1B7B /* StepsCoordinator.swift */,
+				18819C762726DE45008B1B7B /* StepModels.swift */,
+				18819C7E2726DE99008B1B7B /* StepsInteractor.swift */,
+				18819C782726DE62008B1B7B /* StepsViewController.swift */,
+				18819C7A2726DE72008B1B7B /* StepsWorker.swift */,
+				18819C7C2726DE81008B1B7B /* StepsPresenter.swift */,
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
+		18819C822726E1E1008B1B7B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18819C742726DE16008B1B7B /* StepsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		1894725526F9F99000E6CD8B /* PreparationScene */ = {
@@ -572,6 +608,7 @@
 		779F5EC526EF74CC005668BE /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				18819C732726DDEA008B1B7B /* Steps */,
 				E6381BF326FB52FC004F4298 /* Modal */,
 				FE95430926F8CBC40039F547 /* Overview */,
 				7792905126F8B04C00AAA0A4 /* Feed */,
@@ -889,10 +926,12 @@
 			files = (
 				779F5E8E26EF7456005668BE /* AppDelegate.swift in Sources */,
 				77635CE126F2188B00B36EC7 /* RecipeJsonRepository.swift in Sources */,
+				18819C792726DE62008B1B7B /* StepsViewController.swift in Sources */,
 				FED6973126FB82890078908E /* ModalCoordinator.swift in Sources */,
 				FE65618A270749E6007EA5E5 /* OverviewLocalizable.swift in Sources */,
 				FEEDA9B626FB537C009A5E10 /* Difficulty.swift in Sources */,
 				FE4E4DE826F9F69C007E78F4 /* OverviewViewController.swift in Sources */,
+				18819C752726DE16008B1B7B /* StepsView.swift in Sources */,
 				7713580C26F9FC3700164BBC /* FeedInteractor.swift in Sources */,
 				7713581026FA022100164BBC /* FeedModels.swift in Sources */,
 				77946A6527067D7000D3F1B3 /* FeedLocalizables.swift in Sources */,
@@ -903,6 +942,7 @@
 				77635CDF26F2185B00B36EC7 /* JsonStack.swift in Sources */,
 				770BE81526F0C7480032F0ED /* Ext+UIImage.swift in Sources */,
 				77946A6227067B1300D3F1B3 /* LocalizablesProtocol.swift in Sources */,
+				18819C772726DE45008B1B7B /* StepModels.swift in Sources */,
 				77E1C39326F94FA200F8B0DF /* FeedCollectionViewCell.swift in Sources */,
 				779F5E9026EF7456005668BE /* SceneDelegate.swift in Sources */,
 				1894725926F9F9F700E6CD8B /* PreparationInterator.swift in Sources */,
@@ -913,6 +953,7 @@
 				FE95430026F8B2BD0039F547 /* Ext+UIImageView.swift in Sources */,
 				18398CF026FA60640054E054 /* PreparationModels.swift in Sources */,
 				18F8E18126FAA35600B5766B /* StepWithTimerCell.swift in Sources */,
+				18819C7F2726DE99008B1B7B /* StepsInteractor.swift in Sources */,
 				184061222718647F008BAB4A /* ModalLocalizable.swift in Sources */,
 				18398CF226FA66890054E054 /* PreparationWorker.swift in Sources */,
 				774D5A7326F36A84004176A1 /* Ext+UIColor.swift in Sources */,
@@ -924,8 +965,10 @@
 				E6381BF126FB52EA004F4298 /* ModalView.swift in Sources */,
 				7792904B26F8ADC500AAA0A4 /* CoordinatorProtocol.swift in Sources */,
 				1894725B26F9F9FF00E6CD8B /* PreparationPresenter.swift in Sources */,
+				18819C7D2726DE81008B1B7B /* StepsPresenter.swift in Sources */,
 				7792905526F8B09800AAA0A4 /* FeedView.swift in Sources */,
 				1894725726F9F9E500E6CD8B /* PreparationView.swift in Sources */,
+				18819C812726E1CE008B1B7B /* StepsCoordinator.swift in Sources */,
 				77635CDB26F2124D00B36EC7 /* IngredientsJson.swift in Sources */,
 				FE127E95270DD15B00D6EEE8 /* OverviewPresenter.swift in Sources */,
 				77E1C38C26F93BF100F8B0DF /* TagCollectionViewCell.swift in Sources */,
@@ -935,6 +978,7 @@
 				FE95430B26F8CBFA0039F547 /* OverviewView.swift in Sources */,
 				FEC8B85426F9FD6400455143 /* DetailView.swift in Sources */,
 				FE127E93270DD14000D6EEE8 /* OverviewInteractor.swift in Sources */,
+				18819C7B2726DE72008B1B7B /* StepsWorker.swift in Sources */,
 				18DC6524271EFF6700AA0B38 /* NotificationManager.swift in Sources */,
 				774D5A7C26F37256004176A1 /* Ext+UIFonts.swift in Sources */,
 				FEC8B85626FA1CB900455143 /* RecipeStepCell.swift in Sources */,
