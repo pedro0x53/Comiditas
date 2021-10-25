@@ -14,18 +14,18 @@ alertAtention = "Attention!";
 alertContinue = "Continue";
 alertCancel = "Cancel";
 
-step = "Step";
-of = "of";
+step = "Passo";
+of = "de";
 
-iniciateClockAcessibility = "Start timer";
-pauseClockAcessibility = "Pause timer";
+iniciateClockAcessibility = "Iniciar temporizador";
+pauseClockAcessibility = "Pausar temporizador";
 
-backStep = "Previous step";
-nextStep = "Next step";
+backStep = "Passo anterior";
+nextStep = "Próximo passo";
 
 // MARK: - Notifications
 
-timerNotificationTitle = "Timer ended ⏲";
-timerNotificationBody = "You can now proceed to the next step!";
-timerNotificationMarkAsSnooze = "Snooze";
-timerNotificationDelete = "Delete";
+timerNotificationTitle = "Timer finalizado ⏲";
+timerNotificationBody = "Você já pode prosseguir para o próximo passo!";
+timerNotificationMarkAsSnooze = "Feito";
+timerNotificationDelete = "Deletar";

@@ -36,4 +36,5 @@ extension StepsLocalizable: LocalizablesProtocol {
     var bundle: Bundle? { Bundle.main }
     var arguments: [String]? { nil }
     var tableName: String? { "Steps" }
+    var defaultValue: String { "" }
 }
