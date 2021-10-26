@@ -124,7 +124,28 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
             if let url = URL(string: recipes[indexPath.row].imageURL) {
                 cell.recipeImageView.load(url: url)
             }
+
+            cell.titleLabel.text = recipes[indexPath.row].name
+            cell.titleLabel.accessibilityTraits = .staticText
+            cell.titleLabel.accessibilityLabel = recipes[indexPath.row].name
+
+            cell.labelPortion.text = "\(recipes[indexPath.row].servings) porções"
+            cell.labelPortion.accessibilityTraits = .staticText
+            cell.labelPortion.accessibilityLabel = "\(recipes[indexPath.row].servings) porções"
+
+            let time = Time.secondsToHoursMinutesSeconds(seconds: recipes[indexPath.row].prepTime)
+            cell.labelTime.text = Time.getString(for: time).accessible
+            cell.labelTime.accessibilityTraits = .staticText
+            cell.labelTime.accessibilityLabel = Time.getString(for: time).accessible
+
+            cell.labelStar.text = "\(recipes[indexPath.row].rate).0"
             return cell
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section != .zero {
+            coordinator?.navigateToOverview(recipe: recipes[indexPath.row])
         }
     }
 }

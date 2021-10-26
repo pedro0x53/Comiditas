@@ -8,6 +8,7 @@
 import UIKit
 
 class FeedTableViewCell: UITableViewCell {
+    var coordinator: FeedCoordinatorProtocol?
     var data: [RecipeJson] = [] {
         didSet {
             self.collectionView.reloadData()
@@ -80,7 +81,24 @@ extension FeedTableViewCell: UICollectionViewDelegate, UICollectionViewDataSourc
         if let url = URL(string: data[indexPath.row].imageURL) {
             cell.imageView.load(url: url)
         }
+
+        cell.titleLabel.text = data[indexPath.row].name
+        cell.titleLabel.accessibilityTraits = .staticText
+        cell.titleLabel.accessibilityLabel = data[indexPath.row].name
+
+        cell.labelPortion.text = "\(data[indexPath.row].servings) porções"
+        cell.labelPortion.accessibilityTraits = .staticText
+        cell.labelPortion.accessibilityLabel = "\(data[indexPath.row].servings) porções"
+
+        let time = Time.secondsToHoursMinutesSeconds(seconds: data[indexPath.row].prepTime)
+        cell.labelTime.text = Time.getString(for: time).accessible
+        cell.labelTime.accessibilityTraits = .staticText
+        cell.labelTime.accessibilityLabel = Time.getString(for: time).accessible
         return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        coordinator?.navigateToOverview(recipe: data[indexPath.row])
     }
 }
 

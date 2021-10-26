@@ -44,7 +44,7 @@ class FeedView: UIView {
         tableView.tableFooterView = UIView()
         tableView.backgroundColor = Colors.background
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.rowHeight = 300
+        tableView.rowHeight = 320
         tableView.contentInset = UIEdgeInsets(top: -30, left: 0, bottom: 0, right: 0)
         tableView.separatorStyle = .none
         return tableView
