@@ -10,6 +10,9 @@ title = "Visão Geral";
 back = "Voltar";
 
 sharingTitle = "Receita do Comiditas";
+copy = "Copiar";
+copyIngredintsHint = "Toque duas vezes para copiar os ingredientes";
+copyDirectionsHint = "Toque duas vezes para copiar o modo de preparo";
 
 accessibleMainImage = "Foto do prato finalizado.";
 
