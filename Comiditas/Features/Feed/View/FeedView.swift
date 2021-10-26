@@ -40,11 +40,13 @@ class FeedView: UIView {
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.register(FeedTableViewCell.self, forCellReuseIdentifier: "FeedTableViewCell")
+        tableView.register(RecipesTableViewCell.self, forCellReuseIdentifier: "RecipesTableViewCell")
         tableView.tableFooterView = UIView()
         tableView.backgroundColor = Colors.background
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.rowHeight = 280
+        tableView.rowHeight = 300
         tableView.contentInset = UIEdgeInsets(top: -30, left: 0, bottom: 0, right: 0)
+        tableView.separatorStyle = .none
         return tableView
     }()
 }

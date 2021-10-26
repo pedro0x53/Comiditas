@@ -53,6 +53,9 @@
 		77946A6227067B1300D3F1B3 /* LocalizablesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77946A6127067B1300D3F1B3 /* LocalizablesProtocol.swift */; };
 		77946A6527067D7000D3F1B3 /* FeedLocalizables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77946A6427067D7000D3F1B3 /* FeedLocalizables.swift */; };
 		77946A6827067DF100D3F1B3 /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77946A6A27067DF100D3F1B3 /* Feed.strings */; };
+		7799D1EC27282576007F234D /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7799D1EB27282576007F234D /* FeedTableViewCell.swift */; };
+		7799D1EE27282725007F234D /* FeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7799D1ED27282725007F234D /* FeedCollectionViewCell.swift */; };
+		7799D1F027282E41007F234D /* RecipesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7799D1EF27282E41007F234D /* RecipesTableViewCell.swift */; };
 		779F5E8E26EF7456005668BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5E8D26EF7456005668BE /* AppDelegate.swift */; };
 		779F5E9026EF7456005668BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5E8F26EF7456005668BE /* SceneDelegate.swift */; };
 		779F5E9826EF7456005668BE /* Comiditas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 779F5E9626EF7456005668BE /* Comiditas.xcdatamodeld */; };
@@ -63,8 +66,6 @@
 		77D70D1726F21FFA00A8B244 /* Recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 77D70D1626F21FFA00A8B244 /* Recipes.json */; };
 		77D70D1B26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D70D1A26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift */; };
 		77DDC15026FA9311003027D3 /* Recommendations.json in Resources */ = {isa = PBXBuildFile; fileRef = 77DDC14F26FA9311003027D3 /* Recommendations.json */; };
-		77E1C38F26F93FE400F8B0DF /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E1C38E26F93FE400F8B0DF /* FeedTableViewCell.swift */; };
-		77E1C39326F94FA200F8B0DF /* FeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E1C39226F94FA200F8B0DF /* FeedCollectionViewCell.swift */; };
 		77FF2E4E26FA1CEE00FC63B5 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FF2E4D26FA1CEE00FC63B5 /* Time.swift */; };
 		E6381BF126FB52EA004F4298 /* FinishModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6381BEF26FB52EA004F4298 /* FinishModalView.swift */; };
 		E6381BF226FB52EA004F4298 /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6381BF026FB52EA004F4298 /* FinishViewController.swift */; };
@@ -154,6 +155,9 @@
 		77946A6427067D7000D3F1B3 /* FeedLocalizables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLocalizables.swift; sourceTree = "<group>"; };
 		77946A6927067DF100D3F1B3 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Feed.strings"; sourceTree = "<group>"; };
 		77946A6B27067E9700D3F1B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Feed.strings; sourceTree = "<group>"; };
+		7799D1EB27282576007F234D /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		7799D1ED27282725007F234D /* FeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewCell.swift; sourceTree = "<group>"; };
+		7799D1EF27282E41007F234D /* RecipesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableViewCell.swift; sourceTree = "<group>"; };
 		779F5E8A26EF7456005668BE /* Comiditas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Comiditas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		779F5E8D26EF7456005668BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		779F5E8F26EF7456005668BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -169,8 +173,6 @@
 		77D70D1626F21FFA00A8B244 /* Recipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Recipes.json; sourceTree = "<group>"; };
 		77D70D1A26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeJsonRepositoryTests.swift; sourceTree = "<group>"; };
 		77DDC14F26FA9311003027D3 /* Recommendations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Recommendations.json; sourceTree = "<group>"; };
-		77E1C38E26F93FE400F8B0DF /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
-		77E1C39226F94FA200F8B0DF /* FeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewCell.swift; sourceTree = "<group>"; };
 		77E1C39626F961F700F8B0DF /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		77FF2E4D26FA1CEE00FC63B5 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		E6381BEF26FB52EA004F4298 /* FinishModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishModalView.swift; sourceTree = "<group>"; };
@@ -588,8 +590,9 @@
 		77E1C38D26F93CBF00F8B0DF /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				77E1C38E26F93FE400F8B0DF /* FeedTableViewCell.swift */,
-				77E1C39226F94FA200F8B0DF /* FeedCollectionViewCell.swift */,
+				7799D1EB27282576007F234D /* FeedTableViewCell.swift */,
+				7799D1ED27282725007F234D /* FeedCollectionViewCell.swift */,
+				7799D1EF27282E41007F234D /* RecipesTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -837,18 +840,18 @@
 				FED6973126FB82890078908E /* FinishModalCoordinator.swift in Sources */,
 				FE65618A270749E6007EA5E5 /* OverviewLocalizable.swift in Sources */,
 				FEEDA9B626FB537C009A5E10 /* Difficulty.swift in Sources */,
+				7799D1F027282E41007F234D /* RecipesTableViewCell.swift in Sources */,
 				FE4E4DE826F9F69C007E78F4 /* OverviewViewController.swift in Sources */,
+				7799D1EE27282725007F234D /* FeedCollectionViewCell.swift in Sources */,
 				7713580C26F9FC3700164BBC /* FeedInteractor.swift in Sources */,
 				7713581026FA022100164BBC /* FeedModels.swift in Sources */,
 				77946A6527067D7000D3F1B3 /* FeedLocalizables.swift in Sources */,
 				7713580E26F9FC4400164BBC /* FeedPresenter.swift in Sources */,
-				77E1C38F26F93FE400F8B0DF /* FeedTableViewCell.swift in Sources */,
 				FE127E97270DD1E500D6EEE8 /* OverviewModels.swift in Sources */,
 				77FF2E4E26FA1CEE00FC63B5 /* Time.swift in Sources */,
 				77635CDF26F2185B00B36EC7 /* JsonStack.swift in Sources */,
 				770BE81526F0C7480032F0ED /* Ext+UIImage.swift in Sources */,
 				77946A6227067B1300D3F1B3 /* LocalizablesProtocol.swift in Sources */,
-				77E1C39326F94FA200F8B0DF /* FeedCollectionViewCell.swift in Sources */,
 				779F5E9026EF7456005668BE /* SceneDelegate.swift in Sources */,
 				1894725926F9F9F700E6CD8B /* PreparationInterator.swift in Sources */,
 				188F523426FB55C600A59039 /* PreparationCoordinator.swift in Sources */,
@@ -874,6 +877,7 @@
 				FE127E95270DD15B00D6EEE8 /* OverviewPresenter.swift in Sources */,
 				774D5A7A26F3711A004176A1 /* BaseView.swift in Sources */,
 				18398CEC26FA3F720054E054 /* StepTimerDelegate.swift in Sources */,
+				7799D1EC27282576007F234D /* FeedTableViewCell.swift in Sources */,
 				77635CD926F2115800B36EC7 /* RecipeJson.swift in Sources */,
 				FE95430B26F8CBFA0039F547 /* OverviewView.swift in Sources */,
 				FEC8B85426F9FD6400455143 /* DetailView.swift in Sources */,

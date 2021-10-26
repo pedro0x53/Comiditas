@@ -73,7 +73,11 @@ extension FeedViewController: FeedViewControllerProtocol {
 
 extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        if section == .zero {
+            return 1
+        }
+
+        return recipes.count
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -103,21 +107,26 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == .zero {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "FeedTableViewCell") as? FeedTableViewCell
+            guard let cell = tableView.dequeueReusableCell(
+                    withIdentifier: "FeedTableViewCell",
+                    for: indexPath) as? FeedTableViewCell
             else { return UITableViewCell() }
-            cell.delegate = self
-            cell.reloadData()
-            cell.data = (indexPath.section == .zero) ? recommendations : recipes
+            cell.data = recommendations
+            cell.selectionStyle = .none
+
+            return cell
+        } else {
+            guard let cell = tableView.dequeueReusableCell(
+                    withIdentifier: "RecipesTableViewCell",
+                    for: indexPath
+            ) as? RecipesTableViewCell else { return UITableViewCell() }
+            cell.selectionStyle = .none
+            if let url = URL(string: recipes[indexPath.row].imageURL) {
+                cell.recipeImageView.load(url: url)
+            }
             return cell
         }
-        return UITableViewCell()
     }
 }
 
 extension FeedViewController: UISearchBarDelegate {}
-
-extension FeedViewController: FeedTableViewCellProtocol {
-    func didSelectItemAt(recipe: RecipeJson) {
-        coordinator?.navigateToOverview(recipe: recipe)
-    }
-}
