@@ -7,7 +7,12 @@
 
 import UIKit
 
+protocol FeedTableViewCellProtocol: AnyObject {
+    func didSelectItemAt(recipe: RecipeJson)
+}
+
 class FeedTableViewCell: UITableViewCell {
+    weak var delegate: FeedTableViewCellProtocol?
     var coordinator: FeedCoordinatorProtocol?
     var data: [RecipeJson] = [] {
         didSet {
@@ -98,7 +103,7 @@ extension FeedTableViewCell: UICollectionViewDelegate, UICollectionViewDataSourc
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        coordinator?.navigateToOverview(recipe: data[indexPath.row])
+        delegate?.didSelectItemAt(recipe: data[indexPath.row])
     }
 }
 

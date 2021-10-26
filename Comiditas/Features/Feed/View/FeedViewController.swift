@@ -113,7 +113,7 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
             else { return UITableViewCell() }
             cell.data = recommendations
             cell.selectionStyle = .none
-
+            cell.delegate = self
             return cell
         } else {
             guard let cell = tableView.dequeueReusableCell(
@@ -142,7 +142,7 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         }
     }
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section != .zero {
             coordinator?.navigateToOverview(recipe: recipes[indexPath.row])
@@ -151,3 +151,9 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension FeedViewController: UISearchBarDelegate {}
+
+extension FeedViewController: FeedTableViewCellProtocol {
+    func didSelectItemAt(recipe: RecipeJson) {
+        coordinator?.navigateToOverview(recipe: recipe)
+    }
+}
