@@ -1,5 +1,5 @@
 //
-//  FeedCollectionViewCell.swift
+//  RecipesTableViewCell.swift
 //  Comiditas
 //
 //  Created by Beatriz Carlos on 26/10/21.
@@ -7,9 +7,9 @@
 
 import UIKit
 
-class FeedCollectionViewCell: UICollectionViewCell {
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+class RecipesTableViewCell: UITableViewCell {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupUI()
     }
 
@@ -17,20 +17,23 @@ class FeedCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
-    lazy var imageView: UIImageView = {
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10))
+    }
+
+    lazy var recipeImageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
         imageView.contentMode = .scaleToFill
         imageView.layer.masksToBounds = true
         imageView.layer.cornerRadius = 8
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.accessibilityTraits = .image
-        imageView.accessibilityLabel = "Imagem da receita"
         return imageView
     }()
 
     lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.font = Fonts.h4Bold
+        label.font = Fonts.h4
         label.textColor = Colors.primary
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -114,14 +117,18 @@ class FeedCollectionViewCell: UICollectionViewCell {
         label.isAccessibilityElement = true
         return label
     }()
+
+    override func prepareForReuse() {
+        recipeImageView.image = nil
+    }
 }
 
-extension FeedCollectionViewCell {
+extension RecipesTableViewCell {
     func setupUI() {
         self.contentView.backgroundColor = Colors.background
         self.contentView.layer.cornerRadius = 8
 
-        contentView.insertSubview(imageView, at: 0)
+        contentView.insertSubview(recipeImageView, at: 0)
         contentView.addSubview(stackViewRatings)
         contentView.addSubview(titleLabel)
         contentView.addSubview(stackViewDetails)
@@ -135,18 +142,18 @@ extension FeedCollectionViewCell {
         stackViewDetails.addArrangedSubview(labelPortion)
 
         NSLayoutConstraint.activate([
-            imageView.topAnchor.constraint(equalTo: contentView.topAnchor),
-            imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            imageView.heightAnchor.constraint(equalToConstant: 230),
+            recipeImageView.topAnchor.constraint(equalTo: contentView.topAnchor),
+            recipeImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            recipeImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            recipeImageView.heightAnchor.constraint(equalToConstant: 230),
 
-            stackViewRatings.topAnchor.constraint(equalTo: self.imageView.topAnchor, constant: 20),
-            stackViewRatings.trailingAnchor.constraint(equalTo: self.imageView.trailingAnchor, constant: -16),
+            stackViewRatings.topAnchor.constraint(equalTo: self.recipeImageView.topAnchor, constant: 20),
+            stackViewRatings.trailingAnchor.constraint(equalTo: self.recipeImageView.trailingAnchor, constant: -16),
             stackViewRatings.heightAnchor.constraint(equalToConstant: 30),
             stackViewRatings.widthAnchor.constraint(equalToConstant: 60),
 
-            titleLabel.topAnchor.constraint(equalTo: self.imageView.bottomAnchor, constant: 8),
-            titleLabel.leadingAnchor.constraint(equalTo: self.imageView.leadingAnchor, constant: 3),
+            titleLabel.topAnchor.constraint(equalTo: self.recipeImageView.bottomAnchor, constant: 8),
+            titleLabel.leadingAnchor.constraint(equalTo: self.recipeImageView.leadingAnchor, constant: 3),
             titleLabel.widthAnchor.constraint(equalTo: self.contentView.widthAnchor),
 
             stackViewDetails.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor, constant: 6),
