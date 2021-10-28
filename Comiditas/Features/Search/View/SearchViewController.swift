@@ -22,6 +22,8 @@ class SearchViewController: UIViewController {
     override func loadView() {
         super.loadView()
         self.view = contentView
+        navigationItem.largeTitleDisplayMode = .never
+        title = "Pesquisar receitas"
     }
 
     func setupVIP() {

@@ -35,7 +35,6 @@ class FeedViewController: UIViewController {
         interactor?.getRecipes()
         interactor?.getRecommendations()
         setupViewController()
-        contentView.searchBar.delegate = self
     }
 
     override func loadView() {
@@ -56,6 +55,8 @@ class FeedViewController: UIViewController {
         viewController.interactor = interactor
         interactor.presenter = presenter
         presenter.viewController = viewController
+
+        contentView.delegate = self
     }
 }
 
@@ -150,10 +151,14 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension FeedViewController: UISearchBarDelegate {}
-
 extension FeedViewController: FeedTableViewCellProtocol {
     func didSelectItemAt(recipe: RecipeJson) {
         coordinator?.navigateToOverview(recipe: recipe)
+    }
+}
+
+extension FeedViewController: FeedViewProtocol {
+    func tapSearchBar() {
+        coordinator?.navigateToSearch()
     }
 }

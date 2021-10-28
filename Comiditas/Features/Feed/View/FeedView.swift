@@ -7,10 +7,17 @@
 
 import UIKit
 
+protocol FeedViewProtocol: AnyObject {
+    func tapSearchBar()
+}
+
 class FeedView: UIView {
+    weak var delegate: FeedViewProtocol?
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
+        setupGesture()
     }
 
     required init?(coder: NSCoder) {
@@ -37,6 +44,11 @@ class FeedView: UIView {
         return search
     }()
 
+    private func setupGesture() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap))
+        searchBar.searchTextField.addGestureRecognizer(tap)
+    }
+
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.register(FeedTableViewCell.self, forCellReuseIdentifier: "FeedTableViewCell")
@@ -49,6 +61,10 @@ class FeedView: UIView {
         tableView.separatorStyle = .none
         return tableView
     }()
+
+    @objc func handleTap() {
+        delegate?.tapSearchBar()
+    }
 }
 
 extension FeedView: BaseViewProtocol {
