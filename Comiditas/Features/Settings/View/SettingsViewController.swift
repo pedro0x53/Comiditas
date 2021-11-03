@@ -9,7 +9,6 @@ import UIKit
 
 class SettingsViewController: UIViewController, SettingsViewDelegate {
 
-    var coordinator: SettingsCoordinatorProtocol?
     let associatedView: SettingsView = SettingsView()
 
     override func loadView() {
@@ -21,8 +20,13 @@ class SettingsViewController: UIViewController, SettingsViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupNavigationBar()
+    }
+
+    func setupNavigationBar() {
         navigationItem.largeTitleDisplayMode = .never
-        title = "Configurações"
+        navigationController?.navigationBar.backgroundColor = .white
+        title = SettingsLocalizable.title.text
     }
 }
 
@@ -52,10 +56,12 @@ extension SettingsViewController {
             else {
                 let cell = SettingsStepsTableViewCell(style: .default,
                                                       reuseIdentifier: SettingsStepsTableViewCell.identifier)
-                cell.configure(text: "testando table", switchButtonIsOn: true)
+                cell.separatorInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 0)
+                configureSwitchTableCell(cell: cell, index: indexPath)
                 return cell
             }
-            cell.configure(text: "testando table", switchButtonIsOn: true)
+            cell.separatorInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 0)
+            configureSwitchTableCell(cell: cell, index: indexPath)
             return cell
         }
     }
@@ -68,11 +74,11 @@ extension SettingsViewController {
                     withIdentifier: SettingsHeaderView.identifier) as? SettingsHeaderView
             else {
                 let header = SettingsHeaderView()
-                header.configure(titleText: "Passo a passo interativo")
+                header.configure(titleText: SettingsLocalizable.headerStepsTitle.text)
                 return header
             }
 
-            header.configure(titleText: "Passo a passo interativo")
+            header.configure(titleText: SettingsLocalizable.headerStepsTitle.text)
             return header
         }
     }
@@ -87,6 +93,35 @@ extension SettingsViewController {
 
 }
 
-//extension SettingsViewController: SettingsViewDelegate {
-    //implementar a funcao do delegate
-//}
+// Setting switches actions
+extension SettingsViewController {
+    func configureSwitchTableCell(cell: SettingsStepsTableViewCell, index: IndexPath) {
+        switch index.row {
+        case 0:
+            cell.configure(text: SettingsLocalizable.voiceCommands.text)
+            cell.switchButton.addTarget(self, action: #selector(voiceCommands), for: .valueChanged)
+        case 1:
+            cell.configure(text: SettingsLocalizable.lockscreen.text)
+            cell.switchButton.addTarget(self, action: #selector(lockscreen), for: .valueChanged)
+        case 2:
+            cell.configure(text: SettingsLocalizable.notifications.text)
+            cell.switchButton.addTarget(self, action: #selector(notifications), for: .valueChanged)
+        default:
+            print("Caso não tratado.")
+        }
+    }
+
+    @objc func voiceCommands(target: UISwitch) {
+        if target.isOn {
+            print("The Switch is voiceCommands is on")
+        }
+    }
+
+    @objc func lockscreen() {
+        print("The Switch is lockscreen")
+    }
+
+    @objc func notifications() {
+        print("The Switch is notifications")
+    }
+}

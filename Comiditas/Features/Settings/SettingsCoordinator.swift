@@ -7,10 +7,6 @@
 
 import UIKit
 
-protocol SettingsCoordinatorProtocol: AnyObject {
-//    func navigateToOverview(recipe: RecipeJson)
-}
-
 class SettingsCoordinator: Coordinator {
     let navigationController: UINavigationController
 
@@ -20,13 +16,6 @@ class SettingsCoordinator: Coordinator {
 
     func start() {
         let settingsViewController = SettingsViewController()
-        settingsViewController.coordinator = self
         navigationController.pushViewController(settingsViewController, animated: true)
-    }
-}
-
-extension SettingsCoordinator: SettingsCoordinatorProtocol {
-    func coordinate() {
-        print("coordinate")
     }
 }

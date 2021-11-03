@@ -20,11 +20,11 @@ class SettingsStepsTableViewCell: UITableViewCell {
         return label
     }()
 
-    private var switchButton: UISwitch = {
+    lazy var switchButton: UISwitch = {
        let button = UISwitch()
         button.onTintColor = Colors.primary
+        button.setOn(true, animated: true)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action: #selector(stateChanged), for: .valueChanged)
         return button
     }()
 
@@ -38,18 +38,9 @@ class SettingsStepsTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func configure(text: String, switchButtonIsOn: Bool) {
+    func configure(text: String) {
         label.text = text
-        switchButton.setOn(switchButtonIsOn, animated: true)
     }
-
-    @objc func stateChanged() {
-       if switchButton.isOn {
-           print("The Switch is On")
-       } else {
-            print("The Switch is Off")
-       }
-   }
 
     func setupView() {
         contentView.addSubview(label)
