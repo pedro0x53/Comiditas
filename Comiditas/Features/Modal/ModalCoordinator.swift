@@ -48,8 +48,8 @@ class ModalCoordinator: Coordinator {
 
 extension ModalCoordinator: ModalCoordinatorProtocol {
     func didFinishRecipe() {
-        navigationController.dismiss(animated: false)
         navigationController.popViewController(animated: true)
+        navigationController.dismiss(animated: false)
     }
 
     func cancelDismiss() {

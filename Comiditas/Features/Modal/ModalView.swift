@@ -7,6 +7,11 @@
 
 import UIKit
 
+protocol ModalViewDelegate: AnyObject {
+    func didPressOK()
+    func didCancel()
+}
+
 class ModalView: UIView {
 
     weak var delegate: ModalViewDelegate?
@@ -117,6 +122,12 @@ extension ModalView: BaseViewProtocol {
         self.subviews.forEach { $0.translatesAutoresizingMaskIntoConstraints = false }
     }
 
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = 8
+    }
+
     func setupConstraints() {
         NSLayoutConstraint.activate([
             modalView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
@@ -150,9 +161,4 @@ extension ModalView: BaseViewProtocol {
             okButton.centerXAnchor.constraint(equalTo: modalView.centerXAnchor)
         ])
     }
-}
-
-protocol ModalViewDelegate: AnyObject {
-    func didPressOK()
-    func didCancel()
 }

@@ -59,7 +59,6 @@ class StepTimer {
         self.interval -= 1
 
         delegate?.tick(timerText: timerText)
-        print(timerText)
     }
 
 }

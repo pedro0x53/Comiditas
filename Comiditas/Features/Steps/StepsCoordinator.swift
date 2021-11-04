@@ -44,7 +44,12 @@ extension StepsCoordinator: StepsCoordinatorProtocol {
         navigationController.popViewController(animated: true)
     }
 
-    func presentDidModal(with image: UIImage?, title: String, description: String, closeButtonIsHidden: Bool, okAction: @escaping () -> Void) {
+    func presentDidModal(
+        with image: UIImage?,
+        title: String,
+        description: String,
+        closeButtonIsHidden: Bool,
+        okAction: @escaping () -> Void) {
 
         let finishCoordinator = ModalCoordinator(navigationController: navigationController)
         finishCoordinator.image = image ?? UIImage(named: "cakeImage")
@@ -54,6 +59,5 @@ extension StepsCoordinator: StepsCoordinatorProtocol {
         finishCoordinator.okAction = okAction
         coordinate(to: finishCoordinator)
     }
-
 
 }

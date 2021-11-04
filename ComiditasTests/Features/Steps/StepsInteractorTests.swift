@@ -1,22 +1,23 @@
 //
-//  PreparationInteractorTests.swift
+//  StepsInteractorTests.swift
 //  ComiditasTests
 //
-//  Created by Alley Pereira on 29/09/21.
+//  Created by Alley Pereira on 04/11/21.
 //
 
 import XCTest
 @testable import Comiditas
 
-class PreparationInteractorTests: XCTestCase {
+class StepsInteractorTests: XCTestCase {
 
     // MARK: Subject under test
+    var sut: StepsInteractor!
 
-    var sut: PreparationInteractor!
+    // MARK: - Test lifecycle
 
     override func setUp() {
         super.setUp()
-        setupPreparationInteractor()
+        setupStepsInteractor()
     }
 
     override func tearDown() {
@@ -25,13 +26,13 @@ class PreparationInteractorTests: XCTestCase {
 
     // MARK: Test setup
 
-    func setupPreparationInteractor() {
-        sut = PreparationInteractor()
+    func setupStepsInteractor() {
+        sut = StepsInteractor()
     }
 
     // MARK: Test doubles
 
-    class PreparationPresentationLogicSpy: PreparationPresentationLogic {
+    class StepsPresentationLogicSpy: StepsPresentationLogic {
 
         // MARK: Method call expectations
 
@@ -40,21 +41,19 @@ class PreparationInteractorTests: XCTestCase {
         var presentPreviousStepCalled = false
         var presentFinishedCalled = false
 
-        // MARK: Spied methods
-
-        func presentSteps(response: PreparationModels.GetSteps.Response) {
+        func presentSteps(response: StepModels.GetSteps.Response) {
             presentStepsCalled = true
         }
 
-        func presentNextStep(response: PreparationModels.NextStep.Response) {
+        func presentNextStep(response: StepModels.NextStep.Response) {
             presentNextStepCalled = true
         }
 
-        func presentPreviousStep(response: PreparationModels.PreviousStep.Response) {
+        func presentPreviousStep(response: StepModels.PreviousStep.Response) {
             presentPreviousStepCalled = true
         }
 
-        func presentFinished(response: PreparationModels.Finished.Response) {
+        func presentFinished(response: StepModels.Finished.Response) {
             presentFinishedCalled = true
         }
 

@@ -21,9 +21,12 @@ enum StepsLocalizable: String {
 
     case iniciateClockAcessibility
     case pauseClockAcessibility
+    case reiniciateClockAcessibility
 
     case backStep
     case nextStep
+
+    case next
 
     case timerNotificationTitle
     case timerNotificationBody

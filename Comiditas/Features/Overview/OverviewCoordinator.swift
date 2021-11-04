@@ -30,11 +30,12 @@ class OverviewCoordinator: Coordinator {
 }
 
 extension OverviewCoordinator: OverviewCoordinatorProtocol {
+
     func coordinateToSteps(recipe: RecipeJson, image: UIImage?, currentStep: Int = 0) {
-        let preparationCoordinator = PreparationCoordinator(navigationController: navigationController)
-        preparationCoordinator.recipe = recipe
-        preparationCoordinator.image = image
-        coordinate(to: preparationCoordinator)
+        let stepsCoordinator = StepsCoordinator(navigationController: navigationController)
+        stepsCoordinator.recipe = recipe
+        stepsCoordinator.image = image
+        coordinate(to: stepsCoordinator)
     }
 
     func shareText(content: String, animated: Bool = true, completion: (() -> Void)? = nil) {

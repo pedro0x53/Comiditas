@@ -1,24 +1,24 @@
 //
-//  PreparationPresenterTests.swift
+//  StepsPresenterTests.swift
 //  ComiditasTests
 //
-//  Created by Alley Pereira on 29/09/21.
+//  Created by Alley Pereira on 04/11/21.
 //
 
 import XCTest
 @testable import Comiditas
 
-class PreparationPresenterTests: XCTestCase {
+class StepsPresenterTests: XCTestCase {
 
     // MARK: - Subject under test
 
-    var sut: PreparationPresenter!
+    var sut: StepsPresenter!
 
     // MARK: - Test lifecycle
 
     override func setUp() {
       super.setUp()
-      setupShowPreparationPresenter()
+      setupShowStepsPresenter()
     }
 
     override func tearDown() {
@@ -26,12 +26,11 @@ class PreparationPresenterTests: XCTestCase {
     }
 
     // MARK: - Test setup
-
-    func setupShowPreparationPresenter() {
-      sut = PreparationPresenter()
+    func setupShowStepsPresenter() {
+        sut = StepsPresenter()
     }
 
-    class PreparationDisplayLogicSpy: PreparationDisplayLogic {
+    class StepsDisplayLogicSpy: StepsDisplayLogic {
 
         // MARK: Method call expectations
 
@@ -42,31 +41,33 @@ class PreparationPresenterTests: XCTestCase {
 
         // MARK: Argument expectations
 
-        var viewModelGetSteps: PreparationModels.GetSteps.ViewModel!
-        var viewModelNextStep: PreparationModels.NextStep.ViewModel!
-        var viewModelPreviousStep: PreparationModels.PreviousStep.ViewModel!
-        var viewModelFinished: PreparationModels.Finished.ViewModel!
+        var viewModelGetSteps: StepModels.GetSteps.ViewModel!
+        var viewModelNextStep: StepModels.NextStep.ViewModel!
+        var viewModelPreviousStep: StepModels.PreviousStep.ViewModel!
+        var viewModelFinished: StepModels.Finished.ViewModel!
 
-        func displaySteps(viewModel: PreparationModels.GetSteps.ViewModel) {
+        func displaySteps(viewModel: StepModels.GetSteps.ViewModel) {
             displayStepsCalled = true
             self.viewModelGetSteps = viewModel
         }
 
-        func displayNextStep(viewModel: PreparationModels.NextStep.ViewModel) {
+        func displayNextStep(viewModel: StepModels.NextStep.ViewModel) {
             displayNextStepCalled = true
             self.viewModelNextStep = viewModel
         }
 
-        func displayPreviousStep(viewModel: PreparationModels.PreviousStep.ViewModel) {
+        func displayPreviousStep(viewModel: StepModels.PreviousStep.ViewModel) {
             displayPreviousStepCalled = true
             self.viewModelPreviousStep = viewModel
         }
 
-        func displayFinished(viewModel: PreparationModels.Finished.ViewModel) {
+        func displayFinished(viewModel: StepModels.Finished.ViewModel) {
             displayFinishedCalled = true
             self.viewModelFinished = viewModel
         }
 
         // MARK: - Tests
+
     }
+
 }

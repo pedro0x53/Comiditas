@@ -17,8 +17,11 @@ alertCancel = "Cancelar";
 step = "Passo";
 of = "de";
 
+next = "Próximo:";
+
 iniciateClockAcessibility = "Iniciar temporizador";
 pauseClockAcessibility = "Pausar temporizador";
+reiniciateClockAcessibility = "Reiniciar temporizador";
 
 backStep = "Passo anterior";
 nextStep = "Próximo passo";
