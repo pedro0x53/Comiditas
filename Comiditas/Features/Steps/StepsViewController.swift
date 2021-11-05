@@ -19,6 +19,9 @@ class StepsViewController: UIViewController {
     var coordinator: StepsCoordinator?
     var interactor: StepsBusinessLogic?
 
+    var speechManager: SpeechManager?
+    var stepIdentifier: Int = 0
+
     var recipe: RecipeJson!
     var image: UIImage?
 
@@ -44,16 +47,26 @@ class StepsViewController: UIViewController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         setUp()
+        speechManager = SpeechManager()
+        speechManager?.delegate = self
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setUp()
+        speechManager = SpeechManager()
+        speechManager?.delegate = self
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         fetchSteps()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        speechManager?.prepare()
+        speechManager?.speak("Olá Mundo")
     }
 
     // MARK: - View Cycle
@@ -135,9 +148,11 @@ extension StepsViewController: NextAndPreviousDelegate {
             callAlert(okAction: { [weak self] in
                 self?.stepsView.timerView.restartAction()
                 self?.goToNextInstruction(index: currentStepNumber - 1)
+                self?.stepIdentifier = currentStepNumber + 1
             })
         } else {
             self.goToNextInstruction(index: currentStepNumber - 1)
+            self.stepIdentifier = currentStepNumber + 1
         }
     }
 
@@ -146,9 +161,11 @@ extension StepsViewController: NextAndPreviousDelegate {
             callAlert(okAction: { [weak self] in
                 self?.stepsView.timerView.restartAction()
                 self?.goToPreviousInstruction(index: currentStepNumber - 1)
+                self?.stepIdentifier = currentStepNumber - 1
             })
         } else {
             goToPreviousInstruction(index: currentStepNumber - 1)
+            self.stepIdentifier = currentStepNumber - 1
         }
     }
 
@@ -172,6 +189,51 @@ extension StepsViewController: NextAndPreviousDelegate {
                 okAction: okAction
             )
         }
+    }
+
+}
+
+extension StepsViewController: SpeechManagerDelegate {
+
+    func speechManger(state: SpeechManagerState) {
+        switch state {
+        case .recognitionAvailable:
+            guard let speechManager = speechManager else { return }
+           speechManager.processor = DirectionsSpeechProcessor(manager: speechManager)
+            speechManager.start()
+        case .recognitionNotAvailable:
+            speechManager = nil
+        default:
+            break
+        }
+    }
+    func speechManger(_ identifier: Int, processedString string: String) {
+        guard let speechCase = DirectionsSpeechProcessor.Patterns(rawValue: identifier) else {
+            return
+        }
+        switch speechCase {
+        case .none:
+            return
+        case .nextStep:
+            didPressNextButton(currentStepNumber: stepIdentifier)
+        case .previousStep:
+            didPressPreviousButton(currentStepNumber: stepIdentifier)
+        case .currentStep:
+            guard let currentStepText = stepsView.recipeStepLabel.text else {
+                return
+            }
+            speechManager?.speak(currentStepText)
+        case .pauseTimer:
+            stepsView.timerView.isTimerRunning = false
+        case .resumeTimer:
+            stepsView.timerView.isTimerRunning = true
+        case .reiniciateTimer:
+            stepsView.timerView.restartAction()
+        }
+    }
+
+    func speechManger(error: SpeechRecognizer.SRError) {
+        speechManager = nil
     }
 
 }

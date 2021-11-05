@@ -97,6 +97,17 @@ class TimerView: UIView {
         }
     }
 
+    var isTimerRunning: Bool {
+        get {
+            timerIsRunning
+        }
+        set {
+            if timerIsRunning != newValue {
+                timerIsRunning = newValue
+            }
+        }
+    }
+
     @objc func playPauseAction(_ sender: UIButton) {
         timerIsRunning.toggle()
     }
