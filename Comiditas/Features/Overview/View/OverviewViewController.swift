@@ -184,11 +184,13 @@ extension OverviewViewController: OverviewPresenterDelegate {
     func display(sharedRecipe: Overview.ViewModel.Sharing,
                  animated: Bool = true,
                  completion: (() -> Void)? = nil) {
+        UINotificationFeedbackGenerator().notificationOccurred(.success)
         self.coordinator?.shareText(content: sharedRecipe.content, animated: animated, completion: completion)
     }
 
     func display(copiedRecipe: Overview.ViewModel.Sharing) {
         UIPasteboard.general.string = copiedRecipe.content
+        UINotificationFeedbackGenerator().notificationOccurred(.success)
     }
 }
 
