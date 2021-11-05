@@ -66,7 +66,6 @@ class StepsViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         speechManager?.prepare()
-        speechManager?.speak("Olá Mundo")
     }
 
     // MARK: - View Cycle

@@ -66,7 +66,7 @@ extension DirectionsSpeechProcessor {
                                                                  options: .caseInsensitive)
         static let previousStepExpression = try? NSRegularExpression(pattern: "\(key) passo anterior",
                                                                  options: .caseInsensitive)
-        static let currentStepExpression = try? NSRegularExpression(pattern: "\(key) ler",
+        static let currentStepExpression = try? NSRegularExpression(pattern: "\(key) ler passo atual",
                                                                  options: .caseInsensitive)
         static let pauseTimerExpression = try? NSRegularExpression(pattern: "\(key) pausar temporizador",
                                                                  options: .caseInsensitive)
