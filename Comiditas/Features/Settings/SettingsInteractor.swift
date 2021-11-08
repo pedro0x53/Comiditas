@@ -9,11 +9,12 @@ import Foundation
 
 protocol SettingsInteractorProtocol: AnyObject {
     func request(isChange: Bool, voiceCommandRequest: VoiceCommands.Request)
-//    func request(lockscreenRequest: Lockscreen.Request)
-//    func request(notificationsRequest: Notifications.Request)
+    func request(isChange: Bool, lockscreenRequest: Lockscreen.Request)
+    func request(isChange: Bool, notificationsRequest: Notifications.Request)
 }
 
 class SettingsInteractor: SettingsInteractorProtocol {
+
     var presenter: SettingsPresenterProtocol?
     var worker: SettingsWorker
 
@@ -27,19 +28,37 @@ class SettingsInteractor: SettingsInteractorProtocol {
 
         if isChange {
             worker.saveVoiceCommandsState(state: settingState)
-        } else {
-            isEnable = worker.getVoiceCommandsState()
         }
 
+        isEnable = worker.getVoiceCommandsState()
         let response = VoiceCommands.Response(voiceCommandsEnabled: isEnable)
-        presenter?.present(VCResponse: response)
+        presenter?.presentVoiceCommands(VCResponse: response)
     }
 
-//    func request(lockscreenRequest: Lockscreen.Request) {
-//        <#code#>
-//    }
-//    
-//    func request(notificationsRequest: Notifications.Request) {
-//        <#code#>
-//    }
+    func request(isChange: Bool, lockscreenRequest: Lockscreen.Request) {
+        let settingState = lockscreenRequest.lockscreenEnable
+        var isEnable = false
+
+        if isChange {
+            worker.saveLockscreenState(state: settingState)
+        }
+
+        isEnable = worker.getLockscreenState()
+        let response = Lockscreen.Response(lockscreenEnabled: isEnable)
+        presenter?.presentLockscreen(LSResponse: response)
+    }
+
+    func request(isChange: Bool, notificationsRequest: Notifications.Request) {
+        let settingState = notificationsRequest.notificationsEnable
+        var isEnable = false
+
+        if isChange {
+            worker.saveNotificationsState(state: settingState)
+        }
+
+        isEnable = worker.getNotificationsState()
+        let response = Notifications.Response(notificationsEnabled: isEnable)
+        presenter?.presentNotifications(NResponse: response)
+    }
+
 }

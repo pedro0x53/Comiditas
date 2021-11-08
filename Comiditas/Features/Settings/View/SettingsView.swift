@@ -22,6 +22,11 @@ class SettingsView: UIView {
         tableView.allowsSelection = false
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 44
+
+        if #available(iOS 15.0, *) {
+            tableView.sectionHeaderTopPadding = 0
+        }
+
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()

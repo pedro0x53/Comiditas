@@ -9,12 +9,15 @@ import UIKit
 
 protocol SettingsDisplayLogic: AnyObject {
     func displayVoiceCommandsToggle(viewModel: VoiceCommands.ViewModel)
+    func displayLockscreenToggle(viewModel: Lockscreen.ViewModel)
+    func displayNotificationsToggle(viewModel: Notifications.ViewModel)
 }
 
 class SettingsViewController: UIViewController, SettingsViewDelegate {
 
     let associatedView: SettingsView = SettingsView()
     var interactor: SettingsInteractorProtocol?
+    var stepsState: [Bool] = [false, false, false]
 
     override func loadView() {
         super.loadView()
@@ -29,14 +32,12 @@ class SettingsViewController: UIViewController, SettingsViewDelegate {
     }
 
     func setupVIP() {
-        let viewController = self
         let interactor = SettingsInteractor()
         let presenter = SettingsPresenter()
 
-        viewController.interactor = interactor
-        interactor.presenter = presenter
-        presenter.viewController = viewController
         self.interactor = interactor
+        interactor.presenter = presenter
+        presenter.viewController = self
     }
 
     func setupNavigationBar() {
@@ -67,6 +68,7 @@ extension SettingsViewController {
         guard let section = SettingsSection(rawValue: indexPath.section) else { return UITableViewCell() }
         switch section {
         case .stepsSettings:
+            makeRequests()
             guard let cell = tableView.dequeueReusableCell(
                     withIdentifier: SettingsStepsTableViewCell.identifier) as? SettingsStepsTableViewCell
             else {
@@ -104,23 +106,38 @@ extension SettingsViewController {
         guard let section = SettingsSection(rawValue: section) else { return 0 }
         switch section {
         case .stepsSettings:
-            return 52
+            return 56
         }
     }
 
 }
 
-// Setting switches actions
+// Setting switches
 extension SettingsViewController {
+
+    func makeRequests() {
+        let requestVC = VoiceCommands.Request(voiceCommandsEnable: true)
+        interactor?.request(isChange: false, voiceCommandRequest: requestVC)
+
+        let requestLS = Lockscreen.Request(lockscreenEnable: true)
+        interactor?.request(isChange: false, lockscreenRequest: requestLS)
+
+        let requestN = Notifications.Request(notificationsEnable: true)
+        interactor?.request(isChange: false, notificationsRequest: requestN)
+    }
+
     func configureSwitchTableCell(cell: SettingsStepsTableViewCell, index: IndexPath) {
         switch index.row {
         case 0:
+            cell.switchButton.isOn = stepsState[0]
             cell.configure(text: SettingsLocalizable.voiceCommands.text)
             cell.switchButton.addTarget(self, action: #selector(voiceCommands), for: .valueChanged)
         case 1:
+            cell.switchButton.isOn = stepsState[1]
             cell.configure(text: SettingsLocalizable.lockscreen.text)
             cell.switchButton.addTarget(self, action: #selector(lockscreen), for: .valueChanged)
         case 2:
+            cell.switchButton.isOn = stepsState[2]
             cell.configure(text: SettingsLocalizable.notifications.text)
             cell.switchButton.addTarget(self, action: #selector(notifications), for: .valueChanged)
         default:
@@ -129,41 +146,33 @@ extension SettingsViewController {
     }
 
     @objc func voiceCommands(target: UISwitch) {
-//        let request: VoiceCommands.Request
-        if target.isOn {
-            let request = VoiceCommands.Request(voiceCommandsEnable: true)
-            interactor?.request(isChange: true, voiceCommandRequest: request)
-            print("The Switch voiceCommands is on")
-        } else {
-            let request = VoiceCommands.Request(voiceCommandsEnable: false)
-            interactor?.request(isChange: true, voiceCommandRequest: request)
-            print("The Switch voiceCommands is off")
-        }
+        let request = VoiceCommands.Request(voiceCommandsEnable: target.isOn)
+        interactor?.request(isChange: true, voiceCommandRequest: request)
     }
 
-    @objc func lockscreen() {
-        print("The Switch is lockscreen")
+    @objc func lockscreen(target: UISwitch) {
+        let request = Lockscreen.Request(lockscreenEnable: target.isOn)
+        interactor?.request(isChange: true, lockscreenRequest: request)
     }
 
-    @objc func notifications() {
-        print("The Switch is notifications")
+    @objc func notifications(target: UISwitch) {
+        let request = Notifications.Request(notificationsEnable: target.isOn)
+        interactor?.request(isChange: true, notificationsRequest: request)
     }
 
-    func setSwitch(isOn: Bool, switchSetting: UISwitch) {
-        switchSetting.isOn = isOn
-    }
 }
 
 // VIP Connection: Presenter->View
 extension SettingsViewController: SettingsDisplayLogic {
     func displayVoiceCommandsToggle(viewModel: VoiceCommands.ViewModel) {
-        if viewModel.voiceCommandsEnabled {
-            let indexPath = NSIndexPath(row: 0, section: 0)
-            guard let cell = associatedView.tableView.cellForRow(at: indexPath as IndexPath)
-                    as? SettingsStepsTableViewCell else { return }
-            cell.switchButton.isOn = true
-            print("voice commands init")
-        }
-        associatedView.tableView.reloadData()
+        stepsState[0] = viewModel.voiceCommandsEnabled
+    }
+
+    func displayLockscreenToggle(viewModel: Lockscreen.ViewModel) {
+        stepsState[1] = viewModel.lockscreenEnabled
+    }
+
+    func displayNotificationsToggle(viewModel: Notifications.ViewModel) {
+        stepsState[2] = viewModel.notificationsEnabled
     }
 }

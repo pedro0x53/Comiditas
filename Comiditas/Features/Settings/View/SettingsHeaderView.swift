@@ -9,7 +9,7 @@ import UIKit
 
 class SettingsHeaderView: UITableViewHeaderFooterView {
 
-    public static let identifier: String = "Settings HeaderCellIdentifier"
+    public static let identifier: String = "SettingsHeaderCellIdentifier"
 
     private let titleLabel: UILabel = {
         let label = UILabel()
@@ -43,7 +43,8 @@ class SettingsHeaderView: UITableViewHeaderFooterView {
     func setupContraints() {
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 24),
-            titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16)
+            titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
+            titleLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -8)
         ])
     }
 }

@@ -25,29 +25,29 @@ enum VoiceCommands {
 // MARK: Lockscreen
 enum Lockscreen {
     struct Request {
-        var lockscreen: Bool
+        var lockscreenEnable: Bool
     }
 
     struct Response {
-        let lockscreen: Bool
+        let lockscreenEnabled: Bool
     }
 
     struct ViewModel {
-        let lockscreen: Bool
+        let lockscreenEnabled: Bool
     }
 }
 
 // MARK: Notifications
 enum Notifications {
     struct Request {
-        var notifications: Bool
+        var notificationsEnable: Bool
     }
 
     struct Response {
-        let notifications: Bool
+        let notificationsEnabled: Bool
     }
 
     struct ViewModel {
-        let notifications: Bool
+        let notificationsEnabled: Bool
     }
 }
