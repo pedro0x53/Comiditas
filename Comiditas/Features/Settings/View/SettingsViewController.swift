@@ -7,9 +7,14 @@
 
 import UIKit
 
+protocol SettingsDisplayLogic: AnyObject {
+    func displayVoiceCommandsToggle(viewModel: VoiceCommands.ViewModel)
+}
+
 class SettingsViewController: UIViewController, SettingsViewDelegate {
 
     let associatedView: SettingsView = SettingsView()
+    var interactor: SettingsInteractorProtocol?
 
     override func loadView() {
         super.loadView()
@@ -19,8 +24,19 @@ class SettingsViewController: UIViewController, SettingsViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setupNavigationBar()
+        setupVIP()
+    }
+
+    func setupVIP() {
+        let viewController = self
+        let interactor = SettingsInteractor()
+        let presenter = SettingsPresenter()
+
+        viewController.interactor = interactor
+        interactor.presenter = presenter
+        presenter.viewController = viewController
+        self.interactor = interactor
     }
 
     func setupNavigationBar() {
@@ -57,6 +73,7 @@ extension SettingsViewController {
                 let cell = SettingsStepsTableViewCell(style: .default,
                                                       reuseIdentifier: SettingsStepsTableViewCell.identifier)
                 cell.separatorInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 0)
+
                 configureSwitchTableCell(cell: cell, index: indexPath)
                 return cell
             }
@@ -112,8 +129,15 @@ extension SettingsViewController {
     }
 
     @objc func voiceCommands(target: UISwitch) {
+//        let request: VoiceCommands.Request
         if target.isOn {
-            print("The Switch is voiceCommands is on")
+            let request = VoiceCommands.Request(voiceCommandsEnable: true)
+            interactor?.request(isChange: true, voiceCommandRequest: request)
+            print("The Switch voiceCommands is on")
+        } else {
+            let request = VoiceCommands.Request(voiceCommandsEnable: false)
+            interactor?.request(isChange: true, voiceCommandRequest: request)
+            print("The Switch voiceCommands is off")
         }
     }
 
@@ -123,5 +147,23 @@ extension SettingsViewController {
 
     @objc func notifications() {
         print("The Switch is notifications")
+    }
+
+    func setSwitch(isOn: Bool, switchSetting: UISwitch) {
+        switchSetting.isOn = isOn
+    }
+}
+
+// VIP Connection: Presenter->View
+extension SettingsViewController: SettingsDisplayLogic {
+    func displayVoiceCommandsToggle(viewModel: VoiceCommands.ViewModel) {
+        if viewModel.voiceCommandsEnabled {
+            let indexPath = NSIndexPath(row: 0, section: 0)
+            guard let cell = associatedView.tableView.cellForRow(at: indexPath as IndexPath)
+                    as? SettingsStepsTableViewCell else { return }
+            cell.switchButton.isOn = true
+            print("voice commands init")
+        }
+        associatedView.tableView.reloadData()
     }
 }

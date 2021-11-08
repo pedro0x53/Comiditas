@@ -23,7 +23,7 @@ class SettingsStepsTableViewCell: UITableViewCell {
     lazy var switchButton: UISwitch = {
        let button = UISwitch()
         button.onTintColor = Colors.primary
-        button.setOn(true, animated: true)
+        button.setOn(false, animated: true)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
