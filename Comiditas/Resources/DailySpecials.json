@@ -1,0 +1,816 @@
+[
+   {
+      "title": "Hoje eu viro Fitness 🦾",
+      "recipes": [
+         {
+            "identifier": 1,
+            "name": "Omelete Proteica",
+            "imageURL": "https://img.cybercook.com.br/receitas/916/omelete-fit-proteico.jpeg",
+            "difficultyLevel": 1,
+            "servings": 1,
+            "rate": 4,
+            "prepTime": 600,
+            "categories" : [
+               "Rápidas",
+               "Fit"
+            ],
+            "ingredients" : [
+               "4 claras.",
+               "1 gema.",
+               "1/2 tomate.",
+               "1/4 de cebola.",
+               "1 pitada de salsa.",
+               "1/2 peito de frango.",
+               "2 colheres de ervilha.",
+               "1 colher de manteiga.",
+               "2 scoops de whey baunilha ou sem sabor.",
+               "1 colher de farinha de aveia.",
+               "Sal e orégano à gosto."
+            ],
+            "steps": [
+               {
+                  "step": 1,
+                  "stepDescription": "Bata as 4 claras e a gema em um recipiente.",
+                  "hasTimer": true,
+                  "timer": 60
+               },
+               {
+                  "step": 2,
+                  "stepDescription": "Pique 1/2 tomate e rale 1/4 de cebola.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 3,
+                  "stepDescription": "Desfie meio peito de frango.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 4,
+                  "stepDescription": "Pré-aqueça uma frigideira em fogo médio-baixo e adicione a manteiga.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 5,
+                  "stepDescription": "Acrescente aos ovos o tomate, a cebola, o frango, as ervilhas, uma colher de farinha de aveia e os dois scoops de whey, sal e orégano à gosto. Misture bem.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 6,
+                  "stepDescription": "Despeje a mistura na frigideira e cozinhe.",
+                  "hasTimer": true,
+                  "timer": 300
+               }
+            ]
+         },
+         {
+            "identifier": 2,
+            "name": "Rolinhos de Frango ao Forno",
+            "imageURL": "https://www.clickpb.com.br/media/filer_public_thumbnails/filer_public/17/c9/17c91e18-c76c-4788-b678-c87732e0f17b/dsc_01712.jpg__1200x630_q85_crop-smart_subsampling-2_upscale.jpg",
+            "difficultyLevel": 2,
+            "servings": 6,
+            "rate": 5,
+            "prepTime": 2400,
+            "categories" : [
+               "Aves",
+               "Fit"
+            ],
+            "ingredients" : [
+               "6 filés de frango.",
+               "1 ricota pequena amassada.",
+               "2 colheres de creme de leite.",
+               "8 unidades de tomate.",
+               "Folhas de rúcula.",
+               "Azeite, sal, pimenta do reino, alecrim e orégano a gosto."
+            ],
+            "steps": [
+               {
+                  "step": 1,
+                  "stepDescription": "Pique os tomates secos.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 2,
+                  "stepDescription": "Misture a ricota com o creme de leite, um fio de azeite, sal, pimenta-do-reino, orégano e alecrim.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 3,
+                  "stepDescription": "Pré-aqueça o forno a 200 graus.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 4,
+                  "stepDescription": "Tempere os filés com azeite, sal e pimenta.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 5,
+                  "stepDescription": "Em cada filé espalhe uma camada de ricota, pedacinhos de tomate seco e folhas de rúcula na parte de cima e faça o rolinho. Para prender os rolinho utilize dois palitos de dente.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 6,
+                  "stepDescription": "Coloque os rolinhos em um refratário untado com um pouco de azeite. Deixe assar por cerca de 35 minutos ou até dourar.",
+                  "hasTimer": true,
+                  "timer": 2100
+               }
+            ]
+         },
+         {
+            "identifier": 3,
+            "name": "Panqueca de Banana",
+            "imageURL": "https://www.anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-2673-bdfefd56f973570b1595e593fe86d328.jpg",
+            "difficultyLevel": 1,
+            "servings": 1,
+            "rate": 5,
+            "prepTime": 600,
+            "categories" : [
+               "Rápidas",
+               "Fit"
+            ],
+            "ingredients" : [
+               "2 bananas nanicas bem maduras.",
+               "2 ovos.",
+               "2 colheres de sopa de aveia em flocos finos.",
+               "Canela em pó a gosto.",
+               "Mel a gosto."
+            ],
+            "steps": [
+               {
+                  "step": 1,
+                  "stepDescription": "Descasque e amasse uma banana até virar uma pasta.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 2,
+                  "stepDescription": "Em um recipiente coloque a banana amassada e acrescente os dois ovos, as duas colheres de sopa de aveia e um pouco de canela. Misture bem.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 3,
+                  "stepDescription": "Ascenda o fogo com chama média-baixa e coloque uma frigideira com um pouco de manteiga para untar levemente.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 4,
+                  "stepDescription": "Coloque a mistura na frigideira e tampe-a. Deixe cozinhar por aproximadamente 2 minutos 30 segundos.",
+                  "hasTimer": true,
+                  "timer": 150
+               },
+               {
+                  "step": 5,
+                  "stepDescription": "Vire a panqueca e deixe cozinhar por mais 2:30 minutos.",
+                  "hasTimer": true,
+                  "timer": 150
+               },
+               {
+                  "step": 6,
+                  "stepDescription": "Coloque a panqueca em um prato. Corte a outra banana em rodelas e coloque as rodelas e um pouco de mel sobre metade da panqueca. Feche a paqueca e sirva.",
+                  "hasTimer": false,
+                  "timer": 0
+               }
+            ]
+         },
+         {
+            "identifier": 4,
+            "name": "Hamburger Funcional",
+            "imageURL": "https://img.itdg.com.br/tdg/images/recipes/000/303/665/329164/329164_original.jpg?mode=crop&width=710&height=400",
+            "difficultyLevel": 1,
+            "servings": 4,
+            "rate": 5,
+            "prepTime": 3000,
+            "categories" : [
+               "Carnes",
+               "Fit"
+            ],
+            "ingredients" : [
+               "400 g de carne magra moída.",
+               "1 clara.",
+               "1 colher de sopa de semente de chia.",
+               "1 colher de sobremesa de farinha de linhaça ou quinoa em flocos,.",
+               "1/2 cebola média em cubinhos.",
+               "1 tomate.",
+               "1/4 de xícara de chá de salsa picada.",
+               "Sal e pimenta-do-reino a gosto.",
+               "4 pães  para hambúrguer, de preferência integral.",
+               "4 colheres de sobremesa de cream cheese light (opcional).",
+               "Folhas de alface."
+            ],
+            "steps": [
+               {
+                  "step": 1,
+                  "stepDescription": "Pique a salsa e a cebola em cubinhos e o tomate em rodelas, 4 rodelas já são o suficiente e reserve-os.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 2,
+                  "stepDescription": "Em uma tigela funda, misture a carne, a clara, a chia, a farinha de linhaça, a cebola e a salsa. Depois tempere a mistura com o sal e a pimenta-do-reino.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 3,
+                  "stepDescription": "Divida em quatro partes iguais e molde no formato de hambúrguer.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 4,
+                  "stepDescription": "Em uma frigideira antiaderente, doure o hambúrguer dos dois lados. Isso pode dermorar por aproximadamente 5 minutos cada lado.",
+                  "hasTimer": true,
+                  "timer": 300
+               },
+               {
+                  "step": 5,
+                  "stepDescription": "Monte o hambúrguer com a carne, tomate, alface, cream cheese e sirva.",
+                  "hasTimer": false,
+                  "timer": 0
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "title": "¡Que pasa Chico! 🌶",
+      "recipes": [
+         {
+            "identifier": 1,
+            "name": "Guacamole Tradicional",
+            "imageURL": "https://www.sabornamesa.com.br/media/k2/items/cache/97a935595bd2614586903fc5e76b1e31_XL.jpg",
+            "difficultyLevel": 1,
+            "servings": 1,
+            "rate": 5,
+            "prepTime": 600,
+            "categories" : [
+               "Rápidas",
+               "Mexicana"
+            ],
+            "ingredients" : [
+               "2 abacates avocados ou 1 abacate normal",
+               "1/2 cebola roxa",
+               "1 tomate italiano",
+               "1 pimenta dedo de moça ou pimenta do reino a gosto",
+               "Salsinha ou coentro a gosto",
+               "3 colheres (sopa) de azeite",
+               "1 limão espremido",
+               "Sal a gosto"
+            ],
+            "steps": [
+               {
+                  "step": 1,
+                  "stepDescription": "Pique o tomate sem as sementes e a cebola roxa em cubinho pequenos.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 2,
+                  "stepDescription": "Corte a pimenta dedo de moça ao meio, retire as sementes, raspando a pimenta com ajuda de uma faca e pique em pedacinhos bem pequenos. Você pode substituir a pimenta dedo de moça por pimenta do reino.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 3,
+                  "stepDescription": "Descasque o abacate, retire toda a poupa e transfira para uma tigela.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 4,
+                  "stepDescription": "Com a ajuda de um garfo ou amassador de batatas, amasse o abacate, deixando alguns pedacinhos.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 5,
+                  "stepDescription": "Na mesma tigela, adicione o tomate picado, a cebola picada, a pimenta picada, o sal, o limão espremido e o azeite.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 6,
+                  "stepDescription": "Misture tudo, tomando cuidado para não amassar muito.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 7,
+                  "stepDescription": "Sirva seu guacamole com tortilhas, torradas ou até mesmo com Doritos.",
+                  "hasTimer": false,
+                  "timer": 0
+               }
+            ]
+         },
+         {
+            "identifier": 2,
+            "name": "Tacos Mexicanos",
+            "imageURL": "https://comidinhasdochef.com/wp-content/uploads/2016/02/Tacos-Mexicanos.jpg",
+            "difficultyLevel": 1,
+            "servings": 3,
+            "rate": 5,
+            "prepTime": 3000,
+            "categories" : [
+               "Carnes",
+               "Mexicana"
+            ],
+            "ingredients" : [
+               "10 colheres de sopa de farinha de milho",
+               "2 colheres de sopa de farinha de trigo",
+               "2 colheres de sopa de azeite",
+               "1 e 1/2 xícara de chá de água",
+               "1 colher de chá de sal",
+               "350 gramas carne moída",
+               "5 Colher de sopa de milho",
+               "1 tomate",
+               "1/2 xícara de chá de bacon",
+               "1 colher de sopa extrato de tomate",
+               "1 pimentão Verde pequeno",
+               "1 dente de alho",
+               "Salsinha e cebolinha",
+               "Pimenta chipottle",
+               "Paprica picante"
+            ],
+            "steps": [
+               {
+                  "step": 1,
+                  "stepDescription": "Coloque a água numa panela, o sal e o azeite, leve ao fogo até levantar fervura.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 2,
+                  "stepDescription": "Adicione a farinha de milho e a farinha de trigo. Misture até a massa desgrudar do fundo da panela.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 3,
+                  "stepDescription": "Deixe esfriar um pouco, mas não muito fria para não ficar quebradiça.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 4,
+                  "stepDescription": "Polvilhe uma superfície com farinha de milho e comece a sovar a massa, adicionando farinha aos poucos até que a massa ficar bem homogênea. Reserve.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 5,
+                  "stepDescription": "Numa forma, faça rolinhos de papel alumínio, o ideal é que seja com 2 ou 3 camadas e reserve.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 6,
+                  "stepDescription": "Em seguida, abra a massa, fina e firme, em uma superfície enfarinhada com farinha de milho e corte em círculos com ajuda de uma tigela redonda e reserve.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 7,
+                  "stepDescription": "Depois de ter cortado tudo, aqueça uma frigideira com um fio de azeite e frite aos poucos os discos da massa até ficarem levemente dourados.",
+                  "hasTimer": true,
+                  "timer": 180
+               },
+               {
+                  "step": 8,
+                  "stepDescription": "Pré-aqueça o forno a 220 graus.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 9,
+                  "stepDescription": "Com as massas ainda quentes acomode em cima dos rolinhos de alumínio e pressione levemente para fazer o formato curvo.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 10,
+                  "stepDescription": "Leve a forma ao forno e e deixe assar por 30 minutos.",
+                  "hasTimer": true,
+                  "timer": 1800
+               },
+               {
+                  "step": 11,
+                  "stepDescription": "Para o recheio pique o tomate, o bacon, o pimentão e o alho.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 12,
+                  "stepDescription": "Frite o bacon até soltar gordura ou perceber que ele não está mais grudando na frigideira.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 13,
+                  "stepDescription": "Ainda na frigideira adicione a carne moída e frite rapidamente. Adicione o alho, a pimenta chipottle, a pimenta do reino, a paprica picante e o sal, frite até ficar bem sequinha.",
+                  "hasTimer": true,
+                  "timer": 300
+               },
+               {
+                  "step": 14,
+                  "stepDescription": "Coloque os outros ingredientes, extrato de tomate, milho, pimentão, tomate. Misture e adicione cerca de 2 colheres de sopa de água e deixe cozinhar até o tomate ficar murcho e a água secar bem.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 15,
+                  "stepDescription": "Aguarde o recheio esfriar um pouco e monte seu taco como desejar.",
+                  "hasTimer": false,
+                  "timer": 0
+               }
+            ]
+         },
+         {
+            "identifier": 3,
+            "name": "Quesadillas",
+            "imageURL": "https://p2.trrsf.com/image/fget/cf/648/0/images.terra.com/2020/04/23/quesadillas-46353-1024x753.jpg",
+            "difficultyLevel": 1,
+            "servings": 4,
+            "rate": 5,
+            "prepTime": 2700,
+            "categories" : [
+               "Massas",
+               "Mexicana"
+            ],
+            "ingredients" : [
+               "150g de bacon em cubos",
+               "150g de peito de frango em cubos",
+               "Sal e pimenta-do-reino a gosto",
+               "4 discos de massa para pizza de frigideira",
+               "4 colheres (sopa) de molho de tomate",
+               "1/2 xícara (chá) de queijo prato ralado",
+               "1 tomate maduro sem pele e semente em cubos",
+               "1/4 de xícara (chá) de azeitona verde picada"
+            ],
+            "steps": [
+               {
+                  "step": 1,
+                  "stepDescription": "Aqueça uma frigideira, em fogo médio e refogue o bacon na própria gordura mexendo até dourar.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 2,
+                  "stepDescription": "Escorra o bacon sobre papel absorvente e reserve.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 2,
+                  "stepDescription": "Frite o frango na gordura do bacon mexendo até dourar e tempere com sal e pimenta.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 3,
+                  "stepDescription": "Disponha uma massa sobre um prato e espalhe 2 colheres de sopa do molho.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 4,
+                  "stepDescription": "Cubra com metade do queijo, do frango, do bacon, do tomate e da azeitona.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 4,
+                  "stepDescription": "Cubra com a outra massa e transfira para uma frigideira.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 5,
+                  "stepDescription": "Deixe dourar e deslize para um prato com cuidado. Vire do outro lado na frigideira e deixe dourar.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 6,
+                  "stepDescription": "Corte em 4 pedaços e sirva. Repita o procedimento com o restante dos ingredientes.",
+                  "hasTimer": false,
+                  "timer": 0
+               }
+            ]
+         },
+         {
+            "identifier": 4,
+            "name": "Tortillas mexicanas caseira",
+            "imageURL": "https://p2.trrsf.com/image/fget/cf/648/0/images.terra.com/2020/04/23/doritos-caseiro-1.jpg",
+            "difficultyLevel": 1,
+            "servings": 150,
+            "rate": 5,
+            "prepTime": 3600,
+            "categories" : [
+               "Massas",
+               "Mexicana"
+            ],
+            "ingredients" : [
+               "1 lata de milho verde escorrido",
+               "1/2 xícara (chá) de água",
+               "4 ovos",
+               "3 envelopes de tempero tipo Sazón® de cor vermelha",
+               "1 colher (café) de sal",
+               "4 xícaras (chá) de farinha de trigo",
+               "Óleo para fritar"
+            ],
+            "steps": [
+               {
+                  "step": 1,
+                  "stepDescription": "No liquidificador, bata o milho com a água até homogeneizar e reserve.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 2,
+                  "stepDescription": "Na batedeira, bata os ovos, 1 envelope de Sazón, o sal e o milho reservado.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 3,
+                  "stepDescription": "Acrescente o restante de farinha, aos poucos, mexendo até desgrudar das mãos.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 4,
+                  "stepDescription": "Deixe descansar por 10 minutos, abra a massa fina com um rolo e corte triângulos pequenos.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 5,
+                  "stepDescription": "Frite em óleo quente por 5 minutos ou até dourar.",
+                  "hasTimer": true,
+                  "timer": 300
+               },
+               {
+                  "step": 6,
+                  "stepDescription": "Escorra sobre papel-toalha e polvilhe com o Sázon restante, misturando.",
+                  "hasTimer": false,
+                  "timer": 0
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "title": "Veggie 🌱",
+      "recipes": [
+         {
+            "identifier": 1,
+            "name": "Panqueca de Grão-de-bico",
+            "imageURL": "https://www.mundoboaforma.com.br/wp-content/uploads/2021/05/panqueca-com-frutas-vermelhas.jpg",
+            "difficultyLevel": 1,
+            "servings": 1,
+            "rate": 5,
+            "prepTime": 600,
+            "categories" : [
+               "Vegetariano",
+               "Rápidas"
+            ],
+            "ingredients" : [
+               "1 copo de farinha de graõ-de-bico.",
+               "4 colheres de chá de fermento em pó.",
+               "3 colheres de sopa de açúcar.",
+               "2 colheres de sopa de vinagre de maçã.",
+               "2 colheres de chá de extrato de baunilha.",
+               "Um pouco de água"
+            ],
+            "steps": [
+               {
+                  "step": 1,
+                  "stepDescription": "Misture a farinha, o açúcar e o fermento, até que fique uma mistura homogênea.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 2,
+                  "stepDescription": "Adicione 2 colheres de sopa de vinagre de maçã, 2 colheres de chá de extratode baunilha e um pouco de água, até adquirir uma consistência cremosa não muito líquida.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 3,
+                  "stepDescription": "Aquece uma frigideira em fogo baixo untada com óleo de coco e despeje a mistura.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 4,
+                  "stepDescription": "Deixe dourar virando para os dois lados ou até que a pauqeca esteja bem solta da frigideira.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 5,
+                  "stepDescription": "Depois de pronta, finalize com frutas, chocolate derretido, pasta de amendoim ou o que preferir.",
+                  "hasTimer": false,
+                  "timer": 0
+               }
+            ]
+         },
+         {
+            "identifier": 2,
+            "name": "Brócolis com Queijo",
+            "imageURL": "https://maxima.uol.com.br/media/_versions/legacy/2017/05/02/receita-do-dia-polenta-gratinada-com-brocolis-e-queijo_widelg.png",
+            "difficultyLevel": 1,
+            "servings": 6,
+            "rate": 4,
+            "prepTime": 2400,
+            "categories" : [
+               "Vegetariano"
+            ],
+            "ingredients" : [
+               "1 maço de brócolis limpos e picados.",
+               "1 colher de sopa de pasta de alho.",
+               "1 ovo batido.",
+               "1 xícara e 1/4 de chá de leite desnatado ou zero lactose.",
+               "2 colheres de sopa de farinha de trigo integral.",
+               "2 xícaras de chá de queijo light ralado",
+               "3 colheres de sopa de azeite."
+            ],
+            "steps": [
+               {
+                  "step": 1,
+                  "stepDescription": "Cozinhe o brócolia no vapor até que fique al dente, nem muito duro nem muito macio. Isso pode demorar cerca de 10 minutos.",
+                  "hasTimer": true,
+                  "timer": 600
+               },
+               {
+                  "step": 2,
+                  "stepDescription": "Em uma panela pequena, coloque o azeite, o alho e deixe dourar um pouco.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 3,
+                  "stepDescription": "Na mesma panela coloque a farinha e o leite. Bata até ficar com uma textura de creme.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 4,
+                  "stepDescription": "Bata o ovo em um recipiente.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 5,
+                  "stepDescription": "Em um refratário, coloque o bócolis e despeje o creme por cima. Em seguida o queijo ralado e por último o ovo batido para selar.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 5,
+                  "stepDescription": "Deixe gratinar no forno por 5 minutos, ou até que o queijo derreta. Sirva com arroz.",
+                  "hasTimer": true,
+                  "timer": 300
+               }
+            ]
+         },
+         {
+            "identifier": 3,
+            "name": "Hambúrguer de Lentilha",
+            "imageURL": "https://temperoalternativo.com.br/wp-content/uploads/2015/01/hamburger-de-lentilha-imagem-destaque-1024x574.jpg",
+            "difficultyLevel": 1,
+            "servings": 0,
+            "rate": 5,
+            "prepTime": 0,
+            "categories" : [
+               "Vegetariano",
+               "Vegano"
+            ],
+            "ingredients" : [
+               "1 xícara de lentilha crua.",
+               "1 xícara de farinha de aveia ou farinha de arroz para intolerantes a glúten.",
+               "1 cebola grande.",
+               "Sal a gosto.",
+               "Salsa a gosto (opcional).",
+               "Óleo vegetal."
+            ],
+            "steps": [
+               {
+                  "step": 1,
+                  "stepDescription": "Em uma panela grande cozinhe a lentilha até ficar macia.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 2,
+                  "stepDescription": "Escorra a água e transfira para um prato grande. Amasse com ajuda de um garfo, não precisa ficar homogêneo, pode deixar alguns grãos inteiros para dar textura ao hambúrguer.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 3,
+                  "stepDescription": "Pique a cebola em cubinhos e doure no óleo vegetal. Para sujar menos louça indico você a dourar a cebola na mesma panela usada no cozimento da lentilha.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 4,
+                  "stepDescription": "Misture a lentilha amassada com a cebola dourada, salsa picada, sal a gosto e farinha de aveia (ou outra farinha)",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 5,
+                  "stepDescription": "Modele os hambúrgueres no tamanho e espessura que quiser.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 6,
+                  "stepDescription": "Aqueça um fio de óleo vegetal e frite o hambúrguer nos dois lados por 5 minutos ou até ficar dourado. Os hambúrgueres que você não for consumir congele sem fritar para os próximos dias.",
+                  "hasTimer": false,
+                  "timer": 0
+               }
+            ]
+         },
+         {
+            "identifier": 4,
+            "name": "Berinjela Recheada",
+            "imageURL": "https://meularminhapaz.com.br/wp-content/uploads/2020/02/berinjela-recheada-com-frango-e-queijo-scaled-e1584129934827-1024x642.jpg",
+            "difficultyLevel": 2,
+            "servings": 6,
+            "rate": 5,
+            "prepTime": 1200,
+            "categories" : [
+               "Vegetariano"
+            ],
+            "ingredients" : [
+               "3 beringelas.",
+               "200 grames de ricota fresca ou creme de ricota.",
+               "1 cebola.",
+               "2 tomates maduros.",
+               "2 dentes de alho.",
+               "1 colher de sopa de azeite de oliva.",
+               "1 colher de sopa de extrato de tomate.",
+               "Queijo ralado."
+            ],
+            "steps": [
+               {
+                  "step": 1,
+                  "stepDescription": "Abra a beringelas no sentido do comprimento e retire cuidadosamente e reserve o miolo (cuidando para não furar).",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 2,
+                  "stepDescription": "Afervente as metades rapidamente sem deixar amolecer muito. Reserve.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 3,
+                  "stepDescription": "Faça um molho com a cebola, o alho, o tomate, o azeite e o extrato de tomate.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 4,
+                  "stepDescription": "Acrescente no molho a polpa retirada das beringelas e cozinhe um pouco.",
+                  "hasTimer": true,
+                  "timer": 300
+               },
+               {
+                  "step": 5,
+                  "stepDescription": "Acrescente a ricota amassada com o garfo.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 6,
+                  "stepDescription": "Recheie cada metade com este preparado.",
+                  "hasTimer": false,
+                  "timer": 0
+               },
+               {
+                  "step": 7,
+                  "stepDescription": "Coloque numa forma, cubra com queijo ralado e leve ao forno por cerca de 5 minutos. Após isso, sirva.",
+                  "hasTimer": true,
+                  "timer": 300
+               }
+            ]
+         }
+      ]
+   }
+]
+

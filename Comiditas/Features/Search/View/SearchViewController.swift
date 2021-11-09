@@ -198,6 +198,7 @@ extension SearchViewController: UISearchBarDelegate {
             contentView.tagsView.isHidden = false
             contentView.tableView.isHidden = true
             contentView.buttonTag.isHidden = true
+            contentView.searchEmptyView.isHidden = true
         }
     }
 
@@ -210,6 +211,8 @@ extension SearchViewController: UISearchBarDelegate {
 
         if let search = searchBar.text, search.count != 0 {
             interactor?.searchRecipes(search: search)
+        } else {
+            contentView.searchEmptyView.isHidden = true
         }
     }
 }

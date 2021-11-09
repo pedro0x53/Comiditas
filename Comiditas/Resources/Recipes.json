@@ -1,6 +1,224 @@
 [
     {
         "identifier": 1,
+        "name": "Macarrão a carbonara",
+        "imageURL": "https://cdn.panelinha.com.br/receita/1575554013783-1566923717731-espaguete-a%CC%80-carbonaravale.jpg",
+        "difficultyLevel": 2,
+        "servings": 6,
+        "prepTime": 900,
+        "ingredients" : [
+            "Bacon picado a gosto.",
+            "Queijo ralado a gosto.",
+            "3 ovos.",
+            "Sal.",
+            "Pimenta-do-reino a gosto.",
+            "macarrão do tipo espaguete ou fusili.",
+            "Creme de leite."
+        ],
+        "categories" : [
+            "Massas"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+               "step": 1,
+               "stepDescription": "Frite bem o bacon, até ficar crocante (pode-se adicionar salame picado se quiser).",
+               "hasTimer": true,
+               "timer": 300
+            },
+            {
+               "step": 2,
+               "stepDescription": "Coloque o macarrão para cozinhar em água e sal. Verfique na embalagem o tempo de cozimento do macarrão.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 3,
+               "stepDescription": "No refratário onde será servido o macarrão, bata bem os ovos com um garfo.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 4,
+               "stepDescription": "Tempere com sal e pimenta a gosto, e junte o queijo ralado, também a gosto.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 5,
+               "stepDescription": "Quando o macarrão estiver pronto, escorra e coloque (bem quente) sobre a mistura de ovos, misture bem.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 6,
+               "stepDescription": "O calor da massa cozinha os ovos.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 7,
+               "stepDescription": "Coloque o bacon, ainda quente, sobre o macarrão e sirva.",
+               "hasTimer": false,
+               "timer": 0
+            },
+        ]
+    },
+    {
+        "identifier": 2,
+        "name": "Banofee",
+        "imageURL": "https://img.itdg.com.br/tdg/images/recipes/000/300/871/321360/321360_original.jpg?mode=crop&width=710&height=400",
+        "difficultyLevel": 2,
+        "servings": 8,
+        "prepTime": 900,
+        "ingredients" : [
+            "3 a 4 bananas prata maduras.",
+            "350 gramas de doce de leite.",
+            "1 pacote de biscoito de maisena ou de leite maltado.",
+            "60 gramas de manteiga derretida.",
+            "400 ml creme de leite fresco bem gelado.",
+            "100 gramas de açúcar de confeiteiro.",
+            "Cacau em pó ou raspas de chocolate para decorar.",
+        ],
+        "categories" : [
+            "Doces"
+        ],
+        "rate": 3,
+        "steps": [
+            {
+               "step": 1,
+               "stepDescription": "Triture em migalhas o biscoito e misture com a manteiga derretida.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 2,
+               "stepDescription": "Cubra uma forma de fundo removível de cerca de 22/ 24 cm com esta massa, suba um pouco nas laterais.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 3,
+               "stepDescription": "Cubra a massa com o doce de leite.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 4,
+               "stepDescription": "Corte as bananas em rodelas e disponha sobre o doce de leite.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 5,
+               "stepDescription": "Cubra com o creme de chantilly ou com os suspiros inteiros ou triturados.",
+               "hasTimer": false,
+               "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 3,
+        "name": "Lamen ao molho tarê com frango",
+        "imageURL": "https://img.itdg.com.br/tdg/images/recipes/000/181/073/303173/303173_original.jpg?mode=crop&width=710&height=400",
+        "difficultyLevel": 1,
+        "servings": 2,
+        "prepTime": 1800,
+        "ingredients" : [
+            "300 gramas de filezinho Sassami.",
+            "2 embalagens de macarrão instantâneo.",
+            "100 gramas de açúcar de confeiteiro.",
+            "120 gramas pimentão sem pele e sem semente.",
+            "12 gramas de alho picado.",
+            "16 gramas gengibre picado.",
+            "150 gramas cogumelo Shimeji grande.",
+            "120 gramas shoyu.",
+            "30 gramas cebolinha inteira.",
+            "200 gramas de folha de acelga.",
+            "100 gramas cenoura descascada.",
+            "Azeite extra virgem 50 gramas.",
+            "1 ovo cozido.",
+            "Folha de nori.",
+            "Sal.",
+            "Pimenta do reino.",
+            "100 ml de sake.",
+            "400 ml de água.",
+        ],
+        "categories" : [
+            "Salgado"
+        ],
+        "rate": 3,
+        "steps": [
+            {
+               "step": 1,
+               "stepDescription": "Em uma panela coloque uma colher de sopa de azeite em uma panela e refoque o alho e o gengibre.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 2,
+               "stepDescription": "Em seguida, adicione o açúcar e deixe caramelizar.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 3,
+               "stepDescription": "Acrescente o shoyu e o o sake e deixe formar uma espécie de calda.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 4,
+               "stepDescription": "Coe e reserve o molho.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 5,
+               "stepDescription": "Tempere o frango filezinho sassami com sal e pimenta, aqueça uma frigideira com azeite e grelhe-o. Abaixe o fogo e coloque cerca de 100 ml de água e deixe cozinhar por 5 minutos.",
+               "hasTimer": true,
+               "timer": 300
+            },
+            {
+               "step": 6,
+               "stepDescription": "Vire o frango e deixe cozinhar por mais 5 minutos pincelando o molho tarê sobre o frango.",
+               "hasTimer": true,
+               "timer": 300
+            },
+            {
+               "step": 7,
+               "stepDescription": "Cozinhe o macarrão lamên de acordo com as instruções da embalagem.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 8,
+               "stepDescription": "Coe e reserve o caldo.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 9,
+               "stepDescription": "Cozinhe os legumes cortados finamente no caldo do macarrão (já com o tempero).",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 10,
+               "stepDescription": "Sirva todos os ingredientes num prato fundo com meio ovo em cada prato e uma fatia de nori por cima.",
+               "hasTimer": false,
+               "timer": 0
+            },
+            {
+               "step": 10,
+               "stepDescription": "Acrescente também o Sassami de frango fatiado.",
+               "hasTimer": false,
+               "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 1,
         "name": "Bolo de tangerina",
         "imageURL": "https://s2.glbimg.com/3TKizZ6TEdKtQ9BdNqN6Qemmk78=/0x0:1280x960/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/L/R/fXiR5pSuC4nEaHdG8dSg/receita-bolo-de-tangerina.jpg",
         "difficultyLevel": 2,

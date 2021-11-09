@@ -9,13 +9,13 @@ import UIKit
 
 protocol FeedViewControllerProtocol: AnyObject {
     func displayRecipes(viewModel: Feed.ViewModel)
-    func displayRecommendations(viewModel: Feed.ViewModel)
+    func displayRecommendations(viewModel: Recommendations.ViewModel)
 }
 
 class FeedViewController: UIViewController {
     var coordinator: FeedCoordinatorProtocol?
     let contentView = FeedView(frame: UIScreen.main.bounds)
-    let tag: [String] = [FeedLocalizable.candy.text, FeedLocalizable.salted.text]
+    var sectionsName = [FeedLocalizable.recommendedForYou.text, FeedLocalizable.otherRecipes.text]
     var interactor: FeedInteractorProtocol?
     var recipes: [RecipeJson] = [] {
         didSet {
@@ -61,8 +61,9 @@ class FeedViewController: UIViewController {
 }
 
 extension FeedViewController: FeedViewControllerProtocol {
-    func displayRecommendations(viewModel: Feed.ViewModel) {
-        self.recommendations = viewModel.recipes
+    func displayRecommendations(viewModel: Recommendations.ViewModel) {
+        self.recommendations = viewModel.recipes.recipes
+        self.sectionsName[0] = viewModel.recipes.title
         self.contentView.tableView.reloadData()
     }
 
@@ -86,7 +87,6 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let sectionsName = [FeedLocalizable.recommendedForYou.text, FeedLocalizable.otherRecipes.text]
         let rect = CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 44)
         let headerView = UIView(frame: rect)
         headerView.backgroundColor = Colors.background
