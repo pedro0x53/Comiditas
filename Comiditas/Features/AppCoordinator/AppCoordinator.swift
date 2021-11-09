@@ -33,10 +33,7 @@ class AppCoordinator: Coordinator {
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
 
-        let settingsCoodinator = SettingsCoordinator(navigationController: navigationController)
-             coordinate(to: settingsCoodinator)
-
-//        let feedCoodinator = FeedCoordinator(navigationController: navigationController)
-//        coordinate(to: feedCoodinator)
+        let feedCoodinator = FeedCoordinator(navigationController: navigationController)
+        coordinate(to: feedCoodinator)
     }
 }

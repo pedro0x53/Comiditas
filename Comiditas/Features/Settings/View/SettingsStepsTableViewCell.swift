@@ -11,11 +11,12 @@ class SettingsStepsTableViewCell: UITableViewCell {
 
     public static let identifier: String = "SettingsStepsCellIdentifier"
 
-    private let label: UILabel = {
+    let label: UILabel = {
         let label = UILabel()
         label.text = "Config teste"
         label.textColor = Colors.textDark
         label.font = Fonts.h6
+        label.adjustsFontForContentSizeCategory = true
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -30,6 +31,7 @@ class SettingsStepsTableViewCell: UITableViewCell {
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        self.selectionStyle = .none
         setupView()
         setupConstraints()
     }

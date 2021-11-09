@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol SettingsCoordinatorProtocol: AnyObject {
+    func dismiss()
+}
+
 class SettingsCoordinator: Coordinator {
     let navigationController: UINavigationController
 
@@ -17,5 +21,11 @@ class SettingsCoordinator: Coordinator {
     func start() {
         let settingsViewController = SettingsViewController()
         navigationController.pushViewController(settingsViewController, animated: true)
+    }
+}
+
+extension SettingsCoordinator: SettingsCoordinatorProtocol {
+    func dismiss() {
+        navigationController.dismiss(animated: true)
     }
 }

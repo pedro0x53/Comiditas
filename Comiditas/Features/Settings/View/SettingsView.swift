@@ -17,9 +17,10 @@ class SettingsView: UIView {
 
     let tableView: UITableView = {
         let tableView = UITableView()
+        tableView.allowsSelection = true
+        tableView.isUserInteractionEnabled = true
         tableView.separatorStyle = .singleLine
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 1000, bottom: 0, right: 0)
-        tableView.allowsSelection = false
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 44
 
@@ -64,5 +65,5 @@ class SettingsView: UIView {
 }
 
 protocol SettingsViewDelegate: UITableViewDelegate, UITableViewDataSource {
-//
+
 }
