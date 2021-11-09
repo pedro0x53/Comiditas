@@ -28,9 +28,11 @@ class SearchPresenter: SearchPresenterProtocol {
         let recipes = response.recipes
         let search = response.search
 
-        let filter = recipes.filter({ $0.categories[0].range(of: search, options: .caseInsensitive) != nil })
+//        let filter = recipes.filter({ $0.categories[0].range(of: search, options: .caseInsensitive) != nil })
+        let filter =  recipes.compactMap {
+            $0.categories.contains(search) ? $0 : nil
+        }
         let viewModel = Search.ViewModel(recipes: filter)
-        print(viewModel)
         viewController?.displayRecipes(viewModel: viewModel)
     }
 }

@@ -29,6 +29,8 @@ class SearchView: UIView {
         search.translatesAutoresizingMaskIntoConstraints = false
         search.backgroundColor = Colors.background
         search.searchBarStyle = .minimal
+        search.searchTextField.backgroundColor = Colors.secondary
+        search.searchTextField.leftView?.tintColor = Colors.primary
         return search
     }()
 

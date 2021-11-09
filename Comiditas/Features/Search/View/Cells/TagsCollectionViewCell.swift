@@ -18,7 +18,6 @@ class TagsCollectionViewCell: UICollectionViewCell {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = Colors.primary
         view.clipsToBounds = true
-        view.layer.cornerRadius = 10
         view.isAccessibilityElement = false
         return view
     }()
@@ -36,6 +35,11 @@ class TagsCollectionViewCell: UICollectionViewCell {
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        view.layer.cornerRadius = view.frame.height / 2
     }
 }
 

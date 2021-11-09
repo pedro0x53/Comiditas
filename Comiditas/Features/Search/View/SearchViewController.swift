@@ -21,7 +21,7 @@ class SearchViewController: UIViewController, SearchViewControllerProtocol {
     let popular = ["Massas", "Rápidas", "Vegetariano", "Doces"]
     let others = ["Fit", "Aves", "Bolos e tortas", "Frutos do mar", "Carnes", "Peixes",
                   "Saladas", "Vegano", "Lacfree", "Sopas",
-                  "Molhos", "Bebidas", "Glúten free", "Fáceis"]
+                  "Molhos", "Bebidas", "Glúten free", "Fáceis", "Mexicana"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -100,12 +100,12 @@ extension SearchViewController: UICollectionViewDelegate,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         if indexPath.section == .zero {
             return CGSize(
-                width: popular[indexPath.row].size(withAttributes: [NSAttributedString.Key.font: Fonts.h5]).width + 13,
+                width: popular[indexPath.row].size(withAttributes: [NSAttributedString.Key.font: Fonts.h5]).width + 25,
                 height: 40
             )
         }
         return CGSize(
-            width: others[indexPath.row].size(withAttributes: [NSAttributedString.Key.font: Fonts.h5]).width + 13,
+            width: others[indexPath.row].size(withAttributes: [NSAttributedString.Key.font: Fonts.h5]).width + 25,
             height: 40
         )
     }

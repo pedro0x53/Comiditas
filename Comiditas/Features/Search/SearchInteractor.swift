@@ -23,7 +23,8 @@ class SearchInteractor: SearchInteractorProtocol {
     }
 
     func searchTagRecipes(search: String) {
-//        let response = Search.Response(recipes: data, search: search)
-//        presenter?.presentSearchTagsRecipes(response: response)
+        let data = worker.searchRecipes()
+        let response = Search.Response(recipes: data, search: search)
+        presenter?.presentSearchTagsRecipes(response: response)
     }
 }

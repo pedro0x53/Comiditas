@@ -42,6 +42,8 @@ class FeedView: UIView {
         search.backgroundColor = Colors.background
         search.searchBarStyle = .minimal
         search.enablesReturnKeyAutomatically = false
+        search.searchTextField.backgroundColor = Colors.secondary
+        search.searchTextField.leftView?.tintColor = Colors.primary
         return search
     }()
 
