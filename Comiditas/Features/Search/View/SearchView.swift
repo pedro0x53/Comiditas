@@ -39,6 +39,13 @@ class SearchView: UIView {
         return view
     }()
 
+    lazy var searchEmptyView: SearchEmptyView = {
+        let view = SearchEmptyView(frame: .zero)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.isHidden = true
+        return view
+    }()
+
     lazy var buttonTag: UIButton = {
         let button = UIButton()
         button.backgroundColor = Colors.primary
@@ -77,6 +84,7 @@ class SearchView: UIView {
         sender.isHidden = true
         tableView.isHidden = true
         tagsView.isHidden = false
+        searchEmptyView.isHidden = true
     }
 }
 
@@ -87,6 +95,7 @@ extension SearchView: BaseViewProtocol {
         self.addSubview(tagsView)
         self.addSubview(buttonTag)
         self.addSubview(tableView)
+        self.addSubview(searchEmptyView)
         setupConstraints()
     }
 
@@ -107,7 +116,12 @@ extension SearchView: BaseViewProtocol {
             tableView.topAnchor.constraint(equalTo: self.buttonTag.bottomAnchor, constant: 16),
             tableView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
             tableView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
-            tableView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor)
+            tableView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor),
+
+            searchEmptyView.topAnchor.constraint(equalTo: self.buttonTag.bottomAnchor, constant: 16),
+            searchEmptyView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
+            searchEmptyView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
+            searchEmptyView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor)
         ])
     }
 }

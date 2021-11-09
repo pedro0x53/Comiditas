@@ -19,9 +19,9 @@ class SearchViewController: UIViewController, SearchViewControllerProtocol {
 
     let headers = ["Populares", "Outros"]
     let popular = ["Massas", "Rápidas", "Vegetariano", "Doces"]
-    let others = ["Bolos e tortas", "Frutos do mar", "Carnes", "Peixes",
-                  "Saladas", "Aves", "Vegano", "Lacfree", "Sopas",
-                  "Molhos", "Bebidas", "Glúten free", "Fit", "Fáceis"]
+    let others = ["Fit", "Aves", "Bolos e tortas", "Frutos do mar", "Carnes", "Peixes",
+                  "Saladas", "Vegano", "Lacfree", "Sopas",
+                  "Molhos", "Bebidas", "Glúten free", "Fáceis"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,8 +37,15 @@ class SearchViewController: UIViewController, SearchViewControllerProtocol {
     }
 
     func displayRecipes(viewModel: Search.ViewModel) {
-        recipes = viewModel.recipes
-        self.contentView.tableView.reloadData()
+        if viewModel.recipes.count != 0 {
+            recipes = viewModel.recipes
+            self.contentView.tableView.reloadData()
+            contentView.searchEmptyView.isHidden = true
+        } else {
+            contentView.tagsView.isHidden = true
+            contentView.tableView.isHidden = true
+            contentView.searchEmptyView.isHidden = false
+        }
     }
 
     func setupVIP() {

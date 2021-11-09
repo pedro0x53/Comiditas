@@ -10,6 +10,7 @@ import UIKit
 extension UIImage {
     enum AssetIdentifier: String {
         case imgPortion
+        case emptyImage
     }
 
     convenience init?(assetIdentifier: AssetIdentifier) {
