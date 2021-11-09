@@ -14,10 +14,10 @@ protocol SearchInteractorProtocol {
 
 class SearchInteractor: SearchInteractorProtocol {
     var presenter: SearchPresenterProtocol?
+    private let worker = SearchWorker.shared
 
     func searchRecipes(search: String) {
-        let json = RecipeJsonRepository(named: "DailySpecials")
-        guard let data = json.readAll([RecipeJson].self) else { return }
+        let data = worker.searchRecipes()
         let response = Search.Response(recipes: data, search: search)
         presenter?.presentSearchRecipes(response: response)
     }
