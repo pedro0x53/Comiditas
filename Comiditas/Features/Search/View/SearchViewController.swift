@@ -7,12 +7,15 @@
 
 import UIKit
 
-protocol SearchViewControllerProtocol: AnyObject {}
+protocol SearchViewControllerProtocol: AnyObject {
+    func displayRecipes(viewModel: Search.ViewModel)
+}
 
-class SearchViewController: UIViewController {
+class SearchViewController: UIViewController, SearchViewControllerProtocol {
     var coordinator: SearchCoordinatorProtocol?
     let contentView = SearchView(frame: UIScreen.main.bounds)
     var interactor: SearchInteractorProtocol?
+    var recipes: [RecipeJson] = []
 
     let headers = ["Populares", "Outros"]
     let popular = ["Massas", "Rápidas", "Vegetariano", "Doces"]
@@ -33,6 +36,11 @@ class SearchViewController: UIViewController {
         title = "Pesquisar receitas"
     }
 
+    func displayRecipes(viewModel: Search.ViewModel) {
+        recipes = viewModel.recipes
+        self.contentView.tableView.reloadData()
+    }
+
     func setupVIP() {
         let viewController = self
         let interactor = SearchInteractor()
@@ -41,11 +49,16 @@ class SearchViewController: UIViewController {
         viewController.interactor = interactor
         interactor.presenter = presenter
         presenter.viewController = viewController
+
+        contentView.searchBar.delegate = self
     }
 
     func setupTableView() {
         contentView.tagsView.collectionView.delegate = self
         contentView.tagsView.collectionView.dataSource = self
+
+        contentView.tableView.delegate = self
+        contentView.tableView.dataSource = self
     }
 }
 
@@ -111,8 +124,85 @@ extension SearchViewController: UICollectionViewDelegate,
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("clicou")
+        contentView.tagsView.isUserInteractionEnabled = true
+        contentView.tagsView.isHidden = true
+
+        if indexPath.section == .zero {
+            contentView.buttonTag.setTitle(popular[indexPath.row], for: .normal)
+            interactor?.searchTagRecipes(search: popular[indexPath.row])
+        } else {
+            contentView.buttonTag.setTitle(others[indexPath.row], for: .normal)
+            interactor?.searchTagRecipes(search: others[indexPath.row])
+        }
+
+        contentView.buttonTag.isHidden = false
+        contentView.tableView.isHidden = false
     }
 }
 
-extension SearchViewController: SearchViewControllerProtocol {}
+extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return recipes.count
+    }
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(
+            withIdentifier: "RecipesTableViewCell",
+            for: indexPath
+        ) as? RecipesTableViewCell else { return UITableViewCell() }
+        cell.selectionStyle = .none
+        if let url = URL(string: recipes[indexPath.row].imageURL) {
+            cell.recipeImageView.load(url: url)
+        }
+
+        cell.titleLabel.text = recipes[indexPath.row].name
+        cell.titleLabel.accessibilityTraits = .staticText
+        cell.titleLabel.accessibilityLabel = recipes[indexPath.row].name
+
+        cell.labelPortion.text = "\(recipes[indexPath.row].servings) porções"
+        cell.labelPortion.accessibilityTraits = .staticText
+        cell.labelPortion.accessibilityLabel = "\(recipes[indexPath.row].servings) porções"
+
+        let time = Time.secondsToHoursMinutesSeconds(seconds: recipes[indexPath.row].prepTime)
+        cell.labelTime.text = Time.getString(for: time).accessible
+        cell.labelTime.accessibilityTraits = .staticText
+        cell.labelTime.accessibilityLabel = Time.getString(for: time).accessible
+
+        cell.labelStar.text = "\(recipes[indexPath.row].rate).0"
+        return cell
+
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        coordinator?.navigateToOverview(recipe: recipes[indexPath.row])
+    }
+}
+
+extension SearchViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text?.count != 0 {
+            contentView.tagsView.isUserInteractionEnabled = false
+        } else {
+            contentView.tagsView.isUserInteractionEnabled = true
+            contentView.tagsView.isHidden = false
+            contentView.tableView.isHidden = true
+            contentView.buttonTag.isHidden = true
+        }
+    }
+
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard searchBar.text != nil else { return }
+        contentView.tagsView.isUserInteractionEnabled = false
+        contentView.tagsView.isHidden = true
+        contentView.tableView.isHidden = false
+        contentView.buttonTag.isHidden = true
+
+        if let search = searchBar.text, search.count != 0 {
+            interactor?.searchRecipes(search: search)
+        }
+    }
+}

@@ -7,7 +7,9 @@
 
 import UIKit
 
-protocol SearchCoordinatorProtocol: AnyObject {}
+protocol SearchCoordinatorProtocol: AnyObject {
+    func navigateToOverview(recipe: RecipeJson)
+}
 
 class SearchCoordinator: Coordinator {
     let navigationController: UINavigationController
@@ -23,4 +25,10 @@ class SearchCoordinator: Coordinator {
     }
 }
 
-extension SearchCoordinator: SearchCoordinatorProtocol {}
+extension SearchCoordinator: SearchCoordinatorProtocol {
+    func navigateToOverview(recipe: RecipeJson) {
+        let overviewCoordinator = OverviewCoordinator(navigationController: navigationController)
+        overviewCoordinator.recipe = recipe
+        coordinate(to: overviewCoordinator)
+    }
+}

@@ -9,8 +9,11 @@ import Foundation
 
 enum Search {
     struct Response {
+        let recipes: [RecipeJson]
+        let search: String
     }
 
     struct ViewModel {
+        let recipes: [RecipeJson]
     }
 }

@@ -35,8 +35,49 @@ class SearchView: UIView {
     lazy var tagsView: TagsView = {
         let view = TagsView(frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.isHidden = false
         return view
     }()
+
+    lazy var buttonTag: UIButton = {
+        let button = UIButton()
+        button.backgroundColor = Colors.primary
+        button.titleLabel?.font = Fonts.h5
+        button.addRightIcon(image: (UIImage(systemName: "x.circle.fill",
+                                            withConfiguration: UIImage.SymbolConfiguration(weight: .regular))?
+                                        .withRenderingMode(.alwaysOriginal)
+                                        .withTintColor(Colors.textLight)
+                                   )!)
+        button.setTitleColor(Colors.textLight, for: .normal)
+        button.contentEdgeInsets = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 30)
+        button.layer.masksToBounds = true
+        button.layer.masksToBounds = true
+        button.layer.cornerRadius = 8
+        button.isHidden = true
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(buttonClicked),
+                         for: .touchUpInside)
+        return button
+    }()
+
+    lazy var tableView: UITableView = {
+        let tableView = UITableView(frame: .zero, style: .grouped)
+        tableView.register(RecipesTableViewCell.self, forCellReuseIdentifier: "RecipesTableViewCell")
+        tableView.tableFooterView = UIView()
+        tableView.backgroundColor = Colors.background
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.rowHeight = 320
+        tableView.contentInset = UIEdgeInsets(top: -30, left: 0, bottom: 0, right: 0)
+        tableView.separatorStyle = .none
+        tableView.isHidden = true
+        return tableView
+    }()
+
+    @objc func buttonClicked(sender: UIButton) {
+        sender.isHidden = true
+        tableView.isHidden = true
+        tagsView.isHidden = false
+    }
 }
 
 extension SearchView: BaseViewProtocol {
@@ -44,6 +85,8 @@ extension SearchView: BaseViewProtocol {
         self.backgroundColor = Colors.background
         self.addSubview(searchBar)
         self.addSubview(tagsView)
+        self.addSubview(buttonTag)
+        self.addSubview(tableView)
         setupConstraints()
     }
 
@@ -56,7 +99,15 @@ extension SearchView: BaseViewProtocol {
             tagsView.topAnchor.constraint(equalTo: self.searchBar.bottomAnchor, constant: 16),
             tagsView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
             tagsView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
-            tagsView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor)
+            tagsView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor),
+
+            buttonTag.topAnchor.constraint(equalTo: self.searchBar.bottomAnchor, constant: 16),
+            buttonTag.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
+
+            tableView.topAnchor.constraint(equalTo: self.buttonTag.bottomAnchor, constant: 16),
+            tableView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
+            tableView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
+            tableView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor)
         ])
     }
 }

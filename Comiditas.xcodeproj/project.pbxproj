@@ -35,6 +35,7 @@
 		7713580E26F9FC4400164BBC /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713580D26F9FC4400164BBC /* FeedPresenter.swift */; };
 		7713581026FA022100164BBC /* FeedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713580F26FA022100164BBC /* FeedModels.swift */; };
 		771F1AA62721A74C00AD5C5B /* Modal.strings in Resources */ = {isa = PBXBuildFile; fileRef = 771F1AA82721A74C00AD5C5B /* Modal.strings */; };
+		7743D4092737467D00B16888 /* Ext+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7743D4082737467D00B16888 /* Ext+UIButton.swift */; };
 		774A7311273553610036507F /* TagsHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774A7310273553610036507F /* TagsHeaderCollectionReusableView.swift */; };
 		774D5A7326F36A84004176A1 /* Ext+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7226F36A84004176A1 /* Ext+UIColor.swift */; };
 		774D5A7A26F3711A004176A1 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7926F3711A004176A1 /* BaseView.swift */; };
@@ -150,6 +151,7 @@
 		7713580D26F9FC4400164BBC /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		7713580F26FA022100164BBC /* FeedModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModels.swift; sourceTree = "<group>"; };
 		771F1AA72721A74C00AD5C5B /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Modal.strings"; sourceTree = "<group>"; };
+		7743D4082737467D00B16888 /* Ext+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIButton.swift"; sourceTree = "<group>"; };
 		774A7310273553610036507F /* TagsHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		774D5A7226F36A84004176A1 /* Ext+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIColor.swift"; sourceTree = "<group>"; };
 		774D5A7926F3711A004176A1 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
@@ -580,6 +582,7 @@
 				FE9542FF26F8B2BD0039F547 /* Ext+UIImageView.swift */,
 				FE39529226FA511700AEF77D /* Ext+UIView.swift */,
 				77FF2E4D26FA1CEE00FC63B5 /* Time.swift */,
+				7743D4082737467D00B16888 /* Ext+UIButton.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -979,6 +982,7 @@
 				E6381BF126FB52EA004F4298 /* ModalView.swift in Sources */,
 				7792904B26F8ADC500AAA0A4 /* CoordinatorProtocol.swift in Sources */,
 				1894725B26F9F9FF00E6CD8B /* PreparationPresenter.swift in Sources */,
+				7743D4092737467D00B16888 /* Ext+UIButton.swift in Sources */,
 				7792905526F8B09800AAA0A4 /* FeedView.swift in Sources */,
 				1894725726F9F9E500E6CD8B /* PreparationView.swift in Sources */,
 				77635CDB26F2124D00B36EC7 /* IngredientsJson.swift in Sources */,

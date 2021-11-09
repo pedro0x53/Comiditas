@@ -41,6 +41,7 @@ class FeedView: UIView {
         search.translatesAutoresizingMaskIntoConstraints = false
         search.backgroundColor = Colors.background
         search.searchBarStyle = .minimal
+        search.enablesReturnKeyAutomatically = false
         return search
     }()
 

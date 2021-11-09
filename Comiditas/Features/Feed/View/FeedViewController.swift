@@ -147,6 +147,8 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section != .zero {
             coordinator?.navigateToOverview(recipe: recipes[indexPath.row])
+        } else {
+            coordinator?.navigateToOverview(recipe: recommendations[indexPath.row])
         }
     }
 }

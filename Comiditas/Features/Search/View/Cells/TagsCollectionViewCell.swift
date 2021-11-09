@@ -25,7 +25,7 @@ class TagsCollectionViewCell: UICollectionViewCell {
 
     lazy var label: UILabel = {
         let label = UILabel()
-        label.font =  Fonts.h5
+        label.font = Fonts.h5
         label.textColor = Colors.textLight
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
