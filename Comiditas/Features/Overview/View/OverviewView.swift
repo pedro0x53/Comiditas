@@ -65,6 +65,7 @@ class OverviewView: UIView {
     }
 
     @objc func startRecipe() {
+        UINotificationFeedbackGenerator().notificationOccurred(.success)
         delegate?.startRecipe()
     }
 
@@ -78,6 +79,10 @@ class OverviewView: UIView {
 extension OverviewView: BaseViewProtocol {
     func setupView() {
         self.backgroundColor = .systemBackground
+
+        if #available(iOS 15.0, *) {
+            tableView.sectionHeaderTopPadding = 0
+        }
 
         addSubview(tableView)
 

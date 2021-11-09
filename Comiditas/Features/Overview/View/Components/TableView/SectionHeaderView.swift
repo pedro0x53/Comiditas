@@ -51,7 +51,9 @@ class SectionHeaderView: UITableViewHeaderFooterView, BaseViewProtocol {
     func setupView() {
         contentView.backgroundColor = .systemBackground
         contentView.addSubview(titleLabel)
+        titleLabel.isAccessibilityElement = true
         contentView.addSubview(copyButton)
+        copyButton.isAccessibilityElement = true
     }
 
     func setupConstraints() {
@@ -68,6 +70,15 @@ class SectionHeaderView: UITableViewHeaderFooterView, BaseViewProtocol {
         self.titleLabel.text = title
         self.titleLabel.accessibilityLabel = title
         self.sectionType = type
+
+        switch type {
+        case .ingredients:
+            copyButton.accessibilityLabel = "\(OverviewLocalizable.copy.text) \(OverviewLocalizable.ingredients.text)"
+            copyButton.accessibilityHint = OverviewLocalizable.copyIngredintsHint.text
+        case .direcions:
+            copyButton.accessibilityLabel = "\(OverviewLocalizable.copy.text) \(OverviewLocalizable.directions.text)"
+            copyButton.accessibilityHint = OverviewLocalizable.copyDirectionsHint.text
+        }
     }
 
     @objc func copyAction() {

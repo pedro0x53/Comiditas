@@ -12,6 +12,9 @@ enum OverviewLocalizable: String {
     case back
 
     case sharingTitle
+    case copy
+    case copyIngredintsHint
+    case copyDirectionsHint
 
     case accessibleMainImage
 
