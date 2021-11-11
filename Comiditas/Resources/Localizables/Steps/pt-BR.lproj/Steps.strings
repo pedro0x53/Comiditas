@@ -13,6 +13,7 @@ alertStop = "O temporizador será reiniciado. \nDeseja continuar?";
 alertAtention = "Atenção!";
 alertContinue = "Continuar";
 alertCancel = "Cancelar";
+close = "Fechar";
 
 step = "Passo";
 of = "de";

@@ -13,6 +13,7 @@ alertStop = "The timer will reset. \nDo you want to continue?";
 alertAtention = "Attention!";
 alertContinue = "Continue";
 alertCancel = "Cancel";
+close = "Close";
 
 step = "Step";
 of = "of";

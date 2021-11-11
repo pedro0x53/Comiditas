@@ -34,7 +34,8 @@ class StepsCoordinator: Coordinator {
             stepsViewController.recipe = recipe
             stepsViewController.image = image
             stepsViewController.coordinator = self
-            navigationController.pushViewController(stepsViewController, animated: true)
+            navigationController.modalPresentationStyle = .automatic
+            navigationController.present(stepsViewController, animated: true)
         }
     }
 }

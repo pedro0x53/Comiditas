@@ -7,13 +7,31 @@
 
 import UIKit
 
+protocol DismissDelegate: AnyObject {
+    func dismissButton()
+}
+
 class StepsView: UIView {
+
+    weak var delegate: DismissDelegate?
 
     // MARK: - Views
     let timerView: TimerView = TimerView()
     let nextStepView: StepPreviewView = StepPreviewView()
 
     lazy var stackView: NextAndPreviousStackView = NextAndPreviousStackView()
+
+    lazy var closeButton: UIButton = {
+        let button = UIButton(type: .system)
+        let image = UIImage(systemName: "xmark.circle.fill", withConfiguration: UIImage.SymbolConfiguration(
+            pointSize: 25, weight: .bold))
+        button.setImage(image, for: .normal)
+        button.tintColor = Colors.primary
+        button.isAccessibilityElement = true
+        button.accessibilityLabel = StepsLocalizable.close.text
+        button.addTarget(self, action: #selector(closeButtonAction), for: .touchUpInside)
+        return button
+    }()
 
     lazy var recipeStepLabel: UILabel = {
         let label = UILabel(frame: .zero)
@@ -50,6 +68,7 @@ class StepsView: UIView {
     // MARK: - Setup Layout
 
     func createSubviews() {
+        self.addSubview(closeButton)
         self.addSubview(backgroundLineImageView)
         self.addSubview(timerView)
         self.addSubview(recipeStepLabel)
@@ -64,9 +83,21 @@ class StepsView: UIView {
     func setupLayout() {
 
         NSLayoutConstraint.activate([
-            recipeStepLabel.topAnchor.constraint(
+
+            closeButton.topAnchor.constraint(
                 equalTo: self.safeAreaLayoutGuide.topAnchor,
-                constant: 35
+                constant: 16
+            ),
+            closeButton.trailingAnchor.constraint(
+                equalTo: self.safeAreaLayoutGuide.trailingAnchor,
+                constant: -18
+            ),
+            closeButton.heightAnchor.constraint(
+                equalToConstant: 45),
+
+            recipeStepLabel.topAnchor.constraint(
+                equalTo: self.closeButton.bottomAnchor,
+                constant: 55
             ),
             recipeStepLabel.leadingAnchor.constraint(
                 equalTo: self.leadingAnchor, constant: 16),
@@ -131,6 +162,10 @@ class StepsView: UIView {
         } else {
             self.backgroundLineImageView.image = UIImage(named: "line_down")
         }
+    }
+
+    @objc func closeButtonAction() {
+        self.delegate?.dismissButton()
     }
 
 }

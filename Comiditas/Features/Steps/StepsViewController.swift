@@ -29,6 +29,7 @@ class StepsViewController: UIViewController {
     lazy var stepsView: StepsView = {
         let view = StepsView(frame: UIScreen.main.bounds)
         view.stackView.delegate = self
+        view.delegate = self
         return view
     }()
 
@@ -235,4 +236,10 @@ extension StepsViewController: SpeechManagerDelegate {
         speechManager = nil
     }
 
+}
+
+extension StepsViewController: DismissDelegate {
+    func dismissButton() {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
