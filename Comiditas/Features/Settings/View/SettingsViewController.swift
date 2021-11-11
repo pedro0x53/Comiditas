@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Speech
 
 protocol SettingsDisplayLogic: AnyObject {
     func displayVoiceCommandsToggle(viewModel: VoiceCommands.ViewModel)
@@ -30,6 +31,13 @@ class SettingsViewController: UIViewController, SettingsViewDelegate {
         super.viewDidLoad()
         setupNavigationBar()
         setupVIP()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        if SFSpeechRecognizer.authorizationStatus() == .authorized {
+            let request = VoiceCommands.Request(voiceCommandsEnable: true)
+            interactor?.request(isChange: true, voiceCommandRequest: request)
+        }
     }
 
     func setupVIP() {
@@ -147,7 +155,6 @@ extension SettingsViewController {
             }
         }
     }
-
 }
 
 // Setting switches
@@ -188,8 +195,14 @@ extension SettingsViewController {
     }
 
     @objc func voiceCommands(target: UISwitch) {
-        let request = VoiceCommands.Request(voiceCommandsEnable: target.isOn)
-        interactor?.request(isChange: true, voiceCommandRequest: request)
+        checkVoiceCommandsAuth(currentValue: target.isOn, completion: { response in
+            let request = VoiceCommands.Request(voiceCommandsEnable: response)
+            self.interactor?.request(isChange: true, voiceCommandRequest: request)
+
+            DispatchQueue.main.async {
+                target.setOn(response, animated: true)
+            }
+        })
     }
 
     @objc func lockscreen(target: UISwitch) {
@@ -198,10 +211,100 @@ extension SettingsViewController {
     }
 
     @objc func notifications(target: UISwitch) {
-        let request = Notifications.Request(notificationsEnable: target.isOn)
-        interactor?.request(isChange: true, notificationsRequest: request)
+        checkNotifications(currentValue: target.isOn) { response in
+            let request = Notifications.Request(notificationsEnable: response)
+            self.interactor?.request(isChange: true, notificationsRequest: request)
+
+            DispatchQueue.main.async {
+                target.setOn(response, animated: true)
+            }
+        }
     }
 
+}
+
+// Functions to setup step settings
+extension SettingsViewController {
+    func checkVoiceCommandsAuth(currentValue: Bool, completion: ((Bool) -> Void)? = nil) {
+        switch SFSpeechRecognizer.authorizationStatus() {
+        case .notDetermined:
+            requestVoiceCommandsAuth(completion: completion)
+        case .authorized:
+            if currentValue {
+                completion?(true)
+            } else {
+                completion?(false)
+            }
+        default:
+            if currentValue {
+                openDeviceSettings()
+            } else {
+                completion?(false)
+            }
+        }
+    }
+
+    private func requestVoiceCommandsAuth(completion: ((Bool) -> Void)? = nil) {
+        SFSpeechRecognizer.requestAuthorization { status in
+            switch status {
+            case .authorized:
+                completion?(true)
+            default:
+                completion?(false)
+            }
+        }
+    }
+
+    private func checkNotifications(currentValue: Bool, completion: ((Bool) -> Void)? = nil) {
+        UNUserNotificationCenter.current().getNotificationSettings { settings in
+            switch settings.authorizationStatus {
+            case .authorized:
+                if currentValue {
+                    completion?(true)
+                } else {
+                    completion?(false)
+                }
+            case .notDetermined:
+                NotificationManager().requestAuthorization(completion: completion)
+            default:
+                if currentValue {
+                    DispatchQueue.main.async {
+                        self.openDeviceSettings()
+                    }
+                } else {
+                    completion?(false)
+                }
+            }
+        }
+    }
+
+    private func openDeviceSettings() {
+        let alertController = UIAlertController(title: "Atenção",
+                                                message: "Permitir que o aplicativo abra a tela de ajustes?",
+                                                preferredStyle: .alert)
+
+        let settingsAction = UIAlertAction(title: "Permitir", style: .default) { (_) -> Void in
+
+            guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
+                let alertController = UIAlertController(title: "Atenção",
+                                                        message: "Algo deu errado.",
+                                                        preferredStyle: .alert)
+                self.present(alertController, animated: true, completion: nil)
+                return
+            }
+
+            if UIApplication.shared.canOpenURL(settingsUrl) {
+                UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
+                    print("Settings opened: \(success)") // Prints true
+                })
+            }
+        }
+        alertController.addAction(settingsAction)
+        let cancelAction = UIAlertAction(title: "Cancelar", style: .default, handler: nil)
+        alertController.addAction(cancelAction)
+
+        present(alertController, animated: true, completion: nil)
+    }
 }
 
 // Accessibility configuration
