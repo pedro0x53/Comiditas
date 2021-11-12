@@ -22,13 +22,13 @@ class RecipeJsonRepository {
         }
     }
 
-    public func readAll() -> [RecipeJson] {
-        guard let data = data else { return [] }
+    public func readAll<T: Codable>(_ type: T.Type) -> T? {
+        guard let data = data else { return nil }
         do {
-            let recipes = try jsonStack.decoder.decode([RecipeJson].self, from: data)
+            let recipes = try jsonStack.decoder.decode(type, from: data)
             return recipes
         } catch {
-            return []
+            return nil
         }
     }
 }

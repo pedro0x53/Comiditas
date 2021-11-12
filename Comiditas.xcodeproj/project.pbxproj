@@ -35,6 +35,12 @@
 		7713580E26F9FC4400164BBC /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713580D26F9FC4400164BBC /* FeedPresenter.swift */; };
 		7713581026FA022100164BBC /* FeedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713580F26FA022100164BBC /* FeedModels.swift */; };
 		771F1AA62721A74C00AD5C5B /* Modal.strings in Resources */ = {isa = PBXBuildFile; fileRef = 771F1AA82721A74C00AD5C5B /* Modal.strings */; };
+		7743D4092737467D00B16888 /* Ext+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7743D4082737467D00B16888 /* Ext+UIButton.swift */; };
+		774A6858273A875F0028AF84 /* SearchEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774A6857273A875F0028AF84 /* SearchEmptyView.swift */; };
+		774A685A273A98CA0028AF84 /* SearchWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774A6859273A98CA0028AF84 /* SearchWorker.swift */; };
+		774A685C273A99940028AF84 /* DailySpecials.json in Resources */ = {isa = PBXBuildFile; fileRef = 774A685B273A99940028AF84 /* DailySpecials.json */; };
+		774A685E273AA6770028AF84 /* DailySpecials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774A685D273AA6770028AF84 /* DailySpecials.swift */; };
+		774A7311273553610036507F /* TagsHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774A7310273553610036507F /* TagsHeaderCollectionReusableView.swift */; };
 		774D5A7326F36A84004176A1 /* Ext+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7226F36A84004176A1 /* Ext+UIColor.swift */; };
 		774D5A7A26F3711A004176A1 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7926F3711A004176A1 /* BaseView.swift */; };
 		774D5A7C26F37256004176A1 /* Ext+UIFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7B26F37256004176A1 /* Ext+UIFonts.swift */; };
@@ -45,7 +51,7 @@
 		77635CDF26F2185B00B36EC7 /* JsonStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CDE26F2185B00B36EC7 /* JsonStack.swift */; };
 		77635CE126F2188B00B36EC7 /* RecipeJsonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CE026F2188B00B36EC7 /* RecipeJsonRepository.swift */; };
 		776FD164270F241800CC312D /* FeedLocalizableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776FD163270F241800CC312D /* FeedLocalizableTest.swift */; };
-		7788D896271EAF8E00B75A45 /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7788D895271EAF8E00B75A45 /* Pacifico.ttf */; };
+		7788D897271EBF4100B75A45 /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7788D895271EAF8E00B75A45 /* Pacifico.ttf */; };
 		7792904B26F8ADC500AAA0A4 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7792904A26F8ADC500AAA0A4 /* CoordinatorProtocol.swift */; };
 		7792904E26F8AE0800AAA0A4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7792904D26F8AE0800AAA0A4 /* AppCoordinator.swift */; };
 		7792905326F8B08700AAA0A4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7792905226F8B08700AAA0A4 /* FeedViewController.swift */; };
@@ -59,6 +65,10 @@
 		77946A6227067B1300D3F1B3 /* LocalizablesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77946A6127067B1300D3F1B3 /* LocalizablesProtocol.swift */; };
 		77946A6527067D7000D3F1B3 /* FeedLocalizables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77946A6427067D7000D3F1B3 /* FeedLocalizables.swift */; };
 		77946A6827067DF100D3F1B3 /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77946A6A27067DF100D3F1B3 /* Feed.strings */; };
+		779526B2273405B40097AF79 /* TagsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779526B1273405B40097AF79 /* TagsCollectionViewCell.swift */; };
+		7799D1EC27282576007F234D /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7799D1EB27282576007F234D /* FeedTableViewCell.swift */; };
+		7799D1EE27282725007F234D /* FeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7799D1ED27282725007F234D /* FeedCollectionViewCell.swift */; };
+		7799D1F027282E41007F234D /* RecipesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7799D1EF27282E41007F234D /* RecipesTableViewCell.swift */; };
 		779F5E8E26EF7456005668BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5E8D26EF7456005668BE /* AppDelegate.swift */; };
 		779F5E9026EF7456005668BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779F5E8F26EF7456005668BE /* SceneDelegate.swift */; };
 		779F5E9826EF7456005668BE /* Comiditas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 779F5E9626EF7456005668BE /* Comiditas.xcdatamodeld */; };
@@ -68,10 +78,13 @@
 		77D1BD77270F15D700553403 /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D1BD76270F15D700553403 /* FeatureFlags.swift */; };
 		77D70D1726F21FFA00A8B244 /* Recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 77D70D1626F21FFA00A8B244 /* Recipes.json */; };
 		77D70D1B26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D70D1A26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift */; };
-		77DDC15026FA9311003027D3 /* Recommendations.json in Resources */ = {isa = PBXBuildFile; fileRef = 77DDC14F26FA9311003027D3 /* Recommendations.json */; };
-		77E1C38C26F93BF100F8B0DF /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E1C38B26F93BF100F8B0DF /* TagCollectionViewCell.swift */; };
-		77E1C38F26F93FE400F8B0DF /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E1C38E26F93FE400F8B0DF /* FeedTableViewCell.swift */; };
-		77E1C39326F94FA200F8B0DF /* FeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E1C39226F94FA200F8B0DF /* FeedCollectionViewCell.swift */; };
+		77F9CB90272ABB2900D22F94 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F9CB8F272ABB2900D22F94 /* SearchView.swift */; };
+		77F9CB92272ABB3900D22F94 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F9CB91272ABB3900D22F94 /* SearchViewController.swift */; };
+		77F9CB94272ABC3600D22F94 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F9CB93272ABC3600D22F94 /* SearchCoordinator.swift */; };
+		77F9CB96272ABD3900D22F94 /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F9CB95272ABD3900D22F94 /* SearchInteractor.swift */; };
+		77F9CB98272ABD4500D22F94 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F9CB97272ABD4500D22F94 /* SearchPresenter.swift */; };
+		77F9CB9C272ACB1100D22F94 /* SearchModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F9CB9B272ACB1100D22F94 /* SearchModels.swift */; };
+		77F9CB9E272ADF9500D22F94 /* TagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F9CB9D272ADF9500D22F94 /* TagsView.swift */; };
 		77FF2E4E26FA1CEE00FC63B5 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FF2E4D26FA1CEE00FC63B5 /* Time.swift */; };
 		E6381BF126FB52EA004F4298 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6381BEF26FB52EA004F4298 /* ModalView.swift */; };
 		E6381BF226FB52EA004F4298 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6381BF026FB52EA004F4298 /* ModalViewController.swift */; };
@@ -151,6 +164,12 @@
 		7713580D26F9FC4400164BBC /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		7713580F26FA022100164BBC /* FeedModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModels.swift; sourceTree = "<group>"; };
 		771F1AA72721A74C00AD5C5B /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Modal.strings"; sourceTree = "<group>"; };
+		7743D4082737467D00B16888 /* Ext+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIButton.swift"; sourceTree = "<group>"; };
+		774A6857273A875F0028AF84 /* SearchEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEmptyView.swift; sourceTree = "<group>"; };
+		774A6859273A98CA0028AF84 /* SearchWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWorker.swift; sourceTree = "<group>"; };
+		774A685B273A99940028AF84 /* DailySpecials.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DailySpecials.json; sourceTree = "<group>"; };
+		774A685D273AA6770028AF84 /* DailySpecials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailySpecials.swift; sourceTree = "<group>"; };
+		774A7310273553610036507F /* TagsHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		774D5A7226F36A84004176A1 /* Ext+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIColor.swift"; sourceTree = "<group>"; };
 		774D5A7926F3711A004176A1 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		774D5A7B26F37256004176A1 /* Ext+UIFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIFonts.swift"; sourceTree = "<group>"; };
@@ -179,6 +198,10 @@
 		77946A6127067B1300D3F1B3 /* LocalizablesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizablesProtocol.swift; sourceTree = "<group>"; };
 		77946A6427067D7000D3F1B3 /* FeedLocalizables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLocalizables.swift; sourceTree = "<group>"; };
 		77946A6927067DF100D3F1B3 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Feed.strings"; sourceTree = "<group>"; };
+		779526B1273405B40097AF79 /* TagsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsCollectionViewCell.swift; sourceTree = "<group>"; };
+		7799D1EB27282576007F234D /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		7799D1ED27282725007F234D /* FeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewCell.swift; sourceTree = "<group>"; };
+		7799D1EF27282E41007F234D /* RecipesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableViewCell.swift; sourceTree = "<group>"; };
 		779F5E8A26EF7456005668BE /* Comiditas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Comiditas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		779F5E8D26EF7456005668BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		779F5E8F26EF7456005668BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -193,11 +216,14 @@
 		77D1BD76270F15D700553403 /* FeatureFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlags.swift; sourceTree = "<group>"; };
 		77D70D1626F21FFA00A8B244 /* Recipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Recipes.json; sourceTree = "<group>"; };
 		77D70D1A26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeJsonRepositoryTests.swift; sourceTree = "<group>"; };
-		77DDC14F26FA9311003027D3 /* Recommendations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Recommendations.json; sourceTree = "<group>"; };
-		77E1C38B26F93BF100F8B0DF /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
-		77E1C38E26F93FE400F8B0DF /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
-		77E1C39226F94FA200F8B0DF /* FeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewCell.swift; sourceTree = "<group>"; };
 		77E1C39626F961F700F8B0DF /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		77F9CB8F272ABB2900D22F94 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		77F9CB91272ABB3900D22F94 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		77F9CB93272ABC3600D22F94 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		77F9CB95272ABD3900D22F94 /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
+		77F9CB97272ABD4500D22F94 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		77F9CB9B272ACB1100D22F94 /* SearchModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModels.swift; sourceTree = "<group>"; };
+		77F9CB9D272ADF9500D22F94 /* TagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsView.swift; sourceTree = "<group>"; };
 		77FF2E4D26FA1CEE00FC63B5 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		E6381BEF26FB52EA004F4298 /* ModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		E6381BF026FB52EA004F4298 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
@@ -368,6 +394,7 @@
 				77635CD826F2115800B36EC7 /* RecipeJson.swift */,
 				77635CDA26F2124D00B36EC7 /* IngredientsJson.swift */,
 				77635CDC26F214DA00B36EC7 /* StepJson.swift */,
+				774A685D273AA6770028AF84 /* DailySpecials.swift */,
 			);
 			path = EntitiesJson;
 			sourceTree = "<group>";
@@ -498,6 +525,15 @@
 			path = Feed;
 			sourceTree = "<group>";
 		};
+		779526AC2733F5550097AF79 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				779526B1273405B40097AF79 /* TagsCollectionViewCell.swift */,
+				774A7310273553610036507F /* TagsHeaderCollectionReusableView.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		779F5E8126EF7456005668BE = {
 			isa = PBXGroup;
 			children = (
@@ -574,6 +610,7 @@
 				FE9542FF26F8B2BD0039F547 /* Ext+UIImageView.swift */,
 				FE39529226FA511700AEF77D /* Ext+UIView.swift */,
 				77FF2E4D26FA1CEE00FC63B5 /* Time.swift */,
+				7743D4082737467D00B16888 /* Ext+UIButton.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -594,6 +631,7 @@
 		779F5EC526EF74CC005668BE /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				77F9CB8D272ABB0C00D22F94 /* Search */,
 				E6381BF326FB52FC004F4298 /* Modal */,
 				FE95430926F8CBC40039F547 /* Overview */,
 				7792905126F8B04C00AAA0A4 /* Feed */,
@@ -625,7 +663,7 @@
 				779F5E9926EF7457005668BE /* Assets.xcassets */,
 				779F5E9B26EF7457005668BE /* LaunchScreen.storyboard */,
 				77D70D1626F21FFA00A8B244 /* Recipes.json */,
-				77DDC14F26FA9311003027D3 /* Recommendations.json */,
+				774A685B273A99940028AF84 /* DailySpecials.json */,
 				18DC6523271EFF6700AA0B38 /* NotificationManager.swift */,
 			);
 			path = Resources;
@@ -663,11 +701,36 @@
 		77E1C38D26F93CBF00F8B0DF /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				77E1C38B26F93BF100F8B0DF /* TagCollectionViewCell.swift */,
-				77E1C38E26F93FE400F8B0DF /* FeedTableViewCell.swift */,
-				77E1C39226F94FA200F8B0DF /* FeedCollectionViewCell.swift */,
+				7799D1EB27282576007F234D /* FeedTableViewCell.swift */,
+				7799D1ED27282725007F234D /* FeedCollectionViewCell.swift */,
+				7799D1EF27282E41007F234D /* RecipesTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		77F9CB8D272ABB0C00D22F94 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				77F9CB8E272ABB1800D22F94 /* View */,
+				77F9CB93272ABC3600D22F94 /* SearchCoordinator.swift */,
+				77F9CB95272ABD3900D22F94 /* SearchInteractor.swift */,
+				77F9CB97272ABD4500D22F94 /* SearchPresenter.swift */,
+				77F9CB9B272ACB1100D22F94 /* SearchModels.swift */,
+				774A6859273A98CA0028AF84 /* SearchWorker.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		77F9CB8E272ABB1800D22F94 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				779526AC2733F5550097AF79 /* Cells */,
+				77F9CB8F272ABB2900D22F94 /* SearchView.swift */,
+				77F9CB91272ABB3900D22F94 /* SearchViewController.swift */,
+				77F9CB9D272ADF9500D22F94 /* TagsView.swift */,
+				774A6857273A875F0028AF84 /* SearchEmptyView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		E6381BF326FB52FC004F4298 /* Modal */ = {
@@ -911,11 +974,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7788D897271EBF4100B75A45 /* Pacifico.ttf in Resources */,
 				77946A6827067DF100D3F1B3 /* Feed.strings in Resources */,
-				77DDC15026FA9311003027D3 /* Recommendations.json in Resources */,
+				774A685C273A99940028AF84 /* DailySpecials.json in Resources */,
 				779F5E9D26EF7457005668BE /* LaunchScreen.storyboard in Resources */,
 				77D70D1726F21FFA00A8B244 /* Recipes.json in Resources */,
-				7788D896271EAF8E00B75A45 /* Pacifico.ttf in Resources */,
 				779F5E9A26EF7457005668BE /* Assets.xcassets in Resources */,
 				771F1AA62721A74C00AD5C5B /* Modal.strings in Resources */,
 				FE65618D27074A97007EA5E5 /* Overview.strings in Resources */,
@@ -962,11 +1025,14 @@
 				FED6973126FB82890078908E /* ModalCoordinator.swift in Sources */,
 				FE65618A270749E6007EA5E5 /* OverviewLocalizable.swift in Sources */,
 				FEEDA9B626FB537C009A5E10 /* Difficulty.swift in Sources */,
+				7799D1F027282E41007F234D /* RecipesTableViewCell.swift in Sources */,
 				FE4E4DE826F9F69C007E78F4 /* OverviewViewController.swift in Sources */,
+				7799D1EE27282725007F234D /* FeedCollectionViewCell.swift in Sources */,
 				7713580C26F9FC3700164BBC /* FeedInteractor.swift in Sources */,
 				7713581026FA022100164BBC /* FeedModels.swift in Sources */,
 				77946A6527067D7000D3F1B3 /* FeedLocalizables.swift in Sources */,
 				7713580E26F9FC4400164BBC /* FeedPresenter.swift in Sources */,
+				77F9CB94272ABC3600D22F94 /* SearchCoordinator.swift in Sources */,
 				FE054CA12726F24500EE439E /* SpeechRecognizer.swift in Sources */,
 				77E1C38F26F93FE400F8B0DF /* FeedTableViewCell.swift in Sources */,
 				FE127E97270DD1E500D6EEE8 /* OverviewModels.swift in Sources */,
@@ -977,16 +1043,19 @@
 				FE054C9F2726F24500EE439E /* SpeechProcessorProtocol.swift in Sources */,
 				77E1C39326F94FA200F8B0DF /* FeedCollectionViewCell.swift in Sources */,
 				779F5E9026EF7456005668BE /* SceneDelegate.swift in Sources */,
+				779526B2273405B40097AF79 /* TagsCollectionViewCell.swift in Sources */,
 				1894725926F9F9F700E6CD8B /* PreparationInterator.swift in Sources */,
 				188F523426FB55C600A59039 /* PreparationCoordinator.swift in Sources */,
 				18398CEA26FA3F490054E054 /* TimerView.swift in Sources */,
 				18F8E17B26FA898E00B5766B /* StepCellModel.swift in Sources */,
+				77F9CB9E272ADF9500D22F94 /* TagsView.swift in Sources */,
 				E6381BF226FB52EA004F4298 /* ModalViewController.swift in Sources */,
 				FE95430026F8B2BD0039F547 /* Ext+UIImageView.swift in Sources */,
 				18398CF026FA60640054E054 /* PreparationModels.swift in Sources */,
 				18F8E18126FAA35600B5766B /* StepWithTimerCell.swift in Sources */,
 				184061222718647F008BAB4A /* ModalLocalizable.swift in Sources */,
 				18398CF226FA66890054E054 /* PreparationWorker.swift in Sources */,
+				77F9CB96272ABD3900D22F94 /* SearchInteractor.swift in Sources */,
 				774D5A7326F36A84004176A1 /* Ext+UIColor.swift in Sources */,
 				7792905326F8B08700AAA0A4 /* FeedViewController.swift in Sources */,
 				7792904E26F8AE0800AAA0A4 /* AppCoordinator.swift in Sources */,
@@ -996,29 +1065,38 @@
 				E6381BF126FB52EA004F4298 /* ModalView.swift in Sources */,
 				7792904B26F8ADC500AAA0A4 /* CoordinatorProtocol.swift in Sources */,
 				1894725B26F9F9FF00E6CD8B /* PreparationPresenter.swift in Sources */,
+				7743D4092737467D00B16888 /* Ext+UIButton.swift in Sources */,
 				FE054CA02726F24500EE439E /* DirectionsSpeechProcessor.swift in Sources */,
 				7792905526F8B09800AAA0A4 /* FeedView.swift in Sources */,
 				1894725726F9F9E500E6CD8B /* PreparationView.swift in Sources */,
 				77635CDB26F2124D00B36EC7 /* IngredientsJson.swift in Sources */,
 				FE127E95270DD15B00D6EEE8 /* OverviewPresenter.swift in Sources */,
-				77E1C38C26F93BF100F8B0DF /* TagCollectionViewCell.swift in Sources */,
 				774D5A7A26F3711A004176A1 /* BaseView.swift in Sources */,
+				77F9CB98272ABD4500D22F94 /* SearchPresenter.swift in Sources */,
 				18398CEC26FA3F720054E054 /* StepTimerDelegate.swift in Sources */,
+				7799D1EC27282576007F234D /* FeedTableViewCell.swift in Sources */,
 				77635CD926F2115800B36EC7 /* RecipeJson.swift in Sources */,
 				FE95430B26F8CBFA0039F547 /* OverviewView.swift in Sources */,
+				77F9CB90272ABB2900D22F94 /* SearchView.swift in Sources */,
 				FEC8B85426F9FD6400455143 /* DetailView.swift in Sources */,
 				FE054C9E2726F24500EE439E /* SpeechManager.swift in Sources */,
 				FE127E93270DD14000D6EEE8 /* OverviewInteractor.swift in Sources */,
 				18DC6524271EFF6700AA0B38 /* NotificationManager.swift in Sources */,
+				774A6858273A875F0028AF84 /* SearchEmptyView.swift in Sources */,
 				774D5A7C26F37256004176A1 /* Ext+UIFonts.swift in Sources */,
+				774A685A273A98CA0028AF84 /* SearchWorker.swift in Sources */,
 				FEC8B85626FA1CB900455143 /* RecipeStepCell.swift in Sources */,
+				774A7311273553610036507F /* TagsHeaderCollectionReusableView.swift in Sources */,
 				FEEDA9B826FB6B8C009A5E10 /* IngredientCell.swift in Sources */,
 				7792905726F8B18800AAA0A4 /* FeedCoordinator.swift in Sources */,
 				18EA190F270F1FCB00B36E1C /* HapticsManager.swift in Sources */,
 				FE5DA02026F9FAA800AF5F71 /* OverviewCoordinator.swift in Sources */,
+				774A685E273AA6770028AF84 /* DailySpecials.swift in Sources */,
 				1840611227171762008BAB4A /* StepsLocalizable.swift in Sources */,
+				77F9CB92272ABB3900D22F94 /* SearchViewController.swift in Sources */,
 				FE39529326FA511700AEF77D /* Ext+UIView.swift in Sources */,
 				FEC8B85826FA269800455143 /* SectionHeaderView.swift in Sources */,
+				77F9CB9C272ACB1100D22F94 /* SearchModels.swift in Sources */,
 				FE95430E26F8D0DC0039F547 /* RecipeHeaderCell.swift in Sources */,
 				77635CDD26F214DA00B36EC7 /* StepJson.swift in Sources */,
 				18F8E17F26FAA22500B5766B /* SimpleStepCell.swift in Sources */,

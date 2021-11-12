@@ -12,6 +12,9 @@ enum FeedLocalizable: String {
     case otherRecipes
     case candy
     case salted
+    case subTitle
+    case title
+    case search
 }
 
 extension FeedLocalizable: LocalizablesProtocol {

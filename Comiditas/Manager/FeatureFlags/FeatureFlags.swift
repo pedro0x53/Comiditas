@@ -8,15 +8,12 @@
 import Foundation
 
 enum FeatureFlags: Int {
-    case tagsFeed
     case user
     case currentStep
     case rating
 
     var isEnable: Bool {
         switch self {
-        case .tagsFeed:
-            return false
         case .user:
             return false
         case .currentStep:

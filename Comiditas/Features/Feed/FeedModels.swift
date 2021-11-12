@@ -17,3 +17,14 @@ enum Feed {
     }
 
 }
+
+enum Recommendations {
+    struct Response {
+        let recipes: DailySpecial
+    }
+
+    struct ViewModel {
+        let recipes: DailySpecial
+    }
+
+}
