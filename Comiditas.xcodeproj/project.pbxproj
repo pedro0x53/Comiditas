@@ -311,12 +311,12 @@
 			children = (
 				18398CF326FA669B0054E054 /* Utils */,
 				18819C822726E1E1008B1B7B /* Views */,
-				18819C802726E1CE008B1B7B /* StepsCoordinator.swift */,
-				18819C762726DE45008B1B7B /* StepModels.swift */,
+				18819C7A2726DE72008B1B7B /* StepsWorker.swift */,
 				18819C7E2726DE99008B1B7B /* StepsInteractor.swift */,
 				18819C782726DE62008B1B7B /* StepsViewController.swift */,
-				18819C7A2726DE72008B1B7B /* StepsWorker.swift */,
 				18819C7C2726DE81008B1B7B /* StepsPresenter.swift */,
+				18819C802726E1CE008B1B7B /* StepsCoordinator.swift */,
+				18819C762726DE45008B1B7B /* StepModels.swift */,
 			);
 			path = Steps;
 			sourceTree = "<group>";

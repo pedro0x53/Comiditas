@@ -8,24 +8,13 @@
 import UIKit
 
 protocol NextAndPreviousDelegate: AnyObject {
-    func didPressNextButton(currentStepNumber: Int)
-    func didPressPreviousButton(currentStepNumber: Int)
-    func didFinish()
+    func didPressNextButton()
+    func didPressPreviousButton()
 }
 
 class NextAndPreviousStackView: UIStackView {
 
     weak var delegate: NextAndPreviousDelegate?
-
-    private var stepNumber: Int {
-        let lastCurrentStepChar = "\(currentPageLabel.text!.last!)"
-        return Int(lastCurrentStepChar)!
-    }
-
-    private var totalStepsNumber: Int {
-        let lastTotalStepsChar = "\(totalPagesLabel.text!.last!)"
-        return Int(lastTotalStepsChar)!
-    }
 
     // MARK: - Views
     lazy var nextButton: UIButton = {
@@ -100,22 +89,13 @@ class NextAndPreviousStackView: UIStackView {
     // MARK: - Selectors
 
     @objc func nextButtonAction(_ sender: UIButton) {
-        if stepNumber == totalStepsNumber {
-            delegate?.didFinish()
-            HapticsManager.shared.vibrate(for: .success)
-        } else {
-            delegate?.didPressNextButton(currentStepNumber: stepNumber)
-            HapticsManager.shared.vibrate(for: .success)
-        }
+        delegate?.didPressNextButton()
+        HapticsManager.shared.vibrate(for: .success)
     }
 
     @objc func previousButtonAction(_ sender: UIButton) {
-        if stepNumber > 1 {
-            let lastChar = "\(currentPageLabel.text!.last!)"
-            let stepNumber = Int(lastChar)!
-            delegate?.didPressPreviousButton(currentStepNumber: stepNumber)
-            HapticsManager.shared.vibrate(for: .success)
-        }
+        delegate?.didPressPreviousButton()
+        HapticsManager.shared.vibrate(for: .success)
     }
 
 }

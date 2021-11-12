@@ -7,8 +7,8 @@
 
 import UIKit
 
-protocol StepsCoordinatorProtocol {
-    func coordinateBack()
+protocol StepsCoordinatorProtocol: NSObjectProtocol, Coordinator {
+    func dismiss(animated: Bool, completion: (() -> Void)?)
     func presentDidModal(
         with image: UIImage?,
         title: String,
@@ -18,7 +18,7 @@ protocol StepsCoordinatorProtocol {
     )
 }
 
-class StepsCoordinator: Coordinator {
+class StepsCoordinator: NSObject, StepsCoordinatorProtocol {
 
     let navigationController: UINavigationController
     var recipe: RecipeJson?
@@ -31,18 +31,16 @@ class StepsCoordinator: Coordinator {
     func start() {
         if let recipe = recipe {
             let stepsViewController = StepsViewController()
+            stepsViewController.modalPresentationStyle = .fullScreen
             stepsViewController.recipe = recipe
             stepsViewController.image = image
             stepsViewController.coordinator = self
-            navigationController.modalPresentationStyle = .automatic
             navigationController.present(stepsViewController, animated: true)
         }
     }
-}
 
-extension StepsCoordinator: StepsCoordinatorProtocol {
-    func coordinateBack() {
-        navigationController.popViewController(animated: true)
+    func dismiss(animated: Bool = true, completion: (() -> Void)? = nil) {
+        navigationController.presentedViewController?.dismiss(animated: animated, completion: completion)
     }
 
     func presentDidModal(
@@ -60,5 +58,4 @@ extension StepsCoordinator: StepsCoordinatorProtocol {
         finishCoordinator.okAction = okAction
         coordinate(to: finishCoordinator)
     }
-
 }

@@ -36,6 +36,11 @@ class OverviewViewController: UIViewController {
         setupNavBar()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = false
+    }
+
     private func setupVIP() {
         let interactor = OverviewInteractor()
         let presenter = OverviewPresenter()

@@ -14,6 +14,7 @@ protocol ModalCoordinatorProtocol: AnyObject {
 
 class ModalCoordinator: Coordinator {
     let navigationController: UINavigationController
+    private var modalVC: ModalViewController?
 
     var image: UIImage?
     var title: String?
@@ -26,7 +27,6 @@ class ModalCoordinator: Coordinator {
     }
 
     func start() {
-
         guard let image = image,
                 let title = title,
                 let description = description,
@@ -39,20 +39,22 @@ class ModalCoordinator: Coordinator {
             closeButtonIsHidden: closeButtonIsHidden,
             okAction: okAction
         )
+
+        self.modalVC = viewController
+
         viewController.modalPresentationStyle = .overCurrentContext
         viewController.modalTransitionStyle = .crossDissolve
         viewController.coordinator = self
-        navigationController.present(viewController, animated: true)
+        navigationController.visibleViewController?.present(viewController, animated: true)
     }
 }
 
 extension ModalCoordinator: ModalCoordinatorProtocol {
     func didFinishRecipe() {
-        navigationController.popViewController(animated: true)
-        navigationController.dismiss(animated: false)
+        self.navigationController.visibleViewController?.dismiss(animated: true)
     }
 
     func cancelDismiss() {
-        navigationController.dismiss(animated: true)
+        self.navigationController.visibleViewController?.presentedViewController?.dismiss(animated: true)
     }
 }

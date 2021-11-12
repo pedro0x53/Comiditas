@@ -143,29 +143,39 @@ extension StepsViewController: StepsDisplayLogic {
 }
 
 extension StepsViewController: NextAndPreviousDelegate {
-    func didPressNextButton(currentStepNumber: Int) {
+    func didPressNextButton() {
+        if stepIdentifier == recipe.steps.count - 1 {
+            stepsView.timerView.timerIsRunning = false
+            self.didFinish()
+            return
+        }
+
         if stepsView.timerView.timerIsRunning {
-            callAlert(okAction: { [weak self] in
-                self?.stepsView.timerView.restartAction()
-                self?.goToNextInstruction(index: currentStepNumber - 1)
-                self?.stepIdentifier = currentStepNumber + 1
+            callAlert(okAction: { [unowned self] in
+                self.stepsView.timerView.restartAction()
+                self.goToNextInstruction(index: self.stepIdentifier)
+                self.stepIdentifier += 1
             })
         } else {
-            self.goToNextInstruction(index: currentStepNumber - 1)
-            self.stepIdentifier = currentStepNumber + 1
+            self.goToNextInstruction(index: self.stepIdentifier)
+            self.stepIdentifier += 1
         }
     }
 
-    func didPressPreviousButton(currentStepNumber: Int) {
+    func didPressPreviousButton() {
         if stepsView.timerView.timerIsRunning {
-            callAlert(okAction: { [weak self] in
-                self?.stepsView.timerView.restartAction()
-                self?.goToPreviousInstruction(index: currentStepNumber - 1)
-                self?.stepIdentifier = currentStepNumber - 1
+            callAlert(okAction: { [unowned self] in
+                self.stepsView.timerView.restartAction()
+                if self.stepIdentifier > 0 {
+                    self.goToPreviousInstruction(index: self.stepIdentifier)
+                    self.stepIdentifier -= 1
+                }
             })
         } else {
-            goToPreviousInstruction(index: currentStepNumber - 1)
-            self.stepIdentifier = currentStepNumber - 1
+            if self.stepIdentifier > 0 {
+                goToPreviousInstruction(index: self.stepIdentifier)
+                self.stepIdentifier -= 1
+            }
         }
     }
 
@@ -174,8 +184,8 @@ extension StepsViewController: NextAndPreviousDelegate {
             with: image,
             title: ModalLocalizable.finished.text,
             description: recipe.name,
-            closeButtonIsHidden: true, okAction: { [weak self] in
-                self?.coordinator?.coordinateBack()
+            closeButtonIsHidden: true, okAction: { [unowned self] in
+                self.coordinator?.dismiss(animated: false)
             })
     }
 
@@ -215,9 +225,9 @@ extension StepsViewController: SpeechManagerDelegate {
         case .none:
             return
         case .nextStep:
-            didPressNextButton(currentStepNumber: stepIdentifier)
+            didPressNextButton()
         case .previousStep:
-            didPressPreviousButton(currentStepNumber: stepIdentifier)
+            didPressPreviousButton()
         case .currentStep:
             guard let currentStepText = stepsView.recipeStepLabel.text else {
                 return
@@ -240,6 +250,6 @@ extension StepsViewController: SpeechManagerDelegate {
 
 extension StepsViewController: DismissDelegate {
     func dismissButton() {
-        self.dismiss(animated: true, completion: nil)
+        self.coordinator?.dismiss()
     }
 }
