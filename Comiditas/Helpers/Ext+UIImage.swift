@@ -11,6 +11,7 @@ extension UIImage {
     enum AssetIdentifier: String {
         case imgPortion
         case emptyImage
+        case settingsicon
     }
 
     convenience init?(assetIdentifier: AssetIdentifier) {
