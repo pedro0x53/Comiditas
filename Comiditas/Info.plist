@@ -64,5 +64,9 @@
 	</array>
 	<key>UIUserInterfaceStyle</key>
 	<string>Light</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>You can use voice commands to control the app</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Audio is recorded to transcribe your speech</string>
 </dict>
 </plist>
