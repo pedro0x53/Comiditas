@@ -649,7 +649,7 @@
             "steps": [
                {
                   "step": 1,
-                  "stepDescription": "Cozinhe o brócolia no vapor até que fique al dente, nem muito duro nem muito macio. Isso pode demorar cerca de 10 minutos.",
+                  "stepDescription": "Cozinhe o brócolis no vapor até que fique al dente, nem muito duro nem muito macio. Isso pode demorar cerca de 10 minutos.",
                   "hasTimer": true,
                   "timer": 600
                },
