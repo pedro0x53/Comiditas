@@ -17,15 +17,17 @@ class FeedInteractor: FeedInteractorProtocol {
 
     func getRecipes() {
         let json = RecipeJsonRepository(named: "Recipes")
-        let data = json.readAll()
+        guard let data = json.readAll([RecipeJson].self) else { return }
         let response = Feed.Response(recipes: data)
         presenter?.presentRecipes(response: response)
     }
 
     func getRecommendations() {
-        let json = RecipeJsonRepository(named: "Recommendations")
-        let data = json.readAll()
-        let response = Feed.Response(recipes: data)
-        presenter?.presentRecommendations(response: response)
+        let json = RecipeJsonRepository(named: "DailySpecials")
+        guard let data = json.readAll([DailySpecial].self) else { return }
+        if let random = data.randomElement() {
+            let response = Recommendations.Response(recipes: random)
+            presenter?.presentRecommendations(response: response)
+        }
     }
 }

@@ -9,6 +9,7 @@ import UIKit
 
 protocol FeedCoordinatorProtocol: AnyObject {
     func navigateToOverview(recipe: RecipeJson)
+    func navigateToSearch()
 }
 
 class FeedCoordinator: Coordinator {
@@ -26,6 +27,11 @@ class FeedCoordinator: Coordinator {
 }
 
 extension FeedCoordinator: FeedCoordinatorProtocol {
+    func navigateToSearch() {
+        let searchCoordinator = SearchCoordinator(navigationController: navigationController)
+        coordinate(to: searchCoordinator)
+    }
+
     func navigateToOverview(recipe: RecipeJson) {
         let overviewCoordinator = OverviewCoordinator(navigationController: navigationController)
         overviewCoordinator.recipe = recipe

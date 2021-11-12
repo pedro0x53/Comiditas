@@ -9,9 +9,8 @@ import UIKit
 
 extension UIImage {
     enum AssetIdentifier: String {
-        case exemple = "exemple"
-        case icExemple = "ic_exemple"
-        case imgPizza = "pizza"
+        case imgPortion
+        case emptyImage
     }
 
     convenience init?(assetIdentifier: AssetIdentifier) {

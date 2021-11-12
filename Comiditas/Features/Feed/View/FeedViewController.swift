@@ -9,13 +9,13 @@ import UIKit
 
 protocol FeedViewControllerProtocol: AnyObject {
     func displayRecipes(viewModel: Feed.ViewModel)
-    func displayRecommendations(viewModel: Feed.ViewModel)
+    func displayRecommendations(viewModel: Recommendations.ViewModel)
 }
 
 class FeedViewController: UIViewController {
     var coordinator: FeedCoordinatorProtocol?
     let contentView = FeedView(frame: UIScreen.main.bounds)
-    let tag: [String] = [FeedLocalizable.candy.text, FeedLocalizable.salted.text]
+    var sectionsName = [FeedLocalizable.recommendedForYou.text, FeedLocalizable.otherRecipes.text]
     var interactor: FeedInteractorProtocol?
     var recipes: [RecipeJson] = [] {
         didSet {
@@ -42,11 +42,9 @@ class FeedViewController: UIViewController {
     }
 
     func setupViewController() {
-        contentView.tagCollectionView.delegate = self
-        contentView.tagCollectionView.dataSource = self
         contentView.tableView.delegate = self
         contentView.tableView.dataSource = self
-        title = "Comiditas"
+        title = FeedLocalizable.title.text
     }
 
     func setupVIP() {
@@ -57,12 +55,15 @@ class FeedViewController: UIViewController {
         viewController.interactor = interactor
         interactor.presenter = presenter
         presenter.viewController = viewController
+
+        contentView.delegate = self
     }
 }
 
 extension FeedViewController: FeedViewControllerProtocol {
-    func displayRecommendations(viewModel: Feed.ViewModel) {
-        self.recommendations = viewModel.recipes
+    func displayRecommendations(viewModel: Recommendations.ViewModel) {
+        self.recommendations = viewModel.recipes.recipes
+        self.sectionsName[0] = viewModel.recipes.title
         self.contentView.tableView.reloadData()
     }
 
@@ -72,29 +73,13 @@ extension FeedViewController: FeedViewControllerProtocol {
     }
 }
 
-extension FeedViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return tag.count
-    }
-
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-
-    func collectionView(_ collectionView: UICollectionView,
-                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(
-                withReuseIdentifier: "TagCollectionViewCell", for: indexPath) as? TagCollectionViewCell
-        else { return UICollectionViewCell() }
-
-        cell.titleLabel.text = tag[indexPath.row]
-        return cell
-    }
-}
-
 extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        if section == .zero {
+            return 1
+        }
+
+        return recipes.count
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -102,57 +87,80 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        if section != .zero && FeatureFlags.tagsFeed.isEnable {
-            let rect = CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 44)
-            let headerView = UIView(frame: rect)
-            headerView.backgroundColor = Colors.background
-            let label = UILabel(frame: CGRect(x: 15, y: 0, width: tableView.frame.size.width, height: 44))
-            label.text = FeedLocalizable.recommendedForYou.text
-            label.textColor = Colors.primary
-            label.isAccessibilityElement = true
-            label.accessibilityLabel = FeedLocalizable.recommendedForYou.text
-            label.accessibilityTraits = .header
-            label.accessibilityValue = FeedLocalizable.recommendedForYou.text
-            label.font = Fonts.h3
-            headerView.addSubview(label)
-            return headerView
-        } else {
-            let sectionsName = [FeedLocalizable.recommendedForYou.text, FeedLocalizable.otherRecipes.text]
-            let rect = CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 44)
-            let headerView = UIView(frame: rect)
-            headerView.backgroundColor = Colors.background
-            let label = UILabel(frame: CGRect(x: 15, y: 0, width: tableView.frame.size.width, height: 44))
-            label.text = sectionsName[section]
-            label.isAccessibilityElement = true
-            label.accessibilityLabel = sectionsName[section]
-            label.accessibilityTraits = .header
-            label.textColor = Colors.primary
-            label.font = Fonts.h3
-            headerView.addSubview(label)
-            return headerView
-        }
+        let rect = CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 44)
+        let headerView = UIView(frame: rect)
+        headerView.backgroundColor = Colors.background
+
+        let label = UILabel(frame: CGRect(x: 15, y: 0, width: tableView.frame.size.width, height: 44))
+        label.text = sectionsName[section]
+        label.isAccessibilityElement = true
+        label.accessibilityLabel = sectionsName[section]
+        label.accessibilityTraits = .header
+        label.textColor = Colors.textDark
+        label.font = Fonts.h3
+        headerView.addSubview(label)
+        return headerView
     }
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        if FeatureFlags.tagsFeed.isEnable {
-            return .zero
-        } else {
-            return 44
-        }
+        return 44
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "FeedTableViewCell") as? FeedTableViewCell
+        if indexPath.section == .zero {
+            guard let cell = tableView.dequeueReusableCell(
+                    withIdentifier: "FeedTableViewCell",
+                    for: indexPath) as? FeedTableViewCell
             else { return UITableViewCell() }
-        cell.delegate = self
-        cell.reloadData()
-        cell.data = (indexPath.section == .zero) ? recommendations : recipes
-        return cell
+            cell.data = recommendations
+            cell.selectionStyle = .none
+            cell.delegate = self
+            return cell
+        } else {
+            guard let cell = tableView.dequeueReusableCell(
+                    withIdentifier: "RecipesTableViewCell",
+                    for: indexPath
+            ) as? RecipesTableViewCell else { return UITableViewCell() }
+            cell.selectionStyle = .none
+            if let url = URL(string: recipes[indexPath.row].imageURL) {
+                cell.recipeImageView.load(url: url)
+            }
+
+            cell.titleLabel.text = recipes[indexPath.row].name
+            cell.titleLabel.accessibilityTraits = .staticText
+            cell.titleLabel.accessibilityLabel = recipes[indexPath.row].name
+
+            cell.labelPortion.text = "\(recipes[indexPath.row].servings) porções"
+            cell.labelPortion.accessibilityTraits = .staticText
+            cell.labelPortion.accessibilityLabel = "\(recipes[indexPath.row].servings) porções"
+
+            let time = Time.secondsToHoursMinutesSeconds(seconds: recipes[indexPath.row].prepTime)
+            cell.labelTime.text = Time.getString(for: time).accessible
+            cell.labelTime.accessibilityTraits = .staticText
+            cell.labelTime.accessibilityLabel = Time.getString(for: time).accessible
+
+            cell.labelStar.text = "\(recipes[indexPath.row].rate).0"
+            return cell
+        }
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section != .zero {
+            coordinator?.navigateToOverview(recipe: recipes[indexPath.row])
+        } else {
+            coordinator?.navigateToOverview(recipe: recommendations[indexPath.row])
+        }
     }
 }
 
 extension FeedViewController: FeedTableViewCellProtocol {
     func didSelectItemAt(recipe: RecipeJson) {
         coordinator?.navigateToOverview(recipe: recipe)
+    }
+}
+
+extension FeedViewController: FeedViewProtocol {
+    func tapSearchBar() {
+        coordinator?.navigateToSearch()
     }
 }
