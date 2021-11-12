@@ -79,80 +79,37 @@ class StepsView: UIView {
 
     }
 
-    //swiftlint:disable function_body_length
     func setupLayout() {
+        self.backgroundColor = Colors.background
 
         NSLayoutConstraint.activate([
+            closeButton.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 16),
+            closeButton.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor,
+                                                  constant: -18),
+            closeButton.heightAnchor.constraint(equalToConstant: 45),
 
-            closeButton.topAnchor.constraint(
-                equalTo: self.safeAreaLayoutGuide.topAnchor,
-                constant: 16
-            ),
-            closeButton.trailingAnchor.constraint(
-                equalTo: self.safeAreaLayoutGuide.trailingAnchor,
-                constant: -18
-            ),
-            closeButton.heightAnchor.constraint(
-                equalToConstant: 45),
+            recipeStepLabel.topAnchor.constraint(equalTo: self.closeButton.bottomAnchor, constant: 55),
+            recipeStepLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
+            recipeStepLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
+            recipeStepLabel.bottomAnchor.constraint(lessThanOrEqualTo: self.bottomAnchor, constant: -20),
 
-            recipeStepLabel.topAnchor.constraint(
-                equalTo: self.closeButton.bottomAnchor,
-                constant: 55
-            ),
-            recipeStepLabel.leadingAnchor.constraint(
-                equalTo: self.leadingAnchor, constant: 16),
-            recipeStepLabel.trailingAnchor.constraint(
-                equalTo: self.trailingAnchor, constant: -16),
-            recipeStepLabel.bottomAnchor.constraint(
-                lessThanOrEqualTo: self.bottomAnchor,
-                constant: -20),
+            backgroundLineImageView.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 35),
+            backgroundLineImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            backgroundLineImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
 
-            backgroundLineImageView.centerYAnchor.constraint(
-                equalTo: self.centerYAnchor,
-                constant: 35
-            ),
-            backgroundLineImageView.leadingAnchor.constraint(
-                equalTo: self.leadingAnchor
-            ),
-            backgroundLineImageView.trailingAnchor.constraint(
-                equalTo: self.trailingAnchor
-            ),
+            timerView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            timerView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            timerView.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.4),
+            timerView.centerYAnchor.constraint(equalTo: backgroundLineImageView.centerYAnchor),
 
-            timerView.leadingAnchor.constraint(
-                equalTo: self.leadingAnchor
-            ),
-            timerView.trailingAnchor.constraint(
-                equalTo: self.trailingAnchor
-            ),
-            timerView.heightAnchor.constraint(
-                equalTo: self.heightAnchor,
-                multiplier: 0.4
-            ),
-            timerView.centerYAnchor.constraint(
-                equalTo: backgroundLineImageView.centerYAnchor
-            ),
+            nextStepView.bottomAnchor.constraint(equalTo: stackView.topAnchor, constant: -35),
+            nextStepView.leadingAnchor.constraint(equalTo: recipeStepLabel.leadingAnchor),
+            nextStepView.trailingAnchor.constraint(equalTo: recipeStepLabel.trailingAnchor),
 
-            nextStepView.bottomAnchor.constraint(
-                equalTo: stackView.topAnchor,
-                constant: -35
-            ),
-            nextStepView.leadingAnchor.constraint(
-                equalTo: recipeStepLabel.leadingAnchor
-            ),
-            nextStepView.trailingAnchor.constraint(
-                equalTo: recipeStepLabel.trailingAnchor
-            ),
-
-            stackView.heightAnchor.constraint(
-                lessThanOrEqualToConstant: 30),
-            stackView.bottomAnchor.constraint(
-                equalTo: self.safeAreaLayoutGuide.bottomAnchor,
-                constant: -10),
-            stackView.leadingAnchor.constraint(
-                equalTo: self.leadingAnchor, constant: 16),
-            stackView.trailingAnchor.constraint(
-                equalTo: self.trailingAnchor, constant: -16)
-
+            stackView.heightAnchor.constraint(lessThanOrEqualToConstant: 30),
+            stackView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -10),
+            stackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
+            stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16)
         ])
     }
 

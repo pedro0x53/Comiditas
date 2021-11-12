@@ -79,6 +79,8 @@ class SpeechManager: NSObject, SpeechManagerProtocol {
             } else {
                 self.state = .recognitionNotAvailable
             }
+
+            UserDefaults.standard.set(result, forKey: "voiceCommands")
         }
     }
 

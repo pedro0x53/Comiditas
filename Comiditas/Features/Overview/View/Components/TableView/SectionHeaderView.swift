@@ -32,7 +32,6 @@ class SectionHeaderView: UITableViewHeaderFooterView, BaseViewProtocol {
         button.tintColor = Colors.primary
         let copyImage = UIImage(systemName: "rectangle.portrait.on.rectangle.portrait")
         button.setImage(copyImage, for: .normal)
-        button.addTarget(self, action: #selector(copyAction), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -42,6 +41,7 @@ class SectionHeaderView: UITableViewHeaderFooterView, BaseViewProtocol {
 
         setupView()
         setupConstraints()
+        setupCopyAction()
     }
 
     required init?(coder: NSCoder) {
@@ -79,6 +79,10 @@ class SectionHeaderView: UITableViewHeaderFooterView, BaseViewProtocol {
             copyButton.accessibilityLabel = "\(OverviewLocalizable.copy.text) \(OverviewLocalizable.directions.text)"
             copyButton.accessibilityHint = OverviewLocalizable.copyDirectionsHint.text
         }
+    }
+
+    private func setupCopyAction() {
+        copyButton.addTarget(self, action: #selector(copyAction), for: .touchUpInside)
     }
 
     @objc func copyAction() {

@@ -11,4 +11,8 @@ class StepsWorker {
     func readSteps(from recipe: RecipeJson) -> [StepJson] {
         return recipe.steps
     }
+
+    func getLockscreenState() -> Bool {
+        return UserDefaults.standard.bool(forKey: "lockscreen")
+    }
 }

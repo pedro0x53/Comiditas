@@ -2,7 +2,7 @@
 //  FeedTableViewCell.swift
 //  Comiditas
 //
-//  Created by Beatriz Carlos on 20/09/21.
+//  Created by Beatriz Carlos on 26/10/21.
 //
 
 import UIKit
@@ -13,7 +13,7 @@ protocol FeedTableViewCellProtocol: AnyObject {
 
 class FeedTableViewCell: UITableViewCell {
     weak var delegate: FeedTableViewCellProtocol?
-
+    var coordinator: FeedCoordinatorProtocol?
     var data: [RecipeJson] = [] {
         didSet {
             self.collectionView.reloadData()
@@ -23,14 +23,11 @@ class FeedTableViewCell: UITableViewCell {
     // MARK: - Initialization
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        setupUI()
     }
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-
-    override func layoutSubviews() {
-        setupUI()
     }
 
     lazy var collectionView: UICollectionView = {
@@ -46,13 +43,11 @@ class FeedTableViewCell: UITableViewCell {
 
     private func collectionViewLayout() -> UICollectionViewLayout {
         let layout = UICollectionViewFlowLayout()
-        let heightCV: CGFloat = FeatureFlags.user.isEnable ? 250 : 214
-
         layout.sectionInset = UIEdgeInsets(top: .zero, left: 10, bottom: .zero, right: 10)
         layout.scrollDirection = .horizontal
         layout.minimumInteritemSpacing = .zero
-        layout.minimumLineSpacing = .zero
-        layout.itemSize = CGSize(width: UIScreen.main.bounds.width * 0.9, height: heightCV)
+        layout.minimumLineSpacing = 8
+        layout.itemSize = CGSize(width: UIScreen.main.bounds.width * 0.9, height: 300)
 
         return layout
     }
@@ -62,9 +57,8 @@ class FeedTableViewCell: UITableViewCell {
     }
 }
 
-// MARK: - UI Setup
 extension FeedTableViewCell {
-    private func setupUI() {
+    func setupUI() {
         addSubview(collectionView)
         NSLayoutConstraint.activate([
             collectionView.widthAnchor.constraint(equalTo: self.widthAnchor),
@@ -74,52 +68,48 @@ extension FeedTableViewCell {
 }
 
 extension FeedTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return data.count
-    }
-
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
+    }
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return data.count
     }
 
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(
-                withReuseIdentifier: "FeedCollectionViewCell", for: indexPath) as? FeedCollectionViewCell
-        else { return UICollectionViewCell() }
-
-        var subtitleLabel = ""
-        var titleLabel = ""
-
-        if data.count > 0 {
-            let recipe = data[indexPath.row]
-            cell.titleLabel.text = recipe.name
-            titleLabel = "\(recipe.name)"
-            cell.titleLabel.accessibilityTraits = .staticText
-
-            let time = Time.secondsToHoursMinutesSeconds(seconds: recipe.prepTime)
-            if time.minutes == 0 {
-                let timeCell = time.hour == 1 ? "hora" : "horas"
-                cell.subtitleLabel.text = "\(time.hour) \(timeCell) • \(recipe.servings) porções"
-                subtitleLabel =
-                    "Tempo de preparo de \(time.hour) \(timeCell) e rendimento de \(recipe.servings) porções"
-                cell.subtitleLabel.accessibilityTraits = .staticText
-
-            } else {
-                cell.subtitleLabel.text = "\(time.minutes) minutos • \(recipe.servings) porções"
-
-                subtitleLabel = "Tempo de preparo de \(time.minutes) minutos e rendimento de \(recipe.servings) porções"
-                cell.subtitleLabel.accessibilityTraits = .staticText
-            }
-            if let url = URL(string: recipe.imageURL) {
-                cell.imageView.load(url: url)
-            }
+                withReuseIdentifier: "FeedCollectionViewCell",
+                for: indexPath) as? FeedCollectionViewCell else {
+            return UICollectionViewCell()
         }
-        cell.accessibilityLabel = [titleLabel, subtitleLabel].joined(separator: ",")
+        if let url = URL(string: data[indexPath.row].imageURL) {
+            cell.imageView.load(url: url)
+        }
+
+        cell.titleLabel.text = data[indexPath.row].name
+        cell.titleLabel.accessibilityTraits = .staticText
+        cell.titleLabel.accessibilityLabel = data[indexPath.row].name
+
+        cell.labelPortion.text = "\(data[indexPath.row].servings) porções"
+        cell.labelPortion.accessibilityTraits = .staticText
+        cell.labelPortion.accessibilityLabel = "\(data[indexPath.row].servings) porções"
+
+        let time = Time.secondsToHoursMinutesSeconds(seconds: data[indexPath.row].prepTime)
+        cell.labelTime.text = Time.getString(for: time).accessible
+        cell.labelTime.accessibilityTraits = .staticText
+        cell.labelTime.accessibilityLabel = Time.getString(for: time).accessible
         return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         delegate?.didSelectItemAt(recipe: data[indexPath.row])
+    }
+}
+
+extension FeedTableViewCell {
+    open override func addSubview(_ view: UIView) {
+        super.addSubview(view)
+        sendSubviewToBack(contentView)
     }
 }

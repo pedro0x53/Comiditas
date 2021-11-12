@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Speech
 
 protocol StepsDisplayLogic: AnyObject {
     func displaySteps(viewModel: StepModels.GetSteps.ViewModel)
@@ -45,20 +46,6 @@ class StepsViewController: UIViewController {
 
     // MARK: Object lifecycle
 
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        setUp()
-        speechManager = SpeechManager()
-        speechManager?.delegate = self
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setUp()
-        speechManager = SpeechManager()
-        speechManager?.delegate = self
-    }
-
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         fetchSteps()
@@ -66,7 +53,13 @@ class StepsViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        speechManager?.prepare()
+
+        let speechStatus = SFSpeechRecognizer.authorizationStatus()
+        let settingsSpeech = UserDefaults.standard.bool(forKey: "voiceCommands")
+
+        if speechStatus == .notDetermined || (speechStatus == .authorized && settingsSpeech) {
+            speechManager?.prepare()
+        }
     }
 
     // MARK: - View Cycle
@@ -78,7 +71,16 @@ class StepsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = Colors.background
+
+        setUp()
+
+        let speechStatus = SFSpeechRecognizer.authorizationStatus()
+        let settingsSpeech = UserDefaults.standard.bool(forKey: "voiceCommands")
+
+        if speechStatus == .notDetermined || (speechStatus == .authorized && settingsSpeech) {
+            speechManager = SpeechManager()
+            speechManager?.delegate = self
+        }
     }
 
     // MARK: - Helper Methods
@@ -138,6 +140,8 @@ extension StepsViewController: StepsDisplayLogic {
         stepsView.nextStepView.previewStepDescription = hasTimer ? nil : preview ?? nil
         stepsView.stackView.currentPageLabel.text = "\(StepsLocalizable.step.text) \(step.step)"
         stepsView.setupLine(for: step.step)
+
+        newStepPresented()
     }
 
 }
@@ -176,6 +180,16 @@ extension StepsViewController: NextAndPreviousDelegate {
                 goToPreviousInstruction(index: self.stepIdentifier)
                 self.stepIdentifier -= 1
             }
+        }
+    }
+
+    private func newStepPresented() {
+        if UserDefaults.standard.bool(forKey: "lockscreen") &&
+            self.recipe.steps[stepIdentifier].hasTimer &&
+            self.recipe.steps[stepIdentifier].timer < 300 {
+            UIApplication.shared.isIdleTimerDisabled = true
+        } else {
+            UIApplication.shared.isIdleTimerDisabled = false
         }
     }
 
