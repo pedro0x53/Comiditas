@@ -185,7 +185,6 @@ extension StepsViewController: NextAndPreviousDelegate {
 
     private func newStepPresented() {
         if UserDefaults.standard.bool(forKey: "lockscreen") &&
-            self.recipe.steps[stepIdentifier].hasTimer &&
             self.recipe.steps[stepIdentifier].timer < 300 {
             UIApplication.shared.isIdleTimerDisabled = true
         } else {
