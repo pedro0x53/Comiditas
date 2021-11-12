@@ -649,7 +649,7 @@
             "steps": [
                {
                   "step": 1,
-                  "stepDescription": "Cozinhe o brócolia no vapor até que fique al dente, nem muito duro nem muito macio. Isso pode demorar cerca de 10 minutos.",
+                  "stepDescription": "Cozinhe o brócolis no vapor até que fique al dente, nem muito duro nem muito macio. Isso pode demorar cerca de 10 minutos.",
                   "hasTimer": true,
                   "timer": 600
                },
@@ -690,9 +690,9 @@
             "name": "Hambúrguer de Lentilha",
             "imageURL": "https://temperoalternativo.com.br/wp-content/uploads/2015/01/hamburger-de-lentilha-imagem-destaque-1024x574.jpg",
             "difficultyLevel": 1,
-            "servings": 0,
+            "servings": 1,
             "rate": 5,
-            "prepTime": 0,
+            "prepTime": 180,
             "categories" : [
                "Vegetariano",
                "Vegano"

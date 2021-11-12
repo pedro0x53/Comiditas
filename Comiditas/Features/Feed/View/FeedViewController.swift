@@ -45,6 +45,19 @@ class FeedViewController: UIViewController {
         contentView.tableView.delegate = self
         contentView.tableView.dataSource = self
         title = FeedLocalizable.title.text
+        let image = UIImage(assetIdentifier: .settingsicon)!.withRenderingMode(.alwaysOriginal)
+        let addButton: UIBarButtonItem = UIBarButtonItem(
+            image: image,
+            style: .done,
+            target: self,
+            action: #selector(addTapped)
+        )
+        self.navigationItem.rightBarButtonItem = addButton
+
+    }
+
+    @objc func addTapped(sender: AnyObject) {
+        coordinator?.navigateToSettings()
     }
 
     func setupVIP() {
