@@ -21,46 +21,46 @@
         "rate": 5,
         "steps": [
             {
-               "step": 1,
-               "stepDescription": "Frite bem o bacon, até ficar crocante (pode-se adicionar salame picado se quiser).",
-               "hasTimer": true,
-               "timer": 300
+                "step": 1,
+                "stepDescription": "Frite bem o bacon, até ficar crocante (pode-se adicionar salame picado se quiser).",
+                "hasTimer": true,
+                "timer": 300
             },
             {
-               "step": 2,
-               "stepDescription": "Coloque o macarrão para cozinhar em água e sal. Verfique na embalagem o tempo de cozimento do macarrão.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 2,
+                "stepDescription": "Coloque o macarrão para cozinhar em água e sal. Verfique na embalagem o tempo de cozimento do macarrão.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 3,
-               "stepDescription": "No refratário onde será servido o macarrão, bata bem os ovos com um garfo.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 3,
+                "stepDescription": "No refratário onde será servido o macarrão, bata bem os ovos com um garfo.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 4,
-               "stepDescription": "Tempere com sal e pimenta a gosto, e junte o queijo ralado, também a gosto.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 4,
+                "stepDescription": "Tempere com sal e pimenta a gosto, e junte o queijo ralado, também a gosto.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 5,
-               "stepDescription": "Quando o macarrão estiver pronto, escorra e coloque (bem quente) sobre a mistura de ovos, misture bem.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 5,
+                "stepDescription": "Quando o macarrão estiver pronto, escorra e coloque (bem quente) sobre a mistura de ovos, misture bem.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 6,
-               "stepDescription": "O calor da massa cozinha os ovos.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 6,
+                "stepDescription": "O calor da massa cozinha os ovos.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 7,
-               "stepDescription": "Coloque o bacon, ainda quente, sobre o macarrão e sirva.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 7,
+                "stepDescription": "Coloque o bacon, ainda quente, sobre o macarrão e sirva.",
+                "hasTimer": false,
+                "timer": 0
             },
         ]
     },
@@ -86,34 +86,34 @@
         "rate": 3,
         "steps": [
             {
-               "step": 1,
-               "stepDescription": "Triture em migalhas o biscoito e misture com a manteiga derretida.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 1,
+                "stepDescription": "Triture em migalhas o biscoito e misture com a manteiga derretida.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 2,
-               "stepDescription": "Cubra uma forma de fundo removível de cerca de 22/ 24 cm com esta massa, suba um pouco nas laterais.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 2,
+                "stepDescription": "Cubra uma forma de fundo removível de cerca de 22/ 24 cm com esta massa, suba um pouco nas laterais.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 3,
-               "stepDescription": "Cubra a massa com o doce de leite.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 3,
+                "stepDescription": "Cubra a massa com o doce de leite.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 4,
-               "stepDescription": "Corte as bananas em rodelas e disponha sobre o doce de leite.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 4,
+                "stepDescription": "Corte as bananas em rodelas e disponha sobre o doce de leite.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 5,
-               "stepDescription": "Cubra com o creme de chantilly ou com os suspiros inteiros ou triturados.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 5,
+                "stepDescription": "Cubra com o creme de chantilly ou com os suspiros inteiros ou triturados.",
+                "hasTimer": false,
+                "timer": 0
             }
         ]
     },
@@ -150,70 +150,70 @@
         "rate": 3,
         "steps": [
             {
-               "step": 1,
-               "stepDescription": "Em uma panela coloque uma colher de sopa de azeite em uma panela e refoque o alho e o gengibre.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 1,
+                "stepDescription": "Em uma panela coloque uma colher de sopa de azeite em uma panela e refoque o alho e o gengibre.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 2,
-               "stepDescription": "Em seguida, adicione o açúcar e deixe caramelizar.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 2,
+                "stepDescription": "Em seguida, adicione o açúcar e deixe caramelizar.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 3,
-               "stepDescription": "Acrescente o shoyu e o o sake e deixe formar uma espécie de calda.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 3,
+                "stepDescription": "Acrescente o shoyu e o o sake e deixe formar uma espécie de calda.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 4,
-               "stepDescription": "Coe e reserve o molho.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 4,
+                "stepDescription": "Coe e reserve o molho.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 5,
-               "stepDescription": "Tempere o frango filezinho sassami com sal e pimenta, aqueça uma frigideira com azeite e grelhe-o. Abaixe o fogo e coloque cerca de 100 ml de água e deixe cozinhar por 5 minutos.",
-               "hasTimer": true,
-               "timer": 300
+                "step": 5,
+                "stepDescription": "Tempere o frango filezinho sassami com sal e pimenta, aqueça uma frigideira com azeite e grelhe-o. Abaixe o fogo e coloque cerca de 100 ml de água e deixe cozinhar por 5 minutos.",
+                "hasTimer": true,
+                "timer": 300
             },
             {
-               "step": 6,
-               "stepDescription": "Vire o frango e deixe cozinhar por mais 5 minutos pincelando o molho tarê sobre o frango.",
-               "hasTimer": true,
-               "timer": 300
+                "step": 6,
+                "stepDescription": "Vire o frango e deixe cozinhar por mais 5 minutos pincelando o molho tarê sobre o frango.",
+                "hasTimer": true,
+                "timer": 300
             },
             {
-               "step": 7,
-               "stepDescription": "Cozinhe o macarrão lamên de acordo com as instruções da embalagem.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 7,
+                "stepDescription": "Cozinhe o macarrão lamên de acordo com as instruções da embalagem.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 8,
-               "stepDescription": "Coe e reserve o caldo.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 8,
+                "stepDescription": "Coe e reserve o caldo.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 9,
-               "stepDescription": "Cozinhe os legumes cortados finamente no caldo do macarrão (já com o tempero).",
-               "hasTimer": false,
-               "timer": 0
+                "step": 9,
+                "stepDescription": "Cozinhe os legumes cortados finamente no caldo do macarrão (já com o tempero).",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 10,
-               "stepDescription": "Sirva todos os ingredientes num prato fundo com meio ovo em cada prato e uma fatia de nori por cima.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 10,
+                "stepDescription": "Sirva todos os ingredientes num prato fundo com meio ovo em cada prato e uma fatia de nori por cima.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 10,
-               "stepDescription": "Acrescente também o Sassami de frango fatiado.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 10,
+                "stepDescription": "Acrescente também o Sassami de frango fatiado.",
+                "hasTimer": false,
+                "timer": 0
             }
         ]
     },
@@ -240,46 +240,46 @@
         "rate": 5,
         "steps": [
             {
-               "step": 1,
-               "stepDescription": "Unte com manteiga e farinha de trigo uma forma de 20 centímetros de diâmetro.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 1,
+                "stepDescription": "Unte com manteiga e farinha de trigo uma forma de 20 centímetros de diâmetro.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 2,
-               "stepDescription": "Preaqueça o forno a 190 graus.",
-               "hasTimer": true,
-               "timer": 600
+                "step": 2,
+                "stepDescription": "Preaqueça o forno a 190 graus.",
+                "hasTimer": true,
+                "timer": 600
             },
             {
-               "step": 3,
-               "stepDescription": "Misture bem o açúcar com as raspas da tangerina.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 3,
+                "stepDescription": "Misture bem o açúcar com as raspas da tangerina.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 4,
-               "stepDescription": "Acrescente a farinha, o fermento e o sal. Reserve.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 4,
+                "stepDescription": "Acrescente a farinha, o fermento e o sal. Reserve.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 5,
-               "stepDescription": "Em uma tigela, misture o suco, o óleo e os ovos até incorporarem bem.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 5,
+                "stepDescription": "Em uma tigela, misture o suco, o óleo e os ovos até incorporarem bem.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 6,
-               "stepDescription": "Vire os líquidos sobre os secos e mexa para homogeneizar.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 6,
+                "stepDescription": "Vire os líquidos sobre os secos e mexa para homogeneizar.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 7,
-               "stepDescription": "Coloque a massa na forma preparada e leve ao forno preaquecido por cerca de 30 a 40 minutos.",
-               "hasTimer": true,
-               "timer": 2400
+                "step": 7,
+                "stepDescription": "Coloque a massa na forma preparada e leve ao forno preaquecido por cerca de 30 a 40 minutos.",
+                "hasTimer": true,
+                "timer": 2400
             }
         ]
     },
@@ -305,34 +305,34 @@
         "rate": 3,
         "steps": [
             {
-               "step": 1,
-               "stepDescription": "Com a ajuda de um garfo, amasse bem as bananas até virar uma pasta.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 1,
+                "stepDescription": "Com a ajuda de um garfo, amasse bem as bananas até virar uma pasta.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 2,
-               "stepDescription": "Peneire o cacau e a canela, adicione a aveia e mexa bem.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 2,
+                "stepDescription": "Peneire o cacau e a canela, adicione a aveia e mexa bem.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 3,
-               "stepDescription": "Incorpore o fermento, as nozes e as gotas de chocolate.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 3,
+                "stepDescription": "Incorpore o fermento, as nozes e as gotas de chocolate.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 4,
-               "stepDescription": "Despeje em uma forma de 20 por 30 centímetros, untada com manteiga e forrada com papel manteiga e espalhe uniformemente.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 4,
+                "stepDescription": "Despeje em uma forma de 20 por 30 centímetros, untada com manteiga e forrada com papel manteiga e espalhe uniformemente.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 5,
-               "stepDescription": "Asse em forno preaquecido a 180 graus por 20 minutos.",
-               "hasTimer": true,
-               "timer": 1200
+                "step": 5,
+                "stepDescription": "Asse em forno preaquecido a 180 graus por 20 minutos.",
+                "hasTimer": true,
+                "timer": 1200
             }
         ]
     },
@@ -362,52 +362,52 @@
         "rate": 3,
         "steps": [
             {
-               "step": 1,
-               "stepDescription": "Preaqueça o forno a 190 graus. Unte 6 forminhas muffins com manteiga ou spray desmoldante. Se preferir, você pode assar em forminhas de papel forneável.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 1,
+                "stepDescription": "Preaqueça o forno a 190 graus. Unte 6 forminhas muffins com manteiga ou spray desmoldante. Se preferir, você pode assar em forminhas de papel forneável.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 2,
-               "stepDescription": "Em uma tigela, misture todos os ingredientes secos. Reserve.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 2,
+                "stepDescription": "Em uma tigela, misture todos os ingredientes secos. Reserve.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 3,
-               "stepDescription": "Em seguida, misture todos os ingredientes líquidos em outra tigela.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 3,
+                "stepDescription": "Em seguida, misture todos os ingredientes líquidos em outra tigela.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 4,
-               "stepDescription": "Vire a mistura dos ingredientes líquidos sobre os secos. Misture para homogeneizar.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 4,
+                "stepDescription": "Vire a mistura dos ingredientes líquidos sobre os secos. Misture para homogeneizar.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 5,
-               "stepDescription": "Por último, acrescente a parte do chocolate.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 5,
+                "stepDescription": "Por último, acrescente a parte do chocolate.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 6,
-               "stepDescription": "Vire a massa nas forminhas e finalize com o restante do chocolate.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 6,
+                "stepDescription": "Vire a massa nas forminhas e finalize com o restante do chocolate.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 7,
-               "stepDescription": "Leve ao forno preaquecido por cerca de 20 minutos.",
-               "hasTimer": true,
-               "timer": 1200
+                "step": 7,
+                "stepDescription": "Leve ao forno preaquecido por cerca de 20 minutos.",
+                "hasTimer": true,
+                "timer": 1200
             },
             {
-               "step": 8,
-               "stepDescription": "Se você quiser, pode decorar os muffins de chocolate com merengue.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 8,
+                "stepDescription": "Se você quiser, pode decorar os muffins de chocolate com merengue.",
+                "hasTimer": false,
+                "timer": 0
             }
         ]
     },
@@ -435,46 +435,46 @@
         "rate": 3,
         "steps": [
             {
-               "step": 1,
-               "stepDescription": "Preaqueça o forno a 180 graus e forre uma forma bolo inglês, de 23 centímetros de comprimento, com papel manteiga.",
-               "hasTimer": true,
-               "timer": 600
+                "step": 1,
+                "stepDescription": "Preaqueça o forno a 180 graus e forre uma forma bolo inglês, de 23 centímetros de comprimento, com papel manteiga.",
+                "hasTimer": true,
+                "timer": 600
             },
             {
-               "step": 2,
-               "stepDescription": "Em uma tigela, esfregue as raspas de limão com o açúcar. Isso é importante para liberar os óleos da casca da fruta.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 2,
+                "stepDescription": "Em uma tigela, esfregue as raspas de limão com o açúcar. Isso é importante para liberar os óleos da casca da fruta.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 3,
-               "stepDescription": "Coloque o iogurte, os ovos e misture bem.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 3,
+                "stepDescription": "Coloque o iogurte, os ovos e misture bem.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 4,
-               "stepDescription": "Acrescente o óleo e misture.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 4,
+                "stepDescription": "Acrescente o óleo e misture.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 5,
-               "stepDescription": "Adicione a farinha de trigo misturada ao fermento e o sal.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 5,
+                "stepDescription": "Adicione a farinha de trigo misturada ao fermento e o sal.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 6,
-               "stepDescription": "Vire a massa na forma preparada e leve ao forno até dourar por cerca de 45 minutos. Para saber o ponto fure com um palito, e se sair seco, pode retirar do fogo.",
-               "hasTimer": true,
-               "timer": 2700
+                "step": 6,
+                "stepDescription": "Vire a massa na forma preparada e leve ao forno até dourar por cerca de 45 minutos. Para saber o ponto fure com um palito, e se sair seco, pode retirar do fogo.",
+                "hasTimer": true,
+                "timer": 2700
             },
             {
-               "step": 7,
-               "stepDescription": "Sirva em seguida.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 7,
+                "stepDescription": "Sirva em seguida.",
+                "hasTimer": false,
+                "timer": 0
             }
         ]
     },
@@ -497,46 +497,46 @@
         "rate": 5,
         "steps": [
             {
-               "step": 1,
-               "stepDescription": "Em uma tigela, esfarele com as mãos as sobras de bolo.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 1,
+                "stepDescription": "Em uma tigela, esfarele com as mãos as sobras de bolo.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 2,
-               "stepDescription": "Misture as sobras de bolo com algum tipo de recheio cremoso, como creme de avelã. Se quiser, pode usar doce de leite ou brigadeiro.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 2,
+                "stepDescription": "Misture as sobras de bolo com algum tipo de recheio cremoso, como creme de avelã. Se quiser, pode usar doce de leite ou brigadeiro.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 3,
-               "stepDescription": "Acrescente o recheio até conseguir bolear a massa, sem que fique esfarelando.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 3,
+                "stepDescription": "Acrescente o recheio até conseguir bolear a massa, sem que fique esfarelando.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 4,
-               "stepDescription": "Derreta chocolate da maneira de sua preferência.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 4,
+                "stepDescription": "Derreta chocolate da maneira de sua preferência.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 5,
-               "stepDescription": "Com palitos de pirulito, espete as bolinhas e cubra com chocolate derretido.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 5,
+                "stepDescription": "Com palitos de pirulito, espete as bolinhas e cubra com chocolate derretido.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 6,
-               "stepDescription": "Decore as bolinhas com confeitos coloridos e castanha-de-caju picada.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 6,
+                "stepDescription": "Decore as bolinhas com confeitos coloridos e castanha-de-caju picada.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 7,
-               "stepDescription": "Sirva em seguida.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 7,
+                "stepDescription": "Sirva em seguida.",
+                "hasTimer": false,
+                "timer": 0
             }
         ]
     },
@@ -566,445 +566,863 @@
         "rate": 3,
         "steps": [
             {
-               "step": 1,
-               "stepDescription": "Coloque os cubinhos de maçã em uma tigela e cubra com o açúcar.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 1,
+                "stepDescription": "Coloque os cubinhos de maçã em uma tigela e cubra com o açúcar.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 2,
-               "stepDescription": "Deixe descansar de vinte a trinta minutos, até notar uma água no fundo da tigela, o suco da maçã.",
-               "hasTimer": true,
-               "timer": 1500
+                "step": 2,
+                "stepDescription": "Deixe descansar de vinte a trinta minutos, até notar uma água no fundo da tigela, o suco da maçã.",
+                "hasTimer": true,
+                "timer": 1500
             },
             {
-               "step": 3,
-               "stepDescription": "Junte os ovos e o óleo e mexa bem. Não precisa bater.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 3,
+                "stepDescription": "Junte os ovos e o óleo e mexa bem. Não precisa bater.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 4,
-               "stepDescription": "Peneire a farinha com sal, bicarbonato, canela e noz moscada e junte à tigela com as maçãs , ovos e óleo.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 4,
+                "stepDescription": "Peneire a farinha com sal, bicarbonato, canela e noz moscada e junte à tigela com as maçãs , ovos e óleo.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 5,
-               "stepDescription": "Misture bem. Não precisa bater, basta misturar até ficar homogêneo.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 5,
+                "stepDescription": "Misture bem. Não precisa bater, basta misturar até ficar homogêneo.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 6,
-               "stepDescription": "Acrescente as passas e nozes.",
-               "hasTimer": false,
-               "timer": 0
+                "step": 6,
+                "stepDescription": "Acrescente as passas e nozes.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
-               "step": 7,
-               "stepDescription": "Despeje em uma forma de buraco no centro de vinte centímetros de diâmetro untada e enfarinhada e leve ao forno pré-aquecido a cento e oitenta graus por aproximadamente cinquenta minutos, ou até que esteja assado.",
-               "hasTimer": true,
-               "timer": 3000
+                "step": 7,
+                "stepDescription": "Despeje em uma forma de buraco no centro de vinte centímetros de diâmetro untada e enfarinhada e leve ao forno pré-aquecido a cento e oitenta graus por aproximadamente cinquenta minutos, ou até que esteja assado.",
+                "hasTimer": true,
+                "timer": 3000
             },
             {
-               "step": 8,
-               "stepDescription": "Retire do forno, espere dez minutos e desenforme.",
-               "hasTimer": true,
-               "timer": 600
+                "step": 8,
+                "stepDescription": "Retire do forno, espere dez minutos e desenforme.",
+                "hasTimer": true,
+                "timer": 600
             }
         ]
     },
     {
-      "identifier": 7,
-      "name": "Camarão Internacional",
-      "imageURL": "https://naminhapanela.com/wp-content/uploads/2014/06/arroz-de-camarao-350x350.jpg",
-      "difficultyLevel": 2,
-      "servings": 12,
-      "prepTime": 3600,
-      "ingredients" : [
-          "300 gramas de camarão tamanho médio descascado e limpo ",
-          "1 e 1/2 (uma e meia) colher de sopa de suco de limão",
-          "1 colher de chá de sal (4 gramas)",
-          "1/4 (um quarto) colher de chá de pimenta do reino",
-          "2 colheres de sopa rasa de manteiga sem sal",
-          "2 colheres de sopa de azeite (25 gramas)",
-          "1 colher de chá de alho ralado ou picadinho",
-          "1/4 (um quarto) de xícara de chá de cebola ralada (sem a água) ou picadinha",
-          "1 colher de sopa de pimentão verde bem picadinho",
-          "3 colheres de sopa de leite de coco",
-          "2 colheres de sopa rasas de manteiga",
-          "2 colheres de sopa rasa de farinha de trigo",
-          "1 xícara de chá de leite",
-          "1/2 (meia) xícara de chá de creme de leite em caixinha 100 gramas",
-          "1/2 (meia) xícara de chá de requeijão catupiry ou requeijão cremoso",
-          "1/2 (meia) colher de chá de sal 2 gramas",
-          "Uma boa pitada de pimeta do reino de 0,5 grama",
-          "1 pitada de noz moscada",
-          "30 gramas de presunto fatiado picadinho",
-          "100 gramas de muçarela fatiada picadinha",
-          "1/2 (meia) xícara de chá de ervilha cozida no vapor",
-          "2 xícaras de chá de arroz cozido ou 300 gramas",
-          "1 e 1/2 (uma e meia) colher de sopa de salsinha picadinha",
-          "1/2 (meia) colher de sopa de cebolinha bem picadinha",
-          "40 gramas de queijo parmesão ralado",
-          "120 gramas de queijo muçarela ralado",
-          "Papel alumínio",
-          "Manteiga para untar o papel alumínio",
-          "Batata palha para enfeitar e servir com o prato"
-      ],
-      "categories" : [
-          "Massas"
-      ],
-      "rate": 5,
-      "steps": [
-          {
-             "step": 1,
-             "stepDescription": "Para começar a preparar, tenha em mãos camarões limpos e descascados retirando toda a sujeira de dentro deles.",
-             "hasTimer": false,
-             "timer": 0
-          },
-          {
-             "step": 2,
-             "stepDescription": "Em um pequeno recipiente, que caiba as 300 gramas de camarões limpos e descascados, jogue o suco de limão, sal e pimenta do reino. Misture de leve esses ingredientes e deixe de lado marinando (Reserve).",
-             "hasTimer": false,
-             "timer": 0
-          },
-          {
-             "step": 3,
-             "stepDescription": "Em uma panela, de preferência uma frigideira grande e funda, coloque a manteiga, o azeite e alho ralado e refogue tudo misturando com a ajuda de uma espátula de plástico.",
-             "hasTimer": false,
-             "timer": 0
-          },
-          {
-             "step": 4,
-             "stepDescription": "Lembra do camarão que pusemos para marinar a pouco? Junte o camarão com o refogado da panela, ligue o fogo na temperatura máxima, mexa por 1 minuto até que ele fique rosado.",
-             "hasTimer": true,
-             "timer": 60
-          },
-          {
-             "step": 5,
-             "stepDescription": "Depois de mexer bem, você perceberá que seu camarão está rosado e com um aspecto aberto. Nessa hora, jogue o leite de coco, desligue o fogo e continue a mexer. Reserve.",
-             "hasTimer": false,
-             "timer": 0
-          },
-          {
-             "step": 6,
-             "stepDescription": "Em uma outra panela, de preferência uma grande frigideira funda, coloque manteiga, ligue o fogo e com a ajuda de uma espátula mexa até derreter.",
-             "hasTimer": false,
-             "timer": 0
-          },
-          {
-             "step": 7,
-             "stepDescription": "Jogue farinha de trigo e mexa bem cozinhando tudo em fogo médio tomando cuidado para que não fique com aquele gosto de farinha de trigo crua. Ficará com aspecto de massinha",
-             "hasTimer": true,
-             "timer": 60
-          },
-          {
-            "step": 8,
-            "stepDescription": "Coloque uma xícara de leite e note que ele vai começar a engrossar: isso é normal.",
-            "hasTimer": false,
-            "timer": 0
-         },
-         {
-            "step": 9,
-            "stepDescription": "Coloque uma xícara de leite, mexa e note que ele vai começar a engrossar: isso é normal.",
-            "hasTimer": false,
-            "timer": 0
-         },
-         {
-            "step": 10,
-            "stepDescription": "Jogue mais, aos poucos, para que ele não engrosse tanto e continue mexendo.",
-            "hasTimer": false,
-            "timer": 0
-         },
-         {
-            "step": 11,
-            "stepDescription": "Conforme você vai fazendo essa etapa, o molho vai crescendo e aparecendo.",
-            "hasTimer": false,
-            "timer": 0
-         },
-         {
-            "step": 12,
-            "stepDescription": "Quando ele estiver bem crescido, jogue o creme de leite e o requeijão cremoso ou de catupiry, sal, pimenta do reino, presunto picado, muçarela picada, meia xícara de ervilha e noz moscada ralada.",
-            "hasTimer": false,
-            "timer": 0
-         },
-         {
-            "step": 13,
-            "stepDescription": "Mexa bem até ficar homogêneo.",
-            "hasTimer": true,
-            "timer": 120
-         },
-         {
-            "step": 14,
-            "stepDescription": "No molho branco suculento que estamos fazendo agora, junte o camarão que fizemos a pouco e mais o arroz já cozido.",
-            "hasTimer": false,
-            "timer": 0
-         },
-         {
-            "step": 15,
-            "stepDescription": "Também, acrescente cebolinha e salsinha picadinha. E continue mexendo.",
-            "hasTimer": false,
-            "timer": 0
-         },
-         {
-            "step": 16,
-            "stepDescription": "Misture tudo e coloque em uma vasilha de vidro (de preferência) com a ajuda de uma espátula de plástico para aproveitar tudo o que estava na panela.",
-            "hasTimer": false,
-            "timer": 0
-         },
-         {
-            "step": 17,
-            "stepDescription": "Feito isso, jogue parmesão ralado em cima de seu camarão e acrescente muçarela ralada ou fatiada por cima de tudo. E reserve.",
-            "hasTimer": false,
-            "timer": 0
-         },
-         {
-            "step": 18,
-            "stepDescription": "Unte um pedaço de papel alumínio (que dê para cobrir toda a vasilha de vidro) com margarina ou manteiga e cubra a vasilha.",
-            "hasTimer": false,
-            "timer": 0
-         },
-         {
-            "step": 19,
-            "stepDescription": "Ponha no forno pré-aquecido a 200 graus com uma assadeira embaixo para ficar mais fácil o transporte ao forno até derreter o queijo e dar uma assada em sua mistura de camarão, o que vai dar uns 25 minutos. E para gratinar o queijo.",
-            "hasTimer": true,
-            "timer": 1500
-         },
-         {
-            "step": 20,
-            "stepDescription": "Fica maravilhoso! Jogue batata palha e sirva fazendo a decoração que quiser.",
-            "hasTimer": false,
-            "timer": 0
-         }
-      ]
-   },
-   {
-   "identifier": 8,
-   "name": "Crepioca de queijo",
-   "imageURL": "https://static.clubedaanamariabraga.com.br/wp-content/uploads/2020/02/crepioca-igor-rocha.jpeg",
-   "difficultyLevel": 1,
-   "servings": 1,
-   "prepTime": 600,
-   "ingredients" : [
-       "2 ovos",
-       "1 pitada de sal",
-       "1/3 (um terço) de xícara de leite",
-       "2 colheres de sopa de tapioca",
-       "Queijo mussarela ralado à gosto"
-   ],
-   "categories" : [
-       "Salgados"
-   ],
-   "rate": 4,
-   "steps": [
-       {
-          "step": 1,
-          "stepDescription": "Em um recipiente fundo, adicione 2 ovos e bata levemente",
-          "hasTimer": false,
-          "timer": 0
-       },
-       {
-          "step": 2,
-          "stepDescription": "Adicione aos ovos, uma pitada de sal e o leite. Misture bem",
-          "hasTimer": false,
-          "timer": 0
-       },
-       {
-          "step": 3,
-          "stepDescription": "Adicione a tapioca à mistura e bata novamente até ficar homogêneo, é bem rápido",
-          "hasTimer": true,
-          "timer": 60
-       },
-       {
-          "step": 4,
-          "stepDescription": "Unte uma frigideira antiaderente com manteiga e coloque a mistura, espere cozinhar e quando estiver mais firme e soltando da frigideira, já pode virar.",
-          "hasTimer": true,
-          "timer": 90
-       },
-       {
-          "step": 5,
-          "stepDescription": "Vire a crepioca e coloque o queijo, aguarde alguns segundos até queijo derreter e o outro lado cozinhar também",
-          "hasTimer": true,
-          "timer": 60
-       },
-       {
-          "step": 6,
-          "stepDescription": "Enrole a crepioca, como se fosse uma panqueca",
-          "hasTimer": false,
-          "timer": 0
-       },
-       {
-          "step": 7,
-          "stepDescription": "Sirva em seguida. Bom apetite!",
-          "hasTimer": false,
-          "timer": 0
-       }
-      ]
-   },
-   {
-      "identifier": 9,
-      "name": "Bolo Mole",
-      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw4UCeyOsg82hJLdzPS6CnFd2bO-2oMCdqbQ&usqp=CAU",
-      "difficultyLevel": 1,
-      "servings": 10,
-      "prepTime": 3300,
-      "ingredients" : [
-         "Uma caixa de leite condensado",
-         "Mesma medida da caixa do leite condensado de leite",
-         "200ml de leite de coco (um frasco)",
-         "Mesma medida do leite condensado de farinha de trigo sem fermento",
-         "Metade da medida do leite condensado de açúcar",
-         "Três colheres de sopa de manteiga",
-         "3 ovos"
-      ],
-      "categories" : [
-          "Doces",
-          "Bolos"
-      ],
-      "rate": 4,
-      "steps": [
-          {
-             "step": 1,
-             "stepDescription": "Em um liquidificador, coloque o leite condensado, o leite, a farinha de trigo, o açúcar, a manteiga e os ovos",
-             "hasTimer": false,
-             "timer": 0
-          },
-          {
-             "step": 2,
-             "stepDescription": "Bata bem, por 5 minutos",
-             "hasTimer": true,
-             "timer": 300
-          },
-          {
-             "step": 3,
-             "stepDescription": "Unte uma forma com furo no meio, com manteiga e farinha de trigo",
-             "hasTimer": false,
-             "timer": 0
-          },
-          {
-             "step": 4,
-             "stepDescription": "Coloque a mistura do bolo na forma, leve ao forno pré aquecido à 200 graus por 40 minutos ou até ficar dourado em cima e a massa estiver firme.",
-             "hasTimer": true,
-             "timer": 2400
-          },
-          {
-             "step": 5,
-             "stepDescription": "Retire o bolo do forno, espere esfriar por 10 minutos e desenforme.",
-             "hasTimer": true,
-             "timer": 600
-          },
-          {
-             "step": 6,
-             "stepDescription": "A seguir, pode servir ou colocar na geladeira caso prefira frio. Bom apetite!",
-             "hasTimer": false,
-             "timer": 0
-          }
-         ]
-      },
-      {
-         "identifier": 10,
-         "name": "Patê de peito de peru",
-         "imageURL": "https://img.itdg.com.br/tdg/images/recipes/000/049/442/135927/135927_original.jpg?mode=crop&width=710&height=400",
-         "difficultyLevel": 2,
-         "servings": 1,
-         "prepTime": 300,
-         "ingredients" : [
+        "identifier": 7,
+        "name": "Camarão Internacional",
+        "imageURL": "https://naminhapanela.com/wp-content/uploads/2014/06/arroz-de-camarao-350x350.jpg",
+        "difficultyLevel": 2,
+        "servings": 12,
+        "prepTime": 3600,
+        "ingredients" : [
+            "300 gramas de camarão tamanho médio descascado e limpo ",
+            "1 e 1/2 (uma e meia) colher de sopa de suco de limão",
+            "1 colher de chá de sal (4 gramas)",
+            "1/4 (um quarto) colher de chá de pimenta do reino",
+            "2 colheres de sopa rasa de manteiga sem sal",
+            "2 colheres de sopa de azeite (25 gramas)",
+            "1 colher de chá de alho ralado ou picadinho",
+            "1/4 (um quarto) de xícara de chá de cebola ralada (sem a água) ou picadinha",
+            "1 colher de sopa de pimentão verde bem picadinho",
+            "3 colheres de sopa de leite de coco",
+            "2 colheres de sopa rasas de manteiga",
+            "2 colheres de sopa rasa de farinha de trigo",
+            "1 xícara de chá de leite",
+            "1/2 (meia) xícara de chá de creme de leite em caixinha 100 gramas",
+            "1/2 (meia) xícara de chá de requeijão catupiry ou requeijão cremoso",
+            "1/2 (meia) colher de chá de sal 2 gramas",
+            "Uma boa pitada de pimeta do reino de 0,5 grama",
+            "1 pitada de noz moscada",
+            "30 gramas de presunto fatiado picadinho",
+            "100 gramas de muçarela fatiada picadinha",
+            "1/2 (meia) xícara de chá de ervilha cozida no vapor",
+            "2 xícaras de chá de arroz cozido ou 300 gramas",
+            "1 e 1/2 (uma e meia) colher de sopa de salsinha picadinha",
+            "1/2 (meia) colher de sopa de cebolinha bem picadinha",
+            "40 gramas de queijo parmesão ralado",
+            "120 gramas de queijo muçarela ralado",
+            "Papel alumínio",
+            "Manteiga para untar o papel alumínio",
+            "Batata palha para enfeitar e servir com o prato"
+        ],
+        "categories" : [
+            "Massas"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Para começar a preparar, tenha em mãos camarões limpos e descascados retirando toda a sujeira de dentro deles.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Em um pequeno recipiente, que caiba as 300 gramas de camarões limpos e descascados, jogue o suco de limão, sal e pimenta do reino. Misture de leve esses ingredientes e deixe de lado marinando (Reserve).",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Em uma panela, de preferência uma frigideira grande e funda, coloque a manteiga, o azeite e alho ralado e refogue tudo misturando com a ajuda de uma espátula de plástico.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Lembra do camarão que pusemos para marinar a pouco? Junte o camarão com o refogado da panela, ligue o fogo na temperatura máxima, mexa por 1 minuto até que ele fique rosado.",
+                "hasTimer": true,
+                "timer": 60
+            },
+            {
+                "step": 5,
+                "stepDescription": "Depois de mexer bem, você perceberá que seu camarão está rosado e com um aspecto aberto. Nessa hora, jogue o leite de coco, desligue o fogo e continue a mexer. Reserve.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 6,
+                "stepDescription": "Em uma outra panela, de preferência uma grande frigideira funda, coloque manteiga, ligue o fogo e com a ajuda de uma espátula mexa até derreter.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 7,
+                "stepDescription": "Jogue farinha de trigo e mexa bem cozinhando tudo em fogo médio tomando cuidado para que não fique com aquele gosto de farinha de trigo crua. Ficará com aspecto de massinha",
+                "hasTimer": true,
+                "timer": 60
+            },
+            {
+                "step": 8,
+                "stepDescription": "Coloque uma xícara de leite e note que ele vai começar a engrossar: isso é normal.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 9,
+                "stepDescription": "Coloque uma xícara de leite, mexa e note que ele vai começar a engrossar: isso é normal.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 10,
+                "stepDescription": "Jogue mais, aos poucos, para que ele não engrosse tanto e continue mexendo.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 11,
+                "stepDescription": "Conforme você vai fazendo essa etapa, o molho vai crescendo e aparecendo.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 12,
+                "stepDescription": "Quando ele estiver bem crescido, jogue o creme de leite e o requeijão cremoso ou de catupiry, sal, pimenta do reino, presunto picado, muçarela picada, meia xícara de ervilha e noz moscada ralada.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 13,
+                "stepDescription": "Mexa bem até ficar homogêneo.",
+                "hasTimer": true,
+                "timer": 120
+            },
+            {
+                "step": 14,
+                "stepDescription": "No molho branco suculento que estamos fazendo agora, junte o camarão que fizemos a pouco e mais o arroz já cozido.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 15,
+                "stepDescription": "Também, acrescente cebolinha e salsinha picadinha. E continue mexendo.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 16,
+                "stepDescription": "Misture tudo e coloque em uma vasilha de vidro (de preferência) com a ajuda de uma espátula de plástico para aproveitar tudo o que estava na panela.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 17,
+                "stepDescription": "Feito isso, jogue parmesão ralado em cima de seu camarão e acrescente muçarela ralada ou fatiada por cima de tudo. E reserve.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 18,
+                "stepDescription": "Unte um pedaço de papel alumínio (que dê para cobrir toda a vasilha de vidro) com margarina ou manteiga e cubra a vasilha.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 19,
+                "stepDescription": "Ponha no forno pré-aquecido a 200 graus com uma assadeira embaixo para ficar mais fácil o transporte ao forno até derreter o queijo e dar uma assada em sua mistura de camarão, o que vai dar uns 25 minutos. E para gratinar o queijo.",
+                "hasTimer": true,
+                "timer": 1500
+            },
+            {
+                "step": 20,
+                "stepDescription": "Fica maravilhoso! Jogue batata palha e sirva fazendo a decoração que quiser.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 8,
+        "name": "Crepioca de queijo",
+        "imageURL": "https://static.clubedaanamariabraga.com.br/wp-content/uploads/2020/02/crepioca-igor-rocha.jpeg",
+        "difficultyLevel": 1,
+        "servings": 1,
+        "prepTime": 600,
+        "ingredients" : [
+            "2 ovos",
+            "1 pitada de sal",
+            "1/3 (um terço) de xícara de leite",
+            "2 colheres de sopa de tapioca",
+            "Queijo mussarela ralado à gosto"
+        ],
+        "categories" : [
+            "Salgados"
+        ],
+        "rate": 4,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Em um recipiente fundo, adicione 2 ovos e bata levemente",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Adicione aos ovos, uma pitada de sal e o leite. Misture bem",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Adicione a tapioca à mistura e bata novamente até ficar homogêneo, é bem rápido",
+                "hasTimer": true,
+                "timer": 60
+            },
+            {
+                "step": 4,
+                "stepDescription": "Unte uma frigideira antiaderente com manteiga e coloque a mistura, espere cozinhar e quando estiver mais firme e soltando da frigideira, já pode virar.",
+                "hasTimer": true,
+                "timer": 90
+            },
+            {
+                "step": 5,
+                "stepDescription": "Vire a crepioca e coloque o queijo, aguarde alguns segundos até queijo derreter e o outro lado cozinhar também",
+                "hasTimer": true,
+                "timer": 60
+            },
+            {
+                "step": 6,
+                "stepDescription": "Enrole a crepioca, como se fosse uma panqueca",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 7,
+                "stepDescription": "Sirva em seguida. Bom apetite!",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 9,
+        "name": "Bolo Mole",
+        "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw4UCeyOsg82hJLdzPS6CnFd2bO-2oMCdqbQ&usqp=CAU",
+        "difficultyLevel": 1,
+        "servings": 10,
+        "prepTime": 3300,
+        "ingredients" : [
+            "Uma caixa de leite condensado",
+            "Mesma medida da caixa do leite condensado de leite",
+            "200ml de leite de coco (um frasco)",
+            "Mesma medida do leite condensado de farinha de trigo sem fermento",
+            "Metade da medida do leite condensado de açúcar",
+            "Três colheres de sopa de manteiga",
+            "3 ovos"
+        ],
+        "categories" : [
+            "Doces",
+            "Bolos"
+        ],
+        "rate": 4,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Em um liquidificador, coloque o leite condensado, o leite, a farinha de trigo, o açúcar, a manteiga e os ovos",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Bata bem, por 5 minutos",
+                "hasTimer": true,
+                "timer": 300
+            },
+            {
+                "step": 3,
+                "stepDescription": "Unte uma forma com furo no meio, com manteiga e farinha de trigo",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Coloque a mistura do bolo na forma, leve ao forno pré aquecido à 200 graus por 40 minutos ou até ficar dourado em cima e a massa estiver firme.",
+                "hasTimer": true,
+                "timer": 2400
+            },
+            {
+                "step": 5,
+                "stepDescription": "Retire o bolo do forno, espere esfriar por 10 minutos e desenforme.",
+                "hasTimer": true,
+                "timer": 600
+            },
+            {
+                "step": 6,
+                "stepDescription": "A seguir, pode servir ou colocar na geladeira caso prefira frio. Bom apetite!",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 10,
+        "name": "Patê de peito de peru",
+        "imageURL": "https://img.itdg.com.br/tdg/images/recipes/000/049/442/135927/135927_original.jpg?mode=crop&width=710&height=400",
+        "difficultyLevel": 2,
+        "servings": 1,
+        "prepTime": 300,
+        "ingredients" : [
             "200 gramas de peito de peru",
             "80 gramas de cenoura ralada",
             "1 copo de requeijão (200g)",
             "1 colher de sopa cheia de maionese",
             "1/2 (meia) cebola",
-            "Salsinha a gosto", 
+            "Salsinha a gosto",
             "Sal a gosto"
-         ],
-         "categories" : [
-             "Salgados",
-             "Patê"
-         ],
-         "rate": 5,
-         "steps": [
-             {
+        ],
+        "categories" : [
+            "Salgados",
+            "Patê"
+        ],
+        "rate": 5,
+        "steps": [
+            {
                 "step": 1,
                 "stepDescription": "Tritura o peito de peru no mini-processador ou pique com uma faca e separe.",
                 "hasTimer": false,
                 "timer": 0
-             },
-             {
+            },
+            {
                 "step": 2,
                 "stepDescription": "Triture a cebola e a cenoura no link-processador",
                 "hasTimer": false,
                 "timer": 0
-             },
-             {
+            },
+            {
                 "step": 3,
                 "stepDescription": "Em uma tigela mistura o peito de peru, a cebola com cenoura, o requeijão e a maionese ",
                 "hasTimer": false,
                 "timer": 0
-             },
-             {
+            },
+            {
                 "step": 4,
                 "stepDescription": "Acrescente salsinha e sal a gosto",
                 "hasTimer": false,
                 "timer": 0
-             },
-             {
+            },
+            {
                 "step": 5,
                 "stepDescription": "Sirva em seguida ou reserve na geladeira",
                 "hasTimer": false,
                 "timer": 0
-             }
-         ]
-     },
-     {
-      "identifier": 11,
-      "name": "Penne ao molho branco de camarão",
-      "imageURL": "https://www.anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-2459-a3d849ce575c69a18e61a51e04bfa3d9.jpg",
-      "difficultyLevel": 2,
-      "servings": 2,
-      "prepTime": 2400,
-      "ingredients" : [
-         "300 gramas de macarrão penne",
-         "300 gramas de camarão descascado",
-         "2 dentes de alho",
-         "1/2 (meia) cebola",
-         "500ml de leite",
-         "2 colheres de sopa de farinha de trigo",
-         "Noz moscada a gosto",
-         "Pimenta do reino a gosto",
-         "Sal a gosto"
-      ],
-      "categories" : [
-          "Massas",
-          "Salgados"
-      ],
-      "rate": 5,
-      "steps": [
-          {
-             "step": 1,
-             "stepDescription": "Frite os camarões com um fio de azeite e o alho até dourar, por cerca de 3 minutos. Reserve.",
-             "hasTimer": true,
-             "timer": 180
-          },
-          {
-             "step": 2,
-             "stepDescription": "Cozinhe o macarrão conforme indicação de marca e reserve.",
-             "hasTimer": false,
-             "timer": 0
-          },
-          {
-             "step": 3,
-             "stepDescription": "Em outra panela, refolgue a cebola com um fio de azeite e adicione a farinha de trigo. Mexa bem até formar uma massa. Acrescente o leite e misture até que o molho fique homogêneo. Acrescente o sal, noz moscada e pimenta do reino a gosto. E por fim, o camarão. Misture",
-             "hasTimer": false,
-             "timer": 0
-          },
-          {
-             "step": 4,
-             "stepDescription": "Em seguida, sirva com o macarrão.",
-             "hasTimer": false,
-             "timer": 0
-          }
-      ]
-  }
+            }
+        ]
+    },
+    {
+        "identifier": 11,
+        "name": "Penne ao molho branco de camarão",
+        "imageURL": "https://www.anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-2459-a3d849ce575c69a18e61a51e04bfa3d9.jpg",
+        "difficultyLevel": 2,
+        "servings": 2,
+        "prepTime": 2400,
+        "ingredients" : [
+            "300 gramas de macarrão penne",
+            "300 gramas de camarão descascado",
+            "2 dentes de alho",
+            "1/2 (meia) cebola",
+            "500ml de leite",
+            "2 colheres de sopa de farinha de trigo",
+            "Noz moscada a gosto",
+            "Pimenta do reino a gosto",
+            "Sal a gosto"
+        ],
+        "categories" : [
+            "Massas",
+            "Salgados"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Frite os camarões com um fio de azeite e o alho até dourar, por cerca de 3 minutos. Reserve.",
+                "hasTimer": true,
+                "timer": 180
+            },
+            {
+                "step": 2,
+                "stepDescription": "Cozinhe o macarrão conforme indicação de marca e reserve.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Em outra panela, refolgue a cebola com um fio de azeite e adicione a farinha de trigo. Mexa bem até formar uma massa. Acrescente o leite e misture até que o molho fique homogêneo. Acrescente o sal, noz moscada e pimenta do reino a gosto. E por fim, o camarão. Misture",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Em seguida, sirva com o macarrão.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 12,
+        "name": "Macarrão alho e óleo",
+        "imageURL": "https://www.marolacomcarambola.com.br/wp-content/uploads/2015/08/receita-de-macarrao-alho-e-oleo-2.jpg",
+        "difficultyLevel": 1,
+        "servings": 2,
+        "prepTime": 600,
+        "ingredients" : [
+            "200 gramas de massa.",
+            "2 litros de água ou caldo de legumes.",
+            "1 colher de sobremesa rasa de sal.",
+            "1/2 (meia) xícara de óleo de girassol ou canola, ou azeite.",
+            "6 dentes de alho bem picados.",
+            "1/2 (meia) xícara de cebolinha ou salsinha picadas."
+        ],
+        "categories" : [
+            "Massas"
+        ],
+        "rate": 3,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Leve a água para ferver, quando começar a ferver coloque o sal e a massa.",
+                "hasTimer": true,
+                "timer": 180
+            },
+            {
+                "step": 2,
+                "stepDescription": "Verifique na embalagem o tempo de cozimento para al dente da massa escolhida, pois cada massa tem um tempo de cozimento. E sempre use 1 litro de água para cada 100 gramas de massa, isto fará com que ela cozinhe por igual e não grude.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Aqueça o óleo em uma frigideira grande. Frite o alho em fogo bem baixo até que comece a dourar e soltar a  aroma de alho frito.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Junte a massa já cozida e escorrida, misture bem. Coloque a cebolinha e esta pronto.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 13,
+        "name": "Mac'n'cheese",
+        "imageURL": "https://2.bp.blogspot.com/-YXPGKDyEvCs/UvttfcG9GkI/AAAAAAAAKkM/yYOrjBmnVcI/s1600/macncheese_queijoreino_brisando10.jpg",
+        "difficultyLevel": 3,
+        "servings": 2,
+        "prepTime": 1200,
+        "ingredients" : [
+            "2 xícaras de penne cru.",
+            "2 xícaras de leite aproximadamente (sempre deixe um pouco a mais reservado, caso haja necessidade de colocar mais).",
+            "2 dentes de alho amassado.",
+            "1 colher (sopa) de mostarda.",
+            "1 colher (sopa) de manteiga.",
+            "Noz-moscada à gosto.",
+            "Sal à gosto.",
+            "1 xícara de queijo reino Palmyra ralado (ou algum outro que você tiver em casa - mussarela, prato, gouda, queijo amarelo).",
+            "Parmesão ralado para finalizar."
+        ],
+        "categories" : [
+            "Massas"
+        ],
+        "rate": 3,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Em uma panela média, adicione o macarrão, o leite, o alho, a mostarda, o sal, a manteiga e a noz-moscada. Em fogo médio, ir mexendo até começar a ferver. Assim que ferver, baixe o fogo para potência mínima, mexendo sempre.",
+                "hasTimer": true,
+                "timer": 180
+            },
+            {
+                "step": 2,
+                "stepDescription": "Cozinhe por cerca de 10 minutos, mexendo de vez em quando para não grudar. Prove o penne para ver se já está cozido e, se necessário, adicione mais leite, até que fique cozido no ponto que preferir.",
+                "hasTimer": true,
+                "timer": 600
+            },
+            {
+                "step": 3,
+                "stepDescription": "Desligue o fogo e adicione o queijo, misturando bem.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Sirva imediatamente com parmesão ralado por cima.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 14,
+        "name": "Strogonoff de Frango",
+        "imageURL": "https://img.itdg.com.br/tdg/images/recipes/000/132/121/328769/328769_original.jpg?mode=crop&width=710&height=400",
+        "difficultyLevel": 3,
+        "servings": 2,
+        "prepTime": 1200,
+        "ingredients" : [
+            "500 gramas Peito de Frango (em cubos).",
+            "1/2 (meia) xícara (chá) de Creme de Leite.",
+            "1/2 (meia) xícara (chá) de Leite.",
+            "1 colher (sopa) de Maisena.",
+            "1 xícara (chá) de Champignon.",
+            "10 Colheres (sopa) de Catchup.",
+            "1 Colher (sopa) de Mostarda.",
+            "Sal e Pimenta do Reino à gosto.",
+            "1 Dente de Alho (opcional).",
+        ],
+        "categories" : [
+            "Aves", "Carnes"
+        ],
+        "rate": 3,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Aqueça a panela, adicione cerca de 1 colher (sopa) de azeite / óleo e frite, junte os cubos de frango, tempere com sal e pimenta do reino e deixe fritar até que fiquem levemente dourados.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Adicione o champignon, 1 dente de alho picado (opcional), misture bem, junte o catchup, mostarda e misture bem para envolver todo o frango.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Dilua a maisena no leite (frio) e adicione na panela misturando bem em fogo baixo até que fique o molho fique bem cremoso.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Adicione o creme de leite e misture bem (tome cuidado para não ferver), assim que estiver tudo bem misturado desligue o fogo e sirva.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 15,
+        "name": "Purê de Mandioquinha",
+        "imageURL": "https://cozinhalegal.com.br/files/manager/1/341/Pure_Mandioquinha_Facil_3.jpg",
+        "difficultyLevel": 3,
+        "servings": 4,
+        "prepTime": 1800,
+        "ingredients" : [
+            "1 kilo de mandioquinha",
+            "1 colher de sopa de manteiga",
+            "1 xícara de chá de leite",
+            "1 xícara de chá de queijo mussarela ralado",
+            "Sal à gosto"
+        ],
+        "categories" : [
+            "Sopas"
+        ],
+        "rate": 3,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Descasque a mandioquinha e coloque em uma panela com água (a água precisa cobrir totalmente as mandioquinhas)",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Leve ao fogo alto, e cozinhe até ficarem macias. Escorra a água e volte-as para panela. ",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Utilizando um espremedor de batatas, esprema até não sobrar pedaços inteiros. Acrescente a manteiga e o leite. Se tiver um mixer, pode usa-lo depois de passar pelo espremedor para ter um purê mais liso, se não tiver, tudo bem.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Volte a panela ao fogo médio. Acrescente o queijo ralado, mexa com uma espátula e prove. Só acrescente o sal depois do queijo, pois o queijo já tem bastante sal e pode interferir no resultado final.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 5,
+                "stepDescription": "Cozinhe sem parar de mexer por 5 minutos, ou até que o queijo derreta por completo.",
+                "hasTimer": true,
+                "timer": 300
+            },
+            {
+                "step": 6,
+                "stepDescription": "Salpique cheiro verde a gosto e sirva em seguida.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 16,
+        "name": "Mousse de Limão",
+        "imageURL": "https://www.anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-2256-a50ed558b2d695e515c009348341a344.jpg",
+        "difficultyLevel": 2,
+        "servings": 4,
+        "prepTime": 900,
+        "ingredients" : [
+            "1 lata ou caixa de leite condensado (de 395 gramas).",
+            "1 caixa de creme de leite (de 200 gramas).",
+            "60 ml de suco de limão 1/4 (meia) de xícara (use mais se quiser mais azedinho).",
+            "Raspas de 1 limão."
+        ],
+        "categories" : [
+            "Doces"
+        ],
+        "rate": 3,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Em primeiro lugar, coloque no liquidificador o leite condensado, o creme de leite e o suco de limão, bata bem até misturar tudo muito bem. O ponto do mousse é quando tiver bem grossinho.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Despeje em um pote ou em taças individuais.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Rale a parte verde do limão (só a verde, senão amarga) e polvilhe sobre a mousse.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Leve a mousse para gelar por pelo menos 2 ou 3 horas.",
+                "hasTimer": true,
+                "timer": 10800
+            },
+            {
+                "step": 5,
+                "stepDescription": "Sirva bem geladinha.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 17,
+        "name": "Pudim de Leite Condensado",
+        "imageURL": "https://t1.rg.ltmcdn.com/pt/images/3/0/2/img_pudim_de_leite_condensado_203_orig.jpg",
+        "difficultyLevel": 3,
+        "servings": 12,
+        "prepTime": 14400,
+        "ingredients" : [
+            "3 Ovos.",
+            "1 Lata de Leite Condensando.",
+            "300ml de Leite (ou a mesma medida da lata de leite condensado).",
+            "2 Colheres (sopa) de Karo (Glucose de Milho)"
+        ],
+        "categories" : [
+            "Doces"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Em um liquidificador adicione o leite, leite condensado e os ovos e bata. (Se desejar um pudim solido bata apensas para misturar, para um pudim furadinho bata bem).",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Em uma forma para pudim (cone no meio) adicione o karo e espalhe com uma espatula por toda a forma.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Leve para assar em forno pré aquecido á 180ºC por 40 minutos e depois por mais 20 minutos sem o papel alumínio. (Esse tempo pode variar de forno pra forno).",
+                "hasTimer": true,
+                "timer": 3600
+            },
+            {
+                "step": 4,
+                "stepDescription": "Leve para gelar (o ideal é que fique bem gelado antes de desenformar)",
+                "hasTimer": true,
+                "timer": 10800
+            },
+            {
+                "step": 5,
+                "stepDescription": "Para desenformar aqueça a forma no fogo rapidamente, passe uma faquinha em toda volta, coloque um prato por cima da forma e vire.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 18,
+        "name": "Salada Refrescante e Colorida",
+        "imageURL": "https://d1uz88p17r663j.cloudfront.net/resized/b1e0912e72a64c0be6a6709882d0fbc6_salada-refrescante-colorida-receitas-nestle_1200_600.jpg",
+        "difficultyLevel": 1,
+        "servings": 4,
+        "prepTime": 600,
+        "ingredients" : [
+            "4 folhas de alface picadas.",
+            "1 cenoura ralada.",
+            "1 pepino em palitos.",
+            "1 beterraba ralada.",
+            "meia xícara (chá) de tomates-cereja cortados ao meio.",
+            "6 ovos de codorna cozidos.",
+            "1 colher (sopa) de suco de limão.",
+            "3 colheres (sopa) de suco de laranja.",
+            "4 colheres (sopa) de azeite.",
+            "1 pitada de sal."
+        ],
+        "categories" : [
+            "Saladas", "Fit", "Rápidas", "Fáceis"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Em um recipiente, disponha todos os ingredientes. Reserve.",
+                "hasTimer": true,
+                "timer": 400
+            },
+            {
+                "step": 2,
+                "stepDescription": "Molho: Em um recipiente, misture todos os ingredientes vigorosamente até obter um molho homogêneo. Sirva sobre a salada reservada.",
+                "hasTimer": true,
+                "timer": 200
+            }
+        ]
+    },
+    {
+        "identifier": 19,
+        "name": "Chocolate cremoso",
+        "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ02gGZQyoyEPGWLAJTOMM8Mw9Bl4nwUPb--A&usqp=CAU",
+        "difficultyLevel": 3,
+        "servings": 20,
+        "prepTime": 900,
+        "ingredients" : [
+            "1 xícara de chá de cacau em pó.",
+            "50 gramas de café solúvel.",
+            "1 xícara de chá de açúcar.",
+            "1 xícara de chá de água fervendo.",
+            "2 xícaras de chá de leite quente (para servir)."
+        ],
+        "categories" : [
+            "Bebidas", "Doces"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Em uma batedeira, adicione o café solúvel, o açúcar, o cacau e a água fervendo. Bata por 15 minutos até que vire um creme homogêneo e bem cremoso.",
+                "hasTimer": true,
+                "timer": 900
+            },
+            {
+                "step": 2,
+                "stepDescription": "Transfira para um recipiente com tampa e leve ao freezer até o dia seguinte. Após o período de 12 horas, leve o leite ao fogo para ferver e quando levantar fervura desligue o fogo. Retire o creme do freezer e adicione de 3 a 4 colher de chá do creme ao leite fervendo, misture bem e sirva.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 20,
+        "name": "Vinho quente",
+        "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT34ix2RwyzZJ8S6ivyvewBujiRZuPqexkvfQ&usqp=CAU",
+        "difficultyLevel": 3,
+        "servings": 10,
+        "prepTime": 1200,
+        "ingredients" : [
+            "1 copo americano de açúcar.",
+            "Canela em rama.",
+            "Cravo.",
+            "1 litro de vinho tinto seco.",
+            "1/2 (meia) litro de água.",
+            "1/2 (meia) maçã (verde ou vermelha) descascada e cortada em fatias."
+        ],
+        "categories" : [
+            "Bebidas"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Queime a metade do açúcar com o cravo e a canela.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Acrescente o vinho, já misturado com a água.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Junte a maçã e o açúcar restante.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Deixe cozinhar um pouco e sirva bem quente.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    }
 ]
