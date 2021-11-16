@@ -58,7 +58,11 @@ class StepsViewController: UIViewController {
         let settingsSpeech = UserDefaults.standard.bool(forKey: "voiceCommands")
 
         if speechStatus == .notDetermined || (speechStatus == .authorized && settingsSpeech) {
-            speechManager?.prepare()
+            if speechStatus == .authorized {
+                speechManager?.prepare(authorized: true)
+            } else {
+                speechManager?.prepare(authorized: false)
+            }
         }
     }
 
