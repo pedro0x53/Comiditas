@@ -64,51 +64,26 @@ class StepPreviewView: UIView {
         self.addSubview(nextLabel)
         self.addSubview(nextStepDescriptionLabel)
 
+        backgroundView.clipsToBounds = true
+        backgroundView.layer.cornerRadius = 11
+
         self.subviews.forEach { $0.translatesAutoresizingMaskIntoConstraints = false }
 
         NSLayoutConstraint.activate([
-            self.backgroundView.topAnchor.constraint(
-                equalTo: self.topAnchor
-            ),
-            self.backgroundView.leadingAnchor.constraint(
-                equalTo: self.leadingAnchor
-            ),
-            self.backgroundView.trailingAnchor.constraint(
-                equalTo: self.trailingAnchor
-            ),
-            self.backgroundView.bottomAnchor.constraint(
-                equalTo: self.bottomAnchor
-            ),
+            self.backgroundView.topAnchor.constraint(equalTo: self.topAnchor),
+            self.backgroundView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            self.backgroundView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            self.backgroundView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
 
-            nextLabel.topAnchor.constraint(
-                equalTo: self.topAnchor,
-                constant: 10
-            ),
-            nextLabel.leadingAnchor.constraint(
-                equalTo: self.leadingAnchor,
-                constant: 10
-            ),
-            nextLabel.trailingAnchor.constraint(
-                equalTo: self.trailingAnchor,
-                constant: -10
-            ),
-            nextLabel.bottomAnchor.constraint(
-                equalTo: nextStepDescriptionLabel.topAnchor
-            ),
+            nextLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
+            nextLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
+            nextLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
+            nextLabel.bottomAnchor.constraint(equalTo: nextStepDescriptionLabel.topAnchor),
 
-            nextStepDescriptionLabel.leadingAnchor.constraint(
-                equalTo: nextLabel.leadingAnchor
-            ),
-            nextStepDescriptionLabel.trailingAnchor.constraint(
-                equalTo: nextLabel.trailingAnchor
-            ),
-            nextStepDescriptionLabel.bottomAnchor.constraint(
-                equalTo: self.backgroundView.bottomAnchor,
-                constant: -10
-            )
+            nextStepDescriptionLabel.leadingAnchor.constraint(equalTo: nextLabel.leadingAnchor),
+            nextStepDescriptionLabel.trailingAnchor.constraint(equalTo: nextLabel.trailingAnchor),
+            nextStepDescriptionLabel.bottomAnchor.constraint(equalTo: self.backgroundView.bottomAnchor,
+                                                             constant: -10)
         ])
-
-        backgroundView.clipsToBounds = true
-        backgroundView.layer.cornerRadius = 11
     }
 }

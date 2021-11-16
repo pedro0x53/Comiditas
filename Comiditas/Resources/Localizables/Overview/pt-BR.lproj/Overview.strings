@@ -34,6 +34,6 @@ accessibleRating = "Avaliação de";
 ingredients = "Ingredientes";
 
 directions = "Modo de Preparo";
-step = "Passo ";
+step = "Passo";
 
 startDirections = "Iniciar Passo a Passo Interativo";
