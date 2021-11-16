@@ -128,12 +128,12 @@ extension OverviewViewController: OverviewViewDelegate {
                     withIdentifier: RecipeStepCell.identifier) as? RecipeStepCell
             else {
                 let cell = RecipeStepCell()
-                cell.configure(title: OverviewLocalizable.step.text + "\(indexPath.row + 1)",
+                cell.configure(index: "\(indexPath.row + 1)",
                                description: recipe.steps[indexPath.row].stepDescription)
                 return cell
             }
 
-            cell.configure(title: OverviewLocalizable.step.text + "\(indexPath.row + 1)",
+            cell.configure(index: "\(indexPath.row + 1)",
                            description: recipe.steps[indexPath.row].stepDescription)
             return cell
         }

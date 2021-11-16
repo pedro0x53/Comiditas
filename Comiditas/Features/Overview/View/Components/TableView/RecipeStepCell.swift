@@ -131,12 +131,12 @@ class RecipeStepCell: UITableViewCell, BaseViewProtocol {
         ])
     }
 
-    func configure(title: String, description: String, finished: Bool = false) {
-        self.titleLabel.text = title
+    func configure(index: String, description: String, finished: Bool = false) {
+        self.titleLabel.text = OverviewLocalizable.step.text + " " + index
         self.descriptionLabel.text = description
         self.finished = finished
 
         shouldGroupAccessibilityChildren = true
-        accessibilityLabel = title + description
+        accessibilityLabel = OverviewLocalizable.step.text + ": " + index + ". " + description
     }
 }
