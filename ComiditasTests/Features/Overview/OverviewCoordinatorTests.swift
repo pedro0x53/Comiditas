@@ -33,15 +33,16 @@ class OverviewCoordinatorUnitTests: XCTestCase {
         let recipe = RecipeJson(identifier: 0, name: "Test", imageURL: "",
                                 difficultyLevel: 1, servings: 1, prepTime: 120, ingredients: [],
                                 categories: [], rate: 5, steps: [])
+        let imageMock: UIImage = UIImage()
 
         sut.recipe = recipe
         sut.start()
 
-        sut.coordinateToSteps(recipe: recipe)
+        sut.coordinateToSteps(recipe: recipe, image: imageMock)
 
         let expectation = XCTestExpectation(description: "Waiting for the animation")
         _ = XCTWaiter.wait(for: [expectation], timeout: 1.0)
 
-        XCTAssertNotNil(sut.navigationController.topViewController as? PreparationViewController)
+        XCTAssertNotNil(sut.navigationController.topViewController as? StepsViewController)
     }
 }

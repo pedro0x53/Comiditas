@@ -31,7 +31,7 @@ protocol SpeechManagerProtocol: NSObject {
     var isAvailable: Bool { get }
     var state: SpeechManagerState { get set }
 
-    func prepare()
+    func prepare(authorized: Bool)
     func start()
     func stop()
     func speak(_ text: String)
@@ -66,18 +66,19 @@ class SpeechManager: NSObject, SpeechManagerProtocol {
         synthesizer.delegate = self
     }
 
-    func prepare() {
+    func prepare(authorized: Bool) {
         speechRecognizer.delegate = self
-        if speechRecognizer.isAvailable {
-            self.state = .recognitionAvailable
-            return
-        }
+        self.state = .recognitionAvailable
 
-        speechRecognizer.requestAuthorization { result in
-            if result {
-                self.state = .recognitionAvailable
-            } else {
-                self.state = .recognitionNotAvailable
+        if !authorized {
+            speechRecognizer.requestAuthorization { result in
+                if result {
+                    self.state = .recognitionAvailable
+                } else {
+                    self.state = .recognitionNotAvailable
+                }
+
+                UserDefaults.standard.set(result, forKey: "voiceCommands")
             }
         }
     }

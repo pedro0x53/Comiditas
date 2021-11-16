@@ -30,6 +30,8 @@ struct DirectionsSpeechProcessor: SpeechProcessorProtocol {
             return DirectionsSpeechProcessor.Regex.pauseTimerExpression
         case .resumeTimer:
             return DirectionsSpeechProcessor.Regex.resumeTimerExpression
+        case .reiniciateTimer:
+            return DirectionsSpeechProcessor.Regex.reiniciateTimerExpression
         }
     }
 
@@ -56,6 +58,7 @@ extension DirectionsSpeechProcessor {
         case currentStep
         case pauseTimer
         case resumeTimer
+        case reiniciateTimer
     }
 
     struct Regex {
@@ -67,7 +70,9 @@ extension DirectionsSpeechProcessor {
                                                                  options: .caseInsensitive)
         static let pauseTimerExpression = try? NSRegularExpression(pattern: "\(key) pausar temporizador",
                                                                  options: .caseInsensitive)
-        static let resumeTimerExpression = try? NSRegularExpression(pattern: "\(key) retomar temporizador",
+        static let resumeTimerExpression = try? NSRegularExpression(pattern: "\(key) (retomar|iniciar) temporizador",
+                                                                 options: .caseInsensitive)
+        static let reiniciateTimerExpression = try? NSRegularExpression(pattern: "\(key) reiniciar temporizador",
                                                                  options: .caseInsensitive)
     }
 }

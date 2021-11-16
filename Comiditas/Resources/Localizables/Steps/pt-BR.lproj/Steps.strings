@@ -8,16 +8,21 @@
 
 recipe = "";
 
-alertStop = "O temporizador será reiniciado se você sair desse passo. Você tem certeza que quer continuar?";
+alert = "Atenção!";
+alertStop = "O temporizador será reiniciado. \nDeseja continuar?";
 alertAtention = "Atenção!";
 alertContinue = "Continuar";
 alertCancel = "Cancelar";
+close = "Fechar";
 
 step = "Passo";
 of = "de";
 
+next = "Próximo:";
+
 iniciateClockAcessibility = "Iniciar temporizador";
 pauseClockAcessibility = "Pausar temporizador";
+reiniciateClockAcessibility = "Reiniciar temporizador";
 
 backStep = "Passo anterior";
 nextStep = "Próximo passo";

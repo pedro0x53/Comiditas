@@ -24,12 +24,4 @@ class ModalCoordinatorTests: XCTestCase {
         navController = nil
         super.tearDown()
     }
-
-    func testCoordinatorStart() {
-        sut
-        sut.start()
-    }
-
-    func testDidFinishRecipe() {}
-
 }

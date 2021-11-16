@@ -7,29 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18398CEA26FA3F490054E054 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18398CE926FA3F490054E054 /* TimerView.swift */; };
-		18398CEC26FA3F720054E054 /* StepTimerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18398CEB26FA3F720054E054 /* StepTimerDelegate.swift */; };
-		18398CF026FA60640054E054 /* PreparationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18398CEF26FA60640054E054 /* PreparationModels.swift */; };
-		18398CF226FA66890054E054 /* PreparationWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18398CF126FA66890054E054 /* PreparationWorker.swift */; };
 		1840611227171762008BAB4A /* StepsLocalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840611127171762008BAB4A /* StepsLocalizable.swift */; };
 		1840611527171857008BAB4A /* Steps.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1840611727171857008BAB4A /* Steps.strings */; };
 		184061222718647F008BAB4A /* ModalLocalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184061212718647F008BAB4A /* ModalLocalizable.swift */; };
 		18632F372719AC420010C323 /* ModalLocalizableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18632F362719AC420010C323 /* ModalLocalizableTest.swift */; };
 		18632F3C2719B5880010C323 /* StepsLocalizableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18632F3B2719B5880010C323 /* StepsLocalizableTest.swift */; };
 		18632F3F2719C29A0010C323 /* ModalCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18632F3E2719C29A0010C323 /* ModalCoordinatorTests.swift */; };
-		188F523426FB55C600A59039 /* PreparationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F523326FB55C600A59039 /* PreparationCoordinator.swift */; };
-		1894725726F9F9E500E6CD8B /* PreparationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894725626F9F9E500E6CD8B /* PreparationView.swift */; };
-		1894725926F9F9F700E6CD8B /* PreparationInterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894725826F9F9F700E6CD8B /* PreparationInterator.swift */; };
-		1894725B26F9F9FF00E6CD8B /* PreparationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894725A26F9F9FF00E6CD8B /* PreparationPresenter.swift */; };
-		1894725D26F9FE4600E6CD8B /* PreparationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894725C26F9FE4600E6CD8B /* PreparationViewController.swift */; };
-		18CC0F3F2704956900235E5C /* PreparationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC0F3E2704956900235E5C /* PreparationViewControllerTests.swift */; };
-		18CC0F42270495B500235E5C /* PreparationInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC0F41270495B500235E5C /* PreparationInteractorTests.swift */; };
-		18CC0F44270495E700235E5C /* PreparationPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC0F43270495E700235E5C /* PreparationPresenterTests.swift */; };
+		18819C752726DE16008B1B7B /* StepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18819C742726DE16008B1B7B /* StepsView.swift */; };
+		18819C772726DE45008B1B7B /* StepModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18819C762726DE45008B1B7B /* StepModels.swift */; };
+		18819C792726DE62008B1B7B /* StepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18819C782726DE62008B1B7B /* StepsViewController.swift */; };
+		18819C7B2726DE72008B1B7B /* StepsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18819C7A2726DE72008B1B7B /* StepsWorker.swift */; };
+		18819C7D2726DE81008B1B7B /* StepsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18819C7C2726DE81008B1B7B /* StepsPresenter.swift */; };
+		18819C7F2726DE99008B1B7B /* StepsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18819C7E2726DE99008B1B7B /* StepsInteractor.swift */; };
+		18819C812726E1CE008B1B7B /* StepsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18819C802726E1CE008B1B7B /* StepsCoordinator.swift */; };
+		18819C84272975A2008B1B7B /* StepPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18819C83272975A2008B1B7B /* StepPreviewView.swift */; };
+		18819C862729A858008B1B7B /* NextAndPreviousStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18819C852729A858008B1B7B /* NextAndPreviousStackView.swift */; };
 		18DC6524271EFF6700AA0B38 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DC6523271EFF6700AA0B38 /* NotificationManager.swift */; };
 		18EA190F270F1FCB00B36E1C /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA190E270F1FCB00B36E1C /* HapticsManager.swift */; };
-		18F8E17B26FA898E00B5766B /* StepCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8E17A26FA898E00B5766B /* StepCellModel.swift */; };
-		18F8E17F26FAA22500B5766B /* SimpleStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8E17E26FAA22500B5766B /* SimpleStepCell.swift */; };
-		18F8E18126FAA35600B5766B /* StepWithTimerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8E18026FAA35600B5766B /* StepWithTimerCell.swift */; };
+		18F0496E273405F700DDEF51 /* StepsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0496D273405F700DDEF51 /* StepsViewControllerTests.swift */; };
+		18F049702734190D00DDEF51 /* StepsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0496F2734190D00DDEF51 /* StepsInteractorTests.swift */; };
+		18F049722734192000DDEF51 /* StepsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F049712734192000DDEF51 /* StepsPresenterTests.swift */; };
 		770BE81526F0C7480032F0ED /* Ext+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BE81426F0C7480032F0ED /* Ext+UIImage.swift */; };
 		7713580C26F9FC3700164BBC /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713580B26F9FC3700164BBC /* FeedInteractor.swift */; };
 		7713580E26F9FC4400164BBC /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713580D26F9FC4400164BBC /* FeedPresenter.swift */; };
@@ -42,7 +39,6 @@
 		774A685E273AA6770028AF84 /* DailySpecials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774A685D273AA6770028AF84 /* DailySpecials.swift */; };
 		774A7311273553610036507F /* TagsHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774A7310273553610036507F /* TagsHeaderCollectionReusableView.swift */; };
 		774D5A7326F36A84004176A1 /* Ext+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7226F36A84004176A1 /* Ext+UIColor.swift */; };
-		774D5A7A26F3711A004176A1 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7926F3711A004176A1 /* BaseView.swift */; };
 		774D5A7C26F37256004176A1 /* Ext+UIFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7B26F37256004176A1 /* Ext+UIFonts.swift */; };
 		7754776A270B23220031AF7E /* FeedCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77547769270B23220031AF7E /* FeedCoordinatorTests.swift */; };
 		77635CD926F2115800B36EC7 /* RecipeJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77635CD826F2115800B36EC7 /* RecipeJson.swift */; };
@@ -78,6 +74,9 @@
 		77D1BD77270F15D700553403 /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D1BD76270F15D700553403 /* FeatureFlags.swift */; };
 		77D70D1726F21FFA00A8B244 /* Recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 77D70D1626F21FFA00A8B244 /* Recipes.json */; };
 		77D70D1B26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D70D1A26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift */; };
+		77E4560A273F251C001DC4D7 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774D5A7926F3711A004176A1 /* BaseView.swift */; };
+		77E4560B273F256C001DC4D7 /* StepTimerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18398CEB26FA3F720054E054 /* StepTimerDelegate.swift */; };
+		77E4560C273F2586001DC4D7 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18398CE926FA3F490054E054 /* TimerView.swift */; };
 		77F9CB90272ABB2900D22F94 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F9CB8F272ABB2900D22F94 /* SearchView.swift */; };
 		77F9CB92272ABB3900D22F94 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F9CB91272ABB3900D22F94 /* SearchViewController.swift */; };
 		77F9CB94272ABC3600D22F94 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F9CB93272ABC3600D22F94 /* SearchCoordinator.swift */; };
@@ -149,27 +148,26 @@
 /* Begin PBXFileReference section */
 		18398CE926FA3F490054E054 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		18398CEB26FA3F720054E054 /* StepTimerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepTimerDelegate.swift; sourceTree = "<group>"; };
-		18398CEF26FA60640054E054 /* PreparationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationModels.swift; sourceTree = "<group>"; };
-		18398CF126FA66890054E054 /* PreparationWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationWorker.swift; sourceTree = "<group>"; };
 		1840611127171762008BAB4A /* StepsLocalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsLocalizable.swift; sourceTree = "<group>"; };
 		1840611627171857008BAB4A /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Steps.strings"; sourceTree = "<group>"; };
 		184061212718647F008BAB4A /* ModalLocalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalLocalizable.swift; sourceTree = "<group>"; };
 		18632F362719AC420010C323 /* ModalLocalizableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalLocalizableTest.swift; sourceTree = "<group>"; };
 		18632F3B2719B5880010C323 /* StepsLocalizableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsLocalizableTest.swift; sourceTree = "<group>"; };
 		18632F3E2719C29A0010C323 /* ModalCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalCoordinatorTests.swift; sourceTree = "<group>"; };
-		188F523326FB55C600A59039 /* PreparationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationCoordinator.swift; sourceTree = "<group>"; };
-		1894725626F9F9E500E6CD8B /* PreparationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationView.swift; sourceTree = "<group>"; };
-		1894725826F9F9F700E6CD8B /* PreparationInterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationInterator.swift; sourceTree = "<group>"; };
-		1894725A26F9F9FF00E6CD8B /* PreparationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationPresenter.swift; sourceTree = "<group>"; };
-		1894725C26F9FE4600E6CD8B /* PreparationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationViewController.swift; sourceTree = "<group>"; };
-		18CC0F3E2704956900235E5C /* PreparationViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationViewControllerTests.swift; sourceTree = "<group>"; };
-		18CC0F41270495B500235E5C /* PreparationInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationInteractorTests.swift; sourceTree = "<group>"; };
-		18CC0F43270495E700235E5C /* PreparationPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationPresenterTests.swift; sourceTree = "<group>"; };
+		18819C742726DE16008B1B7B /* StepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsView.swift; sourceTree = "<group>"; };
+		18819C762726DE45008B1B7B /* StepModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepModels.swift; sourceTree = "<group>"; };
+		18819C782726DE62008B1B7B /* StepsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsViewController.swift; sourceTree = "<group>"; };
+		18819C7A2726DE72008B1B7B /* StepsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsWorker.swift; sourceTree = "<group>"; };
+		18819C7C2726DE81008B1B7B /* StepsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsPresenter.swift; sourceTree = "<group>"; };
+		18819C7E2726DE99008B1B7B /* StepsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsInteractor.swift; sourceTree = "<group>"; };
+		18819C802726E1CE008B1B7B /* StepsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsCoordinator.swift; sourceTree = "<group>"; };
+		18819C83272975A2008B1B7B /* StepPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepPreviewView.swift; sourceTree = "<group>"; };
+		18819C852729A858008B1B7B /* NextAndPreviousStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextAndPreviousStackView.swift; sourceTree = "<group>"; };
 		18DC6523271EFF6700AA0B38 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		18EA190E270F1FCB00B36E1C /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
-		18F8E17A26FA898E00B5766B /* StepCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCellModel.swift; sourceTree = "<group>"; };
-		18F8E17E26FAA22500B5766B /* SimpleStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStepCell.swift; sourceTree = "<group>"; };
-		18F8E18026FAA35600B5766B /* StepWithTimerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepWithTimerCell.swift; sourceTree = "<group>"; };
+		18F0496D273405F700DDEF51 /* StepsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsViewControllerTests.swift; sourceTree = "<group>"; };
+		18F0496F2734190D00DDEF51 /* StepsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsInteractorTests.swift; sourceTree = "<group>"; };
+		18F049712734192000DDEF51 /* StepsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsPresenterTests.swift; sourceTree = "<group>"; };
 		770BE81426F0C7480032F0ED /* Ext+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ext+UIImage.swift"; sourceTree = "<group>"; };
 		7713580B26F9FC3700164BBC /* FeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
 		7713580D26F9FC4400164BBC /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
@@ -308,22 +306,10 @@
 		18398CF326FA669B0054E054 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				18F8E17A26FA898E00B5766B /* StepCellModel.swift */,
 				18398CEB26FA3F720054E054 /* StepTimerDelegate.swift */,
 				18EA190E270F1FCB00B36E1C /* HapticsManager.swift */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		18398CF426FA66AF0054E054 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				1894725626F9F9E500E6CD8B /* PreparationView.swift */,
-				18F8E18026FAA35600B5766B /* StepWithTimerCell.swift */,
-				18F8E17E26FAA22500B5766B /* SimpleStepCell.swift */,
-				18398CE926FA3F490054E054 /* TimerView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		1840610E27171743008BAB4A /* Steps */ = {
@@ -368,29 +354,30 @@
 			path = ModalScene;
 			sourceTree = "<group>";
 		};
-		1894725526F9F99000E6CD8B /* PreparationScene */ = {
+		18819C732726DDEA008B1B7B /* Steps */ = {
 			isa = PBXGroup;
 			children = (
 				18398CF326FA669B0054E054 /* Utils */,
-				18398CF426FA66AF0054E054 /* Views */,
-				18398CEF26FA60640054E054 /* PreparationModels.swift */,
-				1894725C26F9FE4600E6CD8B /* PreparationViewController.swift */,
-				188F523326FB55C600A59039 /* PreparationCoordinator.swift */,
-				1894725826F9F9F700E6CD8B /* PreparationInterator.swift */,
-				1894725A26F9F9FF00E6CD8B /* PreparationPresenter.swift */,
-				18398CF126FA66890054E054 /* PreparationWorker.swift */,
+				18819C822726E1E1008B1B7B /* Views */,
+				18819C7E2726DE99008B1B7B /* StepsInteractor.swift */,
+				18819C782726DE62008B1B7B /* StepsViewController.swift */,
+				18819C7C2726DE81008B1B7B /* StepsPresenter.swift */,
+				18819C802726E1CE008B1B7B /* StepsCoordinator.swift */,
+				18819C7A2726DE72008B1B7B /* StepsWorker.swift */,
+				18819C762726DE45008B1B7B /* StepModels.swift */,
 			);
-			path = PreparationScene;
+			path = Steps;
 			sourceTree = "<group>";
 		};
-		18CC0F402704957300235E5C /* PreparationScene */ = {
+		18819C822726E1E1008B1B7B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				18CC0F3E2704956900235E5C /* PreparationViewControllerTests.swift */,
-				18CC0F41270495B500235E5C /* PreparationInteractorTests.swift */,
-				18CC0F43270495E700235E5C /* PreparationPresenterTests.swift */,
+				18398CE926FA3F490054E054 /* TimerView.swift */,
+				18819C742726DE16008B1B7B /* StepsView.swift */,
+				18819C83272975A2008B1B7B /* StepPreviewView.swift */,
+				18819C852729A858008B1B7B /* NextAndPreviousStackView.swift */,
 			);
-			path = PreparationScene;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		18EA190D270F154800B36E1C /* Recovered References */ = {
@@ -399,6 +386,16 @@
 				FEAD73292704AF40000BBE68 /* OverviewCoordinatorUnitTests.swift */,
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		18F0496C273405D800DDEF51 /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				18F0496D273405F700DDEF51 /* StepsViewControllerTests.swift */,
+				18F0496F2734190D00DDEF51 /* StepsInteractorTests.swift */,
+				18F049712734192000DDEF51 /* StepsPresenterTests.swift */,
+			);
+			path = Steps;
 			sourceTree = "<group>";
 		};
 		770BE81626F0DDC60032F0ED /* Json */ = {
@@ -523,6 +520,7 @@
 		77946A582706767200D3F1B3 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				18F0496C273405D800DDEF51 /* Steps */,
 				18632F3D2719C1120010C323 /* ModalScene */,
 				FE1D12092719A26C00396049 /* Overview */,
 				77547768270B23220031AF7E /* Feed */,
@@ -596,7 +594,6 @@
 			children = (
 				77946A582706767200D3F1B3 /* Features */,
 				77946A55270674AA00D3F1B3 /* Manager */,
-				18CC0F402704957300235E5C /* PreparationScene */,
 				776FD160270F241800CC312D /* Resources */,
 				FE95430126F8B2EB0039F547 /* Helpers */,
 				779F5EA726EF7458005668BE /* ComiditasTests.swift */,
@@ -653,13 +650,13 @@
 		779F5EC526EF74CC005668BE /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				18819C732726DDEA008B1B7B /* Steps */,
 				E6BFD5D0272982AD00658A74 /* Settings */,
 				77F9CB8D272ABB0C00D22F94 /* Search */,
 				E6381BF326FB52FC004F4298 /* Modal */,
 				FE95430926F8CBC40039F547 /* Overview */,
 				7792905126F8B04C00AAA0A4 /* Feed */,
 				7792904C26F8ADEF00AAA0A4 /* AppCoordinator */,
-				1894725526F9F99000E6CD8B /* PreparationScene */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -1078,8 +1075,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77E4560C273F2586001DC4D7 /* TimerView.swift in Sources */,
+				77E4560B273F256C001DC4D7 /* StepTimerDelegate.swift in Sources */,
+				77E4560A273F251C001DC4D7 /* BaseView.swift in Sources */,
 				779F5E8E26EF7456005668BE /* AppDelegate.swift in Sources */,
 				77635CE126F2188B00B36EC7 /* RecipeJsonRepository.swift in Sources */,
+				18819C792726DE62008B1B7B /* StepsViewController.swift in Sources */,
 				E6BFD5D9272AC2B000658A74 /* SettingsHeaderView.swift in Sources */,
 				E6BFD5D72729925E00658A74 /* SettingsStepsTableViewCell.swift in Sources */,
 				FED6973126FB82890078908E /* ModalCoordinator.swift in Sources */,
@@ -1087,6 +1088,8 @@
 				FEEDA9B626FB537C009A5E10 /* Difficulty.swift in Sources */,
 				7799D1F027282E41007F234D /* RecipesTableViewCell.swift in Sources */,
 				FE4E4DE826F9F69C007E78F4 /* OverviewViewController.swift in Sources */,
+				18819C862729A858008B1B7B /* NextAndPreviousStackView.swift in Sources */,
+				18819C752726DE16008B1B7B /* StepsView.swift in Sources */,
 				7799D1EE27282725007F234D /* FeedCollectionViewCell.swift in Sources */,
 				7713580C26F9FC3700164BBC /* FeedInteractor.swift in Sources */,
 				7713581026FA022100164BBC /* FeedModels.swift in Sources */,
@@ -1094,54 +1097,41 @@
 				7713580E26F9FC4400164BBC /* FeedPresenter.swift in Sources */,
 				77F9CB94272ABC3600D22F94 /* SearchCoordinator.swift in Sources */,
 				FE054CA12726F24500EE439E /* SpeechRecognizer.swift in Sources */,
-				77E1C38F26F93FE400F8B0DF /* FeedTableViewCell.swift in Sources */,
 				FE127E97270DD1E500D6EEE8 /* OverviewModels.swift in Sources */,
 				77FF2E4E26FA1CEE00FC63B5 /* Time.swift in Sources */,
 				77635CDF26F2185B00B36EC7 /* JsonStack.swift in Sources */,
 				770BE81526F0C7480032F0ED /* Ext+UIImage.swift in Sources */,
 				77946A6227067B1300D3F1B3 /* LocalizablesProtocol.swift in Sources */,
+				18819C772726DE45008B1B7B /* StepModels.swift in Sources */,
 				FE054C9F2726F24500EE439E /* SpeechProcessorProtocol.swift in Sources */,
-				77E1C39326F94FA200F8B0DF /* FeedCollectionViewCell.swift in Sources */,
 				E6BFD5DB272AD6D800658A74 /* SettingsCoordinator.swift in Sources */,
 				779F5E9026EF7456005668BE /* SceneDelegate.swift in Sources */,
 				779526B2273405B40097AF79 /* TagsCollectionViewCell.swift in Sources */,
-				1894725926F9F9F700E6CD8B /* PreparationInterator.swift in Sources */,
-				188F523426FB55C600A59039 /* PreparationCoordinator.swift in Sources */,
 				E68CC29E2733FE86003F6E6C /* SettingsWorker.swift in Sources */,
-				18398CEA26FA3F490054E054 /* TimerView.swift in Sources */,
-				18F8E17B26FA898E00B5766B /* StepCellModel.swift in Sources */,
 				77F9CB9E272ADF9500D22F94 /* TagsView.swift in Sources */,
 				E6381BF226FB52EA004F4298 /* ModalViewController.swift in Sources */,
 				FE95430026F8B2BD0039F547 /* Ext+UIImageView.swift in Sources */,
-				18398CF026FA60640054E054 /* PreparationModels.swift in Sources */,
-				18F8E18126FAA35600B5766B /* StepWithTimerCell.swift in Sources */,
+				18819C7F2726DE99008B1B7B /* StepsInteractor.swift in Sources */,
 				184061222718647F008BAB4A /* ModalLocalizable.swift in Sources */,
-				18398CF226FA66890054E054 /* PreparationWorker.swift in Sources */,
 				77F9CB96272ABD3900D22F94 /* SearchInteractor.swift in Sources */,
 				774D5A7326F36A84004176A1 /* Ext+UIColor.swift in Sources */,
 				7792905326F8B08700AAA0A4 /* FeedViewController.swift in Sources */,
 				7792904E26F8AE0800AAA0A4 /* AppCoordinator.swift in Sources */,
-				1894725D26F9FE4600E6CD8B /* PreparationViewController.swift in Sources */,
 				77D1BD77270F15D700553403 /* FeatureFlags.swift in Sources */,
 				779F5E9826EF7456005668BE /* Comiditas.xcdatamodeld in Sources */,
 				E6381BF126FB52EA004F4298 /* ModalView.swift in Sources */,
 				7792904B26F8ADC500AAA0A4 /* CoordinatorProtocol.swift in Sources */,
-				1894725B26F9F9FF00E6CD8B /* PreparationPresenter.swift in Sources */,
+				18819C7D2726DE81008B1B7B /* StepsPresenter.swift in Sources */,
 				7743D4092737467D00B16888 /* Ext+UIButton.swift in Sources */,
 				FE054CA02726F24500EE439E /* DirectionsSpeechProcessor.swift in Sources */,
 				7792905526F8B09800AAA0A4 /* FeedView.swift in Sources */,
-				1894725726F9F9E500E6CD8B /* PreparationView.swift in Sources */,
+				18819C812726E1CE008B1B7B /* StepsCoordinator.swift in Sources */,
 				77635CDB26F2124D00B36EC7 /* IngredientsJson.swift in Sources */,
 				FE127E95270DD15B00D6EEE8 /* OverviewPresenter.swift in Sources */,
-				77E1C38C26F93BF100F8B0DF /* TagCollectionViewCell.swift in Sources */,
 				E68CC2512732CFA7003F6E6C /* SettingsLocalizable.swift in Sources */,
-				774D5A7A26F3711A004176A1 /* BaseView.swift in Sources */,
 				E68CC2552732D5C6003F6E6C /* SettingsInteractor.swift in Sources */,
-				18398CEC26FA3F720054E054 /* StepTimerDelegate.swift in Sources */,
 				E6BFD5D527298C5A00658A74 /* SettingsViewController.swift in Sources */,
-				774D5A7A26F3711A004176A1 /* BaseView.swift in Sources */,
 				77F9CB98272ABD4500D22F94 /* SearchPresenter.swift in Sources */,
-				18398CEC26FA3F720054E054 /* StepTimerDelegate.swift in Sources */,
 				7799D1EC27282576007F234D /* FeedTableViewCell.swift in Sources */,
 				77635CD926F2115800B36EC7 /* RecipeJson.swift in Sources */,
 				FE95430B26F8CBFA0039F547 /* OverviewView.swift in Sources */,
@@ -1149,6 +1139,7 @@
 				FEC8B85426F9FD6400455143 /* DetailView.swift in Sources */,
 				FE054C9E2726F24500EE439E /* SpeechManager.swift in Sources */,
 				FE127E93270DD14000D6EEE8 /* OverviewInteractor.swift in Sources */,
+				18819C7B2726DE72008B1B7B /* StepsWorker.swift in Sources */,
 				18DC6524271EFF6700AA0B38 /* NotificationManager.swift in Sources */,
 				774A6858273A875F0028AF84 /* SearchEmptyView.swift in Sources */,
 				774D5A7C26F37256004176A1 /* Ext+UIFonts.swift in Sources */,
@@ -1170,7 +1161,7 @@
 				77F9CB9C272ACB1100D22F94 /* SearchModels.swift in Sources */,
 				FE95430E26F8D0DC0039F547 /* RecipeHeaderCell.swift in Sources */,
 				77635CDD26F214DA00B36EC7 /* StepJson.swift in Sources */,
-				18F8E17F26FAA22500B5766B /* SimpleStepCell.swift in Sources */,
+				18819C84272975A2008B1B7B /* StepPreviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1178,21 +1169,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F049722734192000DDEF51 /* StepsPresenterTests.swift in Sources */,
 				18632F372719AC420010C323 /* ModalLocalizableTest.swift in Sources */,
 				FE1D121C2719C16700396049 /* OverviewPresenterSpy.swift in Sources */,
+				18F0496E273405F700DDEF51 /* StepsViewControllerTests.swift in Sources */,
 				77946A57270674C800D3F1B3 /* AppCoordinatorTest.swift in Sources */,
 				FE95430326F8B41D0039F547 /* UIImageViewTests.swift in Sources */,
 				77946A4D27066AD800D3F1B3 /* Ext+UIImageTests.swift in Sources */,
 				FE1D120D2719A2E600396049 /* OverviewCoordinatorTests.swift in Sources */,
+				18F049702734190D00DDEF51 /* StepsInteractorTests.swift in Sources */,
 				7754776A270B23220031AF7E /* FeedCoordinatorTests.swift in Sources */,
 				FE054CAE2726F29200EE439E /* DirectionsSpeechProcessorSpy.swift in Sources */,
 				779F5EA826EF7458005668BE /* ComiditasTests.swift in Sources */,
 				77946A4F27066C4A00D3F1B3 /* Ext+UIFontsTests.swift in Sources */,
 				18632F3C2719B5880010C323 /* StepsLocalizableTest.swift in Sources */,
 				FE054CAF2726F29200EE439E /* DirectionsSpeechProcessorTests.swift in Sources */,
-				18CC0F42270495B500235E5C /* PreparationInteractorTests.swift in Sources */,
 				FE054CAD2726F29200EE439E /* SpeechRecognizerSpy.swift in Sources */,
-				18CC0F3F2704956900235E5C /* PreparationViewControllerTests.swift in Sources */,
 				18632F3F2719C29A0010C323 /* ModalCoordinatorTests.swift in Sources */,
 				776FD164270F241800CC312D /* FeedLocalizableTest.swift in Sources */,
 				FE1D121A2719C11900396049 /* OverviewPresenterTests.swift in Sources */,
@@ -1201,7 +1193,6 @@
 				FE054CB12726F29200EE439E /* SpeechManagerSpy.swift in Sources */,
 				FE054CAC2726F29200EE439E /* SpeechRecognizerTests.swift in Sources */,
 				FE054CB02726F29200EE439E /* SpeechManagerTests.swift in Sources */,
-				18CC0F44270495E700235E5C /* PreparationPresenterTests.swift in Sources */,
 				FE1D12122719A48D00396049 /* OverviewViewControllerSpy.swift in Sources */,
 				77D70D1B26F22E3A00A8B244 /* RecipeJsonRepositoryTests.swift in Sources */,
 				77946A53270671E400D3F1B3 /* TimeTests.swift in Sources */,

@@ -62,6 +62,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Audio is recorded to transcribe your speech</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>You can use voice commands to control the app</string>
 	<key>UIUserInterfaceStyle</key>
 	<string>Light</string>
 	<key>NSSpeechRecognitionUsageDescription</key>

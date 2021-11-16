@@ -81,7 +81,7 @@ extension OverviewViewControllerTests {
         let expectation = XCTestExpectation(description: "Waiting for animated transition")
         _ = XCTWaiter.wait(for: [expectation], timeout: 1)
 
-        XCTAssertNotNil(sut.coordinator?.navigationController.topViewController as? PreparationViewController)
+        XCTAssertNotNil(sut.coordinator?.navigationController.topViewController as? StepsViewController)
     }
 }
 
