@@ -23,8 +23,8 @@ class StepsView: UIView {
 
     lazy var closeButton: UIButton = {
         let button = UIButton(type: .system)
-        let image = UIImage(systemName: "xmark.circle.fill", withConfiguration: UIImage.SymbolConfiguration(
-            pointSize: 25, weight: .bold))
+        let image = UIImage(systemName: "xmark.circle.fill",
+                            withConfiguration: UIImage.SymbolConfiguration(pointSize: 25, weight: .bold))
         button.setImage(image, for: .normal)
         button.tintColor = Colors.primary
         button.isAccessibilityElement = true

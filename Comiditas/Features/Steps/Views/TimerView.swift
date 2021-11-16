@@ -10,7 +10,7 @@ import UIKit
 
 class TimerView: UIView {
 
-    var timer: StepTimer!
+    var timer: StepTimer?
 
     lazy var timerLabel: UILabel = {
         let label = UILabel()
@@ -23,25 +23,19 @@ class TimerView: UIView {
         return label
     }()
 
-    var pauseImage: UIImage {
-        UIImage(
-            systemName: "pause.circle.fill",
-            withConfiguration: UIImage.SymbolConfiguration(pointSize: 40, weight: .bold)
-        )!
+    var pauseImage: UIImage? {
+        UIImage(systemName: "pause.circle.fill",
+                withConfiguration: UIImage.SymbolConfiguration(pointSize: 40, weight: .bold))
     }
 
-    var playImage: UIImage {
-        UIImage(
-            systemName: "play.circle",
-            withConfiguration: UIImage.SymbolConfiguration(pointSize: 40, weight: .bold)
-        )!
+    var playImage: UIImage? {
+        UIImage(systemName: "play.circle",
+                withConfiguration: UIImage.SymbolConfiguration(pointSize: 40, weight: .bold))
     }
 
-    var reiniciateImage: UIImage {
-        UIImage(
-            systemName: "arrow.clockwise.circle",
-            withConfiguration: UIImage.SymbolConfiguration(pointSize: 40, weight: .bold)
-        )!
+    var reiniciateImage: UIImage? {
+        UIImage(systemName: "arrow.clockwise.circle",
+                withConfiguration: UIImage.SymbolConfiguration(pointSize: 40, weight: .bold))
     }
 
     lazy var timerPlayPauseButton: UIButton = {
@@ -51,7 +45,7 @@ class TimerView: UIView {
         button.titleLabel?.font = Fonts.h1
         button.isAccessibilityElement = true
         button.accessibilityLabel = StepsLocalizable.iniciateClockAcessibility.text
-        button.addTarget(self, action: #selector(playPauseAction(_:)), for: .touchUpInside)
+        button.addTarget(self, action: #selector(playPauseAction), for: .touchUpInside)
         return button
     }()
 
@@ -68,6 +62,7 @@ class TimerView: UIView {
 
     var timerIsRunning: Bool = false {
         didSet {
+            guard let timer = self.timer else { return }
             if timerIsRunning {
                 if timer.interval == 0 {
                     setupTimer(duration: timer.originalInterval)
@@ -76,12 +71,12 @@ class TimerView: UIView {
                 timerPlayPauseButton.accessibilityLabel = StepsLocalizable.pauseClockAcessibility.text
                 timerPlayPauseButton.setImage(pauseImage, for: .normal)
 
-                NotificationManager.shared.requestAuthorization { [self] granted in
+                NotificationManager.shared.requestAuthorization { granted in
                     if granted {
                         NotificationManager.shared.scheduleNotification(
                             title: StepsLocalizable.timerNotificationTitle.text,
                             body: StepsLocalizable.timerNotificationBody.text,
-                            timeInterval: self.timer.interval)
+                            timeInterval: timer.interval)
                     }
                 }
 
@@ -114,7 +109,9 @@ class TimerView: UIView {
 
     @objc func restartAction() {
         timerIsRunning = false
-        setupTimer(duration: timer.originalInterval)
+        if let timer = timer {
+            setupTimer(duration: timer.originalInterval)
+        }
     }
 
     override init(frame: CGRect) {
