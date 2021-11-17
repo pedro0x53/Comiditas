@@ -54,6 +54,7 @@ class StepsView: UIView {
         super.init(frame: frame)
         createSubviews()
         setupLayout()
+        configureAccessibilityElementsOrder()
     }
 
     required init?(coder: NSCoder) {
@@ -77,6 +78,16 @@ class StepsView: UIView {
 
         self.subviews.forEach { $0.translatesAutoresizingMaskIntoConstraints = false }
 
+    }
+
+    func configureAccessibilityElementsOrder() {
+        accessibilityElements = [
+            closeButton,
+            recipeStepLabel,
+            timerView,
+            nextStepView,
+            stackView
+        ]
     }
 
     func setupLayout() {

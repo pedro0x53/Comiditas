@@ -50,6 +50,7 @@ class NextAndPreviousStackView: UIStackView {
         label.font = Fonts.h3
         label.textColor = Colors.textDark
         label.textAlignment = .right
+        label.isAccessibilityElement = false
         return label
     }()
 
@@ -58,6 +59,7 @@ class NextAndPreviousStackView: UIStackView {
         label.font = Fonts.h3
         label.textColor = Colors.textDark
         label.textAlignment = .left
+        label.isAccessibilityElement = false
         return label
     }()
 
@@ -66,6 +68,8 @@ class NextAndPreviousStackView: UIStackView {
             currentPageLabel,
             totalPagesLabel
         ])
+        stack.isAccessibilityElement = true
+        stack.accessibilityLabel = "\(currentPageLabel) + \(totalPagesLabel)"
         stack.distribution = .equalCentering
         stack.spacing = 0
         return stack

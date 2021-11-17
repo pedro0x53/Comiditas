@@ -1386,14 +1386,14 @@
 				CODE_SIGN_ENTITLEMENTS = Comiditas/Comiditas.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = VH525588L5;
+				DEVELOPMENT_TEAM = QQK85Y8S7P;
 				INFOPLIST_FILE = Comiditas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.3;
-				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.Comiditas;
+				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.Comidita;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1408,14 +1408,14 @@
 				CODE_SIGN_ENTITLEMENTS = Comiditas/Comiditas.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = VH525588L5;
+				DEVELOPMENT_TEAM = QQK85Y8S7P;
 				INFOPLIST_FILE = Comiditas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.3;
-				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.Comiditas;
+				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.Comidita;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

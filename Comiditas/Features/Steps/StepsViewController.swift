@@ -144,6 +144,8 @@ extension StepsViewController: StepsDisplayLogic {
         stepsView.nextStepView.previewStepDescription = hasTimer ? nil : preview ?? nil
         stepsView.stackView.currentPageLabel.text = "\(StepsLocalizable.step.text) \(step.step)"
         stepsView.setupLine(for: step.step)
+        stepsView.stackView.accessibilityLabel =
+        "\(StepsLocalizable.step.text) \(step.step) \(stepsView.stackView.totalPagesLabel.text ?? "")"
 
         newStepPresented()
     }
