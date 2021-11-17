@@ -121,8 +121,7 @@ class SpeechRecognizer {
 
         do {
             audioSession = AVAudioSession.sharedInstance()
-            try audioSession?.overrideOutputAudioPort(AVAudioSession.PortOverride.speaker)
-            try audioSession?.setCategory(.playAndRecord, mode: .default, options: .duckOthers)
+            try audioSession?.setCategory(.playAndRecord, mode: .default, options: .defaultToSpeaker)
             try audioSession?.setActive(true, options: .notifyOthersOnDeactivation)
 
             try audioEngine.start()
