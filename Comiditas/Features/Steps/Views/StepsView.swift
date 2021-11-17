@@ -35,7 +35,7 @@ class StepsView: UIView {
 
     lazy var recipeStepLabel: UILabel = {
         let label = UILabel(frame: .zero)
-        label.font = Fonts.h4
+        label.font = Fonts.h4Bold
         label.textAlignment = .center
         label.numberOfLines = 0
         label.textColor = Colors.textDark
