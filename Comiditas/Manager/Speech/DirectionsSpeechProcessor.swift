@@ -41,9 +41,9 @@ struct DirectionsSpeechProcessor: SpeechProcessorProtocol {
         for regexPattern in DirectionsSpeechProcessor.Patterns.allCases {
             if let regex = getRegex(of: regexPattern),
                let firstMatch = regex.firstMatch(in: testString, options: [], range: range),
-               let textRange = Range(firstMatch.range, in: string) {
+               let textRange = Range(firstMatch.range, in: testString) {
                 manager.speechProcessor(identifier: regexPattern.rawValue,
-                                        string: String(string[textRange]))
+                                        string: String(testString[textRange]))
                 break
             }
         }
