@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "imgPortion.png",
+      "filename" : "servings.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "servings@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "servings@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
