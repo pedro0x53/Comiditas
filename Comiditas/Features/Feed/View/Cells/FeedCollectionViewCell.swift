@@ -11,10 +11,15 @@ class FeedCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
+        setupAccessibility()
     }
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+
+    func setupAccessibility() {
+        accessibilityElements = [imageView, titleLabel, labelTime, labelPortion]
     }
 
     lazy var imageView: UIImageView = {
@@ -23,6 +28,7 @@ class FeedCollectionViewCell: UICollectionViewCell {
         imageView.layer.masksToBounds = true
         imageView.layer.cornerRadius = 8
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.isAccessibilityElement = true
         imageView.accessibilityTraits = .image
         imageView.accessibilityLabel = "Imagem da receita"
         return imageView
@@ -33,6 +39,8 @@ class FeedCollectionViewCell: UICollectionViewCell {
         label.font = Fonts.h4Bold
         label.textColor = Colors.primary
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.isAccessibilityElement = true
+        label.accessibilityTraits = .link
         return label
     }()
 
@@ -45,6 +53,7 @@ class FeedCollectionViewCell: UICollectionViewCell {
         stack.layer.cornerRadius = 8
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.isAccessibilityElement = false
+        stack.isHidden = true
         return stack
     }()
 
@@ -55,7 +64,7 @@ class FeedCollectionViewCell: UICollectionViewCell {
             withConfiguration: UIImage.SymbolConfiguration(weight: .regular)
         )?.withTintColor(.black, renderingMode: .alwaysOriginal)
         image.translatesAutoresizingMaskIntoConstraints = true
-        image.isAccessibilityElement = true
+        image.isAccessibilityElement = false
         image.accessibilityTraits = .image
         image.accessibilityLabel = "Nota da receita: "
         return image
@@ -66,7 +75,7 @@ class FeedCollectionViewCell: UICollectionViewCell {
         label.textColor = Colors.textDark
         label.font = Fonts.h6
         label.text = "5.0"
-        label.isAccessibilityElement = true
+        label.isAccessibilityElement = false
         label.accessibilityTraits = .staticText
         label.accessibilityLabel = "5."
         return label
