@@ -22,6 +22,10 @@
 	<false/>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Audio is recorded to transcribe your speech</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>You can use voice commands to control the app</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Pacifico.ttf</string>
