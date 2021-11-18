@@ -139,7 +139,6 @@ extension StepsViewController: StepsDisplayLogic {
         }
 
         stepsView.recipeStepLabel.text = step.stepDescription
-        stepsView.recipeStepLabel.font = hasTimer ? Fonts.h4 : Fonts.h4Bold
         stepsView.timerView.isHidden = !hasTimer
         stepsView.nextStepView.previewStepDescription = hasTimer ? nil : preview ?? nil
         stepsView.stackView.currentPageLabel.text = "\(StepsLocalizable.step.text) \(step.step)"
