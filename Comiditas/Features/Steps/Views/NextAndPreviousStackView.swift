@@ -63,13 +63,12 @@ class NextAndPreviousStackView: UIStackView {
         return label
     }()
 
-    private lazy var bottomLabelsStackView: UIStackView = {
+    lazy var bottomLabelsStackView: UIStackView = {
         let stack = UIStackView(arrangedSubviews: [
             currentPageLabel,
             totalPagesLabel
         ])
         stack.isAccessibilityElement = true
-        stack.accessibilityLabel = "\(currentPageLabel) + \(totalPagesLabel)"
         stack.distribution = .equalCentering
         stack.spacing = 0
         return stack
@@ -91,7 +90,6 @@ class NextAndPreviousStackView: UIStackView {
     }
 
     // MARK: - Selectors
-
     @objc func nextButtonAction(_ sender: UIButton) {
         delegate?.didPressNextButton()
         HapticsManager.shared.vibrate(for: .success)
@@ -101,5 +99,4 @@ class NextAndPreviousStackView: UIStackView {
         delegate?.didPressPreviousButton()
         HapticsManager.shared.vibrate(for: .success)
     }
-
 }

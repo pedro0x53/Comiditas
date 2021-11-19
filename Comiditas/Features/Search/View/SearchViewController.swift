@@ -58,6 +58,8 @@ class SearchViewController: UIViewController, SearchViewControllerProtocol {
         presenter.viewController = viewController
 
         contentView.searchBar.delegate = self
+
+        self.hideKeyboardOnBackgroundTouched()
     }
 
     func setupTableView() {

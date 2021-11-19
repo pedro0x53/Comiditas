@@ -17,6 +17,7 @@ class StepPreviewView: UIView {
                 groupAcessibilityLabels()
             } else {
                 self.isHidden = true
+                self.isAccessibilityElement = false
             }
         }
     }

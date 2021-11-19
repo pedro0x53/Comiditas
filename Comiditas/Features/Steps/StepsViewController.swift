@@ -87,6 +87,12 @@ class StepsViewController: UIViewController {
         }
     }
 
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        speechManager?.stop()
+        speechManager = nil
+    }
+
     // MARK: - Helper Methods
 
     // MARK: - Actions
@@ -143,9 +149,7 @@ extension StepsViewController: StepsDisplayLogic {
         stepsView.nextStepView.previewStepDescription = hasTimer ? nil : preview ?? nil
         stepsView.stackView.currentPageLabel.text = "\(StepsLocalizable.step.text) \(step.step)"
         stepsView.setupLine(for: step.step)
-        stepsView.stackView.accessibilityLabel =
-        "\(StepsLocalizable.step.text) \(step.step) \(stepsView.stackView.totalPagesLabel.text ?? "")"
-
+        stepsView.stackView.bottomLabelsStackView.accessibilityValue = "Passo \(step.step) de \(recipe.steps.count)"
         newStepPresented()
     }
 
