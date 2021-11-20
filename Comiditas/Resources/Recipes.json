@@ -1537,5 +1537,186 @@
                 "timer": 0
             }
         ]
+    },
+    {
+        "identifier": 21,
+        "name": "Caldeirada de frutos do mar",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/caldeirada_de_frutos_do_mar.jpeg",
+        "difficultyLevel": 3,
+        "servings": 6,
+        "prepTime": 1200,
+        "ingredients" : [
+            "600 g de cação cortado em cubos.",
+            "500 g de camarão médio limpo.",
+            "6 lagostins.",
+            "300 g de mexilhão.",
+            "500 g de lula cortada em anéis.",
+            "5 batatas médias.",
+            "3 tomates maduros cortados em rodelas.",
+            "3 cebolas cortadas em rodelas.",
+            "1 pimentão cortado em rodelas.",
+            "2 cubos de caldo de camarão.",
+            "Cheiro verde a gosto.",
+            "Coentro a gosto.",
+            "Sal a gosto.",
+            "Limão para lavar os frutos do mar.",
+            "1/2 xícara de azeite de oliva.",
+            "6 dentes de alho grandes."
+        ],
+        "categories" : [
+            "Frutos do mar"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Depois dos frutos do mar devidamente limpos e lavados com caldo de limão.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Aqueça uma panela grande e coloque para dourar o alho amassado, depois refogue o mexilhão e coloque o cação cortado em cubos e adicione a água. Deixe abrir fervura e adicione a lula cortada em anéis e os tomates, as cebolas e o pimentão.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Logo em seguida coloque os cubos de caldo de camarão e acerte o sal.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Adicione coentro e cheiro verde e os camarões. Logo após coloque as batatas cortadas em rodelas grossas e previamente cozidas.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 5,
+                "stepDescription": "E para finalizar coloque os lagostins por cima de tudo, tampe a panela e deixe cozinhar por 5 min.",
+                "hasTimer": true,
+                "timer": 300
+            },
+            {
+                "step": 6,
+                "stepDescription": "Sirva com arroz branco e pirão.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 22,
+        "name": "Risoto de linguiça",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/risoto_de_linguica.jpg",
+        "difficultyLevel": 3,
+        "servings": 5,
+        "prepTime": 2100,
+        "ingredients" : [
+            "5 gomos de Linguiça toscana Sadia cortados em rodelas.",
+            "1 cebola descascada e cortada em cubos pequenos.",
+            "1 xícara (chá) de arroz para risoto (arbóreo ou carnaroli).",
+            "1 xícara (chá) de vinho branco seco.",
+            "2 ½ xícaras (chá) de caldo de legumes quente (de preferência caseiro).",
+            "2 tomates sem pele e sem sementes cortados em cubos pequenos.",
+            "Sal a gosto.",
+            "Pimenta dedo-de-moça picada a gosto.",
+            "½ maço de rúcula picada.",
+            "1 colher (sopa) de Qualy cremosa sem sal."
+        ],
+        "categories" : [
+            "Massas", "Carnes"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Em uma panela, doure as linguiças em sua própria gordura; acrescente a margarina e a cebola e deixe dourar.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Acrescente o arroz e refogue rapidamente. Adicione o vinho e deixe evaporar.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Aos poucos, vá adicionando o caldo de legumes, mexendo sem parar, até que o arroz esteja al dente (não muito duro, nem muito mole).",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Junte o tomate e cozinhe por mais alguns instantes, sem parar de mexer. O arroz deve ficar cremoso, mas sem líquido em excesso.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 5,
+                "stepDescription": "Desligue o fogo, tempere com o sal e a pimenta e adicione a rúcula.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 23,
+        "name": "Casquinha de siri",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/casquinha_de_siri.webp",
+        "difficultyLevel": 5,
+        "servings": 1,
+        "prepTime": 2100,
+        "ingredients" : [
+            "500g de carne de siri desfiada e limpa.",
+            "1 vidro de leite de coco.",
+            "1 cebola ralada.",
+            "2 dentes de alho amassados.",
+            "2 colheres de sopa de azeite de dendê.",
+            "2 colheres de sopa de azeite extra virgem.",
+            "Sal e pimenta a gosto.",
+            "Cebolinha picadinha a gosto.",
+            "2 tomates médios, sem pele e sem sementes, picadinhos.",
+            "Parmesão ralado para gratinar."
+        ],
+        "categories" : [
+            "Frutos do mar"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Em uma frigideira larga e funda esquente os azeites. Doure a cebola e alho.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Unte a carne de siri, os tomates e deixe cozinhar por 15 minutos em fogo baixo.",
+                "hasTimer": true,
+                "timer": 900
+            },
+            {
+                "step": 3,
+                "stepDescription": " Adicione o leite de coco e tempere com sal, pimenta e a cebolinha verde a gosto.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Mexa bem por 5 minutos e encha as casquinhas.",
+                "hasTimer": true,
+                "timer": 300
+            },
+            {
+                "step": 5,
+                "stepDescription": "Polvilhe com parmesão a gosto e leve ao forno até gratinar.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
     }
+
 ]
