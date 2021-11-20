@@ -28,6 +28,7 @@ enum StepsLocalizable: String {
     case nextStep
 
     case next
+    case skip
 
     case timerNotificationTitle
     case timerNotificationBody

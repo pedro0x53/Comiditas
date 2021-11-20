@@ -18,7 +18,8 @@ close = "Close";
 step = "Step";
 of = "of";
 
-next = "Next:";
+next = "Next";
+skip = "Pular";
 
 iniciateClockAcessibility = "Iniciate timer";
 pauseClockAcessibility = "Pause timer";

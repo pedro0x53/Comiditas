@@ -18,7 +18,8 @@ close = "Fechar";
 step = "Passo";
 of = "de";
 
-next = "Próximo:";
+next = "Próximo";
+skip = "Pular";
 
 iniciateClockAcessibility = "Iniciar temporizador";
 pauseClockAcessibility = "Pausar temporizador";

@@ -24,6 +24,8 @@ class StepsCoordinator: NSObject, StepsCoordinatorProtocol {
     var recipe: RecipeJson?
     var image: UIImage?
 
+    let showedOnboarding = UserDefaults.standard.bool(forKey: "showedOnboardingKey")
+
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
@@ -36,7 +38,13 @@ class StepsCoordinator: NSObject, StepsCoordinatorProtocol {
             stepsViewController.image = image
             stepsViewController.coordinator = self
             navigationController.present(stepsViewController, animated: true)
+
+            if !showedOnboarding {
+                let onboardingCoordinator = OnboardingCoordinator(viewController: stepsViewController)
+                coordinate(to: onboardingCoordinator)
+            }
         }
+
     }
 
     func dismiss(animated: Bool = true, completion: (() -> Void)? = nil) {
