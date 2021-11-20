@@ -2060,5 +2060,74 @@
                 "timer": 0
             }
         ]
+    },
+    {
+        "identifier": 29,
+        "name": "Coxinha (Lacfree)",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/coxinha_sem_lactose.jpeg",
+        "difficultyLevel": 4,
+        "servings": 6,
+        "prepTime": 3600,
+        "ingredients" : [
+           "250g de aipim ou batata doce cozido.",
+           "4 colheres de sopa de farinha de amaranto, ou de grão de bico, ou de aveia se você puder consumir glúten.",
+           "4 colheres de sopa de farinha de arroz – de preferencia a integral.",
+           "1-2 colheres de sopa de biomassa de banana verde – opcional.",
+           "200 ml de água mineral ou caldo de legumes.",
+           "1 colher de sobremesa de sal.",
+           "25g de farinha de linhaça.",
+           "25g de amaranto em flocos.",
+           "100g de frango cozido e desfiado – eu cozinho o meu com alecrim, cebola e uma pitada de sal.",
+           "1/2 cenoura ralada.",
+           "salsinha picada."
+        ],
+        "categories" : [
+            "Lacfree"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Cozinhe o aipim ou batata doce até ficar macio. Com um processador ou um garfo amasse bem até que fique tipo um purê. Reserve.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Em uma panela coloque o aipim/batata doce, o sal, a biomassa e a água e deixe levantar fervura.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Adicione as farinhas e misture bem, com vontade e vigor. Desligue o fogo e deixe a massa esfriar.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Enquanto isso prepare seu recheio. Desfie o frango e misture os temperos que gosta.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 5,
+                "stepDescription": "Em um prato misture os flocos de amaranto e a farinha de linhaça.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 6,
+                "stepDescription": "Molde a coxinha no formato tracional com a massa e o recheio.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 7,
+                "stepDescription": "Coloque em uma assadeira – não precisa untar – e leve ao forno médio-alto pré-aquecido até ficarem douradas. Mais ou menos 20 minutos.",
+                "hasTimer": true,
+                "timer": 1200
+            }
+        ]
     }
 ]
