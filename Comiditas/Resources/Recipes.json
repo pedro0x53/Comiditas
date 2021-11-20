@@ -81,7 +81,7 @@
             "Cacau em pó ou raspas de chocolate para decorar.",
         ],
         "categories" : [
-            "Doces"
+            "Doces", "Bolos e tortas"
         ],
         "rate": 3,
         "steps": [
@@ -145,7 +145,7 @@
             "400 ml de água.",
         ],
         "categories" : [
-            "Salgado"
+            "Massas", "Aves"
         ],
         "rate": 3,
         "steps": [
@@ -300,7 +300,7 @@
             "Meia xícara de chá de gotas de chocolate meio amargo forneáveis (opcional)"
         ],
         "categories" : [
-            "Doces"
+            "Doces", "Bolos e tortas"
         ],
         "rate": 3,
         "steps": [
@@ -357,7 +357,7 @@
             "Meia xícara de chá de chocolate em gotas ou picado"
         ],
         "categories" : [
-            "Doces"
+            "Doces", "Bolos e tortas"
         ],
         "rate": 3,
         "steps": [
@@ -654,7 +654,7 @@
             "Batata palha para enfeitar e servir com o prato"
         ],
         "categories" : [
-            "Massas"
+            "Massas", "Frutos do mar"
         ],
         "rate": 5,
         "steps": [
@@ -795,7 +795,7 @@
             "Queijo mussarela ralado à gosto"
         ],
         "categories" : [
-            "Salgados"
+            "Fáceis", "Rápidas", "Fit"
         ],
         "rate": 4,
         "steps": [
@@ -920,8 +920,9 @@
             "Sal a gosto"
         ],
         "categories" : [
-            "Salgados",
-            "Patê"
+            "Rápidos",
+            "Molhos",
+            "Fáceis"
         ],
         "rate": 5,
         "steps": [
@@ -977,7 +978,7 @@
         ],
         "categories" : [
             "Massas",
-            "Salgados"
+            "Frutos do mar"
         ],
         "rate": 5,
         "steps": [
@@ -1023,7 +1024,7 @@
             "1/2 (meia) xícara de cebolinha ou salsinha picadas."
         ],
         "categories" : [
-            "Massas"
+            "Massas", "Rápidas", "Fáceis"
         ],
         "rate": 3,
         "steps": [
@@ -1445,7 +1446,7 @@
             "1 colher (sopa) de Qualy cremosa sem sal."
         ],
         "categories" : [
-            "Massas"
+            "Massas", "Carnes"
         ],
         "rate": 5,
         "steps": [
@@ -1501,7 +1502,7 @@
             "1 colher (sopa) de Qualy cremosa sem sal."
         ],
         "categories" : [
-            "Massas"
+            "Massas", "Carnes"
         ],
         "rate": 5,
         "steps": [
