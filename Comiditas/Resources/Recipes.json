@@ -1700,7 +1700,7 @@
             },
             {
                 "step": 3,
-                "stepDescription": " Adicione o leite de coco e tempere com sal, pimenta e a cebolinha verde a gosto.",
+                "stepDescription": "Adicione o leite de coco e tempere com sal, pimenta e a cebolinha verde a gosto.",
                 "hasTimer": false,
                 "timer": 0
             },
@@ -1717,6 +1717,199 @@
                 "timer": 0
             }
         ]
+    },
+    {
+        "identifier": 24,
+        "name": "Bacalhau",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/bacalhau.jpeg",
+        "difficultyLevel": 5,
+        "servings": 8,
+        "prepTime": 1500,
+        "ingredients" : [
+            "1 kg de bacalhau.",
+            "1 pimentão vermelho picado.",
+            "1 pimentão verde picado.",
+            "1 cebola.",
+            "3 tomates picados maduros (não precisa tirar pele nem semente).",
+            "2 dentes de alho.",
+            "1 xícara de azeitona preta sem caroço picada.",
+            "Orégano a gosto.",
+            "1 kg de batatas cozidas e espremidas.",
+            "2 colheres de sopa de manteiga.",
+            "1/2 xícara de leite.",
+            "Sal a gosto.",
+            "1 xícara de catupiry.",
+            "1 lata de creme de leite sem soro.",
+            "1 vidro de leite de coco de 200 ml."
+        ],
+        "categories" : [
+            "Peixes"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Primeiro faça o purê de batatas, esprema as batatas, e acrescente a manteiga e o leite com as batatas ainda bem quentes, é só mexer bem e acrescentar sal a gosto.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Coloque esse purê num refratário alto. E arrrume como se fosse a massa de uma torta.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Faça o refogado com o bacalhau já dessalgado (deixar de molho na véspera e trocar no mínimo 5 vezes a água).",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Coloque para dar uma breve fervura, 5 minutos em água já fervente.",
+                "hasTimer": true,
+                "timer": 300
+            },
+            {
+                "step": 5,
+                "stepDescription": "Depois desfie o bacalhau em lascas.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 6,
+                "stepDescription": "Coloque bastante azeite numa panela e frite a cebola e o alho. Depois juntar os pimentões, o tomate, e deixar apurar por uns 10 minutos.",
+                "hasTimer": true,
+                "timer": 600
+            },
+            {
+                "step": 7,
+                "stepDescription": "Depois juntar as azeitonas e o bacalhau e deixar apurar mais 10 minutos.",
+                "hasTimer": true,
+                "timer": 600
+            },
+            {
+                "step": 8,
+                "stepDescription": "Sem deixar secar muito, (caso seque, coloque um pouquinho de água quente). E coloque orégano a gosto.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 9,
+                "stepDescription": "Joque esse refogado de bacalhau sobre o purê de batatas.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 10,
+                "stepDescription": "Joque esse refogado de bacalhau sobre o purê de batatas.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 11,
+                "stepDescription": "Leve ao forno previamente aquecido (bem quente) e deixe gratinar.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 25,
+        "name": "Filé de tilapia assado",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/bacalhau.jpeg",
+        "difficultyLevel": 5,
+        "servings": 8,
+        "prepTime": 1500,
+        "ingredients" : [
+            "1 kg de bacalhau.",
+            "1 pimentão vermelho picado.",
+            "1 pimentão verde picado.",
+            "1 cebola.",
+            "3 tomates picados maduros (não precisa tirar pele nem semente).",
+            "2 dentes de alho.",
+            "1 xícara de azeitona preta sem caroço picada.",
+            "Orégano a gosto.",
+            "1 kg de batatas cozidas e espremidas.",
+            "2 colheres de sopa de manteiga.",
+            "1/2 xícara de leite.",
+            "Sal a gosto.",
+            "1 xícara de catupiry.",
+            "1 lata de creme de leite sem soro.",
+            "1 vidro de leite de coco de 200 ml."
+        ],
+        "categories" : [
+            "Frutos do mar"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Primeiro faça o purê de batatas, esprema as batatas, e acrescente a manteiga e o leite com as batatas ainda bem quentes, é só mexer bem e acrescentar sal a gosto.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Coloque esse purê num refratário alto. E arrrume como se fosse a massa de uma torta.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Faça o refogado com o bacalhau já dessalgado (deixar de molho na véspera e trocar no mínimo 5 vezes a água).",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Coloque para dar uma breve fervura, 5 minutos em água já fervente.",
+                "hasTimer": true,
+                "timer": 300
+            },
+            {
+                "step": 5,
+                "stepDescription": "Depois desfie o bacalhau em lascas.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 6,
+                "stepDescription": "Coloque bastante azeite numa panela e frite a cebola e o alho. Depois juntar os pimentões, o tomate, e deixar apurar por uns 10 minutos.",
+                "hasTimer": true,
+                "timer": 600
+            },
+            {
+                "step": 7,
+                "stepDescription": "Depois juntar as azeitonas e o bacalhau e deixar apurar mais 10 minutos.",
+                "hasTimer": true,
+                "timer": 600
+            },
+            {
+                "step": 8,
+                "stepDescription": "Sem deixar secar muito, (caso seque, coloque um pouquinho de água quente). E coloque orégano a gosto.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 9,
+                "stepDescription": "Joque esse refogado de bacalhau sobre o purê de batatas.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 10,
+                "stepDescription": "Joque esse refogado de bacalhau sobre o purê de batatas.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 11,
+                "stepDescription": "Leve ao forno previamente aquecido (bem quente) e deixe gratinar.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
     }
-
 ]
