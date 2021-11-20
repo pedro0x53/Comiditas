@@ -1818,95 +1818,244 @@
     {
         "identifier": 25,
         "name": "Filé de tilapia assado",
-        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/bacalhau.jpeg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/file_de_tilapia_assado.webp",
         "difficultyLevel": 5,
-        "servings": 8,
-        "prepTime": 1500,
+        "servings": 6,
+        "prepTime": 1800,
         "ingredients" : [
-            "1 kg de bacalhau.",
-            "1 pimentão vermelho picado.",
-            "1 pimentão verde picado.",
-            "1 cebola.",
-            "3 tomates picados maduros (não precisa tirar pele nem semente).",
-            "2 dentes de alho.",
-            "1 xícara de azeitona preta sem caroço picada.",
-            "Orégano a gosto.",
-            "1 kg de batatas cozidas e espremidas.",
-            "2 colheres de sopa de manteiga.",
-            "1/2 xícara de leite.",
-            "Sal a gosto.",
-            "1 xícara de catupiry.",
-            "1 lata de creme de leite sem soro.",
-            "1 vidro de leite de coco de 200 ml."
+            "1 kg de filé de tilápia.",
+            "Suco de 1/2 limão.",
+            "4 tomates em rodelas.",
+            "4 cebolas em rodelas.",
+            "1/2 xícara de chá de azeitonas pretas picadas.",
+            "1/2 kg de batatas cozidas.",
+            "1 colher de sopa de manteiga.",
+            "1/2 xícara de chá de creme de leite.",
+            "300 g de mussarela ralada.",
+            "Azeite.",
+            "Sal."
         ],
         "categories" : [
-            "Frutos do mar"
+            "Peixes"
         ],
         "rate": 5,
         "steps": [
             {
                 "step": 1,
-                "stepDescription": "Primeiro faça o purê de batatas, esprema as batatas, e acrescente a manteiga e o leite com as batatas ainda bem quentes, é só mexer bem e acrescentar sal a gosto.",
+                "stepDescription": "Tempere os filés com limão e sal.",
                 "hasTimer": false,
                 "timer": 0
             },
             {
                 "step": 2,
-                "stepDescription": "Coloque esse purê num refratário alto. E arrrume como se fosse a massa de uma torta.",
+                "stepDescription": "Em um refratário colocar uma camada de cebola e uma de tomate, coloque os filés em cima das camadas.",
                 "hasTimer": false,
                 "timer": 0
             },
             {
                 "step": 3,
-                "stepDescription": "Faça o refogado com o bacalhau já dessalgado (deixar de molho na véspera e trocar no mínimo 5 vezes a água).",
+                "stepDescription": "Cobrir com outra camada de cebola e de tomate e na sequência as azeitonas e regue com o azeite.",
                 "hasTimer": false,
                 "timer": 0
             },
             {
                 "step": 4,
-                "stepDescription": "Coloque para dar uma breve fervura, 5 minutos em água já fervente.",
+                "stepDescription": "Colocar para assar por 15 minutos em forno alto.",
                 "hasTimer": true,
-                "timer": 300
+                "timer": 900
             },
             {
                 "step": 5,
-                "stepDescription": "Depois desfie o bacalhau em lascas.",
+                "stepDescription": "Em outra vasilha espremer as batatas.",
                 "hasTimer": false,
                 "timer": 0
             },
             {
                 "step": 6,
-                "stepDescription": "Coloque bastante azeite numa panela e frite a cebola e o alho. Depois juntar os pimentões, o tomate, e deixar apurar por uns 10 minutos.",
-                "hasTimer": true,
-                "timer": 600
+                "stepDescription": "Em uma panela derreta a manteiga, coloque a batata e o creme de leite.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
                 "step": 7,
-                "stepDescription": "Depois juntar as azeitonas e o bacalhau e deixar apurar mais 10 minutos.",
-                "hasTimer": true,
-                "timer": 600
+                "stepDescription": "Em seguida coloque esse purê em cima dos filés, coloque a mussarela.",
+                "hasTimer": false,
+                "timer": 0
             },
             {
                 "step": 8,
-                "stepDescription": "Sem deixar secar muito, (caso seque, coloque um pouquinho de água quente). E coloque orégano a gosto.",
+                "stepDescription": "Leve ao forno por mais 5 minutos e sirva.",
+                "hasTimer": true,
+                "timer": 300
+            }
+        ]
+    },
+    {
+        "identifier": 26,
+        "name": "Iscas de peixe empanadas",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/iscas_de_peixe.webp",
+        "difficultyLevel": 2,
+        "servings": 6,
+        "prepTime": 1800,
+        "ingredients" : [
+            "500 gramas de filés de peixe cortados em tiras de 1x7 cm.",
+            "Suco de 1 limão.",
+            "Sal e pimenta do reino a gosto.",
+            "1 xícara (chá) de farinha de trigo.",
+            "2 ovos.",
+            "1/2 xícara (chá) de leite.",
+            "1 colher (chá) de fermento em pó.",
+            "Óleo para fritar.",
+            "1 cebola picada.",
+            "3 colheres (sopa) de coentro picado.",
+            "4 tomates picados sem pele e sem semente.",
+            "2 colheres (sopa) de azeite.",
+        ],
+        "categories" : [
+            "Peixes"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Tempere as tiras de peixe com o suco de limão, sal e pimenta. Reserve.",
                 "hasTimer": false,
                 "timer": 0
             },
             {
-                "step": 9,
-                "stepDescription": "Joque esse refogado de bacalhau sobre o purê de batatas.",
+                "step": 2,
+                "stepDescription": "Prepare a massa para empanar o peixe misturando a farinha e os ovos. Acrescente aos poucos o leite.",
                 "hasTimer": false,
                 "timer": 0
             },
             {
-                "step": 10,
-                "stepDescription": "Joque esse refogado de bacalhau sobre o purê de batatas.",
+                "step": 3,
+                "stepDescription": "Junte o fermento e misture.",
                 "hasTimer": false,
                 "timer": 0
             },
             {
-                "step": 11,
-                "stepDescription": "Leve ao forno previamente aquecido (bem quente) e deixe gratinar.",
+                "step": 4,
+                "stepDescription": "Passe as tiras de peixe na massa.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 5,
+                "stepDescription": "Deixe escorrer um pouco o excesso e frite até dourar ligeiramente. Escorra em papel absorvente.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 6,
+                "stepDescription": "Cozinhe todos os ingredientes para o molho em fogo baixo e com a panela tampada, até o tomate desmanchar.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 7,
+                "stepDescription": "Bata no liquidificador junto com 1/2 xícara (chá) de água. Tempere com sal e pimenta.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 8,
+                "stepDescription": "Aqueça e sirva para acompanhar as tiras de peixe empanado.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 27,
+        "name": "Pão de 'queijo' (Lacfree)",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/pao_de_queijo_lacfree.jpeg",
+        "difficultyLevel": 4,
+        "servings": 6,
+        "prepTime": 2400,
+        "ingredients" : [
+            "2 xíc. de polvilho azedo.",
+            "1 xíc. de purê de batata doce (ou batata baroa).",
+            "2 colheres de chá de sal.",
+            "2 colheres de sopa de óleo vegetal."
+        ],
+        "categories" : [
+            "Lacfree"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Descasque a batata doce, corte em pedaços e cozinhe até ficar macia.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Depois, amasse bem até virar um purê. Meça uma xícara cheia de purê para utilizar nessa receita, o que sobrar utilize em outra. Antes de continuar a fazer o pão de “queijo”, ligue o forno a 180° C para preaquecer.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Em um recipiente grande misture o purê de batata com o polvilho, sal e óleo. Se quiser incrementar você pode utilizar chia como eu fiz, ou até ervas finas (cebolinha e salsinha).",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Adicione água as poucos e continue a mexer até a massa ficar homogênea. Quando começar a desgrudar do recipiente e ficar fácil de modelar significa que não precisa de mais água.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 5,
+                "stepDescription": "Modele as bolinhas e disponha na fôrma, deixe um espaço entre eles porque irão crescer quando assar.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 6,
+                "stepDescription": "Coloque no forno já preaquecido a 180° C por uns 25 minutos ou até dourar.",
+                "hasTimer": true,
+                "timer": 1500
+            }
+        ]
+    },
+    {
+        "identifier": 28,
+        "name": "Smoothie de morango e coco",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/smoothie_morango.webp",
+        "difficultyLevel": 1,
+        "servings": 1,
+        "prepTime": 600,
+        "ingredients" : [
+            "1 banana média.",
+            "8 morangos médios limpos.",
+            "1/3 de xícara de leite de coco.",
+            "2 colheres de sopa de mel.",
+            "gelo a gosto."
+        ],
+        "categories" : [
+            "Lacfree", "Rápidas", "Fáceis"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Leve a banana, morangos, leite de coco e mel ao liquidificador e processe até que fique uniforme. Junte algumas gotas de água se necessário para bater melhor.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Junte pedras de gelo a gosto e processe até que fiquem bem quebradinhas.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Deguste imediatamente.",
                 "hasTimer": false,
                 "timer": 0
             }
