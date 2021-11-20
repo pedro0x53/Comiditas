@@ -5,7 +5,7 @@
          {
             "identifier": 1,
             "name": "Omelete Proteica",
-            "imageURL": "https://img.cybercook.com.br/receitas/916/omelete-fit-proteico.jpeg",
+            "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/omelete_fit_proteico.jpeg",
             "difficultyLevel": 1,
             "servings": 1,
             "rate": 4,
@@ -69,7 +69,7 @@
          {
             "identifier": 2,
             "name": "Rolinhos de Frango ao Forno",
-            "imageURL": "https://www.clickpb.com.br/media/filer_public_thumbnails/filer_public/17/c9/17c91e18-c76c-4788-b678-c87732e0f17b/dsc_01712.jpg__1200x630_q85_crop-smart_subsampling-2_upscale.jpg",
+            "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/rolinhos_de_frango_ao_forno.jpg",
             "difficultyLevel": 2,
             "servings": 6,
             "rate": 5,
@@ -128,7 +128,7 @@
          {
             "identifier": 3,
             "name": "Panqueca de Banana",
-            "imageURL": "https://www.anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-2673-bdfefd56f973570b1595e593fe86d328.jpg",
+            "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/panqueca_de_banana.jpeg",
             "difficultyLevel": 1,
             "servings": 1,
             "rate": 5,
@@ -186,7 +186,7 @@
          {
             "identifier": 4,
             "name": "Hamburger Funcional",
-            "imageURL": "https://img.itdg.com.br/tdg/images/recipes/000/303/665/329164/329164_original.jpg?mode=crop&width=710&height=400",
+            "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/hamburger_funcional.webp",
             "difficultyLevel": 1,
             "servings": 4,
             "rate": 5,
@@ -249,7 +249,7 @@
          {
             "identifier": 1,
             "name": "Guacamole Tradicional",
-            "imageURL": "https://www.sabornamesa.com.br/media/k2/items/cache/97a935595bd2614586903fc5e76b1e31_XL.jpg",
+            "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/guacamole_tradicional.jpeg",
             "difficultyLevel": 1,
             "servings": 1,
             "rate": 5,
@@ -316,7 +316,7 @@
          {
             "identifier": 2,
             "name": "Tacos Mexicanos",
-            "imageURL": "https://comidinhasdochef.com/wp-content/uploads/2016/02/Tacos-Mexicanos.jpg",
+            "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/tacos_mexicanos.jpeg",
             "difficultyLevel": 1,
             "servings": 3,
             "rate": 5,
@@ -438,7 +438,7 @@
          {
             "identifier": 3,
             "name": "Quesadillas",
-            "imageURL": "https://p2.trrsf.com/image/fget/cf/648/0/images.terra.com/2020/04/23/quesadillas-46353-1024x753.jpg",
+            "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/quesadillas.jpeg",
             "difficultyLevel": 1,
             "servings": 4,
             "rate": 5,
@@ -511,7 +511,7 @@
          {
             "identifier": 4,
             "name": "Tortillas mexicanas caseira",
-            "imageURL": "https://p2.trrsf.com/image/fget/cf/648/0/images.terra.com/2020/04/23/doritos-caseiro-1.jpg",
+            "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/tortillas_mexicanas_caseira.jpeg",
             "difficultyLevel": 1,
             "servings": 150,
             "rate": 5,
@@ -576,7 +576,7 @@
          {
             "identifier": 1,
             "name": "Panqueca de Grão-de-bico",
-            "imageURL": "https://www.mundoboaforma.com.br/wp-content/uploads/2021/05/panqueca-com-frutas-vermelhas.jpg",
+            "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/panqueca_com_frutas_vermelhas.jpeg",
             "difficultyLevel": 1,
             "servings": 1,
             "rate": 5,
@@ -629,7 +629,7 @@
          {
             "identifier": 2,
             "name": "Brócolis com Queijo",
-            "imageURL": "https://maxima.uol.com.br/media/_versions/legacy/2017/05/02/receita-do-dia-polenta-gratinada-com-brocolis-e-queijo_widelg.png",
+            "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/brocolis_e_queijo.png",
             "difficultyLevel": 1,
             "servings": 6,
             "rate": 4,
@@ -688,7 +688,7 @@
          {
             "identifier": 3,
             "name": "Hambúrguer de Lentilha",
-            "imageURL": "https://temperoalternativo.com.br/wp-content/uploads/2015/01/hamburger-de-lentilha-imagem-destaque-1024x574.jpg",
+            "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/hamburger_de_lentilha.jpeg",
             "difficultyLevel": 1,
             "servings": 1,
             "rate": 5,
@@ -747,7 +747,7 @@
          {
             "identifier": 4,
             "name": "Berinjela Recheada",
-            "imageURL": "https://meularminhapaz.com.br/wp-content/uploads/2020/02/berinjela-recheada-com-frango-e-queijo-scaled-e1584129934827-1024x642.jpg",
+            "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/berinjela_recheada_com_frango_e_queijo.jpeg",
             "difficultyLevel": 2,
             "servings": 6,
             "rate": 5,

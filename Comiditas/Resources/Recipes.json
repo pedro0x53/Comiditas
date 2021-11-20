@@ -2,7 +2,7 @@
     {
         "identifier": 1,
         "name": "Macarrão a carbonara",
-        "imageURL": "https://cdn.panelinha.com.br/receita/1575554013783-1566923717731-espaguete-a%CC%80-carbonaravale.jpg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/macarrao_a_carbonara.jpeg",
         "difficultyLevel": 2,
         "servings": 6,
         "prepTime": 900,
@@ -67,7 +67,7 @@
     {
         "identifier": 2,
         "name": "Banofee",
-        "imageURL": "https://img.itdg.com.br/tdg/images/recipes/000/300/871/321360/321360_original.jpg?mode=crop&width=710&height=400",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/banofee.webp",
         "difficultyLevel": 2,
         "servings": 8,
         "prepTime": 900,
@@ -120,7 +120,7 @@
     {
         "identifier": 3,
         "name": "Lamen ao molho tarê com frango",
-        "imageURL": "https://img.itdg.com.br/tdg/images/recipes/000/181/073/303173/303173_original.jpg?mode=crop&width=710&height=400",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/lamen_ao_molho_tare_com_frango.jpeg",
         "difficultyLevel": 1,
         "servings": 2,
         "prepTime": 1800,
@@ -220,7 +220,7 @@
     {
         "identifier": 1,
         "name": "Bolo de tangerina",
-        "imageURL": "https://s2.glbimg.com/3TKizZ6TEdKtQ9BdNqN6Qemmk78=/0x0:1280x960/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/L/R/fXiR5pSuC4nEaHdG8dSg/receita-bolo-de-tangerina.jpg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/bolo_de_tangerina.jpeg",
         "difficultyLevel": 2,
         "servings": 8,
         "prepTime": 7200,
@@ -235,7 +235,7 @@
             "2 gramas de sal"
         ],
         "categories" : [
-            "Doces"
+            "Bolos e tortas", "Doces"
         ],
         "rate": 5,
         "steps": [
@@ -286,7 +286,7 @@
     {
         "identifier": 2,
         "name": "Brownie de banana",
-        "imageURL": "https://s2.glbimg.com/RFd_WIkagzQ2w_ZaRH8Fr1xsdmY=/0x0:1080x607/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/d/o/zCUj7wQ6A01kwN8wGqcg/essa-2-.png",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/brownie_de_banana.jpeg",
         "difficultyLevel": 2,
         "servings": 8,
         "prepTime": 2400,
@@ -339,7 +339,7 @@
     {
         "identifier": 3,
         "name": "Muffin de chocolate",
-        "imageURL": "https://s2.glbimg.com/34NAyUJF12wdHWm_ia9BI5P9zFg=/0x0:3451x2301/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/T/j/0oLNRGS1iirRkxSq6eCQ/muffin-de-chocolate-receita.jpg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/muffin_de_chocolate.jpeg",
         "difficultyLevel": 3,
         "servings": 12,
         "prepTime": 3000,
@@ -414,7 +414,7 @@
     {
         "identifier": 4,
         "name": "Bolo de limão com iogurte",
-        "imageURL": "https://s2.glbimg.com/vGRqwG9174Y8aEq6L7wZ6lbdkPc=/0x0:4986x3051/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/h/N/zxSuJvREqYqsNxjxlgbA/bolo-de-limao-com-iogurte-receita.jpg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/bolo_de_limao_com_iogurte.jpeg",
         "difficultyLevel": 2,
         "servings": 6,
         "prepTime": 3600,
@@ -430,7 +430,7 @@
         ],
         "categories" : [
             "Doces",
-            "Bolos"
+            "Bolos e tortas"
         ],
         "rate": 3,
         "steps": [
@@ -481,7 +481,7 @@
     {
         "identifier": 5,
         "name": "Cake pop com sobras de bolo",
-        "imageURL": "https://s2.glbimg.com/w5j_jwsuDsE35J1v4Cz3rsXILtY=/0x0:2048x1365/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/L/7/FMJqACRPmdKhmV3QZZAA/cake-pop-com-sobras-de-bolo.jpg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/cake_pop_com_sobras_de_bolo.jpeg",
         "difficultyLevel": 2,
         "servings": 6,
         "prepTime": 4800,
@@ -492,7 +492,7 @@
             "Confeitos coloridos e castanha-de-caju para decorar"
         ],
         "categories" : [
-            "Doces"
+            "Doces", "Bolos e tortas"
         ],
         "rate": 5,
         "steps": [
@@ -543,7 +543,7 @@
     {
         "identifier": 6,
         "name": "Bolo de maçã com canela",
-        "imageURL": "https://s2.glbimg.com/43DfUj2mhHJGmSZceZaxW5tDU9w=/0x0:1280x960/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/h/Y/8EKaxrRR6PWYWrCBBKNg/bolo-de-maca-com-canela-2-.jpeg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/bolo_de_maca_com_canela.jpeg",
         "difficultyLevel": 2,
         "servings": 12,
         "prepTime": 7200,
@@ -561,7 +561,7 @@
         ],
         "categories" : [
             "Doces",
-            "Bolos"
+            "Bolos e tortas"
         ],
         "rate": 3,
         "steps": [
@@ -618,7 +618,7 @@
     {
         "identifier": 7,
         "name": "Camarão Internacional",
-        "imageURL": "https://naminhapanela.com/wp-content/uploads/2014/06/arroz-de-camarao-350x350.jpg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/camarao_internacional.jpeg",
         "difficultyLevel": 2,
         "servings": 12,
         "prepTime": 3600,
@@ -783,7 +783,7 @@
     {
         "identifier": 8,
         "name": "Crepioca de queijo",
-        "imageURL": "https://static.clubedaanamariabraga.com.br/wp-content/uploads/2020/02/crepioca-igor-rocha.jpeg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/crepioca_de_queijo.jpeg",
         "difficultyLevel": 1,
         "servings": 1,
         "prepTime": 600,
@@ -846,7 +846,7 @@
     {
         "identifier": 9,
         "name": "Bolo Mole",
-        "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw4UCeyOsg82hJLdzPS6CnFd2bO-2oMCdqbQ&usqp=CAU",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/bolo_mole.jpeg",
         "difficultyLevel": 1,
         "servings": 10,
         "prepTime": 3300,
@@ -861,7 +861,7 @@
         ],
         "categories" : [
             "Doces",
-            "Bolos"
+            "Bolos e tortas"
         ],
         "rate": 4,
         "steps": [
@@ -906,7 +906,7 @@
     {
         "identifier": 10,
         "name": "Patê de peito de peru",
-        "imageURL": "https://img.itdg.com.br/tdg/images/recipes/000/049/442/135927/135927_original.jpg?mode=crop&width=710&height=400",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/pate_de_peito_de_peru.webp",
         "difficultyLevel": 2,
         "servings": 1,
         "prepTime": 300,
@@ -960,7 +960,7 @@
     {
         "identifier": 11,
         "name": "Penne ao molho branco de camarão",
-        "imageURL": "https://www.anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-2459-a3d849ce575c69a18e61a51e04bfa3d9.jpg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/penne_ao_molho_branco_de_camarao.jpeg",
         "difficultyLevel": 2,
         "servings": 2,
         "prepTime": 2400,
@@ -1010,7 +1010,7 @@
     {
         "identifier": 12,
         "name": "Macarrão alho e óleo",
-        "imageURL": "https://www.marolacomcarambola.com.br/wp-content/uploads/2015/08/receita-de-macarrao-alho-e-oleo-2.jpg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/macarrao_alho_e_oleo.jpeg",
         "difficultyLevel": 1,
         "servings": 2,
         "prepTime": 600,
@@ -1056,7 +1056,7 @@
     {
         "identifier": 13,
         "name": "Mac'n'cheese",
-        "imageURL": "https://2.bp.blogspot.com/-YXPGKDyEvCs/UvttfcG9GkI/AAAAAAAAKkM/yYOrjBmnVcI/s1600/macncheese_queijoreino_brisando10.jpg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/macncheese.jpeg",
         "difficultyLevel": 3,
         "servings": 2,
         "prepTime": 1200,
@@ -1105,7 +1105,7 @@
     {
         "identifier": 14,
         "name": "Strogonoff de Frango",
-        "imageURL": "https://img.itdg.com.br/tdg/images/recipes/000/132/121/328769/328769_original.jpg?mode=crop&width=710&height=400",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/strogonoff_de_frango.webp",
         "difficultyLevel": 3,
         "servings": 2,
         "prepTime": 1200,
@@ -1154,7 +1154,7 @@
     {
         "identifier": 15,
         "name": "Purê de Mandioquinha",
-        "imageURL": "https://cozinhalegal.com.br/files/manager/1/341/Pure_Mandioquinha_Facil_3.jpg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/pure_de_mandioquinha.jpeg",
         "difficultyLevel": 3,
         "servings": 4,
         "prepTime": 1800,
@@ -1211,7 +1211,7 @@
     {
         "identifier": 16,
         "name": "Mousse de Limão",
-        "imageURL": "https://www.anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-2256-a50ed558b2d695e515c009348341a344.jpg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/mousse_de_lim%C3%A3o.jpeg",
         "difficultyLevel": 2,
         "servings": 4,
         "prepTime": 900,
@@ -1261,7 +1261,7 @@
     {
         "identifier": 17,
         "name": "Pudim de Leite Condensado",
-        "imageURL": "https://t1.rg.ltmcdn.com/pt/images/3/0/2/img_pudim_de_leite_condensado_203_orig.jpg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/pudim_de_leite_condensado.jpeg",
         "difficultyLevel": 3,
         "servings": 12,
         "prepTime": 14400,
@@ -1311,7 +1311,7 @@
     {
         "identifier": 18,
         "name": "Salada Refrescante e Colorida",
-        "imageURL": "https://d1uz88p17r663j.cloudfront.net/resized/b1e0912e72a64c0be6a6709882d0fbc6_salada-refrescante-colorida-receitas-nestle_1200_600.jpg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/salada_refrescante_e_colorida.jpg",
         "difficultyLevel": 1,
         "servings": 4,
         "prepTime": 600,
@@ -1349,7 +1349,7 @@
     {
         "identifier": 19,
         "name": "Chocolate cremoso",
-        "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ02gGZQyoyEPGWLAJTOMM8Mw9Bl4nwUPb--A&usqp=CAU",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/chocolate_cremoso.jpeg",
         "difficultyLevel": 3,
         "servings": 20,
         "prepTime": 900,
@@ -1382,7 +1382,7 @@
     {
         "identifier": 20,
         "name": "Vinho quente",
-        "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT34ix2RwyzZJ8S6ivyvewBujiRZuPqexkvfQ&usqp=CAU",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/vinho_quente.jpeg",
         "difficultyLevel": 3,
         "servings": 10,
         "prepTime": 1200,
@@ -1420,6 +1420,118 @@
             {
                 "step": 4,
                 "stepDescription": "Deixe cozinhar um pouco e sirva bem quente.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 21,
+        "name": "Risoto de linguiça",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/risoto_de_linguica.jpg",
+        "difficultyLevel": 3,
+        "servings": 5,
+        "prepTime": 2100,
+        "ingredients" : [
+            "5 gomos de Linguiça toscana Sadia cortados em rodelas.",
+            "1 cebola descascada e cortada em cubos pequenos.",
+            "1 xícara (chá) de arroz para risoto (arbóreo ou carnaroli).",
+            "1 xícara (chá) de vinho branco seco.",
+            "2 ½ xícaras (chá) de caldo de legumes quente (de preferência caseiro).",
+            "2 tomates sem pele e sem sementes cortados em cubos pequenos.",
+            "Sal a gosto.",
+            "Pimenta dedo-de-moça picada a gosto.",
+            "½ maço de rúcula picada.",
+            "1 colher (sopa) de Qualy cremosa sem sal."
+        ],
+        "categories" : [
+            "Massas"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Em uma panela, doure as linguiças em sua própria gordura; acrescente a margarina e a cebola e deixe dourar.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Acrescente o arroz e refogue rapidamente. Adicione o vinho e deixe evaporar.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Aos poucos, vá adicionando o caldo de legumes, mexendo sem parar, até que o arroz esteja al dente (não muito duro, nem muito mole).",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Junte o tomate e cozinhe por mais alguns instantes, sem parar de mexer. O arroz deve ficar cremoso, mas sem líquido em excesso.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 5,
+                "stepDescription": "Desligue o fogo, tempere com o sal e a pimenta e adicione a rúcula.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 22,
+        "name": "Risoto de linguiça",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/risoto_de_linguica.jpg",
+        "difficultyLevel": 3,
+        "servings": 5,
+        "prepTime": 2100,
+        "ingredients" : [
+            "5 gomos de Linguiça toscana Sadia cortados em rodelas.",
+            "1 cebola descascada e cortada em cubos pequenos.",
+            "1 xícara (chá) de arroz para risoto (arbóreo ou carnaroli).",
+            "1 xícara (chá) de vinho branco seco.",
+            "2 ½ xícaras (chá) de caldo de legumes quente (de preferência caseiro).",
+            "2 tomates sem pele e sem sementes cortados em cubos pequenos.",
+            "Sal a gosto.",
+            "Pimenta dedo-de-moça picada a gosto.",
+            "½ maço de rúcula picada.",
+            "1 colher (sopa) de Qualy cremosa sem sal."
+        ],
+        "categories" : [
+            "Massas"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Em uma panela, doure as linguiças em sua própria gordura; acrescente a margarina e a cebola e deixe dourar.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Acrescente o arroz e refogue rapidamente. Adicione o vinho e deixe evaporar.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Aos poucos, vá adicionando o caldo de legumes, mexendo sem parar, até que o arroz esteja al dente (não muito duro, nem muito mole).",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Junte o tomate e cozinhe por mais alguns instantes, sem parar de mexer. O arroz deve ficar cremoso, mas sem líquido em excesso.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 5,
+                "stepDescription": "Desligue o fogo, tempere com o sal e a pimenta e adicione a rúcula.",
                 "hasTimer": false,
                 "timer": 0
             }
