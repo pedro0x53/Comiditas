@@ -24,6 +24,7 @@ enum OverviewLocalizable: String {
     case accessiblePrep
     case minutes
     case hours
+    case hour
 
     case accessibleDifficulty
     case hard
