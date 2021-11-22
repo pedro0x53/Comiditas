@@ -32,6 +32,7 @@
 		7713580E26F9FC4400164BBC /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713580D26F9FC4400164BBC /* FeedPresenter.swift */; };
 		7713581026FA022100164BBC /* FeedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713580F26FA022100164BBC /* FeedModels.swift */; };
 		771F1AA62721A74C00AD5C5B /* Modal.strings in Resources */ = {isa = PBXBuildFile; fileRef = 771F1AA82721A74C00AD5C5B /* Modal.strings */; };
+		7727F3D32747E812007068EC /* Ext+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727F3D22747E812007068EC /* Ext+ViewController.swift */; };
 		7743D4092737467D00B16888 /* Ext+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7743D4082737467D00B16888 /* Ext+UIButton.swift */; };
 		774A6858273A875F0028AF84 /* SearchEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774A6857273A875F0028AF84 /* SearchEmptyView.swift */; };
 		774A685A273A98CA0028AF84 /* SearchWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774A6859273A98CA0028AF84 /* SearchWorker.swift */; };
@@ -173,6 +174,7 @@
 		7713580D26F9FC4400164BBC /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		7713580F26FA022100164BBC /* FeedModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModels.swift; sourceTree = "<group>"; };
 		771F1AA72721A74C00AD5C5B /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Modal.strings"; sourceTree = "<group>"; };
+		7727F3D22747E812007068EC /* Ext+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+ViewController.swift"; sourceTree = "<group>"; };
 		7743D4082737467D00B16888 /* Ext+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIButton.swift"; sourceTree = "<group>"; };
 		774A6857273A875F0028AF84 /* SearchEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEmptyView.swift; sourceTree = "<group>"; };
 		774A6859273A98CA0028AF84 /* SearchWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWorker.swift; sourceTree = "<group>"; };
@@ -630,6 +632,7 @@
 				FE39529226FA511700AEF77D /* Ext+UIView.swift */,
 				77FF2E4D26FA1CEE00FC63B5 /* Time.swift */,
 				7743D4082737467D00B16888 /* Ext+UIButton.swift */,
+				7727F3D22747E812007068EC /* Ext+ViewController.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1129,6 +1132,7 @@
 				77635CDB26F2124D00B36EC7 /* IngredientsJson.swift in Sources */,
 				FE127E95270DD15B00D6EEE8 /* OverviewPresenter.swift in Sources */,
 				E68CC2512732CFA7003F6E6C /* SettingsLocalizable.swift in Sources */,
+				7727F3D32747E812007068EC /* Ext+ViewController.swift in Sources */,
 				E68CC2552732D5C6003F6E6C /* SettingsInteractor.swift in Sources */,
 				E6BFD5D527298C5A00658A74 /* SettingsViewController.swift in Sources */,
 				77F9CB98272ABD4500D22F94 /* SearchPresenter.swift in Sources */,
@@ -1385,14 +1389,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Comiditas/Comiditas.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VH525588L5;
 				INFOPLIST_FILE = Comiditas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.3;
+				MARKETING_VERSION = 3;
 				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.Comiditas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1407,14 +1411,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Comiditas/Comiditas.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VH525588L5;
 				INFOPLIST_FILE = Comiditas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.3;
+				MARKETING_VERSION = 3;
 				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.Comiditas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

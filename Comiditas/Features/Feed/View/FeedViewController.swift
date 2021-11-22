@@ -52,6 +52,9 @@ class FeedViewController: UIViewController {
             target: self,
             action: #selector(addTapped)
         )
+        addButton.isAccessibilityElement = true
+        addButton.accessibilityTraits = .button
+        addButton.accessibilityLabel = "Configurações"
         self.navigationItem.rightBarButtonItem = addButton
 
     }
