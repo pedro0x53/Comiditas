@@ -12,6 +12,9 @@ enum OverviewLocalizable: String {
     case back
 
     case sharingTitle
+    case copy
+    case copyIngredintsHint
+    case copyDirectionsHint
 
     case accessibleMainImage
 
@@ -21,6 +24,7 @@ enum OverviewLocalizable: String {
     case accessiblePrep
     case minutes
     case hours
+    case hour
 
     case accessibleDifficulty
     case hard
@@ -43,4 +47,5 @@ extension OverviewLocalizable: LocalizablesProtocol {
     var bundle: Bundle? { Bundle.main }
     var arguments: [String]? { nil }
     var tableName: String? { "Overview" }
+    var defaultValue: String { "" }
 }

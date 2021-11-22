@@ -12,12 +12,12 @@ class StepsLocalizableTest: XCTestCase {
 
     func testModalLocalizable_AlertStopText() {
         let sut = StepsLocalizable.alertStop.text
-        let expectUSD = "The timer will reset if you leave this step. Are you sure you want to continue?"
-        let expectPT = "O temporizador será reiniciado se você sair desse passo. Você tem certeza que quer continuar?"
+        let expectPT = "O temporizador será reiniciado. \nDeseja continuar?"
+        let expectEN = "The timer will reset. \nDo you want to continue?"
 
         if let locale = Locale.current.languageCode {
             if locale == "en" {
-                XCTAssertEqual(sut, expectUSD, "An unexpected error has occurred.")
+                XCTAssertEqual(sut, expectEN, "An unexpected error has occurred.")
             } else {
                 XCTAssertEqual(sut, expectPT, "An unexpected error has occurred.")
             }
@@ -25,13 +25,13 @@ class StepsLocalizableTest: XCTestCase {
     }
 
     func testModalLocalizable_AlertAtentionText() {
-        let sut = StepsLocalizable.alertAtention.text
-        let expectUSD = "Attention!"
+        let sut = StepsLocalizable.alert.text
         let expectPT = "Atenção!"
+        let expectEN = "Attention!"
 
         if let locale = Locale.current.languageCode {
             if locale == "en" {
-                XCTAssertEqual(sut, expectUSD, "An unexpected error has occurred.")
+                XCTAssertEqual(sut, expectEN, "An unexpected error has occurred.")
             } else {
                 XCTAssertEqual(sut, expectPT, "An unexpected error has occurred.")
             }
@@ -40,12 +40,12 @@ class StepsLocalizableTest: XCTestCase {
 
     func testModalLocalizable_AlertCancelText() {
         let sut = StepsLocalizable.alertContinue.text
-        let expectUSD = "Continue"
         let expectPT = "Continuar"
+        let expectEN = "Continue"
 
         if let locale = Locale.current.languageCode {
             if locale == "en" {
-                XCTAssertEqual(sut, expectUSD, "An unexpected error has occurred.")
+                XCTAssertEqual(sut, expectEN, "An unexpected error has occurred.")
             } else {
                 XCTAssertEqual(sut, expectPT, "An unexpected error has occurred.")
             }
@@ -54,12 +54,12 @@ class StepsLocalizableTest: XCTestCase {
 
     func testModalLocalizable_StepText() {
         let sut = StepsLocalizable.step.text
-        let expectUSD = "Step"
         let expectPT = "Passo"
+        let expectEN = "Step"
 
         if let locale = Locale.current.languageCode {
             if locale == "en" {
-                XCTAssertEqual(sut, expectUSD, "An unexpected error has occurred.")
+                XCTAssertEqual(sut, expectEN, "An unexpected error has occurred.")
             } else {
                 XCTAssertEqual(sut, expectPT, "An unexpected error has occurred.")
             }
@@ -68,12 +68,12 @@ class StepsLocalizableTest: XCTestCase {
 
     func testModalLocalizable_IniciateClockAcessibilityText() {
         let sut = StepsLocalizable.iniciateClockAcessibility.text
-        let expectUSD = "Start timer"
         let expectPT = "Iniciar temporizador"
+        let expectEN = "Iniciate timer"
 
         if let locale = Locale.current.languageCode {
             if locale == "en" {
-                XCTAssertEqual(sut, expectUSD, "An unexpected error has occurred.")
+                XCTAssertEqual(sut, expectEN, "An unexpected error has occurred.")
             } else {
                 XCTAssertEqual(sut, expectPT, "An unexpected error has occurred.")
             }
@@ -82,12 +82,12 @@ class StepsLocalizableTest: XCTestCase {
 
     func testModalLocalizable_pauseClockAcessibilityText() {
         let sut = StepsLocalizable.pauseClockAcessibility.text
-        let expectUSD = "Pause timer"
         let expectPT = "Pausar temporizador"
+        let expectEN = "Pause timer"
 
         if let locale = Locale.current.languageCode {
             if locale == "en" {
-                XCTAssertEqual(sut, expectUSD, "An unexpected error has occurred.")
+                XCTAssertEqual(sut, expectEN, "An unexpected error has occurred.")
             } else {
                 XCTAssertEqual(sut, expectPT, "An unexpected error has occurred.")
             }
@@ -96,12 +96,12 @@ class StepsLocalizableTest: XCTestCase {
 
     func testModalLocalizable_BackStepText() {
         let sut = StepsLocalizable.backStep.text
-        let expectUSD = "Previous step"
         let expectPT = "Passo anterior"
+        let expectEN = "Previous Step"
 
         if let locale = Locale.current.languageCode {
             if locale == "en" {
-                XCTAssertEqual(sut, expectUSD, "An unexpected error has occurred.")
+                XCTAssertEqual(sut, expectEN, "An unexpected error has occurred.")
             } else {
                 XCTAssertEqual(sut, expectPT, "An unexpected error has occurred.")
             }
@@ -110,12 +110,12 @@ class StepsLocalizableTest: XCTestCase {
 
     func testModalLocalizable_NextStepText() {
         let sut = StepsLocalizable.nextStep.text
-        let expectUSD = "Next step"
         let expectPT = "Próximo passo"
+        let expectEN = "Next Step"
 
         if let locale = Locale.current.languageCode {
             if locale == "en" {
-                XCTAssertEqual(sut, expectUSD, "An unexpected error has occurred.")
+                XCTAssertEqual(sut, expectEN, "An unexpected error has occurred.")
             } else {
                 XCTAssertEqual(sut, expectPT, "An unexpected error has occurred.")
             }

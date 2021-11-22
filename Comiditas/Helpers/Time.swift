@@ -22,17 +22,21 @@ struct Time {
         var accessiblePrepTime = ""
 
         if hasHour {
-            displayPrepTime += "\(time.hour)h"
-            accessiblePrepTime += "\(time.hour)" + OverviewLocalizable.hours.text
+            displayPrepTime += "\(time.hour) h"
+            if time.hour == 1 {
+                accessiblePrepTime += "\(time.hour)" + OverviewLocalizable.hour.text
+            } else {
+                accessiblePrepTime += "\(time.hour)" + OverviewLocalizable.hours.text
+            }
         }
 
         if hasHour && hasMinutes {
-            displayPrepTime += " "
-            accessiblePrepTime += " "
+            displayPrepTime += " e "
+            accessiblePrepTime += " e "
         }
 
         if hasMinutes {
-            displayPrepTime += "\(time.minutes)min"
+            displayPrepTime += "\(time.minutes) min"
             accessiblePrepTime += "\(time.minutes)" + OverviewLocalizable.minutes.text
         }
 

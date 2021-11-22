@@ -36,6 +36,11 @@ class OverviewViewController: UIViewController {
         setupNavBar()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = false
+    }
+
     private func setupVIP() {
         let interactor = OverviewInteractor()
         let presenter = OverviewPresenter()
@@ -123,12 +128,12 @@ extension OverviewViewController: OverviewViewDelegate {
                     withIdentifier: RecipeStepCell.identifier) as? RecipeStepCell
             else {
                 let cell = RecipeStepCell()
-                cell.configure(title: OverviewLocalizable.step.text + "\(indexPath.row + 1)",
+                cell.configure(index: "\(indexPath.row + 1)",
                                description: recipe.steps[indexPath.row].stepDescription)
                 return cell
             }
 
-            cell.configure(title: OverviewLocalizable.step.text + "\(indexPath.row + 1)",
+            cell.configure(index: "\(indexPath.row + 1)",
                            description: recipe.steps[indexPath.row].stepDescription)
             return cell
         }
@@ -173,7 +178,9 @@ extension OverviewViewController: OverviewViewDelegate {
 // Delegate Connection: ViewController->View
 extension OverviewViewController {
     func startRecipe() {
-        coordinator?.coordinateToSteps(recipe: self.recipe)
+        let headerIndexPath = IndexPath(row: 0, section: OverviewSection.header.rawValue)
+        let headerCell = associatedView.tableView.cellForRow(at: headerIndexPath) as? RecipeHeaderCell
+        coordinator?.coordinateToSteps(recipe: self.recipe, image: headerCell?.headerImage)
     }
 }
 
@@ -182,11 +189,13 @@ extension OverviewViewController: OverviewPresenterDelegate {
     func display(sharedRecipe: Overview.ViewModel.Sharing,
                  animated: Bool = true,
                  completion: (() -> Void)? = nil) {
+        UINotificationFeedbackGenerator().notificationOccurred(.success)
         self.coordinator?.shareText(content: sharedRecipe.content, animated: animated, completion: completion)
     }
 
     func display(copiedRecipe: Overview.ViewModel.Sharing) {
         UIPasteboard.general.string = copiedRecipe.content
+        UINotificationFeedbackGenerator().notificationOccurred(.success)
     }
 }
 

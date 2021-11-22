@@ -12,6 +12,10 @@ class RecipeHeaderCell: UITableViewCell, BaseViewProtocol {
 
     public static let identifier: String = "RecipeHeaderCellIdentifier"
 
+    var headerImage: UIImage? {
+        mainImage.image
+    }
+
     private let mainImage: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
@@ -133,12 +137,8 @@ class RecipeHeaderCell: UITableViewCell, BaseViewProtocol {
 
         if FeatureFlags.rating.isEnable {
             self.rateItem.itemDescription = "\(rating)" + OverviewLocalizable.rating.text
-            if Locale.current.languageCode == "pt" {
-                self.rateItem.accessibilityLabel = OverviewLocalizable.accessibleRating.text +
-                                                   "\(rating)" + OverviewLocalizable.rating.text
-            } else {
-                self.rateItem.accessibilityLabel = "\(rating)" + OverviewLocalizable.accessibleRating.text
-            }
+            self.rateItem.accessibilityLabel = OverviewLocalizable.accessibleRating.text +
+                                                "\(rating)" + OverviewLocalizable.rating.text
 
             self.accessibilityElements?.append(rateItem)
         }

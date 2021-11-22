@@ -9,7 +9,7 @@ import Foundation
 
 protocol FeedPresenterProtocol {
     func presentRecipes(response: Feed.Response)
-    func presentRecommendations(response: Feed.Response)
+    func presentRecommendations(response: Recommendations.Response)
 }
 
 class FeedPresenter: FeedPresenterProtocol {
@@ -20,8 +20,8 @@ class FeedPresenter: FeedPresenterProtocol {
         viewController?.displayRecipes(viewModel: viewModel)
     }
 
-    func presentRecommendations(response: Feed.Response) {
-        let viewModel = Feed.ViewModel(recipes: response.recipes)
+    func presentRecommendations(response: Recommendations.Response) {
+        let viewModel = Recommendations.ViewModel(recipes: response.recipes)
         viewController?.displayRecommendations(viewModel: viewModel)
     }
 }

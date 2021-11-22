@@ -17,7 +17,7 @@ struct Fonts {
     }
 
     static var h3: UIFont {
-        return .rounded(ofSize: 22, weight: .bold)
+        return .rounded(ofSize: 24, weight: .bold)
     }
 
     static var h3Light: UIFont {
@@ -40,6 +40,10 @@ struct Fonts {
         return .rounded(ofSize: 17, weight: .regular)
     }
 
+    static var h6Bold: UIFont {
+        return .rounded(ofSize: 17, weight: .bold)
+    }
+
     static var h7: UIFont {
         return .rounded(ofSize: 15, weight: .medium)
     }
@@ -49,6 +53,10 @@ struct Fonts {
             return .rounded(ofSize: 22, weight: .bold)
         }
         return font
+    }
+
+    static var subTitle: UIFont {
+        return .rounded(ofSize: 15, weight: .regular)
     }
 }
 

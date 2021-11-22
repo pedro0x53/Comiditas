@@ -1,0 +1,16 @@
+/* 
+  Settings.strings
+  Comiditas
+
+  Created by Brena Amorim on 03/11/21.
+  
+*/
+
+title = "Ajustes";
+
+// MARK: - Steps
+headerStepsTitle = "Passo a passo interativo";
+voiceCommands = "Habilitar comandos de voz";
+lockscreen = "Prevenir bloqueio de tela";
+notifications = "Habilitar notificações";
+

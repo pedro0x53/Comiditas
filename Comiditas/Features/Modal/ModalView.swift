@@ -7,15 +7,25 @@
 
 import UIKit
 
+protocol ModalViewDelegate: AnyObject {
+    func didPressOK()
+    func didCancel()
+}
+
 class ModalView: UIView {
 
     weak var delegate: ModalViewDelegate?
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    let closeButtonIsHidden: Bool
+
+    init(closeButtonIsHidden: Bool) {
+        self.closeButtonIsHidden = closeButtonIsHidden
+        super.init(frame: .zero)
 
         setupView()
         setupConstraints()
+
+        closeButton.isHidden = closeButtonIsHidden
     }
 
     required init?(coder: NSCoder) {
@@ -24,29 +34,38 @@ class ModalView: UIView {
 
     lazy var modalView: UIView = {
         let view = UIView()
-        view.layer.cornerRadius = 20
+        view.layer.cornerRadius = 10
         view.backgroundColor = Colors.secondary
+        view.layer.borderColor = Colors.primary.cgColor
         view.layer.borderWidth = 1.5
         view.layer.borderColor = Colors.primary.cgColor
         view.isAccessibilityElement = false
-        view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
 
     lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.font = Fonts.h3
-        label.textColor = Colors.primary
+        label.textColor = Colors.textDark
+        label.textAlignment = .center
         label.isAccessibilityElement = true
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
+        return label
+    }()
+
+    lazy var descriptionLabel: UILabel = {
+        let label = UILabel()
+        label.font = Fonts.h6
+        label.textColor = Colors.textDark
+        label.isAccessibilityElement = true
+        label.numberOfLines = 0
+        label.textAlignment = .center
         return label
     }()
 
     lazy var imageView: UIImageView = {
         let image = UIImageView()
         image.isAccessibilityElement = true
-        image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()
 
@@ -55,7 +74,6 @@ class ModalView: UIView {
         button.setImage(UIImage(named: "closeButton"), for: .normal)
         button.isAccessibilityElement = true
         button.accessibilityLabel =  ModalLocalizable.close.text
-        button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(cancelAction), for: .touchUpInside)
         return button
     }()
@@ -73,7 +91,6 @@ class ModalView: UIView {
         button.layer.cornerRadius = 18
         button.isAccessibilityElement = true
         button.accessibilityLabel = "Okey"
-        button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(didFinishAction), for: .touchUpInside)
         return button
     }()
@@ -82,10 +99,12 @@ class ModalView: UIView {
         self.delegate?.didPressOK()
     }
 
-    func loadData(image: UIImage, title: String) {
+    func loadData(image: UIImage, title: String, description: String) {
         self.imageView.image = image
         self.titleLabel.text = title
         self.titleLabel.accessibilityLabel = title
+        self.descriptionLabel.text = description
+        self.descriptionLabel.accessibilityLabel = description
     }
 }
 
@@ -95,9 +114,18 @@ extension ModalView: BaseViewProtocol {
 
         self.addSubview(modalView)
         self.addSubview(titleLabel)
+        self.addSubview(descriptionLabel)
         self.addSubview(closeButton)
         self.addSubview(imageView)
         self.addSubview(okButton)
+
+        self.subviews.forEach { $0.translatesAutoresizingMaskIntoConstraints = false }
+    }
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = 8
     }
 
     func setupConstraints() {
@@ -106,39 +134,31 @@ extension ModalView: BaseViewProtocol {
             modalView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
             modalView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             modalView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            modalView.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.size.height * 0.5)
-        ])
 
-        NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: modalView.topAnchor, constant: 24),
-            titleLabel.leadingAnchor.constraint(equalTo: modalView.leadingAnchor, constant: 24),
-            titleLabel.trailingAnchor.constraint(equalTo: closeButton.leadingAnchor, constant: -5)
-        ])
-
-        NSLayoutConstraint.activate([
             closeButton.topAnchor.constraint(equalTo: modalView.topAnchor, constant: 8),
             closeButton.trailingAnchor.constraint(equalTo: modalView.trailingAnchor, constant: -8),
             closeButton.heightAnchor.constraint(equalToConstant: 30),
-            closeButton.widthAnchor.constraint(equalToConstant: 30)
-        ])
+            closeButton.widthAnchor.constraint(equalToConstant: 30),
 
-        NSLayoutConstraint.activate([
-            imageView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.size.width*0.65),
-            imageView.heightAnchor.constraint(equalTo: imageView.widthAnchor, multiplier: 0.7212),
+            titleLabel.topAnchor.constraint(equalTo: modalView.topAnchor, constant: 24),
+            titleLabel.leadingAnchor.constraint(equalTo: modalView.leadingAnchor, constant: 24),
+            titleLabel.trailingAnchor.constraint(equalTo: modalView.trailingAnchor, constant: -24),
+            titleLabel.heightAnchor.constraint(equalToConstant: 20),
+
+            descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 5),
+            descriptionLabel.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor),
+            descriptionLabel.trailingAnchor.constraint(equalTo: titleLabel.trailingAnchor),
+            descriptionLabel.bottomAnchor.constraint(equalTo: imageView.topAnchor, constant: -15),
+
+            imageView.bottomAnchor.constraint(equalTo: okButton.topAnchor, constant: -15),
+            imageView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.size.width*0.55),
+            imageView.heightAnchor.constraint(equalTo: imageView.widthAnchor, multiplier: 0.6),
             imageView.centerXAnchor.constraint(equalTo: modalView.centerXAnchor),
-            imageView.centerYAnchor.constraint(equalTo: modalView.centerYAnchor)
-        ])
 
-        NSLayoutConstraint.activate([
             okButton.bottomAnchor.constraint(equalTo: modalView.bottomAnchor, constant: -16),
-            okButton.widthAnchor.constraint(equalToConstant: 160),
-            okButton.heightAnchor.constraint(equalToConstant: 40),
+            okButton.widthAnchor.constraint(equalToConstant: 155),
+            okButton.heightAnchor.constraint(equalToConstant: 35),
             okButton.centerXAnchor.constraint(equalTo: modalView.centerXAnchor)
         ])
     }
-}
-
-protocol ModalViewDelegate: AnyObject {
-    func didPressOK()
-    func didCancel()
 }

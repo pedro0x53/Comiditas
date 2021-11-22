@@ -12,6 +12,9 @@ enum FeedLocalizable: String {
     case otherRecipes
     case candy
     case salted
+    case subTitle
+    case title
+    case search
 }
 
 extension FeedLocalizable: LocalizablesProtocol {
@@ -19,4 +22,5 @@ extension FeedLocalizable: LocalizablesProtocol {
     var bundle: Bundle? { Bundle.main }
     var arguments: [String]? { nil }
     var tableName: String? { "Feed" }
+    var defaultValue: String { "" }
 }

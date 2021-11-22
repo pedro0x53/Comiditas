@@ -17,4 +17,5 @@ extension ModalLocalizable: LocalizablesProtocol {
     var bundle: Bundle? { Bundle.main }
     var arguments: [String]? { nil }
     var tableName: String? { "Modal" }
+    var defaultValue: String { "" }
 }
