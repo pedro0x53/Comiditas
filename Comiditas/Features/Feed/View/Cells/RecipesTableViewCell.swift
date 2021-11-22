@@ -10,6 +10,7 @@ import UIKit
 class RecipesTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        self.isAccessibilityElement = true
         setupUI()
         setupAccessibility()
     }
@@ -24,6 +25,7 @@ class RecipesTableViewCell: UITableViewCell {
     }
 
     func setupAccessibility() {
+        self.shouldGroupAccessibilityChildren = true
         accessibilityElements = [recipeImageView, titleLabel, labelTime, labelPortion]
     }
 
@@ -41,7 +43,7 @@ class RecipesTableViewCell: UITableViewCell {
 
     lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.font = Fonts.h4
+        label.font = Fonts.h4Bold
         label.textColor = Colors.primary
         label.translatesAutoresizingMaskIntoConstraints = false
         return label

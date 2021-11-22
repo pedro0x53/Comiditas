@@ -10,6 +10,7 @@ import UIKit
 class FeedCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.isAccessibilityElement = true
         setupUI()
         setupAccessibility()
     }
@@ -17,6 +18,16 @@ class FeedCollectionViewCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
+    override func accessibilityElementDidBecomeFocused() {
+         guard let collectionView = superview as? UICollectionView,
+             let indexPath = collectionView.indexPath(for: self) else {
+             return
+         }
+
+         collectionView.scrollToItem(at: indexPath, at: .right, animated: true)
+         UIAccessibility.post(notification: .layoutChanged, argument: self)
+     }
 
     func setupAccessibility() {
         accessibilityElements = [imageView, titleLabel, labelTime, labelPortion]

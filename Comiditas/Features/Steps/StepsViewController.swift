@@ -157,6 +157,7 @@ extension StepsViewController: StepsDisplayLogic {
 
 extension StepsViewController: NextAndPreviousDelegate {
     func didPressNextButton() {
+        readingOrderChangedStep()
         if stepIdentifier == recipe.steps.count - 1 {
             stepsView.timerView.timerIsRunning = false
             self.didFinish()
@@ -176,6 +177,7 @@ extension StepsViewController: NextAndPreviousDelegate {
     }
 
     func didPressPreviousButton() {
+        readingOrderChangedStep()
         if stepsView.timerView.timerIsRunning {
             callAlert(okAction: { [unowned self] in
                 self.stepsView.timerView.restartAction()
@@ -273,5 +275,20 @@ extension StepsViewController: SpeechManagerDelegate {
 extension StepsViewController: DismissDelegate {
     func dismissButton() {
         self.coordinator?.dismiss()
+    }
+}
+
+extension StepsViewController {
+    func readingOrderChangedStep() {
+        stepsView.accessibilityElements = [
+            stepsView.stackView.bottomLabelsStackView,
+            stepsView.recipeStepLabel,
+            stepsView.timerView,
+            stepsView.nextStepView,
+            stepsView.stackView.previousButton,
+            stepsView.stackView.nextButton,
+            stepsView.closeButton
+        ]
+        UIAccessibility.post(notification: .layoutChanged, argument: stepsView.stackView.bottomLabelsStackView)
     }
 }
