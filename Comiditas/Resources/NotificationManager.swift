@@ -13,12 +13,12 @@ class NotificationManager: ObservableObject {
     static let shared = NotificationManager()
     @Published var settings: UNNotificationSettings?
 
-    func requestAuthorization(completion: @escaping  (Bool) -> Void) {
+    func requestAuthorization(completion: ((Bool) -> Void)? = nil) {
         UNUserNotificationCenter.current()
             .requestAuthorization(options: [.alert, .sound, .badge]) { granted, _  in
 
                 self.fetchNotificationSettings()
-                completion(granted)
+                completion?(granted)
             }
     }
 

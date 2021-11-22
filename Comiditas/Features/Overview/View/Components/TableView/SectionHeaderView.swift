@@ -30,9 +30,9 @@ class SectionHeaderView: UITableViewHeaderFooterView, BaseViewProtocol {
     private let copyButton: UIButton = {
         let button = UIButton(type: .custom)
         button.tintColor = Colors.primary
-        let copyImage = UIImage(systemName: "rectangle.portrait.on.rectangle.portrait")
-        button.setImage(copyImage, for: .normal)
-        button.addTarget(self, action: #selector(copyAction), for: .touchUpInside)
+        let copyImage = UIImage(named: "copy")
+        let templateImage = copyImage?.withRenderingMode(.alwaysTemplate)
+        button.setImage(templateImage, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -42,6 +42,7 @@ class SectionHeaderView: UITableViewHeaderFooterView, BaseViewProtocol {
 
         setupView()
         setupConstraints()
+        setupCopyAction()
     }
 
     required init?(coder: NSCoder) {
@@ -50,8 +51,12 @@ class SectionHeaderView: UITableViewHeaderFooterView, BaseViewProtocol {
 
     func setupView() {
         contentView.backgroundColor = .systemBackground
+
         contentView.addSubview(titleLabel)
+        titleLabel.isAccessibilityElement = true
+
         contentView.addSubview(copyButton)
+        copyButton.isAccessibilityElement = true
     }
 
     func setupConstraints() {
@@ -68,11 +73,38 @@ class SectionHeaderView: UITableViewHeaderFooterView, BaseViewProtocol {
         self.titleLabel.text = title
         self.titleLabel.accessibilityLabel = title
         self.sectionType = type
+
+        switch type {
+        case .ingredients:
+            copyButton.accessibilityLabel = "\(OverviewLocalizable.copy.text) \(OverviewLocalizable.ingredients.text)"
+            copyButton.accessibilityHint = OverviewLocalizable.copyIngredintsHint.text
+        case .direcions:
+            copyButton.accessibilityLabel = "\(OverviewLocalizable.copy.text) \(OverviewLocalizable.directions.text)"
+            copyButton.accessibilityHint = OverviewLocalizable.copyDirectionsHint.text
+        }
+    }
+
+    private func setupCopyAction() {
+        copyButton.addTarget(self, action: #selector(copyAction), for: .touchUpInside)
     }
 
     @objc func copyAction() {
         if let type = self.sectionType {
             self.delegate?.copySectionContent(type: type)
+        }
+
+        let copy = copyButton.currentImage
+        let checkmark = UIImage(systemName: "checkmark",
+                                withConfiguration: UIImage.SymbolConfiguration(weight: .bold))
+
+        UIView.transition(with: self.copyButton, duration: 0.5, options: .transitionCrossDissolve) {
+            self.copyButton.setImage(checkmark, for: .normal)
+        }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            UIView.transition(with: self.copyButton, duration: 0.5, options: .transitionCrossDissolve) {
+                self.copyButton.setImage(copy, for: .normal)
+            }
         }
     }
 }

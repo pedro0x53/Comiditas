@@ -9,11 +9,13 @@ import UIKit
 
 class ModalViewController: UIViewController {
 
-    let associatedView: ModalView = ModalView()
+    lazy var associatedView: ModalView = ModalView(closeButtonIsHidden: closeButtonIsHidden)
 
     var coordinator: ModalCoordinator?
 
     let okAction: () -> Void
+
+    let closeButtonIsHidden: Bool
 
     override func loadView() {
         super.loadView()
@@ -28,10 +30,17 @@ class ModalViewController: UIViewController {
         definesPresentationContext = true
     }
 
-    public init(image: UIImage, title: String, okAction: @escaping () -> Void) {
+    public init(
+        image: UIImage,
+        title: String,
+        description: String,
+        closeButtonIsHidden: Bool,
+        okAction: @escaping () -> Void
+    ) {
         self.okAction = okAction
+        self.closeButtonIsHidden = closeButtonIsHidden
         super.init(nibName: nil, bundle: nil)
-        associatedView.loadData(image: image, title: title)
+        associatedView.loadData(image: image, title: title, description: description)
     }
 
     required init?(coder: NSCoder) {
@@ -42,10 +51,12 @@ class ModalViewController: UIViewController {
 extension ModalViewController: ModalViewDelegate {
     func didPressOK() {
         okAction()
-        self.coordinator?.cancelDismiss()
+        self.dismiss(animated: false) {
+            self.coordinator?.didFinishRecipe()
+        }
     }
 
     func didCancel() {
-        self.coordinator?.cancelDismiss()
+        self.dismiss(animated: true)
     }
 }

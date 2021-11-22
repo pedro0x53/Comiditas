@@ -12,7 +12,9 @@ enum StepsLocalizable: String {
     case recipe
     case step
     case of
+    case close
 
+    case alert
     case alertStop
     case alertAtention
     case alertContinue
@@ -20,9 +22,12 @@ enum StepsLocalizable: String {
 
     case iniciateClockAcessibility
     case pauseClockAcessibility
+    case reiniciateClockAcessibility
 
     case backStep
     case nextStep
+
+    case next
 
     case timerNotificationTitle
     case timerNotificationBody
@@ -35,4 +40,5 @@ extension StepsLocalizable: LocalizablesProtocol {
     var bundle: Bundle? { Bundle.main }
     var arguments: [String]? { nil }
     var tableName: String? { "Steps" }
+    var defaultValue: String { "" }
 }

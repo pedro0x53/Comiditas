@@ -2,7 +2,7 @@
 //  FeedCollectionViewCell.swift
 //  Comiditas
 //
-//  Created by Beatriz Carlos on 20/09/21.
+//  Created by Beatriz Carlos on 26/10/21.
 //
 
 import UIKit
@@ -11,126 +11,167 @@ class FeedCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.isAccessibilityElement = true
+        setupUI()
+        setupAccessibility()
     }
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-    override func prepareForReuse() {
-            super.prepareForReuse()
-            imageView.image = nil
-    }
-
-    override func layoutSubviews() {
-        setupUI()
-    }
-
     override func accessibilityElementDidBecomeFocused() {
-        guard let collectionView = superview as? UICollectionView,
-            let indexPath = collectionView.indexPath(for: self) else {
-            return
-        }
+         guard let collectionView = superview as? UICollectionView,
+             let indexPath = collectionView.indexPath(for: self) else {
+             return
+         }
 
-        collectionView.scrollToItem(at: indexPath, at: .right, animated: true)
-        UIAccessibility.post(notification: .layoutChanged, argument: self)
+         collectionView.scrollToItem(at: indexPath, at: .right, animated: true)
+         UIAccessibility.post(notification: .layoutChanged, argument: self)
+     }
+
+    func setupAccessibility() {
+        accessibilityElements = [imageView, titleLabel, labelTime, labelPortion]
     }
 
-    lazy var roundedBackgroundView: UIView = {
-        let view = UIView()
-        view.layer.cornerRadius = 15
-        view.backgroundColor = Colors.background
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
+    lazy var imageView: UIImageView = {
+        let imageView = UIImageView(frame: .zero)
+        imageView.contentMode = .scaleToFill
+        imageView.layer.masksToBounds = true
+        imageView.layer.cornerRadius = 8
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.isAccessibilityElement = true
+        imageView.accessibilityTraits = .image
+        imageView.accessibilityLabel = "Imagem da receita"
+        return imageView
     }()
 
     lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.font = Fonts.h4Bold
         label.textColor = Colors.primary
-        label.text = "Lorem ipsum dolor sit amet"
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.isAccessibilityElement = true
+        label.accessibilityTraits = .link
         return label
     }()
 
-    lazy var imageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
-        imageView.layer.cornerRadius = 15
-        imageView.layer.masksToBounds = true
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        return imageView
+    lazy var stackViewRatings: UIStackView = {
+        let stack = UIStackView()
+        stack.backgroundColor = .white
+        stack.alignment = .center
+        stack.distribution = .fillProportionally
+        stack.spacing = 4
+        stack.layer.cornerRadius = 8
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        stack.isAccessibilityElement = false
+        stack.isHidden = true
+        return stack
     }()
 
-    lazy var subtitleLabel: UILabel = {
+    lazy var imageStar: UIImageView = {
+        let image = UIImageView()
+        image.image = UIImage(
+            systemName: "star.fill",
+            withConfiguration: UIImage.SymbolConfiguration(weight: .regular)
+        )?.withTintColor(.black, renderingMode: .alwaysOriginal)
+        image.translatesAutoresizingMaskIntoConstraints = true
+        image.isAccessibilityElement = false
+        image.accessibilityTraits = .image
+        image.accessibilityLabel = "Nota da receita: "
+        return image
+    }()
+
+    lazy var labelStar: UILabel = {
         let label = UILabel()
-        label.font = Fonts.h6
         label.textColor = Colors.textDark
-        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = Fonts.h6
+        label.text = "5.0"
+        label.isAccessibilityElement = false
+        label.accessibilityTraits = .staticText
+        label.accessibilityLabel = "5."
         return label
     }()
 
-    lazy var userImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.backgroundColor = .purple
-        imageView.image = UIImage(assetIdentifier: .imgPizza)
-        imageView.contentMode = .scaleAspectFill
-        imageView.layer.cornerRadius = 15
-        imageView.layer.masksToBounds = true
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        return imageView
+    lazy var stackViewDetails: UIStackView = {
+        let stack = UIStackView()
+        stack.alignment = .leading
+        stack.distribution = .equalSpacing
+        stack.spacing = 4
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        stack.isAccessibilityElement = false
+        return stack
     }()
 
-    lazy var userTitleLabel: UILabel = {
+    lazy var imageTime: UIImageView = {
+        let image = UIImageView()
+        image.image = UIImage(
+            systemName: "clock.fill",
+            withConfiguration: UIImage.SymbolConfiguration(weight: .regular)
+        )?.withTintColor(.black, renderingMode: .alwaysOriginal)
+        image.isAccessibilityElement = false
+        return image
+    }()
+
+    lazy var labelTime: UILabel = {
         let label = UILabel()
-        label.font = Fonts.h6
         label.textColor = Colors.textDark
-        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = Fonts.h6
+        label.isAccessibilityElement = true
+        return label
+    }()
+
+    lazy var imagePortion: UIImageView = {
+        let image = UIImageView()
+        image.image = UIImage(assetIdentifier: .imgPortion)
+        image.isAccessibilityElement = false
+        return image
+    }()
+
+    lazy var labelPortion: UILabel = {
+        let label = UILabel()
+        label.textColor = Colors.textDark
+        label.font = Fonts.h6
+        label.isAccessibilityElement = true
         return label
     }()
 }
 
 extension FeedCollectionViewCell {
-    private func setupUI() {
-        self.contentView.addSubview(roundedBackgroundView)
-        roundedBackgroundView.addSubview(imageView)
-        roundedBackgroundView.addSubview(titleLabel)
-        roundedBackgroundView.addSubview(subtitleLabel)
-        if FeatureFlags.user.isEnable {
-            roundedBackgroundView.addSubview(userImageView)
-            roundedBackgroundView.addSubview(userTitleLabel)
-        }
+    func setupUI() {
+        self.contentView.backgroundColor = Colors.background
+        self.contentView.layer.cornerRadius = 8
+
+        contentView.insertSubview(imageView, at: 0)
+        contentView.addSubview(stackViewRatings)
+        contentView.addSubview(titleLabel)
+        contentView.addSubview(stackViewDetails)
+
+        stackViewRatings.addArrangedSubview(imageStar)
+        stackViewRatings.addArrangedSubview(labelStar)
+
+        stackViewDetails.addArrangedSubview(imageTime)
+        stackViewDetails.addArrangedSubview(labelTime)
+        stackViewDetails.addArrangedSubview(imagePortion)
+        stackViewDetails.addArrangedSubview(labelPortion)
 
         NSLayoutConstraint.activate([
-            roundedBackgroundView.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 5),
-            roundedBackgroundView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: -5),
-            roundedBackgroundView.leftAnchor.constraint(equalTo: self.contentView.leftAnchor, constant: 5),
-            roundedBackgroundView.rightAnchor.constraint(equalTo: self.contentView.rightAnchor, constant: -5),
+            imageView.topAnchor.constraint(equalTo: contentView.topAnchor),
+            imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            imageView.heightAnchor.constraint(equalToConstant: 230),
 
-            imageView.topAnchor.constraint(equalTo: roundedBackgroundView.topAnchor),
-            imageView.widthAnchor.constraint(equalTo: roundedBackgroundView.widthAnchor),
-            imageView.heightAnchor.constraint(equalTo: roundedBackgroundView.heightAnchor, multiplier: 0.6),
+            stackViewRatings.topAnchor.constraint(equalTo: self.imageView.topAnchor, constant: 20),
+            stackViewRatings.trailingAnchor.constraint(equalTo: self.imageView.trailingAnchor, constant: -16),
+            stackViewRatings.heightAnchor.constraint(equalToConstant: 30),
+            stackViewRatings.widthAnchor.constraint(equalToConstant: 60),
 
             titleLabel.topAnchor.constraint(equalTo: self.imageView.bottomAnchor, constant: 8),
-            titleLabel.leadingAnchor.constraint(equalTo: self.roundedBackgroundView.leadingAnchor, constant: 8),
-            titleLabel.trailingAnchor.constraint(equalTo: self.roundedBackgroundView.trailingAnchor),
+            titleLabel.leadingAnchor.constraint(equalTo: self.imageView.leadingAnchor, constant: 3),
+            titleLabel.widthAnchor.constraint(equalTo: self.contentView.widthAnchor),
 
-            subtitleLabel.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor),
-            subtitleLabel.leadingAnchor.constraint(equalTo: self.roundedBackgroundView.leadingAnchor, constant: 8),
-            subtitleLabel.trailingAnchor.constraint(equalTo: self.roundedBackgroundView.trailingAnchor)
+            stackViewDetails.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor, constant: 6),
+            stackViewDetails.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor),
+            stackViewDetails.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 3)
         ])
-
-        if FeatureFlags.user.isEnable {
-            NSLayoutConstraint.activate([
-                userImageView.topAnchor.constraint(equalTo: self.subtitleLabel.bottomAnchor, constant: 8),
-                userImageView.leadingAnchor.constraint(equalTo: self.roundedBackgroundView.leadingAnchor, constant: 8),
-                userImageView.heightAnchor.constraint(equalToConstant: 30),
-                userImageView.widthAnchor.constraint(equalToConstant: 30),
-
-                userTitleLabel.leadingAnchor.constraint(equalTo: self.userImageView.trailingAnchor, constant: 8),
-                userTitleLabel.centerYAnchor.constraint(equalTo: self.userImageView.centerYAnchor)
-            ])
-        }
-
     }
 }

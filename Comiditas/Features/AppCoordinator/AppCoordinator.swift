@@ -27,8 +27,6 @@ class AppCoordinator: Coordinator {
         navigationController.navigationBar.standardAppearance = appearance
         navigationController.navigationBar.compactAppearance = appearance
         navigationController.navigationBar.scrollEdgeAppearance = appearance
-        navigationController.navigationBar.setBackgroundImage(UIImage(named: ""), for: UIBarMetrics.default)
-        navigationController.navigationBar.shadowImage = UIImage(named: "")
 
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
