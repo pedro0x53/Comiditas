@@ -292,13 +292,3 @@ extension StepsViewController {
         UIAccessibility.post(notification: .layoutChanged, argument: stepsView.stackView.bottomLabelsStackView)
     }
 }
-
-extension UIAccessibility {
-    static func setFocusTo(_ object: Any?) {
-        if UIAccessibility.isVoiceOverRunning {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
-                UIAccessibility.post(notification: .layoutChanged, argument: object)
-            }
-        }
-    }
-}
