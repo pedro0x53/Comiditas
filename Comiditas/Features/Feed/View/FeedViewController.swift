@@ -54,7 +54,7 @@ class FeedViewController: UIViewController {
         )
         addButton.isAccessibilityElement = true
         addButton.accessibilityTraits = .button
-        addButton.accessibilityLabel = "Configurações"
+        addButton.accessibilityLabel = "Ajustes"
         self.navigationItem.rightBarButtonItem = addButton
 
     }
@@ -144,18 +144,19 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
 
             cell.titleLabel.text = recipes[indexPath.row].name
             cell.titleLabel.accessibilityTraits = .staticText
-            cell.titleLabel.accessibilityLabel = recipes[indexPath.row].name
 
             cell.labelPortion.text = "\(recipes[indexPath.row].servings) porções"
             cell.labelPortion.accessibilityTraits = .staticText
-            cell.labelPortion.accessibilityLabel = "\(recipes[indexPath.row].servings) porções"
 
             let time = Time.secondsToHoursMinutesSeconds(seconds: recipes[indexPath.row].prepTime)
             cell.labelTime.text = Time.getString(for: time).accessible
             cell.labelTime.accessibilityTraits = .staticText
-            cell.labelTime.accessibilityLabel = Time.getString(for: time).accessible
 
             cell.labelStar.text = "\(recipes[indexPath.row].rate).0"
+            cell.accessibilityLabel = [recipes[indexPath.row].name,
+                                      "tempo de preparo de \(Time.getString(for: time).accessible)",
+                                      "rendimento de \(recipes[indexPath.row].servings) porções"]
+                                      .joined(separator: " , ")
             return cell
         }
     }

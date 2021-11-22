@@ -83,10 +83,12 @@ class StepsView: UIView {
     func configureAccessibilityElementsOrder() {
         accessibilityElements = [
             closeButton,
+            stackView.bottomLabelsStackView,
             recipeStepLabel,
             timerView,
             nextStepView,
-            stackView
+            stackView.previousButton,
+            stackView.nextButton
         ]
     }
 
