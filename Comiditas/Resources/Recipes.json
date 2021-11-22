@@ -2,7 +2,7 @@
     {
         "identifier": 1,
         "name": "Macarrão a carbonara",
-        "imageURL": "https://cdn.panelinha.com.br/receita/1575554013783-1566923717731-espaguete-a%CC%80-carbonaravale.jpg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/macarrao_a_carbonara.jpeg",
         "difficultyLevel": 2,
         "servings": 6,
         "prepTime": 900,
@@ -67,7 +67,7 @@
     {
         "identifier": 2,
         "name": "Banofee",
-        "imageURL": "https://img.itdg.com.br/tdg/images/recipes/000/300/871/321360/321360_original.jpg?mode=crop&width=710&height=400",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/banofee.webp",
         "difficultyLevel": 2,
         "servings": 8,
         "prepTime": 900,
@@ -81,7 +81,7 @@
             "Cacau em pó ou raspas de chocolate para decorar.",
         ],
         "categories" : [
-            "Doces"
+            "Doces", "Bolos e tortas"
         ],
         "rate": 3,
         "steps": [
@@ -120,7 +120,7 @@
     {
         "identifier": 3,
         "name": "Lamen ao molho tarê com frango",
-        "imageURL": "https://img.itdg.com.br/tdg/images/recipes/000/181/073/303173/303173_original.jpg?mode=crop&width=710&height=400",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/lamen_ao_molho_tare_com_frango.jpeg",
         "difficultyLevel": 1,
         "servings": 2,
         "prepTime": 1800,
@@ -145,7 +145,7 @@
             "400 ml de água.",
         ],
         "categories" : [
-            "Salgado"
+            "Massas", "Aves"
         ],
         "rate": 3,
         "steps": [
@@ -220,7 +220,7 @@
     {
         "identifier": 1,
         "name": "Bolo de tangerina",
-        "imageURL": "https://s2.glbimg.com/3TKizZ6TEdKtQ9BdNqN6Qemmk78=/0x0:1280x960/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/L/R/fXiR5pSuC4nEaHdG8dSg/receita-bolo-de-tangerina.jpg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/bolo_de_tangerina.jpeg",
         "difficultyLevel": 2,
         "servings": 8,
         "prepTime": 7200,
@@ -235,7 +235,7 @@
             "2 gramas de sal"
         ],
         "categories" : [
-            "Doces"
+            "Bolos e tortas", "Doces"
         ],
         "rate": 5,
         "steps": [
@@ -286,7 +286,7 @@
     {
         "identifier": 2,
         "name": "Brownie de banana",
-        "imageURL": "https://s2.glbimg.com/RFd_WIkagzQ2w_ZaRH8Fr1xsdmY=/0x0:1080x607/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/d/o/zCUj7wQ6A01kwN8wGqcg/essa-2-.png",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/brownie_de_banana.jpeg",
         "difficultyLevel": 2,
         "servings": 8,
         "prepTime": 2400,
@@ -300,7 +300,7 @@
             "Meia xícara de chá de gotas de chocolate meio amargo forneáveis (opcional)"
         ],
         "categories" : [
-            "Doces"
+            "Doces", "Bolos e tortas"
         ],
         "rate": 3,
         "steps": [
@@ -339,7 +339,7 @@
     {
         "identifier": 3,
         "name": "Muffin de chocolate",
-        "imageURL": "https://s2.glbimg.com/34NAyUJF12wdHWm_ia9BI5P9zFg=/0x0:3451x2301/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/T/j/0oLNRGS1iirRkxSq6eCQ/muffin-de-chocolate-receita.jpg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/muffin_de_chocolate.jpeg",
         "difficultyLevel": 3,
         "servings": 12,
         "prepTime": 3000,
@@ -357,7 +357,7 @@
             "Meia xícara de chá de chocolate em gotas ou picado"
         ],
         "categories" : [
-            "Doces"
+            "Doces", "Bolos e tortas"
         ],
         "rate": 3,
         "steps": [
@@ -414,7 +414,7 @@
     {
         "identifier": 4,
         "name": "Bolo de limão com iogurte",
-        "imageURL": "https://s2.glbimg.com/vGRqwG9174Y8aEq6L7wZ6lbdkPc=/0x0:4986x3051/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/h/N/zxSuJvREqYqsNxjxlgbA/bolo-de-limao-com-iogurte-receita.jpg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/bolo_de_limao_com_iogurte.jpeg",
         "difficultyLevel": 2,
         "servings": 6,
         "prepTime": 3600,
@@ -430,7 +430,7 @@
         ],
         "categories" : [
             "Doces",
-            "Bolos"
+            "Bolos e tortas"
         ],
         "rate": 3,
         "steps": [
@@ -481,7 +481,7 @@
     {
         "identifier": 5,
         "name": "Cake pop com sobras de bolo",
-        "imageURL": "https://s2.glbimg.com/w5j_jwsuDsE35J1v4Cz3rsXILtY=/0x0:2048x1365/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/L/7/FMJqACRPmdKhmV3QZZAA/cake-pop-com-sobras-de-bolo.jpg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/cake_pop_com_sobras_de_bolo.jpeg",
         "difficultyLevel": 2,
         "servings": 6,
         "prepTime": 4800,
@@ -492,7 +492,7 @@
             "Confeitos coloridos e castanha-de-caju para decorar"
         ],
         "categories" : [
-            "Doces"
+            "Doces", "Bolos e tortas"
         ],
         "rate": 5,
         "steps": [
@@ -543,7 +543,7 @@
     {
         "identifier": 6,
         "name": "Bolo de maçã com canela",
-        "imageURL": "https://s2.glbimg.com/43DfUj2mhHJGmSZceZaxW5tDU9w=/0x0:1280x960/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/h/Y/8EKaxrRR6PWYWrCBBKNg/bolo-de-maca-com-canela-2-.jpeg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/bolo_de_maca_com_canela.jpeg",
         "difficultyLevel": 2,
         "servings": 12,
         "prepTime": 7200,
@@ -561,7 +561,7 @@
         ],
         "categories" : [
             "Doces",
-            "Bolos"
+            "Bolos e tortas"
         ],
         "rate": 3,
         "steps": [
@@ -618,7 +618,7 @@
     {
         "identifier": 7,
         "name": "Camarão Internacional",
-        "imageURL": "https://naminhapanela.com/wp-content/uploads/2014/06/arroz-de-camarao-350x350.jpg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/camarao_internacional.jpeg",
         "difficultyLevel": 2,
         "servings": 12,
         "prepTime": 3600,
@@ -654,7 +654,7 @@
             "Batata palha para enfeitar e servir com o prato"
         ],
         "categories" : [
-            "Massas"
+            "Massas", "Frutos do mar"
         ],
         "rate": 5,
         "steps": [
@@ -783,7 +783,7 @@
     {
         "identifier": 8,
         "name": "Crepioca de queijo",
-        "imageURL": "https://static.clubedaanamariabraga.com.br/wp-content/uploads/2020/02/crepioca-igor-rocha.jpeg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/crepioca_de_queijo.jpeg",
         "difficultyLevel": 1,
         "servings": 1,
         "prepTime": 600,
@@ -795,7 +795,7 @@
             "Queijo mussarela ralado à gosto"
         ],
         "categories" : [
-            "Salgados"
+            "Fáceis", "Rápidas", "Fit"
         ],
         "rate": 4,
         "steps": [
@@ -846,7 +846,7 @@
     {
         "identifier": 9,
         "name": "Bolo Mole",
-        "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw4UCeyOsg82hJLdzPS6CnFd2bO-2oMCdqbQ&usqp=CAU",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/bolo_mole.jpeg",
         "difficultyLevel": 1,
         "servings": 10,
         "prepTime": 3300,
@@ -861,7 +861,7 @@
         ],
         "categories" : [
             "Doces",
-            "Bolos"
+            "Bolos e tortas"
         ],
         "rate": 4,
         "steps": [
@@ -906,7 +906,7 @@
     {
         "identifier": 10,
         "name": "Patê de peito de peru",
-        "imageURL": "https://img.itdg.com.br/tdg/images/recipes/000/049/442/135927/135927_original.jpg?mode=crop&width=710&height=400",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/pate_de_peito_de_peru.webp",
         "difficultyLevel": 2,
         "servings": 1,
         "prepTime": 300,
@@ -920,8 +920,9 @@
             "Sal a gosto"
         ],
         "categories" : [
-            "Salgados",
-            "Patê"
+            "Rápidos",
+            "Molhos",
+            "Fáceis"
         ],
         "rate": 5,
         "steps": [
@@ -960,7 +961,7 @@
     {
         "identifier": 11,
         "name": "Penne ao molho branco de camarão",
-        "imageURL": "https://www.anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-2459-a3d849ce575c69a18e61a51e04bfa3d9.jpg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/penne_ao_molho_branco_de_camarao.jpeg",
         "difficultyLevel": 2,
         "servings": 2,
         "prepTime": 2400,
@@ -977,7 +978,7 @@
         ],
         "categories" : [
             "Massas",
-            "Salgados"
+            "Frutos do mar"
         ],
         "rate": 5,
         "steps": [
@@ -1010,7 +1011,7 @@
     {
         "identifier": 12,
         "name": "Macarrão alho e óleo",
-        "imageURL": "https://www.marolacomcarambola.com.br/wp-content/uploads/2015/08/receita-de-macarrao-alho-e-oleo-2.jpg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/macarrao_alho_e_oleo.jpeg",
         "difficultyLevel": 1,
         "servings": 2,
         "prepTime": 600,
@@ -1023,7 +1024,7 @@
             "1/2 (meia) xícara de cebolinha ou salsinha picadas."
         ],
         "categories" : [
-            "Massas"
+            "Massas", "Rápidas", "Fáceis"
         ],
         "rate": 3,
         "steps": [
@@ -1056,7 +1057,7 @@
     {
         "identifier": 13,
         "name": "Mac'n'cheese",
-        "imageURL": "https://2.bp.blogspot.com/-YXPGKDyEvCs/UvttfcG9GkI/AAAAAAAAKkM/yYOrjBmnVcI/s1600/macncheese_queijoreino_brisando10.jpg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/macncheese.jpeg",
         "difficultyLevel": 3,
         "servings": 2,
         "prepTime": 1200,
@@ -1105,7 +1106,7 @@
     {
         "identifier": 14,
         "name": "Strogonoff de Frango",
-        "imageURL": "https://img.itdg.com.br/tdg/images/recipes/000/132/121/328769/328769_original.jpg?mode=crop&width=710&height=400",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/strogonoff_de_frango.webp",
         "difficultyLevel": 3,
         "servings": 2,
         "prepTime": 1200,
@@ -1154,7 +1155,7 @@
     {
         "identifier": 15,
         "name": "Purê de Mandioquinha",
-        "imageURL": "https://cozinhalegal.com.br/files/manager/1/341/Pure_Mandioquinha_Facil_3.jpg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/pure_de_mandioquinha.jpeg",
         "difficultyLevel": 3,
         "servings": 4,
         "prepTime": 1800,
@@ -1211,7 +1212,7 @@
     {
         "identifier": 16,
         "name": "Mousse de Limão",
-        "imageURL": "https://www.anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-2256-a50ed558b2d695e515c009348341a344.jpg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/mousse_de_lim%C3%A3o.jpeg",
         "difficultyLevel": 2,
         "servings": 4,
         "prepTime": 900,
@@ -1261,7 +1262,7 @@
     {
         "identifier": 17,
         "name": "Pudim de Leite Condensado",
-        "imageURL": "https://t1.rg.ltmcdn.com/pt/images/3/0/2/img_pudim_de_leite_condensado_203_orig.jpg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/pudim_de_leite_condensado.jpeg",
         "difficultyLevel": 3,
         "servings": 12,
         "prepTime": 14400,
@@ -1311,7 +1312,7 @@
     {
         "identifier": 18,
         "name": "Salada Refrescante e Colorida",
-        "imageURL": "https://d1uz88p17r663j.cloudfront.net/resized/b1e0912e72a64c0be6a6709882d0fbc6_salada-refrescante-colorida-receitas-nestle_1200_600.jpg",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/salada_refrescante_e_colorida.jpg",
         "difficultyLevel": 1,
         "servings": 4,
         "prepTime": 600,
@@ -1349,7 +1350,7 @@
     {
         "identifier": 19,
         "name": "Chocolate cremoso",
-        "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ02gGZQyoyEPGWLAJTOMM8Mw9Bl4nwUPb--A&usqp=CAU",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/chocolate_cremoso.jpeg",
         "difficultyLevel": 3,
         "servings": 20,
         "prepTime": 900,
@@ -1382,7 +1383,7 @@
     {
         "identifier": 20,
         "name": "Vinho quente",
-        "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT34ix2RwyzZJ8S6ivyvewBujiRZuPqexkvfQ&usqp=CAU",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/vinho_quente.jpeg",
         "difficultyLevel": 3,
         "servings": 10,
         "prepTime": 1200,
@@ -1420,6 +1421,1062 @@
             {
                 "step": 4,
                 "stepDescription": "Deixe cozinhar um pouco e sirva bem quente.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 21,
+        "name": "Risoto de linguiça",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/risoto_de_linguica.jpg",
+        "difficultyLevel": 3,
+        "servings": 5,
+        "prepTime": 2100,
+        "ingredients" : [
+            "5 gomos de Linguiça toscana Sadia cortados em rodelas.",
+            "1 cebola descascada e cortada em cubos pequenos.",
+            "1 xícara (chá) de arroz para risoto (arbóreo ou carnaroli).",
+            "1 xícara (chá) de vinho branco seco.",
+            "2 ½ xícaras (chá) de caldo de legumes quente (de preferência caseiro).",
+            "2 tomates sem pele e sem sementes cortados em cubos pequenos.",
+            "Sal a gosto.",
+            "Pimenta dedo-de-moça picada a gosto.",
+            "½ maço de rúcula picada.",
+            "1 colher (sopa) de Qualy cremosa sem sal."
+        ],
+        "categories" : [
+            "Massas", "Carnes"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Em uma panela, doure as linguiças em sua própria gordura; acrescente a margarina e a cebola e deixe dourar.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Acrescente o arroz e refogue rapidamente. Adicione o vinho e deixe evaporar.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Aos poucos, vá adicionando o caldo de legumes, mexendo sem parar, até que o arroz esteja al dente (não muito duro, nem muito mole).",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Junte o tomate e cozinhe por mais alguns instantes, sem parar de mexer. O arroz deve ficar cremoso, mas sem líquido em excesso.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 5,
+                "stepDescription": "Desligue o fogo, tempere com o sal e a pimenta e adicione a rúcula.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 22,
+        "name": "Risoto de linguiça",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/risoto_de_linguica.jpg",
+        "difficultyLevel": 3,
+        "servings": 5,
+        "prepTime": 2100,
+        "ingredients" : [
+            "5 gomos de Linguiça toscana Sadia cortados em rodelas.",
+            "1 cebola descascada e cortada em cubos pequenos.",
+            "1 xícara (chá) de arroz para risoto (arbóreo ou carnaroli).",
+            "1 xícara (chá) de vinho branco seco.",
+            "2 ½ xícaras (chá) de caldo de legumes quente (de preferência caseiro).",
+            "2 tomates sem pele e sem sementes cortados em cubos pequenos.",
+            "Sal a gosto.",
+            "Pimenta dedo-de-moça picada a gosto.",
+            "½ maço de rúcula picada.",
+            "1 colher (sopa) de Qualy cremosa sem sal."
+        ],
+        "categories" : [
+            "Massas", "Carnes"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Em uma panela, doure as linguiças em sua própria gordura; acrescente a margarina e a cebola e deixe dourar.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Acrescente o arroz e refogue rapidamente. Adicione o vinho e deixe evaporar.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Aos poucos, vá adicionando o caldo de legumes, mexendo sem parar, até que o arroz esteja al dente (não muito duro, nem muito mole).",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Junte o tomate e cozinhe por mais alguns instantes, sem parar de mexer. O arroz deve ficar cremoso, mas sem líquido em excesso.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 5,
+                "stepDescription": "Desligue o fogo, tempere com o sal e a pimenta e adicione a rúcula.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 21,
+        "name": "Caldeirada de frutos do mar",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/caldeirada_de_frutos_do_mar.jpeg",
+        "difficultyLevel": 3,
+        "servings": 6,
+        "prepTime": 1200,
+        "ingredients" : [
+            "600 g de cação cortado em cubos.",
+            "500 g de camarão médio limpo.",
+            "6 lagostins.",
+            "300 g de mexilhão.",
+            "500 g de lula cortada em anéis.",
+            "5 batatas médias.",
+            "3 tomates maduros cortados em rodelas.",
+            "3 cebolas cortadas em rodelas.",
+            "1 pimentão cortado em rodelas.",
+            "2 cubos de caldo de camarão.",
+            "Cheiro verde a gosto.",
+            "Coentro a gosto.",
+            "Sal a gosto.",
+            "Limão para lavar os frutos do mar.",
+            "1/2 xícara de azeite de oliva.",
+            "6 dentes de alho grandes."
+        ],
+        "categories" : [
+            "Frutos do mar"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Depois dos frutos do mar devidamente limpos e lavados com caldo de limão.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Aqueça uma panela grande e coloque para dourar o alho amassado, depois refogue o mexilhão e coloque o cação cortado em cubos e adicione a água. Deixe abrir fervura e adicione a lula cortada em anéis e os tomates, as cebolas e o pimentão.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Logo em seguida coloque os cubos de caldo de camarão e acerte o sal.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Adicione coentro e cheiro verde e os camarões. Logo após coloque as batatas cortadas em rodelas grossas e previamente cozidas.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 5,
+                "stepDescription": "E para finalizar coloque os lagostins por cima de tudo, tampe a panela e deixe cozinhar por 5 min.",
+                "hasTimer": true,
+                "timer": 300
+            },
+            {
+                "step": 6,
+                "stepDescription": "Sirva com arroz branco e pirão.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 22,
+        "name": "Risoto de linguiça",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/risoto_de_linguica.jpg",
+        "difficultyLevel": 3,
+        "servings": 5,
+        "prepTime": 2100,
+        "ingredients" : [
+            "5 gomos de Linguiça toscana Sadia cortados em rodelas.",
+            "1 cebola descascada e cortada em cubos pequenos.",
+            "1 xícara (chá) de arroz para risoto (arbóreo ou carnaroli).",
+            "1 xícara (chá) de vinho branco seco.",
+            "2 ½ xícaras (chá) de caldo de legumes quente (de preferência caseiro).",
+            "2 tomates sem pele e sem sementes cortados em cubos pequenos.",
+            "Sal a gosto.",
+            "Pimenta dedo-de-moça picada a gosto.",
+            "½ maço de rúcula picada.",
+            "1 colher (sopa) de Qualy cremosa sem sal."
+        ],
+        "categories" : [
+            "Massas", "Carnes"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Em uma panela, doure as linguiças em sua própria gordura; acrescente a margarina e a cebola e deixe dourar.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Acrescente o arroz e refogue rapidamente. Adicione o vinho e deixe evaporar.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Aos poucos, vá adicionando o caldo de legumes, mexendo sem parar, até que o arroz esteja al dente (não muito duro, nem muito mole).",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Junte o tomate e cozinhe por mais alguns instantes, sem parar de mexer. O arroz deve ficar cremoso, mas sem líquido em excesso.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 5,
+                "stepDescription": "Desligue o fogo, tempere com o sal e a pimenta e adicione a rúcula.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 23,
+        "name": "Casquinha de siri",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/casquinha_de_siri.webp",
+        "difficultyLevel": 5,
+        "servings": 1,
+        "prepTime": 2100,
+        "ingredients" : [
+            "500g de carne de siri desfiada e limpa.",
+            "1 vidro de leite de coco.",
+            "1 cebola ralada.",
+            "2 dentes de alho amassados.",
+            "2 colheres de sopa de azeite de dendê.",
+            "2 colheres de sopa de azeite extra virgem.",
+            "Sal e pimenta a gosto.",
+            "Cebolinha picadinha a gosto.",
+            "2 tomates médios, sem pele e sem sementes, picadinhos.",
+            "Parmesão ralado para gratinar."
+        ],
+        "categories" : [
+            "Frutos do mar"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Em uma frigideira larga e funda esquente os azeites. Doure a cebola e alho.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Unte a carne de siri, os tomates e deixe cozinhar por 15 minutos em fogo baixo.",
+                "hasTimer": true,
+                "timer": 900
+            },
+            {
+                "step": 3,
+                "stepDescription": "Adicione o leite de coco e tempere com sal, pimenta e a cebolinha verde a gosto.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Mexa bem por 5 minutos e encha as casquinhas.",
+                "hasTimer": true,
+                "timer": 300
+            },
+            {
+                "step": 5,
+                "stepDescription": "Polvilhe com parmesão a gosto e leve ao forno até gratinar.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 24,
+        "name": "Bacalhau",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/bacalhau.jpeg",
+        "difficultyLevel": 5,
+        "servings": 8,
+        "prepTime": 1500,
+        "ingredients" : [
+            "1 kg de bacalhau.",
+            "1 pimentão vermelho picado.",
+            "1 pimentão verde picado.",
+            "1 cebola.",
+            "3 tomates picados maduros (não precisa tirar pele nem semente).",
+            "2 dentes de alho.",
+            "1 xícara de azeitona preta sem caroço picada.",
+            "Orégano a gosto.",
+            "1 kg de batatas cozidas e espremidas.",
+            "2 colheres de sopa de manteiga.",
+            "1/2 xícara de leite.",
+            "Sal a gosto.",
+            "1 xícara de catupiry.",
+            "1 lata de creme de leite sem soro.",
+            "1 vidro de leite de coco de 200 ml."
+        ],
+        "categories" : [
+            "Peixes"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Primeiro faça o purê de batatas, esprema as batatas, e acrescente a manteiga e o leite com as batatas ainda bem quentes, é só mexer bem e acrescentar sal a gosto.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Coloque esse purê num refratário alto. E arrrume como se fosse a massa de uma torta.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Faça o refogado com o bacalhau já dessalgado (deixar de molho na véspera e trocar no mínimo 5 vezes a água).",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Coloque para dar uma breve fervura, 5 minutos em água já fervente.",
+                "hasTimer": true,
+                "timer": 300
+            },
+            {
+                "step": 5,
+                "stepDescription": "Depois desfie o bacalhau em lascas.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 6,
+                "stepDescription": "Coloque bastante azeite numa panela e frite a cebola e o alho. Depois juntar os pimentões, o tomate, e deixar apurar por uns 10 minutos.",
+                "hasTimer": true,
+                "timer": 600
+            },
+            {
+                "step": 7,
+                "stepDescription": "Depois juntar as azeitonas e o bacalhau e deixar apurar mais 10 minutos.",
+                "hasTimer": true,
+                "timer": 600
+            },
+            {
+                "step": 8,
+                "stepDescription": "Sem deixar secar muito, (caso seque, coloque um pouquinho de água quente). E coloque orégano a gosto.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 9,
+                "stepDescription": "Joque esse refogado de bacalhau sobre o purê de batatas.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 10,
+                "stepDescription": "Joque esse refogado de bacalhau sobre o purê de batatas.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 11,
+                "stepDescription": "Leve ao forno previamente aquecido (bem quente) e deixe gratinar.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 25,
+        "name": "Filé de tilapia assado",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/file_de_tilapia_assado.webp",
+        "difficultyLevel": 5,
+        "servings": 6,
+        "prepTime": 1800,
+        "ingredients" : [
+            "1 kg de filé de tilápia.",
+            "Suco de 1/2 limão.",
+            "4 tomates em rodelas.",
+            "4 cebolas em rodelas.",
+            "1/2 xícara de chá de azeitonas pretas picadas.",
+            "1/2 kg de batatas cozidas.",
+            "1 colher de sopa de manteiga.",
+            "1/2 xícara de chá de creme de leite.",
+            "300 g de mussarela ralada.",
+            "Azeite.",
+            "Sal."
+        ],
+        "categories" : [
+            "Peixes"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Tempere os filés com limão e sal.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Em um refratário colocar uma camada de cebola e uma de tomate, coloque os filés em cima das camadas.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Cobrir com outra camada de cebola e de tomate e na sequência as azeitonas e regue com o azeite.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Colocar para assar por 15 minutos em forno alto.",
+                "hasTimer": true,
+                "timer": 900
+            },
+            {
+                "step": 5,
+                "stepDescription": "Em outra vasilha espremer as batatas.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 6,
+                "stepDescription": "Em uma panela derreta a manteiga, coloque a batata e o creme de leite.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 7,
+                "stepDescription": "Em seguida coloque esse purê em cima dos filés, coloque a mussarela.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 8,
+                "stepDescription": "Leve ao forno por mais 5 minutos e sirva.",
+                "hasTimer": true,
+                "timer": 300
+            }
+        ]
+    },
+    {
+        "identifier": 26,
+        "name": "Iscas de peixe empanadas",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/iscas_de_peixe.webp",
+        "difficultyLevel": 2,
+        "servings": 6,
+        "prepTime": 1800,
+        "ingredients" : [
+            "500 gramas de filés de peixe cortados em tiras de 1x7 cm.",
+            "Suco de 1 limão.",
+            "Sal e pimenta do reino a gosto.",
+            "1 xícara (chá) de farinha de trigo.",
+            "2 ovos.",
+            "1/2 xícara (chá) de leite.",
+            "1 colher (chá) de fermento em pó.",
+            "Óleo para fritar.",
+            "1 cebola picada.",
+            "3 colheres (sopa) de coentro picado.",
+            "4 tomates picados sem pele e sem semente.",
+            "2 colheres (sopa) de azeite.",
+        ],
+        "categories" : [
+            "Peixes"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Tempere as tiras de peixe com o suco de limão, sal e pimenta. Reserve.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Prepare a massa para empanar o peixe misturando a farinha e os ovos. Acrescente aos poucos o leite.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Junte o fermento e misture.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Passe as tiras de peixe na massa.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 5,
+                "stepDescription": "Deixe escorrer um pouco o excesso e frite até dourar ligeiramente. Escorra em papel absorvente.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 6,
+                "stepDescription": "Cozinhe todos os ingredientes para o molho em fogo baixo e com a panela tampada, até o tomate desmanchar.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 7,
+                "stepDescription": "Bata no liquidificador junto com 1/2 xícara (chá) de água. Tempere com sal e pimenta.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 8,
+                "stepDescription": "Aqueça e sirva para acompanhar as tiras de peixe empanado.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 27,
+        "name": "Pão de 'queijo' (Lacfree)",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/pao_de_queijo_lacfree.jpeg",
+        "difficultyLevel": 4,
+        "servings": 6,
+        "prepTime": 2400,
+        "ingredients" : [
+            "2 xíc. de polvilho azedo.",
+            "1 xíc. de purê de batata doce (ou batata baroa).",
+            "2 colheres de chá de sal.",
+            "2 colheres de sopa de óleo vegetal."
+        ],
+        "categories" : [
+            "Lacfree"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Descasque a batata doce, corte em pedaços e cozinhe até ficar macia.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Depois, amasse bem até virar um purê. Meça uma xícara cheia de purê para utilizar nessa receita, o que sobrar utilize em outra. Antes de continuar a fazer o pão de “queijo”, ligue o forno a 180° C para preaquecer.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Em um recipiente grande misture o purê de batata com o polvilho, sal e óleo. Se quiser incrementar você pode utilizar chia como eu fiz, ou até ervas finas (cebolinha e salsinha).",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Adicione água as poucos e continue a mexer até a massa ficar homogênea. Quando começar a desgrudar do recipiente e ficar fácil de modelar significa que não precisa de mais água.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 5,
+                "stepDescription": "Modele as bolinhas e disponha na fôrma, deixe um espaço entre eles porque irão crescer quando assar.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 6,
+                "stepDescription": "Coloque no forno já preaquecido a 180° C por uns 25 minutos ou até dourar.",
+                "hasTimer": true,
+                "timer": 1500
+            }
+        ]
+    },
+    {
+        "identifier": 28,
+        "name": "Smoothie de morango e coco",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/smoothie_morango.webp",
+        "difficultyLevel": 1,
+        "servings": 1,
+        "prepTime": 600,
+        "ingredients" : [
+            "1 banana média.",
+            "8 morangos médios limpos.",
+            "1/3 de xícara de leite de coco.",
+            "2 colheres de sopa de mel.",
+            "gelo a gosto."
+        ],
+        "categories" : [
+            "Lacfree", "Rápidas", "Fáceis"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Leve a banana, morangos, leite de coco e mel ao liquidificador e processe até que fique uniforme. Junte algumas gotas de água se necessário para bater melhor.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Junte pedras de gelo a gosto e processe até que fiquem bem quebradinhas.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Deguste imediatamente.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 29,
+        "name": "Coxinha (Lacfree)",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/coxinha_sem_lactose.jpeg",
+        "difficultyLevel": 4,
+        "servings": 6,
+        "prepTime": 3600,
+        "ingredients" : [
+           "250g de aipim ou batata doce cozido.",
+           "4 colheres de sopa de farinha de amaranto, ou de grão de bico, ou de aveia se você puder consumir glúten.",
+           "4 colheres de sopa de farinha de arroz – de preferencia a integral.",
+           "1-2 colheres de sopa de biomassa de banana verde – opcional.",
+           "200 ml de água mineral ou caldo de legumes.",
+           "1 colher de sobremesa de sal.",
+           "25g de farinha de linhaça.",
+           "25g de amaranto em flocos.",
+           "100g de frango cozido e desfiado – eu cozinho o meu com alecrim, cebola e uma pitada de sal.",
+           "1/2 cenoura ralada.",
+           "salsinha picada."
+        ],
+        "categories" : [
+            "Lacfree"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Cozinhe o aipim ou batata doce até ficar macio. Com um processador ou um garfo amasse bem até que fique tipo um purê. Reserve.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Em uma panela coloque o aipim/batata doce, o sal, a biomassa e a água e deixe levantar fervura.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Adicione as farinhas e misture bem, com vontade e vigor. Desligue o fogo e deixe a massa esfriar.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Enquanto isso prepare seu recheio. Desfie o frango e misture os temperos que gosta.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 5,
+                "stepDescription": "Em um prato misture os flocos de amaranto e a farinha de linhaça.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 6,
+                "stepDescription": "Molde a coxinha no formato tracional com a massa e o recheio.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 7,
+                "stepDescription": "Coloque em uma assadeira – não precisa untar – e leve ao forno médio-alto pré-aquecido até ficarem douradas. Mais ou menos 20 minutos.",
+                "hasTimer": true,
+                "timer": 1200
+            }
+        ]
+    },
+    {
+        "identifier": 30,
+        "name": "Maionese temperada",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/maionese_temperada.jpeg",
+        "difficultyLevel": 4,
+        "servings": 5,
+        "prepTime": 600,
+        "ingredients" : [
+            "1 colher (chá) de sal.",
+            "2 ovos inteiros.",
+            "salsinha e cebolinha picadas.",
+            "1 colher (sopa) de suco puro de limão.",
+            "1 colher (chá) de mostarda.",
+            "pimenta-do-reino a gosto.",
+            "1 colher (chá) de tempero de ervas finas (opcional).",
+            "250 ml de óleo de soja."
+        ],
+        "categories" : [
+            "Molhos"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Bata no liquidificador o sal, o tempero, os ovos, o suco de limão e a mostarda.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Despeje o óleo em fio e continue batendo por mais 2 minutos ou até obter um creme denso.",
+                "hasTimer": true,
+                "timer": 120
+            },
+            {
+                "step": 3,
+                "stepDescription": "Adicione a salsa e a cebolinha e bata por mais alguns segundo, sempre adicionando o óleo.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Bata até obter uma consistência firme e desligue o liquidificador.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 5,
+                "stepDescription": "Coloque a maionese em um pote e leve à geladeira.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 31,
+        "name": "Barbecue",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/barbecue.jpeg",
+        "difficultyLevel": 2,
+        "servings": 8,
+        "prepTime": 1200,
+        "ingredients" : [
+            "1 xícara de açúcar mascavo.",
+            "1/2 xícara de molho inglês.",
+            "1 xícara de molho de tomate ao sugo, qualquer molho pronto serve.",
+            "2 colheres (sopa) de mostarda.",
+            "2 dentes de alho amassados.",
+            "1/2 colherinha (chá) de sal."
+        ],
+        "categories" : [
+            "Molhos"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Coloque todos os ingredientes em uma frigideira em fogo médio e mexa até apurar.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Coloque em um pote e leve à geladeira.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 32,
+        "name": "Molho madeira",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/molho_madeira.jpeg",
+        "difficultyLevel": 2,
+        "servings": 6,
+        "prepTime": 300,
+        "ingredients" : [
+            "2 colheres (sopa) de manteiga ou margarina.",
+            "1 cebola picada.",
+            "1 dente de alho picado.",
+            "2 colheres (sopa) de farinha de trigo (sem fermento).",
+            "100 ml de vinho madeira ou vinho tinto seco.",
+            "500 ml de caldo de carne ou 1 cubinho de caldo de carne dissolvido em 500 ml de água fervente.",
+            "100 gramas de champignon fatiado.",
+            "Sal a gosto.",
+            "Pimenta do reino a gosto."
+        ],
+        "categories" : [
+            "Molhos"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Numa panela, em fogo médio, derreta a manteiga e em seguida refogue a cebola e o alho.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Assim que a cebola murchar, vá adicionando a farinha de trigo aos poucos e misture sem parar.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Em seguida adicione o vinho madeira e misture bem.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Acrescente o caldo de carne, o sal e a pimenta do reino.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 5,
+                "stepDescription": "Misture bem até dissolver bem a farinha e o molho ficar bem encorpado.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 6,
+                "stepDescription": "Depois que o molho estiver encorpado, desligue o fogo e peneire-o para retirar os pedacinho de cebola e de alho.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 7,
+                "stepDescription": "Leve o molho novamente ao fogo baixo, adicione o champignon fatiado e misture por mais 2 minutinhos.",
+                "hasTimer": true,
+                "timer": 120
+            },
+            {
+                "step": 8,
+                "stepDescription": "Sirva em seguida.",
+                "hasTimer": false,
+                "timer": 0
+            }
+        ]
+    },
+    {
+        "identifier": 33,
+        "name": "Pão de leite (glúten free)",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/pao_de_leite_sem_gluten.jpeg",
+        "difficultyLevel": 2,
+        "servings": 12,
+        "prepTime": 3600,
+        "ingredients" : [
+            "4 ovos.",
+            "1 xícara de leite em pó.",
+            "3 colheres de sopa de amido de milho.",
+            "1 pitada de sal.",
+            "1 colher de sopa de fermento químico (de bolo)."
+        ],
+        "categories" : [
+            "Glúten free"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Misture em uma tigela o leite em pó, o amido de milho e o sal.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Bata as claras em neve.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Acrescente as gemas e bata até misturar.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Incorpore um terço da mistura de ovos aos sólidos.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 5,
+                "stepDescription": "Adicione o resto da mistura de ovos e misture com cuidado.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 6,
+                "stepDescription": "Acrescente o fermento por último à massa e transfira para uma fôrma untada e polvilhada com leite em pó.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 7,
+                "stepDescription": "Leve para assar em forno preaquecido a 180 graus até passar no teste do palito.",
+                "hasTimer": true,
+                "timer": 2400
+            }
+        ]
+    },
+    {
+        "identifier": 34,
+        "name": "Quinoa de forno (glúten free)",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/quinoa_de_forno_gluten_free.jpeg",
+        "difficultyLevel": 2,
+        "servings": 10,
+        "prepTime": 2100,
+        "ingredients" : [
+            "2 xícaras (chá) de Quinoa em Grãos Vitalin.",
+            "4 xícaras (chá) de água (para o cozimento).",
+            "1 colher (sobremesa) de sal (para o cozimento).",
+            "2 ovos médio.",
+            "3 colheres (sopa) de queijo ralado.",
+            "1 colher (sopa) de azeite de oliva.",
+            "1 cebola pequena picada.",
+            "2 dentes de alho picado.",
+            "2 tomates médios.",
+            "sem pele e sem sementes picados.",
+            "1 lata de ervilhas.",
+            "¼ de xícara (chá) de azeitonas verde picadas.",
+            "2 colheres (sopa) de salsa picada.",
+            "3 colheres (sopa) de requeijão cremoso.",
+            "2 colheres (sopa) de Farinha de Linhaça dourada Vitalin para polvilhar.",
+            "1 colher (sopa) de orégano seco para polvilhar.",
+            "1 colher (chá) de óleo para untar a forma."
+        ],
+        "categories" : [
+            "Glúten free"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "Cozinhe por 10 minutos a Quinoa em grãos Vitalin na água temperada com sal. Escorra e reserve.",
+                "hasTimer": true,
+                "timer": 600
+            },
+            {
+                "step": 2,
+                "stepDescription": "Refogue por 10 minutos no azeite de oliva, a cebola, o alho, os tomates e a ervilha. Desligue.",
+                "hasTimer": true,
+                "timer": 600
+            },
+            {
+                "step": 3,
+                "stepDescription": "Em uma tigela, misture a Quinoa em grãos Vitalin reservada com os ovos e o queijo ralado.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Acrescente o refogado de tomates, a azeitona, a salsa e envolva bem. Ajuste o tempero com sal se necessário.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 5,
+                "stepDescription": "Em uma forma untada com o óleo, coloque metade do preparado de Quinoa e com uma colher alise a superfície.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 6,
+                "stepDescription": "Por cima, espalhe o refogado de tomate e ervilhas e cubra com a outra metade de Quinoa. Espalhe o requeijão cremoso e polvilhe a Farinha de Linhaça dourada Vitalin e o orégano.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 7,
+                "stepDescription": "Leve ao forno pré aquecido por aproximadamente 20 minutos.",
+                "hasTimer": true,
+                "timer": 1200
+            }
+        ]
+    },
+    {
+        "identifier": 35,
+        "name": "Torta de frango cremosa (glúten free)",
+        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/torta_de_frango_cremosa_gluten_free.jpeg",
+        "difficultyLevel": 2,
+        "servings": 10,
+        "prepTime": 2100,
+        "ingredients" : [
+            "500 g de frango desfiado e temperado.",
+            "250 g de farinha de arroz.",
+            "3 ovos.",
+            "1/2 litro de leite desnatado ou sem lactose.",
+            "1 pote de creme de ricota light.",
+            "1 colher (chá) de fermento químico.",
+            "1 colher (sopa) de azeite de oliva."
+        ],
+        "categories" : [
+            "Glúten free"
+        ],
+        "rate": 5,
+        "steps": [
+            {
+                "step": 1,
+                "stepDescription": "No liquidificador, coloque o leite, a farinha, os ovos, a ricota e o azeite e bata bem.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 2,
+                "stepDescription": "Após bater o ingredientes, adicione o fermento e misture com uma colher.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 3,
+                "stepDescription": "Em uma forma de vidro, adicione metade da massa e em seguida coloque o recheio.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 4,
+                "stepDescription": "Para finalizar, adicione o resto da massa sobre o recheio.",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 5,
+                "stepDescription": "Se quiser, pode jogar um pouco de orégano por cima, fica bem bonita.",
                 "hasTimer": false,
                 "timer": 0
             }
