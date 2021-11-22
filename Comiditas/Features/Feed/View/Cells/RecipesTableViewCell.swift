@@ -10,7 +10,9 @@ import UIKit
 class RecipesTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        self.isAccessibilityElement = true
         setupUI()
+        setupAccessibility()
     }
 
     required init?(coder: NSCoder) {
@@ -22,18 +24,26 @@ class RecipesTableViewCell: UITableViewCell {
         contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10))
     }
 
+    func setupAccessibility() {
+        self.shouldGroupAccessibilityChildren = true
+        accessibilityElements = [recipeImageView, titleLabel, labelTime, labelPortion]
+    }
+
     lazy var recipeImageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
         imageView.contentMode = .scaleToFill
         imageView.layer.masksToBounds = true
         imageView.layer.cornerRadius = 8
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.isAccessibilityElement = true
+        imageView.accessibilityTraits = .image
+        imageView.accessibilityLabel = "Imagem da receita"
         return imageView
     }()
 
     lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.font = Fonts.h4
+        label.font = Fonts.h4Bold
         label.textColor = Colors.primary
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -48,6 +58,7 @@ class RecipesTableViewCell: UITableViewCell {
         stack.layer.cornerRadius = 8
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.isAccessibilityElement = false
+        stack.isHidden = true
         return stack
     }()
 
@@ -58,9 +69,8 @@ class RecipesTableViewCell: UITableViewCell {
             withConfiguration: UIImage.SymbolConfiguration(weight: .regular)
         )?.withTintColor(.black, renderingMode: .alwaysOriginal)
         image.translatesAutoresizingMaskIntoConstraints = true
-        image.isAccessibilityElement = true
-        image.accessibilityTraits = .image
-        image.accessibilityLabel = "Nota da receita: "
+        image.isAccessibilityElement = false
+        image.isHidden = true
         return image
     }()
 
@@ -68,10 +78,9 @@ class RecipesTableViewCell: UITableViewCell {
         let label = UILabel()
         label.textColor = Colors.textDark
         label.font = Fonts.h6
-        label.text = "5.0"
-        label.isAccessibilityElement = true
-        label.accessibilityTraits = .staticText
-        label.accessibilityLabel = "5."
+        label.text = ""
+        label.isAccessibilityElement = false
+        label.isHidden = true
         return label
     }()
 

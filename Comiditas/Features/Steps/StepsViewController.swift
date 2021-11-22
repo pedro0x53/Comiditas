@@ -87,6 +87,12 @@ class StepsViewController: UIViewController {
         }
     }
 
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        speechManager?.stop()
+        speechManager = nil
+    }
+
     // MARK: - Helper Methods
 
     // MARK: - Actions
@@ -143,7 +149,7 @@ extension StepsViewController: StepsDisplayLogic {
         stepsView.nextStepView.previewStepDescription = hasTimer ? nil : preview ?? nil
         stepsView.stackView.currentPageLabel.text = "\(StepsLocalizable.step.text) \(step.step)"
         stepsView.setupLine(for: step.step)
-
+        stepsView.stackView.bottomLabelsStackView.accessibilityValue = "Passo \(step.step) de \(recipe.steps.count)"
         newStepPresented()
     }
 
@@ -151,6 +157,7 @@ extension StepsViewController: StepsDisplayLogic {
 
 extension StepsViewController: NextAndPreviousDelegate {
     func didPressNextButton() {
+        readingOrderChangedStep()
         if stepIdentifier == recipe.steps.count - 1 {
             stepsView.timerView.timerIsRunning = false
             self.didFinish()
@@ -170,6 +177,7 @@ extension StepsViewController: NextAndPreviousDelegate {
     }
 
     func didPressPreviousButton() {
+        readingOrderChangedStep()
         if stepsView.timerView.timerIsRunning {
             callAlert(okAction: { [unowned self] in
                 self.stepsView.timerView.restartAction()
@@ -267,5 +275,20 @@ extension StepsViewController: SpeechManagerDelegate {
 extension StepsViewController: DismissDelegate {
     func dismissButton() {
         self.coordinator?.dismiss()
+    }
+}
+
+extension StepsViewController {
+    func readingOrderChangedStep() {
+        stepsView.accessibilityElements = [
+            stepsView.stackView.bottomLabelsStackView,
+            stepsView.recipeStepLabel,
+            stepsView.timerView,
+            stepsView.nextStepView,
+            stepsView.stackView.previousButton,
+            stepsView.stackView.nextButton,
+            stepsView.closeButton
+        ]
+        UIAccessibility.post(notification: .layoutChanged, argument: stepsView.stackView.bottomLabelsStackView)
     }
 }

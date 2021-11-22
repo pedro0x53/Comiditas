@@ -22,6 +22,7 @@ accessibleServings = "Rendimento de ";
 accessiblePrep = "Tempo de preparo: ";
 minutes = " minutos";
 hours = " horas";
+hour = " hora";
 
 accessibleDifficulty = "Nível de dificuldade: ";
 hard = "Difícil";
