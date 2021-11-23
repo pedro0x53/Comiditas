@@ -6,7 +6,7 @@
   
 */
 
-megafone01 = "Nessa tela, você pode usar comandos de voz para fazer algumas coisas pra você";
+megafone01 = "Nessa tela, você pode usar comandos de voz para fazer algumas coisas para você";
 text01 = "Para passar para a próxima instrução você pode dizer \n\"Receita, próximo passo\"";
 text02 = "Para iniciar o timer você pode dizer \n\"Receita, iniciar temporizador\"";
 text03 = "Para parar você pode dizer \n\"Receita, pausar temporizador\" \nou \n\"Receita, reiniciar temporizador\" para retomá-lo";

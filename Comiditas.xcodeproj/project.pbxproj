@@ -26,7 +26,6 @@
 		189E06A027469FA200FE068A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E069F27469FA200FE068A /* OnboardingView.swift */; };
 		189E06A227469FB300FE068A /* OnboardingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E06A127469FB300FE068A /* OnboardingInteractor.swift */; };
 		189E06A427469FBC00FE068A /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E06A327469FBC00FE068A /* OnboardingPresenter.swift */; };
-		189E06A827469FEB00FE068A /* OnboardingWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E06A727469FEB00FE068A /* OnboardingWorker.swift */; };
 		189E06AA27469FF400FE068A /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E06A927469FF400FE068A /* OnboardingModel.swift */; };
 		189E06AC27469FFC00FE068A /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E06AB27469FFC00FE068A /* OnboardingCoordinator.swift */; };
 		189E06AF274828FF00FE068A /* Onboarding.strings in Resources */ = {isa = PBXBuildFile; fileRef = 189E06AE274828FF00FE068A /* Onboarding.strings */; };
@@ -176,7 +175,6 @@
 		189E069F27469FA200FE068A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		189E06A127469FB300FE068A /* OnboardingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInteractor.swift; sourceTree = "<group>"; };
 		189E06A327469FBC00FE068A /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
-		189E06A727469FEB00FE068A /* OnboardingWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingWorker.swift; sourceTree = "<group>"; };
 		189E06A927469FF400FE068A /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		189E06AB27469FFC00FE068A /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
 		189E06AE274828FF00FE068A /* Onboarding.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Onboarding.strings; sourceTree = "<group>"; };
@@ -405,7 +403,6 @@
 				189E069F27469FA200FE068A /* OnboardingView.swift */,
 				189E06A127469FB300FE068A /* OnboardingInteractor.swift */,
 				189E06A327469FBC00FE068A /* OnboardingPresenter.swift */,
-				189E06A727469FEB00FE068A /* OnboardingWorker.swift */,
 				189E06A927469FF400FE068A /* OnboardingModel.swift */,
 				189E06AB27469FFC00FE068A /* OnboardingCoordinator.swift */,
 			);
@@ -1187,7 +1184,6 @@
 				189E06AC27469FFC00FE068A /* OnboardingCoordinator.swift in Sources */,
 				FE054C9E2726F24500EE439E /* SpeechManager.swift in Sources */,
 				FE127E93270DD14000D6EEE8 /* OverviewInteractor.swift in Sources */,
-				189E06A827469FEB00FE068A /* OnboardingWorker.swift in Sources */,
 				189E06A027469FA200FE068A /* OnboardingView.swift in Sources */,
 				18819C7B2726DE72008B1B7B /* StepsWorker.swift in Sources */,
 				18DC6524271EFF6700AA0B38 /* NotificationManager.swift in Sources */,
