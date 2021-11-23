@@ -11,4 +11,4 @@ text01 = "Para passar para a próxima instrução você pode dizer \n\"Receita, 
 text02 = "Para iniciar o timer você pode dizer \n\"Receita, iniciar temporizador\"";
 text03 = "Para parar você pode dizer \n\"Receita, pausar temporizador\" \nou \n\"Receita, reiniciar temporizador\" para retomá-lo";
 text04 = "Para que a receita do passo atual seja lida, você pode dizer \n \"Receita, ler passo atual\"";
-megafone02 = "Basta falar a palavra chave \"Receita\" e o comando desejado! \nVocê pode consultar quais comandos estão disponíveis na tela de configurações";
+megafone02 = "Basta falar a palavra chave \"Receita\" e o comando desejado! \nVocê pode consultar quais comandos estão disponíveis ao clicar no botão de informação.";
