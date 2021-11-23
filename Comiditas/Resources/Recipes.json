@@ -928,19 +928,19 @@
         "steps": [
             {
                 "step": 1,
-                "stepDescription": "Tritura o peito de peru no mini-processador ou pique com uma faca e separe.",
+                "stepDescription": "Triture o peito de peru no mini-processador ou pique com uma faca e separe.",
                 "hasTimer": false,
                 "timer": 0
             },
             {
                 "step": 2,
-                "stepDescription": "Triture a cebola e a cenoura no link-processador",
+                "stepDescription": "Triture a cebola e a cenoura no mini-processador",
                 "hasTimer": false,
                 "timer": 0
             },
             {
                 "step": 3,
-                "stepDescription": "Em uma tigela mistura o peito de peru, a cebola com cenoura, o requeijão e a maionese ",
+                "stepDescription": "Em uma tigela misture o peito de peru, a cebola com cenoura, o requeijão e a maionese ",
                 "hasTimer": false,
                 "timer": 0
             },
@@ -996,12 +996,18 @@
             },
             {
                 "step": 3,
-                "stepDescription": "Em outra panela, refolgue a cebola com um fio de azeite e adicione a farinha de trigo. Mexa bem até formar uma massa. Acrescente o leite e misture até que o molho fique homogêneo. Acrescente o sal, noz moscada e pimenta do reino a gosto. E por fim, o camarão. Misture",
+                "stepDescription": "Em outra panela, refolgue a cebola com um fio de azeite e adicione a farinha de trigo. Mexa bem até formar uma massa. Acrescente o leite e misture até que o molho fique homogêneo.",
                 "hasTimer": false,
                 "timer": 0
             },
             {
                 "step": 4,
+                "stepDescription": "Acrescente o sal, a noz moscada e a pimenta do reino a gosto. E por fim, o camarão. Misture",
+                "hasTimer": false,
+                "timer": 0
+            },
+            {
+                "step": 5,
                 "stepDescription": "Em seguida, sirva com o macarrão.",
                 "hasTimer": false,
                 "timer": 0
@@ -1484,62 +1490,6 @@
     },
     {
         "identifier": 22,
-        "name": "Risoto de linguiça",
-        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/risoto_de_linguica.jpg",
-        "difficultyLevel": 3,
-        "servings": 5,
-        "prepTime": 2100,
-        "ingredients" : [
-            "5 gomos de Linguiça toscana Sadia cortados em rodelas.",
-            "1 cebola descascada e cortada em cubos pequenos.",
-            "1 xícara (chá) de arroz para risoto (arbóreo ou carnaroli).",
-            "1 xícara (chá) de vinho branco seco.",
-            "2 ½ xícaras (chá) de caldo de legumes quente (de preferência caseiro).",
-            "2 tomates sem pele e sem sementes cortados em cubos pequenos.",
-            "Sal a gosto.",
-            "Pimenta dedo-de-moça picada a gosto.",
-            "½ maço de rúcula picada.",
-            "1 colher (sopa) de Qualy cremosa sem sal."
-        ],
-        "categories" : [
-            "Massas", "Carnes"
-        ],
-        "rate": 5,
-        "steps": [
-            {
-                "step": 1,
-                "stepDescription": "Em uma panela, doure as linguiças em sua própria gordura; acrescente a margarina e a cebola e deixe dourar.",
-                "hasTimer": false,
-                "timer": 0
-            },
-            {
-                "step": 2,
-                "stepDescription": "Acrescente o arroz e refogue rapidamente. Adicione o vinho e deixe evaporar.",
-                "hasTimer": false,
-                "timer": 0
-            },
-            {
-                "step": 3,
-                "stepDescription": "Aos poucos, vá adicionando o caldo de legumes, mexendo sem parar, até que o arroz esteja al dente (não muito duro, nem muito mole).",
-                "hasTimer": false,
-                "timer": 0
-            },
-            {
-                "step": 4,
-                "stepDescription": "Junte o tomate e cozinhe por mais alguns instantes, sem parar de mexer. O arroz deve ficar cremoso, mas sem líquido em excesso.",
-                "hasTimer": false,
-                "timer": 0
-            },
-            {
-                "step": 5,
-                "stepDescription": "Desligue o fogo, tempere com o sal e a pimenta e adicione a rúcula.",
-                "hasTimer": false,
-                "timer": 0
-            }
-        ]
-    },
-    {
-        "identifier": 21,
         "name": "Caldeirada de frutos do mar",
         "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/caldeirada_de_frutos_do_mar.jpeg",
         "difficultyLevel": 3,
@@ -1601,62 +1551,6 @@
             {
                 "step": 6,
                 "stepDescription": "Sirva com arroz branco e pirão.",
-                "hasTimer": false,
-                "timer": 0
-            }
-        ]
-    },
-    {
-        "identifier": 22,
-        "name": "Risoto de linguiça",
-        "imageURL": "https://raw.githubusercontent.com/Comiditas/Imagens/main/imagens_receitas/risoto_de_linguica.jpg",
-        "difficultyLevel": 3,
-        "servings": 5,
-        "prepTime": 2100,
-        "ingredients" : [
-            "5 gomos de Linguiça toscana Sadia cortados em rodelas.",
-            "1 cebola descascada e cortada em cubos pequenos.",
-            "1 xícara (chá) de arroz para risoto (arbóreo ou carnaroli).",
-            "1 xícara (chá) de vinho branco seco.",
-            "2 ½ xícaras (chá) de caldo de legumes quente (de preferência caseiro).",
-            "2 tomates sem pele e sem sementes cortados em cubos pequenos.",
-            "Sal a gosto.",
-            "Pimenta dedo-de-moça picada a gosto.",
-            "½ maço de rúcula picada.",
-            "1 colher (sopa) de Qualy cremosa sem sal."
-        ],
-        "categories" : [
-            "Massas", "Carnes"
-        ],
-        "rate": 5,
-        "steps": [
-            {
-                "step": 1,
-                "stepDescription": "Em uma panela, doure as linguiças em sua própria gordura; acrescente a margarina e a cebola e deixe dourar.",
-                "hasTimer": false,
-                "timer": 0
-            },
-            {
-                "step": 2,
-                "stepDescription": "Acrescente o arroz e refogue rapidamente. Adicione o vinho e deixe evaporar.",
-                "hasTimer": false,
-                "timer": 0
-            },
-            {
-                "step": 3,
-                "stepDescription": "Aos poucos, vá adicionando o caldo de legumes, mexendo sem parar, até que o arroz esteja al dente (não muito duro, nem muito mole).",
-                "hasTimer": false,
-                "timer": 0
-            },
-            {
-                "step": 4,
-                "stepDescription": "Junte o tomate e cozinhe por mais alguns instantes, sem parar de mexer. O arroz deve ficar cremoso, mas sem líquido em excesso.",
-                "hasTimer": false,
-                "timer": 0
-            },
-            {
-                "step": 5,
-                "stepDescription": "Desligue o fogo, tempere com o sal e a pimenta e adicione a rúcula.",
                 "hasTimer": false,
                 "timer": 0
             }

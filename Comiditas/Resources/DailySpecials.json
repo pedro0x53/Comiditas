@@ -37,7 +37,7 @@
                },
                {
                   "step": 2,
-                  "stepDescription": "Pique 1/2 tomate e rale 1/4 de cebola.",
+                  "stepDescription": "Pique 1/2 (meio) tomate e rale 1/4 (um quarto) de cebola.",
                   "hasTimer": false,
                   "timer": 0
                },
@@ -588,7 +588,7 @@
                "Rápidas"
             ],
             "ingredients" : [
-               "1 copo de farinha de graõ-de-bico.",
+               "1 copo de farinha de grão-de-bico.",
                "4 colheres de chá de fermento em pó.",
                "3 colheres de sopa de açúcar.",
                "2 colheres de sopa de vinagre de maçã.",
