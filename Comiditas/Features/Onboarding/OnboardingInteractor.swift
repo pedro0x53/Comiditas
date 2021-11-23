@@ -15,7 +15,6 @@ protocol OnboardingBusinessLogic {
 class OnboardingInteractor: OnboardingBusinessLogic {
 
     var presenter: OnboardingPresentationLogic?
-    var worker: OnboardingWorker = OnboardingWorker()
 
     func requestNextStep(request: OnboardingModel.NextStep.Request) {
         let isLastStep = (request.index == request.steps.count - 1)
