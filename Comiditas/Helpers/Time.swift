@@ -23,7 +23,11 @@ struct Time {
 
         if hasHour {
             displayPrepTime += "\(time.hour) h"
-            accessiblePrepTime += "\(time.hour)" + OverviewLocalizable.hours.text
+            if time.hour == 1 {
+                accessiblePrepTime += "\(time.hour)" + OverviewLocalizable.hour.text
+            } else {
+                accessiblePrepTime += "\(time.hour)" + OverviewLocalizable.hours.text
+            }
         }
 
         if hasHour && hasMinutes {

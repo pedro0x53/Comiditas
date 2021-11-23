@@ -89,16 +89,16 @@ extension FeedTableViewCell: UICollectionViewDelegate, UICollectionViewDataSourc
 
         cell.titleLabel.text = data[indexPath.row].name
         cell.titleLabel.accessibilityTraits = .staticText
-        cell.titleLabel.accessibilityLabel = data[indexPath.row].name
 
         cell.labelPortion.text = "\(data[indexPath.row].servings) porções"
         cell.labelPortion.accessibilityTraits = .staticText
-        cell.labelPortion.accessibilityLabel = "\(data[indexPath.row].servings) porções"
 
         let time = Time.secondsToHoursMinutesSeconds(seconds: data[indexPath.row].prepTime)
         cell.labelTime.text = Time.getString(for: time).accessible
         cell.labelTime.accessibilityTraits = .staticText
-        cell.labelTime.accessibilityLabel = Time.getString(for: time).accessible
+        cell.accessibilityLabel = [data[indexPath.row].name,
+                                   "tempo de preparo de \(Time.getString(for: time).accessible)",
+                                   "rendimento de \(data[indexPath.row].servings) porções"].joined(separator: " , ")
         return cell
     }
 

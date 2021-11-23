@@ -36,6 +36,8 @@ class FeedView: UIView {
     lazy var searchBar: UISearchBar = {
         let search = UISearchBar()
         search.placeholder = FeedLocalizable.search.text
+        search.isAccessibilityElement = true
+        search.accessibilityValue = "Pesquisar"
         search.sizeToFit()
         search.isTranslucent = false
         search.translatesAutoresizingMaskIntoConstraints = false

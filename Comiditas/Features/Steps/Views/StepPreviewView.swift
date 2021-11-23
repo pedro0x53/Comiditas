@@ -14,8 +14,10 @@ class StepPreviewView: UIView {
             if let description = previewStepDescription {
                 self.isHidden = false
                 nextStepDescriptionLabel.text = description
+                groupAcessibilityLabels()
             } else {
                 self.isHidden = true
+                self.isAccessibilityElement = false
             }
         }
     }
@@ -33,6 +35,7 @@ class StepPreviewView: UIView {
         label.textAlignment = .left
         label.numberOfLines = 1
         label.text = "\(StepsLocalizable.next.text):\n"
+        label.isAccessibilityElement = false
         label.textColor = Colors.textDark
         return label
     }()
@@ -42,11 +45,20 @@ class StepPreviewView: UIView {
         label.font = Fonts.h6
         label.textAlignment = .left
         label.numberOfLines = 2
+        label.isAccessibilityElement = false
         label.lineBreakMode = .byTruncatingTail
         label.text = previewStepDescription
         label.textColor = Colors.textDark
         return label
     }()
+
+    func groupAcessibilityLabels() {
+        self.isAccessibilityElement = true
+        self.shouldGroupAccessibilityChildren = true
+        guard let nextStepDescriptionLabel = nextStepDescriptionLabel.text else { return }
+        guard let nextLabelText = nextLabel.text else { return }
+        self.accessibilityLabel = [nextLabelText, nextStepDescriptionLabel].joined(separator: "\n")
+    }
 
     // MARK: View Life cycle
     init() {
