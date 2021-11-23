@@ -272,9 +272,12 @@ extension StepsViewController: SpeechManagerDelegate {
 
 }
 
-extension StepsViewController: DismissDelegate {
+extension StepsViewController: StepsButtonDelegate {
     func dismissButton() {
         self.coordinator?.dismiss()
+    }
+    func infoButton() {
+        self.coordinator?.infoButton(viewController: self)
     }
 }
 

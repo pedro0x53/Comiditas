@@ -7,13 +7,14 @@
 
 import UIKit
 
-protocol DismissDelegate: AnyObject {
+protocol StepsButtonDelegate: AnyObject {
     func dismissButton()
+    func infoButton()
 }
 
 class StepsView: UIView {
 
-    weak var delegate: DismissDelegate?
+    weak var delegate: StepsButtonDelegate?
 
     // MARK: - Views
     let timerView: TimerView = TimerView()
@@ -30,6 +31,18 @@ class StepsView: UIView {
         button.isAccessibilityElement = true
         button.accessibilityLabel = StepsLocalizable.close.text
         button.addTarget(self, action: #selector(closeButtonAction), for: .touchUpInside)
+        return button
+    }()
+
+    lazy var infoButton: UIButton = {
+        let button = UIButton(type: .system)
+        let image = UIImage(systemName: "info.circle.fill",
+                            withConfiguration: UIImage.SymbolConfiguration(pointSize: 25, weight: .bold))
+        button.setImage(image, for: .normal)
+        button.tintColor = Colors.primary
+        button.isAccessibilityElement = true
+        button.accessibilityLabel = StepsLocalizable.info.text
+        button.addTarget(self, action: #selector(infoButtonAction), for: .touchUpInside)
         return button
     }()
 
@@ -70,6 +83,7 @@ class StepsView: UIView {
 
     func createSubviews() {
         self.addSubview(closeButton)
+        self.addSubview(infoButton)
         self.addSubview(backgroundLineImageView)
         self.addSubview(timerView)
         self.addSubview(recipeStepLabel)
@@ -83,6 +97,7 @@ class StepsView: UIView {
     func configureAccessibilityElementsOrder() {
         accessibilityElements = [
             closeButton,
+            infoButton,
             stackView.bottomLabelsStackView,
             recipeStepLabel,
             timerView,
@@ -100,6 +115,10 @@ class StepsView: UIView {
             closeButton.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor,
                                                   constant: -18),
             closeButton.heightAnchor.constraint(equalToConstant: 45),
+
+            infoButton.centerYAnchor.constraint(equalTo: closeButton.centerYAnchor),
+            infoButton.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 16),
+            infoButton.heightAnchor.constraint(equalTo: closeButton.heightAnchor),
 
             recipeStepLabel.topAnchor.constraint(equalTo: self.closeButton.bottomAnchor, constant: 55),
             recipeStepLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
@@ -136,6 +155,10 @@ class StepsView: UIView {
 
     @objc func closeButtonAction() {
         self.delegate?.dismissButton()
+    }
+
+    @objc func infoButtonAction() {
+        self.delegate?.infoButton()
     }
 
 }

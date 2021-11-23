@@ -13,6 +13,7 @@ enum StepsLocalizable: String {
     case step
     case of
     case close
+    case info
 
     case alert
     case alertStop

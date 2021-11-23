@@ -14,6 +14,7 @@ alertAtention = "Attention!";
 alertContinue = "Continue";
 alertCancel = "Cancel";
 close = "Close";
+info = "Information";
 
 step = "Step";
 of = "of";

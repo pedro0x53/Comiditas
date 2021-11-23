@@ -16,6 +16,7 @@ protocol StepsCoordinatorProtocol: NSObjectProtocol, Coordinator {
         closeButtonIsHidden: Bool,
         okAction: @escaping () -> Void
     )
+    func infoButton(viewController: UIViewController)
 }
 
 class StepsCoordinator: NSObject, StepsCoordinatorProtocol {
@@ -45,6 +46,11 @@ class StepsCoordinator: NSObject, StepsCoordinatorProtocol {
             }
         }
 
+    }
+
+    func infoButton(viewController: UIViewController) {
+        let cordinatorOnboarding = OnboardingCoordinator(viewController: viewController)
+        coordinate(to: cordinatorOnboarding)
     }
 
     func dismiss(animated: Bool = true, completion: (() -> Void)? = nil) {

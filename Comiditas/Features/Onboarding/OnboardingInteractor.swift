@@ -31,6 +31,6 @@ class OnboardingInteractor: OnboardingBusinessLogic {
         let response = OnboardingModel.End.Response()
         presenter?.presentEnd(response: response)
 
-        //UserDefaults.standard.set(true, forKey: "showedOnboardingKey")
+        UserDefaults.standard.set(true, forKey: "showedOnboardingKey")
     }
 }
