@@ -290,7 +290,8 @@ extension StepsViewController {
             stepsView.nextStepView,
             stepsView.stackView.previousButton,
             stepsView.stackView.nextButton,
-            stepsView.closeButton
+            stepsView.closeButton,
+            stepsView.infoButton
         ]
         UIAccessibility.post(notification: .layoutChanged, argument: stepsView.stackView.bottomLabelsStackView)
     }
