@@ -272,9 +272,12 @@ extension StepsViewController: SpeechManagerDelegate {
 
 }
 
-extension StepsViewController: DismissDelegate {
+extension StepsViewController: StepsButtonDelegate {
     func dismissButton() {
         self.coordinator?.dismiss()
+    }
+    func infoButton() {
+        self.coordinator?.infoButton(viewController: self)
     }
 }
 
@@ -287,7 +290,8 @@ extension StepsViewController {
             stepsView.nextStepView,
             stepsView.stackView.previousButton,
             stepsView.stackView.nextButton,
-            stepsView.closeButton
+            stepsView.closeButton,
+            stepsView.infoButton
         ]
         UIAccessibility.post(notification: .layoutChanged, argument: stepsView.stackView.bottomLabelsStackView)
     }

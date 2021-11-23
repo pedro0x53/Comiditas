@@ -34,8 +34,8 @@ class StepPreviewView: UIView {
         label.font = Fonts.h6Bold
         label.textAlignment = .left
         label.numberOfLines = 1
+        label.text = "\(StepsLocalizable.next.text):\n"
         label.isAccessibilityElement = false
-        label.text = "\(StepsLocalizable.next.text)\n"
         label.textColor = Colors.textDark
         return label
     }()
@@ -94,8 +94,9 @@ class StepPreviewView: UIView {
 
             nextStepDescriptionLabel.leadingAnchor.constraint(equalTo: nextLabel.leadingAnchor),
             nextStepDescriptionLabel.trailingAnchor.constraint(equalTo: nextLabel.trailingAnchor),
-            nextStepDescriptionLabel.bottomAnchor.constraint(equalTo: self.backgroundView.bottomAnchor,
-                                                             constant: -10)
+            nextStepDescriptionLabel.bottomAnchor.constraint(
+                equalTo: self.backgroundView.bottomAnchor,
+                constant: -10)
         ])
     }
 }

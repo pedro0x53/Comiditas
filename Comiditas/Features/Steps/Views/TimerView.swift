@@ -18,7 +18,7 @@ class TimerView: UIView {
         label.text = "00:00"
         label.textColor = Colors.primary
         label.textAlignment = .center
-        label.backgroundColor = .white
+        label.backgroundColor = Colors.background
         label.clipsToBounds = true
         return label
     }()

@@ -22,6 +22,14 @@
 		18819C812726E1CE008B1B7B /* StepsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18819C802726E1CE008B1B7B /* StepsCoordinator.swift */; };
 		18819C84272975A2008B1B7B /* StepPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18819C83272975A2008B1B7B /* StepPreviewView.swift */; };
 		18819C862729A858008B1B7B /* NextAndPreviousStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18819C852729A858008B1B7B /* NextAndPreviousStackView.swift */; };
+		189E069E27469F8C00FE068A /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E069D27469F8C00FE068A /* OnboardingViewController.swift */; };
+		189E06A027469FA200FE068A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E069F27469FA200FE068A /* OnboardingView.swift */; };
+		189E06A227469FB300FE068A /* OnboardingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E06A127469FB300FE068A /* OnboardingInteractor.swift */; };
+		189E06A427469FBC00FE068A /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E06A327469FBC00FE068A /* OnboardingPresenter.swift */; };
+		189E06AA27469FF400FE068A /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E06A927469FF400FE068A /* OnboardingModel.swift */; };
+		189E06AC27469FFC00FE068A /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E06AB27469FFC00FE068A /* OnboardingCoordinator.swift */; };
+		189E06AF274828FF00FE068A /* Onboarding.strings in Resources */ = {isa = PBXBuildFile; fileRef = 189E06AE274828FF00FE068A /* Onboarding.strings */; };
+		189E06B12748291000FE068A /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E06B02748291000FE068A /* Onboarding.swift */; };
 		18DC6524271EFF6700AA0B38 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DC6523271EFF6700AA0B38 /* NotificationManager.swift */; };
 		18EA190F270F1FCB00B36E1C /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA190E270F1FCB00B36E1C /* HapticsManager.swift */; };
 		18F0496E273405F700DDEF51 /* StepsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0496D273405F700DDEF51 /* StepsViewControllerTests.swift */; };
@@ -164,6 +172,14 @@
 		18819C802726E1CE008B1B7B /* StepsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsCoordinator.swift; sourceTree = "<group>"; };
 		18819C83272975A2008B1B7B /* StepPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepPreviewView.swift; sourceTree = "<group>"; };
 		18819C852729A858008B1B7B /* NextAndPreviousStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextAndPreviousStackView.swift; sourceTree = "<group>"; };
+		189E069D27469F8C00FE068A /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		189E069F27469FA200FE068A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		189E06A127469FB300FE068A /* OnboardingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInteractor.swift; sourceTree = "<group>"; };
+		189E06A327469FBC00FE068A /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
+		189E06A927469FF400FE068A /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		189E06AB27469FFC00FE068A /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		189E06AE274828FF00FE068A /* Onboarding.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Onboarding.strings; sourceTree = "<group>"; };
+		189E06B02748291000FE068A /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		18DC6523271EFF6700AA0B38 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		18EA190E270F1FCB00B36E1C /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		18F0496D273405F700DDEF51 /* StepsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsViewControllerTests.swift; sourceTree = "<group>"; };
@@ -380,6 +396,28 @@
 				18819C852729A858008B1B7B /* NextAndPreviousStackView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		189E069C27469F5300FE068A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				189E069D27469F8C00FE068A /* OnboardingViewController.swift */,
+				189E069F27469FA200FE068A /* OnboardingView.swift */,
+				189E06A127469FB300FE068A /* OnboardingInteractor.swift */,
+				189E06A327469FBC00FE068A /* OnboardingPresenter.swift */,
+				189E06A927469FF400FE068A /* OnboardingModel.swift */,
+				189E06AB27469FFC00FE068A /* OnboardingCoordinator.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		189E06AD274828E700FE068A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				189E06AE274828FF00FE068A /* Onboarding.strings */,
+				189E06B02748291000FE068A /* Onboarding.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		18EA190D270F154800B36E1C /* Recovered References */ = {
@@ -653,6 +691,7 @@
 		779F5EC526EF74CC005668BE /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				189E069C27469F5300FE068A /* Onboarding */,
 				18819C732726DDEA008B1B7B /* Steps */,
 				E6BFD5D0272982AD00658A74 /* Settings */,
 				77F9CB8D272ABB0C00D22F94 /* Search */,
@@ -695,6 +734,7 @@
 		779F5ECB26EF7548005668BE /* Localizables */ = {
 			isa = PBXGroup;
 			children = (
+				189E06AD274828E700FE068A /* Onboarding */,
 				E68CC24F2732CF82003F6E6C /* Settings */,
 				184061202718646F008BAB4A /* Modal */,
 				1840610E27171743008BAB4A /* Steps */,
@@ -1031,6 +1071,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189E06AF274828FF00FE068A /* Onboarding.strings in Resources */,
 				7788D897271EBF4100B75A45 /* Pacifico.ttf in Resources */,
 				77946A6827067DF100D3F1B3 /* Feed.strings in Resources */,
 				774A685C273A99940028AF84 /* DailySpecials.json in Resources */,
@@ -1095,6 +1136,7 @@
 				18819C752726DE16008B1B7B /* StepsView.swift in Sources */,
 				7799D1EE27282725007F234D /* FeedCollectionViewCell.swift in Sources */,
 				7713580C26F9FC3700164BBC /* FeedInteractor.swift in Sources */,
+				189E06AA27469FF400FE068A /* OnboardingModel.swift in Sources */,
 				7713581026FA022100164BBC /* FeedModels.swift in Sources */,
 				77946A6527067D7000D3F1B3 /* FeedLocalizables.swift in Sources */,
 				7713580E26F9FC4400164BBC /* FeedPresenter.swift in Sources */,
@@ -1124,6 +1166,7 @@
 				779F5E9826EF7456005668BE /* Comiditas.xcdatamodeld in Sources */,
 				E6381BF126FB52EA004F4298 /* ModalView.swift in Sources */,
 				7792904B26F8ADC500AAA0A4 /* CoordinatorProtocol.swift in Sources */,
+				189E06A427469FBC00FE068A /* OnboardingPresenter.swift in Sources */,
 				18819C7D2726DE81008B1B7B /* StepsPresenter.swift in Sources */,
 				7743D4092737467D00B16888 /* Ext+UIButton.swift in Sources */,
 				FE054CA02726F24500EE439E /* DirectionsSpeechProcessor.swift in Sources */,
@@ -1138,11 +1181,14 @@
 				77F9CB98272ABD4500D22F94 /* SearchPresenter.swift in Sources */,
 				7799D1EC27282576007F234D /* FeedTableViewCell.swift in Sources */,
 				77635CD926F2115800B36EC7 /* RecipeJson.swift in Sources */,
+				189E06A227469FB300FE068A /* OnboardingInteractor.swift in Sources */,
 				FE95430B26F8CBFA0039F547 /* OverviewView.swift in Sources */,
 				77F9CB90272ABB2900D22F94 /* SearchView.swift in Sources */,
 				FEC8B85426F9FD6400455143 /* DetailView.swift in Sources */,
+				189E06AC27469FFC00FE068A /* OnboardingCoordinator.swift in Sources */,
 				FE054C9E2726F24500EE439E /* SpeechManager.swift in Sources */,
 				FE127E93270DD14000D6EEE8 /* OverviewInteractor.swift in Sources */,
+				189E06A027469FA200FE068A /* OnboardingView.swift in Sources */,
 				18819C7B2726DE72008B1B7B /* StepsWorker.swift in Sources */,
 				18DC6524271EFF6700AA0B38 /* NotificationManager.swift in Sources */,
 				774A6858273A875F0028AF84 /* SearchEmptyView.swift in Sources */,
@@ -1154,6 +1200,8 @@
 				E6BFD5D32729834300658A74 /* SettingsView.swift in Sources */,
 				7792905726F8B18800AAA0A4 /* FeedCoordinator.swift in Sources */,
 				18EA190F270F1FCB00B36E1C /* HapticsManager.swift in Sources */,
+				189E069E27469F8C00FE068A /* OnboardingViewController.swift in Sources */,
+				189E06B12748291000FE068A /* Onboarding.swift in Sources */,
 				FE5DA02026F9FAA800AF5F71 /* OverviewCoordinator.swift in Sources */,
 				774A685E273AA6770028AF84 /* DailySpecials.swift in Sources */,
 				1840611227171762008BAB4A /* StepsLocalizable.swift in Sources */,

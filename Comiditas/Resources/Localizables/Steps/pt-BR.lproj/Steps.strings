@@ -14,11 +14,13 @@ alertAtention = "Atenção!";
 alertContinue = "Continuar";
 alertCancel = "Cancelar";
 close = "Fechar";
+info = "Informações";
 
 step = "Passo";
 of = "de";
 
-next = "Próximo:";
+next = "Próximo";
+skip = "Pular";
 
 iniciateClockAcessibility = "Iniciar temporizador";
 pauseClockAcessibility = "Pausar temporizador";

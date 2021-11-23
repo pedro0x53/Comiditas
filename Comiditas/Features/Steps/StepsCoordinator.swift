@@ -16,6 +16,7 @@ protocol StepsCoordinatorProtocol: NSObjectProtocol, Coordinator {
         closeButtonIsHidden: Bool,
         okAction: @escaping () -> Void
     )
+    func infoButton(viewController: UIViewController)
 }
 
 class StepsCoordinator: NSObject, StepsCoordinatorProtocol {
@@ -23,6 +24,8 @@ class StepsCoordinator: NSObject, StepsCoordinatorProtocol {
     let navigationController: UINavigationController
     var recipe: RecipeJson?
     var image: UIImage?
+
+    let showedOnboarding = UserDefaults.standard.bool(forKey: "showedOnboardingKey")
 
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -36,7 +39,18 @@ class StepsCoordinator: NSObject, StepsCoordinatorProtocol {
             stepsViewController.image = image
             stepsViewController.coordinator = self
             navigationController.present(stepsViewController, animated: true)
+
+            if !showedOnboarding {
+                let onboardingCoordinator = OnboardingCoordinator(viewController: stepsViewController)
+                coordinate(to: onboardingCoordinator)
+            }
         }
+
+    }
+
+    func infoButton(viewController: UIViewController) {
+        let cordinatorOnboarding = OnboardingCoordinator(viewController: viewController)
+        coordinate(to: cordinatorOnboarding)
     }
 
     func dismiss(animated: Bool = true, completion: (() -> Void)? = nil) {
