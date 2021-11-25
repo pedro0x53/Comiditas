@@ -208,8 +208,9 @@ extension StepsViewController: NextAndPreviousDelegate {
             with: image,
             title: ModalLocalizable.finished.text,
             description: recipe.name,
-            closeButtonIsHidden: true, okAction: { [unowned self] in
-                self.coordinator?.dismiss(animated: false)
+            closeButtonIsHidden: true,
+            okAction: { [unowned self] in
+                self.coordinator?.dismiss(animated: true)
             })
     }
 
