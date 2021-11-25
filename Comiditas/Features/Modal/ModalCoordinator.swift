@@ -8,7 +8,7 @@
 import UIKit
 
 protocol ModalCoordinatorProtocol: AnyObject {
-    func didFinishRecipe()
+    func didTapOk()
     func cancelDismiss()
 }
 
@@ -50,8 +50,8 @@ class ModalCoordinator: Coordinator {
 }
 
 extension ModalCoordinator: ModalCoordinatorProtocol {
-    func didFinishRecipe() {
-        self.navigationController.visibleViewController?.dismiss(animated: true)
+    func didTapOk() {
+        self.navigationController.visibleViewController?.presentedViewController?.dismiss(animated: true)
     }
 
     func cancelDismiss() {

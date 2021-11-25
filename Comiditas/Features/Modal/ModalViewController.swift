@@ -50,13 +50,11 @@ class ModalViewController: UIViewController {
 
 extension ModalViewController: ModalViewDelegate {
     func didPressOK() {
+        self.coordinator?.didTapOk()
         okAction()
-        self.dismiss(animated: false) {
-            self.coordinator?.didFinishRecipe()
-        }
     }
 
     func didCancel() {
-        self.dismiss(animated: true)
+        self.coordinator?.cancelDismiss()
     }
 }
