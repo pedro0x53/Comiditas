@@ -110,7 +110,7 @@ extension OverviewView: BaseViewProtocol {
             startButton.topAnchor.constraint(equalTo: bottomButtonArea.topAnchor, constant: 24),
             startButton.leadingAnchor.constraint(equalTo: bottomButtonArea.leadingAnchor, constant: 16),
             startButton.trailingAnchor.constraint(equalTo: bottomButtonArea.trailingAnchor, constant: -16),
-            startButton.heightAnchor.constraint(equalToConstant: 36)
+            startButton.heightAnchor.constraint(equalToConstant: 44)
         ])
     }
 }

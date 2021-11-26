@@ -29,10 +29,6 @@ class SectionHeaderView: UITableViewHeaderFooterView, BaseViewProtocol {
 
     private let copyButton: UIButton = {
         let button = UIButton(type: .custom)
-        button.tintColor = Colors.primary
-        let copyImage = UIImage(named: "copy")
-        let templateImage = copyImage?.withRenderingMode(.alwaysTemplate)
-        button.setImage(templateImage, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -57,6 +53,26 @@ class SectionHeaderView: UITableViewHeaderFooterView, BaseViewProtocol {
 
         contentView.addSubview(copyButton)
         copyButton.isAccessibilityElement = true
+
+        if #available(iOS 15, *) {
+            var config = UIButton.Configuration.filled()
+            config.cornerStyle = .capsule
+            config.baseBackgroundColor = Colors.secondary
+            config.baseForegroundColor = Colors.primary
+
+            var container = AttributeContainer()
+            container.font = UIFont.boldSystemFont(ofSize: 15)
+            config.attributedTitle = AttributedString("Copiar", attributes: container)
+
+            copyButton.configuration = config
+        } else {
+            copyButton.layer.cornerRadius = 15
+            copyButton.setTitle("Copiar", for: .normal)
+            copyButton.backgroundColor = Colors.secondary
+            copyButton.setTitleColor(Colors.primary, for: .normal)
+            copyButton.titleLabel?.font = .systemFont(ofSize: 15, weight: .bold)
+            copyButton.contentEdgeInsets = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
+        }
     }
 
     func setupConstraints() {
@@ -65,7 +81,8 @@ class SectionHeaderView: UITableViewHeaderFooterView, BaseViewProtocol {
             titleLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
 
             copyButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
-            copyButton.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
+            copyButton.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            copyButton.heightAnchor.constraint(equalToConstant: 30)
         ])
     }
 
@@ -91,20 +108,6 @@ class SectionHeaderView: UITableViewHeaderFooterView, BaseViewProtocol {
     @objc func copyAction() {
         if let type = self.sectionType {
             self.delegate?.copySectionContent(type: type)
-        }
-
-        let copy = copyButton.currentImage
-        let checkmark = UIImage(systemName: "checkmark",
-                                withConfiguration: UIImage.SymbolConfiguration(weight: .bold))
-
-        UIView.transition(with: self.copyButton, duration: 0.5, options: .transitionCrossDissolve) {
-            self.copyButton.setImage(checkmark, for: .normal)
-        }
-
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            UIView.transition(with: self.copyButton, duration: 0.5, options: .transitionCrossDissolve) {
-                self.copyButton.setImage(copy, for: .normal)
-            }
         }
     }
 }
