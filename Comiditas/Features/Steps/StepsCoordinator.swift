@@ -49,8 +49,8 @@ class StepsCoordinator: NSObject, StepsCoordinatorProtocol {
     }
 
     func infoButton(viewController: UIViewController) {
-        let cordinatorOnboarding = OnboardingCoordinator(viewController: viewController)
-        coordinate(to: cordinatorOnboarding)
+        let coordinatorInformationCommands = CommandsInformationCoordinator(viewController: viewController)
+        coordinate(to: coordinatorInformationCommands)
     }
 
     func dismiss(animated: Bool = true, completion: (() -> Void)? = nil) {
