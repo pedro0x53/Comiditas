@@ -35,6 +35,11 @@
 		18F0496E273405F700DDEF51 /* StepsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0496D273405F700DDEF51 /* StepsViewControllerTests.swift */; };
 		18F049702734190D00DDEF51 /* StepsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0496F2734190D00DDEF51 /* StepsInteractorTests.swift */; };
 		18F049722734192000DDEF51 /* StepsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F049712734192000DDEF51 /* StepsPresenterTests.swift */; };
+		18F1FEEC2755139F003B3222 /* CommandsInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1FEEB2755139F003B3222 /* CommandsInformationView.swift */; };
+		18F1FEEE275513AF003B3222 /* CommandsInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1FEED275513AF003B3222 /* CommandsInformationViewController.swift */; };
+		18F1FEF2275513D1003B3222 /* CommandDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1FEF1275513D1003B3222 /* CommandDescription.swift */; };
+		18F1FEF427551404003B3222 /* CommandsInformationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1FEF327551404003B3222 /* CommandsInformationCoordinator.swift */; };
+		18F1FEF827551A02003B3222 /* CommandsInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1FEF727551A02003B3222 /* CommandsInformationTableViewCell.swift */; };
 		770BE81526F0C7480032F0ED /* Ext+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BE81426F0C7480032F0ED /* Ext+UIImage.swift */; };
 		7713580C26F9FC3700164BBC /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713580B26F9FC3700164BBC /* FeedInteractor.swift */; };
 		7713580E26F9FC4400164BBC /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713580D26F9FC4400164BBC /* FeedPresenter.swift */; };
@@ -185,6 +190,11 @@
 		18F0496D273405F700DDEF51 /* StepsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsViewControllerTests.swift; sourceTree = "<group>"; };
 		18F0496F2734190D00DDEF51 /* StepsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsInteractorTests.swift; sourceTree = "<group>"; };
 		18F049712734192000DDEF51 /* StepsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsPresenterTests.swift; sourceTree = "<group>"; };
+		18F1FEEB2755139F003B3222 /* CommandsInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandsInformationView.swift; sourceTree = "<group>"; };
+		18F1FEED275513AF003B3222 /* CommandsInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandsInformationViewController.swift; sourceTree = "<group>"; };
+		18F1FEF1275513D1003B3222 /* CommandDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandDescription.swift; sourceTree = "<group>"; };
+		18F1FEF327551404003B3222 /* CommandsInformationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandsInformationCoordinator.swift; sourceTree = "<group>"; };
+		18F1FEF727551A02003B3222 /* CommandsInformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandsInformationTableViewCell.swift; sourceTree = "<group>"; };
 		770BE81426F0C7480032F0ED /* Ext+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ext+UIImage.swift"; sourceTree = "<group>"; };
 		7713580B26F9FC3700164BBC /* FeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
 		7713580D26F9FC4400164BBC /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
@@ -398,6 +408,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		18948C59275592F40035FDFC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18F1FEF1275513D1003B3222 /* CommandDescription.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		189E069C27469F5300FE068A /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -436,6 +454,26 @@
 				18F049712734192000DDEF51 /* StepsPresenterTests.swift */,
 			);
 			path = Steps;
+			sourceTree = "<group>";
+		};
+		18F1FEEA2755136C003B3222 /* CommandsInformation */ = {
+			isa = PBXGroup;
+			children = (
+				18948C59275592F40035FDFC /* Model */,
+				18F1FEF927551E2D003B3222 /* Views */,
+				18F1FEED275513AF003B3222 /* CommandsInformationViewController.swift */,
+				18F1FEF327551404003B3222 /* CommandsInformationCoordinator.swift */,
+			);
+			path = CommandsInformation;
+			sourceTree = "<group>";
+		};
+		18F1FEF927551E2D003B3222 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18F1FEF727551A02003B3222 /* CommandsInformationTableViewCell.swift */,
+				18F1FEEB2755139F003B3222 /* CommandsInformationView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		770BE81626F0DDC60032F0ED /* Json */ = {
@@ -691,6 +729,7 @@
 		779F5EC526EF74CC005668BE /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				18F1FEEA2755136C003B3222 /* CommandsInformation */,
 				189E069C27469F5300FE068A /* Onboarding */,
 				18819C732726DDEA008B1B7B /* Steps */,
 				E6BFD5D0272982AD00658A74 /* Settings */,
@@ -1148,12 +1187,15 @@
 				770BE81526F0C7480032F0ED /* Ext+UIImage.swift in Sources */,
 				77946A6227067B1300D3F1B3 /* LocalizablesProtocol.swift in Sources */,
 				18819C772726DE45008B1B7B /* StepModels.swift in Sources */,
+				18F1FEF827551A02003B3222 /* CommandsInformationTableViewCell.swift in Sources */,
 				FE054C9F2726F24500EE439E /* SpeechProcessorProtocol.swift in Sources */,
 				E6BFD5DB272AD6D800658A74 /* SettingsCoordinator.swift in Sources */,
 				779F5E9026EF7456005668BE /* SceneDelegate.swift in Sources */,
 				779526B2273405B40097AF79 /* TagsCollectionViewCell.swift in Sources */,
+				18F1FEF2275513D1003B3222 /* CommandDescription.swift in Sources */,
 				E68CC29E2733FE86003F6E6C /* SettingsWorker.swift in Sources */,
 				77F9CB9E272ADF9500D22F94 /* TagsView.swift in Sources */,
+				18F1FEEE275513AF003B3222 /* CommandsInformationViewController.swift in Sources */,
 				E6381BF226FB52EA004F4298 /* ModalViewController.swift in Sources */,
 				FE95430026F8B2BD0039F547 /* Ext+UIImageView.swift in Sources */,
 				18819C7F2726DE99008B1B7B /* StepsInteractor.swift in Sources */,
@@ -1200,6 +1242,7 @@
 				E6BFD5D32729834300658A74 /* SettingsView.swift in Sources */,
 				7792905726F8B18800AAA0A4 /* FeedCoordinator.swift in Sources */,
 				18EA190F270F1FCB00B36E1C /* HapticsManager.swift in Sources */,
+				18F1FEEC2755139F003B3222 /* CommandsInformationView.swift in Sources */,
 				189E069E27469F8C00FE068A /* OnboardingViewController.swift in Sources */,
 				189E06B12748291000FE068A /* Onboarding.swift in Sources */,
 				FE5DA02026F9FAA800AF5F71 /* OverviewCoordinator.swift in Sources */,
@@ -1208,6 +1251,7 @@
 				77F9CB92272ABB3900D22F94 /* SearchViewController.swift in Sources */,
 				FE39529326FA511700AEF77D /* Ext+UIView.swift in Sources */,
 				E68CC2592732D5FB003F6E6C /* SettingsModels.swift in Sources */,
+				18F1FEF427551404003B3222 /* CommandsInformationCoordinator.swift in Sources */,
 				FEC8B85826FA269800455143 /* SectionHeaderView.swift in Sources */,
 				E68CC2572732D5DB003F6E6C /* SettingsPresenter.swift in Sources */,
 				77F9CB9C272ACB1100D22F94 /* SearchModels.swift in Sources */,
